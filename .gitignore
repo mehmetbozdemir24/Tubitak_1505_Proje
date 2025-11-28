@@ -1,0 +1,15 @@
+# --- SİSTEM DOSYALARI ---
+.venv/
+__pycache__/
+.vscode/
+
+# --- VERİ KLASÖRLERİ ---
+document_chunks/
+vector_store/
+Doküman/
+
+# --- VERİ DOSYALARI (Kök dizindekiler dahil) ---
+*.pkl
+*.json
+
+Kod/
