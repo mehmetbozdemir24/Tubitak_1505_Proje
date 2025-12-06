@@ -1,0 +1,186 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2010-02-05T12:41:29+00:00
+   - moddate: 2010-02-05T14:49:57+02:00
+   - author: User
+   - title: Microsoft Word - RIT-TA-GUV-07
+   - source: 64577.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+TALİMATLAR  
+Doküman Adı: Motorlu Araç Kullanma Talimatı 
+Doküman Kodu: 
+ RİT-TA-GÜV-07  İlk Yayın Tarihi : 
+30.01.2007 Revizyon No: 
+ 02 Revizyon Tarihi: 
+05.02.2010 Sayfa 
+1 / 2 
+ 
+©2010 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+ 
+1. Amaç: Uludağ Üniversitesi Güvenlik Müdürlüğünde bulunan ve güvenlik h izmetlerinde 
+ kullanılan motorlu araçların standartlara uygun, düzenli kulla nılması ve bakımlarının 
+ yapılmasını sağlamaktır. 
+ 
+2. Kapsam: Uludağ Üniversitesi Güvenlik Müdürlüğü hizmet araçlarının kulla nım ve bakım 
+ esaslarını kapsar.    
+ 
+3. Sorumlular: Uludağ Üniversitesi Güvenlik Müdürü, Müdür Yardımcısı,  Şefler ve araç 
+şoförleri sorumludur. 
+ 
+4. Uygulama:  
+ 
+4.1. Görev devir tesliminde araçlar vardiya sorumluları ve gruplarda  görevli araç şoförleri 
+arasında devir teslim yapılır. Arıza olması halinde vardiya sor umluları görev devir 
+teslim defterine arızasını yazar.
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2010-02-05T12:41:29+00:00
+   - moddate: 2010-02-05T14:49:57+02:00
+   - author: User
+   - title: Microsoft Word - RIT-TA-GUV-07
+   - source: 64577.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+teslim defterine arızasını yazar. 
+4.2. Aracı teslim eden şoför temizliğini yapar, malzemeleri ile birl ikte sağlam teslim eder. 
+Teslim alan şoförde kontrol ederek alır. Arızalı ve malzeme eks iği varsa 
+raporlandırılarak devir-teslim yapılır. 
+4.3. Gündüz görevli vardiya sorumlusu ve araç şoförü mesai başlangıc ı n d a  v a r s a  a r a c ı n  
+arızası hakkında Güvenlik Müdürüne bilgi verir. Alacağı talimat  doğrultusunda 
+arızasının giderilm esini takip eder. 
+4.4. Araçların günlük bakımları mutlaka yapılır. Bakımda araç şoförü ; 
+ 
+4.4.1.  Aracın lastikleri, suyu, yağı, farları, ışık ve fren tertibatla rı, dikiz aynaları, 
+bijonları ile kaporta gibi göz le görülüp elle kontrol edilebile n aksamlarına bakar. 
+ 4.4.2.  Araç şoförü tarafından giderileme yen arızaların onarımı ile kul lanımdan dolayı 
+yıpranan parçaların değiştirilmesi için vardiya sorumlusu Güven lik Müdürlüğüne 
+bilgi verir ve takip eder. 
+ 4.5. Araç kullanırken trafik kural larına ve hız limitine uyar.
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2010-02-05T12:41:29+00:00
+   - moddate: 2010-02-05T14:49:57+02:00
+   - author: User
+   - title: Microsoft Word - RIT-TA-GUV-07
+   - source: 64577.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+bilgi verir ve takip eder. 
+ 4.5. Araç kullanırken trafik kural larına ve hız limitine uyar.  
+ 
+4.6. Ehliyetsiz veya yetersiz ehliyet le araç kullanılmaz. Şoför deği şiklikleri Güvenlik izni 
+Müdürünün ile yapılır. 
+ 
+4.7. Araç şoförü kötü hava şartlarında daha tedbirli ve dikkatli olu r. Kötü havalarda patinaj 
+zinciri, çeki halatı ve takoz gi bi malzemeleri sağlam olarak ar açta bulundurur. 
+ 
+4.8. Araçlar görev dışında kullanılamaz.
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2010-02-05T12:41:29+00:00
+   - moddate: 2010-02-05T14:49:57+02:00
+   - author: User
+   - title: Microsoft Word - RIT-TA-GUV-07
+   - source: 64577.pdf
+   - total_pages: 2
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+TALİMATLAR  
+Doküman Adı: Motorlu Araç Kullanma Talimatı 
+Doküman Kodu: 
+ RİT-TA-GÜV-07  İlk Yayın Tarihi : 
+30.01.2007 Revizyon No: 
+ 02 Revizyon Tarihi: 
+05.02.2010 Sayfa 
+2 / 2 
+ 
+©2010 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+4.9. Araçlar Kampus dışına çıkarken (yakıt ikmali hariç) mutlaka Güv enlik Koordinatörü 
+bilgisi ile vasıta çıkış formu tanzim edilir ve şoförün yanında n bir güvenlik görevlisi 
+daha bulundurulur. 
+ 
+4.10. Aracın yakıt ikmalini Uludağ Üniversitesi Rektörlüğünün anlaşma lı akaryakıt 
+istasyonlarından yapar ve aka ryakıt istasyonuna en kısa yoldan gider. 
+ 
+4.11. Görev esnasında araçla kaza yapıldığında araç kaza yerinden kal dırılmadan Güvenlik 
+Müdürüne ve ilgili trafik ekibine haber verilerek kaza raporu t anzim ettirilir. 
+  
+5. Gözden Geçirme  ve Onaylama:  
+ 
+ 
+Ana Süreç Sahibi:     T a r i h  
+Güvenlik Koordinatörü    04.02.2010    
+  
+ 
+   
+Yönetimin onayı:     T a r i h
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2010-02-05T12:41:29+00:00
+   - moddate: 2010-02-05T14:49:57+02:00
+   - author: User
+   - title: Microsoft Word - RIT-TA-GUV-07
+   - source: 64577.pdf
+   - total_pages: 2
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Güvenlik Koordinatörü    04.02.2010    
+  
+ 
+   
+Yönetimin onayı:     T a r i h  
+Yönetim Temsilcisi    05.02.2010
+
+

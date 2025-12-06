@@ -1,0 +1,674 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 0
+   - page_label: 1
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+1  
+Senato Karar Eki BURSA ULUDAĞ ÜNİVERSİTESİ  
+YAYIN YÖNERGESİ  
+BİRİNCİ BÖLÜM  
+Amaç, Kapsam, Dayanak ve Tanımlar  
+Amaç  
+MADDE 1 - (1) Bu Yönerge, Bursa Uludağ Üniversitesi Yayın Komisyonun un görev, 
+yetki, sorumlulukları ve çalışma esasları ile personel ve öğrencilerin eserlerinin yayınlanma sı, 
+planlanması, incelemesi ve gerçekleştirilmesi  koşullarını belirlemek amacı ile düzenlenmiştir.  
+Kapsam  
+MADDE 2 - (1) Bu Yönerge, Bursa Uludağ Üniversitesi Yayın Komisyonun un 
+işleyişini düzenler.  
+Dayanak  
+MADDE 3 - (1) Bu Yönerge, 2 547 sayılı Yükseköğretim Kanunu nun ilgili hükümleri 
+uyarınca hazırlanan Üniversiteler Yayın Yönetmeliği ile Üniversitelerde Ders Aracı Olarak 
+Kullanı lan Kitaplar, Teksirler v e Yardımcı Kitaplar Dışındaki Yayınlarla İlgili Yö netmelik 
+hükümlerine dayanılarak hazırlanmıştır . 
+Tanımlar  
+MADDE 4 - (1) Bu Yönerge nin uygulanmasında;  
+a) Bilgi kaynağı: Basılı (kitap, dergi, tez, vb.), elektronik (e -dergiler, e -kitaplar vb.)
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 0
+   - page_label: 1
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+a) Bilgi kaynağı: Basılı (kitap, dergi, tez, vb.), elektronik (e -dergiler, e -kitaplar vb.) 
+ve CD, DVD, slayt, vb. şeklindeki ses ve/veya görüntülü tüm kaynakları,  
+b) Basımevi: Bursa Uludağ Üniversitesi Basımevi Müdürlüğünü,  
+c) Kütüphane v e Dokümantasyon Daire Başkanlığı: Bursa Uludağ Üniversitesi 
+Kütüphane ve Dokümantasyon Daire Başkanlığını,  
+ç) Öğrenci: Bursa Uludağ Üniversitesi Öğrencilerini,  
+d) Personel: Bursa  Uludağ  Üniversitesi Akademik ve İdari Personelini,  
+e) Rektör: Bursa Uludağ Üniversitesi Rektörünü,  
+f) Rektör Yardımcısı: Bursa Uludağ Üniversitesi Rektör Yardımcılarını,  
+g) Senato: Bursa Uludağ Üniversitesi Senatosunu,  
+ğ) UDOS: Bursa Uludağ Üniversitesi Doküman Otomasyon Sistemini,  
+h) Üniversite: Bursa Uludağ Üniversitesini,  
+ı) Yayın Komisyonu:  Bursa Uludağ Üniversitesi Yayın Komisyonunu,  
+i) Yönetmelik: Üniversiteler Yayın Yönetmeliği ,
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 1
+   - page_label: 2
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+2  
+Senato Karar Eki j) Yönetim Kurulu: Bursa Uludağ Üniversitesi Yönetim Kurulunu,  
+k) Yürütme Kurulu: Bursa Uludağ Üniversitesi Döner Ser maye İşletmesi Yürütme 
+Kurulunu  
+ifade eder.  
+İKİNCİ BÖLÜM  
+Örgütlenme ve Yöneticilerin Nitelik, Görev ve Yetkileri  
+Örgütlenme  
+MADDE 5 - (1) Yayın Komisyonu, eğitim -öğretim ve araştırma -geliştirme faaliyetleri 
+doğrultusunda personel ve öğren cilerin eserlerinin yayınlanma sı, planlanması, incele nmesi ve 
+gerçekleştirilmes i koşullarını düzenleyen komisyondur.  
+(2) Üniversitedeki yayın hizmetleri, bu Yönerge hükümleri çerçevesinde Yayın 
+Komisyonu  ile Kütüphane ve Dokümantas yon Daire Başkanlığı tarafından yürütülür.  
+Yayın komisyonun un nitelikleri, görev ve yetkileri  
+MADDE 6 - (1) Yayın Komi syonu bir Rektör Yardımcısı nın başkanlığında Yönetim 
+Kurulunun kendi üyeleri arasından bel irleyeceği iki öğretim üyesi nden  oluşturulur .  
+(2) Yayın Komisyonun un görev ve yetkileri şunlardır:
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 1
+   - page_label: 2
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(2) Yayın Komisyonun un görev ve yetkileri şunlardır:  
+a) Yayınlarla ilgili gerekli planlama çalışmalarını yapmak.  
+b) Yayın Komisyonu ’na gelen ve Yayın Komisyonu ’ndan gönderilen evrakların 
+kayıtlarını yapmak dosyalanmasını temin etmek.  
+c) Basıma hazır olarak gel en bilgi kaynaklarını  incelemek ; bilgi kaynaklarının  
+Üniversite tarafından yayımlanmasına u ygun olup olmadığına karar ver mek.  
+ç) Basım sırası baskı ade di, basılma şekli ve  yayın türü hakkında karar vermek.  
+d) Basılan eserlerin maliyet hesabı ve satış fiyatını belirlemek.  
+e) Üniversiteler Yayın Yönetmeliğinin ilgili maddeleri uyarınca telif haklarını 
+hesaplamak ve ödeme şeklini be lirlemek .  
+(3) Yayın Komisyonu çalışma süreçlerinde öğretim elemanları ile diğer idari personelin 
+hizmetlerinden yararlanabilir.  
+(4) Yayın Komisyonu gerektiğinde Rektör onayı ile meslek gruplarına göre geçici alt 
+komisyonlar kurabilir.
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 1
+   - page_label: 2
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+komisyonlar kurabilir.  
+(5) Yayın Komisyonu basımına karar verdiği bilgi kaynaklarının  Basımevi  kapasitesini 
+aşan kısmını n başka yollarla basılmasına izin verebilir.  
+(6) Yayın Komisyonu ’nun kararları Yönetim Kurulunun onayı ile kesinleşir.
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 2
+   - page_label: 3
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+3  
+Senato Karar Eki ÜÇÜNCÜ BÖLÜM  
+Yayın Türleri ve Başvuruları  
+Yayın  türleri  
+MADDE 7 - (1) Bu Yönergenin uygulanmasında Üniversite tarafından yayınlanacak 
+bilgi kaynakları , türlerine göre gruplandırılmıştır.  
+a) Birinci grup y ayınlar : Eğitim -öğretim programları esas alınmak suretiyle öğrencilerin 
+bilgi ihtiyacını karşılamayı amaçlayan ders kaynaklarıdır . 
+b) Ders kitabı: Üniversite eğitim programında zorunlu/seçmeli ders olarak okutulan ve 
+ilgili kurullarca belirlenmiş eğitim programının içeriğini büyük ölçüde kapsayan özgün bilgi 
+kaynaklarıdır.  
+c) Yardım cı ders kitabı: Eğitim programlarında zorunlu veya seçmeli olarak saptanan 
+ders programlarının bir kısmını doğrudan veya dolaylı olarak kapsayan özgün bilgi 
+kaynaklarıdır.  
+ç) Çeviri ders kitabı: Eğitim programlarında zorunlu veya seçmeli olarak saptanan de rs 
+programlarının büyük ölçüde veya bir kısmını doğrudan veya dolaylı olarak kapsayan çeviri 
+bilgi kaynaklarıdır.
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 2
+   - page_label: 3
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+bilgi kaynaklarıdır.  
+d) Teksir / ders notu: Eğitim programlarında zorunlu veya seçmeli olarak saptanan ders 
+programlarının büyük ölçüde veya bir kısmını doğrudan v eya dolaylı olarak kapsayan bilgi 
+kaynaklarıdır.  
+e) E-doküman: Elektronik ortamda hazırlanan, çoğaltılabilen ve yayınlanan elektronik 
+bilgi kaynaklarıdır.  
+(3) İkinci grup yayınlar: Bilimsel araştırma ve incelemeleri yansıtan dergi ya da süreli  
+yayınlardır.  
+(4) Üçüncü grup yayınlar: Kongre, sempozyum, çalıştay, panel türündeki bilimsel 
+toplantıların bildirilerini içeren bilgi kaynaklarıdır.  
+(5) Dördüncü grup yayınlar: Toplumu çeşitli konularda bilgilendirmek amacıyla 
+hazırlanan akademik nitelikteki bilgi kaynaklarıdır . 
+(6) Beşinci grup yayınlar: Yukarıda belirtilen yayın gruplarına girmeyen bilgi 
+kaynaklarıdır.
+
+
+================================================================================
+CHUNK NO: 8
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 3
+   - page_label: 4
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+4  
+Senato Karar Eki DÖRDÜNCÜ BÖLÜM  
+Yayın Başvuruları ve Basım Sırası  
+Yayın başv uruları  
+MADDE 8 - (1) Üniversite tarafından yayınlanması istenen bilgi kaynakları için 
+aşağıdaki kurallar uygulanır.  
+(2)  Yayın türü olarak birinci,  üçüncü,  dördüncü ve beşinci grup yayınların yazarları, 
+yayımlanması istenilen eser i çin Yayın Öneri Formu nu (Ek-1) düzenlerler . 
+a) Teksir ve ders notlarının basım ve çoğaltım giderlerinin Döner Sermaye İşletmesi 
+kaynaklarından karş ılanması halinde, bunların Üniversite Basımevinde veya ilgili birimde 
+çoğaltılacağı konularında karar verir ve ilk baskılara ilişkin tesis ettiği kararları Yürütme 
+Kuruluna sunar. Aynı teksirin daha sonraki çoğaltım talebini ise doğrudan Yürütme Kuruluna 
+gönderir.  
+b) Çeviri eserlerde yazardan ya da yayım hakkına sahip kişi ve kurumd an yazılı yayın 
+izni alınmalı  ve bu izin belgesi  başvuru evraklarına eklen ir. 
+c) Yayın Öneri Formu nda (Ek -1) yer alan form personelin bağlı bulunduğu birim
+
+
+================================================================================
+CHUNK NO: 9
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 3
+   - page_label: 4
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+c) Yayın Öneri Formu nda (Ek -1) yer alan form personelin bağlı bulunduğu birim 
+tarafından UDOS  üzerinden re smi yazı  ile Kütüphane ve Dokümantasyon Daire Başkanlığı na 
+gönderilir.  
+(3)  Yayın türü olarak ikinci grup yayınların  yayın hayatına başlaması için dergi editörü 
+Yayın Komisyonu ’na Yayın Öneri Formu  (Ek-1) ile birlikte derginin yayınlanma amacını 
+belirten bir r aporu bağlı bulunduğu birim tarafından UDOS üzerinden resmi yazı ile Kütüphane 
+ve Dokümantasyon Daire Başkanlığına gönderir.  
+a) Yayın Komisyonu başvuruyu değerlendirir  ve süreli yayının yayınlanıp 
+yayınlanmayacağı kararını verir . 
+b) Yayınlanmasına karar verilen süreli yayınların her bir sayısı yayınlanmadan önce  
+yayın içerikleri ile birlikte  UDOS üzerinden resmi yazı ile Kütüphane ve Dokümantasyon Daire 
+Başkanlığına gönderilir.  
+(4)  Üniversite personeli veya öğrencisi olmayan kişiler tarafından hazırlanmış ders
+
+
+================================================================================
+CHUNK NO: 10
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 3
+   - page_label: 4
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(4)  Üniversite personeli veya öğrencisi olmayan kişiler tarafından hazırlanmış ders 
+kitab ı niteliğind eki telif veya tercüme eserler  Yönerge kapsamında basılabilir. Basım işlemi  
+için yazarın, Yönetmelik hükümlerine uygun olarak eserinin basılmasını kabul ettiğine ilişkin 
+yazılı beyanı ve eserin konusu ile ilgili dersin verildiği birimin görüşü UDOS üzerinden resmi 
+yazı ile Kütüphane ve Dokümanta syon Daire Başkanlığına gönderilir . 
+(5)  Üniversite yayını olarak yayınlanacak bilgi kaynakları için ikinci grupta yer alan 
+süreli yayınlar hariç Yayın Sözleşmesi (Ek-2) imzalanır. Sözleşmeye bağlanan baskı s ayısının 
+bitmesi halinde sonraki baskılar için yeni sözleşme yapılır. Aksi halde yazar ya da çevirici 
+eserin sonraki baskılarının tüm haklarına sahiptir.
+
+
+================================================================================
+CHUNK NO: 11
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 4
+   - page_label: 5
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+5  
+Senato Karar Eki (6)  Yayın Komisyonu’na sunulmak üzere UDOS üzerinden gönderilen dosyalarla 
+birlikte bilgi kaynağından 2 n üsha (CD, DVD) gönderilir.  
+(7)  Yayın başvurularını Yayın Komisyonu değerlendirir ve kararını Yönetim 
+Kurulu’na sunar.  
+(8)  Yönetim Kurulu’nun kararı ile yayın basılır veya yayının basılmasına izin verilmez.  
+(9)  Basım halindeki eserlerin tüm düzeltme işleri, Yayın Komisyonu  aksine karar 
+vermedikçe, bilgi kaynağının sorumlu personel i tarafından yapılır.  
+(10)  Bu Yönerge kurallarına uygun olarak yayımlanmayan ve yazarı tarafından 
+Üniversite dışında basılmış olan kitapların üzerine “Bursa Uludağ Üniversitesi” yazılamaz. 
+Ancak kitap içindeki yazar tanıtımında Bursa Uludağ Üniversitesi personeli olduğu ve görev 
+yaptığı birime ilişkin notlar yer alabilir.  
+Basımevinde bastırılacak eserler  
+MADDE 9 - (1) Üniversite , yayın türü birinci grup bilgi kaynaklarını olanakları
+
+
+================================================================================
+CHUNK NO: 12
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 4
+   - page_label: 5
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+MADDE 9 - (1) Üniversite , yayın türü birinci grup bilgi kaynaklarını olanakları 
+ölçüsünde kendi Basımevinde bastırır. Personel bu nitelikteki eserlerini kendi hesaplarına 
+dışarıda bastıramaz. Ancak Yayın Komisyonu, yayın türü birinci grup bilgi kaynaklarını 
+başvurulan eğitim -öğret im yılı içinde bastırılamayacağına karar verirse yayının yazarı kendi si 
+bastırabilir.  
+(2) Yayın Komisyonu d iğer gruplarda yer alan bilgi kaynaklarını  olanakları ölçüsünde 
+kendi Basımevinde bastırır. Ancak Yayın Komisyonu üniversite olanakları içinde 
+bastır ılamayacak bilgi kaynaklarının dışarıda bastırılmasına izin verebilir.   
+BEŞİNCİ BÖLÜM  
+Basım Sırası, Telif Hakkı, Maliyet Hesaplama , Satış Bedeli  ve Dağıtım  
+Basım sırası  
+MADDE 10 - (1) Yayın Komisyonu, basım için gelen bilgi kaynaklarını, basım sırasına 
+koyar. Basım sırasının tespitinde taleplerin geliş tarihi göz önünde bulundurulur. Aynı mali yıl 
+içinde basılmayan eserlere, izleyen mali yılda öncelik tanınır.
+
+
+================================================================================
+CHUNK NO: 13
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 4
+   - page_label: 5
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+içinde basılmayan eserlere, izleyen mali yılda öncelik tanınır.  
+Telif hakkı, maliyet hesaplama , satış bedeli  ve dağıtım  
+MADDE 11 - (1) Telif hakkı hesaplanması Yönetmeliğin ilgili  maddelerine  göre 
+hesaplanır.
+
+
+================================================================================
+CHUNK NO: 14
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 5
+   - page_label: 6
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+6  
+Senato Karar Eki (2) Basım ve yayın işleri gideri ilgili birimin Döner Sermaye İşletmesi kaynaklarından 
+karşılanan bilgi kaynakları için telif ücreti ödenmez. B u tür bilgi kaynaklarının satış fiyatları 
+Döner Sermaye İşletmesi kurallarına göre belirlenir.  
+(3) Bilgi kaynaklarının maliyet hesabı ve satış bedeli Üniversiteler Yayın 
+Yönetmeliğinin ilgili  madde lerine  göre hesaplanır.  
+MADDE 12 -  (1) Yayınların dağıtımı ve satışı  Yönetmeliğin ilgili maddeleri veya 
+Yayın Komisyonu kararına göre yapılır.  
+ALTINCI BÖLÜM  
+Çeşitli ve Son Hükümler  
+Hüküm bulunmayan haller  
+MADDE 13 - (1) Bu Yönergede hükmü bulunmayan hallerde ilgili mevzuat ile Senato 
+ve Yönetim Kurulu kararları uygulanır.  
+Yürürlükten  kaldırılan hükümler  
+MADDE 14 - (1) Bu Yönergenin kabul edildiği tarihte Uludağ Üniversitesi 
+Senatosu’nun 15 Şubat 2018 tarihli oturumunda kabul edilmiş olan Uludağ Üniversitesi Yayın 
+Yönergesi yürürlükten kalkar.  
+Yürürlük
+
+
+================================================================================
+CHUNK NO: 15
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 5
+   - page_label: 6
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Yönergesi yürürlükten kalkar.  
+Yürürlük  
+MADDE 15 -  (1) Bu Yönerge, Senatoda kabul edildiği 26 Kasım 2020 tarihinden 
+itibaren  yürürlüğe girer  
+Yürütme  
+MADDE 16 -  (1) Bu Yönerge hükümlerini Bursa Uludağ Üniversitesi Rektörü yürütür.
+
+
+================================================================================
+CHUNK NO: 16
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 6
+   - page_label: 7
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+EK-1 
+Yayın Öneri Formu  
+Enstitü / Fakülte / Konservatuvar / 
+MYO /  YO / Bölümler / Uygulama 
+ve Araştırma Merkezleri  :   
+Yayın Adı  :   
+Yayın Türü  : A- Birinci Grup Yayınlar    
+    Ders kitabı    
+    Yardımcı Ders Kitabı    
+    Çeviri Ders Kitabı    
+    Teksir  / Ders Notu    
+    E-doküman    
+        
+  B- İkinci Grup Yayınlar    
+    Dergi ya da süreli  yayın     
+        
+  C- Üçüncü Grup Yayınlar    
+    Kongre, sempozyum, çalıştay, panel  
+        
+  E- Dördüncü Grup Yayınlar    
+    Toplumu ve üniversite kamuoyunu çeşitli 
+konularda bilgilendirmek amacıyla hazırlanan 
+akademik nitelikteki kitap, kitapçık, broşür ve 
+benzeri yayınlar  
+        
+  F-BEŞİNCİ GRUP YAYINLAR    
+    Yukarıda belirtilen yayın gruplarına girmeyen yayın 
+türleri  
+        
+Yazar/Editör/Çeviren/Sahibi  :  
+  İmza  
+    Özgün  
+    Çeviri  
+Kaçıncı Baskı  :  
+Baskı Sayısı  :  
+        
+Basılması için verilen yayına ait yukarıda belirtilen bilgilerin doğruluğu tarafımızca tespit edilmiştir
+
+
+================================================================================
+CHUNK NO: 17
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 6
+   - page_label: 7
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Başkan  Üye Üye
+
+
+================================================================================
+CHUNK NO: 18
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 7
+   - page_label: 8
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+EK-2 
+1 
+ BURSA ULUDAĞ ÜNİVERSİTESİ  
+YAYIN SÖZLEŞMESİ  
+(ÜRETİM, YAYIM, DAĞITIM VE TELİF HAKLARI ) 
+Bir taraftan  
+a. Adı Soyadı:  
+b. T.C. Kimlik No:  
+c. Elektronik Posta A dresi : 
+d. Adresi:  
+ adresinde mukim  (bundan böyle “ESER SAHİBİ” olarak anılacaktır) ile diğer taraftan Bursa Uludağ 
+Üniversitesi Rektörlüğü  Görükle Kampusu 16059 Nilüfer/BURSA  mukim (bundan böyle “YAYINCI” 
+olarak anılacaktır);  
+ESER SAHİBİ’ne ait…………………………………………………………eserin yayına hazırlanması konusunda(bundan 
+böyle “ESER” olarak anılacaktır) üretim, yayım, dağıtı m ve telif haklarının YAYINCI’ya devrine ilişkin 
+olarak aşağıdaki koşullarda tam bir mutabakata varmışlardır.  
+KAPSAM:  
+a) ESER SAHİBİ; ……………………………………..adlı ESER’inin derleme, işleme, yayım, dağıtım ve her 
+türlü satışı dahil telif haklarını YAYINCI’ya devretmiş tir. 
+b) YAYINCI; ESER’i kendi uygun göreceği biçimde  (e-yayın, basılı vb.)  yayımlayıp, satışa sunma
+
+
+================================================================================
+CHUNK NO: 19
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 7
+   - page_label: 8
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+b) YAYINCI; ESER’i kendi uygun göreceği biçimde  (e-yayın, basılı vb.)  yayımlayıp, satışa sunma 
+konusunda ve bu sözleşmeden doğan hak ve alacaklarının tamamını ya da bir bölümünü 
+dilediği üçüncü kişi ya da kuruluşlara tek yanlı olarak devir ve temlik etme k hususunda ESER 
+SAHİBİ’nce yetkili kılınmıştır.  
+c) ESER SAHİBİ; YAYINCI’ya devir ve teslim ettiği ESER üzerinde hiçbir üçüncü kişi ya da kuruluşun  
+herhangi bir hakkının mevcut olmadığını, işbu sözleşme ile YAYINCI’ya devrettiği ESER’in 
+sahibinin kendisinin o lduğunu; üçüncü kişi ya da kuruluşların ESER’in tümü ya da bir bölümü 
+üzerinde herhangi bir hak iddia etmesi durumunda bundan doğabilecek tazminat ve diğer yasal 
+sorumlulukların kendisine ait olacağını; YAYINCI’nın bu durumda uğrayabileceği her türlü zarar ı 
+da derhal ve nakden tazmin edeceğini ve YAYINCI’nın bu nedenle işbu sözleşmeyi tek yanlı 
+olarak feshetme yetkisinin de bulunduğunu kabul ve beyan eder.
+
+
+================================================================================
+CHUNK NO: 20
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 7
+   - page_label: 8
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+olarak feshetme yetkisinin de bulunduğunu kabul ve beyan eder.  
+d) YAYINCI, ESER’i Bursa Uludağ  Üniversitesi Yayın Yönergesi esaslarına uygun ortamda üreterek 
+yayınlar , telif ücret i ödenecek ise  adı geçen yönerge esaslarına göre belirleyerek hesaplar ve 
+öder.  
+FESİH VE YAPTIRIMLAR:  
+a) Eserin bilimsel niteliği, dili, hukuka uygunluğu ve benzeri konulardaki sorumluluk, yazara 
+aittir.  
+b) İşbu sözleşme yürürlükte olduğu sürece, ESER ’in her türlü tasarruf hakları YAYINCI’ya ait 
+olduğundan  YAYINCI’dan yazılı izin alınmaksızın hiçbir şekilde;  
+i. Fotokopi, teksir, film, elektronik ortam veya bir başka teknikle çoğaltılamaz ve 
+dağıtılamaz,  
+ii. Tiyatro ve sinemaya uyarlanamaz,  
+iii. Video filmi yapılamaz, televizyonda yayınlanamaz,  
+iv. Herhangi bir suretle reklam ve tanıtım aracı olarak kullanılamaz,  
+v. Kartpostal, poster, afiş, afişet vb. haline getirilemez,
+
+
+================================================================================
+CHUNK NO: 21
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 8
+   - page_label: 9
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+EK-2 
+2 
+ vi. Kaynak gösterilmeksizin alıntı yapılamaz.  
+vii. ESER’in Türkçe dışındaki bir dilde yayınlanması veya Türkçe olarak yabancı bir 
+ülkede çoğal tılması YAYINCI’nın yazılı onayı alınmadan yapılamaz.  
+viii. ESER’in Türkiye dışındaki dağıtım ve pazarlaması da YAYINCI’nın yazılı iznini 
+gerektirir.  
+ 
+ 
+YASAL İKAMETGÂHLAR:  
+Taraflar, yukarıda ad ve unvanları  yanında belirtilen adreslerini y asal ikametgâhları olarak 
+belir lemişlerdir. Adres değişiklikleri diğer tarafa yazılı olarak bildirilmediği takdirde, eski adrese 
+yapılacak tebligatın geçerli olacağını taraflar kabul ederl er. 
+DELİL SÖZLEŞMESİ VE UYUŞMAZLIKLARDA YETKİLİ MERCİLER:  
+İşbu sözleşmenin uygulamasında doğabilecek uyuşmazlıklarda YAYINCI’nın defter, kayıt ve 
+belgeleri, bilgisayar kayıtları, mikrofilm ve mikrofişleri kesin ve münhasır delil olacaktır.  
+Uyuşmazlıkların çözümünde Bursa  Mahkeme ve İcra Daireleri yetkili olacaktır.
+
+
+================================================================================
+CHUNK NO: 22
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 169901.pdf
+   - total_pages: 9
+   - page: 8
+   - page_label: 9
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Uyuşmazlıkların çözümünde Bursa  Mahkeme ve İcra Daireleri yetkili olacaktır.  
+İki (2) sayfadan ibaret, ……………. nüsha olarak düzenlenmiş ve ..................................... tarihinde 
+taraflarca, tüm hükümleri okunmak suretiyle karşılıklı olarak imzalanmıştır.  
+ 
+ESER SAHİ Bİ                                                                                                                            YAYINCI
+
+

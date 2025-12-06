@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  # 1. Qdrant Veritabanı Servisi
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant_service
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - ./qdrant_data:/qdrant/storage # Veriler kaybolmasın diye buraya kaydeder
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:6333/readyz"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # 2. Senin Python Kodun (Embedding Yapan)
+  embedding_app:
+    build: .
+    container_name: embedding_runner
+    depends_on:
+      qdrant:
+        condition: service_healthy # Qdrant tamamen açılmadan Python başlamaz
+    environment:
+      - QDRANT_URL=http://qdrant:6333 # Docker içinde Qdrant'ın adresi budur
+    volumes:
+      - ./Tubitak_1505_Proje:/app/Tubitak_1505_Proje # Veri klasörünü içeri aktar

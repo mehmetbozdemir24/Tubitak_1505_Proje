@@ -1,0 +1,159 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2
+   - creationdate: 2007-06-30T12:25:51+00:00
+   - moddate: 2007-07-03T09:28:00+04:00
+   - author: Sinem
+   - title: Microsoft Word - RIT-PR-02.doc
+   - source: 67835.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+SİSTEM PROSEDÜRLERİ 
+ 
+Doküman Adı: Kalite Kayıtları Prosedürü  
+Doküman Kodu: 
+RİT-PR-02  İlk Yayın Tarihi: 
+13.12.2006 Revizyon No:  
+01 Revizyon Tarihi: 
+29.06.2007 Sayfa 
+ 1 / 2 
+ 
+ 
+©2007 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+1. AMAÇ:  Bu Prosedürün amacı; Uludağ Üniversitesi Rektörlük İdari Teşki latı Kalite 
+Yönetim Sistemi (KYS) kayıtlarının tanımlanmasını, ulaşılmasını , saklanmasını, elden 
+çıkarılmasını tanımlar. 
+ 
+2. KAPSAM: Bu prosedür; Uludağ Üniversitesi Rektörlük İdari Teşkilatı kali te yönetim 
+sisteminde tanımlanan kalite kayı tlarına ilişkin tüm faaliyetle ri kapsar. 
+ 
+3. SORUMLULAR: Uludağ Üniversitesi Rektörlük İda ri Teşkilatı süreçlerinde göre v alan 
+ve KYS içerisinde tanımlanan dokü manları uygulayan tüm personel  bu prosedürün 
+uygulanmasından sorumludur.  
+ 
+4. TANIMLAR:  
+ 
+• Kalite Kaydı: Oluşturulan kalite yönetim siste mini doğrudan etkileyen, sistem in
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2
+   - creationdate: 2007-06-30T12:25:51+00:00
+   - moddate: 2007-07-03T09:28:00+04:00
+   - author: Sinem
+   - title: Microsoft Word - RIT-PR-02.doc
+   - source: 67835.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+• Kalite Kaydı: Oluşturulan kalite yönetim siste mini doğrudan etkileyen, sistem in 
+işlerliğini ve etkinliğini belgelemek amacıyla düzenlenen form,  r a p o r  v e  
+tutanaklardır.  
+ 
+5. İLGİLİ DOKÜMANLAR:   5.1. Dış Kaynaklı Dokümanlar: 
+• Devlet Arşiv Hizmetleri Hakkında Yönetmelik, 
+ 
+ 5.2. İç Kaynaklı Dokümanlar: 
+• RİT-FR-YÖN-09 Kalite Kayıtları Listesi 
+• RİT-PR-10 Kurum Arşiv Hizmetleri Prosedürü 
+• RİT-ST-KDD-03 Kurum Arşi v Hizmetleri Alt Süreci 
+ 
+6.UYGULAMA:   
+6.1. Uludağ Üniversitesi Rektörlük İdari Teşkilatında saklanaca k kalite kayıtlarının adı 
+ve konusu, birim/kurum arşivi saklama süreleri ve saklama sorum luları “Kalite Kayıtları 
+Listesi  (RİT-FR-YÖN-09)” nde belirtilmiştir.  
+ 6.2. Kalite Kayıtları, kesinlikle kurşun kalem ile doldurulamaz. Kayıtta bir düzeltme 
+yapılacak ise, mevcut hatanın gör ülmesi için hatalı bölümün üst ü ince bir çizgi ile çizilir, 
+uygun olan bir yere, mevcut kaydın altına/üstüne, sağına/soluna  düzeltme yapılan bilgi
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2
+   - creationdate: 2007-06-30T12:25:51+00:00
+   - moddate: 2007-07-03T09:28:00+04:00
+   - author: Sinem
+   - title: Microsoft Word - RIT-PR-02.doc
+   - source: 67835.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+uygun olan bir yere, mevcut kaydın altına/üstüne, sağına/soluna  düzeltme yapılan bilgi 
+yazılır. Hatalar kesinlikle üstü karalana rak ve/veya kapatıcılar (correc tion liquid 
+vb.) kullanılarak görünm ez hale getirilemez. 
+ 
+6.3. Kalite Kayıtları, “Kalite Kayıtları Listesinde (RİT-FR-YÖN-09)”  tanımlanan 
+sürelerde Uludağ Üniversitesi Rektörlük İdari Teşkilatı Daire B aşkanlıklarında ve 
+birimlerinde ilgili dos yalarda saklanır. Dosyalardaki tüm kalit e kayıtları kolay 
+ulaşılabilir, okunabilir, açık ve  anlaşılabilir olmalıdır.
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2
+   - creationdate: 2007-06-30T12:25:51+00:00
+   - moddate: 2007-07-03T09:28:00+04:00
+   - author: Sinem
+   - title: Microsoft Word - RIT-PR-02.doc
+   - source: 67835.pdf
+   - total_pages: 2
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+SİSTEM PROSEDÜRLERİ 
+ 
+Doküman Adı: Kalite Kayıtları Prosedürü  
+Doküman Kodu: 
+RİT-PR-02  İlk Yayın Tarihi: 
+13.12.2006 Revizyon No:  
+01 Revizyon Tarihi: 
+29.06.2007 Sayfa 
+ 2 / 2 
+ 
+ 
+©2007 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+ 
+6.4. Birimde saklama süresi dolan Kalite kayıtları “RİT-ST-KDD-03 Kurum Arşiv 
+Hizmetleri Alt Süreci” , “RİT-PR-10 Kurum Arşiv Hizmetleri Prosedürü”  v e “Devlet 
+Arşiv Hizmetleri Hakkında Yönetmelik” ine göre  imha veya Kurum arşivinde 
+saklanmak üzere  birim sorumluları tarafında n kurum arşivine gönderilir.  
+ 
+ 
+ 
+7. GÖZDEN GEÇİRME VE ONAYLAMA: 
+ 
+ Yönetimin onayı
+:      T a r i h :  
+     P r o f . D r . E r d a l  E M E L      29.06.2007 
+Yönetim Temsilcisi
+
+

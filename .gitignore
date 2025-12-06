@@ -1,15 +1,35 @@
-# --- SİSTEM DOSYALARI ---
-.venv/
+# --- 1. Python Gereksizleri (Önbellek) ---
 __pycache__/
+*.py[cod]
+*$py.class
+
+# --- 2. Sanal Ortamlar (EN ÖNEMLİSİ - Asla gitmemeli) ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- 3. IDE Ayarları (PyCharm ve VS Code ayarları) ---
+.idea/
 .vscode/
+*.swp
 
-# --- VERİ KLASÖRLERİ ---
-document_chunks/
-vector_store/
-Doküman/
+# --- 4. Qdrant Veritabanı (Docker oluşturur, Github'a gitmemeli) ---
+qdrant_data/
+qdrant_storage/
 
-# --- VERİ DOSYALARI (Kök dizindekiler dahil) ---
-*.pkl
-*.json
+# --- 5. Hassas Bilgiler (API Key vb.) ---
+.env
+.env.local
 
-Kod/
+# --- 6. Gereksiz Sistem Dosyaları ---
+.DS_Store
+Thumbs.db
+
+# --- 7. Log Dosyaları ---
+*.log
+
+# --- 8. (OPSİYONEL) Büyük Veri Dosyaları ---
+# Eğer .pkl dosyan çok büyükse (100MB+) Github hata verir.
+# Eğer hata alırsan aşağıdaki satırın başındaki # işaretini kaldır.
+# *.pkl

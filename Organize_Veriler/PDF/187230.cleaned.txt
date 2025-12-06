@@ -1,0 +1,403 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-03-02T15:22:05+03:00
+   - author: NUKHET
+   - moddate: 2025-11-07T10:53:19+00:00
+   - source: 187230.cleaned.pdf
+   - total_pages: 5
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  BURSA  ULUDAĞ  ÜNİVERSİTESİ  
+PERSONEL KİMLİK KARTI YÖNERGESİ  
+ 
+BİRİNCİ BÖLÜM  
+Amaç, Kapsam , Dayanak  ve Tanımlar  
+Amaç  
+MADDE 1 - (1) Bu Yönerge , Bursa Uludağ Üniversitesi personelinin kimlik kartları nın 
+verilme usul ve esaslarının belirlenmesi amacıyla hazırlanmıştır.  
+Kapsam  
+MADDE 2 - (1) Bu Yönerge; Bursa Uludağ  Üniversitesi personeline verilecek kartların tipi, 
+şekli ve ölçülerinin belirlen mesi, düzenlenmesi, dağıtılması, kullanımı, değiştirilmesi, ger i alınması 
+ve imha edilmesine i lişkin usul ve esasları kapsar.  
+Dayanak  
+MADDE 3 - (1) Bu yönerge, 2547 sayılı Yükseköğretim Kanunu’nun 14 üncü maddesine 
+dayanılarak hazırlanmıştır.  
+Tanımlar  
+MADDE 4 - (1) Bu Yönergede geçen;  
+a) Birim: Bursa Uludağ  Üniversitesi ne bağlı akademik ve idari birimleri,  
+b) Emekli: Bursa Uludağ  Üniversitesi  birimlerinde akademik, idari, sözleşmeli  personel ya da 
+sürekli işçi statüsünde çalışmakta iken emekli olan personeli,
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-03-02T15:22:05+03:00
+   - author: NUKHET
+   - moddate: 2025-11-07T10:53:19+00:00
+   - source: 187230.cleaned.pdf
+   - total_pages: 5
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sürekli işçi statüsünde çalışmakta iken emekli olan personeli,  
+c) Personel: Bursa Uludağ  Üniversitesi  birimlerinde çalışan akademik, idari, sözleşmeli  
+personel ile sürekli işçi statüsündeki personel i, 
+ç) Personel Daire Başkanlığı : Bursa Uludağ  Üniversitesi  Personel Daire Başkanlığını,  
+d) Üniversite: Bursa Uludağ  Üniversitesi ni 
+ifade eder.  
+ 
+İKİNCİ BÖLÜM  
+Kimlik Kartlarının Çeşitleri, Düzenlenmesi , Kullanılması ve İmhası  
+Kimlik kartı  düzenleme yetkisi  
+MADDE 5 - (1) Kimlik kartlarının temin edilmes i, basılması, muhafazası, kaydı ve  
+düzenlenmesi işlem leri Personel Daire Başkanlığı tarafından yerine getirilir.  Birimler de bu 
+işlemlerin yürütülebilmesi için “Birim Kimlik Kartı Sorumlusu” belirlenir.  
+CheckPoint Threat Extraction secured this document 
+ GetOriginal
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-03-02T15:22:05+03:00
+   - author: NUKHET
+   - moddate: 2025-11-07T10:53:19+00:00
+   - source: 187230.cleaned.pdf
+   - total_pages: 5
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  (2) Kimlik kartı baskı işlemlerinde kullanılan ofset baskı kartlar ve diğer sarf malzemeleri 
+Personel Daire Başkanlığı tarafından sağlanır.  
+Kimlik kartlarının özellik leri ve çeşitleri  
+MADDE 6 - (1) Kartlar  üç çeşittir ve görsel tasarım örnekleri EK-1’de gösterilmiştir : 
+a) Personel Kartı:  Bu kart, Üniversiteye bağlı olarak 2914  sayılı Yükseköğretim Personel 
+Kanunu il e 657 sayılı Devlet Memurları Kanun u kapsamında çalışan kadrolu  ve sözleşmeli  personel 
+ile 24.12.2017 tarih ve 30280 sayılı Resmî Gazete’de yayımlanan 696 sayılı K anun Hükmünde 
+Kararname  ve 4857 sayılı İş Kanunu uyarınca  sürekli  işçi statüsünde çalışan personele verilir. İdari 
+ve akademik pe rsonel kartları nın ön yüzünde kurum sicil numarası, emekli sicil numarası, adı, 
+soyadı, kadro unvanı, görev unvanı, görev birimi  ve fotoğrafı yer alır.  Arka yüzünde Türkiye 
+Cumhuriyeti  Kimlik Numarası , doğum yeri, doğum  tarihi ve kart kullanım bilgileri yer alır.
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-03-02T15:22:05+03:00
+   - author: NUKHET
+   - moddate: 2025-11-07T10:53:19+00:00
+   - source: 187230.cleaned.pdf
+   - total_pages: 5
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Cumhuriyeti  Kimlik Numarası , doğum yeri, doğum  tarihi ve kart kullanım bilgileri yer alır.  
+b) Emekli Kartı:  Bu kart, Üniversite den emekli olmuş personele verilir. Kart üzerinde emekli 
+olan personelin adı, soyadı, unvanı, kurum sicil numarası, emekli sicil numarası, emekli olduğu 
+birim, emeklilik tarihi ve fotoğrafı yer alır.  
+c) Kurum Dışı Geçici Personel Kartı:  Bu kart, Ü niversite nin Tıp Fakültesinde  çalışmakta olup 
+kadrosu Sağlık Bakanlığında bulunanlar a, yabancı uyruklu statüsünde görev yapan araştırma 
+görevlileri ne, Teknoloji Geliştirme Bölgesi (ULUTEK -TEKNOPARK) ve Üniversite Teknoloji 
+Transfer Of isinde (ULUDAĞ -TTO) çalışanlar ile Üniversite ye geçici görevlendirme ile gelenlere 
+verilir. Kart üzerinde sıra numarası yer alır.  
+Kimlik  kartlarının verilmesi  
+MADDE 7 - (1) İlk defa veya yeniden kimlik kartı düzenl enebilmes i için bu Yönergenin 8 
+inci maddesinde belirtilen usul ve esaslar çerçevesinde ilgili  birim veya kişiler tarafından kartın
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-03-02T15:22:05+03:00
+   - author: NUKHET
+   - moddate: 2025-11-07T10:53:19+00:00
+   - source: 187230.cleaned.pdf
+   - total_pages: 5
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+talep edilmesi gerek ir. Aksi takdirde kimlik kartı düzenlenmez . 
+(2) Kimlik basım sistemi içerisindeki fotoğraf ve/veya kişisel bilgileri eksik olan la ile bu 
+Yönerge ile kendisine kart verilmesi öngörülmemiş kişilere  kimlik kartı düzenlenmez.  
+(3) Kimlik kartı , aşağıda belirtilen esaslar çerçevesinde ilk defa veya belirli hallerle sınırlı 
+olmak kaydıyla yeniden düzenleme biçiminde v erilir:  
+a) Kimlik kartlarının ilk defa verilmesi:  Personel Daire Başkanlığı , Üniversitede kadrolu 
+olarak görev yapmaya başlayan personel  ile emeklilik işlemleri tamamlananlara ve 6 ncı  maddenin 
+(c) bendinde belirtilenlere kimlik kartlarını düzenleyerek tes lim eder.  
+b) Yeniden kimlik kartı verilmesi:  Bu Yönerge hükümlerine göre verilen kimlik kartlarının , 
+kırılma, kaybolma, çalınma , arızalanma , fiziksel ya da kimyasal etkenler yüzünden  kullanılmaz hale 
+gelme , unvan değişikliği gibi durumlarda ya da kişinin isteği üzerine yenilenmesidir. Yeniden
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-03-02T15:22:05+03:00
+   - author: NUKHET
+   - moddate: 2025-11-07T10:53:19+00:00
+   - source: 187230.cleaned.pdf
+   - total_pages: 5
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+gelme , unvan değişikliği gibi durumlarda ya da kişinin isteği üzerine yenilenmesidir. Yeniden 
+kimlik kartı düzenlenebilmesi için ilgilinin, bu Yönergenin 13 üncü  maddesi nde öngörülen hallerde  
+ücret i yatırması v e Birim sorumlusuna başvur ması gerekir.
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-03-02T15:22:05+03:00
+   - author: NUKHET
+   - moddate: 2025-11-07T10:53:19+00:00
+   - source: 187230.cleaned.pdf
+   - total_pages: 5
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki   
+Kimlik kartı talebinde bulunma  
+MADDE 8 - (1) Kimlik kartı talebinde bulunacak olanlar , tale plerini görev yaptıkları birim 
+sorumlusu üzerinden Personel Daire Başkanlığına ilet ir. 
+(2) Emekli olan personel, emekli kartı almak için Personel Daire Başkanlığına başvurur. Söz 
+konusu başvurunun yapılabilmesi için, Sosyal Güvenlik Kurumu Başkanlığı tarafından ilgilinin 
+emeklilik işlemlerinin tamamlanmış olması şarttır.  
+Kimlik kartı düzenlenmesi ve teslimi  
+MADDE 9 - (1) Basılan kimlik kartları ilgili birim sorumlusuna ya da  kart sahibine imza 
+karşı lığı teslim edilir.  
+Kimlik kartı sahibinin sorumluluğu  
+MADDE 1 0 - (1) K art sahibi, kartın ifade ettiği resmî anlam ve itibar ile taşıdığı özelliklere 
+uygun olarak , gereken özen ve dikkati göstermek le yükümlüdür . Kartı kullanma yetkisi kimin adına 
+düzenlenmişse ona aittir ve sahibinin dışında başka kimseler tarafından kullanılamaz . Kartlar, bir
+
+
+================================================================================
+CHUNK NO: 8
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-03-02T15:22:05+03:00
+   - author: NUKHET
+   - moddate: 2025-11-07T10:53:19+00:00
+   - source: 187230.cleaned.pdf
+   - total_pages: 5
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+başkasına rehin olarak bırakılamaz, ödünç verilemez . Aksi halde  kullandıran ve kullananlar 
+hakkında gerekli idar i ve adli i şlemler tesis edilir . 
+(2) Kart sahibi , kartın fiziksel ya da kimyasal etkilerle kullanılmaz hale gelme mesi, 
+çalınmaması ve kaybolmaması için gerekli özeni göstermek ve gerekli tedbirleri almakla 
+yükümlüdür. Kart sahibi, kartın kaybolması veya çalınması gibi olayları görev yaptığı Birime 
+gecikmeksizin bildirir.  
+Kimlik kartlarının  güvenlik geçiş noktalarında, yetkilendirilmiş kapı girişlerinde ve 
+personel servislerinde kullanılması  
+MADDE 1 1 - (1) Üniversitenin Kampüs girişinde ve çeşitli birimlerinde yer a lan güvenlik 
+noktalarındaki giriş -çıkış turnikelerinde , yemekhane turnikelerinden geçişlerde ve personel 
+servislerinde kimlik kartlarının  kullanımı zorunludur.  
+Kimlik kartlarının yeniden düzenlenmesi durumunda:  
+MADDE 1 2 - (1) Tüm kimlik kartı sahipleri , merkezi yemekhane turnike sistemlerini
+
+
+================================================================================
+CHUNK NO: 9
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-03-02T15:22:05+03:00
+   - author: NUKHET
+   - moddate: 2025-11-07T10:53:19+00:00
+   - source: 187230.cleaned.pdf
+   - total_pages: 5
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+MADDE 1 2 - (1) Tüm kimlik kartı sahipleri , merkezi yemekhane turnike sistemlerini 
+kullanabilir ve buralarda ücretli yemek yiyebilirler. Kimlik kartlarına para yükleme işlemleri, 
+yeme khane girişinde dolum noktası veya sanal pos ile  (Bursa Uludağ Üniversitesi Akıllı Kart Para 
+Yükleme Sayfası)  yapılır . 
+Kimlik kartının kaybolması veya yıpranm ası, personel unvan değişikliği  
+MADDE 1 3 - (1) Üniversite Yönetim Kurulu  her mal î yılbaşında kimlik kartı düzenleme 
+bedeli ni tespit eder.  
+(2) Bu Yönergenin 7 nci maddesinin üçüncü fıkrasının (b) bendinde açıklanan hallerde  ilgili 
+kişi bu Yönergenin 8  inci m addesinde belirtilen usule uygun olarak görev yaptığı Birimin
+
+
+================================================================================
+CHUNK NO: 10
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-03-02T15:22:05+03:00
+   - author: NUKHET
+   - moddate: 2025-11-07T10:53:19+00:00
+   - source: 187230.cleaned.pdf
+   - total_pages: 5
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  sorumlusundan yeniden kimlik  kartı düzenlenmesi talebinde bulunur. Yeni kimlik k artı talep eden 
+personele ait bil giler Personel Daire Başkanlığı na bild irilir.  
+(3) K imlik kartı yenileme talebinde bulunan kişi, kartın yeniden düzenleneceği yıl için 
+belirlenmiş olan ücreti ilan edilen hesap numarasına yatırı r. Üzerinde basılacak yeni kimlik kartı 
+sahibinin bilgilerinin yer aldığı ödemeye dair alındı belgesinin ibraz edilmesi şartıyla y eniden 
+kimlik kartı düzenlenir.  
+(4) Unvan değişikliği ile k imlik kartı üzerinde yer alan bilgilerde değişiklik olması durumunda 
+kişiden yeni kimlik kartı basımı için ücret talep edilmez.  
+(5) Kimlik kartı yeniden basılırk en, kişinin önceki kimlik kartında para bakiyesi mevcut ise, 
+bu para bakiyesi otomatik olarak yeni kimlik kartına aktarılır.  
+Kimlik kartının iade edilmesi:  
+MADDE 1 4 - (1) Kimlik kartı sahibi nin kartın ı yenilemesi , görevinden istifa e tmesi, başka
+
+
+================================================================================
+CHUNK NO: 11
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-03-02T15:22:05+03:00
+   - author: NUKHET
+   - moddate: 2025-11-07T10:53:19+00:00
+   - source: 187230.cleaned.pdf
+   - total_pages: 5
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+MADDE 1 4 - (1) Kimlik kartı sahibi nin kartın ı yenilemesi , görevinden istifa e tmesi, başka 
+bir kuruma  atanması , emekli olması  ya da diğer herhangi surette Üniversitedeki görevinin k alıcı 
+olarak son bulması  hallerinde ; kimlik kartı Personel Daire Başkanlığı tarafından görevinden ayrılış 
+işlemleri sırasında bu Yönergenin ekinde yer alan Kimlik Kartı İade Fo rmu (EK-3) ile birlikte teslim 
+alınır.  
+(2) Kimlik kartı teslim alınmadan hiçbir personelin ilişik ke sme işlemleri gerçekleştirilmez ve 
+yeni kimlik kartı verilmez.  
+(3) İade edilen kimlik kartları bu Yönergenin 15 inci maddesine göre imha edilir . 
+(4) Üniversiteden kartlarını iade etmeden ayrılan ların k artları, ayrıldıkları tarih itibariyle pasif 
+hale getirilir.  
+Kimlik kartının imhası:  
+MADDE 1 5 - (1) Unvan değişikliği, ilişik kesme gibi durumlar da ilgilinin görev yaptığı 
+Birimler kimlik kartları nın iad e edilmesini sağlar ve liste halinde Personel Daire Başkanlığı na 
+gönderilir.
+
+
+================================================================================
+CHUNK NO: 12
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-03-02T15:22:05+03:00
+   - author: NUKHET
+   - moddate: 2025-11-07T10:53:19+00:00
+   - source: 187230.cleaned.pdf
+   - total_pages: 5
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+gönderilir.  
+(2) Yıpranma, kırılma ve benzeri sebeplerle kullanılamaz durumda olan kimlik kartları şahsen 
+Personel Daire Başkanlığına teslim edilir.  
+(3) Kimlik kartları için Personel Daire Başkanlığı bünyesinde bir başkan ile üç üyeden oluşan 
+Kimlik İmha Komisyonu  kurulur. Komisyon, kimlik kartları nın imha edilmesi süreçlerini denetler.  
+Emeklilik ve v efat 
+MADDE 1 6 - (1) Emekli olanlar görev sırasında kullandıkları kartları bu Yönergenin 14 üncü 
+maddesine göre iade ederler. İlgilinin talep etmesi halinde,  Personel Daire Başkanlığınca 6 ncı 
+madde nin (b) bendinde yer alan emekli kart ı düzenlenir ve kişiye verilir.  
+(2) Kimlik  kartı sahibinin vefat etmesi durumunda kimlik kartı geri alınmaz  ancak  hiçbir geçiş 
+sisteminde kullanılama yacak şekilde pasif hale getirilir.
+
+
+================================================================================
+CHUNK NO: 13
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-03-02T15:22:05+03:00
+   - author: NUKHET
+   - moddate: 2025-11-07T10:53:19+00:00
+   - source: 187230.cleaned.pdf
+   - total_pages: 5
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki   
+ÜÇÜNCÜ BÖLÜM  
+Çeşitli ve Son Hükümler  
+Hüküm bulunmayan haller  
+MADDE 1 7 - (1) Bu Yönergede hüküm bulunmayan hallerde ilgili mevzuat hükümleri ile 
+Üniversite Yönetim Kurulu kararları uygulanır.  
+Yürürlük  
+MADDE 1 8 - (1) Bu Yönerge Üniversite Senatosu tarafından kabul edildiği  17 Şubat 2022 
+tarihinden  itibaren yürürlüğe girer.  
+Yürütme  
+MADDE 19 - (1) Bu Yönerge hükümlerini Bursa Uludağ Üniversitesi Rektörü yürütür.
+
+

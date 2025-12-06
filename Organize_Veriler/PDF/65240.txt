@@ -1,0 +1,108 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 8.1.0 (Windows)
+   - creator: Acrobat PDFMaker 8.1 for Word
+   - creationdate: 2009-01-29T12:29:31+02:00
+   - author: User
+   - moddate: 2009-01-29T12:29:33+02:00
+   - sourcemodified: D:20090119081906
+   - title: 1
+   - source: 65240.pdf
+   - total_pages: 1
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+UÜ-SK SU ANAL İZ TALİMATI  
+Dok.Kodu :TA-TYG-23 İlk Yay.Tarihi :01 Ağustos 2007
+ Rev. No : 01 Rev.Tarihi :02 Şubat 2009 Sayfa 
+1 / 1 
+ 
+Bu doküman Uluda ğ Üniversitesi Rektörlü ğü’ne aittir. Baş kalar ı  taraf ından kullan ılamaz ve ço ğalt ılamaz. 1. Amaç:  
+Bu talimat amac ı, UÜ-SK lar ında kullan ılan su kalitesinin (diyaliz makinesinde 
+kullanı lan su dahil) analiz yapt ırılarak kullanı mda olan suyun kontrolünde devaml ılığın 
+sağlanmas ı için standart bir yöntem belirlemektir.   
+   
+2. Kapsam: 
+Bu talimat su analiz faaliyetlerini kapsar.  
+ 
+3. Sorumlular: 
+Bu talimatı n uygulama sorumlulu ğu SUAM Baş hekimliği’ne aittir.    
+ 
+4. İlgili Dokümanlar:  
+ 
+• FR-TYG-48 UÜ-SK Su Analiz Ölçüm Plan ı 
+5.  Dağıtım: 
+UÜ-SK Kalite Yönetim Sistemi Dokümanları nın tümü elektronik ortamda 
+yay ınlanmaktad ır. Bu dokümana, UÜ-SK İ ntranet a ğı üzerindeki kullan ıcılar ulaşabilir.   
+ 
+6. Uygulama: 
+6.1. UÜ-SK Su Analiz Ölçüm Plan ına (FR-TYG-48) göre içme-kullanma suları ndan,
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 8.1.0 (Windows)
+   - creator: Acrobat PDFMaker 8.1 for Word
+   - creationdate: 2009-01-29T12:29:31+02:00
+   - author: User
+   - moddate: 2009-01-29T12:29:33+02:00
+   - sourcemodified: D:20090119081906
+   - title: 1
+   - source: 65240.pdf
+   - total_pages: 1
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+6. Uygulama: 
+6.1. UÜ-SK Su Analiz Ölçüm Plan ına (FR-TYG-48) göre içme-kullanma suları ndan, 
+diyaliz makinesinde kullan ılan sulardan, Atatürk Rahabilitasyon Uygulama ve 
+Araştırma Merkezi’ndeki havuzlardan, SUAM’da s ıcak su sistemlerinden su analizi 
+yap ılmaktad ır. 
+6.2. Su analizini yapan T.C. Sa ğlık Bakanlı ğı Refik Saydam H ıfzısıhha Merkezi  
+Başkanl ığı’nın önerdi ği‚ numune alma talimat ı doğ rultusunda‚ Su Analizi Ölçüm 
+Planı ’nda belirlenen yerlerden numune al ınır ve analiz edilece ği kuruma gönderilir. 
+6.3. Su analiz sonuçları  Enfeksiyon Kontrol Komitesi taraf ından değerlendirilir. Olumsuz 
+sonuç al ındığı takdirde gerekli düzeltici ve önleyici faaliyetler Enfeksiyon Kontrol 
+Komitesi tarafı ndan yap ılarak, üst yönetime sunulur. Bir ay içinde tekrar su analizi 
+yaptı rılıp sonuçlar kontrol edilir.  
+ 
+7. Gözden Geçirme ve Onaylama:  
+ 
+Süreç sahibinin gözden geçirmesi:  
+ Yönetim temsilcisinin gözden geçirmesi:  Yönetimin onay ı:
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 8.1.0 (Windows)
+   - creator: Acrobat PDFMaker 8.1 for Word
+   - creationdate: 2009-01-29T12:29:31+02:00
+   - author: User
+   - moddate: 2009-01-29T12:29:33+02:00
+   - sourcemodified: D:20090119081906
+   - title: 1
+   - source: 65240.pdf
+   - total_pages: 1
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Süreç sahibinin gözden geçirmesi:  
+ Yönetim temsilcisinin gözden geçirmesi:  Yönetimin onay ı: 
+                                                                  :  —————————               Tarih : —————————
+
+

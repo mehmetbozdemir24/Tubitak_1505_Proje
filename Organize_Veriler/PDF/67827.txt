@@ -1,0 +1,147 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Office Word 2007
+   - creator: Microsoft® Office Word 2007
+   - creationdate: 2013-02-04T09:44:07+02:00
+   - title: 0 Einleitung, Registrierung und Änderung
+   - author: zeynep kahveci
+   - moddate: 2013-02-04T09:44:25+02:00
+   - source: 67827.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+TALİMATLAR   
+Doküman Adı:  Kağıt Kesim Makineleri   Kullanım Talimatı  
+Doküman Kodu  : 
+ RIT-TA-BSM -25 İlk YayınTarihi:  
+30.01.2007  Revizyon No:  
+02 Revizyon Tarihi:  
+31.01.20 13 Sayfa  
+ 1 / 2 
+ 
+© 2013 Bu doküman Uludağ Üniversitesi Rektörlüğü’ne aittir. Başkaları tarafından kullanılamaz ve çoğaltılamaz  
+ 
+1. Amaç: Bu talimatın amacı, Kağıt Kesim Makinalarının standartlara uygun ve güvenli bir 
+şekilde çalıştırılmasını sağlamaktır.  
+ 
+2. Kapsam: Bu talimat Kağıt Kesim Makinalarının kullanımını kapsamaktadır . 
+ 
+3. Sorumlular: Kağıt Kesim Makinalarının kullanıcıları, yar dımcı elemanları.  
+ 
+4. Uygulama:   
+ 
+4.1. Her türlü emniyet tedbirleri alındığından emin olunduktan sonra makineyi çalıştır.  
+4.2. Makinanın sorumlusu, yardımcı personel ve bölüm sorumlusunun haricinde herhangi bir 
+şekilde yetkili olmayan kişilerin makinayı kulla nması kesinlikle yasaktır.  
+4.3. Makine çalışır durumda iken kullanıcılar veya sorumlular makinalarının başından 
+ayrılmayacaklardır.
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Office Word 2007
+   - creator: Microsoft® Office Word 2007
+   - creationdate: 2013-02-04T09:44:07+02:00
+   - title: 0 Einleitung, Registrierung und Änderung
+   - author: zeynep kahveci
+   - moddate: 2013-02-04T09:44:25+02:00
+   - source: 67827.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ayrılmayacaklardır.  
+4.4. Basımevi İş Takip Sistemi’ nde kağıt kesim  bölümü nde yer alan bilgiler dikkate alınarak  
+işin adeti, işin kullanılacağı k ağıt cinsi ve ebadı dikkate alınarak kesim yapılacaktır.  
+4.5. Bıçağın kesim ağzı köreldiği durumlarda yeni bıçak değiştirildikten sonra kesim 
+yapılacaktır. Kesinlikle ağzı körelmiş bıçakla işlem yapılmayacaktır.  
+4.6. Haftanın son iş günü rutin bakım yapıla cak, her ayın son iş günü genel bir bakım 
+yapılacaktır. Bakımlarda ve makine temizliklerinde kesinlikle sağlık ve güvenlik 
+kurallarına uyulacak, gerekli tedbirler alınmadan makine bakımı ve temizliği 
+yapılmayacaktır.  
+4.7. Makine temizliğinde alkol haricinde başka kimyasal temizleyiciler kullanılmayacaktır.  
+4.8. Kağıt kesme makinasının bakımları “Makine Bakım Planında (RİT -FR-BSM -12)”na 
+kaydedilir.  
+4.9. Çalışanlar mesai bitiminde bütün mak ineleri şartellerinden kapatacaklar dır. Çalışma 
+alanlarında ışıkların ve  camlar ın kapatılmasından, çalışma alanlarının genel
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Office Word 2007
+   - creator: Microsoft® Office Word 2007
+   - creationdate: 2013-02-04T09:44:07+02:00
+   - title: 0 Einleitung, Registrierung und Änderung
+   - author: zeynep kahveci
+   - moddate: 2013-02-04T09:44:25+02:00
+   - source: 67827.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+alanlarında ışıkların ve  camlar ın kapatılmasından, çalışma alanlarının genel 
+temizliğinden sorumludurlar.
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Office Word 2007
+   - creator: Microsoft® Office Word 2007
+   - creationdate: 2013-02-04T09:44:07+02:00
+   - title: 0 Einleitung, Registrierung und Änderung
+   - author: zeynep kahveci
+   - moddate: 2013-02-04T09:44:25+02:00
+   - source: 67827.pdf
+   - total_pages: 2
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+TALİMATLAR   
+Doküman Adı:  Kağıt Kesim Makineleri   Kullanım Talimatı  
+Doküman Kodu  : 
+ RIT-TA-BSM -25 İlk YayınTarihi:  
+30.01.2007  Revizyon No:  
+02 Revizyon Tarihi:  
+31.01.20 13 Sayfa  
+ 2 / 2 
+ 
+© 2013 Bu doküman Uludağ Üniversitesi Rektörlüğü’ne aittir. Başkaları tarafından kullanılamaz ve çoğaltılamaz  
+ 
+5. Gözden Geçirme ve Onaylama:  
+ 
+ 
+ 
+ 
+Ana Süreç Sahibi:      
+Ümit KORBEK     Tarih  
+Basımevi Müdürü     30.01.2013  
+ 
+ 
+ 
+ 
+Yönetimin onayı:      
+Prof.Dr.İrfan KARAGÖZ    Tarih  
+Yönetim Temsilcisi     31.01.2013
+
+

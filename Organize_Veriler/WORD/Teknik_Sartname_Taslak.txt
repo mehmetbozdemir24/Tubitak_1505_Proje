@@ -1,0 +1,98 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - source: Teknik_Sartname_Taslak.docx
+   - file_type: word
+   - permission: editor
+--------------------------------------------------------------------------------
+[İÇERİK]
+Mobil Uygulama Teknik Şartnamesi (Taslak v0.4)
+DURUM: TASLAK (DRAFT) - HENÜZ ONAYLANMADI
+1. Proje Kapsamı ve Amacı
+Bu teknik şartname, şirketin yeni e-ticaret mobil uygulamasının (iOS ve Android) geliştirilmesi süreçlerini kapsar. Döküman şu an taslak aşamasındadır ve teknik ekipten gelecek geri bildirimlerle (feedback) revize edilecektir. Amaç, kullanıcı dostu, hızlı ve güvenli bir alışveriş deneyimi sunmaktır.
+2. Teknik Gereksinimler
+Uygulama, React Native framework'ü kullanılarak geliştirilecektir. Backend servisi olarak mevcut REST API kullanılacaktır. Ancak API tarafında eksik endpoint'ler bulunmaktadır, bunlar aşağıda listelenmiştir. Tasarım ekibi henüz Dark Mode tasarımlarını teslim etmemiştir, bu kısım beklemededir.
+3. Modül Geliştirme Takvimi
+4. Eksiklikler ve Notlar
+- Ödeme gateway entegrasyonu için bankadan test kartları bekleniyor.
+- Push notification servisi için Firebase yapılandırması yapılmalı.
+- Bu döküman Cuma gününe kadar revize edilip onaya sunulacaktır.
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - source: Teknik_Sartname_Taslak.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 1
+   - permission: editor
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Teknik_Sartname_Taslak.docx > TABLO_1
+SATIR: 1
+İÇERİK:
+Modül Adı: Login Ekranı
+Sorumlu Ekip: Frontend A
+Geliştirme Durumu: Tamamlandı
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - source: Teknik_Sartname_Taslak.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 2
+   - permission: editor
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Teknik_Sartname_Taslak.docx > TABLO_1
+SATIR: 2
+İÇERİK:
+Modül Adı: Ödeme Sayfası
+Sorumlu Ekip: Backend B
+Geliştirme Durumu: Devam Ediyor
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - source: Teknik_Sartname_Taslak.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 3
+   - permission: editor
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Teknik_Sartname_Taslak.docx > TABLO_1
+SATIR: 3
+İÇERİK:
+Modül Adı: Profil Ayarları
+Sorumlu Ekip: Frontend A
+Geliştirme Durumu: Test Bekliyor
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - source: Teknik_Sartname_Taslak.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 4
+   - permission: editor
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Teknik_Sartname_Taslak.docx > TABLO_1
+SATIR: 4
+İÇERİK:
+Modül Adı: Bildirim Sistemi
+Sorumlu Ekip: Backend A
+Geliştirme Durumu: Planlanıyor
+
+

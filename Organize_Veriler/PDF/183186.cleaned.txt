@@ -1,0 +1,1578 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+1 Senato Karar Eki   BURSA ULUDAĞ ÜNİVERSİTESİ  
+YETKİ DEVRİ VE İMZA YETKİLERİ YÖNERGESİ  
+ 
+ 
+BİRİNCİ BÖLÜM  
+Amaç, Kapsam, Dayanak ve Tanımlar  
+ 
+ 
+Amaç  
+MADDE 1 - (1) Bu Yönergenin amacı; Bursa Uludağ Üniversitesinin  görev ve sorumluluğu 
+altında bulunan hizmetlerde, imzaya yetkili makamları belirlemek, yetki kullanımını ilke ve usullere 
+bağlamak, görev ve sorumlulukların paylaşılarak yerine getirilmesini sağlamak, sunulan hizmetleri 
+ve iş akışını hızlandırarak bürokra tik işlemleri sadeleştirmek ve bu çerçevede hizmette verimlilik ve 
+etkinliği arttırmaktır.  
+Kapsam  
+MADDE 2 - (1) Bu Yönerge, 4/11/1981 tarihli ve 2547 sayılı Yükseköğretim Kanunu, 
+14/7/1965 tarihli ve 657  sayılı Devlet Memurları Kanunu ve ilgili diğer mevzuatlar uyarınca, Bursa 
+Uludağ  Üniversitesi  ve bağlı  birimlerinde  görev  alan yetkililer  ile diğer  personel  tarafından  elektronik 
+ve diğer  ortamlarda  yapılacak  yazışmalarda  ve yürütülecek  işlemlerde,  paraf  ve imza  yetkisi  kullanma
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+şekil ve şartları ile diğer hususları  kapsar.  
+Dayanak  
+MADDE 3 - (1) Bu Yönerge, 2547 sayılı Yükseköğretim Kanununun 13 üncü ve 57 nci 
+maddeleri, 2914 sayılı Yükseköğretim Personel Kanunu, 657 sayılı Devlet Memurları Kanunu,  5018 
+sayılı Kamu Mali Yönetimi ve Kontrol Kanunu, 4734 sayılı Kamu İhale Kanunu, 4735 sayılı Kamu 
+İhale Sözleşmeleri Kanunu, 2886 sayılı Devlet İhale Kanunu, 6245 sayılı Harcırah Kanunu, 5070 
+sayılı Elektronik İmza Kanunu, 4982 sayılı Bilgi Edinme Hakkı Kanunu, 3 071 sayılı Dilekçe 
+Hakkının  Kullanılmasına  Dair Kanun,  4857  sayılı  İş Kanunu,  6698  sayılı  Kişisel  Verilerin  Korunması 
+Kanunu, 124 sayılı Yükseköğretim Üst Kuruluşları İle Yükseköğretim Kurumlarının İdari Teşkilatı 
+Hakkında Kanun Hükmünde Kararname, 10/6/20 20 tarih ve 31151 sayı ile Resmî Gazete’de 
+yayımlanan Resmi Yazışmalarda Uygulanacak Usul ve Esaslar Hakkında Yönetmelik, 
+Yükseköğretim  Üst Kuruluşları  ve Yükseköğretim  Kurumları  Saklama  Süreli  Standart  Dosya  Planına
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ve Elektronik Kamu Bilgi Yönetimi Siste mine dayanılarak  hazırlanmıştır.  
+ 
+Tanımlar  
+MADDE 4 - (1) Bu Yönergenin uygulamasında;  
+CheckPoint Threat Extraction secured this document 
+ GetOriginal
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+2 Senato Karar Eki   a) Akademik birim amiri: Enstitü Müdürleri, Fakülte Dekanları ile Konservatuar, 
+Yüksekokul, Meslek Yüksekokul ve Merkez  Müdürlerini,  
+b) Akademik ve idari birimler: Bursa Uludağ Üniversitesine bağlı, Enstitü, Fakülte, 
+Yüksekokul, Devlet Konservatuarı, Meslek Yüksekokulları, Merkezler, Rektörlüğe Bağlı Bölüm 
+Başkanlıkları, İç Denetim Birimi, Genel Sekreterlik, Daire Başka nlıkları, Hukuk Müşavirliği, Döner 
+Sermaye İşletme Müdürlüğü, Hastane Başmüdürlüğü ile Rektörlüğe bağlı diğer idari  birimleri,  
+c) Anabilim/Anasanat Dalı Başkanı: Bursa Uludağ Üniversitesi akademik birimlerine bağlı 
+Anabilim/Anasanat Dalı  Başkanlarını,  
+ç) Bölü m Başkanı: Bursa Uludağ Üniversitesi akademik birimlerine bağlı Bölüm 
+Başkanlarını,  
+d) Bursa Uludağ Üniversitesi Doküman Otomasyon Sistemi (UDOS): Bursa Uludağ 
+Üniversitesinde kullanılan elektronik yazışma sistemini,  
+e) Daire Başkanı: Bursa Uludağ Üniversitesi D aire Başkanlarını,
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+e) Daire Başkanı: Bursa Uludağ Üniversitesi D aire Başkanlarını,  
+f) Dekan: Bursa Uludağ Üniversitesi Fakülte  Dekanlarını,  
+g) Diğer personel: İmza yetkisi olmamakla birlikte yazının hazırlanması ve paraflanması 
+sürecinden sorumlu Bursa Uludağ Üniversitesi  personelini,  
+ğ) Enstitü Müdürü: Bursa Uludağ Üniversitesi Enstitü Müdürlerini,  
+h) E-İmza: 5070 sayılı Elektronik İmza Kanunu uyarınca atılan imzayı, 
+ı) Genel Sekreter: Bursa Uludağ Üniversitesi Genel  Sekreterini,  
+i) Genel Sekreter Yardımcısı: Bursa Uludağ Üniversitesi Genel Sekreter  Yardımcılarını,  
+j) Hukuk Müşaviri: Bursa Uludağ Üniversitesi Hukuk  Müşavirini,  
+k) İç Denetçi: Bursa Uludağ Üniversitesi İç  Denetçilerini,  
+l) İdari Birim Amiri: 124 sayılı Kanun Hükmünde Kararname ile belirtilen; Genel Sekreteri, 
+Genel Sekreterliğe bağlı Genel Sekreter Yardımcılarını, Da ire Başkanlarını, Hukuk Müşavirini, 
+Döner Sermaye İşletme Müdürünü, Hastane Başmüdürünü, müdürlük düzeyindeki idari birim
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Döner Sermaye İşletme Müdürünü, Hastane Başmüdürünü, müdürlük düzeyindeki idari birim 
+Müdürlerini, Eğitim -Öğretim Birimlerinde ise Enstitü/Fakülte/Konservatuar/Yüksekokul/Meslek 
+Yüksekokulu  Sekreterini,  
+m) Konservatuar, Yük sekokul, Meslek Yüksekokulu Müdürleri: Bursa Uludağ Üniversitesi 
+Konservatuar, Yüksekokul ve Meslek Yüksekokulu  Müdürlerini,  
+n) Koordinatör: Kalite, Bilimsel Araştırma Projeleri Koordinasyon Birimi (BAP), Öğretim 
+Elemanı Yetiştirme Programı (ÖYP), Erasmus, Fa rabi, Mevlana, Bologna, Uluslararası Akademik 
+İlişkiler (UİAK), İş Sağlığı ve Güvenliği (İSG), Meslek Yüksekokulları (MEYOK), Engelli  Öğrenci
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+3 Senato Karar Eki   Birimi, Spor, Hukuk, Yurtdışından veya Yabancı Uyruklu Öğrenci Sınavı (ULUYÖS) ve İç Kontrol 
+Koordinatörlerini,  
+o) Merkez Müdürü: Bursa Uludağ Üniversitesine bağlı Merkez  Müdürlerini,  
+ö) Program Başkanı: Bursa Uludağ Üniversitesi akademik birimlerine bağlı Program 
+Başkanlarını,  
+p) Rektör/Rektörlük: Bursa Uludağ Üniversitesi  Rektörünü/Rektörlüğünü,  
+r) Rektö rlüğe Bağlı Bölüm Başkanı: Bursa Uludağ Üniversitesi Rektörlüğüne Bağlı Bölüm 
+Başkanlarını,  
+s) Rektör Yardımcısı: Bursa Uludağ Üniversitesi Rektör Yardımcılarını, 
+ş) Üniversite: Bursa Uludağ  Üniversitesini,  
+t) Senato: Bursa Uludağ Üniversitesi Senatosunu,  
+u) Yetkil i: Rektör, Rektör Yardımcıları, Enstitü Müdürleri, Fakülte Dekanları, Konservatuar 
+Müdürü, Yüksekokul Müdürleri, Meslek Yüksekokulu Müdürleri, Rektörlüğe Bağlı Bölüm 
+Başkanları, Merkez Müdürleri, Dekan ve Müdür Yardımcıları, Bölüm Başkanları,
+
+
+================================================================================
+CHUNK NO: 8
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Başkanları, Merkez Müdürleri, Dekan ve Müdür Yardımcıları, Bölüm Başkanları, 
+Anabilim/Anas anat Dalı Başkanları, Program Başkanları, Koordinatörleri, İç Denetim Birimi 
+Başkanı, Genel Sekreter, Genel Sekreter Yardımcıları, Daire Başkanları, Hukuk Müşaviri, Döner 
+Sermaye İşletme Müdürü, Hastane Başmüdürü, Muhasebe Yetkilisi, 
+Enstitü/Fakülte/Konser vatuar/Yüksekokul/Meslek Yüksekokulu Sekreterleri ile müdürlük 
+düzeyindeki idari birim  müdürlerini,  
+ü) Yönerge: Bursa Uludağ Üniversitesi İmza Yetkileri ve Yetki Devri Yönergesini,  
+v) Yönetim Kurulu: Bursa Uludağ Üniversitesi Yönetim Kurulunu 
+ifade  eder.  
+İKİNCİ BÖLÜM  
+Yetki Devri, İlkeler, Uygulama Esasları ve Sorumluluk  
+ 
+ 
+Yetkiler ve yetki devri  
+MADDE 5 - (1) Yetkililer, görevlerinin ifası sırasında mevzuatla doğrudan kendilerine 
+verilmiş olan yetkiler ile biriminin faaliyetleriyle ilgili olarak bu Yönergede kendisine devri uygun 
+görülen yetkileri kullanır.
+
+
+================================================================================
+CHUNK NO: 9
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+görülen yetkileri kullanır.  
+(2) Yetkililer yetkilerini, bu Yönergede belirtilen esaslara göre sürekli veya geçici 
+maiyetindeki personele, kendisiyle eşit düzeydeki diğer yetkili amirlere veya bir üst makama 
+devredebilir.
+
+
+================================================================================
+CHUNK NO: 10
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+4 Senato Karar Eki   (3) Yetki  devrinin  yazılı  şekilde  yapılması,  devredilen yetkinin konu ve gerekmekte ise parasal  
+ sınırlarının tereddüde mahal vermeyecek şekilde açıkça gösterilmesi zorunludur. Yetki devrine 
+ilişkin işlemler Rektör veya ilgili Rektör Yardımcısı tarafından onaylandıktan sonra hüküm ifade 
+eder.  
+(4) Yetki devri, yetkiyi devreden amirin sorumluluğunu ortadan kaldırmaz. Devralınan yetki, 
+devreden amirin gözetim ve denetimi altında kullanılır. Devredilen yetkinin kapsamı aynı usulle 
+değiştirileb ilir ya da yetki devri sonlandırılabilir. Rektör gerek gördüğünde, devrettiği yetkilerini 
+yazılı olarak bildirmek suretiyle her zaman uhdesine  alabilir.  
+(4) Rektör tarafından belli bir yetkiliye devredilen yetkiler, Rektör onayı olmadan daha alt 
+kadrodaki başk a bir yetkiliye devredilemez. İmza yetkisini devretmiş olsa dahi Rektörün her  konuda 
+havale, imza ve onay yetkisi  saklıdır.
+
+
+================================================================================
+CHUNK NO: 11
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+havale, imza ve onay yetkisi  saklıdır.  
+(5) Yetki devredilecek akademik ve idari personelin gerekli bilgi, tecrübe ve yeteneğe sahip 
+olması yetkiyi devredenin  sorumluluğundadır . 
+İlkeler ve uygulama esasları  
+MADDE 6 - (1) Bu Yönergenin yerine getirilmesi ile ilgili ilkeler ve uygulama esasları 
+aşağıdaki gibidir:  
+a) Yetkiler, sorumluluk anlayışının gereklerine uygun olarak yerinde, zamanında ve doğru 
+olarak kullanılır. Yetkililer, birimlerince yazılan bütün yazılardan  sorumludur.  
+b) Yazılara  “yerine”  ibaresi  kullanılarak  imza  konulabilmesi  için, yetkili  tarafından  yetki  devri 
+yapılmış ya da vekâlet bırakılmış olması  gerekir.  
+c) İmza yetkisi, devreden makam adına  kullanılır.  
+ç) Yetkililer,  kendi üstlerinin bilmesi gereken konuları takip ve üstlerine bildirmekle 
+yükümlüdür.  
+d) Akademik ve idari birim amirleri, imzaladıkları yazılardaki üstlerinin bilmesi gereken 
+hususları zamanında bildirmekle  yükümlüdür.
+
+
+================================================================================
+CHUNK NO: 12
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+hususları zamanında bildirmekle  yükümlüdür.  
+e) Rektör Üniversiteye bağlı tüm birimler,  Rektör Yardımcıları kendilerine bağlı birimler, 
+Dekanlar Fakülteleri, Müdürler kendisine bağlı Enstitü, Konservatuar, Yüksekokul, Meslek 
+Yüksekokulu, Araştırma Merkezi, Bölüm Başkanları bölümleriyle, Genel Sekreter Üniversite idari 
+birimleri, İç Denetim B irimi Başkanı, Daire Başkanları, Hukuk Müşaviri ve diğer birim Müdürleri 
+ise kendi birimleri ile ilgili olan her türlü konudan  sorumludur.  
+f) İç denetçiler görevleri ile ilgili olarak akademik ve idari birimlerle doğrudan yazışma 
+yapabilir ve gizli de olsa sö zlü ve yazılı her türlü bilgiyi  alabilir.
+
+
+================================================================================
+CHUNK NO: 13
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+5 Senato Karar Eki   g) Hukuk Müşavirliği, 24/3/2016 tarihli ve 6698 sayılı Kişisel Verilerin Korunması 
+Kanununun 4 üncü maddesinin ikinci fıkrasına uygun olmak kaydıyla görevleri ile ilgili olarak 
+akademik ve idari biri mlerle doğrudan yazışma yapabilir.  
+ğ) Gizli yazılar, ilgili mevzuat hükümleri saklı kalmak şartıyla, sadece görevi gereği bilmesi 
+gerekenlere teslim edilir.  
+h) Yazılar, konusuna göre bütün ara kademedeki yetkilinin ve diğer personelin parafı ile 
+imzaya sunulu r. Her kademedeki personel ve birim amiri attığı paraf ve imzadan görev ve yetkisi 
+çerçevesinde  sorumludur.  
+ı) Akademik ve idari hiyerarşi içinde her kademedeki personel, görev ve sorumluluğu 
+kapsamında olan konulara ilişkin yazılar hakkında bilgilendirili r. 
+i) Akademik birim amirleri, ilgili mevzuat ve bu Yönerge ile verilen imza yetkileri 
+kapsamındaki yazılar hariç; Üniversite dışı kurumlarla doğrudan yazışma yapamazlar. Bu türden 
+yazışmalar Rektörlük aracılığı ile  yapılır.
+
+
+================================================================================
+CHUNK NO: 14
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yazışmalar Rektörlük aracılığı ile  yapılır.  
+j) İdari birim amirleri, ilgili mevzuat ve bu Yönerge ile verilen imza yetkileri kapsamındaki 
+yazılar hariç; akademik birimler ve Üniversite dışı kurumlara yapılacak yazışmaları, Rektör veya 
+Rektör Yardımcısının imzası ile  yaparlar.  
+k) Yetkililer kendi aralarında emir niteliği taşımayan yaz ışmalar  yapabilirler.  
+l) Akademik birimler, eğitim -öğretime ilişkin konularda, kendi aralarında doğrudan yazışma 
+yapabilirler.  
+m) Kendilerine vekâlet verilenler, vekâlet veren yetkiliyi yaptığı iş ve işlemler hakkında 
+düzenli şekilde  bilgilendirir.  
+n) Yetkililer, 1 /11/1984 tarihli ve 3071 sayılı Dilekçe Hakkının Kullanılmasına Dair Kanun 
+kapsamındaki yazışmalarda, kendi görev alanlarına giren konularla ilgili başvuruları doğrudan 
+doğruya kabul etmeye, kaydını yaparak konuyu incelemeye, dilekçenin konusu mevcut bir d urumun 
+beyanı veya yasal bir durumun açıklanmasını gerektiren bir durum ise, konu hakkında dilekçe
+
+
+================================================================================
+CHUNK NO: 15
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+beyanı veya yasal bir durumun açıklanmasını gerektiren bir durum ise, konu hakkında dilekçe 
+sahiplerine bu Kanunda belirtilen usule uygun olarak, yazılı şekilde cevap vermekle  sorumludur.  
+o) 09/10/2003 tarihli ve 4982 sayılı Bilgi Edinme Hakkı Kanunu v e ilgili yönetmelik 
+gereğince, Üniversiteye bağlı tüm akademik ve idari birimler, kendilerine yapılacak bilgi edinme 
+başvurularına yasal süresi içinde yanıt verilmesinden, söz konusu başvurulara ilişkin hazırlanacak 
+cevabi yazı ve dokümanların Cumhurbaşkan lığı İletişim Merkezi (CİMER) veya Bursa Uludağ 
+Üniversitesi Doküman Otomasyon Sistemi (UDOS) üzerinden ya da fiziki olarak Üniversite Bilgi 
+Edinme Birimine iletilmesinden  sorumludur.
+
+
+================================================================================
+CHUNK NO: 16
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+6 Senato Karar Eki   ö) Üniversite  ile kurum,  kuruluş  ve kişilerle  yapılacak  protokollere  ilişkin  idari süreçler  Basın 
+Yayın ve Halkla İlişkiler Birimi tarafından yürütülür. Yapılan protokolün bir nüshası ilgili birime 
+gönderilir.  
+p) Akademik ve idari birimler tarafından Senato veya Yönetim Kurulunda görüşülmesi talep 
+edilen  konulara  ilişkin  yazılar,  öncelikle  ilgili  daire 
+başkanlığına/müdürlüğe/komisyona/koordinatörlüğe gönderilir. Bu birimlerce gerekli  
+değerlendirmelerin yapılmasını müteakip, konuya ilişkin yazı ve ekleri toplantı tarihinden en az iki 
+gün önce Genel Sekreterlik -Yazı İşleri Birimine  iletilir.  
+r) Resmi yazı ve belgeler, 10/06/2020 tarihli ve 31151 sayılı Resmî Gazete’de yayımlanan 
+Resmi Y azışmalarda Uygulanacak Usul ve Esaslar Hakkında Yönetmelik ve “Yükseköğretim Üst 
+Kuruluşları ve Yükseköğretim Kurumları Saklama Süreli Standart Dosya Planına” göre oluşturulur.  
+ 
+Sorumluluk
+
+
+================================================================================
+CHUNK NO: 17
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Sorumluluk  
+MADDE 7 - (1) Rektör, Rektör Yardımcıları ve tüm akademik ve idari  birim amirleri bu 
+Yönerge ile kendilerine verilen yetkileri, tam ve doğru olarak kullanılması ile Yönergeye uygun 
+yürütülmesinden sorumludur.  
+(2) Akademik  ve idari birim  amirleri,  resmi  yazışmaların;  “Resmi  Yazışmalarda  Uygulanacak 
+Usul ve Esaslar Hakkında Yö netmelik ve Dosya Planı” ile bu Yönerge hükümlerine uygun olarak 
+yapılmasından, yazıların dosyalanmasından, arşivlenmesinden ve korunmasından  sorumludur.  
+(3) Akademik ve idari birim amirleri ile birimdeki tüm personel, giden ve gelen yazıların 
+ilgililere sürat le ulaştırılması ve tekide mahal verilmeyecek şekilde süratle cevaplandırılmasından 
+sorumludur.  
+(4) Birim yetkilileri ve her kademedeki personel parafladığı veya imzaladığı yazılardan 
+üstlerine karşı  sorumludur.  
+(5) 15/01/2004 tarihli ve 5070 sayılı Elektronik İmza Kanunu hükümleri uyarınca yazıların
+
+
+================================================================================
+CHUNK NO: 18
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(5) 15/01/2004 tarihli ve 5070 sayılı Elektronik İmza Kanunu hükümleri uyarınca yazıların 
+yasal geçerliliğinin olması için tüm yetkililer, yazıları güvenli e -imza ile imzalamakla  yükümlüdür.  
+(6) Akademik ve idari birim amirleri, bilmeleri gereken konular hakkında astları tarafından 
+bilgilendirilir. Gizli kon ular sadece ilgili makamlara bildirilmesi gerektiği kadarıyla  açıklanır.
+
+
+================================================================================
+CHUNK NO: 19
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+7 Senato Karar Eki   ÜÇÜNCÜ BÖLÜM  
+İmza Yetkileri  
+ 
+ 
+Rektör ve diğer yetkililerin imza yetkileri  
+MADDE 8 - (1) Rektör tarafından imzalanacak onay ve yazılar aşağıdaki gibidir:  
+a) İlgili mevzuat gereğince bizzat Rektör tarafından başkanlık edilmesi gereken toplantı ve 
+kurullara ait  kararlar.  
+b) Mevzuat gereğince devredilemeyen ve bizzat Rektör tarafından imzalanması gereken  onay 
+ve yazılar.  
+c) Cumhurbaşkanlığı Özel Kalem Müdürlüğü, Cumhurbaşkanlığına bağlı tüm birimler ve 
+kurullara, Türkiye Büyük Millet Meclisi Başkanlığı ile Başkanlığın birim ve komisyonlarına, 
+Bakanlıklara, Milli Güvenlik Kurulu Genel Sekreterliğine, Yükseköğretim Kurulu Başkanlığına, 
+Üniversitelerarası Kurul Başka nlığına, İç Denetim Koordinasyon Kurulu Başkanlığına, Üniversite 
+Rektörlerine, Büyükelçilik ve Konsolosluklara yazılacak  yazılar.  
+ç) Cumhurbaşkanlığı İdari İşler Başkanlığı ile bakanlıklara sunulan Rektörlük görüş ve 
+tekliflerini içeren yazılar.
+
+
+================================================================================
+CHUNK NO: 20
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+tekliflerini içeren yazılar.  
+d) Vali, Mill etvekili, Büyükşehir Belediye Başkanı, Cumhuriyet Başsavcısı, Adli Yargı 
+Adalet Komisyonu Başkanı, Bölge Adliye Mahkemesi Başkanı, Bölge Adliye Mahkemesi 
+Cumhuriyet Başsavcısı, İdare Mahkemeleri ile Vergi Mahkemeleri Başkanının imzası ile gelen 
+yazılara ve rilen cevabi  yazılar.  
+e) Pasaport ve askerlik işlemleri için Valilik ile yapılan  yazışmalar.  
+f) Kamu İhale Kurumu (KİK), Türkiye İstatistik Kurumu (TÜİK) gibi başkanlıklara yazılan 
+yazılar.  
+g) Diğer üniversitelerden Rektör imzasıyla gelen yazılara verilecek cevabi  yazılar.  
+ğ) İç Denetim Birimince hazırlanan çalışma plan ve programın onayına ilişkin yazılar.  
+h) Asayiş ve güvenlik ile ilgili yapılan  yazışmalar.  
+ı) Üniversiteye yapılan şartlı bağışların kabulü ve bu bağışların ödenek iptal işlemi ile ilgili 
+onaylar.  
+i) Açıktan atama ile ilgili kadro talep  yazıları.  
+j) 2547 sayılı Yükseköğretim Kanunu ile 657 sayılı Devlet Memurları Kanunu kapsamında
+
+
+================================================================================
+CHUNK NO: 21
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+j) 2547 sayılı Yükseköğretim Kanunu ile 657 sayılı Devlet Memurları Kanunu kapsamında 
+yapılan, açıktan ve naklen atama ve ilgili kurumlarından muvafakat isteme ile onay  öncesi yapılması 
+gereken işlemlere ilişkin yazılar ve terfi onayları. (r bendi: 2547 sayılı Yükseköğretim Kanunu ile 
+657 sayılı Devlet Memurları Kanunu kapsamında yapılan açıktan ve naklen atama ile terfi  onayları.)
+
+
+================================================================================
+CHUNK NO: 22
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+8 Senato Karar Eki   k) Üniversite yatırım teklifleri ve yıllık programların uygulanmasına ilişkin  yazılar.  
+l) Üniversite bütçe teklifleri ile yıl içi ekleme, aktarma işlemlerine ilişkin  yazılar.  
+m) 10/12/2003 tarihli ve 5018 sayılı Kamu Mali Yönetimi ve Kontrol Kanunu gereğince üst 
+yönetici yetkisine dayanılarak yapılan  yazışmalar.  
+n) 08/9/1983 tarihli ve 2886 sayılı Devlet İhale Kanununa dayanılarak yapılan kiralama 
+(günlük veya saatlik kiralamalar hariç), satış vb. işlemlerine ilişkin onay ve ihale sürecinde bizzat 
+Rektör tarafından imzalanması gereken  yazılar.  
+o) Rektör Yardımcıları, De kanlar, Enstitü, Konservatuar Müdürleri, Yüksekokul ve Meslek 
+Yüksekokulu Müdürleri ile Rektörlüğe Bağlı Bölüm Başkanları, Genel Sekreter, Genel Sekreter 
+Yardımcıları, İç Denetçi, Hukuk Müşaviri, Daire Başkanları, Döner Sermaye İşletme Müdürü ile 
+Koordinat örlerin yıllık, mazeret ve sağlık izin  onayları.
+
+
+================================================================================
+CHUNK NO: 23
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Koordinat örlerin yıllık, mazeret ve sağlık izin  onayları.  
+ö) Özel kanunlarda belirtilen hususlar saklı kalmak üzere, Üniversite kadrosundaki tüm 
+akademik ve idari tüm personelin görev yerlerinin belirlenmesi, Üniversite içinde yer değiştirme, 
+görevden uzaklaştırma ve göreve iade onayları ile asalet tasdik onayları.  
+p) Üniversite içinde yer değişikliğine ilişkin geçici görevlendirme ile boş bulunan yönetici 
+durumundaki idari kadrolara vekâlet ve tedvir yazıları ile  onayları.  
+r) Akademik ve idari personelin uzun süreli göre vlendirme, sağlık ve aylıklı/aylıksız izin 
+onayları.  
+s) Öğrencilerin yurtdışı kültür ve spor faaliyetleri kapsamında görevlendirme onay yazıları. 
+ş) Diplomaların  imzalanması.  
+t) Fahrî profesörlük belgelerinin  imzalanması.  
+u) 11/10/1983 tarihli 2914 sayılı Yükseköğr etim Personel Kanunu ile 657 sayılı Devlet 
+Memurları Kanununa tabi akademik ve idari personel hakkında inceleme ve soruşturma açılması,
+
+
+================================================================================
+CHUNK NO: 24
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Memurları Kanununa tabi akademik ve idari personel hakkında inceleme ve soruşturma açılması, 
+yürütülmesi ve sonuçlandırılması ile ilgili onay ve  yazılar.  
+ü) Kurum, kuruluş ve kişilerle yapılacak tüm protokoller.  
+v) 657 sayılı Devlet Memurları Kanununa tabi 4/B sözleşmeli personel ile 4857 sayılı İş 
+Kanuna tabi işçilerin yıllık  sözleşmeleri.  
+y) Kişiye özel olarak Rektör adına gelen resmi yazılara verilen cevabi  yazılar.  
+z) Müşterek alan veya mekanlarda toplu öğrenci eylemle ri ile ilgili soruşturma  onayları.  
+(2) Rektör Yardımcıları tarafından imzalanacak onay ve  yazılar ile paraf işlemleri aşağıdaki  
+gibidir:  
+a) Görev  bölümüne  uygun  olarak  Rektörün  imzalayacağı  yazılar  dışında  kalan  onay  ve yazılar.
+
+
+================================================================================
+CHUNK NO: 25
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+9 Senato Karar Eki   b) Rektörün, çeşitli nedenlerle makamında bulunmadığı zamanlarda imzalaması gereken, 
+ancak özellik ve ivediliği nedeniyle gecikmesinde sakınca bulunan  yazılar.  
+c) Rektörün imzasına sunulacak tüm yazıların paraf  edilmesi.  
+ç) Önlisans,  lisans  ve lisansüstü  eğitim -öğretimiyl e ilgili  tüm faaliyetler,  Avrupa  Birliği  (AB), 
+Erasmus, Bologna, Mevlana, Farabi ve diğer değişim programlarına ilişkin onay ve  yazılar.  
+d) Personelin sendikalara üye olma ve üyelikten çekilme isteklerine ilişkin  yazılar.  
+e) Öğrencilerin yurtiçinde düzenlenen üniversiteler arası spor ve kültür yarışmalarına 
+katılması için verilen onay ve  yazılar.  
+f) Teknik geziler için izin yazıları ve teknik geziler için araç tahsis işlemleri ile ilgili  yazılar.  
+g) Üniversite kültür merkezleri ve salonlarında düzenlenecek etkinlikle r için izin  yazıları.  
+ğ) Kültür merkezlerinin, salonların, spor sahalarının, açık alanların ve stantların kiralama 
+işlemlerine ait onay yazıları.
+
+
+================================================================================
+CHUNK NO: 26
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+işlemlerine ait onay yazıları.  
+h) Araştırma geliştirme (AR -GE) çalışmaları kapsamındaki  yazılar.  
+ı) Koordinatörlüklerin  görev  bölümlerine  uygun  olarak  Rektörün  imzalayacağı  yazılar  dışında 
+kalan onay ve  yazılar.  
+i) Bilimsel Araştırma ve Yayın Etiği Kurulu ile Uluslararası Bilimsel Yayınları Teşvik 
+Programı çalışmaları, Avrupa Birliği araştırma projeleri, bilimsel araştırma projeleri (BAP), diğer 
+uluslararası kaynaklı projeler ve Akademik Teşvik Yönetmeliği ile ilgili onay ve  yazılar.  
+j) Bilgi Edinme Birimi ve Öneri Merkezine yapılan başvurulara verilen cevabi  yazılar.  
+k) Rektör  tarafından  Rektör  Yardımcılarının  imzalaması  uygun  görülen  diğer  onay  ve yazılar.  
+(3) Koordinatörler tarafından imzalanacak yazılar ile paraf işlemleri aşağıdaki  gibidir:  
+a) Koordinatörlüğün faaliyet alanına ilişkin yazıların  paraflanması.  
+b) Koordinatörlüğün bütçe teklifi ve yıllık programın uygulanmasına ilişkin  yazılar.
+
+
+================================================================================
+CHUNK NO: 27
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+b) Koordinatörlüğün bütçe teklifi ve yıllık programın uygulanmasına ilişkin  yazılar.  
+c) Koordinatörlüğ ün diğer taleplerine ilişkin yazılar.  
+(4) İç Denetim  Birimi  Başkanı  tarafından  imzalanacak  yazılar  ile paraf  işlemleri  aşağıdaki  
+gibidir:  
+a) Bursa   Uludağ   Üniversitesi  İç Denetim   Birim   Yönergesinde   belirlenen  esaslar  
+çerçevesindeki yazılar.  
+b) Rektör tarafından verilen diğer görevlere ilişkin  yazılar.  
+(5) Genel  Sekreter  tarafından  imzalanacak  onay  ve yazılar  ile paraf  işlemleri  aşağıdaki  gibidir:  
+a) Raportör sıfatıyla, Senato ve Yönetim Kurulu tarafından alınan  kararlar.  
+b) Senato ve Yönetim Kurulu tarafından al ınan kararların ilgili akademik ve idari birimlere 
+gönderilmesine ilişkin yazılar.
+
+
+================================================================================
+CHUNK NO: 28
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 9
+   - page_label: 10
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+10 Senato Karar Eki   c) Üniversiteye  kurum  içi veya  dışından  gelen  yazıların  konusuna  göre ilgili  birimlere  dağıtımı 
+ile ilgili yazılar.  
+ç) Rektörlük Makamına sunulacak onay yazılarının “uygun görüşle arzına” ilişkin yazıların 
+imzalanması ya da paraflanması,  
+d) Genel Sekreterlik idari personelinin yıllık, mazeret ve sağlık izin  onayları.  
+e) Üst disiplin amiri tarafından inceleme ve soruşturmanın açılmamış olması şartıyla; Genel 
+Sekreterliğe  bağlı  idari birimlerde  657 sayılı  Devlet  Memurları  Kanunu  kapsamında  çalışan  personel 
+hakkında inceleme ve soruşturma açılması, yürütülmesi ve sonuçlandırılması ile ilgili  yazılar.  
+f) Mevzuat gereğince Genel Sekreter tarafından imzalanacak  yazıla r. 
+g) 4982 sayılı Bilgi Edinme Hakkı Kanunu kapsamı dışındaki başvuru dilekçelerine verilen 
+cevaplar ile bilgi ve belge istemleri hakkındaki  yazılar.  
+ğ) Genel Sekreterliğe bağlı idari birimler arasında koordinasyonunun sağlanması ve hizmet
+
+
+================================================================================
+CHUNK NO: 29
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 9
+   - page_label: 10
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ğ) Genel Sekreterliğe bağlı idari birimler arasında koordinasyonunun sağlanması ve hizmet 
+akışının düzenlemesine ilişkin yazılar.  
+h) Rektör ve Rektör Yardımcılarının imzalayacakları yazıların  parafı.  
+ı) 5018 sayılı Kamu Mali Yönetimi ve Kontrol Kanunu, 4734 sayılı Kamu İhale Kanunu ve 
+4735 sayılı Kamu İhale Sözleşmeleri Kanunu ve 2886 sayılı Devlet İhale K anunu gereğince yetkisi 
+kapsamında olan işlemlere ilişkin onay ve yazılar.  
+i) İl dışı ve merkez ilçeler dışındaki ilçelere araç ve sürücü görevlendirme onay ve  yazıları.  
+j) Bu Yönergede yetki devri yapılmamış konulardaki  yazılar.  
+k) Üniversite personelinin kimlik kartlarının  imzalanması.  
+l) Mevzuat gereğince oluşturulan komisyon ve kurullar tarafından alınan ve bizzat Genel 
+Sekreter tarafından imzalanması gereken  kararlar.  
+m) Rektör tarafından, Genel Sekreterin imzalaması uygun görülen diğer onay ve  yazılar.  
+(6) Genel  Sekret er Yardımcısı  tarafından  imzalanacak  yazılar  ile paraf  işlemleri  aşağıdaki
+
+
+================================================================================
+CHUNK NO: 30
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 9
+   - page_label: 10
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+gibidir:  
+a) Rektör,  Rektör  Yardımcıları  ve Genel  Sekreter  tarafından  verilen  görevlere  ilişkin  yazıların  
+paraflanması.  
+b) Genel Sekreterin devredeceği görevlere ilişkin yazıların paraf veya  imzası.  
+(7) Daire  Başkanları,  Hukuk  Müşaviri,  Döner  Sermaye  İşletme  Müdürü,  Hastane  Başmüdürü, 
+Muhasebe  Yetkilisi  ve müdürlük  düzeyindeki  idari birimlerin  Müdürleri  tarafından  imzalanacak  onay 
+ve yazılar aşağıdaki  gibidir:  
+a) Daire Başkanları için ortak hükümler aşağıdaki  gibidir:
+
+
+================================================================================
+CHUNK NO: 31
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+11 Senato Karar Eki   1) Yeni bir hak ve yükümlülük doğurmayan, talimat niteliği taşımayan, bilgi alma ve bilgi 
+verme gibi rutin konularda, kendi görev alanı ile ilgili hizmetlere ilişkin diğer daire başkanlıkları ile 
+yapılacak  yazışma lar. 
+2) 5018 sayılı Kamu Mali Yönetimi ve Kontrol Kanunu gereği “Harcama Yetkilisi” ve 
+04/1/2002 tarihli ve 4734 sayılı Kamu İhale Kanunu ile 05/1/2002 tarihli ve 4735 sayılı Kamu İhale 
+Sözleşmeleri Kanunu gereği “İhale Yetkilisi” sıfatıyla yapılacak işlemler e ilişkin  yazılar.  
+3) 10/2/1954 tarihli ve 6245 sayılı Harcırah Kanunu kapsamında yapılacak işlemlere ilişkin 
+yazılar.  
+4) 08/02/2013 tarihli ve 28553 sayılı Resmî Gazete’de yayımlanan Taşınır Mal Yönetmeliği 
+kapsamında yapılacak işlemlere ilişkin  yazılar.  
+5) Daire Başkanlığının bütçe teklifi ve yıllık programların uygulanmasına ilişkin  yazılar.  
+6) Daire Başkanlığı personelinin yıllık, mazeret ve hastalık izni onayları ile görevden ayrılış 
+ve başlama  yazıları.
+
+
+================================================================================
+CHUNK NO: 32
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ve başlama  yazıları.  
+7) Mevzuat gereğince oluşturulan komisyon ve kurullar tarafından alınan ve bizzat Daire 
+Başkanı tarafından imzalanması gereken  kararlar.  
+8) Daire Başkanlığının diğer taleplerine ilişkin yazılar.  
+9) Rektör, Rektör Yardımcısı ve Genel Sekreter tarafından verilen diğer görevlere ilişkin 
+yazılar.  
+b) Yapı İşleri ve Teknik Daire Başkanı tarafından imzalanacak onay ve yazılar  aşağıdaki  
+gibidir:  
+1) Üniversite  kampüs  alanı  içerisinde  ve kapalı  alanlarında  üçüncü  şahıslar  tarafından  
+kullanılan su, doğalgaz, elektrik tüketimlerinin ve santral aracılığıyla yapılan özel telefon görüşme 
+ücretlerinin ilgililere bildirimi ile ilgili yazılar.  
+2) Taşınmaz kiralama ihalesi hazırlık aşamasında ilgili birimler tarafından talep edilen bilgi 
+ve belgelere ilişkin  yazılar.  
+3) Bina bakım onarım, kampüs üst ve alt yapı işlemlerine ilişkin  yazılar.  
+c) Personel Daire Başkanı tarafından imzalanacak onay ve yazılar aşağıdaki gibidir:
+
+
+================================================================================
+CHUNK NO: 33
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+c) Personel Daire Başkanı tarafından imzalanacak onay ve yazılar aşağıdaki gibidir:  
+1) Akademik ve idari personelin derece, kademe ilerlemesi, intibak ve terfi onayları ile 
+yükseklisans, doktora öğrenimi, askerlik ve doğum sonrası ücretsiz izin dönüşü göreve baş lama 
+kararnamelerinin birimlere dağıtım  yazıları.  
+2) Görevde yükselme ve unvan değişikliği sınavı, aday memur eğitim çalışmaları ve hizmet 
+içi eğitim planlanmasına ilişkin duyuru niteliğindeki  yazılar.  
+3) Personel Bilgi Sistemi (personel otomasyonu) ile ilgili d eğişiklik talep  yazıları.
+
+
+================================================================================
+CHUNK NO: 34
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 11
+   - page_label: 12
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+12 Senato Karar Eki   4) Akademik ve idari personelin hizmet belgeleri ile ilgili  yazılar.  
+5) Bilgi ve belge istemi için Hukuk Müşavirliğine gönderilen soruşturma dosyaları ile ilgili 
+yazılar.  
+6) Doçentlik başvurularında Üniversitelerarası Kur ul Başkanlığına sunulmak üzere disiplin 
+durumuna ilişkin  yazılar.  
+ç) İdari ve Mali İşler Daire Başkanı tarafından imzalanacak onay ve yazılar aşağıdaki gibidir:  
+1) 2886 sayılı Devlet İhale Kanunu dayanılarak yapılan taşınmaz kiralama (günlük ve saatlik 
+kiralamalar hariç) satış vb. ihaleleri kapsamındaki idari işlemlere ilişkin  yazılar.  
+2) Yatırım niteliğindeki makine teçhizat taleplerine ilişkin  yazılar.  
+3) Rektörlük birimlerinin menkul mal bakım ve onarım taleplerine ilişkin  yazılar.  
+4) Üniversitenin açık alanlarında bazı bakım -onarım, çevre düzenlemesi ve temizlik 
+hizmetlerinin yapılmasına ilişkin  yazılar.  
+5) Şehir içi araç ve sürücü görevlendirme  onayları.
+
+
+================================================================================
+CHUNK NO: 35
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 11
+   - page_label: 12
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+5) Şehir içi araç ve sürücü görevlendirme  onayları.  
+d) Öğrenci İşleri Daire Başkanı tarafından imzalanacak onay ve yazılar aşağıdaki  gibidir:  
+1) Öğrenci katkı pa yı/öğrenim ücreti tahsili ve iadesi ile ilgili yazılar.  
+2) Öğrenci burs işlemleri ilgili bilgi talep  yazıları.  
+3) Mezun ve kaydı silinen öğrencilere ait diploma, diploma eki ve öğrenci kimlik kartı vb. 
+belgelerin gönderilmesine ilişkin kurum içi yazılar.  
+4) Öğrenci  Otomasyon Sistemi ile ilgili değişiklik talep  yazıları.  
+5) Öğrencilerin, yatay geçiş işlemlerine ait dosyaların birimlerden istenmesi veya 
+gönderilmesine ilişkin yazılar.  
+6) Öğrenci İşleri ve Eğitimi Yürütme Kurulu (ÖYÜK) raportörlüğü kapsamındaki  yazılar.  
+7) Bilimsel araştırma projelerinde (AB, TÜBİTAK, BAP vb.) bursiyer olan öğrencilerin 
+yurtiçi -yurtdışı görevlendirme onay ve  yazıları.  
+e) Sağlık Kültür ve Spor Daire Başkanı tarafından imzalanacak onay ve yazılar  aşağıdaki  
+gibidir:
+
+
+================================================================================
+CHUNK NO: 36
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 11
+   - page_label: 12
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+gibidir:   
+ 
+1) Sağlık, kültür , spor, sosyal hizmetler, beslenme ve barınma işlemlerine ilişkin  yazılar.  
+2) Üniversitede stajyer ve kısmi zamanlı olarak çalıştırılan öğrencilerin sosyal  güvenlik  
+hizmetleri ve ücretlerine ilişkin yazılar.  
+3) Belirli ve  kısa süreli (saatlik veya günlük) olarak kiralan kültür merkezi, spor sahası ve 
+salonu, açık alan ile stant kiralama sözleşmelerinin  imzalanması.  
+4) Öğrenci topluluklarının etkinlik taleplerine ilişkin  yazılar.  
+5) Öğrencilerin rehberlik ve psikolojik danışma me rkezi işlemlerine ilişkin  yazılar.
+
+
+================================================================================
+CHUNK NO: 37
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 12
+   - page_label: 13
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+13 Senato Karar Eki   6) Öğrencilerin, Üniversite yurtlarında barındığını, öğrenci topluluklarına üye olduğunu, 
+üniversitemiz bünyesinde stajyer veya kısmi zamanlı öğrenci olarak çalışmakta olduğunu belirten 
+yazılar.  
+f) Kütüphane ve Dokümantasyon Daire Başkanı tarafından imzalanacak onay ve yazılar 
+aşağıdaki  gibidir:  
+1) Kütüphane ve arşiv hizmetlerine ilişkin yazılar.  
+g) Bilgi İşlem Daire Başkanı tarafından imzalanacak onay ve yazılar aşağıdaki  gibidir:  
+1) Bilgi işlem hizmetlerine ilişkin yazılar.  
+ğ) Strateji  Geliştirme  Daire  Başkanı  tarafından  imzalanacak  onay  ve yazılar  ile paraf  işlemleri 
+aşağıdaki  gibidir:  
+1) 5018 sayılı Kamu Mali Yönetimi ve Kontrol Kanunu gereğince üst yönetici ve harcama 
+yetkililerine bilgi sağlamak üzere düzenlenen görüş yazıları.  
+2) Ön mali kontrol işlemlerine ilişkin görüş  yazıları.  
+3) Ödenek gönderme ve tenkis işlemlerine ilişkin  yazılar.
+
+
+================================================================================
+CHUNK NO: 38
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 12
+   - page_label: 13
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+3) Ödenek gönderme ve tenkis işlemlerine ilişkin  yazılar.  
+4) Hak edişlerden yapılan vergi ve diğer kesintilere ilişkin ilgililerine verilecek  yazılar.  
+5) Gelir ve alacakların tahsil ve takibine ili şkin yazılar.  
+6) Sayıştay sorgu ve ilamlarına ilişkin yazıların  parafı.  
+7) Mali işlemlere ilişkin Sosyal Güvenlik Kurumu İl Müdürlükleri, Vergi Dairesi 
+Müdürlükleri, İcra Dairesi Müdürlükleri ile yapılan  yazışmalar.  
+8) Yılsonu ödenek ihtiyaç ve fazlalıklarının belirlenmesi için harcama birimleri ile yapılan 
+yazışmalar.  
+h) Hukuk Müşaviri tarafından imzalanacak onay ve yazılar aşağıdaki  gibidir:  
+1) Yeni bir hak ve yükümlülük doğurmayan, talimat niteliği taşımayan, bilgi alma ve bilgi 
+verme gibi rutin konularda, kendi gö rev alanı ile ilgili hizmetlere ilişkin diğer daire başkanlıkları ile 
+yapılacak  yazışmalar.  
+2) 5018 sayılı Kamu Mali Yönetimi ve Kontrol Kanunu gereği “Harcama Yetkilisi” sıfatıyla 
+yapılacak işlemlere ilişkin yazılar.
+
+
+================================================================================
+CHUNK NO: 39
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 12
+   - page_label: 13
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yapılacak işlemlere ilişkin yazılar.  
+3) Taşınır Mal Yönetmeliği kapsamında yapıla cak işlemlere ilişkin  yazılar.  
+4) Müşavirlik personelinin yıllık, mazeret ve hastalık izni onayları ile görevden ayrılış ve 
+başlama  yazıları  
+5) Bursa Uludağ Üniversitesi Hukuk Müşavirliği Yönergesinde belirlenen yetkilere ilişkin 
+onay ve  yazılar.  
+6) Müşavirliğin di ğer taleplerine ilişkin  yazılar.
+
+
+================================================================================
+CHUNK NO: 40
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 13
+   - page_label: 14
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+14 Senato Karar Eki   7) Rektör, Rektör Yardımcısı ve Genel Sekreter tarafından verilen diğer görevlere ilişkin 
+yazılar.  
+ı) Döner Sermaye İşletme Müdürü tarafından imzalanacak onay ve yazılar aşağıdaki gibidir:  
+1) Yeni bir hak ve yükümlülük doğurmayan, talimat niteliği taşımayan, bilgi alma ve bilgi 
+verme gibi rutin konularda, kendi görev alanı ile ilgili hizmetlere ilişkin diğer daire başkanlıkları ve 
+birimler ile yapılacak  yazışmalar.  
+2) 5018 sayılı Kamu Mali Yönetimi ve Kontrol Kanunu kapsamında yapılacak işlemlere 
+ilişkin  yazılar.  
+3) Müdürlüğün 2886 sayılı Devlet İhale Kanunu, 4734 sayılı Kamu İhale Kanunu ve 4735 
+sayılı  Kamu  İhale  Sözleşmeleri  Kanunu  kapsamında  yaptığı  mal ve hizmet  alımı  ile yapım  işlemlerine 
+ilişkin  yazılar.  
+4) 6245 sayılı Harcırah Kanunu kapsamında yapılacak işlemlere ilişkin  yazılar.  
+5) Taşınır Mal Yönetmeliği kapsamında yapılacak işlemlere ilişkin  yazılar.
+
+
+================================================================================
+CHUNK NO: 41
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 13
+   - page_label: 14
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+5) Taşınır Mal Yönetmeliği kapsamında yapılacak işlemlere ilişkin  yazılar.  
+6) Müdürlüğün bütçe teklifi ve yıllık programların uygulanmasına ilişkin  yazılar.  
+7) Müdürlük personelinin yıllık, mazeret ve hastalık izni onayları ile görevden ayrılış ve 
+başlama  yazıları.  
+8) Döner sermaye işlemlerine ilişkin  yazılar.  
+9) Mevzuat gereğince oluşturulan komisyon ve kurullar tarafından alınan ve bizzat İşletme 
+Müdürü Başkanı tarafından imzalanması gereken  kararlar. 
+10) Müdürlüğün diğer taleplerine ilişkin  yazılar.  
+11) Rektör veya Rektör Yardımcıları tarafından verilen diğer görevlere ilişkin  yazılar.  
+i) Sağlık Uygulama ve Araştırma Merkezi Bursa Uludağ Üniversite Hastanesi Başmüdürü 
+tarafından imzalanacak onay ve yazılar aşağıdaki gibidir:  
+1) 5018 sayılı Kamu Mali Yönetimi ve Kontrol Kanunu gereği “Harcama Yetkilisi”, 4734 
+sayılı Kamu İhale Kanunu ve 4735 sayılı Kamu İhale Sözleşmeleri Kanunu gereği “İhale Yetkilisi” 
+sıfatıyla yapılacak işlemlere ilişkin  yazılar.
+
+
+================================================================================
+CHUNK NO: 42
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 13
+   - page_label: 14
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sıfatıyla yapılacak işlemlere ilişkin  yazılar.  
+2) Taşınır Mal Yönetmeliği kapsamında yapılacak işlemlere ilişkin yazılar.  
+3) Merkez  personelinin  yıllık,  mazeret  ve hastalık  izni onayları  ile görevden  ayrılış  ve başlama 
+yazıları.  
+4) Merkezin faaliyet alanına ilişkin  yazılar.  
+5) Mevzuat gereğince oluşturulan komisyon ve kurullar tarafından alınan ve bizzat Hastane 
+Başmüdürü tarafından imzalanması gereken  kararlar.  
+6) Merkezin diğer taleplerine ilişkin  yazılar.
+
+
+================================================================================
+CHUNK NO: 43
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 14
+   - page_label: 15
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+15 Senato Karar Eki   7) Rektör veya Rektör Yardımcıları ve Genel Sekreter tarafından verilen diğer görevlere 
+ilişkin  yazıl ar. 
+j) Muhasebe yetkilisi tarafından imzalanacak yazılar aşağıdaki  gibidir:  
+1) Bankalar nezdinde yapılacak iş ve işlemlere ilişkin  yazılar.  
+k) Rektörlüğe bağlı müdürlük düzeyindeki idari birimlerin Müdürleri tarafından  imzalanacak 
+yazılar aşağıdaki gibidir:  
+l) Müdürlüğün faaliyetleri kapsamında hukuki sonuç doğurmayacak ve talimat niteliğinde 
+olmayan  yazılar.  
+2) Genel Sekreter tarafından verilen diğer görevlere ilişkin yazıların parafı veya imzalanması.  
+(8) Enstitü  Müdürleri  ile Fakülte  Dekanları,  Konservatuar/Yükse kokul/Meslek 
+Yüksekokulu/Merkez Müdürleri tarafından imzalanacak onay ve yazılar aşağıdaki  gibidir:  
+a) İlgili mevzuat gereğince bizzat Dekanlar/Müdürler tarafından başkanlık edilmesi gereken 
+toplantı ve kurullara ait  kararlar.  
+b) İlgili mevzuat gereğince bizzat Dekan/Müdür tarafından yapılması gereken öneri ve
+
+
+================================================================================
+CHUNK NO: 44
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 14
+   - page_label: 15
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+b) İlgili mevzuat gereğince bizzat Dekan/Müdür tarafından yapılması gereken öneri ve 
+işlemler ile alınan kararlara ilişkin  yazılar.  
+c) Birimde  görevli  akademik  ve idari personelin  yıllık,  mazeret  ve sağlık  izin onay  ve yazıları. 
+ç) Enstitü/Fakülte/Konservatuar/Yüksekokul/Meslek  Yüksekokulu  yönetim kurulu  
+kararlarının ilgili akademik ve idari birimlere gönderilmesine ilişkin yazılar.  
+d) Üst disiplin amiri tarafından inceleme ve soruşturmanın açılmamış olması şartıyla; 
+birimdeki 2914 sayılı Yükseköğretim Personel Kanunu ile 657 sayılı Devlet Memurları Kanunu 
+kapsamında çalışan personel hakkında inceleme ve soruşturma açılması, yürütülmesi ve 
+sonuçlandırılması ile ilgili  yazılar.  
+e) Merkez Müdürleri hariç, öğrencilerinin işlemiş oldukları disiplin suçlarından dolayı 
+soruşturma  onayları.  
+f) Rektörlük Makamına yazılan  yazılar.  
+g) Sınav ve ders programlarının belirlenmesi ve onaylanmasına ilişkin yazılar. 
+ğ) Kurum içi  yazışmalar.
+
+
+================================================================================
+CHUNK NO: 45
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 14
+   - page_label: 15
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ğ) Kurum içi  yazışmalar.  
+h) Mevzuat gereğince Dekan/Müdürün uhdesinde olmakla birlikte; bu Yönergede yetki devri 
+yapılmamış yazılar ile Dekan/Müdürün imzalam ayı uygun gördüğü diğer onay ve  yazılar.  
+ı) 5018 sayılı Kamu Mali Yönetimi ve Kontrol Kanunu gereği “Harcama Yetkilisi”, 4734 
+sayılı Kamu İhale Kanunu ve 4735 sayılı Kamu İhale Sözleşmeleri Kanunu gereği “İhale Yetkilisi” 
+sıfatıyla yapılacak işlemlere iliş kin yazılar.
+
+
+================================================================================
+CHUNK NO: 46
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 15
+   - page_label: 16
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+16 Senato Karar Eki   i) Enstitünün/Fakültenin/Yüksekokulun/Konservatuarın/Meslek Yüksekokulun ihtiyaçlarına 
+ilişkin talep  yazıları.  
+(9) Enstitü Müdür, Dekan, Konservatuar, Yüksekokul, Meslek Yüksekokulu ve Merkez 
+Müdür Yardımcıları tarafından imzalanaca k onay ve yazılar ile paraf işlemleri aşağıdaki  gibidir:  
+a) Görev  bölümüne  uygun  olarak  Dekan/Müdürün  imzalayacağı  yazılar  dışında  kalan  onay  ve 
+yazılar.  
+b) Çeşitli nedenlerden dolayı Enstitü Müdürünün, Fakülte Dekanının, Konservatuar, 
+Yüksekokul, Meslek Yüksekokulu ve Merkez Müdürünün makamında bulunmadığı zamanlarda 
+Dekan/Müdür tarafından imzalanması gereken, ancak özellik ve ivediliği nedeniyle gecikmesinde 
+sakınca bulunan  yazılar.  
+c) Enstitü Müdürü, Fakülte Dekanı, Konservatuar, Yüksekokul, Meslek Yüksekokulu ve 
+Merkez Müdürü tarafından verilen diğer görevlere ilişkin yazılar.  
+ç) Dekan/Müdür imzasına sunulacak tüm yazıların parafı.
+
+
+================================================================================
+CHUNK NO: 47
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 15
+   - page_label: 16
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ç) Dekan/Müdür imzasına sunulacak tüm yazıların parafı.  
+(10) Rektörlüğe  Bağlı  Bölüm  Başkanları  tarafından  imzalanacak  onay  ve yazılar  aşağıdaki  
+gibidir:  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+gibidir:   
+ 
+a) Rektörlük Makamına yazılan  yazılar.  
+b) Sınav ve ders programlarının belirlenmesi ve onaylanmasına ilişkin  yazılar.  
+c) Öğrenci dilekçelerine verilen cevabi  yazılar.  
+(11) Bölüm Başkanı tarafından imzalanacak onay ve yazılar aşağıdaki  gibidir:  
+a) Dekanlıkla yapılacak  yazışmalar.  
+b) Sınav ve ders programlarının belirlenmesi işlemlerine ilişkin  yazılar.  
+c) Bölüme verilen öğrenci dilekçelerine ilişkin  yazılar.  
+ç) Akademik personelin görev süresinin uzatılmasına ilişkin görüş  yazıları.  
+d) Bölüm öğretim elemanlarının araştırma projelerinin başvuru  onayları.  
+e) Ders beyanı ile ek ders, sınav ve kısmi zamanlı öğrenci puantaj  onayları.  
+f) Bölümün taleplerine ilişkin  yazılar.
+
+
+================================================================================
+CHUNK NO: 48
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 15
+   - page_label: 16
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+f) Bölümün taleplerine ilişkin  yazılar.  
+(12) Anabilim/Anasanat Dalı Başkanı tarafından imzalanacak onay ve yazılar  aşağıdaki  
+ 
+ 
+a) Anabilim /Anasanat Dalının faaliyetleri ile sınav ve ders  programlarının hazırlanmasına  
+ilişkin görüş yazıları.  
+b) Akademik personelin görev süresinin uzatılmasına ilişkin görüş  yazıları.  
+c) Enstitü Anabilim Dalı sıfatı ile Enstitü ile yapılacak yazışmalar. 
+ç) Anabilim/Anasanat Dalına ait diğer  yazılar.
+
+
+================================================================================
+CHUNK NO: 49
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 16
+   - page_label: 17
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+17 Senato Karar Eki   (13) Program Başkanı tarafından imzalanacak onay ve yazılar aşağıdaki  gibidir:  
+a) Programın  faaliyetleri  ile sınav  ve ders programlarının  hazırlanmasına  ilişkin  görüş  yazıları.  
+b) Akademik personelin görev süresinin uzatılmasına ilişkin görüş  yazıları.  
+c) Program Başkanlığına ait diğer  yazılar.  
+(14) Enstitü/Fakülte/Konservatuar/Yüksekokul/Meslek Yüksekokulu Sekreteri tarafından 
+imzalanacak onay ve yazılar ve paraf işlemleri aşağıdaki  gibidi r: 
+a) Kurum içi ve kurum dışından gelen yazıların  havalesi.  
+b) Müdür/Dekan ve yardımcılarının imzalayacakları yazıların paraflanması.  
+c) Raportör sıfatıyla Enstitü/Fakülte/Konservatuar/Yüksekokul ve Meslek Yüksekokulu 
+kurulu, yönetim kurulu ve akademik genel kurul toplantılarında alınan  kararlar.  
+ç) Üst disiplin amirleri tarafından inceleme ve soruşturmanın açılmamış olması şartıyla; 657 
+sayılı  Devlet  Memurları  Kanunu  kapsamında  çalışan  idari personel  hakkında  inceleme  ve soruşturma
+
+
+================================================================================
+CHUNK NO: 50
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 16
+   - page_label: 17
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+açılması, yürütülmesi ve sonuçlandırılması ile ilgili  yazılar.  
+d) Müdür/Dekan tarafından verilen diğer görevlere dair onay ve  yazılar.  
+e) Öğrenci belgesi ve transkriptlerin onay ve  imzalanması.  
+f) 5018  sayılı  Kamu  Mali  Yönetimi  ve Kontrol  Kanunu  kapsamında  yapılacak  işlemlere  ilişkin 
+yazıl ar. 
+g) Müdür/Dekan ve yardımcıları tarafından verilen diğer görevlere ilişkin  yazılar.  
+ 
+ 
+DÖRDÜNCÜ BÖLÜM  
+Çeşitli ve Son Hükümler  
+ 
+ 
+Hüküm bulunmayan haller  
+MADDE 9 - (1) Yönergede hüküm bulunmayan hallerde ilgili mevzuat hükümleri uygulanır.  
+Mevzuatta hüküm olmayan hallerde işlemler Rektörün uygun gördüğü usulde gerçekleştirilir.  
+Yürürlükten kaldırılan mevzuat  
+MADDE 10 - (1) Bu Yönergenin yürürlüğe girdiği tarihte 24 Ocak 2013 tarihinde kabul 
+edilen “Uludağ Üniversitesi Yazışma Kuralları Yönergesi” yürürlükte n kalkar.  
+Yürürlük  
+MADDE 11 - (1) Bu Yönerge Bursa Uludağ Üniversitesi Senatosunda kabul edildiği 27
+
+
+================================================================================
+CHUNK NO: 51
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-02-10T16:10:33+03:00
+   - author: CREA
+   - moddate: 2025-11-07T10:53:23+00:00
+   - source: 183186.cleaned.pdf
+   - total_pages: 17
+   - page: 16
+   - page_label: 17
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Yürürlük  
+MADDE 11 - (1) Bu Yönerge Bursa Uludağ Üniversitesi Senatosunda kabul edildiği 27 
+Ağustos 2021 tarihinden itibaren yürürlüğe girer.  
+Yürütme  
+MADDE 12 - (1) Bu Yönerge hükümlerini Bursa Uludağ Üniversitesi Rektörü yürütür.
+
+

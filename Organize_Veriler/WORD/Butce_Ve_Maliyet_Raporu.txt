@@ -1,0 +1,110 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - source: Butce_Ve_Maliyet_Raporu.docx
+   - file_type: word
+   - permission: manager
+--------------------------------------------------------------------------------
+[İÇERİK]
+2025 Q1 Finansal Maliyet ve Bütçe Raporu
+Yönetici Özeti
+2025 yılının ilk çeyreği, beklenen enflasyon oranlarının üzerinde gerçekleşen maliyet artışlarına sahne olmuştur. Bu rapor, departman bazlı harcamaları, personel maaş yüklerini ve operasyonel giderleri detaylandırmaktadır. Genel müdürlük, maliyet (cost) kalemlerinde %15'lik bir tasarruf tedbiri uygulanmasını talep etmektedir.
+Departman Bazlı Analiz
+Yazılım ve Ar-Ge departmanı, yeni projelerin gerektirdiği lisans maliyetleri nedeniyle bütçeyi aşmıştır. Pazarlama departmanı ise dijital reklam harcamalarını optimize ederek öngörülen bütçenin altında kalmayı başarmıştır. İnsan Kaynakları, işe alım süreçlerindeki dış kaynak kullanımı sebebiyle bütçede sapma yaşamıştır.
+Öngörüler ve Tavsiyeler
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - source: Butce_Ve_Maliyet_Raporu.docx
+   - file_type: word
+   - permission: manager
+--------------------------------------------------------------------------------
+[İÇERİK]
+Öngörüler ve Tavsiyeler
+Önümüzdeki çeyrek için (Q2), döviz kurlarındaki dalgalanmanın lisans maliyetlerine etkisi minimize edilmelidir. Bu kapsamda yıllık peşin ödemeler yerine aylık ödeme planları gözden geçirilecektir. Ayrıca maaş (salary) güncellemeleri Mart ayında tekrar değerlendirilecektir.
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - source: Butce_Ve_Maliyet_Raporu.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 1
+   - permission: manager
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Butce_Ve_Maliyet_Raporu.docx > TABLO_1
+SATIR: 1
+İÇERİK:
+Departman: Yazılım Ekibi
+Personel Sayısı: 12
+Aylık Maliyet: 1.200.000 TL
+Bütçe Durumu: Limit Aşımı
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - source: Butce_Ve_Maliyet_Raporu.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 2
+   - permission: manager
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Butce_Ve_Maliyet_Raporu.docx > TABLO_1
+SATIR: 2
+İÇERİK:
+Departman: Pazarlama
+Personel Sayısı: 5
+Aylık Maliyet: 450.000 TL
+Bütçe Durumu: Uygun
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - source: Butce_Ve_Maliyet_Raporu.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 3
+   - permission: manager
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Butce_Ve_Maliyet_Raporu.docx > TABLO_1
+SATIR: 3
+İÇERİK:
+Departman: İnsan Kaynakları
+Personel Sayısı: 3
+Aylık Maliyet: 200.000 TL
+Bütçe Durumu: Uygun
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - source: Butce_Ve_Maliyet_Raporu.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 4
+   - permission: manager
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Butce_Ve_Maliyet_Raporu.docx > TABLO_1
+SATIR: 4
+İÇERİK:
+Departman: Operasyon
+Personel Sayısı: 8
+Aylık Maliyet: 600.000 TL
+Bütçe Durumu: Riskli
+
+

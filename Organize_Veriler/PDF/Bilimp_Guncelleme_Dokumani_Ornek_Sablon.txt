@@ -1,0 +1,180 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:20:10+03:00
+   - author: Ümit BARULAY
+   - moddate: 2025-11-11T09:20:10+03:00
+   - source: Bilimp_Guncelleme_Dokumani_Ornek_Sablon.pdf
+   - total_pages: 3
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Amaç  ve Kapsam  
+Bu doküman SPL_2 Ürün Teslim Sürecinin bir parçası olarak hazırlanmıştır. Dokümanın amacı, aylık olarak  
+yapılan güncelleme paketleri ile gelen yenilikler hakkında kullanıcıların bilgilendirilmesidir.  
+Güncel  Versiyon  İle Gelen  Yenilikler  
+Ekim  2024  ayı ile birlikte  gelen  geliştirmeler  özet  olarak  aşağıda  yer almaktadır.  
+Bilimp  Web  Geliştirmeleri  
+ 
+1. Proje  Aracında  "Proje  İçe Aktar"  menüsünde  iyileştirmeler  yapıldı.  
+2. Proje  Aracında  iş paketleri  öncül/ardıl  ilişkilerine  göre  tarih  değişiklikleri  düzenlendi.  
+3. Proje  Aracında  Proje  Başlatma  ve Yatırım  Talep  form  sayfalarında  zorunlu  alanlarla  ilgili geliştirme 
+yapıldı. 
+ 
+ 
+Bilimp  Mobil  Geliştirmeleri  
+ 
+1. Mobil  uygulamaya  İletişim  Merkezi  aracı  eklendi.  
+VERSİYON  GÜNCELLEME  Bilimp  Versiyon:  V4.24.09.25
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:20:10+03:00
+   - author: Ümit BARULAY
+   - moddate: 2025-11-11T09:20:10+03:00
+   - source: Bilimp_Guncelleme_Dokumani_Ornek_Sablon.pdf
+   - total_pages: 3
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Bilimp  Web  Geliştirmeleri  
+1. Proje  Aracında  "Proje  İçe Aktar"  menüsünde  iyileştirmeler  yapıldı  
+1.1. Proje  içinde  İlgili İşlemlerdeki  "Proje  İçe Aktar"  etiketi  standart  etiketleme  olması  açısından  "İçe 
+Aktar" olarak değiştirildi.  
+1.2. Proje  İçe Aktar  menüsünde  Aktarım  Şekli  dropdown'ındaki  "Var  olan  projeme  iş paketleri  
+ekleyeceğim" seçeneği " Proje Güncelleyeceğim " olarak değiştirildi. Uyarı verilerek aktarımın 
+yapılması  sağlandı.  Aktarım  yapılınca  hedef  projedeki  tüm iş paketleri,  kaynaklar  ve gerçekleşme  
+verilerinin  silinmesi,  açılmış  görevler  varsa  ilişkilerin  koparılması  ve kaynak  dosyadaki  iş paketlerinin 
+aktarılması sağlandı.  
+ 
+2. Proje  Aracında  iş paketleri  öncül/ardıl  ilişkilerine  göre  tarih  değişiklikleri  düzenlendi  
+2.1. Ardılda  manuel  zamanlama  seçiliyse  öncülün  tarihleri  değiştirildiğinde  ardılda  hiç bir değişiklik 
+olmaması sağlandı.
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:20:10+03:00
+   - author: Ümit BARULAY
+   - moddate: 2025-11-11T09:20:10+03:00
+   - source: Bilimp_Guncelleme_Dokumani_Ornek_Sablon.pdf
+   - total_pages: 3
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+olmaması sağlandı.  
+2.2. Ardılda  otomatik  zamanlama  seçiliyse  tarih  değişiklikleri  için aşağıda  tablolarda  belirtilen 
+güncellemeler yapıldı.  
+ 
+ 
+ 
+İlişki  Türü:  TB 
+(Tamamlandığında  Başlar)   
+  
+Aksiyon  Durum  Yapılacak  
+ 
+ 
+Ardılda  tarih  değişikliği   
+Ardılın  başlangıç  tarihi  öne alındı  Öne alınabiliyor.  Ötelenen  gün kadar  eksi 
+gösteriliyor  (1TB -3 gibi)  (Sınır;  öncülün  başlangıç  
+tarihini  geçemiyor)  
+Ardılın  başlangıç  tarihi  ileri kaydırıldı  İleri kaydırılabiliyor.  Ötelenen  gün kadar  artı 
+gösteriliyor (1TB+3 gibi)
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:20:10+03:00
+   - author: Ümit BARULAY
+   - moddate: 2025-11-11T09:20:10+03:00
+   - source: Bilimp_Guncelleme_Dokumani_Ornek_Sablon.pdf
+   - total_pages: 3
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+İlişki  Türü:  BB 
+(Başladığında  Başlar)   
+  
+Aksiyon  Durum  Yapılacak  
+ 
+Ardılda  tarih  değişikliği  Ardılın  başlangıç  tarihi  öne alındı  Öne alınabiliyor.  Ötelenen  gün kadar  eksi 
+gösteriliyor (1BB -3 gibi)  
+Ardılın  başlangıç  tarihi  ileri kaydırıldı  İleri kaydırılabiliyor.  Ötelenen  gün kadar  artı 
+gösteriliyor (1BB+3 gibi)  
+ 
+ 
+ 
+İlişki  Türü:  TT 
+(Tamamlandığında  
+Tamamlanır)   
+  
+Aksiyon  Durum  Yapılacak  
+ 
+ 
+Ardılda  tarih  değişikliği  Ardılın  bitiş  tarihi  öne alındı  Öne alınabiliyor.  Ötelenen  gün kadar  eksi 
+gösteriliyor (1TT -3 gibi)  
+ 
+Ardılın  bitiş  tarihi  ileri kaydırıldı  İleri kaydırılabiliyor.  Ötelenen  gün kadar  artı 
+gösteriliyor  (1TT+3  gibi)  (gerekmesi  halinde,  ana iş 
+paketinin veya projenin bitiş tarihi de öteleniyor)  
+ 
+ 
+ 
+İlişki  Türü:  BT 
+(Başladığında  Tamamlanır)   
+  
+Aksiyon  Durum  Yapılacak  
+ 
+Ardılda  tarih  değişikliği  Ardılın  bitiş  tarihi  öne alındı  Öne alınabiliyor.  Ötelenen  gün kadar  eksi
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:20:10+03:00
+   - author: Ümit BARULAY
+   - moddate: 2025-11-11T09:20:10+03:00
+   - source: Bilimp_Guncelleme_Dokumani_Ornek_Sablon.pdf
+   - total_pages: 3
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+gösteriliyor (1BT -3 gibi)  
+Ardılın  bitiş  tarihi  ileri kaydırıldı  İleri kaydırılabiliyor.  Ötelenen  gün kadar  artı 
+gösteriliyor (1BT+3 gibi)
+
+
