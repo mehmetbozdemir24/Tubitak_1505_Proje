@@ -1,7 +1,3 @@
-Haklısın, sen direkt **README.md içeriği** olarak yapıştırmak istiyorsun; ben de üstüne bir de ```markdown bloğu koyunca karıştı. Aşağıdaki metni **tamamını** kopyalayıp `README.md` dosyana yapıştırabilirsin:
-
----
-
 # 🚀 TÜBİTAK 1505 - RAG ve Embedding Modülü
 
 Bu proje, **TÜBİTAK 1505** projesi kapsamında geliştirilmiş olup; yapılandırılmamış ve yarı yapılandırılmış verilerin (PDF, Excel, Word vb.) işlenmesi, vektör veritabanına kaydedilmesi ve **Büyük Dil Modelleri (LLM)** ile sorgulanmasını sağlayan **RAG (Retrieval-Augmented Generation)** mimarisini içerir.
