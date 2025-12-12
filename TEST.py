@@ -18,7 +18,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 # --- SEÇİM YAPIN ---
 # "ollama" veya "gemini" yazarak motoru değiştirin.
-LLM_PROVIDER = "gemini"
+LLM_PROVIDER = "ollama"
 
 # Qdrant ve Embedding Ayarları
 QDRANT_URL = "http://localhost:6333"
@@ -63,7 +63,7 @@ llm = None
 if LLM_PROVIDER == "gemini":
     print(f"🤖 LLM Modu: GOOGLE GEMINI ({GEMINI_MODEL_NAME}) hazırlanıyor...")
 
-    os.environ["GOOGLE_API_KEY"] = "AIzaSyDCuhB3_IECnS1krhSVtrxBi6IaulFuKS4"
+    os.environ["GOOGLE_API_KEY"] = ""
 
     llm = ChatGoogleGenerativeAI(
         model=GEMINI_MODEL_NAME,
