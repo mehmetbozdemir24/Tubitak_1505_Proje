@@ -14,7 +14,7 @@ from langchain_core.prompts import ChatPromptTemplate
 QDRANT_URL = "http://localhost:6333"
 COLLECTION_NAME = "Tubitak_Dokumanlar"
 EMBEDDING_MODEL_NAME = "ytu-ce-cosmos/turkish-e5-large"
-LLM_MODEL_NAME = "gemma3:12b"   #gemma3:12b qwen2.5:14b
+LLM_MODEL_NAME = "gemma3:12b"
 
 # Cihaz Seçimi (CUDA/CPU)
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -24,18 +24,14 @@ print(f"⚙️ Çalışma Modu: {device.upper()}")
 # 2. BAĞLANTILAR (Client, Embedding, LLM)
 # ==========================================
 
-# Qdrant Client
 try:
     client = QdrantClient(url=QDRANT_URL)
-    # Bağlantıyı test et
     client.get_collections()
     print("✅ Qdrant bağlantısı başarılı.")
 except Exception as e:
     print(f"❌ Qdrant'a bağlanılamadı: {e}")
-    print("Docker konteynerinin çalıştığından emin olun.")
     exit()
 
-# Embedding Modeli
 print("🧠 Embedding modeli yükleniyor...")
 embeddings = HuggingFaceEmbeddings(
     model_name=EMBEDDING_MODEL_NAME,
@@ -43,7 +39,6 @@ embeddings = HuggingFaceEmbeddings(
     encode_kwargs={"normalize_embeddings": True}
 )
 
-# LLM (Gemma 3)
 print("🤖 LLM (Gemma) hazırlanıyor...")
 llm = OllamaLLM(
     model=LLM_MODEL_NAME,
@@ -59,63 +54,72 @@ llm = OllamaLLM(
 # ==========================================
 
 def get_vector_store():
-    """LangChain uyumlu VectorStore nesnesini döndürür"""
     return QdrantVectorStore(
         client=client,
         collection_name=COLLECTION_NAME,
         embedding=embeddings,
     )
 
-
-def get_context_and_print(query: str, doc_type: str = None):
-    """
-    Veritabanından bilgiyi çeker ve EKRANA YAZDIRIR.
-    """
+# GÜNCELLEME 1: k parametresi eklendi (varsayılan 3)
+def get_context_and_print(query: str, permission: str, doc_type: str = None, k: int = 3):
     vector_store = get_vector_store()
 
-    # Filtreleme Mantığı
-    search_kwargs = {"k": 3}  # En alakalı 3 parçayı getir
+    # 1. FİLTRELERİ HAZIRLA
+    # GÜNCELLEME: k parametresi buraya bağlandı
+    search_kwargs = {"k": k}
+    must_conditions = []
+
+    must_conditions.append(
+        models.FieldCondition(
+            key="metadata.permission",
+            match=models.MatchValue(value=permission)
+        )
+    )
 
     if doc_type:
-        print(f"ℹ️ Filtre uygulanıyor: {doc_type}")
-        filter_condition = models.Filter(
-            must=[
-                models.FieldCondition(
-                    key="metadata.file_type",
-                    match=models.MatchValue(value=doc_type)
-                )
-            ]
+        must_conditions.append(
+            models.FieldCondition(
+                key="metadata.file_type",
+                match=models.MatchValue(value=doc_type)
+            )
         )
-        search_kwargs["filter"] = filter_condition
 
-    # Semantik Arama Yap
+    if must_conditions:
+        search_kwargs["filter"] = models.Filter(must=must_conditions)
+
     docs_with_scores = vector_store.similarity_search_with_score(
         query,
         **search_kwargs
     )
 
-    # Gelen içerikleri birleştir ve YAZDIR
     context_parts = []
 
+    # Eşik Değeri
+    SCORE_THRESHOLD = 0.60
+
     print("\n" + "=" * 50)
-    print("🔍 VEKTÖR VERİTABANINDAN GETİRİLEN CHUNK'LAR")
+    print("🔍 VEKTÖR SONUÇLARI ANALİZİ")
     print("=" * 50)
 
-    if not docs_with_scores:
-        print("❌ Hiçbir eşleşme bulunamadı!")
+    filtered_docs = []
+    for doc, score in docs_with_scores:
+        if score >= SCORE_THRESHOLD:
+            filtered_docs.append((doc, score))
+        else:
+            print(f"⚠️ ELENDİ (Düşük Skor: {score:.4f}) - {doc.metadata.get('source')}")
+
+    # Eğer hiç belge kalmadıysa None dönüyoruz
+    if not filtered_docs:
+        print("❌ Yeterince benzer sonuç bulunamadı (Eşik altı).")
         return None
 
-    for i, (doc, score) in enumerate(docs_with_scores, 1):
-        source = doc.metadata.get("source", "Bilinmiyor")
-        sheet = doc.metadata.get("sheet", "-")
-
+    for i, (doc, score) in enumerate(filtered_docs, 1):
         print(f"\n📄 [CHUNK {i}] (Benzerlik Skoru: {score:.4f})")
-        print(f"   📂 Kaynak: {source}")
-        if sheet != "-": print(f"   📑 Sayfa: {sheet}")
+        print(f"   📂 Kaynak: {doc.metadata.get('source')}")
+        print(f"   🔒 Yetki: {doc.metadata.get('permission')}")
         print("-" * 30)
         print(f"{doc.page_content}")
         print("-" * 30)
-
         context_parts.append(doc.page_content)
 
     return "\n\n---\n\n".join(context_parts)
@@ -125,14 +129,20 @@ def get_context_and_print(query: str, doc_type: str = None):
 # 4. ANA ÇALIŞTIRMA FONKSİYONU
 # ==========================================
 
-def run_rag_pipeline(question: str, doc_type: str = None):
+# GÜNCELLEME 2: k parametresi buraya da eklendi
+def run_rag_pipeline(question: str, permission: str, doc_type: str = None, k: int = 3):
     print(f"\n📥 KULLANICI SORUSU: {question}")
 
-    # 1. Chunkları getir ve yazdır
-    context_text = get_context_and_print(question, doc_type)
+    # 1. Chunkları getir
+    context_text = get_context_and_print(question, permission, doc_type, k)
 
+    # GÜNCELLEME 3: Eğer context yoksa (eşik altındaysa), doğrudan "Bilgim yok" de.
     if not context_text:
-        print("⚠️ Yeterli bilgi bulunamadığı için model çalıştırılmadı.")
+        print("\n" + "=" * 50)
+        print("🤖 SİSTEM CEVABI (Model Çalıştırılmadı)")
+        print("=" * 50)
+        print("\nBilgim yok.\n") # Kullanıcının göreceği cevap
+        print("=" * 50)
         return
 
     # 2. Prompt Hazırla
@@ -166,13 +176,11 @@ def run_rag_pipeline(question: str, doc_type: str = None):
 
 
 # ==========================================
-# 5. TEST ALANI (Burayı Değiştirip Çalıştır)
+# 5. TEST ALANI
 # ==========================================
 if __name__ == "__main__":
-    # BURAYA İSTEDİĞİN SORUYU YAZ
-    soru = "Disiplin kurulu üyeleri kimlerden oluşur ve kim tarafından seçilir?"
 
-    # doc_type="excel" diyerek sadece excelde aratabilirsin,
-    # veya None diyerek hepsinde aratabilirsin.
+    #soru = "Disiplin kurulu üyeleri kimlerden oluşur ve kim tarafından seçilir?"
+    soru = "Disiplin  suç ve cezaları nelerdir?"
 
-    run_rag_pipeline(soru, doc_type="pdf")
+    run_rag_pipeline(soru, permission="user", doc_type="pdf", k=5)
