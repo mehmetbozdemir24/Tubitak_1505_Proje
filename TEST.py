@@ -18,7 +18,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 # --- SEÇİM YAPIN ---
 # "ollama" veya "gemini" yazarak motoru değiştirin.
-LLM_PROVIDER = "ollama"
+LLM_PROVIDER = "ollama"  # veya "gemini"
 
 # Qdrant ve Embedding Ayarları
 QDRANT_URL = "http://localhost:6333"
@@ -160,12 +160,19 @@ def get_context_and_print(query: str, permission: str, doc_type: str = None, k: 
 # ==========================================
 # 5. ANA ÇALIŞTIRMA FONKSİYONU
 # ==========================================
-
+import time
 def run_rag_pipeline(question: str, permission: str, doc_type: str = None, k: int = 3, SCORE_THRESHOLD=0.50):
     print(f"\n📥 KULLANICI SORUSU: {question}")
 
-    # 1. Chunkları getir
+    # 1. Chunkları getir BURASI
+    baslangic = time.perf_counter()
     context_text = get_context_and_print(question, permission, doc_type, k, SCORE_THRESHOLD)
+
+    bitis = time.perf_counter()
+    gecen_sure_ms = (bitis - baslangic) * 1000
+
+    # ".2f" ile virgülden sonra sadece 2 basamak gösteririz
+    print(f"İşlem süresi: {gecen_sure_ms:.2f} ms")
 
     # Context yoksa iptal et
     if not context_text:
@@ -214,72 +221,17 @@ def run_rag_pipeline(question: str, permission: str, doc_type: str = None, k: in
 # ==========================================
 # 6. TEST ALANI
 # ==========================================
+
 if __name__ == "__main__":
-    soru = "Haziran ayında hedef cirosu en fazla olan ilk 2 ürününün toplam hedef cirosu nedir?"
+
+    # Sayacı başlat
+
+    soru = "BAP komisyonu kimlerden oluşur?"
 
     run_rag_pipeline(
         soru,
-        permission="user",
-        doc_type="excel",
+        permission="manager",
+        doc_type="pdf",
         k=5,
         SCORE_THRESHOLD=0.45
     )
-
-
-#%%
-import os
-from langchain_experimental.text_splitter import SemanticChunker
-from langchain_huggingface import HuggingFaceEmbeddings
-
-# 1. MODELİ YÜKLE
-MODEL_NAME = "ytu-ce-cosmos/turkish-e5-large"
-embeddings = HuggingFaceEmbeddings(
-    model_name=MODEL_NAME,
-    model_kwargs={"device": "cpu"},
-    encode_kwargs={"normalize_embeddings": True}
-)
-
-# 2. METİN
-text = """
-Futbol dünyada en çok izlenen spor dalıdır. 
-Maçlar 90 dakika sürer ve iki takımın mücadelesine sahne olur.
-Ofsayt kuralı, oyunun en tartışmalı kurallarından biridir.
-Son Dünya Kupası finali milyonlarca kişi tarafından izlendi.
-Hakem kararları maçın kaderini değiştirebilir.
-
-Şimdi biraz da mutfağa girelim ve güzel bir kek yapalım.
-Önce yumurta ve şekeri köpürene kadar çırpın.
-Ardından un, kabartma tozu ve vanilyayı ekleyip karıştırın.
-Karışımı yağlanmış kalıba döküp 180 derece fırına verin.
-Kürdan testi yaparak pişip pişmediğini kontrol edebilirsiniz.
-Çayın yanında servis yapmanızı öneririm.
-
-Osmanlı İmparatorluğu 1299 yılında Söğüt'te kurulmuştur.
-Fatih Sultan Mehmet 1453 yılında İstanbul'u fethederek çağ açıp çağ kapatmıştır.
-İmparatorluk üç kıtaya yayılarak geniş bir coğrafyaya hükmetmiştir.
-Yavuz Sultan Selim döneminde hazine tam doluluğa ulaşmıştır.
-Tarihçiler bu dönemi yükselme dönemi olarak adlandırır.
-"""
-
-# 3. SEMANTIC CHUNKER AYARLARI (DÜZELTİLDİ)
-# 'percentile' kullanıyoruz ve 95 yapıyoruz.
-# Yani: "Anlamsal farkın en yüksek olduğu %5'lik noktalardan böl."
-text_splitter = SemanticChunker(
-    embeddings,
-    breakpoint_threshold_type="percentile",
-    breakpoint_threshold_amount=80
-)
-
-# 4. PARÇALA
-print("🔪 Metin anlamsal olarak parçalanıyor...")
-docs = text_splitter.create_documents([text])
-
-# Boş chunkları temizleme filtresi
-clean_docs = [d for d in docs if d.page_content.strip() != ""]
-
-print(f"\n✅ SONUÇ: Metin toplam {len(clean_docs)} dolu parçaya bölündü.\n")
-
-for i, doc in enumerate(clean_docs, 1):
-    print(f"--- 📄 CHUNK {i} ---")
-    print(doc.page_content)
-    print("-" * 30)
