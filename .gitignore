@@ -32,4 +32,4 @@ Thumbs.db
 # --- 8. (OPSİYONEL) Büyük Veri Dosyaları ---
 # Eğer .pkl dosyan çok büyükse (100MB+) Github hata verir.
 # Eğer hata alırsan aşağıdaki satırın başındaki # işaretini kaldır.
-# *.pkl
+# *.pkluploads/
