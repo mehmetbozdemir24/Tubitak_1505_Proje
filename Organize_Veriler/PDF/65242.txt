@@ -1,0 +1,244 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 8.1.0 (Windows)
+   - creator: Acrobat PDFMaker 8.1 for Word
+   - creationdate: 2009-01-29T12:30:07+02:00
+   - author: User
+   - moddate: 2009-01-29T12:30:11+02:00
+   - sourcemodified: D:20090115100312
+   - title: 1
+   - source: 65242.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+UÜ-SK MUTFAK ALANLARI TEM İZLİK ve Hİ JYEN TAL İMATI  
+Dok.Kodu :TA-TYG-25 İlk Yay.Tarihi :28 Eylül 2007 
+ Rev. No : 01 Rev.Tarihi :02 Şubat 2009 Sayfa 
+1 / 2 
+ 
+Bu doküman Uluda ğ Üniversitesi Rektörlü ğü’ne aittir. Baş kalar ı  taraf ından kullan ılamaz ve ço ğalt ılamaz. 1. Amaç:  
+Bu talimatı n amac ı mutfak temizli ği ve dezenfeksiyonunda dikkat edilmesi gereken 
+hususları  ve temizliğ in nas ıl yap ılmas ı gerektiğine dair bir yöntem belirlemektir. 
+   
+2. Kapsam: 
+Bu talimat mutfaklardaki bütün alanlar ın ve mutfaklarda bulunan bütün ekipmanlar ın 
+temizlenmesi ve dezenfekte edilmesi faaliyetlerini kapsar.  
+ 
+3. Sorumlular: 
+Bu talimatı n uygulanmas ından yüklenici firma sorumlusu; kontrolünden UÜ-SK Şef 
+Diyet Uzman ı sorumludur.    
+ 
+4. İlgili Dokümanlar:  
+ 
+• YF Temizlik Malzemesi Kullan ım Plan ı 
+• YF Temizlik ve Hijyen Plan ı  
+• YF Temizlik ve Hijyen Kontrol Formu 
+• FR-TYG-37 Mutfak Günlük Temizlik ve Hijyen Formu
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 8.1.0 (Windows)
+   - creator: Acrobat PDFMaker 8.1 for Word
+   - creationdate: 2009-01-29T12:30:07+02:00
+   - author: User
+   - moddate: 2009-01-29T12:30:11+02:00
+   - sourcemodified: D:20090115100312
+   - title: 1
+   - source: 65242.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+• YF Temizlik ve Hijyen Kontrol Formu 
+• FR-TYG-37 Mutfak Günlük Temizlik ve Hijyen Formu  
+• FR-TYG-38 Yemekhane Günlük Temizlik ve Hijyen Kontrol Formu 
+• FR-TYG-39 Yemek Hizmetleri (Mutfak) Tedarikçi Firma Y ıllık Kontrol Formu 
+ 5. Dağıtım: 
+UÜ-SK Kalite Yönetim Sistemi Dokümanları nın tümü elektronik ortamda 
+yay ınlanmaktad ır. Bu dokümana, UÜ-SK İ ntranet a ğı üzerindeki kullan ıcılar ulaşabilir.   
+ 6. Uygulama: 
+6.1. Yüklenici yemek firmas ı tarafı ndan mutfağ a ait bütün alanları n (Mutfakta bulunan 
+bütün üniteler, mutfakta kullan ılan ütün ekipmanlar, so ğuk depolar, g ıda malzemesi 
+depolanan di ğer bütün depolar, mutfakta bulunan ofisler) periyodik olarak nas ıl 
+temizlenece ği ve dezenfekte edilece ği YF Temizlik ve Hijyen Plan ı içinde yer al ır. 
+6.2. Temizlik plan ında belirtilen alanlar ın kimler taraf ından, ne zaman temizlenece ği ve 
+kimler tarafı ndan kontrol edilece ği, YF Temizlik ve Hijyen Plan ı içinde belirtilir.
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 8.1.0 (Windows)
+   - creator: Acrobat PDFMaker 8.1 for Word
+   - creationdate: 2009-01-29T12:30:07+02:00
+   - author: User
+   - moddate: 2009-01-29T12:30:11+02:00
+   - sourcemodified: D:20090115100312
+   - title: 1
+   - source: 65242.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+kimler tarafı ndan kontrol edilece ği, YF Temizlik ve Hijyen Plan ı içinde belirtilir.  
+6.3. YF Temizlik ve Hijyen Plan ı her bir ünitede çal ışanları n görebileceğ i yerde muhafaza 
+edilir.  
+6.4. YF Temizlik ve Hijyen Plan ı’nda belirtilen temizlik ve dezenfeksiyon metotlar ı 
+konusunda personele hizmet içi uygulamal ı eğitim verilir veya konusunda uzman bir 
+kişi taraf ından verilmesi sa ğlanır. 
+6.5. Temizlik ve dezenfeksiyon i şlemini yapmakla sorumlu personel taraf ından her i şlem 
+bitiminde YF Temizlik ve Hijyen Kontrol Formu imzalanı r. 
+6.6. Yüklenici yemek firmas ı sorumlusu tarafı ndan temizlik ve dezenfeksiyon i şlemleri her 
+gün belli periyotlarda kontrol edilir ve kontrol sonunda YF Temizlik ve Hijyen Kontrol 
+Formu imzalan ır. 
+6.7. Kontroller s ıras ında uygun yap ılmayan temizlik i şlemleri yüklenici yemek firması  
+sorumlusu tarafı ndan ilgili personele tekrar yapt ırılır. 
+6.8. Gün sonunda bütün mutfak alanlar ı ve yemekhanenin temizli ği YF Temizlik ve Hijyen
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 8.1.0 (Windows)
+   - creator: Acrobat PDFMaker 8.1 for Word
+   - creationdate: 2009-01-29T12:30:07+02:00
+   - author: User
+   - moddate: 2009-01-29T12:30:11+02:00
+   - sourcemodified: D:20090115100312
+   - title: 1
+   - source: 65242.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+6.8. Gün sonunda bütün mutfak alanlar ı ve yemekhanenin temizli ği YF Temizlik ve Hijyen 
+Kontrol Formu ile firma sorumlusu tarafı ndan kontrol edilir ve dosyalan ır. U.Ü-SK Şef 
+Diyet Uzman ı tüm mutfak ve yemekhane alanlar ını ve personelin temizli ğini YF
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 8.1.0 (Windows)
+   - creator: Acrobat PDFMaker 8.1 for Word
+   - creationdate: 2009-01-29T12:30:07+02:00
+   - author: User
+   - moddate: 2009-01-29T12:30:11+02:00
+   - sourcemodified: D:20090115100312
+   - title: 1
+   - source: 65242.pdf
+   - total_pages: 2
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+UÜ-SK MUTFAK ALANLARI TEM İZLİK ve Hİ JYEN TAL İMATI  
+Dok.Kodu :TA-TYG-25 İlk Yay.Tarihi :28 Eylül 2007 
+ Rev. No : 01 Rev.Tarihi :02 Şubat 2009 Sayfa 
+2 / 2 
+ 
+Bu doküman Uluda ğ Üniversitesi Rektörlü ğü’ne aittir. Baş kalar ı  taraf ından kullan ılamaz ve ço ğalt ılamaz. Temizlik ve Hijyen Kontrol Formu’ndan kontrol eder. Mutfak ve yemekhaneleri günlük 
+olarak Yemekhane Günlük Temizlik ve Hijyen Formu (FR-TYG-38) ve Mutfak 
+Günlük Temizlik ve Hijyen Formu (FR-TYG-37) ile denetler; Yemek Hizmetleri 
+(Mutfak) Tedarikçi Firma Y ıllık Kontrol Formu (FR-TYG-39)  ile son 
+değerlendirmeyi yapar.  
+6.9. Yemekhane Temizli ği, yemekhane temizlik personeli taraf ından sağ lanır ve U.Ü-SK 
+Şef Diyet Uzman ı ve yemekhane kontrol sorumlusu taraf ından 11.00-11.30 ile 15.00-
+16.00 saatleri aras ında kontrolü yap ılır. Ayda birçok amaçl ı yüzey temizleyicisi ile 
+birlikte klima,  petek ve ayd ınlatmalar ın ince temizlikleri yap ılır.
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 8.1.0 (Windows)
+   - creator: Acrobat PDFMaker 8.1 for Word
+   - creationdate: 2009-01-29T12:30:07+02:00
+   - author: User
+   - moddate: 2009-01-29T12:30:11+02:00
+   - sourcemodified: D:20090115100312
+   - title: 1
+   - source: 65242.pdf
+   - total_pages: 2
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+birlikte klima,  petek ve ayd ınlatmalar ın ince temizlikleri yap ılır.   
+6.10. Yemekhane temizli ği, 8.30-11.30 ile 15.00-16.00 saatleri aras ında temizlik personeli 
+tarafı ndan; aşağıda belirtildi ği şekilde yap ılır: 
+• Elektrikli süpürge ve/veya yüzey ıslak ve kuru y ıkama makinesi ile alan temizli ği     
+yap ılır 
+• Toz al ınır, 
+• Camlar kontrol edilir, 
+• Zemin paspaslan ır, mutfak ç ıkışı yağlı bölgeler makineyle y ıkan ır, haftada bir 
+genel y ıkama yap ılır, 
+• Büfe önleri, makine ile y ıkan ır,  
+• Yemekhanede masa ve sandalyelerin günlük temizlikleri yap ılarak düzenli olarak 
+yerleştirilir. 
+6.11. Temizlik ekipmanlar ı ve kimyasalları  mutfak içinde YF Temizlik Malzemesi Kullanı m 
+Planı ’na göre kullan ılır. 
+6.12. Temizlik ekipmanlar ı ve kimyasallar ı mutfak içinde ayr ı bir Temizlik deposunda 
+tutulur. Ekipmanları n tutulacağ ı alanda bütün personelin görebilece ği şekilde 
+Temizlik Deposu yazan bir ibare bulunur.
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 8.1.0 (Windows)
+   - creator: Acrobat PDFMaker 8.1 for Word
+   - creationdate: 2009-01-29T12:30:07+02:00
+   - author: User
+   - moddate: 2009-01-29T12:30:11+02:00
+   - sourcemodified: D:20090115100312
+   - title: 1
+   - source: 65242.pdf
+   - total_pages: 2
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Temizlik Deposu yazan bir ibare bulunur.  
+6.13. Temizlik kimyasalları  hiçbir şekilde diğer gıda malzemeleri ile temas ettirilmez.  
+6.14. Temizlikte kullan ılan ekipmanlar depoya yerle ştirilmeden önce mutlaka temizlenir.  
+6.15. Temizlik malzemelerinin tahta veya ba şka bir süngerimsi yap ıdaki malzemeden 
+olmamas ı sağlanır. 
+ 
+7. Gözden Geçirme ve Onaylama:  
+ 
+Süreç sahibinin gözden geçirmesi:   
+Yönetim temsilcisinin gözden geçirmesi: 
+ Yönetimin onay ı: 
+                                                                  :  —————————               Tarih : —————————
+
+

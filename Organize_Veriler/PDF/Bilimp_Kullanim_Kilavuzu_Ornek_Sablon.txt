@@ -1,0 +1,284 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:11:52+03:00
+   - moddate: 2025-11-11T09:11:52+03:00
+   - source: Bilimp_Kullanim_Kilavuzu_Ornek_Sablon.pdf
+   - total_pages: 9
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+<<BİLİMP  >> 
+Ofis Yönetimi 
+Kullanıcı  El Kitabı  
+ 
+ 
+ 
+ 
+Doküman Kodu  : <<SPL2_Bilimp_OY_KEK>> 
+Sürüm No  : 1 
+Sürüm  Tarihi  : 23.10.2024  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Teracity  Yazılım  Teknolojileri  A.Ş. 
+19 Mayıs  Mah.,  Uğur  Mumcu  Bulvarı  No: 120, 16130  Nilüfer/Bursa 
+Tel: (+90) 222  27 46  Fax: (+90) 224 999 24 47  
+web:  www.teracity.com.tr
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:11:52+03:00
+   - moddate: 2025-11-11T09:11:52+03:00
+   - source: Bilimp_Kullanim_Kilavuzu_Ornek_Sablon.pdf
+   - total_pages: 9
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Kullanıcı  El Kitabı   
+DOKÜMAN  ONAY  BİLGİLERİ  
+ 
+Hazırlayan(lar)  Mehmet Demir   
+Kontrol  Eden(ler)    
+Onaylayanlar  
+Proje  Kalite 
+Sorumlusu    
+Arge  Direktörü  Sezin Kızıl  
+Yönetim  Kurulu 
+Başkanı    
+ 
+ 
+DEĞİŞİKLİK  KAYITLARI  
+ 
+Sürüm  No Sürüm  Nedeni  Bölüm/Sayfa 
+No Sürüm 
+Tarihi
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:11:52+03:00
+   - moddate: 2025-11-11T09:11:52+03:00
+   - source: Bilimp_Kullanim_Kilavuzu_Ornek_Sablon.pdf
+   - total_pages: 9
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Kullanıcı  El Kitabı   
+ 
+ 
+1. Ofis Yönetimi  Kullanım  Kılavuzu  
+Ofis Yönetimi Aracı; paylaşım, tablo, yazı, ortak dokümanları, e -postalarınızı, telefon çağrılarını, kişi 
+ve firma bilgilerini, kargo ve gönderilerinizi yönetmenizi sağlar.  
+ 
+Ofis Yönetimi  altında  bulunan  araçlar  şu şekildedir:  
+• Yazılar  
+• Tablolar  
+• Ortak  Dokümanlar  
+• Notlar  
+• Paylaşımlar  
+• Evrak  Takibi  
+• Gönderiler  
+• Telefon  Çağrıları  
+• Sağlık  Durumu  İzleme
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:11:52+03:00
+   - moddate: 2025-11-11T09:11:52+03:00
+   - source: Bilimp_Kullanim_Kilavuzu_Ornek_Sablon.pdf
+   - total_pages: 9
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Kullanıcı  El Kitabı   
+Yazı Aracı  (Yazılar)  ve Tablo  Aracı  (Tablolar):  
+• Yazı Aracı (Yazılar) ve Tablo Aracı (Tablolar); belgeleri açmayı, yeni belgeler oluşturmayı ve 
+düzenlemeyi  sağlar.  Herhangi  bir belge  programında  bulunan  bütün  fonksiyonlar  bulunmaktadır.  
+• Farklı programlarda oluşturulan belgeler açılabilir veya yazı aracında oluşturulan bir belge farklı 
+programlarda açılabilir.  
+• Kaydedilen  belgeler  bulutta  depolanır.  
+• Belgeler BiMesaj  ve e-posta aracı  ile diğer  kullanıcılara iletilebilir.  
+ 
+ 
+ 
+Tablo  Aracı
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:11:52+03:00
+   - moddate: 2025-11-11T09:11:52+03:00
+   - source: Bilimp_Kullanim_Kilavuzu_Ornek_Sablon.pdf
+   - total_pages: 9
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Kullanıcı  El Kitabı   
+ 
+• Kaydedilen  belge,  Sağ üstte  bulunan  İlet butonu  ile seçilen  kişilere  BiMesaj  aracı  ile iletilebilir.
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:11:52+03:00
+   - moddate: 2025-11-11T09:11:52+03:00
+   - source: Bilimp_Kullanim_Kilavuzu_Ornek_Sablon.pdf
+   - total_pages: 9
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Kullanıcı  El Kitabı   
+Ortak  Dokümanlar  
+ 
+• Ortak  Dokümanlar  aracı;  tüm kurumsal  dokümanların  tek merkezden  kontrol  edilmesine  olanak 
+tanır.  
+• Kategoriler  oluşturulabilir,  farklı  formatlarda  dosyalar  eklenebilir.  
+• Bulutta  depolanan  ortak  dokümanlara  farklı  cihazlardan  da erişilebilir.  
+ 
+• Ortak Dokümanlar aracı  açıldığın gelen ekranda, kullanıcının yetki sahibi olduğu menüler listelenir. 
+Sol üstte bulunan Yeni butonu ile yeni menü oluşturulabilir.  
+ 
+ 
+ 
+• Açılan  menüde,  Ortak  Doküman  sekmesinde  ilgili bilgiler  girilir.  Menünün  Bağlı  Olduğu  Üst Menü 
+boş bırakılır ise  bu menü en üst menü olur.  
+• Ortak  Dokuman  Türleri  arasında  istenen  tür seçilir.  Eğer  buradan  Doküman  türü seçilir  ise açılan 
+listeye Bilimp içinde kaydedilen yazı/tablo veya bilgisayardan çeşitli formatlarda dosyalar 
+yüklenebilir.
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:11:52+03:00
+   - moddate: 2025-11-11T09:11:52+03:00
+   - source: Bilimp_Kullanim_Kilavuzu_Ornek_Sablon.pdf
+   - total_pages: 9
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Kullanıcı  El Kitabı   
+ 
+ 
+ 
+• Hedef  Kitle sekmesinde,  bu menüyü  görebilecek  olan personeller  Kullanıcı,  Pozisyon,  Şube  gibi 
+çeşitli bazlarda seçilir.  
+ 
+ 
+• Ortak Dokümanlar aracında listelenen menülerin solunda yer alan kutu işaretlenip sol üstte 
+bulunan  "Kayda  Git" butonu  ile ilgili menü  açılır.  Buradan  açılan  menünün  içeriği  düzenlenebilir.
+
+
+================================================================================
+CHUNK NO: 8
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:11:52+03:00
+   - moddate: 2025-11-11T09:11:52+03:00
+   - source: Bilimp_Kullanim_Kilavuzu_Ornek_Sablon.pdf
+   - total_pages: 9
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Kullanıcı  El Kitabı   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+• Hedef  kitlenin  içinde  bulunan  kullanıcılar,  ilgili menülerde  bulunan  dokümanları  ana sayfada  sağ 
+tarafta bulunan Ortak Dokümanlar butonuna tıklayarak görüntüleyebilir.
+
+
+================================================================================
+CHUNK NO: 9
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Word 2016
+   - creator: Microsoft® Word 2016
+   - creationdate: 2025-11-11T09:11:52+03:00
+   - moddate: 2025-11-11T09:11:52+03:00
+   - source: Bilimp_Kullanim_Kilavuzu_Ornek_Sablon.pdf
+   - total_pages: 9
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Kullanıcı  El Kitabı   
+Notlar  
+ 
+• Notlar  aracı  ile takip edilmesi  gereken  konularda notlar  alınabilir,  hatırlatıcılar eklenebilir.  
+• Notlar Ofis Yönetimi menüsü altından veya ana sayfada sağ tarafta bulunan Notlar butonuna 
+tıklayarak  açılabilir.  Burada  önceden  oluşturulmuş  notlar  listelenir,  notlar  düzenlenebilir  veya  Yeni 
+butonu ile yeni not oluşturma ekranı açılır.  
+ 
+ 
+ 
+ 
+• Not için bir başlangıç  tarihi  girilir  ise o tarihte  kullanıcıya  hatırlatma  bildirimi  gelir,  periyot  seçilerek 
+belirli aralıklar ile bitiş tarih ine kadar hatırlatma yapılması sağlanabilir.
+
+

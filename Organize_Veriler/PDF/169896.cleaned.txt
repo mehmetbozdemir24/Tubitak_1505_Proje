@@ -1,0 +1,860 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 0
+   - page_label: 1
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  BURSA ULUDAĞ ÜNİVERSİTESİ  
+BİLGİSAYAR, AĞ VE BİLİŞİM KAYNAKLARI  KULLANIM  YÖNERGESİ  
+ 
+ 
+BİRİNCİ BÖLÜM  
+ 
+Amaç, Kapsam, Dayanak ve Tanımlar  
+ 
+Amaç  
+MADDE 1 - (1) Yönergenin amacı, bilimsel gelişmenin zorunlu koşulu olan ve Bursa 
+Uludağ Üniversitesinin ihtiyaç duyduğu bilginin üretilmesi, saklanması, korunması ve 
+paylaşımı sürecinde bilgi ve iletişim kaynaklarının, kullanıcılarımız tarafından etkin ve verimli 
+kullanımını sağlayacak olan kuralları belirlemektir.  
+ 
+Kapsam  
+MADDE 2 - (1) Yönerge hükümleri, Bursa Uluda ğ Üniversitesi akademik ve idari 
+personeli ve öğrencileri ile kendilerine herhangi bir nedenle geçici ve/veya kısıtlı olarak bilişim 
+kaynaklarını kullanma yetkisi verilen paydaş ve ziyaretçileri kapsar.  
+ 
+Dayanak  
+MADDE 3 - (1) Yönerge; 5237 sayılı Türk Ceza Kanunu’nun İkinci Kısmı (Kişilere 
+Karşı Suçlar) Dokuzuncu Bölümü (Özel Hayata ve Hayatın Gizli Alanına Karşı Suçlar),
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 0
+   - page_label: 1
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Karşı Suçlar) Dokuzuncu Bölümü (Özel Hayata ve Hayatın Gizli Alanına Karşı Suçlar), 
+Üçüncü Kısmı (Topluma Karşı Suçlar) Onuncu Bölümü (Bilişim Alanında Suçlar) , 5070 sayılı 
+“Elektronik İmza Kanunu”, 5651 sayılı “İnternet O rtamında Yapılan Yayınların Düzenlenmesi 
+ve Bu Yayınlar Yoluyla İşlenen Suçlarla Mücadele Edilmesi Hakkında Kanun”, 6698 sayılı 
+“Kişisel Verilerin Korunması Kanunu”, 5070 sayılı Elektronik İmza Kanunu, Elektronik İmza 
+Kanununun Uygulanmasına İlişkin Usul v e Esaslar Hakkında Yönetmelik, 2547 sayılı 
+Yükseköğretim Kanununun 12 inci maddesi ile 5018 sayılı Kamu Mali Yönetimi ve Kontrol 
+Kanunu hükümlerinin yanı sıra ULAKBİM Kullanım  Politikasına daya nılarak hazırlanmıştır.  
+ 
+Tanımlar  
+MADDE 4 - (1) Yönerge nin uygulanmasında ; 
+a) BİDB: Bursa Uludağ Üniversitesi Bilgi İşlem Daire Başkanlığını,  
+b) Birimler: Bursa Uludağ Üniversitesi akademik ve idari birimlerini,  
+c) Bölümler: Bursa Uludağ Üniversitesine bağlı fakülte, konservatuvar, yüksekokul
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 0
+   - page_label: 1
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+c) Bölümler: Bursa Uludağ Üniversitesine bağlı fakülte, konservatuvar, yüksekokul 
+ve meslek yüksekokullarındaki bölümleri,  
+ç) Bilişim Kaynakları: Mülkiyet hakları Bursa Uludağ Üniversitesine  ait olan, 
+lisanslanan/kiralanan, kampüsler dahilinde bulunan ve BİDB tarafından kurulup yönetilen her 
+türlü bilgisayar/bilgisayar ağı ve bu ağa bağlanan elektronik cihaz ile diğer donanım, yazılım 
+ve servislerini,  
+d) Bilişim Kaynakları Kullanıcıları: Bilişim kaynaklarını kullanmak üzere, bu 
+kaynaklar üzerinde gerekli yetkilendirme tanımlanarak kimlik doğrulaması ile belirlenen 
+gerçek ve tüzel kişileri,  
+e) DHCP: Ağdaki bilgisayarlara IP ad reslerini ve buna ek olarak değişik parametreleri 
+atamak için kullanılan servisini,  
+f) DNS: Alan Adı Sistemini,  
+g) Eduroam: RADIUS tabanlı altyapı üzerinden 802.1x güvenlik standartlarını 
+kullanarak, eduroam üyesi kurumların kullanıcılarının diğer eğitim kurumla rında da sorunsuzca 
+ağ kullanımını amaçlayan ağ sistemini,
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 0
+   - page_label: 1
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ağ kullanımını amaçlayan ağ sistemini,  
+ğ) E-posta: İnternet üzerinden gönderilen dijital postayı,  
+CheckPoint Threat Extraction secured this document 
+ GetOriginal
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 1
+   - page_label: 2
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  h) IP: İnternet Protokol Numarasını,  
+ı) İndirme:  İnternetten veya herhangi bir uygulamadan kişisel bilgisayarlara yapılan 
+bilgi transferini,  
+i) Kampüs Dışı Kullanıcılar: Üniversite dâhilinde bulunan bilişim kaynaklarını 
+üniversite kampüsleri dışından çeşitli yöntemlerle erişerek kullanan akademik ve idari personel 
+ile öğrenci ya da kullanım hakkı tanınmış kişileri,  
+j) Kampüs Kullanıcıları:  Üniversite  bilişim kaynaklarını, kimlik doğrulaması ile 
+kullanan, Üniversite nin idari yapısı içinde yer alan birimlerde akademik ve idari görevlerde 
+bulunan kadrolu/geçici personel ile öğrenim hayatını sürdürmekte olan tüm öğrencileri,  
+k) KamuSM: Türkiye Bilimsel ve Te knolojik Araştırma Kurumu bünyesinde 
+kurulmuş olan elektronik sertifika hizmet sağlayıcısını,  
+l) MAC: Bir bilgisayar ağında, bir cihazın ağ donanımını tanımaya yarayan protokolü  
+m) Rektörlük: Bursa Uludağ Üniversitesi Rektörlüğünü,
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 1
+   - page_label: 2
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+m) Rektörlük: Bursa Uludağ Üniversitesi Rektörlüğünü,  
+n) UDOS: Bursa Uludağ Üniversites i Doküman Otomasyon Sistemini,  
+o) ULAKBİM:  TUBİTAK’a bağlı bir enstitü olarak kurulan Ulusal Akademik Ağ ve 
+Bilgi Merkezi  
+ö) ULAKNET: Üniversite yerel ağının ba ğlı olduğu “Ulusal Akademik Ağı nı”, 
+p) Üniversite: Bursa Uludağ Üniversitesini,  
+r) Yerel Ağ: Üniversiteye bağlı merkez ve birimlere ait tüm bilişim kaynaklarını 
+birbirine bağlayan internet ağını,  
+s) Ziyaretçi:  Bilişim kaynaklarını, kampüs kullanıcıları ve kampüs dışı kullanıcılar 
+başlığı altında tanımlandığı biçimiyle kullanım hakkına sahip olmayan, sadece genel kullanıma 
+açık web sayfaları ve elektronik liste servisi gibi servisleri ziyaret ederek kullanan  kişi ve 
+kuruluşları,  
+ifade eder.  
+ 
+İKİNCİ BÖLÜM  
+Bilgisayar, Ağ ve Bilişim Kaynakları Kullanım Esasları  
+ 
+Bilişim kaynakları kullanım amacı   
+MADDE 5 - (1) Bilişim kaynaklarının, Üniversitenin bilimsel araştırma, akademik
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 1
+   - page_label: 2
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+MADDE 5 - (1) Bilişim kaynaklarının, Üniversitenin bilimsel araştırma, akademik 
+faaliyetler ve eğitim etkinlikleri ile hizmet sunumu ve yönetsel fonksiyonları için temel önemi 
+olan bilginin üretimi, işlenmesi, depolanması, korunması ve iletişimi için kullanılması esastır.  
+ 
+ULAKNET politikalarına uyma  
+MADDE 6 - (1) Üniversite, bilgisayar ağı ve yerel ağ altyapısının üzerinde  yer aldığı 
+ULAKNET ağının kullanım politikalarına uymakla ve gerekli önlemleri almakla yükümlü 
+olduğundan, birimler ve kullanıcılar ın da aynı kullanım politikalarına uygun davranma ları 
+zorunludur . 
+ 
+Mahremiyetin korunması  
+MADDE 7 - (1) Üniversite bilişim ka ynakları kullanıcıları ağ üzerinden 
+gerçekleştirdikleri veri transferi ile kullanıcı bilgilerinin gizliliğini korumak, kaynağa yönelik 
+tehditleri en aza indirebilmek için risk düzeylerine göre güvenlik önlemlerini almak ve kritik 
+olma düzeyine göre de yedekleme yapmakla yükümlüdürler.  
+ 
+Adil kullanım ve güvenlik
+
+
+================================================================================
+CHUNK NO: 8
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 1
+   - page_label: 2
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+olma düzeyine göre de yedekleme yapmakla yükümlüdürler.  
+ 
+Adil kullanım ve güvenlik  
+MADDE 8 - (1) Üniversite bilişim kaynaklarını kullanıma sunan birimler, kaynakların 
+adil olarak kullanılmasını sağlar ve güvenliği ilgilendiren durumlarda kanıt özelliği 
+taşıyabilecek bilgileri, cihazların IP adresini tespit edecek şekilde tutar.
+
+
+================================================================================
+CHUNK NO: 9
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 2
+   - page_label: 3
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki   
+Birimlerin sorumluluğu  
+MADDE 9 - (1) Üniversite bilişim kaynaklarını kullanıma sunan birimler, bu 
+kaynakların kullanımı ile ilgili sorumluluğu da üstlenmiş sayılırlar.  
+ 
+Kullanım koşullarına uyma yükümlül üğü 
+MADDE 10 - (1) Üniversite bilişim kaynakları, bu kaynaklar kullanılarak oluşturulan 
+ve bu kaynaklar üzerinde barındırılan/kullanılan yazılım, donanım, ağ kaynağı gibi her türlü 
+kaynağın kullanım kuralları  ile izin, kaynak gösterim, telif hakkı, lisans v e ağ kullanımına 
+ilişkin kural ve koşullara uygun olarak kullanılır.  
+ 
+Veri trafiğinin izlenmesi  
+MADDE 11 - (1) Kullanıcılar  yerel ağ ve bilişim kaynaklarını; sistem ya da ağ 
+üzerindeki veri trafiğini izlemek, saklamak, dağıtmak veya transfer ya da tahrip etmek, aşırı 
+bant genişliği kullanmak, kullanıcılara ait giriş kodlarını elde etmeye ve yaymaya çalışmak 
+yerel ağ dahilindeki  ya da haricindeki bir sisteme, ağ kaynağına veya servisine saldırmak 
+amacıyla kullanamaz.
+
+
+================================================================================
+CHUNK NO: 10
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 2
+   - page_label: 3
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+amacıyla kullanamaz.  
+(2) BİDB, gereksiz trafik yaratan ve yerel ağın bilimsel ve akademik etkinlikler 
+anlamında sağlıklı çalışmasını engelleyen uygulamaların kullanımı ile ilgili gerekl i tedbirleri 
+almak adına veri trafiğini izlemekle yükümlüdür.  
+  
+Veri trafiği sorumluluğu  
+MADDE 12 - (1) Tüm birimler ve kullanıcılar ağ trafiği ile ilgili olarak BİDB’den 
+gelecek bildirimlere ve uyarılara uymak zorundadır. BİDB, güvenliği veya sistemin çalışmasını 
+tehdit edebilecek bir problem tespit ettiğinde, kişi ya da alt birimin kimliğinin tespiti için ilgili 
+bölüm ya da birim yönetimi ile durumun gereklerine uygun bir işbirliği yapar. Yönetimlerin 
+yerel ağ yapısından sorumlu bir kişi görevlendirmel eri ve BİDB’ye bu kişiye ait iletişim 
+bilgilerini vermeleri zorunludur.  
+ 
+Kaynakların üçüncü kişilere kullandırılması  
+MADDE 13 - (1) Kullanıcıların şifreleri kişiye özel ve gizlidir. Kişilere verilen kullanıcı
+
+
+================================================================================
+CHUNK NO: 11
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 2
+   - page_label: 3
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+MADDE 13 - (1) Kullanıcıların şifreleri kişiye özel ve gizlidir. Kişilere verilen kullanıcı 
+adı ve şifrelerle yapılan her işlem kullanıcının  kendisi tarafından yapılmış kabul edilir. 
+Üniversite bilişim kaynakları üniversite dışındaki üçüncü kişilere izinsiz ve/veya yetkisiz 
+biçimde kullandırılamaz. Bu kaynakların kullanım amacı dışında üçüncü kişilere 
+kullandırılması durumunda ortaya çıkabilec ek idari ve yasal sonuçlardan kullanıcılar 
+sorumludur.  
+ 
+IP çoğaltma işlemi  
+MADDE 14 - (1) BİDB’nin bilgisi dışında hiçbir birim ve kullanıcı, kendi bünyesinde 
+tek bir bilgisayar arkasında IP çoğaltma işlemi yaparak, birçok makineyi bu bilgisayar 
+üzerinden internete çıkaramaz ve bilgisayarlarına BİDB’nin belirlediği IP grupları dışında IP 
+atayamaz.  
+ 
+DHCP, DNS servisleri  
+MADDE 15 - (1) DNS, DHCP Servisi, BİDB tarafından merkezi olarak sağlanır. Bunun 
+dışında birimler tarafından DNS, DHCP servisi sunulamaz.  
+ 
+Kurumsal e -posta açılması ve kullanım özellikleri
+
+
+================================================================================
+CHUNK NO: 12
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 2
+   - page_label: 3
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Kurumsal e -posta açılması ve kullanım özellikleri  
+MADDE  16- (1) Kurumsal e -posta açılması ve kullanım özellikleri aşağıdaki gibidir:  
+a) Üniversitenin idari yapısı içinde yer alan birimlerde akademik/idari görevlerde
+
+
+================================================================================
+CHUNK NO: 13
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 3
+   - page_label: 4
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  bulunan personel, kuruma ait @uludag.edu.tr u zantılı e -posta hesabı için BİDB’ye şahsen ya 
+da online olarak ileteceği talep formu ile başvurabilir. Şahsen yapılan başvurularda kurumsal 
+kimlik belgesinin ibraz edilmesi, online başvurularda ise formda kişinin çalıştığı birimin 
+yetkilisinin onaylayacağı  kısmın eksiksiz olması gereklidir.  
+b) Ağ ve bilişim kaynaklarının elverdiği imkanlar dahilinde, öğrenciler için de  
+@ogr.uludag.edu.tr uzantılı veya BİDB tarafından belirlenecek farklı uzantılarla e -posta 
+hesapları açılabilir. Öğrenciler için açılan hesaplar da kullanıcı adı olarak öğrenci numarası 
+kullanılır. Öğrenci toplulukları için talep edilen kurumsal hesaplar için, ilgili topluluk başkanı 
+başvuru formunu Sağlık Kültür ve Spor Daire Başkanlığı’na onaylatarak BİDB’ye başvurabilir.  
+c) Ağ ve Bilişim kaynakları nın elverdiği imkanlar dahilinde, Üniversite hastanesinde
+
+
+================================================================================
+CHUNK NO: 14
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 3
+   - page_label: 4
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+c) Ağ ve Bilişim kaynakları nın elverdiği imkanlar dahilinde, Üniversite hastanesinde 
+uzun süreli tedavi gören hastalara ve refakatçilerine; araştırma ve bilimsel faaliyet ile çeşitli 
+değişim anlaşmaları çerçevesinde Üniversiteye geçici olarak gelmiş olan idari personel, 
+akademik per sonel ve öğrencilere; üniversite kampüslerinde görev gereği sürekli bulunmak 
+zorunda olan diğer kamu kurumlarının çalışanlarına süresi BİDB tarafından belirlenecek ve 
+sadece internet erişimi için kullanılabilecek geçici hesaplar açılabilir. Bu hesaplar içi n başvuru 
+sahiplerinden içeriği BİDB tarafından belirlenen ayrı bir talep formu istenir.  
+ç) Akademik/İdari personel ile öğrenciler, kurumsal e -posta hesabındaki kullanıcı adı 
+ve şifrelerini kampüs içinde internete erişmek ve sunulan otomasyon hizmetlerinden 
+yararlanmak için kullanabilirler. Kampüs dışından kampüs ağına bağlanmak için de aynı 
+kullanıcı adı ve şifreler kullanılır.
+
+
+================================================================================
+CHUNK NO: 15
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 3
+   - page_label: 4
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+kullanıcı adı ve şifreler kullanılır.  
+d) Üniversite Yazışma Kuralları Yönergesi içeriğinde yer alan imza yetkilendirmesi 
+doğrultusunda UDOS üzerinde tanımlanan personel, sis teme @uludag.edu.tr uzantılı kurumsal 
+e-posta hesabındaki kullanıcı adı ve şifre bilgileri ile giriş yapabilir.  
+e) Üniversite ile ilişiği süresiz kesilen personelin @uludag.edu.tr uzantılı kurumsal e -
+posta hesapları ve kişisel web sayfaları kapatılabilir.  
+f) Üniversite den emekli olarak ilişiği kesilen personelin @uludag.edu.tr uzantılı 
+kurumsal e -posta hesapları, kullanıcı talebi doğrultusunda kullanıcıya ait özel e -posta 
+hesaplarına yönlendirilerek e -posta alımına açık bırakılabilir.  
+g) 2547 sayılı Yükseköğretim Kanunu ’nun 35 inci madde si ile başka bir üniversitede 
+lisansüstü eğitim görmek üzere görevlendirilen personelin @uludag.edu.tr uzantılı kurumsal e -
+posta hesapları ve kişisel web sayfaları aktif bırakılır.
+
+
+================================================================================
+CHUNK NO: 16
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 3
+   - page_label: 4
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+posta hesapları ve kişisel web sayfaları aktif bırakılır.  
+ğ) Üniversitede öğrenim hayatı devam etmeyen öğrenciler in @ogr.uludag.edu.tr 
+uzantılı kurumsal e -posta hesapları en geç yeni öğrenim dönemi başlangıcında kapatılır.  
+ 
+Birim sayfaları  
+MADDE 17- (1) Birimler ve bölümler internet sayfalarının yürütülmesinden, 
+içeriğinden ve güncel tutulmasından sorumludurlar. İnt ernet sayfası içeriğinde, 5864 sayılı 
+Fikir ve Sanat Eserleri Kanunu ve ilgili diğer mevzuat hükümlerine göre telif haklarını ihlal 
+edici materyal bulundurulamaz.  
+ 
+Zararlı materyal bulundurma  
+MADDE 18 - (1) Kullanıcılar, üniversite içerisindeki kuruma ve/veya şahsa ait 
+taşınabilir ve masaüstü bilgisayarlar ile veri depolama cihazlarında, hukuki açıdan suç teşkil 
+edecek belgeler ile bilgisayar ve ağ güvenliğini yok edebilen, zarar verebilen belge, yazılım ve 
+materyal bulunduramazlar.  
+ 
+İstenmeyen e -postal ar 
+MADDE 19 - (1) Üniversite bilişim kaynakları suç işlemek, genel ahlak ilkelerine aykırı
+
+
+================================================================================
+CHUNK NO: 17
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 3
+   - page_label: 4
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+MADDE 19 - (1) Üniversite bilişim kaynakları suç işlemek, genel ahlak ilkelerine aykırı 
+materyal üretmek, barındırmak, iletmek, siyasi propaganda yapmak, rastgele ve alıcının istemi 
+dışında mesaj (SPAM iletiler) göndermek amacıyla kullanılamaz . Bilimsel, akademik ve idari
+
+
+================================================================================
+CHUNK NO: 18
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 4
+   - page_label: 5
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  iş süreçlerine uygun toplu duyurular Üniversite Genel Sekreterliği veya Basın Halkla İlişkiler 
+Birimi aracılığı ile gönderilebilir. BİDB görev alanına giren konularda teknik bilgilendirme 
+amacıyla toplu e -posta atabilir.  
+ 
+Teçhizat değişimi  
+MADDE 20 - (1) Birimler veya bölümler, binalarında kablolama sistemi, ağ erişim 
+cihazları ve diğer teçhizat üzerinde, gerek yazılım gerekse donanım düzeyinde BİDB’nin sözlü 
+ya da yazılı onayını almadan değişiklik yapamaz. Bir gereksinim ol duğu takdirde, değişiklikler 
+ilgili birimin daha önceden BİDB’ye bildirilmiş teknik sorumlusu tarafından ve BİDB onayı ile 
+gerçekleştirilir.  
+ 
+Beklenmeyen durumlar  
+MADDE 21 - (1) Kullanım ve kullanıcı tanımlarının ye tersiz kaldığı ya da bu Yönerge de 
+düzenle nmemiş durumlarda BİDB Rektörlük tarafından verilen talimatlara göre hareket eder.  
+ 
+Yasal sorumluluk reddi  
+MADDE 22 - (1) “ Sorumluluğun Reddi (Sorumsuzluk/Disclaimer)” metinleri, bu
+
+
+================================================================================
+CHUNK NO: 19
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 4
+   - page_label: 5
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+MADDE 22 - (1) “ Sorumluluğun Reddi (Sorumsuzluk/Disclaimer)” metinleri, bu 
+Yönergede düzenlenen kullanım esaslarına aykırı kullanımların kabul edilebi lir olduğunu 
+göstermez.  
+ 
+ÜÇÜNCÜ BÖLÜM  
+Bilgisayar, Ağ ve Bilişim Kaynakları Kullanımına İlişkin  
+Hak, Yetki, Sorumluluk ve Yaptırımlar  
+ 
+Yetki ve sorumluluk beyanı  
+MADDE 23 - (1) Üniversite de internet ağının kurulum ve işletmesine ait yetki ve 
+sorumluluk BİDB’ye aittir. BİDB, akademik, idari, eğitim ve araştırma amaçları doğrultusunda 
+bölüm ve birimlerin bilişim kaynaklarına ulaşabilmelerini sağlamak üzere oluşturulan altyapıyı 
+kurmak, işletmek ve yenilemekle sorumludur.  
+(2) BİDB, Üniversite bilişim kaynak ları kullanımı hakkında genel kuralları belirler. Bu 
+kurallar değişen mevzuat ve/veya teknolojik yenilikler dikkate alınarak güncellenir. 
+Kullanıcıların yapılan değişiklikler hakkında düzenli şekilde bilgilenmeleri sağlanır.  
+ 
+Lisanslı yazılım kullanım esas  ve usulleri
+
+
+================================================================================
+CHUNK NO: 20
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 4
+   - page_label: 5
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Lisanslı yazılım kullanım esas  ve usulleri  
+MADDE 24 - (1) Lisanslı yazılımların telif ve lisans politikası ile kullanım usulleri 
+aşağıdaki gibidir:  
+a) Üniversite bünyesinde kullanılan yazılımlar lisans anlaşmaları çerçevesinde edinilir. 
+Üniversite personelinin kullanmakta olduğu diğer yazılımların lisans sorumluluğu ve/veya 
+lisanslarının olmamasından kaynaklanan yükümlülük ve sorumluluk kendilerine aittir.  
+b) Telif hakkı ve patentlerle ilgili kanunların şekline ve ruhuna uymak ve böylelikle de 
+fikri hakları ko rumak ve pekiştirmek Üniver sitenin temel önceliklerindendir. Kullanıcılar, 
+Üniversite mülkiyetindeki her türlü bilişim kaynağını bu öncelik çerçevesinde kullanacaklarını 
+kabul ederler.  
+c) Aksi bildirilmediği sürece kullanıcılar, bütün yazılımların telif hakları mevzuatı 
+çerçevesinde  korunduğunu bilir ve kabul ederler.  
+ç) Üniversite bünyesinde kullanımda olan yazılımlar ortadan kaldırılamaz, koruma
+
+
+================================================================================
+CHUNK NO: 21
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 4
+   - page_label: 5
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ç) Üniversite bünyesinde kullanımda olan yazılımlar ortadan kaldırılamaz, koruma 
+amacıyla yedekleme uygulaması dışında lisanslı yazılımın kopyaları alınamaz.  
+d) Üniversite bünyesinde kullanılacak olan yazılımların BİDB tarafından üretilmesi 
+veya temin edilmesi esastır. Birimler ihtiyaç halinde kendi bünyelerinde bir yazılım üretmeden 
+veya satın alma yoluna gitmeden önce BİDB’nin görüşünü ve/veya onayını almak
+
+
+================================================================================
+CHUNK NO: 22
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 5
+   - page_label: 6
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  zorundadırlar. Birimler kendi bünyelerinde ürettikleri ya da s atın aldıkları tüm yazılımları, 
+bunları kullanmaya başlamadan önce BİDB’ye yazılı olarak bildirme leri zorunludur . 
+ 
+Kullanıma ilişkin yetki ve sorumluluklar  
+MADDE 25 - (1) Kullanıma ilişkin yetki ve sorumluluklar şunlardır:  
+a) Üniversitenin temel amaçları doğrultusunda, üniversite adına BİDB, bilişim 
+kaynaklarını kullanıcılarına sunar, bu hizmetlerin erişilebilirliğini ve sürekliliğini sağlar.  
+b) BİDB, internet trafiği sırasında kaybolacak ve/veya eksik alınacak/iletilecek 
+bilgilerden, internet platformunda yayınlanan bilgilerin tam doğruluğu, geçerliliği ya da 
+güncelliği nden  sorumlu tutulamaz.  
+c) Üniversite bilişim kaynakları kullanıcıları, Üniversite sunucuları üzerinde kendilerine 
+tahsis edilen “Kullanıcı Kodu/Şifre ” ikilis i ve/veya IP adresi kullan arak gerçekleştirdikleri her 
+türlü etkinlikten, üniversite bilişim kaynaklarını kullanarak oluşturdukları ve/veya kendilerine
+
+
+================================================================================
+CHUNK NO: 23
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 5
+   - page_label: 6
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+türlü etkinlikten, üniversite bilişim kaynaklarını kullanarak oluşturdukları ve/veya kendilerine 
+tahsis edilen üniversite bilişim kaynağı üzerinde bulundurdukları belge, doküman, yazılım, gibi 
+her türlü kaynağın içeriğinden, kaynağın kullanımı hakkında yetkili makamlar tarafından talep 
+edilen bilgilerin doğru ve eksiksiz verilmesinden şahsen sorumludur.  
+ç) Rektörlük veya yetkilendirdiği birimler, Üniversite bilişim kaynakları kullanımı 
+hakkında gene l kuralları belirleyip, bu kuralları gelişen teknolojinin öngördüğü biçimde sürekli 
+olarak değerlendirir ve gerekli değişiklikleri hayata geçirir. Bu tür değişiklikler yapıldığında 
+genel duyuru usulleri ile kullanıcılar bilgilendirilir.  
+d) UDOS’ta e -imza i şlemlerinde kullanılmak üzere akademik/idari personele ait 
+Nitelikli Elektronik Sertifika başvuruları, Bilgi İşlem Daire Başkanlığı tarafından Kamu 
+Sertifikasyon Merkezi’ne yapılır. Temin edilen bu elektronik sertifika, e -imza gerektiren tüm
+
+
+================================================================================
+CHUNK NO: 24
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 5
+   - page_label: 6
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Sertifikasyon Merkezi’ne yapılır. Temin edilen bu elektronik sertifika, e -imza gerektiren tüm 
+uygulamalarda kullanılabilir. Elektronik imzaya ait koruma yükümlülüğü, sertifika geçerlilik 
+süresi boyunca kişinin kendisine aittir.  
+e) Üniversite nin kullandığı kurum dışı firmalarca geliştirilmiş, uygulama 
+otomasyonları, üniversiteye ait sunucularda barındırılıyorsa, bu sistemlerin felaket kurtarma 
+merkezinde bir replikasyonları ve günlük/haftalık/aylık periyotlarla belirlenmiş olarak düzenli 
+yedekleri alınır.  
+(2) Üniversite  kullanıcılara sunulmak üzere antivirus ve/veya benzeri yazılımı duyuru 
+ile bildirir. Kullanıcıl ar bu yazılımı kurum içinde kullandığı bilgisayara kurarak güncel tutmak 
+zorundadır. Antivirus yazılımı yüklü olmayan bilgisayarlarda oluşabilecek sorunlardan ve 
+maddi zarardan kullanıcı kendisi sorumludur. BİDB saldırıya açık olduğunu tespit ettiği 
+cihazl arın internete erişimini engelleyebilir.
+
+
+================================================================================
+CHUNK NO: 25
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 5
+   - page_label: 6
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+cihazl arın internete erişimini engelleyebilir.  
+(3) BİDB, üniversitenin kurumsal verilerini, yerel ağ güvenliğini ve yerel ağa bağlı 
+bilgisayarları korumak amacıyla, tüm bilgisayarlar üzerinde yasalara uygun olarak kısıtlayıcı, 
+engelleyici ve destekleyici önlemler alabilir.  
+ 
+Üniversite bilişim kaynaklarının korunmasına ilişkin yaptırımlar  
+MADDE 26 - (1) Üniversite bilişim kaynaklarının kullanım esaslarına aykırı 
+kullanılması durumunda Üniversite yetkili organları; kullanıcıyı sözlü ve/veya yazılı olarak 
+uyarma, kullanıcıya tahsis edilmiş üniversite bilişim kaynaklarını sınırlı veya sınırsız süre ile 
+kapatma, ilgili mevzuatına göre olayla ilgili inceleme yapma, soruşturma açma ve/veya adlî 
+mercilere bildirme yoluna gidebilir.  
+ 
+Yerel ağ altyapısı yatırımlar ına ilişkin usul ve esaslar  
+MADDE 27 - (1) BİDB dışındaki birimler BİDB ile gerekli koordinasyonu  sağlamadan 
+yerel ağ alt yapısını etkileyecek çalışmalar yürüt emezler. BİDB, yeni yapılacak olan binalarda
+
+
+================================================================================
+CHUNK NO: 26
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 5
+   - page_label: 6
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yerel ağ alt yapısını etkileyecek çalışmalar yürüt emezler. BİDB, yeni yapılacak olan binalarda 
+veya mevcut binaların onarımında kullanılacak yerel a ğ altyapısıyla ilgili kablo tiplerinin, kablo 
+kanallarının, kablo güzergahlarının, ağ anahtarlarının, kablosuz erişim cihazlarının,
+
+
+================================================================================
+CHUNK NO: 27
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-12-01T11:33:59+03:00
+   - author: Erdinç Kahraman
+   - moddate: 2025-11-07T10:53:35+00:00
+   - source: 169896.cleaned.pdf
+   - total_pages: 7
+   - page: 6
+   - page_label: 7
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  kabinetlerin ve benzeri ürünlerin projelendirme aşamalarından önce bilgilendirilmeli ve uygun 
+görüşü alınmalıdır.  
+ 
+Kişisel verilerin korunması  
+MADDE 28 - (1) Üniversite, bünyesindeki sistemlerde bulunan kişisel verileri, 6698 
+sayılı Kişisel Verilerin Korunması Kanunu hükümlerine göre muhafaza etmekten sorumludur. 
+Sistemlerdeki bilgilere erişim yetkisi olan herkes bu verileri an ılan Kanuna aykırı biçimde 
+kullanamayacağını peşinen anlamış ve kabul etmiş s ayılır. Kullanıcıların bu Kanun a aykırı 
+eylemlerinden kaynaklanan şahsî sorumlulukları saklıdır.  
+ 
+ 
+DÖRDÜNCÜ BÖLÜM  
+Son Hükümler  
+Hüküm b ulunmayan haller  
+MADDE 29 - (1) Bu Yönerge de hüküm bulunmayan hallerde ilgili mevzuat hükümleri 
+uygulanır.  
+ 
+Yürürlük  
+MADDE 30 - (1) Bu Yönerge, Senato  tarafından kabul edildiği 26 Kasım 2020 
+tarihinden itibaren yürürlüğe girer.  
+ 
+Yürütme  
+MADDE 31 - (1) Bu Yönerge hükümlerini Bursa Uludağ Üniversitesi Rektörü yürütür.
+
+

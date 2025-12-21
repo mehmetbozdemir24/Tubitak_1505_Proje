@@ -1,0 +1,91 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Office Word 2007
+   - creator: Microsoft® Office Word 2007
+   - creationdate: 2013-02-04T09:35:07+02:00
+   - title: 1
+   - author: ÇİĞDEM
+   - moddate: 2013-02-04T09:35:34+02:00
+   - source: 67816.pdf
+   - total_pages: 1
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+TALİMATLAR  
+Doküman Adı: Yangın Talimatı  
+Doküman Kodu:   
+RİT-TA-BSM -01 İlk Yayın Tarihi  : 
+15.12.2006  Revizyon No: 
+02  Revizyon Tarihi:  
+31.01.2013  Sayfa  
+1 / 1 
+ 
+©2013 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başkaları tarafından kullanılamaz ve çoğaltılamaz.  
+1. Amaç: Bu talimat, Basımevindeki çalışan tüm personelin can ve mal güvenliğinin 
+yangından korunması ve yangının önlenmesi için hazırlanmıştır.  
+ 
+2. Kapsam: Bu talimat Basımevinde yangın önlenmesi ile ilgili faaliyetleri kapsar.  
+ 
+3. Sorumlular: Basımevi’nde görev yapanlar bu talimatın uygulanmasından 
+sorumludur.  
+ 
+4. Uygulama:  
+ 
+4.1. Yanıcı, parlayıcı, patlayıcı maddelerin kullanımında dikkatli davranılır.  
+ 
+4.2. Gereksinim dı şında elektrikli ocak, soba vb. kullanılmamalıdır . Kullanılması 
+zorunlu hallerde gerekli tedbirler alınmal ıdır. 
+ 
+4.3. Arşiv ve ambarlarda elektrikli ocak  kesinlikle  kullanılmaz  
+.
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Office Word 2007
+   - creator: Microsoft® Office Word 2007
+   - creationdate: 2013-02-04T09:35:07+02:00
+   - title: 1
+   - author: ÇİĞDEM
+   - moddate: 2013-02-04T09:35:34+02:00
+   - source: 67816.pdf
+   - total_pages: 1
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+4.3. Arşiv ve ambarlarda elektrikli ocak  kesinlikle  kullanılmaz  
+.  
+4.4. Elektrik tesisat işleri, yapı işleri ve teknik daire başkanlığı teknisyenleri veya 
+ehliyetli kişilere yaptırılır.  
+ 
+4.5. Yangın söndürme cihaz ve malzemeleri her an kullanılı r halde göz önünde    
+          bulundurulmalıdır.     
+ 
+4.6.  Mesai bitiminde çalışanlar sorumluluk alanlarını kontrol etmeli ve açıkta yanıcı          
+           hiçbir şey bırakılmadığından emin olmalıdır.  
+ 
+5. Gözden Geçirme ve Onaylama:  
+ 
+ 
+Ana Süreç Sahibi:     Tarih  
+Ümit KORBEK     30.01.2013  
+Basımevi Müdürü     
+ 
+ 
+ 
+ 
+Yönetimi n Onayı:     Tarih  
+Prof.Dr.İrfan KARAGÖZ                            31.01.2013  
+Yönetim T emsilcisi
+
+

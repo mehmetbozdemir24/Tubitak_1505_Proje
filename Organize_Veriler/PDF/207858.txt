@@ -1,0 +1,2104 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ BURSA ULUDAĞ ÜN İVERS İTESİ İŞ SAĞLIĞI VE GÜVENL İĞİ YÖNERGES İ 
+BİRİNCİ BÖLÜM  
+Amaç, Kapsam, Dayanak ve Tanımlar  
+Amaç  
+MADDE 1 - (1) Bu  Yönerge’nin  amacı, 6331 sayılı İş Sağlığı ve Güvenliği Kanunu ve  
+ilgili  diğer mevzuat hükümleri çerçevesinde Bursa Uludağ Üniversitesinde iş sağlığı ve  
+güvenliğinin sağlanması, hizmetlerin etkin ve koordineli bir şekilde yürütülmesi için  
+uygulama usul ve esasları ile görev ve sorumlulukları belirlemektir.  
+Kapsam  
+MADDE 2 - (1) Bu Yönerge, Bursa Uludağ Üniversitesi ’nin tüm çalışanlarına, stajyer ve 
+çalışan statüdeki öğrencilere, Bursa Uludağ Üniversitesi alt işverenleri ve çalışanlarına, Bursa 
+Uludağ Üniversitesi ’ne ait bütün işlere ve işyerlerine, bu işyerlerinin işveren  ve işveren 
+vekillerine uygulanır.  
+Dayanak  
+MADDE 3 - (1) Bu Yönerge 2547 sayılı Yükseköğretim Kanunu, 6331 sayılı İş Sağlığı  
+ve G üvenliği Kanunu ve ilgili diğer mevzuat hükümleri esas alınarak hazırlanmıştır.  
+Tanımlar
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ve G üvenliği Kanunu ve ilgili diğer mevzuat hükümleri esas alınarak hazırlanmıştır.  
+Tanımlar  
+MADDE 4 - (1) Bu Yönerge ’de geçen,  
+a) Acil durum: İşyerinin tamamında veya bir kısmında meydana gelebilecek yangın,  
+patlama, tehlikeli kimyasal maddelerden kaynaklanan yayılım, doğal afet gibi acil müdahale, 
+mücadele, ilkyardım veya tahliye gerektiren olayları,  
+b) Acil durum planı: İşyerlerinde meydana geleb ilecek acil durumlarda yapılacak iş ve 
+işlemler dahil bilgilerin ve uygulamaya yönelik eylemlerin yer aldığı planı,  
+c) Alt İşveren (Yüklenici): Bir işverenden, işyerinde yürütülen mal veya hizmet 
+üretimine ilişkin yardımcı işlerde veya asıl işin bir bölümünde  işletmenin ve işin gereği ile 
+teknolojik nedenlerle uzmanlık gerektiren işlerde iş alan, bu iş için görevlendirdiği işçilerini 
+sadece bu işyerinde aldığı işte çalıştıran gerçek veya tüzel kişiyi yahut tüzel kişiliği olmayan 
+kurum ve kuruluşları,  
+ç) Bakanlık:  Çalışma ve Sosyal Güvenlik Bakanlığı ’nı,
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+kurum ve kuruluşları,  
+ç) Bakanlık:  Çalışma ve Sosyal Güvenlik Bakanlığı ’nı, 
+d) Birim: Bir işyeri sosyal güvenlik sicil numarası ve/veya birim NACE kod numarasına 
+sahip olup İş Sağlığı ve Güvenliği (İSG) mevzuatında işyeri olarak kabul gören Bursa Uludağ 
+Üniversitesi ’ne bağlı bütün işyerlerini , 
+e) Birim İş Sağlığı ve Güvenliği Kurulu  (Kurul) : Elli ve daha fazla çalışanın bulunduğu 
+ve altı aydan fazla süren sürekli işlerin yapıldığı birimlerde, İSG ile ilgili çalışmalarda bulunmak 
+üzere oluşturulan İSG Kurulu ’nu, 
+CheckPoint Threat Extraction secured this document 
+ GetOriginal
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ f) Çalışan: Çırak ve stajyerler dahil kendi özel kanunlarındaki statülerine bakılmaksızın 
+Bursa Uludağ Üniversitesi tarafından istihdam edilen gerçek kişiyi,  
+g) Çalışan Temsilcisi: İş sağlığı ve güvenliği ile ilgili çalışmalara katılma, çalışmaları 
+izleme, tedbir alınmasını isteme, tekliflerde bu lunma ve benzeri konularda çalışanları temsil 
+etmeye yetkili çalışanı,  
+ğ) Destek Elemanı: Asli görevinin yanında İSG ile ilgili önleme, koruma, tahliye, 
+yangınla mücadele, ilk yardım ve benzeri konularda özel olarak görevlendirilmiş uygun 
+donanım ve yeterli e ğitime sahip kişiyi,  
+h) Diğer sağlık personeli: İş sağlığı ve güvenliği hizmetlerinde görevlendirilmek üzere 
+Bakanlıkça belgelendirilmiş hemşire, sağlık memuru, acil tıp teknisyeni ve çevre sağlığı 
+teknisyeni diplomasına sahip olan kişiler ile bakanlıkça veri len İşyeri Hemşireliği Belgesi’ne 
+sahip kişileri,  
+ı) Geçici iş ilişkisi: Eğitim, görevlendirme gibi nedenlerle kadrosunun bulunduğu
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ı) Geçici iş ilişkisi: Eğitim, görevlendirme gibi nedenlerle kadrosunun bulunduğu 
+birim, kurum, kuruluş, işyeri vb. dışında görev yapan gerçek kişi ile görev yaptığı birim 
+arasındaki iş ilişkisi,  
+i) İSG-Kâtip: İş  Sağlığı ve Güveliği Genel Müdürlüğü tarafından İSG hizmetleri ile 
+ilgili iş ve işlemlerin kayıt, takip ve izlenmesi amacıyla kullanılan İSG kayıt, takip ve izleme 
+programını,  
+j) İş ekipmanı: İşin yapılmasında kullanılan herhangi bir makine, alet, tesis ve tesisatı,  
+k) İş güvenliği uzmanı: Usul ve esasları yönetmelikle belirlenen, İSG alanında görev 
+yapmak üzere Bakanlıkça yetkilendirilmiş, iş güvenliği uzmanlığı belgesine sahip, Bakanlık ve 
+ilgili kuruluşlarında çalışma hayatını denetleyen müfettişler ile mühe ndislik veya mimarlık 
+eğitimi veren fakültelerin mezunları ile teknik elemanı,  
+l) İş kazası: İşyerinde veya işin yürütümü nedeniyle meydana gelen, ölüme sebebiyet
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+l) İş kazası: İşyerinde veya işin yürütümü nedeniyle meydana gelen, ölüme sebebiyet 
+veren veya vücut bütünlüğünü ruhen ya da bedenen engelli (geçici veya sürekli iş göremez) hâle 
+getiren olayı,  
+m) İş sağlığı ve güvenliği profesyonelleri: İş güvenliği uzmanı, işyeri hekimi ve diğer 
+sağlık personelini,  
+n) İş Sağlığı ve Güvenliği Üst Kurulu / (Üst Kurul ): Bursa Uludağ Üniversitesi İş Sağlığı 
+ve Güvenliği Üst Kurulu ’nu, 
+o) İşveren: Bursa Uludağ Üniversitesi tüzel kişiliğini , 
+ö) İşveren vekili: İlgili mevzuat kapsamında işveren adına Üniversitede 
+gerçekleştirilecek olan İSG faaliyetlerinin yürütülmesinde baş yetkili olan Rektör ü; işveren 
+adına hareket eden ilgili işin ya da bölümünün yönetiminde görevlendirilen rektör 
+yardımcılarını, enstitü müdürlerini, dekanları, yüksekokul müdürlerini, devlet konservatuvarı
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ müdürünü, meslek yüksekokulu müdürlerini, merkez müdürlerini, genel sekreteri , Rektörlüğe 
+bağlı bölüm başkanları nı, fakülte/ yüksekokul/ enstitü sekreterleri ni, 
+p) İşyeri: Üniversitede hizmet ve/veya ürün üretmek amacıyla çalışan buluna n yerler ile 
+dinlenme, çocuk emzirme, yemek, uyku, yıkanma, muayene ve bakım, beden ve mesleki eğitim 
+yerleri, laboratuvar lar, uygulama ve ara ştırma alanları, derslikler ve avlu gibi diğer eklentiler i 
+ve araçları da içeren tüm Üniversite yerleşkelerini , 
+r) İşyeri hekimi: İş sağlığı ve güvenliği alanında görev yapmak üzere Bakanlıkça 
+yetkilendirilmiş, işyeri hekimliği belgesine sahip tıp doktorunu,  
+s) İşyeri sağlık ve güvenlik birimi (İSGB): İşyerinde İSG hizmetlerini yürütmek üzere 
+kurulan, gerekli donanım ve personele sahip olan birimi,  
+ş) Kabul edilebilir risk seviyesi: Yasal yükümlülüklere ve işyerinin önleme politikasına 
+uygun, kayıp veya yaralanma ol uşturmayacak risk seviyesini,
+
+
+================================================================================
+CHUNK NO: 8
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+uygun, kayıp veya yaralanma ol uşturmayacak risk seviyesini,  
+t) Kanun: 6331 sayılı İş Sağlığı ve Güvenliği Kanunu,  
+u) Kimyasal madde: Doğal halde bulunan, üretilen, herhangi bir işlem sırasında 
+kullanılan veya atıklar da dâhil olmak üzere ortaya çıkan, bizzat üretilmiş olup olmadığına ve 
+piyasaya arz olunup olunmadığına bakılmaksızın her türlü element, bileşik veya karışımları,  
+ü) Kimyasal maddelerin kullanıldığı işlemler: Bu maddelerin üretilmesi, işlenmesi, 
+kullanılması, depolanması, taşınması, atık ve artıkların arıtılması veya uzaklaştırılmas ı 
+işlemlerini,  
+v) Kişisel Koruyucu D onanım  (KKD) : Çalışanı, yürütülen işten kaynaklanan, sağlık ve 
+güvenliği etkileyen bir veya birden fazla riske karşı koruyan, çalışan tarafından giyilen, takılan 
+veya tutulan, bu amaca uygun olarak tasarımı yapılmış tüm ale t, araç, gereç ve cihazları, bir 
+bütün haline getirilmiş cihaz, alet veya malzemeden oluşmuş donanımı, ayrılabilir veya
+
+
+================================================================================
+CHUNK NO: 9
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+bütün haline getirilmiş cihaz, alet veya malzemeden oluşmuş donanımı, ayrılabilir veya 
+ayrılamaz nitelikteki koruyucu cihaz, alet veya malzemeyi, sadece bu tür donanımlarla 
+kullanılan değiştirilebilir parçalarını,  
+y) Koordinat ör: Bursa Uludağ Üniversitesi İş Sağlığı ve Güvenliği koordinatörünü , 
+z) Koordinatörlük:  Bursa Uludağ Üniversitesi İş Sağlığı ve Güvenliği 
+Koordinatörlüğü ’nü, 
+aa) Meslek hastalığı: Mesleki risklere maruziyet sonucu ortaya çıkan hastalığı,  
+bb) Onaylı defter: İşyeri hekimi ve iş güvenliği uzmanı tarafından yapılan tespit ve 
+tavsiyeler ile gerekli görülen diğer hususların yazıldığı, seri numaralı ve sayfaları bir asıl iki 
+kopyalı şekilde düzenlenmiş, Çalışma ve İş Kurumu (Bursa) İl Müdürlüğü veya noter tarafından 
+her sayfası mühürlenerek onaylanmış her birim için tek olan defteri , 
+cc) Ortak Sağlık ve Güvenlik Birimi (OSGB): Kamu kurum ve kuruluşları, organize 
+sanayi bölgeleri ile Türk Ticaret Kanunu ’na göre faaliyet gösteren şirketler tarafından,
+
+
+================================================================================
+CHUNK NO: 10
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ işyerlerine İSG hizmetlerini sunmak üzere kurulan gerekli donanım ve personele sahip olan ve 
+Bakanlıkça yetkilendirilen birimi,  
+çç) Önleme: İşyerinde yürütülen işlerin bütün safhalarında İSG ile ilgili riskleri ortadan 
+kaldırmak veya azaltmak için planlanan ve  alınan tedbirlerin tümünü,  
+dd) Periyodik kontrol: İşyerine ait işlerin yapılmasında kullanılan herhangi bir makine, 
+alet, tesis ve tesisatın ilgili mevzuatına uygun, öngörülen aralıklarda ve yöntemlerle yetkili 
+kişilerce yapılan muayene, deney ve test faaliye tlerini,  
+ee) Personel ve sosyal işler veya idari ve mali işleri yürütmekle ilgili kişi: Tüm birimlerde 
+personel ve sosyal işler veya idari ve mali işleri yürüten kişileri ( fakültelerde fakülte sekreteri, 
+enstitülerde enstitü sekreteri vb. ve benzeri),  
+ff) Ramak kala: İşyerinde meydana gelen; çalışan, işyeri ya da iş ekipmanını zarara 
+uğratma potansiyeli olduğu halde zarara uğratmayan olayı,
+
+
+================================================================================
+CHUNK NO: 11
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+uğratma potansiyeli olduğu halde zarara uğratmayan olayı,  
+gg) Rektör/Rektörlük: Bursa Uludağ Üniversitesi Rektörünü/Rektörlüğü ’nü, 
+ğğ) Risk:  Tehlikeden kaynaklanacak kayıp, yaralanma ya da başka zararlı sonuç meydana 
+gelme ihtimalini,  
+hh) Risk değerlendirmesi: Birimlerde var olan ya da dışarıdan gelebilecek tehlikelerin 
+belirlenmesi, bu tehlikelerin riske dönüşmesine yol açan faktörler ile tehlike lerden kaynaklanan 
+risklerin analiz edilerek derecelendirilmesi ve kontrol tedbirlerinin kararlaştırılması amacıyla 
+yapılması gerekli çalışmaları,  
+ıı)  Sağlık ve güvenlik işaretleri: Özel bir nesne, faaliyet veya durumu işaret eden levha, 
+renk, sesli veya ışık lı sinyal, sözlü iletişim ya da el -kol işareti yoluyla İSG hakkında bilgi ya da 
+talimat veren veya tehlikelere karşı uyaran işaretleri,  
+ii) Senato: Bursa Uludağ Üniversitesi Senatosu’nu,  
+jj) Stajyer: Birimlerin eğitim -öğretim planında tanımlanan staj, yaz stajı, m esleki
+
+
+================================================================================
+CHUNK NO: 12
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+jj) Stajyer: Birimlerin eğitim -öğretim planında tanımlanan staj, yaz stajı, m esleki 
+uygulama ve diğer adlarla anılan, uygulamalı olarak yürütülen mesleki eğitim faaliyetlerine 
+katılan öğrencileri,  
+kk)  Tehlike: Birimlerde var olan ya da dışarıdan gelebilecek, çalışanı veya birimi 
+etkileyebilecek zarar veya hasar verme potansiyelini,  
+ll) Tehlike Sınıfı: İş sağlığı ve güvenliği açısından, yapılan işin özelliği, işin her 
+safhasında kullanılan veya ortaya çıkan maddeler, iş ekipmanı, üretim yöntem ve şekilleri, 
+çalışma ortam ve şartları ile ilgili diğer hususlar dikkate alınarak işyeri için bel irlenen “az 
+tehlikeli”, “tehlikeli”, “çok tehlikeli” grubu,  
+mm) Üniversite: Bursa Uludağ Üniversitesi’ni,  
+nn) Yönetim Temsilcisi: Birimlerde İSG ile ilgili çalışmaları takip etme, izleme, tedbir 
+alınmasını isteme, tekliflerde bulunma, çalışanlardan gelen teklifleri değerlendirme ve benzeri
+
+
+================================================================================
+CHUNK NO: 13
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ konularda işveren vekilini temsil etmeye yetkili, birim yönetiminde görev alan idari veya 
+akademik çalışanı,  
+ifade eder.  
+İKİNCİ BÖLÜM  
+Genel Yükümlülükler  
+İşverenin genel yükümlülükleri  
+MADDE 5 – (1) İşverenin yükümlülükleri, 6331 sayılı İş Sağlığı ve Güvenliği Kanunu 
+ve ilgili diğer mevzuatlarda belirtildiği gibidir.  
+(2) İşveren adına hareket eden, işin ve işyerinin yönetiminde görev alan işveren 
+vekilleri, 6331 sayılı İş Sağlığı ve Güvenliği Kanunu ’nun uygulanması bakımından işveren 
+sayılır.  
+ 
+ÜÇÜNCÜ BÖLÜM  
+İş Sağlığı ve Güvenliği Üst Kurulu  
+ İş Sağlığı ve Güvenliği Üst Kurulunun y apısı, çalışma usu lü ve görevleri  
+MADDE 6 - (1) İş bu Yönerge  ile İSG mevzuatı uyarınca yapılan  çalışmaların 
+sürdürülmesini sağlamak, İSG uygulama standartları oluşturmak ve İSG alanında Bursa 
+Uludağ Üniversitesi yönetimine danışmanlık hizmeti vermek üzere Bursa Uludağ Üniversitesi 
+İş Sağlığı ve Güvenliği Üst Kurulu oluşturulur.  
+(2) Üst Kurul,
+
+
+================================================================================
+CHUNK NO: 14
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+İş Sağlığı ve Güvenliği Üst Kurulu oluşturulur.  
+(2) Üst Kurul,  
+a) Rektör veya görevlendireceği rektör yardımcısı,  
+b) En çok çalışanı olan beş (5) birimin yön eticisi,  
+c) Üniversite Hastanesi başhekimi,  
+ç) Bilim ve Teknoloji Uygulama ve Araştırma Merkezi müdürü ve Ağaoğlu İleri 
+Teknoloji ve Mühendislik Laboratuvarı Sorumlu yöneticisi.  
+d) Genel sekreter,  
+e) Genel sekreter yardımcıları,  
+f) Personel daire başkanı,  
+g) İdari ve mali işler daire başkanı,  
+ğ) Sağlık kültür ve spor daire başkanı,  
+h) Strateji geliştirme daire başkanı,  
+ı)    Yapı işleri ve teknik daire başkanı,  
+i) Üniversite Hastanesi baş müdürü,  
+j) Hukuk müşaviri,  
+k) Afet ve acil durum yönetimi merkez i koordinatörü,
+
+
+================================================================================
+CHUNK NO: 15
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ l) Güvenlik merkezi koordinatörü , 
+m) Üniversitede faaliyette olan işkollarına göre Üniversite ’deki yetkili sendika 
+temsilcileri,  
+n) İş sağlığı ve güvenliği koordinatörü,  
+o) İş Sağlığı ve güvenliği koordinatörü yardımcıları (yardımcılardan biri kurul 
+sekreteri)  
+(3) İSG Üst Kurulu üyeleri, rektör tarafından üç yıl için görevlendirilir. Süresi biten üye 
+yeniden görevlendirilebilir. Herhangi bir nedenle boşalan üyenin yerine üzere aynı usulle yeni 
+bir üye görevlendirilir.  
+(4) İSG Üst Kurulu ’nun başkan lığını , rektör veya rektörün görevlendireceği bir rektör 
+yardımcısı  yapar . 
+(5) Üst Kurul en geç üç ayda bir toplanır. Başkanın teklifi ile olağanüstü de toplanabilir.  
+(6) Toplantı karar yeter sayısı kurul üyelerinin salt çoğunluğudur. Oyların eşitliği 
+hâlinde başkanın oyu yönünde karar al ınır. 
+(7) Kararlar toplantı tutanağı ile katılanların imzaları alınarak kaydedilir.
+
+
+================================================================================
+CHUNK NO: 16
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(7) Kararlar toplantı tutanağı ile katılanların imzaları alınarak kaydedilir.  
+(8) İSG Üst Kurul u gerektiğinde İSG ile ilgili konularda çalışan öğretim elemanlarından 
+danışmanlık alabilir.  
+(9) İSG Üst Kurul u’nun görevleri,  
+a) Üniversite ’de İSG mevzuatı uyarınca yapılan çalışmaların sürdürülmesini sağlamak,  
+b) Üniversite ’deki İSG uygulama standartlarını oluşturmak,  
+c) Üniversite ’nin İSG politikası, stratejileri ve performans göstergeleri ile İSG 
+konusundaki öncelikli ihtiyaçları nı belirlemek,  
+ç) Koordinatörlük tarafından yapılan çalışmaları değerlendirmek ve denetlemek tir. 
+ 
+DÖRDÜNCÜ BÖLÜM  
+İş Sağlığı ve Güvenliği Koordinatörlüğü  
+İş Sağlığı ve Güvenliği Koordinatörlüğü ’nün y apısı, çalışma usulü ve görevleri  
+ MADDE 7 - (1) Koordinatörlük aşağıdaki üyelerden oluşma ktadır : 
+a) Koordinatör,  
+b) Koordinatör yardımcı ları, 
+c) Koordinatörlük personeli,  
+(2) Koordinatör, İSG ile ilgili konularda çalışan veya sertifikaları olan öğretim
+
+
+================================================================================
+CHUNK NO: 17
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(2) Koordinatör, İSG ile ilgili konularda çalışan veya sertifikaları olan öğretim 
+elemanları arasından rektör tarafından üç  (3) yıl için görevlendirilir. Süresi biten koordinatör 
+yeniden görevlendirilebilir.
+
+
+================================================================================
+CHUNK NO: 18
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ (3) Koordinatör Yardımcı ları, koordinatörün teklifi ve rektörün onayı ile üç (3) yıl için 
+görevlendirilir.  
+(4) Koordinatör yardımcı ları, koordinatörün verdiği görevleri yapmaktan sorumludur.  
+(5) Koordinatörlüğün görevleri,  
+a) Birim lerle İSG konularında bilgi paylaş mak ve onlara rehberlik etmek,  
+b) Birim İSG kurullarının etkinliğini ve verimliliğini takip etmek,  
+c) Birimlerde görevlendirilecek iş güvenliği uzman ları ve işyeri hekim lerini 
+belirlemeyle ilgili hususları yapmak ,  
+ç) İSG ile ilgi li mev zuattaki gelişmeleri takip ederek  Üniversite içindeki uygulamalara 
+yansıtılmasına rehberli k etmek,  
+d) Birimlerde İSG hizmetlerinin (eğitim, risk değerlendirmesi, sağlık  gözetimi, acil 
+durum plan vb.) sunulmasın a rehberlik etmek,  
+e) Üst Kurul tarafından alınan kararları uygulanmasını  koordine etmek,  
+f) İşyerinde meydana gelen iş kazası ve meslek hastalıklarının veya tehlikelerin
+
+
+================================================================================
+CHUNK NO: 19
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+f) İşyerinde meydana gelen iş kazası ve meslek hastalıklarının veya tehlikelerin 
+sebepleri ve alınabilecek önlemler konusunda gerekli çalışmaları koordine etmek,  
+g) İSG hizmetleri kapsamında yürütülecek idari iş ve işlemlerde uygulama birliğinin 
+sağlanması amacıyla dokümanlar hazırlamak ; Üniversite ’de kullanılmaları için gerekli 
+İSG eğitimleri nin ve bilgilendirmelerin yapılmasını sağlamak;  uygulamaların takibini 
+yapma k. 
+ğ) Çalışanların işyerindeki maruziyet bilgileri, işe giriş ve periyodik sağlık muayenesi 
+sonuçları, iş kazaları ile meslek hastalıkları kayıtlarının, kişisel dosyalarında  
+saklanmasından sorumlu olan Personel Daire Başkanlığı ’nın yürüttüğü  süreçlere 
+rehberlik etmek , 
+h) Birim İSG kurulları tarafından gerçekleştirilen çalışma ortamı gözetimi faaliyetlerine 
+rehberlik etmek,  
+ı) Birim İSG kurullarından alınan bilgilerle birlikte yıllık İSG çalışma planını ve yıllık 
+değerlendirme raporunu İSG Üst Kurul u’na sunmak,
+
+
+================================================================================
+CHUNK NO: 20
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+değerlendirme raporunu İSG Üst Kurul u’na sunmak,  
+i) İşyerinde kaza, yangın, doğal afet vb. acil müdahale gerektiren durumlarla ve 
+ilkyardım ve acil müdahale bakımından yapılması gereken uygulamaların 
+organizasyonu ile ilgili birim İSG kurullarından gelen taleplerle ilgili diğer birim, kurum 
+ve kuruluşlarla işbirliği yapmak,  
+j) Üniversite genelinde yürütülen İSG faaliyetlerinin birimlerde yetkilendirilen personel 
+tarafından kullanılan İSG bilgi yönetim sistemi işlemlerini yürütmek,  
+k) İSG Üst Kurul u’nun sekretarya hizmetlerini yürütmek . 
+BEŞİNCİ BÖLÜM
+
+
+================================================================================
+CHUNK NO: 21
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ Birim İş Sağlığı ve Güvenliği Kurulu  
+Birim iş sağlığı ve güvenliği kurulunun  yapısı ve çalışma usulü  
+MADDE 8 - (1) Birimler, İSG faaliyetlerini bağlı bulundukları birim İSG kurulu 
+vasıtasıyla yürütürler. İş sağlığı ve güvenliği mevzuatı uyarınca Elli ( 50) ve üzeri çalışanı 
+olan birimler, Birim İş Sağlığı ve Güvenliği Kurulu oluşturur.  Birim İSG kurulu oluşturmaya 
+yeterli mevcudu olmayanlar Ortak/Merkez ya da Koordinatörlükçe belirlenecek (Rektörlük İSG 
+Kurulu, MEYOK İSG Kurulu vb.) İSG kuruluyla İSG faaliye tlerini yürütürler.  Birimlerdeki 
+çalışan sayısının tespitinde, birimin Sosyal Güvenlik Kurumu’nda tescilli işyeri  veya 
+işyerlerinde kayıtlı  ve görevli  toplam çalışan sayısı esas alınır.  
+(2) İSG kurulu,  
+a) İşveren vekili  
+b) İşyeri hekimi  
+c) İş güvenliği uzmanı  
+ç) Personel ve sosyal işler veya idari ve mali işleri yürütmekle ilgili kişi , 
+d) Sivil Savunma Uzmanı(varsa) , 
+e) Birim hakkında bilgi sahibi olan çalışan lar,
+
+
+================================================================================
+CHUNK NO: 22
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+d) Sivil Savunma Uzmanı(varsa) , 
+e) Birim hakkında bilgi sahibi olan çalışan lar, 
+f) Birim İSG kurulu oluşturmaya yeterli mevcudu olmayan birimlerin yer alacağı 
+Ortak/Merkez ya da ismi Koordin atörlükçe belirlenecek birim İSG kuruluna katılmak üzere 
+birim İSG komisyon başkanları,  
+g) Çalışan temsilcisi, işyerinde birden çok temsilci olması halinde baş temsilciden 
+oluşur.  
+(3) Rektörlük iş kolu/işyeri tehlike sınıfını ve yerleşkeleri göz önüne alarak ilgili 
+kampüslerde birimlerin topluca temsil edilebileceği İSG kurulları oluşturabilir. Bu İSG kurulu 
+oluşumları Koordinatörlüğün teklifi ve İSG Üst Kurulu ’nun onayı sonrasında biri mlere 
+bildirilir.  
+(4) Birim İSG k urulun un başkanı işveren vekili, kurulun sekreteri ise iş güvenliği 
+uzmanıdır. İş güvenliği uzmanının tam zamanlı çalışma zorunluluğu olmayan işyerlerinde ise 
+kurul sekreterliği personel ve sosyal işler veya idari ve mali i şleri yürütmekle görevli ilgili 
+tarafından yürütülür.
+
+
+================================================================================
+CHUNK NO: 23
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+tarafından yürütülür.  
+(5) Kurullar ayda en az bir kere toplanır. Ancak Kurul, işyerinin tehlike sınıfını dikkate 
+alarak, tehlikeli işyerlerinde bu sürenin iki ay, az tehlikeli işyerlerinde ise üç  (3) ay olarak 
+belirlenmesine  karar verebilir.  
+(6) Ölümlü, uzuv kayıplı veya ağır iş kazası halleri veya özel bir tedbiri gerektiren 
+önemli hallerde kurul üyelerinden herhangi biri Kurul’u olağanüstü toplantıya çağırabilir. Bu 
+konudaki tekliflerin kurul başkanına veya sekreterine yapı lması gerekir. Toplantı zamanı,
+
+
+================================================================================
+CHUNK NO: 24
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ konunun ivedilik ve önemine göre tespit olunur. Toplantıda alınan kararlar çalışanlara 
+Üniversite’de kullanılan e -posta, belge yönetim sistemi, web sayfaları vd. elektronik/elektronik 
+olmayan araçlardan biri ya da bir kaçı k ullanılarak duyurulur.  
+(7) Altı (6) aydan fazla süreli alt işverenlik ilişkisinin bulunduğu hallerde,  
+a) İşveren ve yüklenicinin çalışan sayıları ayrı ayrı elli (50) ve daha fazla ise asıl 
+işveren ve alt işveren ayrı ayrı kurul kurar. İSG faaliyetlerinin yürütülmesi ve kurullarca alınan 
+kararların uygulanması konusunda işbirliği ve koordinasyon asıl işverence sağlanır.  
+b) Bir işyerinde sadece işverenin çalışan sayısı elli (50) ve daha fazla ise bu durumda 
+kurul işverence kurulur. Kurul oluştu rma yükümlülüğü bulunmayan yüklenici, çalışma alanında 
+faaliyet gösteren kurul tarafından alınan kararların uygulanması ile ilgili olarak koordinasyonu 
+sağlamak üzere vekâleten yetkili bir temsilci atar.
+
+
+================================================================================
+CHUNK NO: 25
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sağlamak üzere vekâleten yetkili bir temsilci atar.  
+c) Yüklenicinin çalışan sayısı elli  (50) ve daha fazla,  işverenin çalışan sayısı ellinin 
+altında ise işyerinde kurul yüklenici tarafından oluşturulur. İşveren yüklenicinin oluşturduğu 
+kurula işbirliği ve koordinasyonu sağlamak üzere vekâleten yetkili bir temsilci atar.  
+ç) İşveren ve yüklenicinin çalışan sayıla rı ayrı ayrı ellinin altında ve toplam çalışan 
+sayısı elliden fazla bulunduğu durumlarda ise koordinasyon işverence yapılmak kaydıyla, 
+işveren ve yüklenici tarafından birlikte bir kurul oluşturulur.  
+d) Birim İSG k urulu, birim İSG komisyonları tarafından kendi lerine gönderilen İSG’ye 
+ilişkin yıllık değerlendirme raporu nun son halini  her yılın Ocak ayı sonuna kadar 
+Koordinatörlüğe gönderir.  
+(7) Birimlere ait işyerlerinde birden fazla işverenin (alt işveren, kantin, lokanta, banka, 
+kırtasiye vb. kiracılar ve benzeri  vb.) bulunması ve bu işverenlerce birden fazla kurulun
+
+
+================================================================================
+CHUNK NO: 26
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+kırtasiye vb. kiracılar ve benzeri  vb.) bulunması ve bu işverenlerce birden fazla kurulun 
+oluşturulması hâlinde işverenler, birbirlerinin çalışmalarını etkileyebilecek kurul kararları 
+hakkında diğer işverenleri bilgilendirir.  
+(8) Birim İSG k urulunda görevli İSG profesyonelleri , birim İSG kurulu üyelerine ve 
+yedeklerine İSG konularında eğitim veri r. Kurul üyelerinin ve yedeklerinin eğitimleri 
+mevzuatta belirlenen konuları kapsar.  
+(9) Alt işverenlik ilişkisi nedeniyle ortak kurul oluşmuş ise üyelerin eğitiminden her iki 
+işveren birlikt e sorumludur.  
+Birim iş sağlığı ve güvenliği  kurulunun görevleri  
+MADDE 9 - (1) Birim iş sağlığı ve güvenliği kurulunun görevleri şunlardır:  
+a) İş sağlığı ve güvenliği konularında birimde çalışanlara yol göstermek , 
+b) Birim lerde İSG’ye ilişkin tehlikeleri ve önlemleri değerlendirmek, tedbirleri 
+belirlemek ,
+
+
+================================================================================
+CHUNK NO: 27
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 9
+   - page_label: 10
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ c) Birim lerde meydana gelen her iş kazası ve işyerinde meydana gelen ancak iş kazası 
+olarak değerlendirilmeyen işyeri ya da iş ekipmanının zarara uğratma potansiyeli olan olayları 
+veya m eslek hastalığında yahut İSG ile ilgili bir tehlike halinde gerekli araştırma ve incelemenin 
+yapılması için Koordinatörlüğe bilgi vermek ve gereken tedbirler konusunda teklifte bulunmak,  
+ç) Birim lerde İSG eğitim inin planlaması, bu konu ve kurallarla ilgili programların 
+hazırlanmasında Koordinatörlükle işbirliği yapmak,  
+d) Birimde yapılacak bakım ve onarım çalışmalarında gerekli güvenlik tedbirlerini 
+planlamak,  
+e) Birimde yangın, doğal afet, sabotaj ve benzeri tehlikeler iç in alınan tedbirlerin 
+yeterliliğini ve ekiplerin çalışmalarını izlemek,  
+f) Birimin İSG çalışmalarıyla ilgili her yılın başında bir yıllık plan ile yıl sonunda bir 
+rapor hazırlamak ; o yılki çalışmaları değerlendirmek, elde edilen deneyime göre ertesi yılın
+
+
+================================================================================
+CHUNK NO: 28
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 9
+   - page_label: 10
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+rapor hazırlamak ; o yılki çalışmaları değerlendirmek, elde edilen deneyime göre ertesi yılın 
+çalışma planında  yer alacak hususları değerlendir mek ve Rektörlüğe teklifte bulunmak,  
+g) Birimde teknoloji, iş organizasyonu, çalışma şartları, sosyal ilişkiler ve çalışma ortamı 
+ile ilgili faktörlerin etkilerini kapsayan tutarlı ve genel bir risk önleme politik ası geliştirmeye 
+yönelik çalışmalar yapmak,  
+ğ) Kurul faaliyet raporu ile risk değerlendirmesi ve acil durum planlarının bir örneğini  
+Koordinatörlüğe iletmek.  
+h) İlgili mevzuatın İSG kurullarına yüklediği diğer görevleri yapmak.  
+İşverenin veya işveren vekilinin birim İSG kuruluna ilişkin genel yükümlülüğü  
+MADDE 10 - (1) İşveren veya ilgili işveren vekili,  birim İSG kurulu için gerekli toplantı 
+yeri, araç ve gereci sağlar.  
+(2) İşveren veya işveren vekili, birim İSG kurulu tarafınd an hazırlanan toplantı 
+tutanaklarını, kaza ve diğer vakaların inceleme raporlarını ve işyerinde yapılan denetim
+
+
+================================================================================
+CHUNK NO: 29
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 9
+   - page_label: 10
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+tutanaklarını, kaza ve diğer vakaların inceleme raporlarını ve işyerinde yapılan denetim 
+sonuçlarına ait kurul raporlarını, iş müfettişlerinin incelemesini sağlamak amacıyla, işyerinde 
+bulundurur.  
+Birim İSG kurulunun yükümlülüğü  
+MAD DE 11 - (1) Kurullar, yapacakları tekliflerde, bulunacakları tavsiyelerde ve 
+verecekleri kararlarda işyerinin durumunu ve işverenin olanaklarını göz önünde bulundururlar.  
+(2) Kurul üyeleri, görevleri nedeniyle işyerlerinin eğitim, yapım ve üretim teknikler i; 
+ticari sırları ve ekonomik durumları hakkında gördükleri ve öğrendiklerini gizli tutmak 
+zorundadırlar.  
+(3) Kurullar, iş sağlığı ve güvenliği yönünden teftiş yapmaya yetkili Bakanlık iş 
+müfettişlerine işyerlerinde yapacakları teftiş ve incelemelerde kolaylık sağlamak ve yardımcı 
+olmakla yükümlüdür.
+
+
+================================================================================
+CHUNK NO: 30
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ Çalışanların yükümlülüğü  
+MADDE 12 - (1) Çalışanlar, sağlığı n ve güvenliğin korunması ve geliştirilmesi amacıyla 
+konulan kurallar, yasaklar ile alınan karar ve tedbirlere uymak ; katılması bildirilen eğitimlere 
+katılmak  zorundadır.  
+(2) İşyerinde iş sağlığı ve güvenliği tedbirlerinin belirlenmesi, uygulanması ve alınan 
+tedbirlere uyulması hususunda çalışanlar kurullarla işbirliği yapar.  
+(3) Kurullar tarafından alınan kararlar veya uygulamada karşılaştıkları güçlükler 
+hakkında çalışan lar, çalışan temsilcileri aracılığı ile kurula bilgi verir . 
+(4) İşin yürütümü esnasında kendisinin ya da diğer çalışanların vücut ve ruh sağlığına 
+etki edebil me potansiyeli bulunan olay /durum  vb. ile karşılaşılması halinde  derhal ilgili kişilere 
+ve oranın yetkili amirine/işveren vekiline bildirir. Gerekli durumda işyerinin  ilgili bölümü ya da 
+tamamı  terk edil ir. Yetkili amir/işveren vekilinin kendisi ya da yetkilendirdiği bir çalışanı/çalışan
+
+
+================================================================================
+CHUNK NO: 31
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+grubu ile durum u tutanakla  tespit eder. Olay yerindeki riskin dev amı durumunda çalışanlar ın 
+işlerini yapabilmeleri için başka bir yer gösteri lir.  
+ 
+ALTINCI BÖLÜM  
+Birim İş Sağlığı ve Güvenliği Komisyonu  
+Birim iş sağlığı ve güvenliği komisyonu n yapısı ve çalışma usulü  
+MADDE 1 3- (1) Üniversitenin akademik ve idari birimleri kendi içlerinde İSG 
+çalışmalarından sorumlu birer birim İSG komisyonu oluştururlar.   
+(2) Birim İSG komisyon u, enstitü, fakülte, yüksekokul ve meslek yüksekokulu dekan 
+ve müdürleri tarafından belirlenen farklı bölüm/anabilim dalı/ programdan bir başkan olmak 
+üzere en az üç akademik ve iki idari personelden (biri fakülte/yüksekokul/enstitü sekreteri) 
+oluşur.  Birimde varsa laboratuvar ve/veya atölye sorumluları da bu komisyonda yer alır.  
+(3) İdari birimler  de ida ri birimin üst yöneticisinin başkanlığ ında, alt birim yöneticileri  
+ile sekreteryayı yapacak en az bir personelden olu şan bir birim İSG komisyonu kura r. Birimde
+
+
+================================================================================
+CHUNK NO: 32
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ile sekreteryayı yapacak en az bir personelden olu şan bir birim İSG komisyonu kura r. Birimde 
+varsa laboratuvar ve/veya atölye sorumluları da bu komisyonda yer alır.  
+(4) Birim İSG komisyonun un adı ilgili birimin ismiyle anılır.  
+(5) Birim İSG kurulu bulunan  birimlerde kurul üyeleri Birim İSG komisyonunun doğal 
+üyeleridir.  
+(6) Birim İSG komisyonun başkanı birim işveren vekili ya da görevlendirdiği bir 
+yardımcısıdır.  
+(7) Birim İSG komisyon u ayda en az bir defa toplanır. Ancak işyerinin tehlike sınıfını 
+dikkate al ınarak tehlikeli işyerlerinde bu süre iki  (2) ayda bir , az tehlikeli işyerlerinde ise üç  (3) 
+ay da bir  (1) defa olarak belirlen ebilir .
+
+
+================================================================================
+CHUNK NO: 33
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 11
+   - page_label: 12
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ (8) Ölümlü, uzuv kayıplı veya ağır iş kazası ha lleri veya özel bir tedbiri gerektiren 
+önemli hallerde Birim İSG komisyon u başkanı birimin bağlı bulunduğu İSG Kurulunu  
+olağanüstü toplantıya çağır ır. Bu konudaki teklifler ilgili birim İSG kurul başkanına veya 
+sekreterine yapıl ır. Toplantı zamanı, konunun  ivedilik ve önemine göre tespit olunur. Toplantıda 
+alınan kararlar çalışanlara duyurulur.  
+(9) Birim İSG komisyonu, bağlı bulunduğu birim  İSG kurulunun kararlarını 
+uygulamakla yükümlüdür.  
+(10) Birim İSG komisyon u, İSG’y e ilişkin birimin yıllık değerlendirm e raporu nu 
+hazırlayarak yılın Ocak ayı ortasına  kadar ilgili birim İSG kuruluna sunar.  
+(11) Bünyesinde birim İSG kurulu kurulmayan birimlerin birim İSG komisyonu 
+başkanı , Koordinatörlük tarafından oluşturulacak birim İSG kurulu toplantılarına  kurul üyesi 
+olarak katılır. Bu türdeki birimlerine hangi İSG kuruluna katılacağı Koordinatörlük tarafından 
+karar verilir , birimlere iletilir .
+
+
+================================================================================
+CHUNK NO: 34
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 11
+   - page_label: 12
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+karar verilir , birimlere iletilir . 
+(12) Bağlı bulunulan birim İSG kurulunun İSG profesyonelleri , bünyesinde İSG kurulu 
+kurulmayan birimlerin birim İSG komisyonu üyelerine İSG konularında birim İSG kurullarına 
+gerekli  eğitim leri verir.  
+Birim iş sağlığı ve güvenliği k omisyonunun  görevleri  
+MADDE 14- (1) Birim İ SG komisyonun  görevleri şunlardır:  
+a) İş sağlığı ve güvenliği konularında birimde çalışanlara yol göstermek,  
+b) Birimde İSG’ ye ilişkin tehlikeleri ve önlemleri değerlendirmek, tedbirleri belirlemek,  
+c) Birimde meydana gelen her iş kazası ve işyerinde meydana gelen ancak iş kazası 
+olarak değerlendirilmeyen işyeri ya da iş ekipmanının zarara uğ ratma potansiyeli olan olayları 
+veya meslek hastalığında yahut İSG ile ilgili bir tehlike halinde gerekli araştırma ve incelemenin 
+yapılması için Koordinatörlüğe bilgi vermek ve gereken tedbirler konusunda Rektörlüğe ve 
+ilgili birimlere teklifte bulunmak,
+
+
+================================================================================
+CHUNK NO: 35
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 11
+   - page_label: 12
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ilgili birimlere teklifte bulunmak,  
+ç) Birimde İSG eğitiminin planlaması, bu konu ve kurallarla ilgili programların 
+hazırlanmasında Koordinatörlükle işbirliği yapmak,  
+d) Birimde yapılacak bakım ve onarım çalışmalarında gerekli güvenlik tedbirlerini 
+planlamak,  
+e) Birimde yangın, doğal afet, sabotaj ve  benzeri tehlikeler için alınan tedbirlerin 
+yeterliliğini ve ekiplerin çalışmalarını izlemek,  
+f) Birimin İSG durumuyla ilgili yıllık bir rapor hazırlamak, o yılki çalışmaları 
+değerlendirmek, elde edilen deneyime göre ertesi yılın çalışma programında yer alaca k 
+hususları değerlendirerek belirlemek ve Rektörlüğe teklifte bulunmak,
+
+
+================================================================================
+CHUNK NO: 36
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 12
+   - page_label: 13
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ g) Birimde teknoloji, iş organizasyonu, çalışma şartları, sosyal ilişkiler ve çalışma ortamı 
+ile ilgili faktörlerin etkilerini kapsayan tutarlı ve genel önleme ye yönelik  çalışmalar yapmak , 
+ğ) Bağlı bulunulan birim İSG kurulunun Koordinatörlüğe göndereceği  faaliyet raporu ile 
+risk değerlendirmesi ve acil durum planlarının bir örneğini  ilgili birim İSG kuruluna  sunmak,  
+h) İlgili mevzuatın İSG konusunda işverene/işveren vekiline yüklediği diğer görevleri 
+takip etmek . 
+YEDİNCİ  BÖLÜM  
+İş Sağlığı ve Güvenliği Profesyonelleri  
+İş sağlığı ve güvenliği profesyonellerinin görevleri ve görevlendirilmeleri  
+MADDE 1 5- (1) Birim işveren vekilleri, işyerlerinde yeterli sayıda ve nitelikte 
+işyeri hekimi ve iş  güvenliği uzmanı görevlendirilmesinden bulundurulmasından sorumludur. 
+On (10) ve daha fazla çalışanı olan çok tehlikeli sınıfta yer alan birimlerde diğer sağlık personeli
+
+
+================================================================================
+CHUNK NO: 37
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 12
+   - page_label: 13
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+de görevlendirilir. Eğer birimde tam  süreli işyeri hekimi görevlendirilm işse diğer sağlık 
+personeli görevlendirilmesi zorunlu değildir.  
+(2) Birimlerde görevlendirilecek iş güvenliği uzmanları ve işyeri hekimlerini 
+işveren/işveren vekili adına Koordinatörlük belirler; Üst Kurul ’unun onayına sunar, Üst Kurul 
+tarafından görevlend irilmesi uygun görülen İSG profesyonellerinin atama/görevlendirme ve 
+diğer resmi işlemleri Personel Daire Başkanlığı tarafından yapılır.  
+(3) İş sağlığı ve güvenliği profesyonelleri, öncelikle birim çalışanları arasından, yoksa 
+Üniversite ’nin diğer birimle rinde çalışanlar arasından 6331 sayılı İş Sağlığı ve Güvenliği 
+Kanunu’nun 8’inci maddesine uygun olarak görevlendirilir. Üniversite içinden görevlendirme 
+yapılamaması halinde; birimler, İSG profesyoneli ihtiyacını diğer kamu kurumlarından 
+görevlendirme yap mak veya ortak sağlık güvenlik birimleri ile yetkili toplum sağlığı 
+merkezlerinden hizmet almak suretiyle karşılar.
+
+
+================================================================================
+CHUNK NO: 38
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 12
+   - page_label: 13
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+merkezlerinden hizmet almak suretiyle karşılar.  
+(4) İş sağlığı ve güvenliği profesyonellerinin görevlendirilmeleri ve işveren vekilleri ile 
+yapacakları sözleşmeleri, 6331 sayılı İş Sağlığı  ve Güvenliği Kanunu ile bu Kanuna bağlı olarak 
+çıkarılan Yönetmelik hükümlerine uygun olarak yapılır.  
+(5) İş sağlığı ve güvenliği profesyonelleri görevlerini yaparken, işin normal akışını 
+mümkün olduğu kadar aksatmamak ve verimli bir çalışma ortamının sağlanmasına katkıda 
+bulunmak, işyerinin meslek sırları, ekonomik ve ticari durumları hakkındaki bilgiler ile 
+çalışanın kişisel sağlık dosyasındaki bilgileri gizli tutmakla yükümlüdürler.  
+(6) İş güvenliği uzmanı ve işyeri hekimini görevlendirme süresinin b elirlenmesinde 
+3308 sayılı Mesleki Eğitim Kanunu ile 2547 sayılı Yükseköğretim Kanunu kapsamındaki 
+öğrenci statüsünde olan çırak ve stajyerler, çalışan sayısının toplamına dâhil edilmez.
+
+
+================================================================================
+CHUNK NO: 39
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 13
+   - page_label: 14
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ SEKİZİNCİ BÖLÜM  
+Yönetim Temsilcileri, Çalışan Temsilcileri, Destek E lemanı, Diğer Sağlık Personeli  
+Yönetim temsilcileri  
+MADDE 1 6- (1) Birim İSG kurulu olan birimlere ilgili birim İSG kurulu başkanı, birim 
+İSG komisyonu  olan birimlerde ilgili birimin birim İSG komisyon o birimin yönetim 
+temsilcisidir. Yönetim temsilcisi, birimlerde İSG mevzuatına uygun bir yapılanmanın 
+oluşturulması nı, İSG ile ilgili çalışmaların izlenmesi ni, uygulama ve hizmetlerin sürekli 
+iyileştirilmesi ni, birim ve Koordinatörlük arasında bilgi akışı nı ve iletişimi sağlar.  
+Çalışan temsilcileri  
+MADDE 1 7- (1) Üniversite ’de tüm birimlerde, varsa kurul toplantılarına katılmak,  
+biriminde risk değerlendirme ekibi üyesi olarak görev yapmak ve İSG ile ilgili çalışmaları 
+izlemek, teklif ve önerilerde bulunmak üzere ilgili mevzuata uygun olarak çalışanlar arasında n 
+çalışan temsilcisi görevlendirilir.
+
+
+================================================================================
+CHUNK NO: 40
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 13
+   - page_label: 14
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+çalışan temsilcisi görevlendirilir.  
+(2) Çalışan temsilcisi seçiminde İş Sağlığı ve Güvenliği ile İlgili Çalışan Temsilcisinin 
+Nitelikleri ve Seçilme Usul ve Esaslarına İlişkin Tebliğ hükümleri uygulanır.  
+Destek elemanı  
+MADDE 1 8- (1) Asli görevinin yanında İSG ile ilgili önleme,  koruma, tahliye, 
+yangınla mücadele, ilk yardım ve benzeri konularda özel olarak görevlendirilmiş uygun 
+donanım ve yeterli eğitime sahip çalışanlardır. İşveren vekili, ilgili mevzuatta öngörülen 
+sayıdaki ç alışanını destek elemanı olarak görevlendirir.  
+(2) Destek elemanları, birimin risk değerlendirme ekibinde görevlendirilebilir.  
+Diğer sağlık personeli  
+MADDE 1 9- (1) Birimler, ilgili mevzuatta belirtilen hallerde diğer sağlık personeli  
+görevlendirir.  On (10) ve daha fazla çalışanı olan çok tehlikeli sınıfta yer alan birimlerde diğer 
+sağlık personeli de görevlendirilir. Eğer birimde tam süreli işyeri hekimi görevlendirilmişse 
+diğer sağlık personeli görevlendirilmesi zorunlu değildir.
+
+
+================================================================================
+CHUNK NO: 41
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 13
+   - page_label: 14
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+diğer sağlık personeli görevlendirilmesi zorunlu değildir.  
+ 
+DOKUZUNCU  BÖLÜM  
+Risk Değerlendirilmesi ve Acil Durumlar  
+Risk değerlendirilmesi  
+MADDE 20- (1) Risk değerlendirmesi birim için tasarım ve kuruluş aşamasından  
+başlamak üzere tehlikeleri tanımlama riskleri belirleme ve analiz etme, risk kontrol tedbirlerinin 
+kararlaştırılması, uygulanması ve takip edilmesidir. İşveren vekili, İSG kapsamında tehlikelerin 
+ve risklerin tespit edilmesi, alınacak önlemlerin belirlenme si ve sürecin izlenmesini sağlar. 
+Birimler, risk değerlendirmelerini aşağıda belirtilen aşamalara uygun olarak yapar.
+
+
+================================================================================
+CHUNK NO: 42
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 14
+   - page_label: 15
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ (a) Mevcut ve potansiyel tehlikelerin tanımlanması,  
+(b) Risklerin belirlenmesi ve analiz edilmesi,  
+(c) Alınması gereken önlemlerin belirlenmesi,  
+(ç) Belirlenmiş önlemlerin uygulanması ve takip edilmesi . 
+(2) Birim işveren vekili, risk değerlendirmesinin gerçekleştirilmesi için risk 
+değerlendirme ekibini kurar. Risk değerlendirme ekibi aşağıdaki kişilerden oluşur;  
+a) İşveren Vekili  ve/veya Yönetim temsilcisi,  
+b) İş güvenliği uzmanı,  
+c) İşyeri hekimi  
+ç) Bölüm, anabilim dalı, ana sanat dalı ve program başkanları ve diğer alt birim 
+sorumluları,  
+d) Birimde yürütülen iş süreçlerini bilen, mevcut ve/veya muhtemel tehlike kaynakları 
+ile riskler konusunda bilgili personel,  
+e) Destek  eleman (ı)ları, 
+f) Birim çalışan temsilcisi veya temsilcileri,  
+(3) Risk değerlendirmesi mevzuatta belirtilen dönemlerde ve durumlarda yenilenir.  
+(4) Risk değerlendirme raporu iki nüsha olarak hazırlanır, bir nüshası ilgili birimde
+
+
+================================================================================
+CHUNK NO: 43
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 14
+   - page_label: 15
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(4) Risk değerlendirme raporu iki nüsha olarak hazırlanır, bir nüshası ilgili birimde 
+bulundurulur. Hazırlanan diğer nüsha hazırlanmasının sonrasındaki on (10) iş günü içerisinde 
+Koordinatörlüğe gönderilir.  
+(5) Üniversite ’de faaliyet gösteren  alt işverenleri n risk değerlendirmesi ile ilgili 
+aşağıdaki kurallara uymaları zorunludur:  
+a) Alt işveren yürüttüğü işlerle ilgili olarak, İSG mevzuatı uyarınca gerekli risk 
+değerlendirilmesi çalışmalarını yapar veya yaptırır.  
+b) Koordinatörlük, alt işverence yürütülen risk değerlendirmesi çalışmalarını denetler ve 
+bu konudaki çalışmaları koordine ede r. 
+c) Alt işveren, düzenlediği risk değerlendirme raporlarının bir nüshasını ilgili birim İSG 
+kuruluna verir. Birim İSG kurulu bu süreci takip eder; gerektiğinde alt işverenin risk 
+değerlendirme raporlarını talep eder; alt işverenin risk kontrol tedbirlerini inceleterek uygulanıp 
+uygulanmadığın denetler.
+
+
+================================================================================
+CHUNK NO: 44
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 14
+   - page_label: 15
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+uygulanmadığın denetler.  
+ç) Bu denetim sonucu İSG mevzuat ve ilkelerine aykırılık tespit etmesi halinde 
+koordinatör, durumu derhal İSG Üst Kurul u’na yazılı olarak bildirir.  
+Acil durum planları, yangınla mücadele ve ilkyardım  
+MADDE 21- (1) Birimler, Acil Durumlar Hakkında Yönetmelik hükümleri gereğince 
+çalışma ortamı, kullanılan maddeler, iş ekipmanı ile çevre şartlarını dikkate alarak meydana 
+gelebilecek ve çalışan ile çalışma çevresini etkileyecek muhtemel acil durumları belirler ve
+
+
+================================================================================
+CHUNK NO: 45
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 15
+   - page_label: 16
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ “Acil Durum Planı” hazırlar.  Birim İSG kurulu , acil eylem planlarının oluşturulması , ilgili 
+eğitimlerin verilmesi  ve acil durum tatbikatlarının gerçekleştirilmesinde  Koordinatörlük ve  
+Rektörlük Afet ve Acil Durum Yönetimi Merkezi ile işbirliği yapar.  
+(2) Birim  işveren vekili, acil durumlarla mücadele için birimin büyüklüğü ve taşıdığı 
+özel tehlikeler, yapılan işin niteliği, çalışan sayısı ile birimde bulunan diğer kişileri (öğrenciler, 
+hastalar, ziyaretçiler gibi) dikkate alarak; önleme, koruma, tahliye, yangın la mücadele, ilk 
+yardım ve benzeri konularda uygun donanıma sahip ve bu konularda eğitimli yeterli sayıda 
+çalışanı görevlendirir ve hazır bulunmalarını sağlar.  
+Acil durum ekiplerinde görevlendirilecek personelin belirlenmesi ve diğer hususlar  
+MADDE 22- (1) Birim işveren vekili, arama, kurtarma ve tahliye ekibi ile yangınla 
+mücadele ekibinde gö rev yapacak destek elemanlarını  Acil Durumlar Hakkında Yönetmeliğin
+
+
+================================================================================
+CHUNK NO: 46
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 15
+   - page_label: 16
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+mücadele ekibinde gö rev yapacak destek elemanlarını  Acil Durumlar Hakkında Yönetmeliğin 
+11’inci maddesine uygun olarak görevlendirir.  
+(2) Birim işveren vekili, ilkyardım konusunda İlkyardım Y önetmeliği esaslarına göre 
+ilkyardım sertifikasına sahip destek elemanı görevlendirir . 
+(3) Çalışanların arama -kurtarma -tahliye eğitimi, yangınla mücadele eğitimi ile ilk 
+yardımcı sertifikası eğitimi alması için gerekli planlama ve işlemlerin yapılmasını sağlamak 
+ilgili birim İSG kurulunun  sorumluluğundadır.  Eğitimler Koordinatörlük ve Rektörlük Afet ve 
+Acil Durum Yönetimi Merkezi işbirliği ile planlanır ve acil durum ekiplerine verdirilir.  
+(4) Birimler;  karşılaşılan acil durumları raporlayarak birim İSG kurulunda değerlendirir . 
+Tatbikatlar  
+MADDE 23- (1) Hazırlanan acil durum planının uygulama adımlar ının düzenli takip 
+edilebilmesi ve uygulanabilirliğinden emin olmak için birimlerde, yılda en az bir defa olmak
+
+
+================================================================================
+CHUNK NO: 47
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 15
+   - page_label: 16
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+edilebilmesi ve uygulanabilirliğinden emin olmak için birimlerde, yılda en az bir defa olmak 
+üzere alt işveren çalışanları dahil bütün çalışanların katılımının sağlanmasıyla tatbikat yapılır.  
+(2) Öğrencisi bulunan birimlerde tatbikatlar öğrencilerle birlikte yapılır. Alt işveren , 
+çalışanlarının tatbikatlara katılımının sağlanması için ilgili birim tarafından yapılacak çağrıya 
+uymakla yükümlüdür. Aksayan yönler ve kazanılan deneyimlere göre acil durum planları 
+gözden geçirilerek gerekli dü zeltmeler yapılır.  
+ 
+Tahliye  
+MADDE 24- (1) Ciddi, yakın ve önlenemeyen tehlikenin meydana gelmesi durumunda 
+işveren ve işveren vekilleri;  
+a) Çalışanların işi bırakarak derhal çalışma yerlerinden ayrılıp güvenli bir yere 
+gidebilmeleri için, önceden gerekli düzenlemeleri yapar ve çalışanlara gerekli talimatları verir.  
+b) Durumun devam etmesi hâlinde, zorunluluk olmadıkça, gerekli donanıma sah ip ve
+
+
+================================================================================
+CHUNK NO: 48
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 15
+   - page_label: 16
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+b) Durumun devam etmesi hâlinde, zorunluluk olmadıkça, gerekli donanıma sah ip ve 
+özel olarak görevlendirilenler dışındaki çalışanlardan işlerine devam etmelerini isteyemez.
+
+
+================================================================================
+CHUNK NO: 49
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 16
+   - page_label: 17
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ (2) İşveren, çalışanların kendileri veya diğer kişilerin güvenliği için ciddi ve yakın bir 
+tehlike ile karşılaştıkları ve amirine hemen haber veremedikleri d urumlarda; istenmeyen 
+sonuçların önlenmesi için, bilgileri ve mevcut teknik donanımları çerçevesinde müdahale 
+edebilmelerine imkân sağlar. Böyle bir durumda çalışanlar ın ihmali veya dikkat sizlik yapıp 
+yapmadığı ilgili mevzuat ve hükümlerce incelenir. Sonuc a göre ihmal veya dikkatsiz 
+davranışları olmadıkça yaptıkları müdahaleden dolayı sorumlu tutulamaz.  
+ 
+ONUNCU BÖLÜM  
+Sağlık Gözetimi, İş Kazası ve Meslek Hastalığının Bildirimi  
+Sağlık gözetimi  
+MADDE 25- (1) İşveren ve işveren vekilleri;  
+a) Çalışanların işyerinde maruz kalacakları sağlık ve güvenlik risklerini dikkate alarak 
+sağlık gözetimine tabi tutulmalarını sağlar.  
+b) Çalışanların işe girişlerinde; iş değişikliğinde; iş  kazası, meslek hastalığı veya sağlık
+
+
+================================================================================
+CHUNK NO: 50
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 16
+   - page_label: 17
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+b) Çalışanların işe girişlerinde; iş değişikliğinde; iş  kazası, meslek hastalığı veya sağlık 
+nedeniyle tekrarlanan işten uzaklaşmalarında n sonra işe dönüşlerinde talep etmeleri hâlinde; 
+işin devamı süresince, çalışanın ve işin niteliği ile işyerinin tehlike sınıfına göre Bakanlıkça 
+belirlenen düzenli aralıklarla ç alışanların sağlık muayenelerinin yapılmasını ve gerekli raporun 
+alınmasını sağlamak zorundadır . 
+(2) 6331 sayılı Kanun kapsamında alınması gereken iş için  sağlık raporları işyeri 
+hekiminden alınır. Raporlara itirazlar Sağlık Bakanlığı tarafından belirlenen hakem hastanelere 
+yapılır, hastnelerce verilen kararlar kesindir.  
+(3) Sağlı k gözetiminden doğan maliyet ve bu gözetimden kaynaklı her türlü ek maliyet 
+işverence karşılanır, çalışana yansıtılamaz.  
+(4) Sağlık muayenesi yaptırılan çalışanın özel hayatı ve itibarının korunması açısından 
+sağlık bilgileri gizli tutulur . 
+İş kazası ve m eslek hastalıklarının kayıt ve bildirimi
+
+
+================================================================================
+CHUNK NO: 51
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 16
+   - page_label: 17
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sağlık bilgileri gizli tutulur . 
+İş kazası ve m eslek hastalıklarının kayıt ve bildirimi  
+MADDE 26- (1) İş kazası ve meslek hastalıklarının kayıt ve bildirimi konusunda  
+İşveren vekili;  
+a) Bütün iş kazalarının ve meslek hastalıklarının kaydını tutar, gerekli incelemeleri 
+yaparak bunlar ile ilgili raporları düzenler.  
+b) İşyerinde meydana gelen ancak yaralanma veya ölüme neden olmadığı halde işyeri 
+ya da iş ekipmanının zarara uğramasına yol açan veya çalışan, işyeri ya da iş ekipmanını zarara 
+uğratma potansiyeli olan olayları inceleyerek bunlar ile ilgili raporla rı düzenler.
+
+
+================================================================================
+CHUNK NO: 52
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 17
+   - page_label: 18
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ c) Birimde bir iş kazası meydana gelmesi halinde; kaza, birim işveren vekili, tarafından 
+kolluk kuvvetlerine derhal, Sosyal Güvenlik Kurumu ’na ise en geç  üç (3) iş günü içerisinde "İş 
+Kazası ve Meslek Hastalığı Bildirim Formu" ile bildirir.  
+ç) Sa ğlık hizmeti sunucuları veya işyeri hekimi tarafından kendisine bildirilen meslek 
+hastalıklarını, öğrendiği tarihten itibaren Sosyal Güvenlik Kurumu’na üç (3) iş günü içerisinde 
+"İş Kazası ve Meslek Hastalığı Bildirim Formu" ile bildirir.  
+d) İşyeri hekimi vey a sağlık hizmeti sunucuları; meslek hastalığı ön tanısı koydukları 
+vakaları, Sosyal Güvenlik Kurumu tarafından yetkilendirilen sağlık hizmeti sunucularına sevk 
+eder.  
+e) İşveren vekili sorumluluk alanındaki bütün ramak kala  olayların kaydını tutar  ve ilgili 
+raporları düzenler;  bunlar ın tekrar yaşanmaması gerekli için tedbirleri alır . 
+ 
+ONBİRİNCİ BÖLÜM  
+Çalışanların Bilgilendirilmesi, Eğitimi, Katılımlarının Sağlanması ve Çalışmaktan
+
+
+================================================================================
+CHUNK NO: 53
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 17
+   - page_label: 18
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Çalışanların Bilgilendirilmesi, Eğitimi, Katılımlarının Sağlanması ve Çalışmaktan  
+Kaçınma Hakkı  
+Çalışanların bilgilendirilmesi  
+MADDE 27- (1) Birimde f iilen çalışmakta olan tüm çalışanlar karşılaşılabilecek sağlık 
+ve güvenlik riskleri ile düzeltici ve önleyici tedbirler hakkında birimde İSG hizmetlerini 
+yürütmek üzere görevlendirilen iş güvenliği uzmanı ve işyeri hekimi tarafından bilgilendirilir.  
+(2) İşveren vekili, çalışanların, risk değerlendirmesi, İSG ile ilgili koruyucu  ve önleyici 
+tedbirler, ölçüm, analiz, teknik kontrol, kayıtlar, raporlar ve teftişten elde edilen bilgilere 
+ulaşmasını sağlar.  
+(3) İşveren vekili, tehlikelere karşı alınan önlemleri, Üst Kurulu ve birim İSG kurulları 
+tarafından oluşturulan çalışanların uyması gereken İSG kurallarını , mevcut İSG politika sını ve 
+hedeflerini , gerekli diğer bilgileri ortak kullanım alanlarındaki panolar, uyarı afiş ve levhaları,
+
+
+================================================================================
+CHUNK NO: 54
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 17
+   - page_label: 18
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+güvenlik renkleri, iç yazışm alar ve kurumsal WEB sayfası gibi dijital ve dijital olmayan iletişim 
+kanallarından en az birini kullanarak duyurur.  
+ 
+ 
+ 
+Çalışanların eğitimi  
+MADDE 28- (1) İşveren vekili, Çalışanların İş Sağlığı ve Güvenliği Eğitimlerinin Usul 
+ve Esasları Hakkında Yönetmelik gereğince tüm çalışanlarının  İSG ile ilgili eğitimleri almasını 
+sağlar.
+
+
+================================================================================
+CHUNK NO: 55
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 18
+   - page_label: 19
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ (2) Çalışan temsilcileri özel olarak eğitilir. Çalışan temsilcilerinin eğitimleri iş sağlığı 
+güvenliği kurul üyeleri ile birlikte yapılabilir.  
+(3) Mesleki eğitim alma zorunluluğu bu lunan tehlikeli ve çok tehlikeli sınıfta yer alan 
+işyerlerinde, yapacağı işle ilgili mesleki eğitim aldığını belgeleyemeyenler çalıştırılamaz.  
+(4) İş kazası geçiren veya meslek hastalığına yakalanan çalışana işe başlamadan önce, 
+söz konusu kazanın veya meslek hastalığının sebepleri, korunma yolları ve güvenli çalışma 
+yöntemleri ile ilgili ilave eğitim verilir. Ayrıca, herhangi bir sebeple altı  (6) aydan fazla süreyle 
+işten uzak kalanlara, tekrar işe başlatılmadan önce bilgi yenileme eğitimi verilir.  
+(5) Tehlikeli v e çok tehlikeli sınıfta yer alan işyerlerinde ; yapılacak işlerde 
+karşılaşılacak sağlık ve güvenlik riskleri ile ilgili yeterli bilgi ve talimatları içeren eğitimin 
+alındığına dair belge olmaksızın, başka işyerlerinden çalışmak üzere gelen çalışanlar işe
+
+
+================================================================================
+CHUNK NO: 56
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 18
+   - page_label: 19
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+alındığına dair belge olmaksızın, başka işyerlerinden çalışmak üzere gelen çalışanlar işe 
+başlatılamaz.  
+(6) Geçici iş ilişkisi kurulan birim işveren vekili, İSG risklerine karşı çalışana gerekli 
+eğitimin verilmesini sağlar.  
+(7) Eğitimin maliyeti çalışanlara yansıtılamaz. Eğitimlerde geçen süre çalışma 
+süresinden sayılır.  
+(8) Eğitim sonrası düzenlenecek belge de, eğitime katılan kişinin adı, soyadı, görevi, 
+görev unvanı, eğitimin konusu, süresi, eğitimi verenin adı, soyadı, görev unvanı, imzası ve 
+eğitimin tarihi yer alır. Belgeler, ilgili birimler tarafından çalışanların özlük dosyasında saklanır.  
+Çalışanların  görüşlerinin alınması ve katılımlarının sağlanması  
+MADDE 29- (1) Birim işveren vekili, çalışan temsilcilerinin, destek elemanlarının ve 
+çalışanların, İSG mevzuatında öngörülen konularda görüşlerinin alınmasını ve işbirliği içinde 
+yapılacak çalışmalara kat ılımlarını sağlar.  
+(2) Çalışanların veya çalışan temsilcilerinin, işyerinde İSG için alınan önlemlerin
+
+
+================================================================================
+CHUNK NO: 57
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 18
+   - page_label: 19
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(2) Çalışanların veya çalışan temsilcilerinin, işyerinde İSG için alınan önlemlerin 
+yetersiz olduğu durumlarda veya teftiş sırasında, yetkili makama başvurmalarından dolayı 
+hakları kısıtlanamaz.  
+Çalışmaktan kaçınma hakkı  
+MADDE 30- (1) Ciddi ve yakın tehlike ile karşı karşıya kalan çalışanlar bağlı bulunulan 
+İSG kuruluna, başvurarak durumun tespit edilmesini ve gerekli tedbirlerin alınmasını talep eder. 
+İSG kurulu acilen toplanarak kararını verir. Durum tutanakla tespit edilir. Karar, ça lışana ve 
+çalışan temsilcisine yazılı olarak bildirilir.  
+(2) Kurul veya işveren, çalışanın talebi yönünde karar vermesi hâlinde çalışan gerekli 
+tedbirler alınıncaya kadar çalışmaktan kaçınabilir. Çalışanların çalışmaktan kaçındığı 
+dönemdeki ücreti ile kanu nlardan ve iş sözleşmesinden doğan diğer hakları saklıdır.
+
+
+================================================================================
+CHUNK NO: 58
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 19
+   - page_label: 20
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ (3) Çalışanlar ciddi ve yakın tehlikenin önlenemez olduğu durumlarda birinci fıkradaki 
+usule uymak zorunda olmaksızın işyerini veya tehlikeli bölgeyi terk ederek belirlenen güvenli 
+yere gider. Çalı şanların bu hareketlerinden dolayı hakları kısıtlanamaz.  
+(4) İş sözleşmesiyle çalışanlar, talep etmelerine rağmen gerekli tedbirlerin alınmadığı 
+durumlarda, tabi oldukları kanun hükümlerine göre iş sözleşmelerini feshedebilir. Toplu 
+sözleşme veya toplu iş sözleşmesi ile çalışan kamu personeli, bu maddeye göre çalışmadığı 
+dönemde fiilen çalışmış sayılır.  
+(5) Kanun ’un 25’ inci maddesine göre işyerinde işin durdurulması hâlinde, bu madde 
+hükümleri uygulanmaz.  
+ 
+ONİK İNCİ BÖLÜM  
+Çeşitli ve Son Hükümler  
+Yurtlar ve Misafirhaneler  
+MADDE 31- (1) Üniversiteye bağlı faaliyet gösteren yurt ve/veya misafirhanede İSG 
+faaliyetlerinin planlanmasından, uygulanmasından ve takibinden  yurdun ve/veya 
+misafirhanenin bağlı olduğu işveren vekili sorumludur.
+
+
+================================================================================
+CHUNK NO: 59
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 19
+   - page_label: 20
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+misafirhanenin bağlı olduğu işveren vekili sorumludur.  
+Hizmet sunan yükleniciler,  kiracılar ve tedarikçiler ile bunların çalı şanlarına 
+yönelik faaliyetler  
+MADDE 32- (1) Üniversitede  yapılacak tüm ihalelerde işveren, 6331 sayılı İş Sağlığı 
+ve Güvenliği Kanunu ile ilgili mevzuatın gerektirdiği iş ve işlemlerin yerine getirilmesini 
+hizmet sunucuları, kiracı ve tedarikçilerden ister.  
+(2) İhale mevzuatı kapsamında yüklenici sıfatı ile Ünivers ite’ye bağlı birimlere hizmet 
+sunan gerçek ve tüzel kişiler ile taşınmaz kiralamak suretiyle üniversite yerleşkelerinde iktisadi 
+faaliyetler çerçevesinde hizmet sunan gerçek veya tüzel kişiliğe sahip kiracılar, hizmet 
+verdikleri süre içinde çalışanlarının İSG gerekliliklerini sağlamakla, yangın ve acil durumlarla 
+ilgili tedbir almakla sorumlu olup işbu Yönergeye, varsa ilgili birimin İSG usul ve esaslarını 
+içeren talimat, şartname hükümlerine ve mer’i mevzuata uymakla yükümlüdürler. İhale
+
+
+================================================================================
+CHUNK NO: 60
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 19
+   - page_label: 20
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+içeren talimat, şartname hükümlerine ve mer’i mevzuata uymakla yükümlüdürler. İhale 
+dokümanlarında (şa rtname ve sözleşmelerde) iş bu yönerge ve varsa diğer usul ve esasları içeren 
+talimatlar anlaşmanın eki olarak belirtilecektir. 4735 sayılı Kamu İhale Sözleşmeleri Kanunu 
+uyarınca sözleşmelere konulacak İSG’ye ilişkin yükümlülükler Üst Kurul tarafından bel irlenir.  
+(3) Kanun ve ilgili diğer mevzuat hükümleri çerçevesinde alt işverenlerin, 
+yüklenicilerin veya kiracılar ile tedarikçilerinin kusurundan kaynaklanıp Üniversite ’ye 
+yansıyacak tüm idari para cezaları ve tazminatlar ilgililerine rücu edilir.  
+(4) Hizmet sunan  yükleniciler, kiracılar ve alt işverenler, İSG kurallarına uymakla 
+yükümlüdür. Yükümlülüklerin yerine getirilmemesi nedeniyle doğacak her türlü idari, hukuki
+
+
+================================================================================
+CHUNK NO: 61
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 20
+   - page_label: 21
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ ve cezai sorumluluk kendilerine aittir.  Üniversite ’nin hizmet sunan yüklenicilerin, kiracıların 
+ve alt işverenlerin, İSG kurallarına uyma yükümlüğünü denetler.  
+(5) Kanun ve ilgili mevzuat kapsamında Rektörlük, hizmet sunan yüklenicilerin, 
+kiracıların ve tedarikçilerin yürüttükleri faaliyetler esnasında İSG denetimini yapar ya da 
+yaptırır.  
+Birimlerin işyeri tehlike sınıfı  
+MADDE 33- (1) Tehlike sınıfının belirlenmesinde, birimin asıl işi esas alınır.  
+(2) Rektörlük Üniversite birimlerinin işyerlerine ait tehlike sınıfını ve NACE kodunu İş 
+Sağlığı ve Güvenliğine İlişkin İşyeri Tehlike Sınıfları Tebliği’ne  göre belirler.  
+İSG kayıtları ve onaylı deftere ilişkin yükümlülükleri  
+MADDE 34- (1) İşveren ve işveren vekilleri ilgili mevzuatta belirlenen süreler saklı 
+kalmak  kaydıyla;  
+a) İşyerinde yürütülen iş sağlığı ve güvenliği faaliyetlerine ilişkin her türlü kaydı,
+
+
+================================================================================
+CHUNK NO: 62
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 20
+   - page_label: 21
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+a) İşyerinde yürütülen iş sağlığı ve güvenliği faaliyetlerine ilişkin her türlü kaydı,  
+b) İşten ayrılma tarihinden itibaren en az on beş ( 15) yıl süreyle çalışanların kişisel sağlık 
+dosyalarını  saklar.  
+c) Risk değerlendirmesine göre, sağlık ve güvenliği yönünden riskli olan işlerde 
+çalışanların  güncellenmiş listesini ve bunların maruz iyet durumlarını belirten kayıt lar tutulur. 
+Bu tür kayıtlar ilgili birimlerde bulundurulur. Ayrıca, kanserojen ve mutajen maddelerle çalışan 
+ve bu tür ortamlarda mesai yapan personelin sağlık kayıtları ilgili maddelere maruziyetlerinin 
+sona ermesinden sonr a en az kırk ( 40) yıl süre ile saklanır.  
+(2) Çalışanın işyerinden ayrılarak başka bir işyerinde çalışmaya başlaması halinde, yeni 
+işveren ilgili çalışana ait kişisel sağlık dosyasını yazılı olarak talep eder, dosyanın onaylı bir 
+örneği en geç bir  (1) ay iç erisinde gönderilir.  
+(3) Onaylı defterler birim İSG kurulu bazında tutulacak olup, bahsedilen her bir birim
+
+
+================================================================================
+CHUNK NO: 63
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 20
+   - page_label: 21
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(3) Onaylı defterler birim İSG kurulu bazında tutulacak olup, bahsedilen her bir birim 
+İSG kurulunda en az bir adet onaylatılmış onaylı defter bulunacaktır.  
+(4) Onaylı defter işyerinin bağlı bulunduğu Çalışma ve İş Kurumu İl Müdürlükle ri veya 
+noterce her sayfası mühürlenmek suretiyle onaylanır.  
+(5) Onaylı defter yapılan tespitlere göre iş güvenliği uzmanı, işyeri hekimi ile işveren 
+tarafından birlikte veya ayrı ayrı imzalanır. Onaylı deftere yazılan hususlar işverene ve işveren 
+vekiline  tebliğ edilmiş sayılır. Bu hususlar en yakın zamanda yapılacak birim İSG kurulu 
+toplantısında görüşülür.  
+(6) Onaylı defterin asıl sureti işveren ve/veya işveren vekili, diğer suretleri ise iş 
+güvenliği  uzmanı ve işyeri hekimi tarafından saklanır. Defterin  imzalanması ve düzenli 
+tutulmasından işveren ve ilgili işveren vekili sorumludur. Teftişe yetkili iş müfettişlerinin her 
+istediğinde işveren onaylı defteri göstermek zorundadır.
+
+
+================================================================================
+CHUNK NO: 64
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 21
+   - page_label: 22
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  
+ (7) İşyeri hekimi ve iş güvenliği uzmanı, görevlendirildiği birimde yapılan ç alışmalara 
+ilişkin tespit ve tavsiyeleri ile görevleri arasında yer alan hususlara ait çalışmalarını ve gerekli 
+gördüğü diğer hususları onaylı deftere yazar.  
+(8) Onaylı defter, yapılan tespitlere göre iş güvenliği uzmanı, işyeri hekimi ve işveren 
+tarafında n birlikte veya ayrı ayrı imzalanır. Onaylı deftere yazılan tespit ve öneriler birim 
+işveren vekiline tebliğ edilmiş sayılır.  
+(9) Onaylı defter, işyerinin bağlı bulunduğu Çalışma ve İş Kurumu İl Müdürlükleri veya 
+noterce her sayfası mühürlenmek suretiyle o naylanır. Onaylı defterin asıl sureti birim işveren 
+vekili, diğer suretleri ise iş güvenliği uzmanı ve işyeri hekimi tarafından saklanır. Defterin 
+imzalanması ve düzenli tutulmasından birim işveren vekili sorumludur.  
+İç Yönerge Hazırlama  
+MADDE 35- (1) Üniv ersitede iş sağlığı ve güvenliği kurulu kurma yükümlülüğü
+
+
+================================================================================
+CHUNK NO: 65
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 21
+   - page_label: 22
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+MADDE 35- (1) Üniv ersitede iş sağlığı ve güvenliği kurulu kurma yükümlülüğü 
+bulunan birimler, kendi fiziki yapılarını ve kendi birimlerine özgü tehlike ve riskleri ile 
+önlemlerini dikkate alarak İSG hizmetlerini yürütmekle görevlendirilen iş güvenliği uzmanları 
+ve işyeri hekimleri, Koordinatörlüğün teknik desteğini alarak iç yönerge hazırla yabilir .  
+Disiplin  
+MADDE 3 6- (1) Yönerge hükümleri ve işveren vekillerinin İSG konularında verdiği 
+hukuka uygun talimatlara uymayan çalışanlar hakkında kendi özel kanunlarındaki statüleri 
+uyarınca disiplin hükümleri uygulanır.  
+Hüküm bulunmayan haller  
+MADDE 37- (1) Çalışanların tabi oldukları mevzuat hükümleri saklı kalmak kaydıyla, 
+bu Yönerge ’de hüküm bulunmayan hallerde 6331 sayılı İş Sağlığı ve Güvenliği Kanunu; 4857 
+Sayılı İş Kanunu; 5510 Sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu; 657 Sayılı 
+Devlet Memurları Kanunu; 2547 Sayılı Yükseköğretim Kanunu; 4734 Kamu İhale Kanunu ve
+
+
+================================================================================
+CHUNK NO: 66
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 21
+   - page_label: 22
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Devlet Memurları Kanunu; 2547 Sayılı Yükseköğretim Kanunu; 4734 Kamu İhale Kanunu ve 
+4735 Kamu İhale Sözleşmeleri Kanunu ve ilgili diğer mevzuat hükümleri uygulanır.  
+Yürürlükten kaldırılan yönerge  
+MADDE 38- (1) Senato tarafından 21 Haziran 2018 tarihinde kabul edilen “ Bursa 
+Uludağ Üniversitesi İş Sağlığı ve Güvenliği Yönergesi” kaldırılmıştı r.  
+Yürürlük  
+MADDE 3 9- (1) Bu Yönerge hükümleri Senatoda  kabul edildiği 8 Mayıs 2025 
+tarihinden itibaren yürürlüğe girer.  
+Yürütme  
+MADDE 40- (1) Bu Yönerge hükümlerini  Rektör yürütür .
+
+
+================================================================================
+CHUNK NO: 67
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2025-05-13T14:15:02+03:00
+   - author: ASUS
+   - moddate: 2025-11-07T10:51:49+00:00
+   - source: 207858.pdf
+   - total_pages: 23
+   - page: 22
+   - page_label: 23
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki
+
+

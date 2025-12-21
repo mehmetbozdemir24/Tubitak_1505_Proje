@@ -1,0 +1,112 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2008-05-27T12:13:33+00:00
+   - moddate: 2008-05-27T15:14:26+04:00
+   - author: Sinem
+   - title: Microsoft Word - RIT-TA-BID-06.doc
+   - source: 67814.pdf
+   - total_pages: 1
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+TALİMATLAR  
+Doküman Adı: Ekipman Kullanım Talimatı   
+Doküman Kodu:  
+RİT-TA-BİD-06  İlk Yayın Tarihi : 
+15.12.2006 Revizyon No: 
+01 Revizyon Tarihi: 
+18.05.2007 Sayfa  
+1 / 1 
+ 
+©2007 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+1. Amaç : Bu talimatın amacı kalite  yönetim sistemine ilişkin U.Ü.BİD  sunucu sistem 
+odasındaki sunucuların sürekli çal ışabilmeleri için gerektirdiğ i ortamın ve 
+güvenliğinin sağlanmasıdır. 
+ 2. Kapsam : Bu talimat Bilgi İşlem Daire Başkanlığı bünyesindeki sunucu s istem 
+odalarının ortamını ve güvenliğini kapsar. 
+ 
+3. Sorumlular : Bilgi İşlem Daire Başkanı, S unucu sitemler sorumlusu bu talim atın 
+uygulanmasından sorumludur. 
+ 
+4. Uygulama :  
+4.1 Mesai saati başlangıcında sunuc u sistemlerden sorumlu kişi önce likle odaya 
+girerek kapı anahtarının zorlanı p zorlanmadığını, oda sıcaklığı nda aşırı bir sıcaklık 
+ve koku olup olmadığı kontrol edilir.
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2008-05-27T12:13:33+00:00
+   - moddate: 2008-05-27T15:14:26+04:00
+   - author: Sinem
+   - title: Microsoft Word - RIT-TA-BID-06.doc
+   - source: 67814.pdf
+   - total_pages: 1
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ve koku olup olmadığı kontrol edilir.  
+ 
+4.2 Kesintisiz Güç Kaynağı (KGK) nı n devrede olduğu, Klimaların çal ışır durumda 
+olduğu kontrol edilir 
+ 
+4.3 Kontrol sonucunda herhangi bir   olumsuzluk hissettiğinde derhal  Daire Başkanını 
+konu ile ilgili olarak uyarır. 
+ 
+4.4 Sıcaklık ve koku sensörlerinin çal ışıp çalışmadığını güvenlikle  temasa geçerek 
+araştırır. İlgili sensörlerde  he rhangibir arıza durumunda Yapı  İşleri Teknik Daire 
+Başkanlığı haberdar edilir. (süresi ayda bir) 
+ 
+4.5 Yukarıdaki işlemleri mesai bi timinde de aynen uygular. Aynı zam anda kapının 
+kilitli olup olmadığını kontrol ederek sürekli kilitli bulunmas ını sağlar. 
+ 
+4.6 Sunucu ve Ağ Yönetimi sorumluların ın haricindeki personel bu od alara alınmaz. 
+ 
+  
+5. Gözden Geçirme  ve Onaylama:  
+    Ana Süreç Sahibi: 
+ E m r u l l a h  İ L Ç İ N     T a r i h :  
+ D a i r e  B a ş k a n ı      17.05.2007    
+      
+ Yönetimin Onayı:
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2008-05-27T12:13:33+00:00
+   - moddate: 2008-05-27T15:14:26+04:00
+   - author: Sinem
+   - title: Microsoft Word - RIT-TA-BID-06.doc
+   - source: 67814.pdf
+   - total_pages: 1
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+D a i r e  B a ş k a n ı      17.05.2007    
+      
+ Yönetimin Onayı: 
+ P r o f . D r . E r d a l  E M E L      T a r i h :                                                                                    
+           Yönetim Temsilcisi                               18. 05.2007
+
+

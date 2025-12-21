@@ -1,0 +1,114 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - source: Aylik_Satis_Ozet_Ornek_Sablon.xlsx
+   - sheet: Satış Özeti
+   - file_type: excel
+   - permission: user
+   - columns_present: ['Ay', 'Bölge', 'Ürün', 'Satış Adedi', 'Ciro (₺)', 'Hedef Ciro (₺)', 'Kâr (₺)']
+--------------------------------------------------------------------------------
+[İÇERİK]
+KAYNAK: Aylik_Satis_Ozet_Ornek_Sablon.xlsx > Satış Özeti
+TÜR: Excel Tablosu
+İÇERİK:
+| Ay      | Bölge      | Ürün   |   Satış Adedi |   Ciro (₺) |   Hedef Ciro (₺) |   Kâr (₺) |
+|:--------|:-----------|:-------|--------------:|-----------:|-----------------:|----------:|
+| Ocak    | Marmara    | Ürün A |           152 |      96520 |         105221   |  28608.4  |
+| Ocak    | Marmara    | Ürün B |           238 |      52360 |          48757.8 |   9487.57 |
+| Ocak    | Marmara    | Ürün C |           380 |     250040 |         268352   |  67566.6  |
+| Ocak    | Marmara    | Ürün D |           201 |      66330 |          59970.1 |  22816.3  |
+| Ocak    | Ege        | Ürün A |           463 |     270855 |         253619   |  50563.5  |
+| Ocak    | Ege        | Ürün B |           363 |      80223 |          72314.1 |  12403.5  |
+| Ocak    | Ege        | Ürün C |           108 |      76680 |          71151.3 |  15982.3  |
+| Ocak    | Ege        | Ürün D |           320 |     124480 |         114288   |  34067.3  |
+| Ocak    | İç Anadolu | Ürün A |           413 |     316358 |         346933   |  76986.5  |
+| Ocak    | İç Anadolu | Ürün B |           356 |      78320 |          77544.6 |  11955.8  |
+| Ocak    | İç Anadolu | Ürün C |           138 |      71070 |          71969.6 |  16138.8  |
+| Ocak    | İç Anadolu | Ürün D |           395 |     301780 |         285538   |  59814.3  |
+| Ocak    | Karadeniz  | Ürün A |           493 |     322422 |         329515   | 102091    |
+| Ocak    | Karadeniz  | Ürün B |            84 |      34020 |          33278.8 |   6342.93 |
+| Ocak    | Karadeniz  | Ürün C |           437 |      87837 |          86522.2 |  16828.5  |
+| Ocak    | Karadeniz  | Ürün D |           309 |     208884 |         228502   |  63715.2  |
+| Şubat   | Marmara    | Ürün A |           211 |      84611 |          91292.3 |  22809.4  |
+| Şubat   | Marmara    | Ürün B |           353 |     165910 |         152255   |  31389.6  |
+| Şubat   | Marmara    | Ürün C |           239 |     118305 |         126457   |  35428.1  |
+| Şubat   | Marmara    | Ürün D |           416 |     104832 |         106651   |  35962.7  |
+| Şubat   | Ege        | Ürün A |           237 |     137223 |         131075   |  28714.6  |
+| Şubat   | Ege        | Ürün B |           350 |      92400 |          83449   |  21684.5  |
+| Şubat   | Ege        | Ürün C |           178 |     119438 |         107831   |  22665.6  |
+| Şubat   | Ege        | Ürün D |           441 |     272538 |         287324   |  44916.7  |
+| Şubat   | İç Anadolu | Ürün A |           280 |      67200 |          72777.1 |  21504.5  |
+| Şubat   | İç Anadolu | Ürün B |           317 |      73544 |          67124.5 |  15605.8  |
+| Şubat   | İç Anadolu | Ürün C |           265 |      78970 |          80412   |  16184.5  |
+| Şubat   | İç Anadolu | Ürün D |            84 |      55524 |          59398.6 |  16343.3  |
+| Şubat   | Karadeniz  | Ürün A |           304 |     181488 |         181263   |  46197.1  |
+| Şubat   | Karadeniz  | Ürün B |            64 |      48192 |          47607.3 |   9173.05 |
+| Şubat   | Karadeniz  | Ürün C |           401 |     176440 |         169889   |  44412.4  |
+| Şubat   | Karadeniz  | Ürün D |           271 |     185364 |         176070   |  43018.6  |
+| Mart    | Marmara    | Ürün A |           220 |     162800 |         153970   |  26926.5  |
+| Mart    | Marmara    | Ürün B |           236 |     104312 |          97244.3 |  35042.5  |
+| Mart    | Marmara    | Ürün C |            94 |      72662 |          74600.7 |  23563.7  |
+| Mart    | Marmara    | Ürün D |            77 |      58135 |          57164.3 |  18990.1  |
+| Mart    | Ege        | Ürün A |           177 |     124785 |         115353   |  27609.9  |
+| Mart    | Ege        | Ürün B |           239 |     101336 |          96717.8 |  28327.3  |
+| Mart    | Ege        | Ürün C |           170 |      77860 |          70182.3 |  19632.4  |
+| Mart    | Ege        | Ürün D |           186 |      96162 |          90817.5 |  16729.6  |
+| Mart    | İç Anadolu | Ürün A |           221 |     126633 |         119510   |  33129.8  |
+| Mart    | İç Anadolu | Ürün B |           229 |      71448 |          65230.5 |  14345.5  |
+| Mart    | İç Anadolu | Ürün C |           317 |     224753 |         233577   |  65729.9  |
+| Mart    | İç Anadolu | Ürün D |           150 |      42000 |          40041   |  14503.6  |
+| Mart    | Karadeniz  | Ürün A |           269 |     205785 |         186567   |  45069.8  |
+| Mart    | Karadeniz  | Ürün B |           434 |     261268 |         270711   |  66933.4  |
+| Mart    | Karadeniz  | Ürün C |           267 |     164205 |         167249   |  27286.1  |
+| Mart    | Karadeniz  | Ürün D |           233 |      75026 |          71157.1 |  23305.2  |
+| Nisan   | Marmara    | Ürün A |           374 |     148478 |         145474   |  46516.1  |
+| Nisan   | Marmara    | Ürün B |           193 |      77200 |          74432.8 |  14459.8  |
+| Nisan   | Marmara    | Ürün C |           398 |     239596 |         249714   |  74730    |
+| Nisan   | Marmara    | Ürün D |           197 |     135536 |         140712   |  30813.7  |
+| Nisan   | Ege        | Ürün A |           387 |     260064 |         244932   |  67171.8  |
+| Nisan   | Ege        | Ürün B |           347 |     160314 |         165444   |  50249.5  |
+| Nisan   | Ege        | Ürün C |           109 |      21909 |          24083.5 |   7516.62 |
+| Nisan   | Ege        | Ürün D |            86 |      30874 |          31695.9 |   6724.54 |
+| Nisan   | İç Anadolu | Ürün A |           148 |      60236 |          65020.1 |  19722.3  |
+| Nisan   | İç Anadolu | Ürün B |           169 |     132834 |         144407   |  40789.1  |
+| Nisan   | İç Anadolu | Ürün C |           153 |      69309 |          62505.6 |  11802.9  |
+| Nisan   | İç Anadolu | Ürün D |           148 |      52096 |          46939.1 |   9489.89 |
+| Nisan   | Karadeniz  | Ürün A |           387 |     140094 |         144352   |  27297.9  |
+| Nisan   | Karadeniz  | Ürün B |           210 |     163590 |         154993   |  35184.9  |
+| Nisan   | Karadeniz  | Ürün C |           453 |     318459 |         327989   | 101857    |
+| Nisan   | Karadeniz  | Ürün D |           450 |     104400 |         105288   |  26284    |
+| Mayıs   | Marmara    | Ürün A |           424 |      93704 |          88906.2 |  32290.6  |
+| Mayıs   | Marmara    | Ürün B |           414 |     315468 |         340204   |  87141    |
+| Mayıs   | Marmara    | Ürün C |           275 |     130900 |         130969   |  34738.3  |
+| Mayıs   | Marmara    | Ürün D |           497 |     337960 |         317361   |  99526    |
+| Mayıs   | Ege        | Ürün A |           196 |     140140 |         126808   |  39112.3  |
+| Mayıs   | Ege        | Ürün B |            66 |      24486 |          26643   |   8344.48 |
+| Mayıs   | Ege        | Ürün C |           422 |     302574 |         294717   |  46321.5  |
+| Mayıs   | Ege        | Ürün D |           329 |     180292 |         177702   |  61899.8  |
+| Mayıs   | İç Anadolu | Ürün A |           148 |      46620 |          44703.4 |  10583.7  |
+| Mayıs   | İç Anadolu | Ürün B |           210 |      95550 |          95268.7 |  21454.5  |
+| Mayıs   | İç Anadolu | Ürün C |           272 |     208080 |         216238   |  54935.7  |
+| Mayıs   | İç Anadolu | Ürün D |           329 |     160223 |         165707   |  35526.1  |
+| Mayıs   | Karadeniz  | Ürün A |           176 |      62304 |          59753.2 |  13364.8  |
+| Mayıs   | Karadeniz  | Ürün B |           153 |      90576 |          94244   |  20098.7  |
+| Mayıs   | Karadeniz  | Ürün C |           219 |     161403 |         171414   |  52200.1  |
+| Mayıs   | Karadeniz  | Ürün D |            62 |      43710 |          39384.3 |  12045.6  |
+| Haziran | Marmara    | Ürün A |            69 |      35880 |          32801.1 |   8229.32 |
+| Haziran | Marmara    | Ürün B |           191 |     127970 |         115880   |  34011    |
+| Haziran | Marmara    | Ürün C |           337 |      84250 |          83670.3 |  21781.1  |
+| Haziran | Marmara    | Ürün D |           174 |      60726 |          61829.2 |   9479.33 |
+| Haziran | Ege        | Ürün A |           229 |      57937 |          58366.7 |  12475.6  |
+| Haziran | Ege        | Ürün B |           313 |      78876 |          75272   |  27058.4  |
+| Haziran | Ege        | Ürün C |           152 |      60040 |          64147   |  11340.1  |
+| Haziran | Ege        | Ürün D |           399 |      98154 |         102071   |  17439.1  |
+| Haziran | İç Anadolu | Ürün A |           193 |      90324 |          98806.1 |  26457.6  |
+| Haziran | İç Anadolu | Ürün B |           196 |      62524 |          59658.3 |  14867.8  |
+| Haziran | İç Anadolu | Ürün C |           488 |     265960 |         240712   |  91099.2  |
+| Haziran | İç Anadolu | Ürün D |           328 |     106928 |         111119   |  24784.9  |
+| Haziran | Karadeniz  | Ürün A |           107 |      76184 |          75305.6 |  15081.2  |
+| Haziran | Karadeniz  | Ürün B |           167 |     126753 |         118713   |  42706    |
+| Haziran | Karadeniz  | Ürün C |           434 |     204414 |         205097   |  57526.7  |
+| Haziran | Karadeniz  | Ürün D |           118 |      52628 |          47867.4 |  13852.1  |
+
+

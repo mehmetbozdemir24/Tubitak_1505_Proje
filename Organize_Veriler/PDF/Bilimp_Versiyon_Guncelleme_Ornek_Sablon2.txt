@@ -1,0 +1,122 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Developer Express Inc. DXperience (tm) v20.2.5
+   - creator: 
+   - creationdate: 2025-11-11T09:21:42+03:00
+   - moddate: 2025-11-11T09:21:42+03:00
+   - source: Bilimp_Versiyon_Guncelleme_Ornek_Sablon2.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+VERSİYON GÜNCELLEME BilimpVersiyon: V4.22.09.06
+1.AmaçveKapsam
+Budoküman SPL_2ÜrünTeslimSürecinin birparçasıolarakhazırlanmıştır. Dokümanın amacıaylıkolarak
+yapılangüncelleme paketleri ilegelenyenilikler hakkında kullanıcıların bilgilendirilmesidir.
+2.GüncelVersiyon İleGelenYenilikler
+3.BildirimYönetimi
+Bilimp'te üretilentümbildirimlerin kullanıcıbazlıolarakyönetilebilmesi özelliğieklendi.Profilim-Bildirim
+Yönetimi sekmesinde kullanıcıların webuygulamada veyamobiluygulamada almakistemedikleri
+bildirimleri kapatabilmeleri sağlandı. Örneğinkullanıcıgörevtamamlandı bildirimini mobiluygulamada
+almakistemiyorsa bunukendisiiçinözelleştirebilir halegetirildi.
+4.Projearacı
+4.1.Kaynakişyüküeklendi.
+Projearacınakaynakişyükümenüsüeklendi.Personel, cihazvetaşıtbazlıolarakkaynakların doluluk
+oranlarının ,hangiprojelerde hangiişpaketlerinde görevliolduğunun görülebilmesi sağlandı. Kaynak
+dolulukları %olarakgösteriliyor. Herbirkaynaktıklandığında görevliolduğuprojedeveişpaketinde kaç
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Developer Express Inc. DXperience (tm) v20.2.5
+   - creator: 
+   - creationdate: 2025-11-11T09:21:42+03:00
+   - moddate: 2025-11-11T09:21:42+03:00
+   - source: Bilimp_Versiyon_Guncelleme_Ornek_Sablon2.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+dolulukları %olarakgösteriliyor. Herbirkaynaktıklandığında görevliolduğuprojedeveişpaketinde kaç
+saatlikeforlaatandığıgörülebiliyor. Kaynakişyüküfarklıbirzamanaralığınatransferedilebiliyor.
+4.2.ProjeDurumİzleme
+Projetanımlarına riskdeğerlendirme tanımıeklendi.Buradayapılantanımlara bağlıolarakProjenintalepten
+itaberenplanlama veyürütmesüreciboyuncaprojedeki ilerlemelerin veriskdeğerlendirmelerinin yapılması
+sağlandı.
+4.3.ProjeBaşlatma TalebiveYatırımTalebi
+Llisteleme sayfalarına sıradakionayeklendivedevamedenonayakışlarında talebinensonkimtarafından
+onaylandığı vesıradakionaycının kimolduğunun görülebilmesi sağlandı.
+5.Görevaracı
+5.1.Görevden veritoplama
+Görev-tanımmenüsünde görevetiketitanımının detayınaveritoplamaalanıeklendi.Buradaki
+alandailgilietiketiçingörevinherbiraşamasında kullanıcıların girmesini istedikleri biilgilerveritipleri
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Developer Express Inc. DXperience (tm) v20.2.5
+   - creator: 
+   - creationdate: 2025-11-11T09:21:42+03:00
+   - moddate: 2025-11-11T09:21:42+03:00
+   - source: Bilimp_Versiyon_Guncelleme_Ornek_Sablon2.pdf
+   - total_pages: 2
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+tanımlanarak oluşturulur halegetirildi.Butanımlara göregörevbaşlat,tamamla vb.görevdurumlarında
+eğergörevetiketine bağlıbirveritoplamatanımıvarsakullanıcıgörevibirsonrakiaşamayaalabilmek içinbu
+bilgilerigiriyorvebubilgilerraporlanabiliyor.
+5.2.Mesai bitiminde görevlerin durdurulması
+Yapılıyordurumundaki görevlerin çalışmabaşlangıç saatindeotomatik olarakdurdurulması için
+Görevveçalışma-tanım-parametreler'e Mesaibitiminde görevleri otomatik durdurparametresi eklendi.
+Görevotomatik olarakdurdurulmadan öncekullanıcıya birbilidirimgidiyorveçalışmaya devamedip
+etmediği soruluyor evetdersegörevdurdurulmuyor hayırdersedurduruluyor. Cevaplamazsa yarımsaat
+sonrayenibildirimgidiyorbuesnadacevaplanmamış bildirimlere aitgörevleri durduruyor.
+6.Süreç
+6.1.Devamedensüreçler
+Onayakışıbaşlatılan süreçlerde onayverecekolankişininherhangi birnedenden ötürüonayverememesi
+durumunda sürecinilerleyebilmesi içinsüreçaracınadevamedensüreçlermenüsüeklendi.
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Developer Express Inc. DXperience (tm) v20.2.5
+   - creator: 
+   - creationdate: 2025-11-11T09:21:42+03:00
+   - moddate: 2025-11-11T09:21:42+03:00
+   - source: Bilimp_Versiyon_Guncelleme_Ornek_Sablon2.pdf
+   - total_pages: 2
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+durumunda sürecinilerleyebilmesi içinsüreçaracınadevamedensüreçlermenüsüeklendi.
+Buradadevamonayakışlarısüreçadıkimtarafından onayakışınınbaşlatıldığı vekimdeonaydaolduğubilgisi
+ilegörünüyor. İlgilisatırdaonaycıadınaonaylaveyareddetişlemiaçıklama girilerekyapılıpkaydedildiğinde
+süreçbirsonrakiadımageçiyor.
+7.Kalite
+7.1.Süreçperformans değerlendirme
+KalitearacınaSüreçperformans değerlendirme eklendi.Süreçlerüzerinde tanımlıolanperformans kriterleri
+,hedefkriterveölçmeyöntemi performans değerlendirme kaydınasüreçüzerinden taşınıyorvekullanıcı
+değerlendirme yaptığızamandaki performans sonucunu girerekizlemekaydınıoluşturabiliyor.
+
+

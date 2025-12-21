@@ -1,0 +1,1670 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 0
+   - page_label: 1
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  BURSA ULUDAĞ ÜNİVERSİTESİ  
+BİLİMSEL ARAŞTIRMA PROJELERİ UYGULAMA YÖNERGESİ  
+ 
+BİRİNCİ BÖLÜM  
+Amaç ve Kapsam   
+Madde 1 - (1) Bu Yönerge ; Bursa Uludağ Üniversitesi mensubu doktora/tıpta, diş 
+hekimliğinde, eczacılıkta ve veteriner hekimlikte uzmanlık  veya sanatta yeterlik eğitimini 
+tamamlamış öğretim elemanlarının  hazırladığı bilimsel araştırma proje önerilerinin 
+değerlendirilmesi, kabulü, b unlara ilişkin hizmetlerin yürütülmesi, izlenmesi , sonuçlarının 
+değerlendirilmesi  ve ulusal /uluslararası kuruluşlar tarafından desteklenen projelere kaynak 
+aktarımının yapılması , bunlara ilişkin hizmetlerin yürütülmesi, izlenmesi, sonuçlarının 
+değerlendirilmesi, kamuoyuna duyurulması ile ilgili usul ve esasları n belirlenmesi amacıyla 
+düzenlenen  süreçlere dair genel esasları, bu süreçleri yürüten yönetim organlarını, bu organların  
+görev, yetki ve sorumlulukları ile çalışma usul ve esaslarına ilişkin hükümleri  kapsar.   
+İKİNCİ BÖLÜM  
+Dayanak ve Tanımlar
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 0
+   - page_label: 1
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+İKİNCİ BÖLÜM  
+Dayanak ve Tanımlar  
+Madde 2- (1) Bu yönerge; "2547 Sayılı Yükseköğretim Kanunu'nun 4684 Sayılı 
+Kanun'la değiş en 58.maddesi" ile "Yükseköğretim Kurumları Bilimsel Araştırma Projeleri 
+Hakkındaki Yönetmelik” ve "Yükseköğretim Kurumları Bütçelerinde Bilimsel Araştırma 
+Projeleri için Tefrik Edilen Ödeneklerin Özel Hesaba Aktarılarak Kullanımı, 
+Muhasebeleştirilmesi ile Ö zel Hesabın İşleyişine İlişkin Esas ve Usuller” hükümlerine 
+dayanılarak düzenlenmiştir.   
+Madde 3- (1) Bu yönergede geçen tanımlar aşağıda belirtilmiştir.  
+(a)Ara Rapor: Sözleşmesi imzalanarak yürürlüğe girmiş projeler için; proje y ürütücü sü 
+tarafından BAP Birimine sunulan, projede ilgili süre içerisinde gerçekleştirilmiş faaliyetleri ve 
+ara çıktıları içerecek şekilde hazırlanmış rapordur.  
+(b)Araştırmacı: Bilimsel araştırma projesinin yürütülebilmesi için proje yürütücüsü 
+tarafından proje eki binde yer verilen; öğretim elemanları, proje konusu ile ilgili lisans ve
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 0
+   - page_label: 1
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+tarafından proje eki binde yer verilen; öğretim elemanları, proje konusu ile ilgili lisans ve 
+lisansüstü öğrenim görmekte olan öğrenciler ve eğitimlerini tamamlamış , uzmanlığı nedeniyle 
+projede görev verilen kişiler dir. 
+(c)Bilimsel Araştırma Projesi  (BAP) : Tamamlandığında  sonuçları ile alanında bilime 
+evrensel veya ulusal ölçülerde katkı yapması, ülkenin teknolojik, ekonomik, sosyal ve kültürel 
+kalkınmasına kat kı sağlaması beklenen bilimsel içerikli, Üniversite içi ve/veya dışı, ulusal 
+ve/veya uluslararası kurum ya da kuru luşların katılımlarıyla da yapılabilecek projeler ile bilim 
+insanı yetiştirme ve araştırma altyapısı kurma ve geliştirme projeleri dir.  
+(ç)Bilimsel Araştırma Projeleri  Komisyonu : Bilimsel araştırma projelerinin 
+değerlendirilmesi, kabulü, desteklenmesi, teş vik ve koordine edilmesi, Üniversitenin araştırma 
+performansının artırılması için tedbirler alınması ile araştırma performansının ölçülmesi,
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 0
+   - page_label: 1
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+performansının artırılması için tedbirler alınması ile araştırma performansının ölçülmesi, 
+değerlendirilmesi ve araştırma politikalarının belirlenmesiyle ilgili faaliyetlerin yürütülmesi ve 
+Rektörün  bilimsel araştırmalarla ilgili olarak vereceği diğer görevleri yürütmek amacıyla 
+oluşturulan komisyon dur. 
+(d)BAP  Komisyon u Başkanı: BAP Komisyonuna Üniversite adına başkanlık etmekten 
+ve BAP Komisyonu faaliyetlerinin yürütülmesinden sorumlu, rektör yardımcısıdır . 
+(e)BAP  Koordinasyon Birimi: BAP  Komisyonunun sekretarya hizmetlerinin 
+yürütülmesi, bütçe ödeneklerinin özel hesaba aktarılması, özel hesaba ilişkin iş ve işlemlerin 
+yürütülmesi ve Üniversite araştırmacılarının görev aldığı ulusal ve uluslara rası 
+organizasyonlarca desteklenen projelerin ilgili mevzuatla belirlenen süreçlerinin yürütülmesi, 
+CheckPoint Threat Extraction secured this document 
+ GetOriginal
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 1
+   - page_label: 2
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  izlenmesi ve üst yöneticinin bilimsel araştırma projeleri ile ilgili olarak vereceği diğer görevleri 
+ilgili birimlerle koordine halinde yürütmekle sorumlu b irimdir. 
+(f) BAP Koordinatörlüğü: Rektör tarafından görevlendirilen bir koordinatör ve azami 
+2 (iki) koordinatör yardımcısı ile birim personelinden oluşan koordinatörlüktür.  
+(g)BAP  Koordinatörü: BAP Koordinatörlüğü ve BAP Birimi nin faaliyetlerinin 
+Üniversite adına yürütülmesiyle yükümlü, Rektör tarafından görevlendirilen ve Rektöre karşı 
+sorumlu Üniversite öğretim üyesi dir. 
+(ğ) BAP Koordinatör Yardımcısı: BAP Birimi Koordinatörüne birimin faaliyetlerinin 
+yürütülmesinde yardımcı o lmak üzere BAP Birimi Koordinatörü  tarafından belirlenen ve 
+Rektör tarafından atanan öğretim elemanı veya en az lisans derecesine sahip personeldir.  
+(h) Birim: Üniversiteye bağlı Fakülte, Enstitü, Yüksekokul, Meslek Yüksekokulu, 
+Merkez Müdürlüğü, Rektörlüğe Bağlı Bölüm ve ya Konservatuar dır.
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 1
+   - page_label: 2
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Merkez Müdürlüğü, Rektörlüğe Bağlı Bölüm ve ya Konservatuar dır.  
+(ı) Bursiyer:  Bilimsel araştırma projeleri kapsamında projeden ödenek almak üzere 
+projede yer alacak, Üniversitenin tezli yüksek lisans veya doktora programlarına kayıtlı 
+öğrenci dir. 
+(i) Fikri ve Sınai Mülkiyet Hakkı (FSMH): Patent, faydalı model, endüstriyel tasarım, 
+ticaret markası, hizmet markası, ticaret ünvanı, menşe adı ve mahreç işareti, internet alan adı, 
+entegre devre topografyası, telif hakkı, veri tabanı, ölçme değerlendirme aracı, eğitim programı, 
+bilgisayar tabanlı eğitim aracı, “know -how”, ticari sır, buluş, teknoloji, geliştirme, malzeme, 
+bileşim , üretim süreci  ve yöntemi gibi sınai alandaki yeni yatırım ile bilimsel, edebi, sanatsal 
+faaliyetler kapsamında insan düşüncesinin ve üretkenliğinin eseri olan özgün fikir ve eser dâhil 
+olmak üzere tescilli veya tescilsiz tüm benzeri fikri ve sınai mülkiy et hakkı, bu hakka istinaden
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 1
+   - page_label: 2
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+olmak üzere tescilli veya tescilsiz tüm benzeri fikri ve sınai mülkiy et hakkı, bu hakka istinaden 
+yapılmış başvuru, yenileme ve uzatma hakkı ile diğer ülkelerde eşdeğer veya aynı sonucu 
+doğuracak nitelikte korumay a haiz hak lardır.  
+(j) Gerçekleştirme Görevlisi: Özel hesap kapsamında yapılacak harcamalarda, 
+harcama yetkilisin in talimatı üzerine işin yaptırılması, mal veya hizmetin alınması, teslim 
+almaya ilişkin işlemlerin yapılması, belgelendirilmesi ve ödeme için gerekli belgelerin 
+hazırlanması ve kontrolü görevlerini yürütmek üzere harcama yetkilisi tarafından 
+görevlendiril en kişi dir. 
+(k) Hakem: Proje önerilerinin ve devam etmekte olan projeler kapsamında sunulan 
+rapor, talep ve yayın gibi unsurların değerlendirilmesi için görüşlerine başvurulan , bilimsel 
+araştırma projesi alanında uzman ve en az doktora derecesine sahip kiş idir. 
+(l) Harc ama Yetkilisi: BAP Koordinatörüdür.  
+(m) Kaynak Aktarımı: Ulusal veya uluslararası kurum ve kuruluşlar tarafından
+
+
+================================================================================
+CHUNK NO: 8
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 1
+   - page_label: 2
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(m) Kaynak Aktarımı: Ulusal veya uluslararası kurum ve kuruluşlar tarafından 
+desteklenen bilimsel araştırma projelerinde kullanılmak üzere, proje bedelinin yüzde otuzunu 
+aşmaması kaydıyla BAP Komisyonu tarafından önerilen ve Rektör tarafından onaylanan nakdi 
+katkı dır. 
+(n) Kılavuz: BAP Komisyonu tarafından oluşturulan BAP projeleri için güncel 
+uygulama esasları nı içeren  doküman dır. 
+(o) Muhasebe Birimi: Üniversitede muhasebe işlemlerinin yürütüldüğü birim dir. 
+(ö) Özel Hesap: Üniversite bütçesinde bilimsel ve teknolojik araştırma hizmetleri için 
+öz gelir ve hazine yardımı karşılığı olarak tefrik edilen bilimsel araştırma projelerine ilişkin 
+ödeneklerin, ilgisine göre cari veya sermaye ekonomik kodlarından tahakkuka bağlanmak 
+suretiyle aktarıldığı Muhasebe Birimi adına açtırılan banka hesabı dır. 
+(p) Proje Ekibi: Proje yürütücüsü  ve araştırmacılar dır. 
+(r) Proje Sözleşmesi: Desteklenmesine karar verilen projeler için Rektör veya -yazılı
+
+
+================================================================================
+CHUNK NO: 9
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 1
+   - page_label: 2
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(r) Proje Sözleşmesi: Desteklenmesine karar verilen projeler için Rektör veya -yazılı 
+olarak yetki devri yapılmak suretiyle - BAP Komisyonu Başkanı ile proje ekibi tarafından 
+imzalanan ; projelerin yürütülmesi, sonuçlandırılması ve proje sonuçlarının yayımlanması gibi 
+hususlarda uyulacak ilke, usul ve sorumlulukların belirtildiği proje protokolü dür.  
+(s) Proje Yürütücüsü: Projeyi teklif eden, hazırlanmasından, yürütülmesinden ve 
+sonuçlandırılmasından sorumlu, Üniversitenin kadrolu öğretim üyesi veya doktora/tıpta, diş
+
+
+================================================================================
+CHUNK NO: 10
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 2
+   - page_label: 3
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  hekimliğinde, eczacılıkta ve veteriner hekimlikte uzmanlık/sanatta yeterlik eğitimini 
+tamamlamı ş Üniversitenin kadrolu öğretim elemanı dır. 
+(ş) Proje Süreçleri Yönetim Sistemi  (BAPSİS) : Proje süreçlerinin elektronik ort amda 
+hızlı ve etkin bir şekilde yönetilebilmesi i çin BAP Birimi, BAP Komisyonu, hakemler ve proje 
+ekibi tarafından kullanılan proje s üreçleri yönetim sistemi yazılımıdır.  
+(t) Rektör: Bursa Uludağ Üniversitesi Rektörü dür. 
+(u) Rektör Yardımcısı: BAP ile ilgili olarak Rektör tarafından görevlendirilen Bursa 
+Uludağ Üniversitesi Rektör Yardımcısıdır.  
+(ü) Senato: Bursa Uludağ Üniversitesi Senatosu ’nu ifade eder.  
+(v) Sonuç Raporu: Proje süresinin bitimini takiben Kılavuzda belirtilen süre içerisinde 
+Yürütücü tarafından BAP Birimine sunulan ve projenin tüm faaliyetleri ile çıktılarını içerecek 
+şekilde hazırlanmış rapor dur.  
+(y)YÖKSİS: Yüksekö ğretim Kurulu Bilgi Sistemi  ortak veri tabanı dır. 
+ 
+ÜÇÜNCÜ  BÖLÜM
+
+
+================================================================================
+CHUNK NO: 11
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 2
+   - page_label: 3
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(y)YÖKSİS: Yüksekö ğretim Kurulu Bilgi Sistemi  ortak veri tabanı dır. 
+ 
+ÜÇÜNCÜ  BÖLÜM  
+Yönetim Organlarının Oluşumu, Görev, Yetki ve Sorumlulukları  
+BAP Komisyonu nun Oluşumu  
+Madde 4- (1) BAP Komisyonu, Rektör veya Rektör tarafından görevlendirilen bir 
+komisyon başkanının başkanlığında BAP Koordinatörü ile Senatonun önerisiyle Rektör 
+tarafından görevlendirilen, komisyon başkanı ve BAP Koordinatörü dâhil  olmak üzere en az  7 
+(yedi) en çok  11 (on bir ) öğretim üyesinden oluşur.    
+(2) Üniversitenin var olan bilim dalları arasında denge gözetilmek suretiyle seçilen 
+BAP Komisyonu üyelerinin ve komisyon başkanının görev süresi 4 (dört) yıldır. Görev süresi 
+biten başkan ve komisyon üyesi aynı usulle yeniden görevlendirilebilir.  
+(3) Komisyon Üyeleri , başvurusu yapılan ve değerlendirilen projeler kapsamındaki 
+tüm bilgilerin gizliliği, etik ilkelere uygun olarak hareket edilmesi ve ilgili mevzuatın
+
+
+================================================================================
+CHUNK NO: 12
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 2
+   - page_label: 3
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+tüm bilgilerin gizliliği, etik ilkelere uygun olarak hareket edilmesi ve ilgili mevzuatın 
+gerektirdiği hususlara uygun olarak görevlerini yürütme kle sorumludur. Bu kapsamda 
+uygulanacak proje türlerinin bilimsel araştırma projesi tanımına ve mevzuata uygunluğundan 
+BAP Komisyonu sorumludur.  
+(4) Komisyon başkanı ve üyeleri görev, yetki ve sorumluluklarını yerine 
+getirmediklerinin tespit edilmesi halin de, görevlendirilmelerinde izlenen usule uygun olarak 
+Rektör tarafından görev süreleri dolmadan görevden alınabilirler. Herhangi bir nedenle 
+görevinden ayrılan Komisyon Başkanı veya komisyon üyesinin yerine aynı usul ile yeni bir üye 
+görevlendirilir.   
+Topl antı ve Karar Yeter Sayısı  
+Madde 5- (1) BAP Komisyonu, Komisyon Başkanı’nın çağrısı üzerine toplanır. BAP 
+Komisyonu  üye tam sayısının  salt çoğunlu ğu ile  toplanır ve kararlar katılanların salt çoğunluğu 
+ile alınır. Oylama açık yapılır.  Oyların eşit olması halinde, BAP Komisyonu Başkanının
+
+
+================================================================================
+CHUNK NO: 13
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 2
+   - page_label: 3
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ile alınır. Oylama açık yapılır.  Oyların eşit olması halinde, BAP Komisyonu Başkanının 
+kullandığı oy yönünde karar alınmış olur . 
+(2) BAP  Komisyonu üyeleri, kendilerinin görev aldığı projelerin değerlendirilmesi 
+amacıyla yapılacak görüşmelere ve oylamaya katılamazlar.  
+Komisyonun Görev Yetki ve Sorumlulukları  
+Madde 6- (1) BAP Komisyonunun görev, yetki ve sorumlulukları aşağıdaki gibidir:
+
+
+================================================================================
+CHUNK NO: 14
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 3
+   - page_label: 4
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  (a) Bilimsel araştırma projeleri için başvuru ve değerlendirme takvimini hazırlayıp ilan 
+eder.  
+(b) Proje sonuçlarının yüksek katma değerli çıktılar oluş turmasını teşvik edecek ve 
+kaynakların verimli ve etki li bir şekilde kullanılmasını destekleyecek politikaları göz önünde 
+bulundurar ak desteklenecek proje türleri ile uygulama esaslarını ve sağlanacak destek 
+miktarlarını belirle r. 
+(c) Bilimsel araştırma proje başvurularının yapılması, değerlendirilmesi, projelerin 
+yürütülmesi, izlenmesi ve sonuçlandırılması ile ilgili uygulama esaslarını içeren Kılavuzu 
+hazırlar , ilan eder ve gerektiğinde günceller . 
+(ç) Projelerle ilg ili formları ve d esteklenmesi kararlaştırılan projeler için kullanılacak 
+proje protokolünü hazırlar.  
+(d) Bilimsel araştırma proje lerine dair başvuruları değerlendir ir, gerekli görülen 
+hallerde  proje önerilerini hakemler e göndererek gelen raporlar ile birlikte projenin desteklenip 
+desteklenmeyeceğine karar ver ir.
+
+
+================================================================================
+CHUNK NO: 15
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 3
+   - page_label: 4
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+desteklenmeyeceğine karar ver ir. 
+(e) Projeler kapsamında hakem ücreti ödenmesi ile ilgili usul ve esasları belirle r. 
+(f) Yürürlükte olan bilimsel araştırma projesine ait ara rapor lar ve sonuç raporunu n 
+sunulması ile ilgili ilkeleri belirler ve bu raporları  karara bağlar.  
+(g) Yürürlükte olan projeler kapsamında proje yürütücülerinden gelen ek süre, ek bütçe 
+ve diğer tüm talepleri değerlendirerek karara bağla r. 
+(ğ) Gerekli gördüğü hallerde proje çalışmalarını yerinde inceleyebilir ve/veya konunun 
+uzmanlarına inceletebilir, proje yürütücülerini değiştirebilir, projeyi yürürlükten kaldırabilir.  
+(h) Yürütücülüğünü Üniversite mensubu araştırmacıların yaptığı , ulusal veya 
+uluslararası kurum ve kuruluşlar tarafından desteklenen ve fon desteği sağlayan ku ruluş 
+tarafından Üniversitenin proje bütçesine nakdi katkı sağlaması koşulu bulunan bilimsel 
+araştırma projeleri kapsamında BAP Birimi tarafından kaynak aktarımına yönelik başvu rularla
+
+
+================================================================================
+CHUNK NO: 16
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 3
+   - page_label: 4
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+araştırma projeleri kapsamında BAP Birimi tarafından kaynak aktarımına yönelik başvu rularla 
+ilgili usul ve esasları belirler , başvuruları değerlendirir ve bu kapsa mda destek sağlanan 
+projelere yönelik ara rapor  ve sonuç raporu sunulm asına yönelik ilkeleri belirle r. 
+(ı) Yürütücü tarafından tamamlandığı bildirilen veya süresi b iten bilimsel araştırma 
+projesi nin Kılavuz esaslarına bağlı olarak sonuçlandır ılmasına karar  verir. 
+(i) Üniversite nin araştırma performansının ölçülmesi, değerlendirilmesi ve artırılması 
+ile ilgili faaliyetler ine ve araştırma politikalarının belirlen mesi çalışmalarına katkı sağlar.  
+(j) Ulusal bilim ve teknoloji politikalarını, ülkenin kalkınma planı hedeflerini, Bilim, 
+Teknoloji ve Yenilik Kurulu kararlarını da dikkate alarak öncelikli araştırma alanları ve 
+konularının belirlenmesine yönelik çalışma yaparak Senatoya öner ir. 
+(k) Sözleşme ve yönerge maddelerine aykırı lık durumunda 2547 sayılı kanun ve ilgili
+
+
+================================================================================
+CHUNK NO: 17
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 3
+   - page_label: 4
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(k) Sözleşme ve yönerge maddelerine aykırı lık durumunda 2547 sayılı kanun ve ilgili  
+diğer  kanunlarda öngörülen yaptırımlar  ile ilgili yasal işlem yapılması hususunda Rektöre görüş 
+bildirir.  
+(l) Projeler kapsamında bursiyer ödemesi yapılması ile ilgili usul ve esasları belirle r. 
+(m) Başvurusu yapılan ve değerlendirilen projeler kapsamındaki tüm bilgilerin 
+gizliliğini korum ak suretiyle etik ilkelere ve ilgili mevzuatın gerektirdiği hususlara uygun 
+olarak hareket eder.  
+(n)  Ülkemiz ve Bursa Uludağ Üniversitesi bilim politikalarına uygun olarak öncelikli 
+araştırma alanları ve konularının belirlenmesine yönelik çalışma yaparak Senatoya önerir.  
+(o) Yükseköğretim Kurumları Bilimsel Araştırma Projeleri Hakkındaki Yönetmelik 
+kapsa mında, Rektör tarafından verile n diğer görevleri yerine getir ir. 
+(ö) Yükseköğretim kurumunun uzman elemanı bulunan her dal ile ilgili, ulusal bilim 
+ve teknoloji politikalarına, ülkenin kalkınma planı hedeflerine, Bilim, Teknoloji ve
+
+
+================================================================================
+CHUNK NO: 18
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 3
+   - page_label: 4
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ve teknoloji politikalarına, ülkenin kalkınma planı hedeflerine, Bilim, Teknoloji ve 
+Yenilik Kurulu veya Yükseköğretim Kurulunun belirlediği bilim politikalarına uygun 
+konulara öncelik vererek, bilime, ülkenin teknolojik, ekonomik, sosyal, sanatsal, 
+kültürel gelişimine ve kalkınmasına katkı sağlayacak b ilimsel araştırma projelerinin 
+desteklenmesin i sağlar.
+
+
+================================================================================
+CHUNK NO: 19
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 4
+   - page_label: 5
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  (p) B ilimsel araştırma projelerinin seçimi ve desteklenmesinde; yükseköğretim 
+kurumları tarafından YÖKSİS’te duyurulan yapılmış ve yapılmakta olan projeler de 
+dikkate alınarak, temel bilimler içerikli, sonuçları uygulamaya dönük, kaynakları ve 
+faaliyetleri bakı mından çok katılımlı, çok merkezli, kurumlar arası, uluslararası ve 
+disiplinlerarası nitelikteki projelere öncelik verebilir.  
+(2) BAP Komisyon u, desteklenen projeler in bu maddede belirlenen i lkelere 
+uygunluğ un sağlanıp sağlanmadığından  sorumludur.  
+BAP Koordinatörlüğü   
+Madde 7 - (1) BAP Koordinatörlüğü; Rektör tarafından görevlendirilen bir koordinatör 
+ve azami 2 (iki) koordinatör yardımcısı  ile BAP Koordinasyon B irimi personelinden oluşur.  
+(2) Alanında bilime evrensel veya ulusal ölçülerde katkı yapması, ülkenin teknolojik, 
+ekonomik, sosyal ve kültürel kalkınmasına katkı sağlaması beklenen bilimsel içerikli,
+
+
+================================================================================
+CHUNK NO: 20
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 4
+   - page_label: 5
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ekonomik, sosyal ve kültürel kalkınmasına katkı sağlaması beklenen bilimsel içerikli, 
+Üniversite içi ve/veya dışı, ulusal ve/veya uluslararası kurum ya da kuruluşların katılı mları ile 
+yapılacak araştırma projelerini desteklemek, Üniversite bilim politikasına uygun öncelikli 
+araştırma alanlarını ve konuları belirlemek, bunlara bütçe oluşturmak, desteklenen bilimsel 
+araştırma projelerinin düzenli olarak yürütülmesi, izlenmesi ve  sonuçlandırılmasını sağlamak, 
+araştırma sonuçlarının yayına dönüşmesi için teşvikler geliştirmek gibi görevler  ifa eder .  
+BAP Koordinatörü  
+Madde 8- (1) BAP Koordinatörü, BAP birimi faaliyetlerinin Bursa Uludağ 
+Üniversitesi adına yürütülmesinden sorumlu öğretim üyesidir. BAP Koordinatörü, alanında 
+bilimsel çalışmaları ile tanınan öğretim üyeleri arasından Rektör  tarafından görevlendirilir ve 
+Rektöre karşı sorumludur.  
+Madde 9- (1) BAP Koordinatörü nün görev, yetki ve sorumlulukları aşağıdaki gibidir:
+
+
+================================================================================
+CHUNK NO: 21
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 4
+   - page_label: 5
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Madde 9- (1) BAP Koordinatörü nün görev, yetki ve sorumlulukları aşağıdaki gibidir:  
+(a) BAP Biriminin program ve faaliyetlerini ilgili mevzuat, işbu Yönerge ve BAP 
+Komisyonu kararları doğrultusunda düzenler ve yürütür.  
+(b) BAP Komisyonu Başkanı görevi başında olmadığı zaman  yerine vekâlet eder.  
+(c) Projelerle ilgili duyuruları hazırlar ve yazışmaları yap ar. 
+(ç) BAP Komisyonu toplantılarının gündemini oluştur ur. 
+(d) BAP Komisyonu toplantılarında raportörlük yapar.  
+(e) BAP Birimi ve BAP Komisyonu arasında iletişim ve koordinasyonu sağlar.  
+(f) Proje lerle ilgili  satın alma işlemleri ni yürütmesi için Gerçekleştirme Görevlisi atar. 
+(g) İlgili Yönetmelik hükümlerine uygun olarak projeler hakkında YÖKSİS’e veri 
+aktarılmasını sağlar ve kamuoyuna duyurulmak  üzere Rektörlüğe rapor verir.  
+(ğ) Rektöre ve BAP Komisyonu Başkanına, BAP Birimi faaliyetleri hakkında 
+dönemsel yazılı ra porlar sunar . 
+BAP Koordinatör Yardımcısının Yetki ve Sorumlulukları
+
+
+================================================================================
+CHUNK NO: 22
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 4
+   - page_label: 5
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+dönemsel yazılı ra porlar sunar . 
+BAP Koordinatör Yardımcısının Yetki ve Sorumlulukları  
+Madde 10- (1) BAP Koordinatör Yardımcısı, BAP Koordinatörüne yukarıda belirtilen 
+görevlerin yerine getirilmesinde yardımcı olmanın yanı sıra BAP Birimindeki koordinasyonu 
+sağlamak suretiyle birim hizmetlerinin etkili, verimli ve süratli bir şekilde yürütülmesini sa ğlar 
+ve BAP Koordinatör ü tarafından verilen diğer görev ve sorumlulukları yerine getirir.  Görev 
+süresi biten Koordinatör ve Koordinatör Yardımcıları aynı usulle tekrar atanabilir. Koordinatör 
+araştırma ve geliştirmeden sorumlu Rektör Yardımcısına, koordina tör yardımcıları 
+Koordinatöre bağlı olarak çalışır.  Görev süreleri Koordinatörün görev süresi yle sınırlıdır . 
+DÖRDÜNCÜ  BÖLÜM
+
+
+================================================================================
+CHUNK NO: 23
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 5
+   - page_label: 6
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  Proje B aşvuru su ve Değerlendirme  
+Proje Başvurusu  
+Madde 1 1- (1) Proje başvuruları ve ulusal veya uluslararası kuruluşlar tarafından 
+desteklenen bilimsel araştırma projelerine kaynak aktarımının yapılmasına yönelik destek 
+başvuruları ilgili proje türü için Kılavuzda belirlenmiş olan koşullara uygun olarak yapılır. P roje 
+başvuruları ve ulusal veya uluslararası kuruluşlar tarafından desteklenen bilimsel araştırma 
+projelerine kaynak aktarımının yapılmasına yönelik destek başvuruları Proje Süreçleri Yönetim 
+Sistemi (BAPSİS) kullanılarak gerçekleştirilir. Başvuru koşullar ı ve başvuruda aranacak şartlar  
+BAP Komisyonunca karar verilen proje takvimi ve duyurular ile ilan edilir.  
+(2) Etik kurul ve/veya yetkili mercilerden yasal izin alınması zorunlu olan projeler için 
+gerekli onay ve izin belgelerinin alınması proje yürütücüsü nün sorumluluğundadır.  
+(3) Süresi bitmesine rağmen sonuçlandırılmamış projesi bulunan, diğer projelerden
+
+
+================================================================================
+CHUNK NO: 24
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 5
+   - page_label: 6
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(3) Süresi bitmesine rağmen sonuçlandırılmamış projesi bulunan, diğer projelerden 
+yerine getirilmemiş ara rapor gibi yükümlülükleri bulunan proje yürütücüleri ilgili 
+yükümlülüklerini başarıyla sonuçlandırmadan, BAP Komisyonu tarafından yaptırım uygulanan 
+araştırmacılar ise yaptırım süresi dolmadan herhangi bir türde yeni bir proje başvurusu 
+gerçekleştiremez  ve yeni projelerde araştırmacı olarak görev alamazlar.  
+Madde 1 2- (1) Proje ekibinin bilimsel araştırma projesinde görev almalarına ilişkin 
+usul ve esaslar, hangi proje türlerinde ve aynı anda kaç adet projede yer alabileceğine dair 
+sınırlamalar BAP Komisyonu taraf ından belirlenir ve güncel Kılavuz ile ilan edilir.  
+(2) Sözleşmeli kadrolarda bulunan öğretim üyeleri/elemanları ve doktora sonrası 
+araştırmacılar ile tıpta yan dal uzmanlık  eğitimine devam eden araştırmacılar  ve yaş haddinden 
+emeklilik sonrası Üniversited e sözleşmeli olarak görev yapan öğretim üyeleri BAP Birimi
+
+
+================================================================================
+CHUNK NO: 25
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 5
+   - page_label: 6
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+emeklilik sonrası Üniversited e sözleşmeli olarak görev yapan öğretim üyeleri BAP Birimi 
+tarafından desteklenen projelerde yürütücü olarak görev alamaz.  
+(3) Proje yürürlükte iken Yürütücünün proje ekibinden araştırma cı çıkarılması  veya 
+proje ekibine araştırmacı eklenmesine yönelik talebi BAP Komisyonu tarafından 
+değerlendirilerek karara bağlanır. Bu kapsamda Yürütücünün, gerekçelendirilmiş talebi ile 
+birlikte ekipten çıkarılmak veya ekibe eklenmek istenen araştırmacıların bu kapsamdaki 
+dilekçelerin i de BAP Birimine sunması gerekir . Proje ekibinden çıkarılmak istenen 
+araştırmacının talep dilekçesinin temin edilemediği durumda Yürütücü, dilekçesinde bu 
+duruma açıklık getirmekle yükümlüdür.  
+Madde 1 3- (1) Tez projeleri hariç, BAP Komisyonu tarafından desteklenecek 
+projelerin süreleri, azam i 36 (otuz altı ) aydır. Bu süreden daha az süreyle desteklenen ve 
+Kılavuzda ek süre talebi yapılabilece ği belirtilen proje türlerinde ek süre talep  edilebilir . Proje
+
+
+================================================================================
+CHUNK NO: 26
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 5
+   - page_label: 6
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+türlerine göre ek süre verilip verilmeyeceği, ek sü re verilme koşulları ve verilebilecek ek süreler 
+BAP Komisyonu tarafından  belirlenerek duyurulur.  
+ (2) Proje çalışmasının herhangi bir yasal izin ve/veya etik k urul onay belgesi 
+gerektirdiği durumlarda, bu belge ler talep edilen ek sürenin bitimini kapsayacak şekilde 
+düzenlenmiş ve/veya ek süre talebi yapılması durumunda belge süresinin uzatılmış olması 
+gerekir.  
+(3) BAP Komisyonu, gerekli gördüğü hallerde veya proje yürütücüsünün gerekçeli 
+talebini yerinde bulması du rumunda projenin normal süresinden sayılmamak üzere en çok  12 
+(on iki) aya kadar projeyi askıya alabilir. Askıya alınan projeler tekrar yürürlük kazanıncaya 
+kadar proje kapsamında herhangi bir harcama veya ödeme gerçekleştirilmez. Ancak projenin 
+askıya alınmasından önce varsa devam eden harcama süreçleri mevzuata uygun olarak  
+yürütülerek sonuçlandırılır. Yürütücünün talebi ile proje, BAP Komisyonu kararı ile yeniden
+
+
+================================================================================
+CHUNK NO: 27
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 5
+   - page_label: 6
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yürütülerek sonuçlandırılır. Yürütücünün talebi ile proje, BAP Komisyonu kararı ile yeniden 
+başlatılabilir. Bu durumda, askıya alma süresi projenin onaylanan süresine ilave edilir. Askıya
+
+
+================================================================================
+CHUNK NO: 28
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 6
+   - page_label: 7
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  alındığı süre sona erdikten en geç 1 (bir) ay sonra herhangi bir iş lem yapılmayan projeler BAP 
+Komisyonu tarafından iptal edilir.  
+(4) Yürütücünün altı aydan uzun süreli izin alması veya kurum dışı görevlendir ilmesi  
+durumunda proje yürütücüsü projenin askıya alınmasını veya yürütücü değişikliğini talep etmez 
+ise, proje BAP komisyonu kararı ile yürütücünün görevlendir ilme tarihinden itibaren en çok 12 
+(on iki) ay için askıya alınabilir veya iptal edilebilir.    
+Projelerin Değerlendirilmesi  
+Madde 1 4- (1) BAP Birimine sunulan proje önerileri ve ulusal veya uluslararası 
+kuruluşlar tarafından desteklenen bilimsel araştırma projelerine kaynak aktarımının 
+yapılmasına yönelik destek başvuruları, gerekli ön koşulları sağlayıp sağlamadığının 
+incelenmesi amacıyl a ön değerlendirmeye alınır. Ön değerlendirme aşamasında şartları 
+sağlayan proje önerileri, BAP Koordinatörü tarafından BAP Komisyonu değerlendirmesine
+
+
+================================================================================
+CHUNK NO: 29
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 6
+   - page_label: 7
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sağlayan proje önerileri, BAP Koordinatörü tarafından BAP Komisyonu değerlendirmesine 
+sunulur. Gerekli ön koşulları sağlamayan proje önerileri ise gerekçesi belirtilerek başvuru 
+sahibine iad e edilir.   
+(2) Ön değerlendirme a şamasını geçen proje önerileri , proje türü dikkate alınarak BAP 
+Komisyonu tarafından doğrudan veya hakem  görüşlerine de başvurarak değerlendirilir . BAP 
+Komisyonu, proje konusunun Üniversitenin öncelikli araştırma alanları ile ilişkili olup 
+olmadığını, projenin yüksek katma değerli çıktılar üretilmesi potansiyelini, varsa hakem 
+raporlarını, proje ekibinin önceki faaliyetlerine yönelik akademik performa nslarını ve 
+yürüttükleri projeler kapsamında ürettikleri bilimsel yayın ve FSMH tescili gibi çıktıları da 
+dikkate alarak projenin desteklenip desteklenmeyeceğine karar verir. BAP Komisyonu gerekli 
+gördüğü hallerde proje ekibinden sunum yapmalarını  isteyebi lir. 
+(3) Proje başvurularının değerlendirilmesinde görevlendirilen hakemlere ücret
+
+
+================================================================================
+CHUNK NO: 30
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 6
+   - page_label: 7
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(3) Proje başvurularının değerlendirilmesinde görevlendirilen hakemlere ücret 
+ödenebilir. Ödenecek hakem ücreti tutarları, hakem ödemesi yapılacak projelerin türleri ve 
+nitelikleri ile kurum mensubu veya diğer kurum araştırmacılarına hakem ücreti öden mesi gibi 
+tüm hususlar ilgili Yönetmelik hükümleri ve BAP Biriminin bütçe imkânları  da dikkate alınarak 
+BAP Komisyonu tarafından belirlenir.  
+ 
+BEŞİNCİ  BÖLÜM  
+Projelerin Kabulü, Yürütülmesi, Bütçesi ve Ekibi  
+Projelerin Kabulü  
+Madde 1 5- (1) Desteklenmesine karar verilen proje için Rektör veya -yazılı olarak 
+yetki devri yapılmak suretiyle - BAP Komisyonu Başkanı ile proje yürütücüsü  tarafından proje 
+protokolü imzalanır.  Proje yürütücüleri protokolde belirtilen tüm hususlara uymakla 
+yükümlüdür. Projelerin başlama tarihi olarak sözleşme protokolünün Rektör veya yetki devri 
+yapılan BAP Komisyonu Başkanı tarafından imzalandığı tarih kabul edilir.
+
+
+================================================================================
+CHUNK NO: 31
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 6
+   - page_label: 7
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yapılan BAP Komisyonu Başkanı tarafından imzalandığı tarih kabul edilir.  
+(2) Desteklenmesine karar verilen proje nin Y ürütücü sünün, proje türüne göre 
+belirlen miş gerekli belgeler i BAP birimi ne teslim etme si zorunludur . Gerekli belgeler i teslim 
+edilmeyen projeler için BAP birimince herhangi bir harcama gerçekleştirilmez. Projelerin 
+onaylanmasından sonra BAP Komisyonu tarafından geçerli kabul edilen bir mazereti 
+olmaksızın 1 (bir) ay içerisinde proje sözleşmesi ve gerekli belgeleri teslim edilerek 
+başlatılmayan veya BAP Komisyonu tarafından kabul edilen geçerli bir mazereti olmaksızın ilk 
+6 (altı) ay içerisinde harcama yapılmayan projeler BAP Komisyonu kararı ile iptal edilebilir.
+
+
+================================================================================
+CHUNK NO: 32
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 7
+   - page_label: 8
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  (3) BAP Komisyonu tarafından proje yürütücüsünün değiştirilmesi halinde, eski proje 
+yürütücüsü ile imzalanmış olan sözleşme protokolü yeni proje yürütücüsü ve proje ekibi 
+tarafından yeniden imzalanır.  
+Projelerin Yürütülmesi  
+Madde 1 6- (1) Proje yürütücüleri proje kapsamında yapılan çalışmaları ve gelişmeleri 
+içeren ara raporları BAP birimine sunmakla yükümlüdür.  Ara raporların hangi dönemlerde 
+sunulacağı BAP Komisyonu tarafından belirlenir ve güncel Kılavuz ile ilan edilir.  
+(2) BAP Komisyon u projenin türüne ve özelliğine göre ara rapor  sunma sürelerini ve 
+koşullarını değiştirebilir.  
+(3) Ara raporlar, gerekli görülen hallerde h akem görüşlerine de başvurularak BAP 
+Komisyonu tarafından değerlendirilir. Projelerin sonraki dönemleri ile ilgili maddi desteğin 
+devamı , BAP Komisyonunun ara rapor  hakkındaki olumlu görüşüne tabidir.  
+Madde 1 7- (1) Proje yürütücüsü,  ek süreler dahil proje  bitiş tarihini takip eden en geç
+
+
+================================================================================
+CHUNK NO: 33
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 7
+   - page_label: 8
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Madde 1 7- (1) Proje yürütücüsü,  ek süreler dahil proje  bitiş tarihini takip eden en geç 
+3 (üç) ay iç erisinde, proje türüne göre belirlenen formatta hazırlanmış  sonuç raporu nu, BAPSİS 
+üzerinden  BAP birimine sunmakla  yükümlüdür.  
+(2) Sonuç Raporları, gerekli görülen hallerde hakem görüşlerine de başvurularak BAP 
+Komisy onu tarafından değerlendirilir ve  karara bağlanır. Sonuç raporu başarılı bulunan projeler 
+kapatılır.  
+(3) Kılavuzda tanımlanmış olması durumunda E ş Finansmanlı  Bilimsel Araştırma 
+Projesinde,  kaynak aktarımı yapılan proje için destek sağlayan ulusal/uluslararası kuruluşun 
+yetkili mercilerince onaylanmış proje sonuç raporunu n bir nüshası sonuç raporu  yerine ge çer. 
+Ayrıca , ilgili kuruluşlarca düzenlenen ve projenin başarılı bir şekilde ka patıldığını gösteren bir 
+belgenin de sonuç raporu  ile birlikte BAP Birimine sunulması zorunludur. Belge sunulamayan 
+projelerin durumu BAP Komisyonu tarafından değerlendirilerek karara bağlanır.
+
+
+================================================================================
+CHUNK NO: 34
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 7
+   - page_label: 8
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+projelerin durumu BAP Komisyonu tarafından değerlendirilerek karara bağlanır.  
+(4) Araştırmacıların, d esteklenen projelerden elde ettikleri sonuçların bilimsel çıktıya 
+dönüştürülmesine yönelik yükümlülükleri BAP Komisyonu tarafından belirlenerek Kılavuzda 
+duyurulur. Proje, sonuç raporu nun BAP Komisyonu tarafından başarılı bulunarak kabul 
+edilmesi suretiyle kapatılsa dahi, proje ekibinin bilimsel çıktı yükümlülüğü devam eder. 
+Araştırmacıların projelerinin başlatıldığı dönemde geçerli olan Kılavuzda belirtilen koşulları 
+sağlamaları zorunl udur. BAP Komisyonu bu ilkelerde değişiklik yapabilir, gerekli gördüklerini 
+uygulamadan kaldırabilir, yeni ilkeler uygulayabilir.  
+(5) Desteklenen projeler kapsamında gerçekleştirilen her türlü bilimsel çıktıda, 
+Üniversitenin adres gösterilmesi ve proje num arasının da yer aldığı bir cümle ile BAP Birimi 
+desteğinin belirtilmesi zorunludur. BAP Birim inin desteğinin belirtilmediği herhangi bir
+
+
+================================================================================
+CHUNK NO: 35
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 7
+   - page_label: 8
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+desteğinin belirtilmesi zorunludur. BAP Birim inin desteğinin belirtilmediği herhangi bir 
+bilimsel çıktı, projedeki yükümlülüğün yerine getirilmesi için kullanılamaz. Ancak, 
+araştırmacıların elinde olmayan zor unlu haller nedeniyle bu ifadeye yer verilemeyen bilimsel 
+çıktıların durumu BAP Komisyonu tarafından değerlendirilerek karara bağlanır.  
+(6) Projelerin yürütülmesi sürecinde, BAP Komisyonu gerekli görülen durumlarda 
+proje çalışmalarını yerinde inceleyebilir  ve projenin takvimine uygun olarak yürütülmediğini 
+tespit ederse proje desteğini sona erdirebilir.  
+Madde 1 8- (1) Proje yürütücüleri, çalışmanın yürütüldüğü yerde kazaları önleme ve 
+sağlık şartları bakımından İş Kanunu, Sosyal Sigortalar Kanunu ve ilgili diğer kanun, tüzük ve 
+yönetmeliklere göre gerekli her türlü yasal gereksinim ve güvenlik tedbirlerinin 
+sağlanm asından sorumludur. Bursiyer çalıştırılan projeler kapsamında bursiyerlerin projede
+
+
+================================================================================
+CHUNK NO: 36
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 7
+   - page_label: 8
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sağlanm asından sorumludur. Bursiyer çalıştırılan projeler kapsamında bursiyerlerin projede 
+görev aldığı tarihten itibaren en geç  3 (üç) ay içerisinde sonucunda sertifika verilen iş sağlığı
+
+
+================================================================================
+CHUNK NO: 37
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 8
+   - page_label: 9
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  ve güvenliği eğitimi alması ve sertifikasının BAP birimine sunulması Proje  yürütücülerinin 
+sorumluluğundadır.  
+Proje Bütçesi ve harcama kalemleri  
+Madde 19- (1) Projelere sağlanacak destek miktarları  ve proje türleri  BAP Komisyonu 
+tarafından belirle nir ve güncel Kılavuz ile ilan edilir . Belirlenmiş olan destek miktarlarında ve 
+proje türlerinde değişiklik yapmak BAP Komisyonunun yetkisindedir. Ayrıca BAP 
+Komisyonu ; her laboratuvarda bulunabilen ve/veya ortak kullanıma açık cihazlar,  bilgisayar, 
+yazıcı, kırtasiye, seyahat, hizmet alımı ve benzeri yaygın olarak gerçekleştirilen talepler için 
+sınırlama getirebilir.   
+(2) Başvuru esnasında oluşturulan bütçe nin, projenin amaç ve kapsamı çerçevesinde 
+orantılı dağıtılmış olma sı beklenir . Proje bütçesinden  harcama yapılabilmesi için söz konusu  
+harcamanın proje başvurusu esnasında öngörülmüş ve BAP Komisyonu tarafından onaylanmış
+
+
+================================================================================
+CHUNK NO: 38
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 8
+   - page_label: 9
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+harcamanın proje başvurusu esnasında öngörülmüş ve BAP Komisyonu tarafından onaylanmış 
+olması zorunludur.  Harcama kalemleri arasında ödenek aktarımı zorunlu hallerde BAP 
+Komisyonu onayı ile gerçekleşebilir.  
+(3) Projeler in BAP Komisyonu tarafından kabul edilen bütçe ve harcama planına göre 
+yürütülerek tamamlanması esastır . Gerekli durumlarda Yürütücünün detaylı gerekçeli talebi 
+üzerine Kılavuzda belirtilen proje türleri için BAP Komisyonu tarafından belirlen dikten sonra 
+duyurulan oran ve koşullarda ek bütçe verilebilir.  
+(4) BAP Komisyonu tarafından belirlenerek duyurulan projeler ve proje tipleri için 
+BAP Komisyonunca belirlenen sayılarda , ilgili mevzuat hükümlerine uygun olarak tezli yüksek 
+lisans veya doktora programındak i lisansüstü öğrenciler için bursiyer ödeneği talep edilebilir .  
+(5) Projeler kapsamında bursiyer ödemesi yapılacak lisansüstü öğrencilerin taşıması 
+gereken özellikler, hangi projeler kapsamında bursiyer ödemesi yapılabileceği, bursiyerler için
+
+
+================================================================================
+CHUNK NO: 39
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 8
+   - page_label: 9
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+gereken özellikler, hangi projeler kapsamında bursiyer ödemesi yapılabileceği, bursiyerler için 
+ödenecek tu tarlar ve bursiyer seçiminde uyulacak ilkeler gibi tüm hususlar ilgili mevzuat 
+hükümlerine bağlı kalınarak BAP Komisyonu tarafından belirlenir.  
+(6) Proje  kapsamındaki  yurtiçi/yurtdışı çalışmaların gerçekleşmesi amaçlı seyahat 
+giderlerinden ayrı olarak, pro jeden elde edilen sonuçlardan üretilmiş bir bildirinin 
+ulusal/uluslararası olarak düzenlenen bir kongre veya sempozyumda sunulması için gerekli 
+olan seyahat ve katılım giderleri  BAP Komisyonu tarafından belirlenecek uygulama esaslarına 
+uygun olarak karşılanabilir.  
+(7) Araştırma veya kongre/sempozyum katılım amacına yönelik seyahat giderlerinin 
+karşılanabilmesi için, proje başvurusunda ilgili seyahat bütçesinin öngörülmüş, 
+kongre/sempozyum katılımı öncesinde BAPSİS ile talebin oluşturulmuş ve uygunluğ un BAP 
+Komisyonu tarafından onaylanmış olması zorunludur. Bu koşulların sağlanmadığı durumlarda
+
+
+================================================================================
+CHUNK NO: 40
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 8
+   - page_label: 9
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Komisyonu tarafından onaylanmış olması zorunludur. Bu koşulların sağlanmadığı durumlarda 
+seyahat gideri kaleminden ödenek kullanılamaz.  
+(8) Yürütülen proje kapsamında gerçekleştirilen çalışmalardan üretilmemiş olan 
+bildirilerin sunulması amacıyla i lgili projeden kongre/sempozyum katılımına yönelik seyahat 
+desteği kullanılamaz. Bu kapsamdaki davranışlar etik ihlal olarak kabul edilir.  
+Proje Ekibi nin Sorumlulukları   
+Madde 20- (1) Proje ekibi, Sözleşmede belirtilen tüm hususlara, yürürlükte olan Bursa 
+Uludağ Üniversitesi Bilimsel Araştırma Projeleri Uygulama Yönergesi ve Uygulama Esasları 
+Kılavuzu ile ilgili mevzuat hükümlerine uymakla yükümlüdür. Proje ekibi, proje ödeneğinin 
+proje amaçla rına uygun, etkin ve verimli olarak kullanılmamasından doğacak her türlü zararı 
+genel hükümler uyarınca kusuru ölçüsünde gidermekle yükümlüdür.
+
+
+================================================================================
+CHUNK NO: 41
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 9
+   - page_label: 10
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  (2) Harcama yetkilisi, gerçekleştirme görevlisi, muhasebe yetkilisi ve bunların dışında 
+kalan ihale komisyonu, m uayene ve kabul komisyonu gibi komisyonlarda görevli diğer 
+personel; 10/12/2003 tarihli ve 5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanunu ve ilgili 
+diğer mevzuat hükümleri çerçevesinde sorumludur.  
+(3) Proje kapsamında satın alınan makine -teçhizat, bilgis ayar, fotoğraf makinesi, kitap 
+gibi demirbaşlar Yürütücünün kontrol ve kullanımındadır ve proje çalışmaları sonuçlanıncaya 
+kadar bağlı olduğu birimin ayniyatı tarafından Yürütücünün üzerine zimmetlenir. Ek süre ler 
+dâhil proje bitiş tarihine kadar projeden satın alınan demirbaşların korunmasından, bakım ve 
+onarımından Yürütücü sorumludur. Proje bitiminde, BAP projelerinden alınan demirbaşlar, 
+ilgili birimin ayniyat birimince bir sonraki projede kullanılabilirliğinin  takibi ve sağlanması 
+kaydıyla teslim alınır.  
+ 
+ALTINCI  BÖLÜM  
+Projelerin Sonuçlandırılması , Çıktıları  ve Yükümlülükler
+
+
+================================================================================
+CHUNK NO: 42
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 9
+   - page_label: 10
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ALTINCI  BÖLÜM  
+Projelerin Sonuçlandırılması , Çıktıları  ve Yükümlülükler  
+Madde 2 1- (1) Bilimsel Araştırma Projeleri birimi tarafından desteklenen projelerden 
+elde edilen bilimsel sonuçların FSMH’ si Bursa Uludağ Üniversitesi’ne aittir. Bilimsel yayın, 
+kitap ve benzeri eserlerin telif hakları Bursa Uludağ Üniversitesi Yönetim Kurulunun kararı ile 
+kısmen veya tamamen eser sahiplerine devredilebilir. Proje sonuçlarından yapılacak gelir 
+getirici herhangi  bir yayın veya uygulama için Bursa Uludağ Üniversitesi Rektörlüğünden izin 
+alınması zorunludur.  Bu duruma aykırı davranışların tespiti durumunda ilgili kişiler hakkında 
+resen hukuki işlem başlatılır.  
+(2) Gelir getirici patent, buluş veya ürün ortaya çıkm ası durumunda elde edilecek  
+gelirin dağılımı Bursa Uludağ Üniversitesi Yönetim Kurulu tarafından belirlenen ilkelere 
+uygun olarak gerçekleştirilir. Konuyla ilgili mevzuatta hak sahiplerine ödenmesi öngörülen
+
+
+================================================================================
+CHUNK NO: 43
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 9
+   - page_label: 10
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+uygun olarak gerçekleştirilir. Konuyla ilgili mevzuatta hak sahiplerine ödenmesi öngörülen 
+oranlar hakkında bir düzenleme bulunması halinde  ise ilgili mevzuat hükümleri uygulanır.  
+(3) Yürütücü projeye ait veri, bilgi, belge, yazılım, materyal, numune, sonuç ve benzeri 
+tüm unsurları projenin sonuçlandığı tarihten itibaren beş yıl süreyle saklamakla yükümlüdür.  
+Araştırmacılar, proje devam ederken ve/veya projenin tamamlanmasından sonra veri ve 
+kayıtları saklamakla yükümlü oldukları süre içerisinde BAP Komisyonu’nun talep etmesi 
+durumunda, araştırma sürecinde/sonucunda elde edilen/geliştirilen veri, bilgi, belge, yazılım, 
+materyal, örnek, nu mune, sonuç vb. tüm unsurları BAP Komisyonu’na teslim etmek 
+zorundadır.  
+(4) BAP birimi, tamamlanan projelere ait her türlü bilgiyi, sonuçları, verileri, raporları 
+ve proje ekibine yönelik bilgileri BAP Komisyonu’nun yürürlükteki mevzuatları da dikkate
+
+
+================================================================================
+CHUNK NO: 44
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 9
+   - page_label: 10
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ve proje ekibine yönelik bilgileri BAP Komisyonu’nun yürürlükteki mevzuatları da dikkate 
+alarak belirleyeceği ilkelere uygun olarak, kısmen veya tümüyle, basılı olarak veya elektronik 
+ortamda yayımlayabilir/yayımlatabilir ve diğer kurum ve kuruluşlarla paylaşabilir.  
+(5) BAP birimi tarafından desteklenen projeler kapsamında yürütülen çalışmaların 
+sonuçlarından üretilen/elde edilen patent, faydalı model, buluş, ürün, tasarım, lisans, şirket 
+oluşumu veya yayın gibi her türlü çıktının, oluşmasından itibaren en geç  6 (altı ay) içerisinde 
+BAP birimi ne bildirilmesi zorunludur.  
+İdari Tedbir  
+Madde 22- (1) Proje başvuru aşamasında ve/veya yürürlükte  iken ya da 
+tamamlandıktan  sonra bilimsel etiğe aykırılık ve/veya mali kaynakların kötüye kullanıldığına 
+dair bilgi , bulgu , şüphe , şikâyet  veya bildirim olması durumunda, BAP Komisyonu konunun 
+Üniversite’nin ilgili yetkili organlarında değerlendirilmesi yönünde karar alabilir. Yetkili
+
+
+================================================================================
+CHUNK NO: 45
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 10
+   - page_label: 11
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  organlarca söz konusu etik ihlalin ve/veya mali kaynakların kötüye kullanıldığının saptanması 
+durumunda ise BAP Komisyonu tarafından aşağıdaki  hükümler  tedbir olarak  uygulanır:  
+(a) Proje başvuru aşamasında etik ihlal ve/veya intihal saptanması durumunda, ihlali 
+gerçekleştiren kişi ya da kişiler, 5 (beş) yıl süre ile yeni bir proje ekibinde yer alamazlar.  
+(b) Etik ihlalin ve/veya mali kaynakların kötüye kullanıldığının saptandığı 
+yürürlükte ki proje , BAP Komisyonu kararı ile iptal edilir . 
+(c) Proje kapsamında satın alınan tüm mal ve malzemeler geri alınarak diğer 
+araştırmalarda kullanılmak üzere projenin yürütüldüğü ilgili birime veya BAP Komisyonu 
+tarafından uygun görülecek projelere tahsis edilir.  
+(ç) Proje ekibindeki  etik ihlali gerçekleştiren kişi ya da kişiler , 5 (beş) yıl süre ile yeni 
+bir proje desteğinden yararlanamaz lar ve yeni bir proje ekibinde yer alamaz . Ayrıca, etik ihlali
+
+
+================================================================================
+CHUNK NO: 46
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 10
+   - page_label: 11
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+bir proje desteğinden yararlanamaz lar ve yeni bir proje ekibinde yer alamaz . Ayrıca, etik ihlali 
+gerçekleştiren kişi ya da kişilerin yürütücü olduğu diğer projeler BAP Komisyonu tarafından 
+incele meye alınır . Gerekli hallerde BAP Komisyonu, konunun Üniversite Etik Kurulunda 
+görüşülmesi veya yasal işlem yapılması hususunda Rektöre gö rüş bildirebilir.  
+ 
+Madde 2 3- (1) BAP Komisyonu gerekli gördüğü hallerde yürürlükte olan proje nin 
+faaliyetlerini doğrudan inceleyebilir veya konunun uzmanlarına inceletebilir. Aşağıdaki 
+durumlarda, projeler BAP Komisyonu kararı ile iptal edilir  ayrıca  proje kapsamında satın alınan 
+tüm mal ve malzemeler geri alınarak diğer araştırmalarda kullanılmak üzere projenin 
+yürütüldüğü ilgili birime veya BAP Komisyonu tarafından uygun görülecek projelere tahsis 
+edilir. Ayrıca ilgili proje ekibi 3 (üç) yıl süre il e BAP Birimi desteklerinden faydalandırılmaz.  
+(a) Projenin araştırmacıların ihmali veya kusuru nedeniyle başvuruda öngörülen
+
+
+================================================================================
+CHUNK NO: 47
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 10
+   - page_label: 11
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(a) Projenin araştırmacıların ihmali veya kusuru nedeniyle başvuruda öngörülen 
+gelişmeyi göstermemesi veya amaca uygun olarak yürütülmemesi,  
+(b) Proje kapsamında gerçekleştirilen seyahat faaliyetlerinin BAP Komisyonu 
+tarafından projenin amacına uygun bulunmaması,  
+(c) Proje yürütücüsünün, proje yürütücülüğünü BAP Komisyonu tarafından onaylanan 
+bir araştırmacıya devretmeden projeden ayrılması.  
+Madde 2 4- (1) Ara rapor  veya sonuç raporunun BAP Komisyonu tarafından kabul 
+edilen bir mazeret bulunmaksızın 1 (bir) aydan fazla geciktirilmesi durumunda,  rapor teslim 
+edilinceye kadar o projeye  ait işlemler durdurulur ve bu süreçte araştırmacılar yeni bir projede 
+görev alamazlar.  
+(2) Yapılan uyarıya rağmen, BAP Komisyonu tarafından kabul edilen bir mazeret 
+bulunmaksızın, 1 (bir) ay  içerisinde ara rapor  veya sonuç raporunun sisteme yüklenmemesi 
+durumunda ise proje iptal  edile bilir. Proje iptal durumund a satın alınan demirbaşlar ayniyat 
+birimince  teslim  alınır.
+
+
+================================================================================
+CHUNK NO: 48
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 10
+   - page_label: 11
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+birimince  teslim  alınır.   
+(3) Demirbaşların teslim edilmemesi durumund a; bu demirbaşların bedelleri de dâhil 
+olmak üzere, diğer tüm harcamalar ın tutarları  yasal faizi ile birlikte proje yürütücüsünden geri 
+alınır. Yürütücü hem 2 (iki) yıl süre ile yeni bir proje desteğinden yararlanamaz hem de  yeni 
+bir proje ekibinde yer alamaz.  
+Madde 25- (1) Sonuç raporunun yetersiz  ve/veya başarısız  bulunması durumunda, 
+yeniden düzenlenmesi için en fazla 1 (bir) ay ek süre verilebilir.  
+(2) Sonuç raporu yetersiz  veya başarısız bulunan projeler için, proje yürütücülerinin 
+talepte bulunması ve BAP Komisyonunun uygun bulması durumunda, bazı çalışmaların 
+yeniden yapılabilmesi veya sonuç raporunun yeniden düzenlenmesi için ek süre verilebilir. 
+Ancak, ve rilecek ek süre ile proje için kullanılmış önceki sürelerin toplamı 36 (otuz altı ) aydan 
+fazla olamaz.
+
+
+================================================================================
+CHUNK NO: 49
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 11
+   - page_label: 12
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  (3) Bu sürenin sonunda da sonuç raporu yetersiz  ve/veya başarısız  bulunan proje, BAP 
+Komisyonu tarafından iptal edilir. Ayrıca, Yürütücü 2 (iki) yıl süre ile yeni bir proje 
+desteğinden yararlanamaz ve yeni bir proje ekibinde yer alamaz.  
+(4) Sonuç raporu başarılı bulunarak kapatılan projeler, Kılavuzda belirtilen bilimsel 
+çıktı yükümlülükleri yerine getirilinceye kadar, proje ekibinin eş zamanlı olarak görev 
+alabileceği proje puan ve/veya sayı kotalarına dâhil  olarak kalır. Araştırmacıların eş zamanlı 
+olarak görev alabilecekleri proje sayıları, puan kotaları ve bu kapsamdaki uygulama esasları 
+BAP Komisyonu tarafından belirlenir.  
+Madde 2 6- (1) Herhangi bir nedenle iptal edilen proje kapsamında satın alınan tüm 
+demirbaşların zimmet işlemleri, ilgili birim amiri tarafından düzenlenir ve sarf malzemeleri ile 
+birlikte ilgili birimin araştırmacılarının kullanımına açılır .  
+Madde 27- (1) Proje kapsamında kongre/sempozyum etkinliğine katılıma yönelik
+
+
+================================================================================
+CHUNK NO: 50
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 11
+   - page_label: 12
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Madde 27- (1) Proje kapsamında kongre/sempozyum etkinliğine katılıma yönelik 
+seyahat desteğinden yararlanılabilmesi için, çalışmalar ından üretil miş bildiri sunulması 
+zorunludur.  Bu ilkeye aykırı hareket ettiği tespit edilen Proje ekibindeki ilgili kişiye, dâhil 
+olduğu  herhangi bir projeden 2 (iki) yıl süre ile seyahat desteği verilmez ve gerçekleştirilen 
+harcamaların bedelleri yasal faizi ile birlikte geri alınmak üzere hukuki işlem başlatılır.  
+(2) Proje kapsamında diğer kurumlar tarafından da seyahat, kongre/sempozyu m 
+katılım bedeli, gündelik, konaklama gibi herhangi bir harcama kalemi için destek sağlanıyorsa 
+BAP Birimi tarafından aynı kalem için tekrar ödeme yapılmaz. Bu ilkeye aykırı hareket ettiği 
+tespit edilen proje ekibindeki ilgili kişiye dâhil olduğu herhangi bir projeden 2 (iki) yıl süre ile 
+seyahat desteği verilmez ve gerçekleştirilen harcamaların bedelleri yasal faizi ile birlikte geri 
+alınmak üzere hukuki işlem başlatılır.
+
+
+================================================================================
+CHUNK NO: 51
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 11
+   - page_label: 12
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+alınmak üzere hukuki işlem başlatılır.  
+Madde 2 8- (1) BAP Komisyonu, aşağıdaki durumlarda projenin içeriğinde düzeltme 
+yapılmasına, proje ekibinde değişiklik yapılmasına veya projenin iptal edilmesine karar 
+verebilir. Aşağıdaki nedenlerle projenin iptal edilmesi durumunda satın alınan tüm mal ve 
+malzemeler diğer araştırmalarda kullan ılmak üzere BAP Komisyonu tarafından ilgili 
+araştırmacılara veya uygun görülecek birim veya bölümlere tahsis edilebilir : 
+(a) Projenin araştırmacıların sağlık sorunları veya yasal zorunluluklar nedeniyle 
+yürütülemez hale gelmesi,  
+(b) Proje ekibindeki araştı rmacıların çoğunluğunun üniversite ile ilişiğinin kesilmesi 
+nedeniyle çalışmanın yürütülemez hale gelmesi,  
+(c) Proje ekibinin ihmali olmaksızın ortaya çıkan ve BAP Komisyonu tarafından 
+uygun görülen diğer zorunlu nedenlerle çalışmanın yürütülemez hale gelmesi.  
+Madde 29- (1) Bu yönergenin  22, 23 ve 27 . maddeleri  kapsamındaki durumlar
+
+
+================================================================================
+CHUNK NO: 52
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 11
+   - page_label: 12
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Madde 29- (1) Bu yönergenin  22, 23 ve 27 . maddeleri  kapsamındaki durumlar 
+nedeniyle BAP Komisyonu tarafından ikinci kez yaptırım uygulanan araştırmacılar BAP 
+Biriminin sağladığı desteklerden yararlanma haklarını süresiz olarak kaybederler.  
+YEDİNCİ  BÖLÜM  
+Çeşitli ve Son Hükümler  
+Hüküm bulunmayan haller  
+Madde 30- (1) Bu Yönergede hüküm bulunmayan hallerde, ilgili diğer mevzuat 
+hükümleri uygulanır . 
+Yürürlükten Kaldırılan Yönerge  
+Madde 31- (1) Bursa Uludağ Üniversitesi Senatosunun 14 Ekim 2020 tarih ve 2020 -
+30 sayılı oturumundaki karar ile kabul edilen ve 8 Nisan 2021 tarihinde ki 2021 -11 sayılı
+
+
+================================================================================
+CHUNK NO: 53
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-07-02T11:33:41+03:00
+   - title: BURSA ULUDAĞ ÜNİVERSİTESİ
+   - author: CASPER
+   - moddate: 2025-11-07T10:52:35+00:00
+   - source: 204084.cleaned.pdf
+   - total_pages: 13
+   - page: 12
+   - page_label: 13
+   - permission: manager
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  oturumu ile değiştirilen “Bursa Uludağ Üniversitesi Bilimsel Araştırma Projeleri Uygulama 
+Yönergesi” ve ilgili güncellemeleri yürürlükten kaldırılmıştır.  
+Geçici Madde 1 (1) Bu Yönergenin yürürlüğe girdiği tarihten önce  başvurusu 
+yapılmış ve/veya yürürlükte olan tüm projeler için projenin yürürlüğe girdiği tarihteki yönerge 
+kuralları uygulanır . 
+Geçici Madde 2  (1) Bu Yönergenin yürürlüğe girdiği tarihten önce gerekli şartlar 
+sağlanamadığı için BAP Komisyonu kararı ile yaptırım uygulanmakta olan projelerin 
+kapatılması için yürütücü tarafından sunulan sonuç raporu komisyon tarafından 
+değerlendirilerek projeler karar a bağlanır.  
+ 
+Yürürlük  
+Madde 32 (1) Bu yönerge, Bursa Uludağ Üniversitesi Senatosu  tarafından  kabul 
+edildiği 27 Haziran  2024  tarihinden itibaren  yürürlüğe girer.  
+Yürütme  
+Madde 33- (1) Bu Yönerge hükümlerini Bursa Uludağ Üniversitesi Rektör ü yürütür.
+
+

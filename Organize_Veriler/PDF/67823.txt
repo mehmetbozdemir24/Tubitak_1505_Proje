@@ -1,0 +1,88 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Office Word 2007
+   - creator: Microsoft® Office Word 2007
+   - creationdate: 2013-02-04T09:41:32+02:00
+   - title: 0 Einleitung, Registrierung und Änderung
+   - author: zeynep kahveci
+   - moddate: 2013-02-04T09:41:50+02:00
+   - source: 67823.pdf
+   - total_pages: 1
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+TALİMATLAR   
+Doküman Adı:  Plastik ve Bez Cil t Bölümü Talimatı  
+Doküman Kodu  : 
+RIT-TA-BSM -17 İlk YayınTarihi:  
+15.12.2006  Revizyon No:  
+03 Revizyon Tarihi:  
+31.01.2013  Sayfa  
+1 / 1 
+ 
+© 2013  Bu doküman Uludağ Üniversitesi Rektörlüğü’ne aittir. Başkaları tarafından kullanılamaz ve  çoğaltılamaz  
+1. Amaç: Bu talimatın amacı, Plastik ve Bez Cilt bölümünün standartlara uygun ve güvenli bir 
+şekilde çalıştırılmasını sağlamaktır.  
+ 
+2. Kapsam:  Plastik ve Bez   Cilt Bölümünü kapsamaktadır . 
+  
+3. Sorumlular:   Plastik ve Bez Cilt bölümü çalışanları  
+ 
+4. Uygulama:   
+ 
+4.1. Her türlü emniyet tedbirleri alındığından emin olunduktan sonra çalışmaya başlanır.  
+4.2. Basımevi İş Takip Sistemi’ nde cilt bölümüne girerek  ne tür işlem ve ne tür malzeme 
+kullanılacağı tespit edilerek işlem gerçekleştirilir.  
+4.3. Cilt malzemeleri kullanıld ıktan sonra malzeme dolabına geri kaldırılacaktır.  
+4.3. Tutkal kutusu ağzı açık konumda bulundurulmayacak, fırça kullanımdan sonra sürekli
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Office Word 2007
+   - creator: Microsoft® Office Word 2007
+   - creationdate: 2013-02-04T09:41:32+02:00
+   - title: 0 Einleitung, Registrierung und Änderung
+   - author: zeynep kahveci
+   - moddate: 2013-02-04T09:41:50+02:00
+   - source: 67823.pdf
+   - total_pages: 1
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+4.3. Tutkal kutusu ağzı açık konumda bulundurulmayacak, fırça kullanımdan sonra sürekli 
+olarak su içinde tutulacaktır. Bu su her hafta sonu yenilenerek temizlenecektir.  
+4.4. Kullanılan makinalar bakımı yap ılarak, “Makine Bakım Planı (RİT -FR-BSM -12)”na  
+kaydedilir.  
+4.5. Çalışanlar mesai bitiminde bütün mak ineleri şartellerinden kapatacaklardır. Çalışma 
+alanlarında ışıkların ve  camlar ın kapatılmasından, çalışma alanlarının genel 
+temizliğinden sorumludurlar.  
+ 
+5. Gözden Geçirme ve Onaylama:  
+ 
+ 
+ 
+ 
+Ana Süreç Sahibi:      
+Ümit KORBEK     Tarih  
+Basımevi Müdürü     30.01.2013  
+ 
+ 
+ 
+ 
+ 
+Yönetimin onayı:      
+Prof.Dr.İrfan KARAGÖZ    Tarih  
+Yönetim Temsilcisi     31.01.2013
+
+

@@ -1,0 +1,906 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 0
+   - page_label: 1
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+SİSTEM PROSEDÜRLERİ 
+ 
+Doküman Adı: Sunucu Bilgisayar Sistemlerine Yapılacak Veri Girişleri Prosedü rü  
+Doküman Kodu:   
+RİT-PR-09  İlk Yayın Tarihi: 
+15.12.2006 Revizyon No:  
+02 Revizyon Tarihi: 
+05.01.2009 Sayfa  
+1 / 7 
+ 
+©2009 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+ 
+ 
+1. AMAÇ: Uludağ Üniversitesi sunucu bilgis ayarlar sistemlerinde bulunan verilere erişim, 
+veri girişlerinde izlenecek aşa malar, teknik yöntemler, yetkile ndirmeler, kurallar ve 
+sorumlulukların tanımlanması.  
+ 
+2. KAPSAM: Uludağ Üniversitesi sunuc u bilgisayar sistemleri . 
+ 
+3. SORUMLULAR: Uludağ Üniversitesi sunucu bilgisayar sistemlerine veri giriş y apma 
+yetkisi olan kullanıcılar ve  sunucu bilgisayar sistem yöneticil eri. 
+ 4. TANIMLAR:  
+ 
+• Veri Giriş Tipleri Tanımları:  
+(F) Form Üzerinden Yapılan Veri Girişleri: 
+(K) Kod Düzeltme/Yaratma İşlemleriy le Yapılan Veri Girişleri:
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 0
+   - page_label: 1
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(K) Kod Düzeltme/Yaratma İşlemleriy le Yapılan Veri Girişleri:   
+(Y) Yeni Üretilecek Yazılımlarda Veri Girişi ve Sürecin Planlanmas ı:  
+ 
+•    Özel Tanımlar ve Kısaltmalar: 
+Yazılım Projesi: Yazılımın bütününe verilen ad.  
+Yazılım Modülleri: Yazılımın alt parçalarına ve bileşenlerine verilen ad. 
+ 
+5. İlgili Dokümanlar:  
+ 5.1. Dış Kaynaklı Dokümanlar: 
+• Devlet Arşiv Hizmetleri Hakkında Yönetmelik. 
+• Bilgi İşlem Uygulama ve Araştırma Merkezi Yönergesi 
+ 
+5.2. İç Dokümanlar: 
+• ÖYÜK Kararları 
+• Bilgiişlem Yürütme Kurulu Kararları  
+• RİT-PR-08 Manyetik Ortamda Ver ilerin Saklanması Prosedürü  
+• RİT-PR-02 Uludağ Üniversitesi Kalite Kayıtları Prosedürü  
+• RİT-ST-BİD-01 Kullanıcı Des tek İşlemleri Alt Süreci 
+• RİT-ST-BİD-02 Yazılım ve Verita banı İşlemleri Alt Süreci 
+• RİT-ST-BİD-03 Bilgisayar A ğ Sistemleri Alt Süreci 
+• RİT-ST-BİD-04 Sunucu Sistemleri Alt Süreci 
+• RİT-ST-KDD-01 Teknik Hizmetler Alt Süreci 
+• RİT-ST-SKD-07 Destek Hizmetleri Alt Süreci
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 0
+   - page_label: 1
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+• RİT-ST-KDD-01 Teknik Hizmetler Alt Süreci 
+• RİT-ST-SKD-07 Destek Hizmetleri Alt Süreci 
+• RİT-ST-YİD-05 İşletme Alt Süreci 
+• RİT-ST-İMD-03 Maaş İşlemleri Alt Süreci 
+• RİT-FR-YÖN-06 Düzeltici ve Önley ici Faaliyetler Takip Formu 
+• RIT-FR-YÖN-09 Kalite Kayıtları Listesi 
+• RİT-FR-BİD-01 Kullanıcı Kodu Talep Formu
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 1
+   - page_label: 2
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+SİSTEM PROSEDÜRLERİ 
+ 
+Doküman Adı: Sunucu Bilgisayar Sistemlerine Yapılacak Veri Girişleri Prosedü rü  
+Doküman Kodu:   
+RİT-PR-09  İlk Yayın Tarihi: 
+15.12.2006 Revizyon No:  
+02 Revizyon Tarihi: 
+05.01.2009 Sayfa  
+2 / 7 
+ 
+©2009 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+ 
+• RİT-FR-BİD-02 Öğrenci Ku llanıcı Kodu Talep Formu 
+• RİT-FR-BİD-03 Yazılım Hizmeti Talep Formu 
+• RİT-FR-BİD-06 Yazılım ve Verita banı İşlemleri Takip Formu 
+• RİT-FR-BİD-07 Yedek Alma Takip Formu 
+• RİT-FR-BİD-08 Sistem Odası Aylık  Isı Takip Çizelgesi Formu 
+• RİT-FR-BİD-10 Sunucu Sistemleri Bilgi Formu 
+ 
+6. UYGULAMA: 
+ 
+6.1. VERİ GİRİŞİ YAPILAN SUNUCU BİLGİSAYAR SİSTEMLERDE UYULACAK 
+GENEL KURALLAR: 
+Yazılım projeleri sahip ve sorumluları, veri girişi yapmaya yet kili kişilere giriş 
+seviyelerini, sorumluluklarını, y etkilerini tanımlayan, sorunla rda izlenecek aşamaları,
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 1
+   - page_label: 2
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+seviyelerini, sorumluluklarını, y etkilerini tanımlayan, sorunla rda izlenecek aşamaları, 
+sistem açılış ve kapanış komutlarını, arıza irtibat sorumlu kiş ilerini “Sunucu Sistem Bilgi 
+Formu (RİT-FR-BİD-10)”  ile takip etmelidir.   
+Kullanıcı Sorumluluk Alanı: Veri kayıtlarına değişiklik yapma  hakkıyla erişen yetkililer 
+erişmiş olduğu kayıtlar üzerinde sadece kendilerine verilmiş ye tkiler dâhilinde 
+değişiklikler yapabilir. Yetki alanları haricindeki alanlara er işebiliyor ve değişiklik 
+yapabilme durumu olabiliyorsa bu durumu sistem sorumlularına il etmelidirler. Üst 
+yetkilenmeye sahip kullanıcılara  yetkileri haricindeki alanlar için değişiklik yapılması 
+talebi geliyorsa bu talep y azılı olarak yapılmalıdır. 
+Sorumlu girmiş olduğu verilerde veya daha önce girilmiş veriler de yanlışlık olduğunu 
+gördüğünde “Düzeltici Önleyici Faaliyetler Takip Formu (RİT-FR-YÖN-06)”  formunu
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 1
+   - page_label: 2
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+gördüğünde “Düzeltici Önleyici Faaliyetler Takip Formu (RİT-FR-YÖN-06)”  formunu 
+düzenlemelidir. Veri Kayıtlarına erişim şifreler i kesinlikle diğer kullanıcılar la paylaşılmamalıdır. Veri 
+kayıtlarına erişim sorumlusunun değişmesi durumunda yeni atanan  kişi şifresini 
+değiştirmelidir.  Kullanılacak Şif reler birbirine benzemeyen en  az 6 nümerik ve alfabetik 
+karakterden oluşmalıdır. Üniversite ağına erişim için gereksinim duyulan kullanıcı ad ve  şifreleri, akademik ve 
+idari unvanlı kişilerce “Kullanıcı Kodu Talep Formu (RİT-FR-BİD-01)”  formu 
+doldurularak; öğrencilerce, “Öğrenci Kullanıcı Kodu Talep Formu (RİT-FR-BİD-02)”  
+formu doldurularak alınabilir. Formu imzalayarak teslim eden ku llanıcı, form üzerinde 
+yazılan uyarılara uymak zorundadır.  Yetkili,  erişmiş olduğu üniversiteye ait e lektronik dokümanları üniversi tenin yazılı izin 
+olmadan dağıtamaz.  Bir yazılım aracılığı ile bilgileri veritabanından alınarak üre tilmiş ve son kullanıcıya
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 1
+   - page_label: 2
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+verilmeye hazır veri formaları  üzerinde şekil veya içerik olara k bir kelime işlem yazılım 
+(word, notepad gibi) veya başka bir düzenleme aracı kullanılara k değişiklik yapılamaz. 
+Kullanıcıların, kullandıkları bilg isayarlarda ajan, key-logger,  virus, trojan gibi veri giriş 
+güvenliğini tehlikeye sokabilecek yazılımların bulunmamasına di kkat etmelidir. 
+Üniversitemizin lisan slı olarak kullandığı vi rus vb engelleme y azılımlarını kullanmalıdır.  
+Kullanıcılar, sunucu sistemlere y erleşke dışından yapacakları b ağlantılarda üniversitenin 
+VPN (Sanal özel ağ) yazılımları ve web arayüzleri kullanılmalıd ır.
+
+
+================================================================================
+CHUNK NO: 8
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 2
+   - page_label: 3
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+SİSTEM PROSEDÜRLERİ 
+ 
+Doküman Adı: Sunucu Bilgisayar Sistemlerine Yapılacak Veri Girişleri Prosedü rü  
+Doküman Kodu:   
+RİT-PR-09  İlk Yayın Tarihi: 
+15.12.2006 Revizyon No:  
+02 Revizyon Tarihi: 
+05.01.2009 Sayfa  
+3 / 7 
+ 
+©2009 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+ 
+Yapılacak bağlantılar, kurumsal ve sunucu sistemler arasında ol acak ise şifrelendirmeleri 
+özel tünel aracılığı ile yapılmalıdır. (Ör: Bankalar ile öğrenc i harç miktarlarını aktarmada 
+kullanılan veri tünelleri) Sunucu Sistem Sorumlusu: Sunucu bilgisayar sistemlerine yönetsel olarak erişim ve veri 
+giriş yetkisine sahip sorumlu, sistemin işletim sistemi ve uygu lama yazılımlarının 
+upgrade(kalitesini yükseltme) işlemini veya patch(yama) işlemle rini süresi içersinde 
+yapmalıdır. Bilgiişlem birimi h aricinde konumlandırılmış sunucu  bilgisayar sistem 
+sorumluları sistemler için özel yönetim tanımlamaları yapmadıla rsa “Yedek Alma Takip
+
+
+================================================================================
+CHUNK NO: 9
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 2
+   - page_label: 3
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sorumluları sistemler için özel yönetim tanımlamaları yapmadıla rsa “Yedek Alma Takip 
+Formu (RİT-FR-BİD-07)”  v e  “Sistem Odası Aylık Isı Takip Çizelgesi (RİT-FR-BİD-
+08)” formlarını kullanma lıdırlar. Sunucu sistemi yönetsel sorumlusu , sisteme ait tüm 
+lisans bilgilerini güncel halde tutmak, saklamak ve lisans başl angıç bitiş tarihlerini takip 
+etmekle yükümlüdür.  6.2. (F) FORM ARAYÜZLERİ İLE YA PILAN VERİ GİRİŞLERİ:  
+Bilgisayar yazılımları üzerinde tanımlanmış olan metin kutuları , onay düğmeleri, 
+seçimli butonlar gibi veri giriş form arayüzleri üzerinden veya  optik formlardan 
+yetkileri doğrultusunda sunucu si stemlere veri girişi yapan bir im yetkililerinin, öğretim 
+görevlilerinin ve öğrencilerin ya ptığı işlemler bu başlıkta tan ımlanır.   
+ 
+6.2.1.  (F) İŞLEMLERİN UYGULANACAĞI SUNUCU SİSTEMLER: 
+Altta tanımlanmış sunucu sistemleri üzerine form arayüzleriyle v e r i  g i r i ş  i ş l e m l e r i  
+yapılır.  
+F1: Öğrenci işleri veri giriş sistemleri.
+
+
+================================================================================
+CHUNK NO: 10
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 2
+   - page_label: 3
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yapılır.  
+F1: Öğrenci işleri veri giriş sistemleri. 
+F2: Maaş işleri veri gir iş sistemleri.   
+F3: Personel sicil kayıtları  veri giriş sistemleri. 
+F4: Kütüphane kitap kayıt ve takip  veri giriş sistemleri. 
+F5: Döner Sermaye ve SKS Dairesi M uhasebe veri giriş sistemleri. 
+F6: Yapı İşleri ve Teknik Dairesi  Scada veri giriş sistemleri. 
+F7: Home Page, E-mail ve Internet iş lemleri veri giriş sistemleri. 
+F8: Üstteki tanımlar haricinde kala n işlemlerin veri giriş sisteml eri. 
+ 6.2.2. (F) UYGULAMA: Form ara yüzleri ile yapılacak veri girişleri için sorumlular, yetkilendirme seviyeleri 
+ve uygulamanın aşamaları belirlenir . 
+Tip F1: Veriler üzeride  tanımlanmış yetki dereceleri doğrultusunda Rektörlük 
+Yönetimi,  Fakülte öğrenci işler i birimleri ve yöneticileri,  Ö ğrenci İşleri Daire 
+Başkanlığı, Bilgi İşlem Daire Başkanlığı, Öğrenci İşleri Otomas yon (ÖİO) ekibi,
+
+
+================================================================================
+CHUNK NO: 11
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 2
+   - page_label: 3
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Başkanlığı, Bilgi İşlem Daire Başkanlığı, Öğrenci İşleri Otomas yon (ÖİO) ekibi, 
+Akademik personel ve Öğrencilerin sorumluluğu bulunmaktadır. Öğrencilerin veri kayıtları üzerinde yapmış olduğu işlemler,  ö ğretim görevlisinin 
+dersi onaylaması ile tamamlanır ve bu aşamadan sonra öğrenciler  sadece kendi 
+verilerine okuma özellikli olarak erişmeye yetkilidir.  
+Öğretim görevlisi dersleri onayl ar ve öğrencilerin notlarını is tenilen zaman 
+aralığında girer. İlgili zaman a ralığı haricinde verileri değiş tirme hakkı yoktur.  Bilgi 
+almak amacıyla verilere her zaman ulaşılabilir.
+
+
+================================================================================
+CHUNK NO: 12
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 3
+   - page_label: 4
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+SİSTEM PROSEDÜRLERİ 
+ 
+Doküman Adı: Sunucu Bilgisayar Sistemlerine Yapılacak Veri Girişleri Prosedü rü  
+Doküman Kodu:   
+RİT-PR-09  İlk Yayın Tarihi: 
+15.12.2006 Revizyon No:  
+02 Revizyon Tarihi: 
+05.01.2009 Sayfa  
+4 / 7 
+ 
+©2009 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+ 
+Rektörlük ve Fakülte yönetiminin veri  kayıtları üzerinde kendisine verilen hak ve 
+sorumluluklar çerçevesinde değişiklik yapma yetkisi vardır. Değ işiklikte Senato 
+veya Fakülte kurul kararı aranması gerekir.  Bilgi İşlem Daire Başkanlığı ÖIO Ekibi veri kayıtları üzerinde  maddi değişiklik 
+yapmaz. Değişiklik yapma yetkisi sadece yazılım, kod üzerinde v e sistematik olarak 
+oluşmuş hataların düzeltilmesiyle sınırlıdır. Gizlilik açısından, öğrenciler h er dönem başında; öğretim görev lileri ve diğer 
+yetkililer her 3 ayda bir veri kayıtlarına erişim şifrelerini d eğiştirmek zorundadır.
+
+
+================================================================================
+CHUNK NO: 13
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 3
+   - page_label: 4
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yetkililer her 3 ayda bir veri kayıtlarına erişim şifrelerini d eğiştirmek zorundadır. 
+Uygulama aşamalarını “Öğrenci Kullanıcı Kodu Talep Formu (RİT-ST-BİD-02)”  
+sorumluları belirler.   
+ 
+Tip F2:  Veriler üzerinde işl em yapma yetki ve so rumluluğu İdari ve Mal i İşler Daire 
+Başkanlığı Maaş İşleri personeli ve tüm Fakülte ve Yüksekokul M aaş İşleri 
+birimlerine aittir. Fakülte ve Yüksekokul birimleri form arayüz l e r i  i l e  v e r i  g i r i ş i  
+yapma yetkilisini konuya hakim veya “Yazılım ve Veritabanı İşlemleri Alt Süreci 
+(RİT-ST-BİD-02)”  den eğitim almış kişiler arasından yazılı sınav ile seçmelidir . 
+Verilere erişim, ilgili birim sorumlusunun tanımlamış olduğu ye tkilerle ve yetki 
+seviyeleriyle sınırlandır ılır. Uygulama aşamalarını “Yazılım ve Veritabanı İşlemleri 
+Alt Süreci (RİT-ST-BİD-02)”  sorumluları belirler.   
+ 
+Tip F3:   Veriler üzerinde işlem yapma yetki ve sorumluluğu Personel Da ire
+
+
+================================================================================
+CHUNK NO: 14
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 3
+   - page_label: 4
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Tip F3:   Veriler üzerinde işlem yapma yetki ve sorumluluğu Personel Da ire 
+Başkanlığı sicil kayıt birimi ile yazılımı kullanan Fakülte ve Yüksekokul personel 
+işleri birimlerine aitti r. Uygulama aşamalarını “Yazılım ve Veritabanı İşlemleri Alt 
+Süreci (RİT-ST-BİD-02)”  sorumluları belirler.   
+ 
+Tip F4:   Verilerden Kütüphane Daire Başkanlığı yetkilileri sorumludur.  Yetki 
+seviyelerini ve uygulama aşamalarını “Teknik Hizmetler Alt Süreci (RİT-ST-
+KDD-01)” belirler. 
+ 
+Tip F5:  Verilerden muhasebe yazılımı ku llanan Döner Sermaye İşletmesi ve Sağlık 
+Kültür ve Spor Daire Başkanlığın ın ilgili birimleri sorumludur.  Yetki seviyelerini ve 
+uygulama aşamalarını “Destek Hizmetleri Alt Süreci (RİT-ST-SKD-07)” belirler.  
+ 
+Tip F6:  Verilerden Yapı İşleri ve Tekni k Daire Başkanlığı sorumludur. Yetki 
+seviyelerini ve uygulama aşamalarını “İşletme Grubu Alt Süreci (RİT-ST-YID-05)”  
+belirler. 
+ 
+Tip F7:   Internet sunucularının üzeri nde veri bulunduran ların kişisel sorumlulukları
+
+
+================================================================================
+CHUNK NO: 15
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 3
+   - page_label: 4
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Tip F7:   Internet sunucularının üzeri nde veri bulunduran ların kişisel sorumlulukları 
+vardır. Sorumluluklar birim yetkilisine, akademik personele vey a öğrencilere ait 
+olabilir. Web sayfasına veri gi rişleri ftp ile yapılabileceği g ibi veritabanı ve form 
+arayüzleri ilişkisi ile kullanıc ılar tarafından da yapılabilir.  Bu gibi durumlarda form 
+arayüzleri aracılığı ile kiş ilerin girmiş olduğu veri ve yorum bilgilerinin sorumluluğu 
+web sayfa sorumlusuna aittir we b sayfa sorumlusu girilmiş olan bilgileri günlük 
+olarak kontrol etmek zorundadır . Web sayfası bilgilerine okuma amaçlı erişim
+
+
+================================================================================
+CHUNK NO: 16
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 4
+   - page_label: 5
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+SİSTEM PROSEDÜRLERİ 
+ 
+Doküman Adı: Sunucu Bilgisayar Sistemlerine Yapılacak Veri Girişleri Prosedü rü  
+Doküman Kodu:   
+RİT-PR-09  İlk Yayın Tarihi: 
+15.12.2006 Revizyon No:  
+02 Revizyon Tarihi: 
+05.01.2009 Sayfa  
+5 / 7 
+ 
+©2009 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+ 
+herkese serbesttir. Sorumlu yazm a hakkını başkalarına devredeme z. E-mail 
+kullanıcıları da veri giriş işl emi yapanlar kapsamda değerlendi rilir ve e-mail hesabı 
+olan kişi göndermiş olduğu e-mailden sorumludur. Bu tip veri ka yıtlarının 
+sorumluluğu kullanıcı kodunun açılmasıyla başlar kullanıcı kodu  açılmış bir kişi 
+web, e-mail, VPN ve ağa giriş işle mlerini yapabilir. Üniversite miz merkezi şifre 
+yapısındaki Homepage, E-mail, V PN gibi Internet sunucularının a ğa giriş şifreleri 
+tek olup, bu sebeple şifresini başk asına vermiş olan kişiler tü m Internet sunuculara
+
+
+================================================================================
+CHUNK NO: 17
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 4
+   - page_label: 5
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+tek olup, bu sebeple şifresini başk asına vermiş olan kişiler tü m Internet sunuculara 
+erişim şifrelerini de vermiş olur  ve olası sorunlarda verilerin  sahibi olarak sorumlu 
+tutulurlar. Yetki seviyeler ini ve uygulama aşamalarını “Yazılım ve Veritabanı 
+İşlemleri Alt Süreci (RİT-ST-BİD-02)”  belirler. 
+ 
+Tip F8:   Veri kayıtlarından ilgili biri m sorumludur.  Yetki seviyeleri  ve uygulama 
+aşamaları birim sorumlular ı tarafından belirlenir.  
+ 
+6.3. (K) KOD (YARATMA/DEĞİŞTİRME)  İŞLEMLERİYLE YAPILAN VERİ 
+GİRİŞLERİ: 
+Bilgisayar yazılımlarını üretme  sırasında kullanılan kod yazılı mları veya  uygulamanın 
+çalışması sırasında ortaya çıkan talepler veya yasal zorunluluk  sonucu yapılması gereken 
+yazılımdaki kod değişiklikleri bu aşamada tanımlanır. İstemci t alebini tanımlar, değişiklik 
+yapılma talebinin bilgisayar yazılım ekibine “Yazılım ve Veri Taba nı İşlemleri Takip 
+Formu (RİT-FR-BİD-06)”  formuyla iletir ve test aşamala rına madde 5.4.1 e uyarak katkı da
+
+
+================================================================================
+CHUNK NO: 18
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 4
+   - page_label: 5
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Formu (RİT-FR-BİD-06)”  formuyla iletir ve test aşamala rına madde 5.4.1 e uyarak katkı da 
+bulunur. Bilgiişlem birimi kod değişikliğinin biteceği tarihi v e test işleminin tarihini yazılı 
+olarak verir. Üniversite bünyesi nde veya dış kaynaklarla üretil en bilgisayar yazılımlarına ait 
+kod veriler üniversiteye aittir. Kod verileri içersine programlama dilleri Visal Basic, Delphi, Progress gibi yazılımlar 
+içersindeki veriler, Microsoft SQ L, Oracle SQL, MySql, Interbas e gibi veritabanlarında 
+bulunan veriler girer.  
+ 
+6.3.1.   (K) İŞLEMİN UYGULANACAĞI BİRİMLER: 
+ K 1 :  Öğrenci işleri yazılımına ait kod verileri    
+K2: Maaş işleri yazılımın a ait kod verileri   
+K3: Personel işleri yazılımlarına ait sicil kod verileri. 
+K4: Üstte tanımlanan işlerin haricindeki Bilgi İşlem Daire Başkanlı ğının yazmış 
+olduğu diğer kod verileri. 
+K5: Üniversite dışında h azırlatılan yazılıml ara ait kod verileri. 
+    
+6.3.2.   (K) UYGULAMA
+
+
+================================================================================
+CHUNK NO: 19
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 4
+   - page_label: 5
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+K5: Üniversite dışında h azırlatılan yazılıml ara ait kod verileri. 
+    
+6.3.2.   (K) UYGULAMA 
+Tip K1:  Kod üzerindeki değişiklikler “Rektörlük Öğrenci Yürütme Kurulu  
+(ÖYÜK)” kararları ile “Yazılım ve Veritabanı İşlem leri Alt Süreci (RİT-ST-BİD-
+02)” ekip sorumluları tarafından yapılır. Ekip yetkilerini yapılan bakım anlaşmaları 
+dâhilinde kod yazım firmalarıyla paylaşabilir.  Kod üzerinde değişiklik talebi yazılı “Bilgisayar Ağ Sistemleri Alt Süreci (RİT-FR-
+BİD-03)”  ile verilmeli ve kod değişikliğinin uygulamaya geçeceği tarih tespit 
+edilmelidir.
+
+
+================================================================================
+CHUNK NO: 20
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 5
+   - page_label: 6
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+SİSTEM PROSEDÜRLERİ 
+ 
+Doküman Adı: Sunucu Bilgisayar Sistemlerine Yapılacak Veri Girişleri Prosedü rü  
+Doküman Kodu:   
+RİT-PR-09  İlk Yayın Tarihi: 
+15.12.2006 Revizyon No:  
+02 Revizyon Tarihi: 
+05.01.2009 Sayfa  
+6 / 7 
+ 
+©2009 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+ 
+Kod değişiklik talebi “Yazılım ve Veri Tabanı İşlem leri Takip Formu (RİT-FR-
+BİD-06)”  ile Bilgiişlem biriminden geliyor ve değişiklik Bilgiişlem dış ındaki birim 
+tarafından yapılacaksa kod üzerinde yapılmış değişiklik ilk önc e test sunucu 
+sistemine aktarılacak ve testleri yapılacak test işlemi başarıl ı bittiğinde nihai olarak 
+kalacağı gerçek sunucu sistemine bilgiişlem sorumluları tarafın dan aktarılacaktır. 
+Olası sorunlar kod değiş tirme yetkilisi tarafındın “Yazılım ve Veri Tabanı İşlemleri 
+Takip Formu (RİT-FR-BİD-06)”  ile takip edilecektir.  
+Veriler “Yazılım ve Veritabanı İşlemleri  Alt Süreci (RİT-ST-BİD-02)”  görevlileri
+
+
+================================================================================
+CHUNK NO: 21
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 5
+   - page_label: 6
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Veriler “Yazılım ve Veritabanı İşlemleri  Alt Süreci (RİT-ST-BİD-02)”  görevlileri 
+denetiminde aktarılacaktır. Kod ka yıtlarındaki yetki ve sorumlu luk “Yazılım ve 
+Veritabanı İşlemleri Alt Süreci (RİT-ST-BİD-02)”  ekibine aittir. Kod hiçbir şekilde 
+üçüncü şahıslara verilemez.    
+Yapılan değişikliklerin test edilmesi sırasında  sorumlu,  Bilgiişleme kod değişikliğini 
+iletildikten sonra yapılan işlemin doğruluğunu test eder ve son ucu bilgiişleme iletir, 
+eğer sorun devam ediyorsa işlem tekrar başlatılır.  Yığın veri giriş yapma işlemi sırasında tasnif edilmiş olan ver ilerin girişi (Ör: 
+ÖSYM’den yığın olarak alınan veriler) sırasında veya optik okuy ucu aracılığı ile 
+elde edilen verilerde veriyi üreten veya ağ ortamından alan kiş ilerin yetkileri 
+tanımlanmalıdır.  Verilerin manyetik ortamlara akta rılmasında veya bilgisayar ağl arında kullanılması 
+sırasında şifrelendirmelidir.  Şifrelendirmeler md5, sha-1, sha -2, cyript, des, 3des
+
+
+================================================================================
+CHUNK NO: 22
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 5
+   - page_label: 6
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sırasında şifrelendirmelidir.  Şifrelendirmeler md5, sha-1, sha -2, cyript, des, 3des 
+gibi algoritmik kriptolama yöntemleriyle yapılabilir. 
+ Optik veri girişleri yetkili ve  tanımlanmış kişiler aracılığıy la yapılmalıdır.  
+ 
+Tip K2: Kodlar üzerinde değişiklik tal ebini iletme sorumlusunu İdari ve  Mali İşler 
+Daire Başkanlığı ve Strateji Geliştirme Daire Başkanlığı  birimleri yazılı olarak Bilgi 
+İşlem Daire Başkanlığı  birimine iletir. Sorumlular maaş işleri konusunda uzman 
+olmalı ve maaş işlerini ilgilendiren konularda çıkan kanun, kar arname vb yasaları 
+yorumlayabilmelidir. Sorumlular veri giriş seviyesi dâhilinde t üm birimleri 
+ilgilendiren parametrik veri girişlerini yapar ve kontrol ederl er. Değişiklikler “Maaş 
+İşlemleri Alt Süreci(RİT-ST-İMD-03)”  gereğince Rektörlük Maaş İşleri birimleri 
+ve Fakülte Maaş İşleri yetkilil eri birimleri tarafından yürütül ür. Veriler üzerinde 
+değişiklik yapma seviye ve “Yazılım ve Veritabanı İşlemleri Alt Süreci (RİT-ST-
+
+
+================================================================================
+CHUNK NO: 23
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 5
+   - page_label: 6
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+değişiklik yapma seviye ve “Yazılım ve Veritabanı İşlemleri Alt Süreci (RİT-ST-
+BİD-02)”  belirler. Kod değişikliklerini “Yazılım ve Veritabanı İşlemleri Alt Süreci 
+(RİT-ST-BİD-02)”  gereğince yapılır. 
+    
+ Tip K3:  Kodlar üzerindeki değişiklik yapma talebini Personel Daire Baş kanlığı 
+birimi yapar, değişiklikler “Yazılım ve Veritabanı İşlemleri Alt Süreci (RİT-ST-
+BİD-02)”  tarafından yapılır, gerekli kod girişlerini “Yazılım ve Veritabanı İşlemleri 
+Alt Süreci (RİT-ST-BİD-02)”  yapar. 
+Tip K4 : Kod verileri içersine değişik birimler için yazılmış tüm yazı lım kodları 
+girmektedir. (Tıp Fakültesi Labor atuar programları, Anket değer lendirme 
+programları, Ayniyat ve Demirbaş takip programları ve diğerleri ) bu birimlerin 
+yetkilileri ayni zamanda kod veri  değişikliği iletmekle sorumlu dur. Yetkili olmayan
+
+
+================================================================================
+CHUNK NO: 24
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 6
+   - page_label: 7
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+SİSTEM PROSEDÜRLERİ 
+ 
+Doküman Adı: Sunucu Bilgisayar Sistemlerine Yapılacak Veri Girişleri Prosedü rü  
+Doküman Kodu:   
+RİT-PR-09  İlk Yayın Tarihi: 
+15.12.2006 Revizyon No:  
+02 Revizyon Tarihi: 
+05.01.2009 Sayfa  
+7 / 7 
+ 
+©2009 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+ 
+kişilerin iletmiş oluğu hiçbir d eğişiklik yapılmaz. Kod değişik liklerini “Yazılım ve 
+Veritabanı İşlemleri Alt Süreci (RİT-ST-BİD-02)”  yapar. 
+ 
+“K5”  Verilerinde değişiklik talebi y azılı olarak firmaya iletilmeli  ve yazılımın bitiş 
+tarihi kesin olarak yazılı olar ak alınmalıdır. Kodlar üzerindek i sorumluluk yapılan 
+sözleşme hükümleriyle sınırlıdır.  
+ 
+6.4.  (Y) YENİ ÜRETİLECEK YAZILIMLARDA, İLK VERİ GİRİŞLERİ VE SÜRECİ N 
+PLANLANMASI: 
+Talep edilen yazılımın üretilmesi aşamasında gereksinim duyulan  ilk veri girişleri, veri 
+girişi süreç planlaması, yazılımın test edilmesi, iş akışının d oğru çizilmesine katkı veya
+
+
+================================================================================
+CHUNK NO: 25
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 6
+   - page_label: 7
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+girişi süreç planlaması, yazılımın test edilmesi, iş akışının d oğru çizilmesine katkı veya 
+optik okuyucudan ilk verilerin  alınması bu tanıma girer.   
+ 
+6.4.1.  (Y) UYGULAMA:  
+Birimler yazılım taleplerini “Yazılım Hizmeti Talep Formu (RİT-FR-BİD-03)”  
+formuyla yaptıktan, değerlendirme ve onay aşamaları geçildikten  s o n r a  y a z ı l ı m  
+talebi yapan birim yazılım süreçlerine iş akışı, zamanlama ve t est aşamalarıyla 
+katkıda bulunur ve ilk veri giriş işlemlerini yapar. Süreç işle yişinde çağlayan modeli 
+örnek alınır. Başlıklarda tanımlanan aşamalar ileri veya geri i şletilerek süreç 
+tamamlanır. Çağlayan modelinde 5 aşama vardır. a)  Sistem ve Yazılım Gerekleri Tanımlama: Yazılım talep eden b irim yazılım süresi 
+içinde gereksinim duyulan bilgi v e belgeyi istenilen ortamda ya zılım ekibine aktarır. 
+İstemci yazılımın iş akışı sürecine katkıda bulunur.    
+b) Çözümleme aşaması: Bilgi İşlem Daire Başkanlığı yetkilileri tarafından yazılıma
+
+
+================================================================================
+CHUNK NO: 26
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2009-01-12T08:42:56+00:00
+   - moddate: 2009-01-12T10:43:37+02:00
+   - author: User
+   - title: Microsoft Word - RIT-PR-09.doc
+   - source: 67842.pdf
+   - total_pages: 7
+   - page: 6
+   - page_label: 7
+   - permission: admin
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+b) Çözümleme aşaması: Bilgi İşlem Daire Başkanlığı yetkilileri tarafından yazılıma 
+ait nesne ve obje tanıml arı bu aşamada yapılır.  
+c) Tasarım: Son kullanıcılar için geçerli kullanıcı ara birimle ri vb ekran tasarımları 
+BID yetkilileri tarafından hazırl anır. Bu süreçte yazılımı tale p edenlere sürekli irtibat 
+kurulur. d) Kodlama: Bilgi İşlem Daire Başkanlığı yetkilileri tarafından  kodlama teknikleri 
+belirlenir ve kod yazılımına başlanır. e) Sınama: Ortaya çıkan ilk yaz ılımın gereksinim duyduğu test v erilerini yazılımı 
+talep eden birim oluşturur  ve sınamalarını yapar. 
+ 
+ 
+8.  GÖZDEN GEÇİRME VE ONAYLAMA:   
+ 
+ Yönetimin 
+o n a y ı :      T a r i h :  
+    P r o f . D r . E r a y  A L P E R      05.01.2009 
+Y ö n e t i m  T e m s i l c i s i
+
+

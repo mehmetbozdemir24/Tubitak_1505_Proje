@@ -1,0 +1,89 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Office Word 2007
+   - creator: Microsoft® Office Word 2007
+   - creationdate: 2013-02-04T09:38:12+02:00
+   - title: 0 Einleitung, Registrierung und Änderung
+   - author: zeynep kahveci
+   - moddate: 2013-02-04T09:38:30+02:00
+   - source: 67819.pdf
+   - total_pages: 1
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+TALİMATLAR   
+Doküman Adı:  Montaj Uygulama Talimatı  
+Doküman Kodu  : 
+RIT-TA-BSM -08 İlk YayınTarihi:  
+15.12.2006  Revizyon No:  
+04 Revizyon Tarihi:  
+31.01 .2013  Sayfa  
+1 / 1 
+ 
+© 200 13 Bu doküman Uludağ Üniversites i Rektörlüğü’ne aittir. Başkaları tarafından kullanılamaz ve çoğaltılamaz  
+ 
+1. Amaç: Bu talimatın amacı, montajın istenilen talebe uygun bir şekilde oluşturulmasını 
+sağlamaktır.  
+ 
+2. Kapsam: Bu talimat tüm montajları kapsar . 
+ 
+3. Sorumlular: Montaj Yapımı sorumluları  
+ 
+4. Uygulama:   
+ 
+4.1. Montaj Masasında, montajı yapılacak iş ve yardımcı malze melerden başka hiçbir şey 
+BULUNDURULMAZ  (örn., yiyecek, içecek ve bnz. ).  
+4.2. Basımevi İş Takip Sistemi’ nde montaj  bölümü nde yer alan bilgiler dikkate alınarak  
+işin montajı yapılacaktır.  
+4.3. Montaj yaparken aydıngerler kontrol edilecek. Zayıf veya silik aydınger varsa dizgi 
+bölümüne iade edilecektir. Hatalı bir durum varsa hata bildirim bölümüne detaylı 
+açıklama yazılmalıdır.
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Microsoft® Office Word 2007
+   - creator: Microsoft® Office Word 2007
+   - creationdate: 2013-02-04T09:38:12+02:00
+   - title: 0 Einleitung, Registrierung und Änderung
+   - author: zeynep kahveci
+   - moddate: 2013-02-04T09:38:30+02:00
+   - source: 67819.pdf
+   - total_pages: 1
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+açıklama yazılmalıdır.  
+4.4. Montajı yapılan ve baskısı devam eden montajlar iş sonuçlanıncaya kadar muhafaza 
+edilecektir.  
+4.5. Baskı işi biten aydıngerler  daha sonra tekrar basılacaksa dolaplarında saklanacaktır. 
+Saklanmayacak aydıngerler direkt çöpe atılacaktır.  
+4.6. Çalışanlar mesai bitiminde bütün mak ineleri şartellerinden kapatacaklardır. Çalışma 
+alanlarında ışıkların ve  camlar ın kapatılmasından, çalışma alanlarının genel 
+temizliğinden sorumludurlar.  
+ 
+5. Gözden Geçirme ve Onaylama:  
+ 
+ 
+ 
+Ana Süreç Sahibi:      
+Ümit  KORBEK     Tarih  
+Basımevi Müdürü     30.01 .2013 
+ 
+ 
+ 
+Yönetimin onayı:      
+Prof.Dr. İrfan KARAGÖZ    Tarih  
+Yönetim Temsilcisi     31.01.2013
+
+

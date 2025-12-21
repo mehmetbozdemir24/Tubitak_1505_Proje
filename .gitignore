@@ -1,10 +1,38 @@
-# Python Sanal Ortamı
-venv/
-/venv/
-
-# Python Önbellek Dosyaları
+# --- 1. Python Gereksizleri (Önbellek) ---
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# IDE Ayar Dosyaları (VSCode)
+# --- 2. Sanal Ortamlar (EN ÖNEMLİSİ - Asla gitmemeli) ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- 3. IDE Ayarları (PyCharm ve VS Code ayarları) ---
+.idea/
 .vscode/
+*.swp
+
+# --- 4. Qdrant Veritabanı (Docker oluşturur, Github'a gitmemeli) ---
+qdrant_data/
+qdrant_storage/
+
+# --- 5. Hassas Bilgiler (API Key vb.) ---
+.env
+.env.local
+
+# --- 6. Gereksiz Sistem Dosyaları ---
+.DS_Store
+Thumbs.db
+
+# --- 7. Log Dosyaları ---
+*.log
+
+# --- 8. (OPSİYONEL) Büyük Veri Dosyaları ---
+# Eğer .pkl dosyan çok büyükse (100MB+) Github hata verir.
+# Eğer hata alırsan aşağıdaki satırın başındaki # işaretini kaldır.
+# *.pkl
+
+# --- 9. Upload Edilen Dosyalar ---
+uploads/

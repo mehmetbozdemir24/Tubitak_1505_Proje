@@ -1,0 +1,115 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - source: Haftalik_Yemek_Listesi.docx
+   - file_type: word
+   - permission: user
+--------------------------------------------------------------------------------
+[İÇERİK]
+Haftalık Şirket Duyuruları ve Yemek Listesi
+Genel Duyurular
+Değerli Çalışma Arkadaşlarımız,
+Şirket içi iletişimi artırmak amacıyla düzenlediğimiz 'Cuma Kahve Molaları' etkinliği bu hafta da devam edecektir. Ayrıca, yıllık izin planlamalarınızı ay sonuna kadar İK portalına girmeniz önemle rica olunur. Ofis klimasıyla ilgili bakım çalışmaları Çarşamba günü yapılacaktır.
+Sağlıklı Yaşam Köşesi
+Beslenme uzmanımız, bu hafta mevsim geçişlerinde bağışıklık sistemini güçlendirmek için C vitamini ağırlıklı beslenmeyi öneriyor. Yemekhanemizde bu hafta taze sıkılmış portakal suyu servisi yapılacaktır.
+Yemek Menüsü (12-16 Ekim)
+
+Not: Vejetaryen menü seçeneği için sabah 10:00'a kadar talep oluşturabilirsiniz.
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - source: Haftalik_Yemek_Listesi.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 1
+   - permission: user
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Haftalik_Yemek_Listesi.docx > TABLO_1
+SATIR: 1
+İÇERİK:
+Gün: Pazartesi
+Ana Yemek: Kuru Fasulye & Pilav
+Tatlı/Meyve: Mevsim Salatası
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - source: Haftalik_Yemek_Listesi.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 2
+   - permission: user
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Haftalik_Yemek_Listesi.docx > TABLO_1
+SATIR: 2
+İÇERİK:
+Gün: Salı
+Ana Yemek: Izgara Tavuk & Püre
+Tatlı/Meyve: Fırın Sütlaç
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - source: Haftalik_Yemek_Listesi.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 3
+   - permission: user
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Haftalik_Yemek_Listesi.docx > TABLO_1
+SATIR: 3
+İÇERİK:
+Gün: Çarşamba
+Ana Yemek: Karnıyarık & Cacık
+Tatlı/Meyve: Revani
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - source: Haftalik_Yemek_Listesi.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 4
+   - permission: user
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Haftalik_Yemek_Listesi.docx > TABLO_1
+SATIR: 4
+İÇERİK:
+Gün: Perşembe
+Ana Yemek: Mantı & Yoğurt
+Tatlı/Meyve: Meyve Tabağı
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - source: Haftalik_Yemek_Listesi.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 5
+   - permission: user
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Haftalik_Yemek_Listesi.docx > TABLO_1
+SATIR: 5
+İÇERİK:
+Gün: Cuma
+Ana Yemek: Fırın Balık & Roka
+Tatlı/Meyve: Tahin Helvası
+
+

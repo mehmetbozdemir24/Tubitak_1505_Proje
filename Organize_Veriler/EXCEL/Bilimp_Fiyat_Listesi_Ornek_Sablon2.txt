@@ -1,0 +1,38 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - source: Bilimp_Fiyat_Listesi_Ornek_Sablon2.xlsx
+   - sheet: Fiyat Listesi
+   - file_type: excel
+   - permission: user
+   - columns_present: ['Ürün Kodu', 'Ürün Adı', 'Kategori', 'Birim', 'Liste Fiyatı', 'İndirim Oranı', 'Net Fiyat', 'Açıklama']
+--------------------------------------------------------------------------------
+[İÇERİK]
+KAYNAK: Bilimp_Fiyat_Listesi_Ornek_Sablon2.xlsx > Fiyat Listesi
+TÜR: Excel Tablosu
+İÇERİK:
+| Ürün Kodu   | Ürün Adı                       | Kategori        | Birim     |   Liste Fiyatı |   İndirim Oranı |   Net Fiyat | Açıklama                    |
+|:------------|:-------------------------------|:----------------|:----------|---------------:|----------------:|------------:|:----------------------------|
+| BIL-25-001  | Bilimp CRM Modülü              | Yazılım Lisansı | Kullanıcı |           5082 |            0.2  |     4065.6  | Örnek veri – 2025 liste.    |
+| BIL-25-002  | Bilimp Proje Yönetimi          | Yazılım Lisansı | Kullanıcı |          13146 |            0.1  |    11831.4  | Örnek veri – 2025 liste.    |
+| BIL-25-003  | Bilimp Stok & Envanter         | Yazılım Lisansı | Kullanıcı |          13752 |            0.1  |    12376.8  | Örnek veri – 2025 liste.    |
+| BIL-25-004  | Bilimp Satış & Teklif          | Yazılım Lisansı | Kullanıcı |           9263 |            0.1  |     8336.7  | Örnek veri – 2025 liste.    |
+| BIL-25-005  | Bilimp Fatura Entegrasyonu     | Modül           | Adet      |          14935 |            0.05 |    14188.2  | Örnek veri – 2025 liste.    |
+| BIL-25-006  | Bilimp E-İmza Entegrasyonu     | Modül           | Adet      |           8882 |            0.05 |     8437.9  | Örnek veri – 2025 liste.    |
+| BIL-25-007  | Bilimp Raporlama Paketi        | Modül           | Adet      |           1596 |            0.05 |     1516.2  | Örnek veri – 2025 liste.    |
+| BIL-25-008  | Danışmanlık (Uygulama)         | Hizmet          | Saat      |            647 |            0.05 |      614.65 | Saatlik/hizmet bazlı örnek. |
+| BIL-25-009  | Eğitim (Uzaktan)               | Hizmet          | Saat      |           2168 |            0.25 |     1626    | Saatlik/hizmet bazlı örnek. |
+| BIL-25-010  | Eğitim (Yerinde)               | Hizmet          | Saat      |           2872 |            0.3  |     2010.4  | Saatlik/hizmet bazlı örnek. |
+| BIL-25-011  | Bakım & Destek (Standart)      | Destek          | Ay        |           4281 |            0.12 |     3767.28 | Örnek veri – 2025 liste.    |
+| BIL-25-012  | Bakım & Destek (Genişletilmiş) | Destek          | Ay        |           3694 |            0.2  |     2955.2  | Örnek veri – 2025 liste.    |
+| BIL-25-013  | Sunucu Lisansı                 | Donanım         | Adet      |          36140 |            0    |    36140    | Örnek veri – 2025 liste.    |
+| BIL-25-014  | Yedekleme Ünitesi              | Donanım         | Adet      |          22476 |            0.05 |    21352.2  | Örnek veri – 2025 liste.    |
+| BIL-25-015  | API Erişim Kontenjanı          | Modül           | Adet      |           3347 |            0.12 |     2945.36 | Örnek veri – 2025 liste.    |
+| BIL-25-016  | Mobil Kullanıcı Eklentisi      | Modül           | Kullanıcı |          11742 |            0.15 |     9980.7  | Örnek veri – 2025 liste.    |
+| BIL-25-017  | Rapor Otomasyon Motoru         | Modül           | Adet      |           1539 |            0.1  |     1385.1  | Örnek veri – 2025 liste.    |
+| BIL-25-018  | Öncelikli Destek               | Destek          | Ay        |           1959 |            0.05 |     1861.05 | Örnek veri – 2025 liste.    |
+| BIL-25-019  | Yazılım Kurulum Paketi         | Hizmet          | Adet      |            699 |            0.15 |      594.15 | Saatlik/hizmet bazlı örnek. |
+| BIL-25-020  | Veri Migrasyon Hizmeti         | Hizmet          | Saat      |           1982 |            0.05 |     1882.9  | Saatlik/hizmet bazlı örnek. |
+
+

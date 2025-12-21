@@ -1,0 +1,108 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - source: Gizli_Erisim_Bilgileri.docx
+   - file_type: word
+   - permission: admin
+--------------------------------------------------------------------------------
+[İÇERİK]
+Yönetim Kurulu Özel Kararları ve Erişim Protokolleri
+DİKKAT: Bu belge ÇOK GİZLİDİR (CONFIDENTIAL). Sadece ADMIN yetkisine sahip kişiler görebilir.
+1. Güvenlik Politikası ve Erişim Kuralları
+Bu doküman, şirketimizin en kritik altyapı bileşenlerine erişim sağlayan anahtarları ve yönetim kurulu tarafından alınan stratejik kararları içermektedir. Bu bilgilerin üçüncü şahıslarla paylaşılması, şirket sözleşmesinin 14. maddesi uyarınca derhal fesih sebebidir. Tüm admin kullanıcıları, bu verileri şifreli disklerde saklamakla yükümlüdür.
+Sistem yöneticileri, aşağıdaki tabloda yer alan şifreleri her 30 günde bir değiştirmelidir. Eski şifrelerin tekrar kullanımı güvenlik protokolü gereği yasaklanmıştır. Herhangi bir sızıntı durumunda 'Acil Durum Protokolü Alpha' devreye girecektir.
+2. Kritik Erişim Bilgileri
+Aşağıdaki tablo, canlı sistemlere (Production) tam yetkili erişim sağlayan güncel bilgileri içerir:
+3. Yönetim Kurulu Kararları (Gizli Oturum)
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - source: Gizli_Erisim_Bilgileri.docx
+   - file_type: word
+   - permission: admin
+--------------------------------------------------------------------------------
+[İÇERİK]
+3. Yönetim Kurulu Kararları (Gizli Oturum)
+Yapılan son kapalı oturumda, şirketin X rakibi ile birleşme görüşmelerine başlaması kararlaştırılmıştır. Bu bilgi henüz kamuoyuna duyurulmamıştır ve borsa spekülasyonunu önlemek amacıyla gizli tutulmalıdır. Ayrıca, BT altyapısının %100 bulut tabanlı sisteme geçişi için 2 milyon dolarlık ek bütçe onaylanmıştır.
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - source: Gizli_Erisim_Bilgileri.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 1
+   - permission: admin
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Gizli_Erisim_Bilgileri.docx > TABLO_1
+SATIR: 1
+İÇERİK:
+Erişim Tipi: Veritabanı Ana Root
+Kullanıcı Adı: root_master
+Şifre (Gizli): Xy9#mP2!v
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - source: Gizli_Erisim_Bilgileri.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 2
+   - permission: admin
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Gizli_Erisim_Bilgileri.docx > TABLO_1
+SATIR: 2
+İÇERİK:
+Erişim Tipi: AWS Konsol
+Kullanıcı Adı: admin_aws
+Şifre (Gizli): Bulut7721!!
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - source: Gizli_Erisim_Bilgileri.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 3
+   - permission: admin
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Gizli_Erisim_Bilgileri.docx > TABLO_1
+SATIR: 3
+İÇERİK:
+Erişim Tipi: Banka API
+Kullanıcı Adı: finans_api
+Şifre (Gizli): Para_9900**
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - source: Gizli_Erisim_Bilgileri.docx
+   - type: word_table
+   - table_id: 1
+   - row_id: 4
+   - permission: admin
+--------------------------------------------------------------------------------
+[İÇERİK]
+BELGE: Gizli_Erisim_Bilgileri.docx > TABLO_1
+SATIR: 4
+İÇERİK:
+Erişim Tipi: VPN Gateway
+Kullanıcı Adı: admin_vpn
+Şifre (Gizli): Gate_Key_2024$$
+
+

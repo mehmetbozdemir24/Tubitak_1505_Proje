@@ -1,0 +1,1337 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  BURSA ULUDAĞ ÜNİVERSİTESİ  
+ETİK KURULU VE ETİK DAVRANIŞ İLKELERİ YÖNERGESİ  
+ 
+ 
+BİRİNCİ BÖLÜM  
+Amaç, Kapsam, Dayanak ve Tanımlar  
+ 
+Amaç  
+MADDE 1 - (1) Bu Yönergenin amacı,  Bursa  Uludağ Üniversitesinde etik kültürünü 
+yerleştirmek, akademik ve idari personelin görevlerini ve hizmetlerini yürütürken uymaları 
+gereken etik davranış ilkelerini belirlemek, bu ilkelere uygun davranış göstermeleri bakımından 
+çalışanlara yardımcı olmak, gör evlerin yerine getirilmesinde adalet, dürüstlük, saydamlık, 
+tarafsızlık ilkelerine zarar verecek, güveni sarsacak durumları engellemek ve ortadan kaldırmak, 
+etik davranış ilkeler ine uyulmasını sağlamak konusunda görüş bildirmek üzere oluşturula n Etik 
+Kurul unun yapısını, görevlerini, çalışma usul ve esaslarını düzenlemektir.  
+ 
+Kapsam  
+MADDE 2 - (1) Bu Yönerge , Bursa Uludağ Üniversitesi Etik Kurulunun yapısını, 
+görevlerini ve çalışma biçimini, Etik Kurula başvuru ve ilgili değerlendirme süreçlerine ilişkin
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+görevlerini ve çalışma biçimini, Etik Kurula başvuru ve ilgili değerlendirme süreçlerine ilişkin 
+konul arı, Üniversite mensuplarının akademik ve hizmet etiğini ilgilendiren ve Üniversitenin 
+topluma hizmet sürecinde ve Üniversitenin eğitim -öğretim süreçlerinde ortaya çıkan etik konular 
+ve Üniversitenin  farklı birimlerinde çalışanlar  arasındaki ilişkiler ile ilgili etik konular a ilişkin 
+hükümleri kapsar.  
+(2) Bursa  Uludağ Üniversitesi öğretim elemanlarınca yapılacak bilimsel araştırmalar, 
+yayınlar ile insanlar ve hayvanlar üzerindeki deneyler bu Yönerge kapsamı dışında olup  ilgili 
+alanlarda oluşturulmuş olan uzman etik kurullar tarafından değerlendirilir.  
+ 
+Dayanak  
+MADDE 3 - (1) Bu Yönerge, 5018 sayılı Kamu Mali Yönetimi ve Kontrol Kanunu 
+hükümleri gereğince 26/12/2007 tarih ve 26738 sayılı Resmî Gazete’de yayımlanan Kamu İç 
+Kontrol Standartları Tebliği , 08/6/ 2004 tarih ve 25486 sayılı Resm î Gazete’de  yayımlanan 5176
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Kontrol Standartları Tebliği , 08/6/ 2004 tarih ve 25486 sayılı Resm î Gazete’de  yayımlanan 5176 
+sayılı Kamu Görevlileri Etik Kurulu Kurulması ve Bazı Kanunlarda Değişiklik Yapılması 
+Hakkında Kanun,  23/07/1965 tarih ve 657 sayılı Devlet Memurları Kanununun 29  uncu m addesi,  
+19/04/1990 tarih ve 3628 sayılı Mal Bildiriminde Bulunulması, Rüşvet ve Yolsuzluklarla 
+Mücadele Kanunu  ile Yüksek Öğretim Kurumları Etik Davranış İlke lerine dayanılarak 
+hazırlanmıştır.  
+ 
+Tanımlar  
+MADDE 4 - (1) Bu Y önerge nin uygulanmasında;  
+a) Başkan: Etik Kurulun Başkanı nı, 
+b) Başkan Yardımcısı: Etik Kurul Başkan Yardımcısını,  
+c) Kurul: Bursa Uludağ Üniversitesi Etik Kurulu nu, 
+ç) Personel: Bursa Uludağ Üniversitesinde memur, sözleşmeli ya da işçi sıfatıyla görev 
+yapan akademik ve idari personeli,  
+d) Rektör: Bursa Uludağ Üniversitesi Rektörünü,  
+e) Rektörlük: Bursa Uludağ Üniversitesi Rektörlüğünü,  
+f) Senato: Bursa Uludağ Üniversitesi Senatosunu,
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+f) Senato: Bursa Uludağ Üniversitesi Senatosunu,  
+g) Üniversite: Bursa Uludağ Üniversitesini,  
+ğ) Üye: Bursa Uludağ Üniversitesi Etik Kurulu Üyelerini,
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  h) Yeminli Sekreter: Rektör lük tarafından görevlendirilen Yeminli Sekreteri,  
+ı)Yeminli Yazman: Kurul üyeleri arasından  seçilen yazmanı , 
+i) Yönerge: Bursa Uludağ Üniversitesi Etik Kurulu ve Etik Davranış İlkeleri Yönergesini  
+ifade eder . 
+ 
+ 
+İKİNCİ BÖLÜM  
+Etik Davranış İlkeleri  ve Etik Kurul , Etik Kurula Başvuru  
+ 
+Etik davranış ilkeler i 
+MADDE 5 - Personelin görev ve hizmetlerinde, birimler ve kişiler ile olan ilişkilerinde 
+uymaları gereken etik davranış ilke leri, 13/04/2005 tarih ve 25785 sayılı  Resm î Gazete ’de 
+yayımlanan Kamu Görevlileri Etik Davranış İlkeleri İle Başvuru Usul ve Esasları Hakkında 
+Yönetmelik ve 22/10/2014 tarih ve 339 sayılı Yükseköğretim Kurumları Etik Davranış İlkeleri 
+belgesinde tanımlan an ve Bursa Uludağ Üniversitesi Personel Etik Davranı ş ilkeleri belgesinde 
+yer alan ilkelerdir.  
+ 
+Etik Kurulun oluşumu  
+MADDE 6 - (1) Kurul,  Üniversitenin daha önce disiplin cezası almamış ve hakkında
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+MADDE 6 - (1) Kurul,  Üniversitenin daha önce disiplin cezası almamış ve hakkında 
+verilmiş herhangi bir etik ihlal  kararı bulunmayan akademik ve idari personeli arasından Rektör 
+tarafından atanan en az 9 (dokuz ) üyeden  oluşur. Kurul ilk toplantısında üyeleri arasından bir 
+başkan, bir başkan yardımcısı ve bir  yeminli  yazman seçer.  
+(2) Kurul  üyelerinin görev süresi 4 (dört) yıldır. Süresi biten üye aynı usulle yeniden 
+atanabilir . 
+(3) Aşağıdaki haller den birin in gerçekleşmesi durumunda Kurul üyeliği sona erer:  
+a) Bir takvim yılı içinde izinsiz ve mazeretsiz olarak üst üste üç toplantıya katılmama k, 
+b) Adli veya idari bir soru şturma neticesinde verilen cezanın kesinleşmesi , 
+c) Üniversiteden ayrılmak , 
+ç) Üyelikten istifa  etmek . 
+(4) Üyeliğin herhangi bir şekilde sona ermesi halinde , boşalan üyelik için Rektör 
+tarafından yeni üye ataması yapılır . Bu şekilde atanan  üye, görevi sona eren üyenin kalan süresini 
+tamamlar.
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+tamamlar.  
+ 
+Etik Kurulun  yetki , görev ve sorumlulukları  
+MADDE 7 - (1) Kurulu n yetki , görev ve sorumlulukları  şunlardır:  
+a) Üniversitenin akademik ve idari birimlerinde, Yönerge nin 5 inci maddesinde  belirtilen 
+etik davranış ilkelerine ilişkin sorunlarda, kanıtlara dayalı olarak tarafsız değerle ndirme yapmak  
+ve görüş bildir mek,  
+b) Üniversit ede etik yaşam kültürünün yaygınlaşması, geliştirilmesi ve etik duyarlılığın 
+artırılması için eğitim ve benzeri ç alışmalar düzenle mek,  
+c) Etik davranış ilkelerinin, kamu görevlilerine uygulanan temel, hazırlayıcı ve hizmet içi 
+eğitim programlarında yer alması için ilgili birimlerle  işbirliği yap mak,  
+ç) Üniversite bünyesindeki  uzman etik kurullarınca belirlenen  etik i lke ve uygulamalarını 
+Üniversitenin benimsemiş olduğu temel etik davranış ilkeler i ve değerleriyle  bütünleşmesine 
+yönelik değerlendirme ve önerilerde bulun mak.  
+(2) Kurul , yürüttüğü faaliyetler den dolayı  Rektöre karşı sorumludur.
+
+
+================================================================================
+CHUNK NO: 8
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki   
+Başvuru usul ve esasları  
+MADDE 8 - (1) Kurula yapılacak b aşvuru lara ilişkin usul ve esaslar  şunlardır:  
+a) Kurul a, 3071 sayılı Dilekçe Hakkının Kullanılmasına İlişki n Kanunda belirlenen  
+esaslara göre medeni hakları nı kullanma ehliyetine sahip Türkiye Cumhuriyeti vatandaşlar ı ile 
+Türkiye’d e ikamet eden  yabancı ülke vatandaşları başvuruda bulunabilir. Başvuruda bulunabilmek 
+için başvuranın menfaatinin etkilenmesi koşulu aranmaz.  
+b) Başvurular , Kurul a yazılı, elektronik posta veya tutanak altına alınan sözlü başvuru 
+yollarıyla yapılır. Başvurular, Rektörün onayıyla Kurul gündemine alınır.  
+c) Başvuru dilekçesinde, başvuruyu yapan kişinin adı, soyadı, yerleşim yeri, iş adresi, 
+varsa diğer iletişim bilgileri ile Türkiye Cumhuriyeti  Kimlik Numarası ve imzası bulunur. Yabancı 
+ülke vatandaşları nın başvurular ında dilekçeye Yabancı Kimlik Numarası yazıl ır. Bu bilgileri
+
+
+================================================================================
+CHUNK NO: 9
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ülke vatandaşları nın başvurular ında dilekçeye Yabancı Kimlik Numarası yazıl ır. Bu bilgileri 
+içermeyen  veya geçerli bir vekâletname olmaksızın başkası adına yapılan başvurular incelemeye 
+alınmaz.  
+ç) Dilekçede, etik ilkeler e aykırı davranış iddiasına ilişkin bilg i ve belgeler açık ve 
+ayrıntılı  olarak belirtilir ; başvuru  konu su yapılan  etik ilkelere  aykırı davranış iddiası, kişi, zaman 
+ve yer okunaklı bir şekilde ve somut biçimde gösterilir , diğer tanık ve delillere işaret edilir . 
+d) Yargı organlarında incelenmekte  olan veya karara bağlanmış olan etik ilke ihlalleri 
+hakkında kurula başvurulamaz. Daha önce Kurulda incelenip karar a bağlanmış şikâyetler, yeni 
+kanıt gösterilmedikçe bir daha şikâyet konusu yapılamaz.  
+e) Yukarıdaki başvuru usulüne uygun yapılmayan başvuru lar değerlendirmeye alınmaz.  
+f) Başvurunun kayıtlara geçtiği tarih, başvuru tarihidir.  
+g) Kurul Başkanı, Rektörlük tarafından gönderilen şikâyet dilekçesini  ilk inceleme
+
+
+================================================================================
+CHUNK NO: 10
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+g) Kurul Başkanı, Rektörlük tarafından gönderilen şikâyet dilekçesini  ilk inceleme 
+sonucunda kabul edebileceği gibi gerekli gördüğü hallerde  konu ve kabul edilebilirlik açısından 
+incelenmek üzere bir Kurul üyesine de gönder ebilir. Bu üye, başvuranın adı, soyadı, görevi, 
+başvuru konusu ve başvuru hakkındaki önerisini içeren bir rapor hazırlayıp Kurul Başkanının  
+inceleme ve değerlendirmesine sunar.  Kurul Başkanı rapora daya narak başvurunun kabulüne ya 
+da reddine karar verir.  Kabul edilen başvurular Kurul gündemine alınır.  
+ğ) Kurul, incelemeyi yönergede belirtilen usule göre tamamlar  ve karar verir.  
+ 
+Re’sen inceleme  
+MADDE 9  - (1) Kurul, personelin etik ilke ihlalinde bulunduğunu çeşitli yollarla 
+öğrenmesi durumunda, re ’sen inceleme başlatabilir . 
+(2) Bu konuda Kurul Başkanınca görevlendirilecek bir üyenin gözetiminde gerekli 
+bilgiler toplanarak hazırlanan rapor Başkana sunulur, değerlendirm e sonucu nda ilgili konu Kurul 
+gündemine alınır.
+
+
+================================================================================
+CHUNK NO: 11
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+gündemine alınır.  
+ 
+Etik Kurulun  çalışma b içimi  
+MADDE 10 - (1) Kurulun çalışma biçimi a şağıda ki gibidir:  
+a) İncelenecek konular ve değerlendirilecek dosyalar, Rektör tarafından Kurula havale 
+edilir.   
+b) Kurul, Başkanın çağrısı üzerine yılda en az 2 (iki) kez toplanır. Gerektiğinde Başkanın 
+çağrısı ile olağanüstü toplantı yap ılabilir. Başkanın katılamadığı toplantı lara yardımcısı başkanlı k 
+eder. Toplantı gündemin e alınan dosyalar havale tarihinden itibaren en geç 3 (üç)  ay içerisinde 
+sonuçlandırı lır. Bu süre , gerekt iğinde Kurul kararıyla en çok 2 (iki) aya kadar uzatılabilir . 
+c) Kurul, değerlendirmelerini dosya üzerinden yapar; gerektiğinde ilgili kişilerden yazılı 
+ya da sözlü bilgi alır. Hakkında etik ihlali başvurusu b ulunan kişilere Kurul önünde savunmalarını 
+yapma hakkı tanınır. Savunma için 7 ( yedi) iş gününden az olmamak üzere süre verilir. Savunma 
+için belirlenen tarihte herhangi bir mazereti olmaksızın savunma yapılmaması halinde ilgili kişi
+
+
+================================================================================
+CHUNK NO: 12
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+için belirlenen tarihte herhangi bir mazereti olmaksızın savunma yapılmaması halinde ilgili kişi 
+savunma hak kından vazg eçmiş  sayılır. Hakkında etik ihlal başvurusu bulunan kişi mazeret beyan
+
+
+================================================================================
+CHUNK NO: 13
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  ettiğinde, Kurul  tarafından geçerli sayılan mazeretin sona ermesinden itibaren savunma için 7 
+(yedi) iş günü ek süre verilir.  Öne sürülen mazeretin Ku rul tarafından kabul edilmemesi  halinde 
+ilgili taraf/taraflar savunma hakkı nı kaybetmiş olurlar.  Savunma işlemi tutanak altına alınır. Bu 
+durumda eldeki mevcut bilgi ve kanıtlara göre değerlendirme yap ılır ve  görüş bildiri lir. 
+ç) Kurul, gerek  duyulması halinde inceleme konu su ile ilgili Ü niversite içinden veya 
+dışından uzman ya da uzmanları, görüşlerine başvurmak üzere toplantı ya davet edebilir ya da 
+konunun uzmanlardan oluşturulacak bir komisyonca incelenmesini talep edebilir. Kurul tarafından 
+talep edilmesi halinde uzmanlar /komisyonlar k endilerinden görüş istenilen dosya hakkında rapor 
+hazırlayarak Kurula sunarlar. Uzman a/komisyona, 15 günü aşmamak kaydıyla uygun süre veri lir. 
+d) İnceleme ve değerlendirme sırasında başka kurum ve kuruluşlarla yap ılması gereken
+
+
+================================================================================
+CHUNK NO: 14
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+d) İnceleme ve değerlendirme sırasında başka kurum ve kuruluşlarla yap ılması gereken 
+yazışmalar , Rektörlük aracıl ığıyla gizlilik ilkeleri çerçevesinde gerçekleştirilir . Kurulun yazışma 
+işlemleri Rektörlük tarafın dan görevlendirilen yeminli sekreter tarafından yürütülür.  
+e) Kurul, üye tam say ısının en az 2/3’ü ile toplanır ve  katılanların salt çoğunluğu ile karar 
+alır. Çekimser oy kullanılamaz. Oylamalar açık usulle yapılır. Oyların eşit  olması  halinde 
+Başkanın oyu yönünde karar verilmiş sayılır. Başkan g erekçeli Kurul kararı nı Rektör lüğe sunar. 
+Kararlar  ilgililere Rektörlük tarafından tebliğ edilir.  
+(2) Kurul kararlar ı tavsiye niteliğindedir . Kurul, başvuruları yalnızca etik davranış ilkeleri 
+yönünden  ele alır ve değerlendirir. Kurul, incelenen konuya ilişkin ulusal ve uluslararası akademik 
+etik düzenlemeleri, sözleşme, bildirge ve benzeri me tinleri göz önünde bulundur ur. Kurul,  ulusal
+
+
+================================================================================
+CHUNK NO: 15
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ve ulusla rarası metinlerde düzenlenmemiş  bir sorunla karşılaştığında, bu  konuda ilkesel kararlar 
+alabilir . Kurulun ceza verme ya da ceza önerme yetkisi yoktur . 
+ 
+Gizlilik  ve arşiv  
+MADDE 11 - (1) Kurul, h akkında değerlendirme yaptığı, karar  aldığı ve görüş verdiği 
+tüm konularda gizlilik içinde çalışır ve bu süreçlerde elde e ttiği tüm bilgi ve belgeleri saklı tutar.  
+(2) Kurulun inceleme, değe rlendirme ve ilgili yazışmalar a ait tüm belgelerin en az 5 (beş) 
+yıl süre ile Rektörlü kçe Kurula tahsis edilmiş özel korunaklı bir arşivde  saklanması zorunludur. 
+Kurul evraklarına herhangi bir yoldan eriş ilmesi Rektör ya da  Başkanın yazılı şekilde izin vermiş 
+olmasına bağlıdır . Başkan bu konudaki yetkisini görevinde bulunmadığı süre yle sınırlı ve yazılı 
+olmak koşulu ile yardımcısına  devredebilir.  
+ 
+ÜÇÜNCÜ BÖLÜM  
+Etik Bağlayıcılık, Taahhütname ve Bilgilendirme  
+ 
+Etik bağlayıcılık ve  etik taahhütname
+
+
+================================================================================
+CHUNK NO: 16
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Etik Bağlayıcılık, Taahhütname ve Bilgilendirme  
+ 
+Etik bağlayıcılık ve  etik taahhütname  
+MADDE 12 - (1) Personel , görevlerini ve hizmetlerini yürütürken “Bursa  Uludağ 
+Üniversitesi Etik Davranış İlkelerine ” uymakla yükümlüdür. Bu ilkeler personelin istihdamını 
+düzenleyen mevzuat hükümlerinin bir parçasını oluşturur.  
+(2) Etik Davranış İlkeleri ve Etik Taahhütnamesine aykırı davranışların aynı zamanda 
+disiplin suçu da teşkil etmesi halinde , ilgilile r hakkında ilgili m evzuat hükümleri ne göre işlem 
+yapılır.  
+(3) Üniversitede akademik, idari ve diğer görevlere atanan her personel göreve başlarken 
+bu Yönergenin ayrılmaz eki sayılan “Bursa Uludağ Üniversitesi Etik Taahhütnamesi ”ni 
+imzalamakla yükümlüdür. İ mzalana n Etik Taahhütname personelin özlük dosyasına konur.  
+ 
+Personeli n bilgilendir ilmesi 
+MADDE 1 3 - (1) İstihdama ilişkin koşulların bir parçası olarak akademik ve idari birim
+
+
+================================================================================
+CHUNK NO: 17
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+MADDE 1 3 - (1) İstihdama ilişkin koşulların bir parçası olarak akademik ve idari birim 
+yöneticileri , personele etik davranış ilkeleri konusunda bilgi vermek, uygun eğ itimi sağlamak, bu 
+ilkelere uyulup uyulmadığını gözetmek ve etik davranış lar konusunda rehberlik etmekle 
+yükümlüdür.
+
+
+================================================================================
+CHUNK NO: 18
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  (2) “Bursa  Uludağ Üniversitesi Etik Davranış İlkeleri ”, personelin erişimi  için uygun 
+ortamlarda yayımlanır.  
+ 
+DÖRDÜNCÜ  BÖLÜM  
+Çeşitli ve Son  Hükümler  
+ 
+Yürürlükten kaldırılan mevzuat  
+MADDE 1 4 - (1) Uludağ Üniversitesi Senatosunun 20/ 03/2014 tarih ve 05 sayılı 
+toplantısında kabul edilen “Uludağ Üniversitesi Etik Kurulu ve Etik Davranış İlkeleri Yönergesi” 
+yürürlükten kaldırılmıştır.  
+ 
+Hüküm bulunmayan haller  
+MADDE 15 - (1) Yönergede düzenlenmeyen konularda ilgili mevzuat hükümleri 
+uygulanır.  
+ 
+Yürürlük  
+MADDE 1 6 - (1) Bu Y önerge Bursa  Uludağ Üniversitesi Senatosunda kabul edildiği  25 
+Şubat 2021 tarihinden itibaren yürürlüğe girer.  
+ 
+Yürütme  
+MADDE 1 7 - (1) Bu Y önerge hükümlerini Bursa  Uludağ Üniversitesi Rektörü yürütür.
+
+
+================================================================================
+CHUNK NO: 19
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+1 
+ EK 1. BURSA  ULUDAĞ ÜNİVERSİTESİ  
+ETİK DAVRANIŞ İLKELERİ  
+ 
+Üniversitemiz personeli aşağıda belirtilen etik davranış ilkeler i ve değerlerine  uyar : 
+Hizmet Etiği : 
+Üniversitemiz personeli, kamu hizmetlerinde sürekli gelişimi, katılımcılığı, saydamlığı, 
+dürüstlüğü , kamu yararını gözetmeyi, hesap verebilirliği, öngörülebilirliği, hizmette 
+yerindeliği ve beyana güveni esas alır. Toplumsal konulara (çevre, sağlık, eğitim, adalet vb.) 
+duyarlılık göstererek insanlığın yararını gözetir.  
+Hizmet Bilinci:   
+Üniversitemiz personeli, yerine getirdiği hizmetleri etkin, hızlı ve verimli biçimde 
+yürütmeyi, hizmet kalitesini yükseltmeyi, hizmetten yararlananların ihtiyacına , 
+hizmetlerin sunum sürecine ve sonu çlarına  odaklanarak memnuniyet düzeyini artırmayı 
+hedefler.  Üniversite dış ında herhangi bir etkinliğe ya da çalışmaya katılmak için 
+Üniversitedeki görevlerini aksatmaz.  
+Hizmet Standartlarına Uyma:
+
+
+================================================================================
+CHUNK NO: 20
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Üniversitedeki görevlerini aksatmaz.  
+Hizmet Standartlarına Uyma:  
+Üniversitemiz personeli, kamu hizmetlerini belirlenen standartlara ve süreçlere uygun 
+şekilde yürütür . Ayrıca sunulan hizmetle ilgili  iş ve işlemler hakkında açıklayıcı bilgiler 
+vererek hizmet sunum sürecinde ilgili tarafları aydınlatır.  
+Amaç ve Misyona Bağlılık:  
+Üniversitemiz personeli, Üniversitemizin amaçlarına, vizyon ve misyonuna uygun 
+hareket eder. Bu bağlamda ülkemizin ve insanlı ğın çıkarları nın korunmasını ve  toplumun 
+refah düzeyinin yükseltilmesini hedefler.  
+Dürüstlük ve Tarafsızlık:  
+Üniversitemiz p ersoneli; tüm eylem ve işlemlerinde yasallık, adalet, eşitlik ve dürüstlük 
+ilkeleri doğrultusunda hareket eder. Görevlerini yerine getirirken dil, din, mezhep, felsefi 
+inanç, siyasi düşünce, ırk, cinsiyet ve benzeri sebeplerle ayrım yapmaz, insan hak ve 
+özgürlüklerini kısıtlayıcı ve fırsat eşitliğini engelleyici davranış ve uygulamalarda
+
+
+================================================================================
+CHUNK NO: 21
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+özgürlüklerini kısıtlayıcı ve fırsat eşitliğini engelleyici davranış ve uygulamalarda 
+bulunmaz. Takdir yetkilerini, kamu yararı ve hi zmet gerekleri doğrultusunda, her türlü 
+keyfilikten uzak, tarafsız ve adil olarak kullanır.  
+Saygınlık ve Güven:  
+a) Üniversitemiz personeli, Kurumuna itibar ve güveni sağlayacak şekilde davranır. 
+Davranışlarını, g örevlerinin gerektirdiği itibar  ve güveni ol uşturacak şekilde düzenler. 
+Sunulan hizmetin her türlü menfaatin üzerinde bir görev olduğu bilinciyle hizmet 
+gereklerine uygun hareket eder. Davranışlarında nazik ve saygılı olur.   
+b) Yönetici veya denetleyiciler başta olmak üzere Üniversite personeli, ku rumun 
+saygınlık ve güvenini sarsacak keyfi davranışlarda, baskı, hakaret ve tehdit edici
+
+
+================================================================================
+CHUNK NO: 22
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+2 
+ uygulamalarda bulu namaz . Açık ve kesin kanıtlara dayanmayan rapor düzenle yemez, 
+mevzuata aykırı taleplerde buluna maz, kendileri talep etmese  dahi bu istekleri kabul 
+edemezler.  
+Nezaket ve Saygı:  
+Üniversitemiz personeli, Üniversitenin tüm personeline ve hiz metinden yararlananlara 
+karşı nazik ve saygılı davranır  ve gerekli ilgiyi gösterir ler. Konu, yetkilerinin dışında ise 
+ilgili birime veya yetkiliye bilgi verir.  
+Yetkili Makamlara Bildirim:  
+Üniversitemiz personeli, Yönergede belirtilen etik davranış ilkeleri yle bağdaşmayan 
+veya kendilerinden talep edilen veya tanık ya da haberdar oldukları yasa  dışı ve etik dışı iş 
+ve ey lemleri yetkili makamlara bildirir . Birimlerin amirle ri, ihbarda bulunan Üniversite 
+personelinin  kimliğini gizli tutar ve zarar  görmemesi için gerekli tüm tedbirleri alır.  
+Çıkar Çatışması:  
+Üniversitemiz personeli, görevlerinin tarafsız ve objektif şekilde yürütmelerini
+
+
+================================================================================
+CHUNK NO: 23
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Üniversitemiz personeli, görevlerinin tarafsız ve objektif şekilde yürütmelerini 
+etkileyen ya da etkileyecek olan, kend ilerine, yakınlarına, arkadaşlarına ya da ilişki li 
+bulunduğu kişi ya da kuruluşlara maddi veya manevi menfaat sağlayacak iş, iş lem ve 
+davranışlardan kaçınır .  
+Görev ve Yetkilerin Menfaat Sağlamak Amacıyla Kullanılmaması:  
+a) Üniversitemiz personeli, unvan v e yetkilerini  kullanarak , kendileri, yakınları ve ya 
+üçüncü kişiler lehine menfaat sağlaya maz, aracılıkta bulunamaz , herhangi bir nedenle 
+ayrımcılık ve kay ırmacılık yapamaz .  
+b) Kendilerinin veya başkalarının kitap, dergi, kaset, CD ve benzeri ürünlerin in satışını 
+ve dağıtımını yaptıramaz. Gerekli yasal izin alınmadan resmi  ve sivil kurum ve kuruluşlar 
+adına bağış  ve yardım talep edemez , benzeri nitelikte menfaat sağlayamaz.  
+c) Görevlerinin ifası sırasında ya da sonucunda elde ettikleri resmi veya gizli bil gi ve
+
+
+================================================================================
+CHUNK NO: 24
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+c) Görevlerinin ifası sırasında ya da sonucunda elde ettikleri resmi veya gizli bil gi ve 
+belgeleri , kendilerine, yakınlarına veya üçüncü kişilere doğrudan veya dolaylı menfaat elde 
+etme k için kullanamaz , yetkili makamlar dışında kurum, kuruluş veya kişi lere 
+açıklayamaz .  
+ç) Kurum kaynaklarını amaçları dışında doğrudan ve dolaylı kullanam az ve 
+kullandır amaz. 
+ 
+Hediye Alma ve Menfaat Sağlama Yasağı:  
+1- Üniversitemiz personeli ;  
+a) Görev ve hizmetlerini tarafsız bir şekilde icra etmelerini etkileyen ve ya etkileme 
+ihtimali bulunan, ekonomik değeri olan veya olmayan, doğrudan veya dolaylı her türlü 
+hediye yi alamaz, görevi sebebiyle çıkar sağlamayı kabul e demez.  
+b) Görev ve hizmetlerini etkileyecek şekilde hediye almaması, hediye verilmemesi ve 
+herhangi bir çıkar sağlanmaması temel ilkedir.
+
+
+================================================================================
+CHUNK NO: 25
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+3 
+ c) Yürüttükleri görev i vesile kılarak gerçek ve tüzel kişilerden kendilerine, yakınlarına, 
+arkadaşlarına ya da ilişkide bulunduğu kişi ya da kuruluşlara ve ya kendilerine menfaat 
+sağlayan iş ve işlemlerden kaçınır,  hediye alamaz, şahsi çıkar sağlayan eylem ve 
+davranışlarda bulun amaz.  
+ç) Çıkar çatışmasında şahs i sorumluluğa sahiptir. Çatışmanın farkına varır varmaz 
+durumu üstlerine bildirir.  
+d) Üniversitenin kaynaklarını kullanarak hediye veremez, resmi gün, tören ve 
+bayramlar dışında, hiçbir gerçek ve tüzel kişiye çelenk ve çiçek gönderemez, görev ve 
+hizmetle i lgisi olmayan kutlama, duyuru ve anma ilanları veremez.  
+e) Uluslararası ilişkilerde nezaket ve protokol kuralları gereğince, yabancı kişi ve 
+kuruluşlar tarafından verilen hediyeler, 3628 sayılı Kanunun 3. maddesi hükümleri saklı 
+kalmakla birlikte, söz konu su maddede belirtilen sınırın altında kalanlar da beyan edilir.  
+ 
+2- Aşağıda belirtilenler hediye alma yasağı kapsamı dışındadır:
+
+
+================================================================================
+CHUNK NO: 26
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+2- Aşağıda belirtilenler hediye alma yasağı kapsamı dışındadır:  
+a) Üniversite ve birimlerine katkı anlamına gelen, ilgili birimlerin hizmetlerinin 
+hukuka uygun yürütülmesini etkilemeyecek ola n ve üniversitenin  hizmetine tahsis 
+edilmek, demirbaşa kaydedilmek ve kamuoyuna açıklanmak koşuluyla alınan makam aracı 
+ve hediyeler ile kurum ve birimlere yapılan hediyeler , 
+b) Kitap, der gi, makale, ta kvim, CD veya  buna benzer nitelikte olanlar , 
+c) Halka açık yarışma, kampanya ve etkinliklerde kazanılan ödül ve hediyeler , 
+ç) Herkese açık akademik ve bilimsel etkinlikler  ile yemek, resepsiyon ve benzeri 
+etkinliklerde verilen hatıra niteliğindeki hediyeler , 
+d) Tanıtım amacına yönelik, herkese dağıtılan ve se mbolik değeri bulunan reklam ve el 
+sanatları , 
+e) Finans kurumlarından piyasa koşullarına göre alınan krediler . 
+ 
+3) Aşağıda belirtilenler hediye alma yasağı kapsamındadır:  
+a) Görev yapılan kurumla iş, hizmet veya çıkar ilişkisi içinde bulunanlardan alınan
+
+
+================================================================================
+CHUNK NO: 27
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+a) Görev yapılan kurumla iş, hizmet veya çıkar ilişkisi içinde bulunanlardan alınan 
+karşılama, veda ve kutlama hediyeleri, burs, seyahat, ücretsiz konaklama ve hediye çekleri , 
+b) Taşınır veya taşınmaz mal veya hizmet satın alırken, satarken veya kiralarken piyasa 
+fiyatına göre makul olmayan bedeller üzerinden yapılan şahsi işlemler,  
+c) Hizmetten yararlananların vereceği her türlü eşya, giysi, takı veya gıda türü 
+hediyeler,  
+ç) Üniversiteyle iş veya hizmet ilişkisi içinde olanlardan  alınan şahsi borç ve krediler.
+
+
+================================================================================
+CHUNK NO: 28
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+4 
+ Kamu Malları ve Kaynaklarının Amaçları Dışında Kullanılmaması:  
+Üniversitemi z personeli, Ü niversite nin bina ve taşıtları ile diğer kamu malları ve 
+kaynaklarını amaçlar ı ve hizmet gerekleri dışında kullanmaz ve kullandırmaz, bunları 
+korur ve her an hizmete hazır bulundurma k için gerekli tedbirleri alır.  
+  
+Savurganlıktan Kaçınma:  
+Üniversitemiz personeli, Üniversitenin bina ve taşıtları ile diğer kamu malları ve 
+kaynaklarını kullanırken israf ve savurganlıktan kaçınır, mesai süresini, kurumun mallarını 
+ve kaynaklarını, işgücü ve imkânlarını  etkin, verimli ve tutumlu kullanır.  
+ 
+Bağlayı cı Açıklamalar ve Gerçek Dışı Beyan:  
+Üniversitemiz personeli, görevlerini yerine getirirken yetkilerin i aşarak Üniversite ve 
+birimini bağlayıcı açıklama, taahhüt, va at veya girişimlerde bulunamaz, aldatıcı ve ya 
+gerçek dışı beyanat veremez.  
+ 
+Bilgi Verme, Saydamlık ve Katılımcılık:  
+Üniversitemiz personeli, halkın bilgi edinme hakkını kullanmasına yardımcı olur lar.
+
+
+================================================================================
+CHUNK NO: 29
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Üniversitemiz personeli, halkın bilgi edinme hakkını kullanmasına yardımcı olur lar. 
+Gerçek ve tüzel kişilerin talep etmesi halinde istenen bilgi ve belgeleri 4982 sayılı Bilgi 
+Edinme Hakkı Kanununda belirlenen istisnalar dışında, u sulüne uygun olarak bilgi verir . 
+Üst yöneticiler, ilgili kanunların izin verdiği çerçevede, kurumların ihale süreçlerini, 
+faaliyet ve denetim raporlarını uygun araçlar la kamuoyunun bilgisine sunar .  
+Üniversitemiz personeli, Üniversitenin hizmetleri ile ilg ili temel kararların 
+hazırlanması, olgunlaştırılması, alınması ve bu kararların uygulanması aşamalarından 
+birine, bir kaçına veya tamamına, aksine bir hüküm bulunmadıkça, o karardan doğrudan 
+ya da dolaylı olarak etkilenecek olanların katkıda bulunmasını sa ğlamaya dikkat eder.  
+ 
+Yöneticilerin Hesap Verme Sorumluluğ u: 
+Üniversitemiz  yöneticileri ;  
+a) Görev ve hizmetlerinin yerine getirilmesi sırasında sorumluluk ve yükümlülükleri
+
+
+================================================================================
+CHUNK NO: 30
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+a) Görev ve hizmetlerinin yerine getirilmesi sırasında sorumluluk ve yükümlülükleri 
+konusunda şeffaf olurlar ve hesap verir , kamusal değerlendirme ve denetime  her zam an 
+açık ve hazır olur . 
+b) Birimlerin in amaç ve politikalarına uygun olmayan işlem veya eylemleri engellemek 
+için görev ve yetkilerinin gerektirdiği önlemleri zamanında alır . Bu amaçla yasal ve idari 
+düzenle meleri uygula r, eğitim ve bilgilendirme konusunda uygun çalışmalar yap ar, kişisel 
+davranışlarıyla personele örnek olur .  
+c) Personeline etik davranış ilkeleri konusunda uygun eğitimi sağlamak, bu ilkelere 
+uyulup uyulmadığını gözetmek, etik davranış lar konusunda rehberlik etmek ve etik 
+davranış lar konusund a örnek teşkil eden uygulamaları ödüllendirmek ile yükümlüdür ler.
+
+
+================================================================================
+CHUNK NO: 31
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 9
+   - page_label: 10
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+5 
+ Eski Kamu Görevlileri ile İlişkiler:  
+Üniversitemiz personeli, Üniversitedeki görevi sona eren eski mensupları nı, 
+Üniversitenin hizmetlerinden ayrıcalıklı bir şekilde faydalandır amaz, onlara imtiyazlı 
+uygulamada  bulunamaz. Görevlerinden ayrılanlara, ilgili kanunlardaki hükümler saklı 
+kalmak kaydıyla, daha önce görev yaptığı birimden, doğrudan veya dolaylı olarak herhangi 
+bir yüklenicilik, komisyonculuk, temsilcilik, bilirkişilik, aracılık görev ve iş verilemez.  
+ 
+Mal Bildiriminde Bulunma:  
+Üniversite personeli, 19.4.1990 tarih 3628 sayılı Mal Bildiriminde Bulunulması, Rüşvet 
+ve Yolsuzlukla Mücadele Kanunu hükümleri uyarınca, kendileri, eşleri ve velayeti 
+altındaki çocuklar ına ait taş ınır ve taşınmazları, alacak ve borçları hakkında yetkili 
+makama mal bildiriminde bulunur.  
+Kurul, gerek gördüğünde mal bildirimlerini inceleme yetkisine sahiptir. Mal 
+bildirimindeki bilgilerin doğruluğunun kontrolü amacıyla ilgili kişi ve kuruluşlardan bil gi
+
+
+================================================================================
+CHUNK NO: 32
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 9
+   - page_label: 10
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+bildirimindeki bilgilerin doğruluğunun kontrolü amacıyla ilgili kişi ve kuruluşlardan bil gi 
+talep ed ilebilir, ilgili kişi ve kuruluşlar a bu bilgileri vermek üzere en çok 15 (on beş) gün 
+süre tanınır. Gerekli durumlarda  Kurul kararıyla 15 (on beş) gün ek süre verilebilir.  
+ 
+Etik Davranış İlkelerine Uyma:  
+Üniversitemiz personeli, görevlerini yürü türken Bursa Uludağ Üniversitesi Etik 
+İlkelerine uymakla yükümlüdür. Bu ilkeler, personelin istihdamını düzenleyen mevzuat 
+hükümlerinin bir parçasını oluşturur.  Üniversite miz yöneticileri  personelin performansını 
+değerlendirirken, Bursa Uludağ Üniversitesi  Etik Davranış İlkelerine uygunluk açısından 
+da değerlendirirler.  
+ 
+Öğretim Elemanlarının Meslektaşlarına Karşı Sorumlulukları:  
+Öğretim elemanları, bilimsel bir toplumun üyeleri olmalarından kaynaklanan 
+yükümlülüklerinin gereği olarak ; 
+a) Meslektaşlarına ka rşı saygılı ve adil davranır, onların akademik özgürlüklerini
+
+
+================================================================================
+CHUNK NO: 33
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 9
+   - page_label: 10
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+a) Meslektaşlarına ka rşı saygılı ve adil davranır, onların akademik özgürlüklerini 
+savunur, çalışmaları ile ilgili  değerlendirmelerini ve görüşlerini sunarken adil ve nesnel 
+olur, onlar hakkında yanlış ve art niyetli açıklamalar yapmaz, yasal zorunluluk olmadıkça 
+meslektaşları nın gizli ve kişisel bilgileri ni açıklamaz, akademik gelişimlerine yardım eder ,  
+b) Meslektaşları arasında ırk, dil, din, cinsiyet ve ben zeri ayrımcılık yapmaz, mesleki 
+kararlarını etkileyen davranışlarda bulunmaz , 
+c) Meslektaşlarını kişisel kazanç ve özel  işleri için kullanma z, sözlü ve fiziksel olarak 
+taciz etme z, 
+ç) Meslektaşlarının mesleki hak ve yetkilerini kullanmalarına ve görevlerini yerine 
+getirmelerine keyfi olarak engel olmaz. Mesleki Kararlarını etkilemek için baskı ve 
+zorlamada bulunmaz.
+
+
+================================================================================
+CHUNK NO: 34
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+6 
+  
+Öğret im Elemanlarının Kendi Bilim Alanlarına Karşı Sorumlulukları:  
+a) Akademik alanında kendini sürekli geliştirmek ,  
+b) Tüm bilimsel çabalarında akademik değerleri ve dürüstlüğü koru mak, 
+c) Diğer bilim alanlarını karalamamak, küçümsememek , 
+ç) Meslekî görevlere  başvurularda yanıltıcı açıklamalarda ve meslekî nitelikleri ile ilgili 
+yanlış bildirimlerde bulunmamak ya da yeterliliği ve niteliğiyle ilgili gerçekleri kasıtlı 
+olarak gizleme mek,   
+d) Meslekî kararını davranışını değiştirebilecek ya da etkileyebilecek h erhangi bir 
+ödülü, hediyeyi veya bağışı kabul etmemek , 
+e) Uzmanlık alanı dışında hakemlik, proje araştırmacılığı, bilirkişilik, sına v, tez, atama 
+ve yükseltme jüri üyeliği yapmamak , 
+f) Kendisiyle “çıkar ilişkisi” veya “çıkar çatışması ” bulunan kişilerle il gili atama, 
+yükseltme ve değerlendirme jürilerinde görev almamak, hakemlik yapmamak, bilirkişilik 
+görevi üstlenmemek . 
+ 
+Öğretim Elemanlarının Üniversiteye Karşı Sorumlulukları :
+
+
+================================================================================
+CHUNK NO: 35
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+görevi üstlenmemek . 
+ 
+Öğretim Elemanlarının Üniversiteye Karşı Sorumlulukları : 
+a) Üniversitenin içinde çeşitli düzeyde  oluşturulan  komite, komisyon, çalışma g rubu, 
+kurul ve görevlendirmeler de yer al mak,  
+b) Kurum dışında, üniversitedeki görev ve sorumluluklarıyla bağdaşmayan profesyonel 
+etkinliklerle meşgul olmamak,  
+c) Üniversitemiz mensuplarına karşı saygı lı ve hakkaniyetl i davranmak, onları kişisel 
+kazanç ve öz el işle ri için kullanmamak, sözlü ve fiziksel olarak taciz etmemek,  
+ç) Üniversitenin mali kaynaklarını amacına uygun olarak kullanmak,  
+d) Kurumsal ve mesleki konumunu kişisel çıkar sağlamak için kullanmamak.  
+ 
+Öğretim Elemanlarını n Topluma Karşı Sorumlulukl arı: 
+a) Toplumun ekonomik, sosyal, k ültürel ve entelektüel kapasitesinin geliştirilmesinde, 
+topluma hizmette etkin rol oynamak için çaba harcamak,  
+b) Topluma yönelik açıklamalarında bilimsel bulgular ile kişisel görüşlerini birbirinden 
+ayırt etmek ,
+
+
+================================================================================
+CHUNK NO: 36
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ayırt etmek , 
+c) Herh angi bir idari konu ile ilgili beyanda bulunduğunda, kendi görüşleri ile 
+üniversitenin kurumsal görüşleri arasında ayrım yapmada dikkatli davranmak , 
+ç) Mümkün olduğunca ü lkenin bilimsel, kültürel, sosyal ve ekonomik yönlerden 
+ilerlemesini ve gelişmesini il gilendiren sorunlarını öğretim ve araştırma konusu yapmak, 
+sonuçlarını toplumun yararına sunmak, düşünce ve önerilerini toplumla paylaşmak .
+
+
+================================================================================
+CHUNK NO: 37
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 11
+   - page_label: 12
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+7 
+ Öğretim Elemanlarının Eğitim ve Öğretimle İlgili Sorumlulukları : 
+a) Derslerini, yetkili kurulların onayladığı prog ram içeriğine uygun olarak vermek , 
+b) Öğrencilerin derslerden aldıkları başarı değerlendirme ve notlarını, mahkeme kararı 
+ve öğrencinin yazılı izni olmadıkça üçüncü kişilere açıklamamak , 
+c) İlke olarak ders programında belirlenen yer ve zamanda dersinde bu lunmak, mecburi 
+durumlar dışında derslerini bir başkasına yaptırmamak , 
+ç) Verdiği tüm dersler için yazılı bir ders planı hazırlamak ve bu ders planını her 
+öğrencinin erişimine açmak , 
+d) Engelli öğrencilere ilgili yasaların gerektirdiği destek ve yardımı sa ğlamak . 
+ 
+Öğretim Elemanlarını n Öğrencilere Karşı Sorumlulukları:  
+Akademik bir kuru mun  üyeleri , etkin bir öğretici ve bilim insanı ol arak;  
+a) Öğrencileri  araştırma, sorgulama ve öğren meye teşvik edici , cesaretlend irici bir tutum 
+ve davranış sergilemek,
+
+
+================================================================================
+CHUNK NO: 38
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 11
+   - page_label: 12
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ve davranış sergilemek,  
+b) Öğrencileri mesleğin ya da disiplinin temel değer ve ilkelerini öğrenmeye, fikirlerini 
+serbest çe ifade etmeye ve bağımsız düşünmeye teşvik etmek , 
+c) Öğrencilerin çalışmalarını ve performanslarını adil , tarafsız ve dürüst olarak 
+değerlendirmek, öğrenmeleri ne katkı sağlamak, zamanında ve yapıcı geri bildirimler de 
+bulunmak , 
+ç) Öğrencilerin çalışmalarını ve sınavlarını zamanında değerlendirmek ve duyurmak , 
+d) Öğrencilerin öğrenme özgürlüklerini korumak, öğrenme haklarına zarar verecek 
+uygulama  ve davranışlara izin vermemek , 
+e) Öğrencilerin derslerle ilgili geri bildirim ve değerlendirmelerini dikkate almak , 
+f) Yasal olarak açıklanması gerekenler dışında, öğrencilerin özel  ve kişisel bilgilerine 
+saygı göstermek, bu bilgileri gizli tutmak , 
+g) Kişisel çıkarları iç in öğrencileri istismar etmemek , 
+ğ) Öğrencilere referans olurken  adil ve objektif  davranmak ,
+
+
+================================================================================
+CHUNK NO: 39
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 11
+   - page_label: 12
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ğ) Öğrencilere referans olurken  adil ve objektif  davranmak , 
+h) Öğrencilerle arasında, görevinin  sınırlarını aşacak ölçüde kişisel yakınlık ve ilişkilere 
+izin vermemek, tüm öğrencilere eşit davranmak , 
+ı) Her türlü taciz, ist ismar  ve şiddet  ile baskıcı, a şağılayıcı ve  rahatsız edici davranışlar da 
+bulunmamak, bu tür davranışlarda bulunanlarla ilgili olarak gerekli önleyici tedbirleri 
+almak,  
+i) Öğretim verdiği alanda, öğrencilerin güncel ve kaliteli eğitim alabilmesi için çaba 
+göstermek,  
+j) Öğrencilerin farklı yeteneklere ve özelliklere sahip olduklarını kabul etmek ve her bir 
+öğrencinin entelektüel  ve kişisel gelişimine katkıda bulunma k için çaba göstermek,  
+k) Öğrencilerin yüksek mesleki etik değerlerle yetişmeleri ve çok yönlü  gelişmeleri için 
+davranışları yla örnek olma ya çalışmak ,
+
+
+================================================================================
+CHUNK NO: 40
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 12
+   - page_label: 13
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+8 
+ l) Öğrencilerin birbirlerine ve öğretim elemanlarına karşı saygı lı davranma larını teşvik 
+etmeye ç alışmak , 
+m) Öğrencileri n eğitim-öğretim hayatlarını olumsuz etkileyecek  ortamlardan uzak 
+tutulmaları , sağlıkların a ve güvenlerine zararlı olacak durumlardan korunmaları 
+konusunda özen göstermek , 
+n) Öğrencilerden  herhangi bir hediye kabul etmemek , 
+o) Öğrencileri, k endi kitabını ya da benzeri yazılı veya görsel çalışmasını satın almaya 
+zorlamamak; tezi, notu  veya puanı baskı aracı olarak kullanmamak.  
+ 
+Yükseköğretim Kurumları Yöneticilerinin Uyacağı Etik Değer ve İlkeler : 
+a) Üniversite mensuplarının kişisel onurunu v e mesleki saygınlığını gözetmek , 
+b) Üniversite mensupları arasında dil, ırk, cinsiyet, dış görü nüm, siyasi düşünce, felsefi 
+inanç, din, mezhep ve benzeri nedenlerle ayrım yapmamak , 
+c) Akademik özerkliğin gerçekleşmesi için çalışmak; akademik özgürlüğü farklı düşünce
+
+
+================================================================================
+CHUNK NO: 41
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 12
+   - page_label: 13
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+c) Akademik özerkliğin gerçekleşmesi için çalışmak; akademik özgürlüğü farklı düşünce 
+ve görüşlerin bir arada yaşayabilmesini üniversite yaşamının temel değeri olarak gör mek, 
+ç) Öğretim elemanlarının atama ve yükseltme başvurularının değerlendirilmesinde, 
+üniversite senatosunca kabul görmüş akademik performans ölçütlerini esas almak; 
+üniversiteye eleman alımında, yükseltme ve atamalarda bilimsel standartların dışına 
+çıkmam ak; akademik kadro ilanlarında aranan özel nitelik tariflerinde liyakat kuralının 
+ihlal edilmemesine özen göstermek , 
+d) Taciz, bezdirme, yıldırma (mobing) gibi etik dışı davranışların önlenmesi amacıyla 
+her türlü eğitim, bilinçlendirme, bilgilendirme için gerekli tedbirleri almak; bu türden 
+davranışlara maruz kalanların haklarını korumak , 
+e) Öğretim elemanlarının yurtiçi veya yurtdışı bilimsel faaliyetlere katılmalarında ve 
+desteklenmelerinde adalet ve liyakat ilkelerine uygun  davranmak ,
+
+
+================================================================================
+CHUNK NO: 42
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 12
+   - page_label: 13
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+desteklenmelerinde adalet ve liyakat ilkelerine uygun  davranmak , 
+f) Kişilerin özlük haklarını kısıtlayıcı, kariyerlerine zarar verici engellemelerden uzak 
+durmak , 
+g) Öğretim elemanlarının bilim, sanat, araştırma ve yayınlarından doğan yasal 
+haklarının korunmasını gözetmek , 
+ğ) Öğretim elemanlarının ders yüklerinin uzmanlık alan ve yetkinli kleri göz önünde 
+bulundurarak hakkaniyet çerçevesinde dağıtılmasını sağlamak, bunu yaparken kamu 
+yararını gözetmek , 
+h) Üniversite kaynaklarının kullanımında ve işlerinin yürütülmesinde şeffaf ve hesap 
+verebilir şekilde davranmak , 
+ı) Üniversite ile iş yapma  durumunda olan kişi, kurum veya kuruluşlar ile kişisel çıkar 
+amaçlı ilişki kurmamak ,
+
+
+================================================================================
+CHUNK NO: 43
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 13
+   - page_label: 14
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+9 
+ i) Etik kurulların bağımsız çalışması için uygun koşulları sağlamak, kurul kararlarını 
+hakkaniyetle hayata geçirmek, etik dışı tutum ve davranışların tespiti durumunda ge reğini 
+yapmak veya yapılmasını sağlamak , 
+j) Siyasi kurum ve diğer sivil toplum kuruluşlarıyla ilişkilerinde tarafsızlık ilkesine 
+uygun davranmak .
+
+
+================================================================================
+CHUNK NO: 44
+================================================================================
+[METADATA DETAYLARI]
+   - producer: PyPDF
+   - creator: PyPDF
+   - creationdate: 
+   - source: 173210.pdf
+   - total_pages: 15
+   - page: 14
+   - page_label: 15
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+T.C.  
+BURSA ULUDAĞ ÜNİVERSİTESİ REKTÖRLÜĞÜ  
+ETİK KURUL  
+BAŞVURU FORMU  
+ 
+1. KİŞİSEL BİLGİLER  
+ 
+2. ETİK İHLAL İDDİASININ ÖZETİ  
+ 
+3. ETİK İHLAL İDDİASI İLE İLGİLİ KANITLAR (Tarih sırası ile)  
+ 
+BAŞVURU SAHİBİ  
+Ad Soyad, Ünvan   
+TC Kimlik No / YU Kimlik No   
+Çalıştığı Birim ve Adres   
+Telefon No   
+İmza   
+Tarih   
+Etik ihlali yaptığı iddia edilen kişi(ler) ve birim 
+adresleri   
+ 
+Etik ihlali yaptığı iddia edilen kişi(ler) ile 
+yakınlık/ilişki derecesi   
+Aynı şikâyet konusunda daha önce bir başvuru 
+yapıldı mı? (Varsa tarihi)  Evet              Hayır   Tarih :  
+Şikâyet konusu ile ilgili başlayan bir hukuki süreç  
+(örn. disiplin soruşturması, suç duyurusu, vb.) var 
+mı? 
+ 
+ 
+Varsa başvurulan birim  Evet              Hayır  
+
+

@@ -1,0 +1,53 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - source: Bilimp_Fiyat_Listesi_Ornek_Sablon.xlsx
+   - sheet: Sheet1
+   - file_type: excel
+   - permission: user
+   - columns_present: ['Bilimp Fiyat Listesi 2023', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+--------------------------------------------------------------------------------
+[İÇERİK]
+KAYNAK: Bilimp_Fiyat_Listesi_Ornek_Sablon.xlsx > Sheet1
+TÜR: Excel Tablosu
+İÇERİK:
+| Bilimp Fiyat Listesi 2023   | Unnamed: 1                               | Unnamed: 2   | Unnamed: 3       | Unnamed: 4   | Unnamed: 5     | Unnamed: 6   | Unnamed: 7   | Unnamed: 8   | Unnamed: 9   |
+|:----------------------------|:-----------------------------------------|:-------------|:-----------------|:-------------|:---------------|:-------------|:-------------|:-------------|:-------------|
+| Bulut Çözümleri             | nan                                      | nan          | nan              | nan          | 0-120          | 120-300      | 250-1200     | 1200-3500    | 3500 +       |
+| PKT.101                     | Başlangıç Paketi                         | MEVCUT       | Fiyat ( 12 Kull) | +3 Kullanıcı | 1 kullanıcı ek | -0.09        | 0.18         | 0.25         | 0.49         |
+| nan                         | Görev & İş Takibi                        | 1.15         | 401.09           | 63.61        | 12.04          | 8.07         | 7.14         | 6.44         | 6.18         |
+| nan                         | Bildirim Modülü                          | nan          | nan              | nan          | nan            | 8.51         | 7.87         | 7.2          | 7.75         |
+| nan                         | Süreç Yönetimi                           | nan          | nan              | nan          | nan            | nan          | nan          | nan          | nan          |
+| nan                         | Mesajlaşma Modülü                        | nan          | nan              | nan          | nan            | nan          | nan          | nan          | nan          |
+| nan                         | Toplantı Planlama                        | nan          | nan              | nan          | nan            | nan          | nan          | nan          | nan          |
+| nan                         | Kullanıcı Yönetimi                       | nan          | nan              | nan          | nan            | nan          | nan          | nan          | nan          |
+| nan                         | Sistem Ayarları                          | nan          | nan              | nan          | nan            | nan          | nan          | nan          | nan          |
+| nan                         | Hesap Yönetimi                           | nan          | nan              | nan          | nan            | nan          | nan          | nan          | nan          |
+| nan                         | nan                                      | nan          | nan              | nan          | 0-120          | 120-300      | 250-1200     | 1200-3500    | 3500 +       |
+| Ürün Kodu                   | Ürün Adı                                 | nan          | Fiyatı           | +3 Kullanıcı | 1 kullanıcı ek | -0.12        | 0.22         | 0.37         | 0.41         |
+| PKT.102                     | Ofis Çözümleri                           | 0            | 128.97           | 17.35        | 3.54           | 2.92         | 2.85         | 2.2          | 1.91         |
+| PKT.103                     | Personel Yönetimi                        | 0            | 152.07           | 12.19        | 2.56           | 2.2          | 2.68         | 2.01         | 1.9          |
+| PKT.104                     | Talep Yönetimi                           | 0            | 62.69            | 4.62         | 1.01           | 1.06         | 0.73         | 0.59         | 0.57         |
+| PKT.105                     | Puantaj                                  | 0            | 22.02            | 3.16         | 0.6            | 0.5          | 0.49         | 0.42         | 0.27         |
+| PKT.106                     | Eğitim                                   | 0            | 31.16            | 2.67         | 0.6            | 0.56         | 0.38         | 0.3          | 0.27         |
+| PKT.107                     | Öneri Modülü                             | 0            | 25.34            | 3.02         | 0.62           | 0.36         | 0.42         | 0.35         | 0.27         |
+| PKT.108                     | Ziyaretçi Takibi                         | 0            | 21.5             | 2.42         | 0.64           | 0.43         | 0.42         | 0.4          | 0.29         |
+| PKT.109                     | Kalite                                   | 0            | 64.29            | 6.41         | 0.93           | 0.94         | 0.76         | 0.66         | 0.49         |
+| PKT.110                     | KVKK                                     | 0            | 165.72           | 15.77        | 2.48           | 2.54         | 3.01         | 1.93         | 1.57         |
+| PKT.111                     | Onay Yönetimi                            | 0            | 26.12            | 3.23         | 0.46           | 0.51         | 0.47         | 0.32         | 0.35         |
+| PKT.112                     | Dış Kaynak Yönetimi                      | 0            | 24.6             | 2.79         | 0.56           | 0.48         | 0.34         | 0.43         | 0.29         |
+| PKT.113                     | proje yönetimi                           | 0            | 133.99           | 12.31        | 3.29           | 3.07         | 1.94         | 2.22         | 1.64         |
+| PKT.114                     | Satış Yönetimi                           | 0            | 28.06            | 2.22         | 0.57           | 0.45         | 0.51         | 0.3          | 0.29         |
+| PKT.115                     | İdari Süreç Yönetimiler                  | 0            | 21.42            | 3.16         | 0.62           | 0.42         | 0.45         | 0.42         | 0.32         |
+| nan                         | nan                                      | nan          | nan              | nan          | nan            | 0            | 0            | 0            | 0            |
+| nan                         | nan                                      | nan          | nan              | nan          | nan            | 0            | 0            | 0            | 0            |
+| nan                         | nan                                      | nan          | nan              | nan          | nan            | 0            | 0            | 0            | 0            |
+| nan                         | nan                                      | nan          | nan              | nan          | nan            | 0            | 0            | 0            | nan          |
+| BE.005-6-7                  | SMS ( 5000-12000-20000 adet)             | nan          | 925.15           | nan          | nan            | 788.07       | 1708.79      | 7593.63      | nan          |
+| BE.008-9-10                 | Ek depolama alanı 50-120-250 GB (Yıllık) | nan          | 933.75           | nan          | nan            | 635.24       | 1552.02      | 2760.65      | nan          |
+| BE.011                      | yerinde eğitim ( 2 Gün)                  | nan          | 2358.18          | nan          | nan            | nan          | nan          | nan          | nan          |
+| BE.012-13-14                | uzaktan eğitim ( 3-5-7 saat)             | nan          | 888.75           | nan          | nan            | 421.34       | 784.55       | 1438.66      | nan          |
+| BE.015                      | Propanel                                 | nan          | 116.3            | nan          | nan            | nan          | nan          | nan          | nan          |
+
+

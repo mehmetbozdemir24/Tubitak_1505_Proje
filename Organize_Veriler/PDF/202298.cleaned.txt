@@ -1,0 +1,769 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  BURSA ULUDAĞ ÜNİVERSİTESİ  
+KALİTE GÜVENCESİ YÖNERGESİ  
+ 
+ 
+BİRİN Cİ BÖLÜM  
+Amaç, Kapsam, Dayanak, Tanımlar  
+Amaç  
+Madde 1 - (1) (Değişik:12/10/2023 tarih ve 2023 -22/2 sayılı Senato Kararı) 
+Bu Yönergenin amacı Bursa Uludağ Üniversitesinin YÖKAK Kurumsal Akreditasyon 
+Kriterleri ve diğer Kalite Yönetim Sistemleri gerekliliklerine uygun çalışmalar ve bu 
+kapsamda tanımlanan görev, yetki ve sorumluluklarına ilişkin esasları düzenlemek ve 
+Bursa Uludağ Üniversitesi Kalite Komisyonunun, Kalite Koordinatörlüğünün ve diğer 
+kalite komisyonlarının kuruluşu ile çalışma usul ve esaslarını belirlemektir.  
+Kapsam  
+Madde 2 - (1) Bu Yönerge, Bursa Uludağ Üniversitesi Kalite Komisyonunun, 
+Kalite Koordinatörlüğünün ve diğer kalite komisyonlarının kuruluşları ile 
+faaliyetlerinin  usul ve esaslarına, akademik ve idari hizmetlerin değerlendirilmesi, 
+geliştirilmesi, kalite düzeylerinin onaylanması ile tanınmasına ve Bursa Uludağ
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+geliştirilmesi, kalite düzeylerinin onaylanması ile tanınmasına ve Bursa Uludağ 
+Üniversitesi bünyesinde kalite ve akreditasyon ile ilgili olarak yürütülecek çalışmalara 
+ilişkin hükümleri  kapsar.  
+Dayanak  
+Madde 3 - (1) (Değişik:12/10/2023 tarih ve 2023 -22/2 sayılı Senato Kararı) 
+Bu Yönerge, 4/11/1981 tarihli ve 2547 sayılı Yükseköğretim Kanununun Ek 35 inci 
+maddesi ile 13/07/2023 tarih ve 32247 sayılı Resmî Gazetede yayımlanan 
+Yükseköğretim  Kalite Güvencesi ve Yükseköğretim Kalite Kurulu Yönetmeliğine 
+dayanılarak hazırlanmıştır.  
+Tanımlar  
+Madde 4 - (1) Bu Yönergede geçen;  
+a) Akademik Birim: Bursa Uludağ Üniversitesine bağlı Enstitü, Fakülte, 
+Meslek Yüksekokulu, Konservatuvar, Yüksekokul, Uygulama ve Araştırma 
+Merkezlerini,  
+c) Ara Değerlendirme (AD): Kurumsal akreditasyon programı kapsamında 
+iki yıl süreyle koşullu akreditasyon veya beş yıl süreyle tam akreditasyon alınmış 
+CheckPoint Threat Extraction secured this document 
+ GetOriginal
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  olması halinde, kalite gelişim süreçlerinin Yüksek Öğretim Kalite Kurulu tarafından 
+değerlendirildiği ve bu değerlendirme neticesinde tam akreditasyon veya 
+akreditasyonun reddi kararı verilen değerlendirme sürecini,  
+d) Ara Değerlendirme Raporu (ADR): Ara değerlendirme kapsamında 
+yapılan değerlendirme sonucunda değerlendirme  takımı tarafından hazırlanan raporu,  
+ç) Birim Kalite Komisyonu: Bursa Uludağ Üniversitesi akademik ve idari 
+birimlerinde oluşturulacak kalite komisyonunu,  
+e) Değerlendirme Süreci: Yüksek Öğretim Kalite Kurulu tarafından yürütülen 
+kurumsal dış değerlendirme p rogramını, kurumsal akreditasyon programını, izleme 
+programı ile ara değerlendirmeyi,  
+f) İdari Birim: Bursa Uludağ Üniversitesi Genel Sekreterliğini, Daire 
+Başkanlıklarını, Güvenlik Müdürlüğünü, Basımevi Müdürlüğünü, Döner Sermaye 
+İşletmesi Müdürlüğünü, Hukuk  Müşavirliğini, Afet ve Acil Durum Yönetimi 
+Merkezini,
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+İşletmesi Müdürlüğünü, Hukuk  Müşavirliğini, Afet ve Acil Durum Yönetimi 
+Merkezini,  
+g) İzleme Programı: Kurumsal dış değerlendirme programı kapsamında 
+değerlendirilen yükseköğretim kurumlarının kalite gelişimlerinin Yüksek Öğretim 
+Kalite Kurulu tarafından değerlendirildiği süreci,  
+h) İzleme  Raporu: İzleme programı kapsamında değerlendirilen 
+yükseköğretim kurumu için Yüksek Öğretim Kalite Kurulunun oluşturduğu izleme 
+takımının tarafından hazırlanan raporu,  
+ğ) Kalite Gönüllüsü: Bursa Uludağ Üniversitesinde kalite konusunda eğitim 
+almış persone li, 
+i) Kalite Komisyonu: Bursa Uludağ Üniversitesi Kalite 
+Komisyonunu, ı) Kalite Komisyonu Başkanı: Bursa Uludağ 
+Üniversitesi Rektörünü,  
+j) Kalite Koordinatörü: Bursa Uludağ Üniversitesi Kalite Koordinatörünü,  
+k) Kalite Koordinatörlüğü: Bursa Uludağ Üniversitesi Ka lite 
+Koordinatörlüğünü,  
+l) Kalite Temsilcisi: Akademik ve idari birimin üst yöneticisi veya 
+yetkilendirdiği personeli
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+l) Kalite Temsilcisi: Akademik ve idari birimin üst yöneticisi veya 
+yetkilendirdiği personeli  
+m) Kalite Yönetim Sistemi (KYS): Bursa Uludağ Üniversitesi Stratejik Planı 
+kapsamında belirlenen kalite hedeflerine ulaşılabilmesi için sürdürül en planlı ve 
+sistematik faaliyetlerin bütününü ( YÖKAK Akreditasyon Kriterleri ile TS EN ISO 
+Kapsamında yer alan tüm standartları),
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  n) (Değişik:12/10/2023 tarih ve 2023 -22/2 sayılı Senato Kararı) Kriter: 
+Bursa Uludağ Üniversitesi Stratejik Planı kapsamında belirlenen kalite hedefleri, 
+Araştırma Üniversitesi Performans Kriterleri, Girişimci ve Yenilikçi Üniversite 
+Endeksi Kriterleri, Ulusal ve Uluslararası Sıralama Endeksleri Kriterleri vb gibi izlenen 
+tüm kriterleri,  
+o) Kurum İç Değerlendirme Raporu (KİDR): Eğitim -öğretim, araştırma ve 
+toplumsal katkı faaliyetleri ile idari hizmetlere ilişkin kalite güvencesi süreçlerini 
+izlemek amacıyla Kalite Koordinatörlüğü tarafından her yıl hazırlanan raporu,  
+p) Kurumsal Dış Değerlendirme Programı (KDDP): Yükseköğretim 
+kurumlarının eğitim ve öğretim, araştırma ve geliştirme, toplumsal katkı faaliyetleri ile 
+idari hizmetlerinin kalitesinin Yüksek Öğretim Kalite Kurulu tarafından 
+gerçekleştirilecek değerlendirme sürecini,  
+ö) Kurumsal Geri Bildirim Raporu (KGBR): Kurumsal dış d eğerlendirme
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ö) Kurumsal Geri Bildirim Raporu (KGBR): Kurumsal dış d eğerlendirme 
+programı kapsamında dış değerlendiriciler tarafından hazırlanan ve Bursa Uludağ 
+Üniversitesinin güçlü ve iyileşmeye açık alanlarını içeren raporu,  
+q) Kurumsal Akreditasyon Programı (KAP): Yükseköğretim kurumlarının 
+Yüksek Öğretim Kalite Kurulu ta rafından; eğitim ve öğretim, araştırma ve geliştirme, 
+toplumsal katkı ve idari hizmet süreçlerindeki planlama, uygulama, izleme ve 
+iyileştirme süreçlerinin nitel ve nicel olarak değerlendirildiği ve bunun neticesinde 
+akreditasyona ilişkin kararın verildiği  değerlendirme sürecini,  
+r) Kurumsal Akreditasyon Raporu (KAR): Kurumsal akreditasyon programı 
+kapsamında değerlendirilen Bursa Uludağ Üniversitesi için Yüksek Öğretim Kalite 
+Kurulunun oluşturduğu değerlendirme takımı tarafından hazırlanan raporu,  
+s) Öğrenci Tem silcisi: Öğrenci Kalite Komisyonunda ilgili akademik birimi 
+temsil eden öğrenciyi,
+
+
+================================================================================
+CHUNK NO: 8
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+temsil eden öğrenciyi,  
+ş) Öğrenci Kalite Komisyonu: Akademik Birim Kalite Komisyonlarının 
+öğrenci üyelerinden oluşan komisyonu,  
+t) Ölçme ve Değerlendirme Komisyonu: Bursa Uludağ Üniversitesi Ölçme 
+ve Değerlendirme Komisyonunu,  
+u) Performans Göstergeleri: Bursa Uludağ Üniversitesi’nin amaç ve 
+hedeflerine ulaşıp ulaşmadığını ya da ne kadar ulaştığını ölçmek, izlemek ve 
+değerlendirmek için kullanılan araçları,  
+ü) Program Değerlendirmesi: İç Kalite Güvence S isteminin bir parçası olarak 
+öğretim programlarının değerlendirilmesi çalışmalarını,
+
+
+================================================================================
+CHUNK NO: 9
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  v) Rektör: Bursa Uludağ Üniversitesi Rektörünü,  
+y) Senato: Bursa Uludağ Üniversitesi Senatosunu,  
+z) Strateji Geliştirme Daire Başkanlığı: Bursa Uludağ Üniversitesi Strateji 
+Geliştirme Daire Başkanlığını,  
+aa) Yükseköğretim Kalite Güvencesi Durum Raporu: Yüksek Öğretim Kalite 
+Kurulu tarafından ilgili yıl içinde gerçekleştirilen kalite güvencesi çalışmaları dikkate 
+alınarak her yıl hazırlanan, Yüksek Öğretim Kalite Kurulu ve ilg ili diğer paydaşların 
+bilgisine sunulan raporu ifade eder.  
+İKİNCİ BÖLÜM  
+Kalite Komisyonu  
+Kalite Komisyonunun yapısı  
+Madde 5 - (1) (Değişik:12/10/2023 tarih ve 2023 -22/2 sayılı Senato Kararı) 
+Kalite Komisyonu Rektör, Kaliteden Sorumlu Rektör Yardımcısı, Kalite Koordinatörü, 
+Ar-Ge Koordinatörü, Bilimsel Araştırma Projeleri (BAP) Koordinatörü, Meslek Yüksek 
+Okulları Koordinatörü, Enstitü temsilcisi, Fakülte temsilcisi, Genel Sekreter, Strateji
+
+
+================================================================================
+CHUNK NO: 10
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Okulları Koordinatörü, Enstitü temsilcisi, Fakülte temsilcisi, Genel Sekreter, Strateji 
+Geliştirme Daire Başkanı ile öğrenci temsilcisinden oluşur. Sena to kararı ile sayılanlar 
+haricinde üye görevlendirilebilir.  
+(2) Kalite Komisyonunun başkanlığını Rektör, Rektörün bulunmadığı 
+zamanlarda Rektörün görevlendireceği Rektör Yardımcısı yapar.  
+(3) Herhangi bir sebeple birinci fıkrada sayılan görevlerden ayrılanların Ka lite 
+Komisyonu üyeliği sona erer. Üyeliği sona eren kişinin yerine görevlendirme yapılır.  
+(4) Kalite Komisyonu üyeleri, Üniversite web sayfasından ilan edilir.  
+Kalite Komisyonunun çalışma usul ve esasları  
+Madde 6 - (1) Kalite Komisyonunun çalışma usul ve esasları aşağıdaki 
+gibidir:  
+a) Kalite Komisyonu her akademik yılda en az iki kez toplanır. Bunun dışında 
+Komisyon Başkanının, Kalite Koordinatörünün veya Kalite Komisyonu üyelerinin salt 
+çoğunluğunun yazılı talebi üzerine olağanüstü toplanır. Toplantı tarihi Komisyon
+
+
+================================================================================
+CHUNK NO: 11
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+çoğunluğunun yazılı talebi üzerine olağanüstü toplanır. Toplantı tarihi Komisyon 
+Başkanı tarafından belirlenir ve üyelere duyurulur,  
+b) Kalite Komisyonu üye tam sayısının salt çoğunluğu ile toplanır ve 
+toplantıya katılanların salt çoğunluğu ile karar alır. Oyların eşit olması halinde 
+Komisyon Başkanının oyu doğrultusunda karar al ınmış sayılır,  
+c) Kalite Komisyonunun sekretarya ve personel hizmetleri, Kalite 
+Koordinatörlüğü tarafından yürütülür.
+
+
+================================================================================
+CHUNK NO: 12
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  Kalite Komisyonunun görevleri  
+Madde 7 - (1) Kalite Komisyonunun görevleri şunlardır:  
+a) Üniversitenin stratejik planı ve hedefleri doğrultusu nda, Yükseköğretim 
+Kalite Kurulu tarafından belirlenen usul ve esaslar çerçevesinde, eğitim -öğretim, 
+araştırma ve toplumsal katkı faaliyetleri ile idari hizmetlerin değerlendirilmesi ve 
+kalitesinin geliştirilmesi için iç ve dış kalite güvence sistemini kur mak; kurumsal 
+göstergeleri tespit ederek program değerlendirmesi yapmak; bu kapsamdaki çalışmaları 
+Senatonun onayına sunulmasını sağlamak,  
+b) Değerlendirme süreçlerinde yer alan bütün kalite çalışmalarını planlamak 
+ve yürütmek; kurumsal değerlendirme ve iy ileştirme çalışmalarının sonuçlarını içeren 
+KİDR’i hazırlamak ve Senatoya sunmak; onaylanan KİDR’in Üniversitenin web 
+sayfasında ilanını sağlamak,  
+ÜÇÜNCÜ BÖLÜM  
+Kalite Koordinatörlüğü  
+Kalite Koordinatörlüğünün oluşturulması  
+Madde 8 - (1) Kalite Koordinatör ü, Rektör tarafından Kalite Komisyonu
+
+
+================================================================================
+CHUNK NO: 13
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Madde 8 - (1) Kalite Koordinatör ü, Rektör tarafından Kalite Komisyonu 
+üyeleri arasından seçilir. Kalite Koordinatörü, Üniversitenin eğitim -öğretim, araştırma 
+faaliyetleri ve idari hizmetleri için iç ve dış kalite güvence sisteminin sağlanması ile bu 
+Yönergede belirtilen görevlerin yerine  getirilmesinde kendisine yardımcı olmak üzere 
+en fazla dört yardımcı belirler  
+(2) Kalite Koordinatörü ve yardımcılarının görev süresi, Kalite Komisyonu 
+görev süresi ile aynıdır.  
+(3) Kalite Koordinatörlüğünün büro, demirbaş ve personel ihtiyacı Rektörlük 
+tarafında n karşılanır.  
+Kalite Koordinatörlüğünün görevleri  
+Madde 9 - (1) Kalite Koordinatörlüğünün görevleri şunlardır:  
+a) KYS’nin kurulumu için gerekli teknik altyapıyı belirleyip, uygulanmasını 
+sağlamak ve bu bağlamda çalışmaları yürütmek,  
+b) KYS’nin  performansını ve ihtiyaçlarını raporlamak,  
+c) KYS ile ilgili konularda dış paydaşlar ile ilişkilerin 
+yürütülmesini sağlamak, ç) Kalite çalışmaları kapsamında Birimler
+
+
+================================================================================
+CHUNK NO: 14
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yürütülmesini sağlamak, ç) Kalite çalışmaları kapsamında Birimler 
+arasında koordinasyonu sağlamak,  
+d) Kalite Komisyonunca belirlenen ve Senato tarafından onayla nan hedeflerin 
+performans ölçümlerini yapmak,
+
+
+================================================================================
+CHUNK NO: 15
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  e) Gerekli dokümanların hazırlanması, revizyonu, yayımlanması, kayıtların 
+tutulması ve dağıtılmasını sağlamak,  
+f) Akademik ve idari birimlerin Kalite Temsilcileri ile yapılan toplantıların 
+koordine edilmesini sağlama k, 
+g) Kalite iç değerlendirme planını hazırlamak ve iç değerlendirme 
+çalışmalarını koordine etmek,  
+ğ) Kalite temsilcilerinin, iç değerlendiricilerin, kalite sürecinden sorumlu 
+kimselerin ve bu süreçte görev alan çalışanların KYS ile ilgili gerekli eğitimlerinin 
+yapılmasını sağlamak,  
+h) Değerlendirme faaliyetlerinin uygulanmasını sağlamak ve bu faaliyetlerin 
+aksaklığa uğramaması için gerekli tedbirleri almak,  
+ı) Kalite Komisyonu veya Öğrenci Kalite Komisyonu tarafından takip edilmesi 
+kararlaştırılan veriler ile ulusal ve uluslararası kriterlere ait verilerin takibini yapmak, 
+kaydetmek ve raporlamaktır.  
+DÖRDÜNCÜ BÖLÜM  
+Birim Kalite Komisyonları  
+Birim Kalite Komisyonunun yapısı
+
+
+================================================================================
+CHUNK NO: 16
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+DÖRDÜNCÜ BÖLÜM  
+Birim Kalite Komisyonları  
+Birim Kalite Komisyonunun yapısı  
+Madde 10 - (1) Üniversitenin akademik ve idari birimleri kendi içlerinde 
+kalite güvencesi çalışmalarından sorumlu birer Birim Kalite Komisyonu oluştururlar. 
+Her birimin üst yöneticisi tarafından belirlenen üye Kalite Temsilcisidir.  
+(2) (Değişik:12/10/2023 tarih ve 2023 -22/2 sayılı Senato Kararı) Enstitü, 
+Fakülte, Yüksekokul ve Meslek Yüksekokulu dekan ve müdürleri tarafından belirlenen 
+farklı bölüm/anabilim dalı/ programdan bir başkan olmak üzere en az üç akademik, iki 
+idari personel ile bir öğrenciden oluşur.  
+(3) Uygulama ve Araştırma Merkezi Müdürlüğü ve Rektörlüğe Bağlı Bölüm 
+Başkanlıkl arında oluşturulacak Birim Kalite Komisyonunda öğrenci temsilcisi 
+bulunmaz.  
+(4) İdari birimlerde idari birimin üst yöneticisinin başkanlığında, alt birim 
+yöneticilerinden ve veri toplamadan sorumlu en az bir personelden oluşan bir İdari
+
+
+================================================================================
+CHUNK NO: 17
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yöneticilerinden ve veri toplamadan sorumlu en az bir personelden oluşan bir İdari 
+Birim Kalite Komisyonu kurulur. İdari Birim Kalite Komisyonunun adı ilgili İdari 
+Birimin ismiyle anılır.  
+(5) Akademik ve İdari Birim Kalite Komisyonlarının görev süreleri, 
+Üniversite Kalite Komisyonu görev süresi ile aynıdır.
+
+
+================================================================================
+CHUNK NO: 18
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  (6) Akademik ve İdari Birim Kalite Komisyonları birim web say falarında 
+ilan edilir.  
+Birim Kalite Komisyonunun görevleri, çalışma usul ve esasları  
+Madde 11 - (1) (Değişik: 14/02/2024 tarih ve 2024 -24/5 sayılı Senato 
+Kararı) Birim Kalite Komisyonun görevleri şunlardır:  
+a) Kalite Komisyonun belirleyeceği usul ve esaslar doğrultusunda iç 
+değerlendirme çalışmalarını yürütüp, akademik birimlerde program/bölüm/anabilim 
+dallarından gelecek bilgiler doğrultusunda Birim Performans İç Değerlendirme 
+Raporunu hazırlamak,  
+b) Akademik ve idari birimlerde, Üniversitenin ve birimin stratejik planı 
+ve hedefleri doğrultusunda, akademik ve idari hizmetl erin değerlendirilmesi, 
+kalitesinin geliştirilmesi ve kalite düzeyinin onaylanması ile kurumun ulusal ve 
+uluslararası derecelendirme çalışmalarında başarılı olabilmesi için yapılacak her türlü 
+çalışmayı yürütmek; bu çalışmalarda Kalite Komisyonuna ve Kalit e 
+Koordinatörlüğüne her türlü desteği vermek,
+
+
+================================================================================
+CHUNK NO: 19
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Koordinatörlüğüne her türlü desteği vermek,  
+c) Üniversite dış değerlendirme çalışmalarında akademik ve idari birimler 
+için gerekli hazırlıkları yapmak, dış değerlendirici kurum, kuruluş ya da kurula her 
+türlü desteği vermek,  
+ç) Kalite Komisyonu kararlarını ilgili birimin ilgili program/bölümlerine 
+duyurmak, uygulamalarını takip etmek ve bu uygulamaların sonuçlarını izlemek,  
+d) Yükseköğretim Kalite Kurulu için hazırlanacak “Bursa Uludağ 
+Üniversitesi Performans Değerlendirme Raporu” ve ilgili diğer raporlara katkı 
+sağlamak.  
+e) Birim Kalite Komisyonu, görev alanına giren KYS dokümantasyonu 
+(form, kılavuz, talimat vb.) ile ilgili yeni doküman, doküman değişikliği ve doküman 
+iptali konularında birim personelinden gelen talepleri değerlen dirir; uygun gördüğü 
+talepleri bağlı olduğu Birim yönetimi vasıtasıyla Kalite Koordinatörlüğüne Bursa 
+Uludağ Üniversitesi’nde kullanılan Elektronik Belge Yönetim Sitemi üzerinden 
+gönderir.
+
+
+================================================================================
+CHUNK NO: 20
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Uludağ Üniversitesi’nde kullanılan Elektronik Belge Yönetim Sitemi üzerinden 
+gönderir.  
+(2) Akademik ve İdari Birim Kalite Komisyonlarının çalışma usul ve esasları 
+şunlardır:  
+a) Birim Kalite Komisyonları her akademik yılda en az iki kez toplanır. 
+Bunun dışında Birim Kalite Komisyonu başkanının çağrısıyla toplanır.
+
+
+================================================================================
+CHUNK NO: 21
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  b) Akademik Birim Kalite Komisyonları Kalite Koordinatörlüğü ile yakın 
+ilişkide çalışır. Birim Performans İç Değerlendirme Raporunu Kalite 
+Koordinatörlüğüne iletir.  
+c) İdari Birim Kalite Komisyonları, Kalite Koordinatörlüğü ile yakın ilişkide 
+çalışır. Birim Performans İç Değer lendirme Raporunu Kalite Koordinatörlüğüne iletir.  
+BEŞİNCİ BÖLÜM  
+Öğrenci Kalite Komisyonu  
+Öğrenci Kalite Komisyonunun yapısı  
+Madde 12 - (1) Öğrenci Kalite Komisyonu, Akademik Birim Kalite 
+Komisyonu başkanı tarafından seçilen birim öğrenci temsilcilerinden oluşur.  
+(2) Öğrenci Kalite Komisyonunun başkanlığını Kalite Koordinatörü yapar.  
+(3) Öğrenci Kalite Komisyonunun üye sayısı, Akademik Birim Kalite 
+Komisyonunun üye sayısı kadardır. Belirlenen Öğrenci Kalite Komisyonu, Üniversite 
+web sayfasında ilan edilir.  
+(4) Herhangi  bir sebeple birinci fıkrada sayılan görevlerden ayrılanların 
+Öğrenci Kalite Komisyonu üyeliği sona erer. Üyeliği sona eren öğrencinin yerine
+
+
+================================================================================
+CHUNK NO: 22
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Öğrenci Kalite Komisyonu üyeliği sona erer. Üyeliği sona eren öğrencinin yerine 
+görevlendirme yapılır.  
+Öğrenci Kalite Komisyonunun çalışma usul ve esaslar  
+Madde 13 - (1) Öğrenci Kalite Komisyonu nun çalışma usul ve esasları 
+aşağıdaki gibidir:  
+a) Öğrenci Kalite Komisyonu her akademik yılda en az iki kez toplanır. 
+Bunun dışında Öğrenci Kalite Komisyonu Başkanının veya Öğrenci Kalite Komisyonu 
+üyelerinin salt çoğunluğunun yazılı talebi üzerine olağanüst ü toplanır. Toplantı tarihi 
+Kalite Koordinatörü tarafından belirlenir ve üyelere duyurulur.  
+b) Öğrenci Kalite Komisyonu üye tam sayısının salt çoğunluğu ile toplanır ve 
+toplantıya katılanların salt çoğunluğu ile karar alır. Oyların eşit olması halinde Kalite 
+Koordinatörünün oyu doğrultusunda karar alınmış sayılır.  
+c) Öğrenci Komisyonunun sekreterya ve personel hizmetleri Kalite 
+Koordinatörlüğü tarafından yürütülür.  
+ 
+ 
+ 
+Öğrenci Kalite Komisyonunun görevleri
+
+
+================================================================================
+CHUNK NO: 23
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Senato Karar Eki  Madde 14 - (1) Öğrenci Kalite Komisyonunun görevleri şunla rdır: 
+a) Üniversitede kalite kültürünün yaygınlaştırma çalışmaları konusunda 
+Kalite Komisyonunun alt komisyonu olarak çalışmalar yapmak,  
+b) Birim kalite komisyonlarına yapılan çalışmalar konusunda bilgi aktarmak,  
+c) Öğrenciler arasında kalite kültürünü yaygınlaştırma çalışmalarını 
+planlamak, başlatmak ve takip etmek,  
+ç) KİDR’in hazırlanması aşamasında Kalite Komisyonuna veri sağlamak,  
+d) Kurumun mezunlarla ilişkisini güçlendirmek amacıyla çalışmalar 
+yapmak,  
+e) Değerlendirme süreçlerindeki öğrencilerle ilgili b ütün konularda katkı 
+sağlamaktır.  
+ALTINCI BÖLÜM  
+Çeşitli ve Son Hükümler  
+Hüküm bulunmayan haller  
+Madde 15 - (1) Bu Yönergede hüküm bulunmayan hallerde ilgili mevzuat 
+hükümleri ile Senato kararları uygulanır.  
+Yürürlük  
+Madde 16 - (1) Bu Yönerge, Bursa Uludağ Üniversitesi Senatosunda kabul 
+edildiği 02 Aralık 2021 tarihinden itibaren yürürlüğe girer.  
+Yürütme
+
+
+================================================================================
+CHUNK NO: 24
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2024-03-18T15:54:56+03:00
+   - author: FUJİTSU
+   - moddate: 2025-11-07T10:52:38+00:00
+   - source: 202298.cleaned.pdf
+   - total_pages: 9
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+edildiği 02 Aralık 2021 tarihinden itibaren yürürlüğe girer.  
+Yürütme  
+Madde 17 - (1) Bu Yönerge hükümlerini Bursa Uludağ Üniversitesi Rektörü 
+yürütür.
+
+

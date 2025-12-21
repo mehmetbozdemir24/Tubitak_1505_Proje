@@ -1,0 +1,3219 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+T.C.
+BURSA  ULUDAĞ  ÜNİVERSİTESİ  
+İÇ DENETİM  BİRİMİ  BAŞKANLIĞI
+BURSA  ULUDAĞ  ÜNİVERSİTESİ  
+İÇ DENETİM  YÖNERGESİ
+BURSA  - 2022
+CheckPoint Threat Extraction secured this document 
+ GetOriginal
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+T.C.
+BURSA  ULUDAĞ  ÜNİVERSİTESİ  
+İÇ DENETİM  BİRİMİ  BAŞKANLIĞI
+BURSA  ULUDAĞ  ÜNİVERSİTESİ  
+İÇ DENETİM YÖNERGESİ
+BURSA - 2022
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+İÇİNDEKİLER
+BİRİNCİ  BÖLÜM .................................................................................................................. 1
+Genel  Hükümler ......................................................................................... 1
+Amaç ve Kapsam .................................................................................... /
+Hukuki  Dayanak .................................................................................... /
+Tanımlar .............................................................................................. 7
+İKİNCİBÖLÜM ......................................................................................... 2
+Başkanlığın  Misyonu,  Vizyonu  ve İlkeleri ........................................................... 2
+Başkanlığın  Misyonu ............................................................................... 2
+Başkanlığın  Vizyonu ................................................................................ 2
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Başkanlığın  Temel  İlkeleri ......................................................................... 2
+ÜÇÜNCÜ  BÖLÜM. ..................................................................................... 3
+İç Denetimin  Amacı,  Kapsamı  ve Standartları  ve Meslek  Ahlak  Kuralları .................... 3
+İç Denetimin  Amacı ................................................................................. 3
+İç Denetimin  Kapsamı .............................................................................. 3
+Kamu  İç Denetim  Standartları  ve Meslek  Ahlak  Kuralları ................................... 3
+DÖRDÜNCÜ  BÖL  ÜM................................................................................. 3
+Üst Yönetici  ve Birimlerin  İç Denetime  İlişkin  Görev,  Yetki  ve Sorumlulukları ............... 3
+Üst Yöneticinin  İç Denetime  İlişkin  Görev,  Yetki  ve Sorumlulukları: ......................... 3
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Birimlerin  İç Denetime  İlişkin  Sorumlulukları .................................................. 4
+BEŞİNCİ  BÖLÜM
+Başkanlığın  İdari Yapısı, Başkanın,  İç Denetçilerin  ve Büro Personelinin  Görev, Yetki ve
+Sorumlulukları ........................................................................................... 5
+İç Denetim  Birimi  Başkanlığının  Yapısı ......................................................... 5
+İç Denetim  Birimi  Başkanlığının  Görevleri ..................................................... 5
+Başkanın  Görevlendirilmesi ....................................................................... 5
+Başkanın  Görev,  Yetki  ve Sorumlulukları ........................................................ 5
+İdari  Personel  ve Büro.............................................................................. 5
+ALTINCI  BÖLÜM
+İç Denetçilerin  Atanması,  Görev,  Yetki  ve Sorumlulukları ....................................... 7
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+İç Denetçilerin  Atanması ........................................................................... 7
+İç Denetçinin  Görevleri ............................................................................ 7
+İç Denetçinin  Yetkileri .............................................................................. 7
+İç Denetçinin  Sorumlulukları ..................................................................... 8
+YEDİNCİ  BÖLÜM. ...................................................................................... 8
+Bağımsızlık,  Tarafsızlık  ve Mesleki  Güvence ........................................................ 8
+İç Denetim  Faaliyetinin  Bağımsızlığı ............................................................ 8
+İç Denetçinin  Tarafsızlığı .......................................................................... 8
+P &*■ $
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+İç Denetçilerin  Mesleki  Güvencesi .................................................................................... 9
+SEKİZİNCİ  BÖL  ÜM................................................................................................................. 9
+İç Denetim  Faaliyetlerinin  Planlanması .................................................................................. 9
+İç Denetim Stratejisi ........................................................................................................... 9
+Denetim  Evreninin  Oluşturulması ..................................................................................... 9
+Makro  Risk  Değerlendirmesi .............................................................................................. 9
+Denetim  Alanlarının  Belirlenmesi  ve Önceliklendirilmesi ................................................ 9
+İç Denetim  Plan  ve Programının  Hazırlanması .............................................................. 10
+
+
+================================================================================
+CHUNK NO: 8
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+DOKUZUNCU  BÖLÜM. ........................................................................................................ 10
+Denetim  Faaliyetlerinin  Yürütülmesi ..................................................................................... 10
+Görevlendirme .................................................................................................................. 10
+Denetim  Gözetim  Sorumlusu ............................................................................................ 10
+Denetim  Gözetim  Faaliyetinin  Kapsamı .......................................................................... 10
+Denetim  Görevinin  Bildirilmesi ........................................................................................ 11
+Denetime  Hazırlık  ve Başlama ......................................................................................... 11
+
+
+================================================================================
+CHUNK NO: 9
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Açılış  Toplantısı ................................................................................................................ 11
+Çalışma  Planı ................................................................................................................... 11
+Denetimin  Yürütülmesi ..................................................................................................... 12
+Çalışma  Kâğıtları ............................................................................................................. 12
+Bulgular  ve Bulgu  Paylaşımı ............................................................................................ 12
+Kapanış  Toplantısı ............................................................................................................ 12
+Denetim  Raporunda  Yer Alacak  Bulgulara  Karar  Verilmesi .......................................... 13
+
+
+================================================================================
+CHUNK NO: 10
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Sonuçların  Raporlanması ................................................................................................ 13
+Denetim  Sonuçlarının  İzlenmesi ...................................................................................... 13
+Danışmanlık  Faaliyetlerinin  Niteliği ............................................................................... 14
+Danışmanlık  Faaliyetlerinin  Yürütülme  Esasları ............................................................ 15
+Yolsuzluk  ve Usulsüzlüklere  İlişkin  İncelemeler .............................................................. 15
+Raporlama ........................................................................................................................ 16
+Rapor  Çeşitleri. ................................................................................................................. 16
+
+
+================================================================================
+CHUNK NO: 11
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Denetim  Raporları ............................................................................................................ 16
+Denetim  Görüşü ................................................................................................................ 17
+Denetim  Görüşünün  Oluşturulmasına  İlişkin  Usul  ve Esaslar ........................................ 17
+Danışmanlık  ve İnceleme  Raporları ................................................................................ 18
+İç Denetim  Faaliyet  Raporu ............................................................................................ 19
+Raporların  Gözden  Geçirilmesi ........................................................................................ 19
+ONUNCU  BÖLÜM. ................................................................................................................ 19
+İç Denetim  Kaynaklarının  Yönetimi  ve Geliştirilmesi ........................................................... 19
+
+
+================================================================================
+CHUNK NO: 12
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+İç Denetim  Kaynaklarının  Yönetimi ................................................................................ 19
+Mesleki  Yeterliliğin  Geliştirilmesi  ve Meslek  İçi Eğitim ................................................. 19
+Kıdem  Sırasının  Belirlenmesi .......................................................................................... 20
+İç Denetçilikte  Derecelendirme ....................................................................................... 20
+Sertifika  Derecesine  Uygun  Görevlendirme .................................................................... 20
+Kalite  Güvence  ve Geliştirme  Programı .......................................................................... 21
+cy (/!
+
+
+================================================================================
+CHUNK NO: 13
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ONBÎRÎNCÎ  BÖLÜM ............................................................................................................. 21
+Diğer  Hususlar ....................................................................................................................... 21
+Kurul  île İlişkiler .............................................................................................................. 21
+Dış Denetim  ve Diğer  Denetim  Birimleri  île İlişkiler ..................................................... 22
+Yurt îçi ve Yurt Dışında  İnceleme,  Eğitim  ve Akademik  Çalışma ................................... 22
+Kimlik  Belgesi .................................................................................................................. 22
+Haberleşme,  Yazışmalar  ve Dosya  Düzeni ...................................................................... 22
+Kamu  İç Denetim  Yazılımı ............................................................................................... 22
+
+
+================================================================================
+CHUNK NO: 14
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Yönergenin  Gözden  Geçirilmesi ...................................................................................... 22
+Hüküm  Bulunmayan  Haller .............................................................................................. 23
+Yürürlükten  Kaldırılan  Hükümler ................................................................................... 23
+Yürürlük ............................................................................................................................ 23
+Yürütme ............................................................................................................................. 23
+
+
+================================================================================
+CHUNK NO: 15
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+BURSA  ULUDAĞ  ÜNİVERSİTESİ  
+İÇ DENETİM  YÖNERGESİ
+BİRİNCİ  BÖLÜM  
+Genel  Hükümler
+Amaç  ve Kapsam
+MADDE  1 - (1) Bu Yönergenin  amacı,  Bursa Uludağ  Üniversitesi  Iç Denetim  Birimi 
+Başkanlığının  işleyişi  ve yönetimi  ile iç denetçilerin  ve Üst Yöneticinin  iç denetime  ilişkin  görev,  
+yetki ve sorumluluklarına  yönelik  esas ve usulleri  düzenlemektir.
+(2) Bu Yönerge,  Üst Yönetici,  Iç Denetim  Birimi  Başkam  ve İç Denetçiler  tarafından 
+okunup  imzalanır  ve İç Denetim  Birimi  Başkanlığında  muhafaza  edilir.
+(3) Bu Yönerge,  İç Denetim  Birimi  Başkanlığı  ve Denetlenen  Birimleri  kapsar.
+Hukuki  Dayanak
+MADDE  2 - (1) Bu Yönerge,  İç Denetçilerin  Çalışma  Usul ve Esasları  Hakkında 
+Yönetmeliğin  13 üncü maddesi  uyarınca  hazırlanmıştır.  Bu Yönergenin  hazırlanmasında  5018  
+sayılı Kanun,  İç Denetçilerin  Çalışma  Usul ve Esasları  Hakkında  Yönetmelik,  Kamu  İç Denetim
+
+
+================================================================================
+CHUNK NO: 16
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sayılı Kanun,  İç Denetçilerin  Çalışma  Usul ve Esasları  Hakkında  Yönetmelik,  Kamu  İç Denetim 
+Genel  Tebliği,  Kamu  İç Denetim  Standartları,  İç Denetim  Kalite  Güvence  ve Geliştirme  Programı 
+ve Kamu  İç Denetim  Rehberi  esas alınmıştır.
+Tanımlar
+MADDE  3 - (1) Bu Yönergede  geçen;
+a) Başkan:  Rektör  tarafından  görevlendirilen  ve iç denetim  faaliyetinin  yönetiminden 
+sorumlu  İç Denetim  Birimi  Başkanı  olan İç Denetçiyi,
+b) İç Denetçi:  Bu yönerge  ve ilgili mevzuat  çerçevesinde  iç denetim  faaliyetlerini 
+gerçekleştirmekle  sorumlu  ve yetkili  her düzeyde  sertifika  sahibi  iç denetçileri,
+c) Başkanlık:  Başkan  ve iç denetçiler  ile büro personelinden  oluşan  İç Denetim  Birim 
+Başkanlığını,
+ç) Büro:  Başkanlıkta,  iç denetim  faaliyetleri  ile ilgili idari işlerin  yürütüldüğü  yeterli  nitelik 
+ve sayıda  personelden  oluşan  birimi,
+d) Denetim  Ekibi:  Denetim  gözetim  sorumlusu  ve iç denetçilerden  oluşan  ekibi,
+
+
+================================================================================
+CHUNK NO: 17
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+d) Denetim  Ekibi:  Denetim  gözetim  sorumlusu  ve iç denetçilerden  oluşan  ekibi,
+e) Danışmanlık  Faaliyeti:  Üniversitenin  hedeflerini  gerçekleştirmeye  yönelik  
+faaliyetlerinin  ve işlem süreçlerinin  değerlendirilmesi  ve geliştirilmesi  amacıyla  önerilerde 
+bulunulmasını,
+f) Denetim  (Nesnel  Güvence  Sağlama)  Faaliyeti:  Üniversitenin  risk yönetimi  ile kontrol  
+ve yönetim  süreçlerinin  etkin bir şekilde  işlediğine,  üretilen  bilgilerin  doğruluğuna  ve tamlığına,  
+faaliyetlerin  etkili, ekonomik,  verimli ve mevzuata  uygun bir şekilde gerçekleştirildiğine, 
+varlıklarının  korunduğuna  dair  Üniversite  içine  ve dışına  makul  güvencenin  verilmesini,
+g) Denetlenen  Birim Yöneticisi:  Üniversitenin  teşkilatım  düzenleyen  mevzuatta  
+gösterilen  birimlerin  en üst yöneticisini,
+ğ)Denetim  Gözetim  Sorumlusu  (DGS):  İç denetim  faaliyetinin  denetim  standartlarına
+
+
+================================================================================
+CHUNK NO: 18
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ğ)Denetim  Gözetim  Sorumlusu  (DGS):  İç denetim  faaliyetinin  denetim  standartlarına 
+uygun  olarak  planlanması,  yürütülmesi  ve raporlanmasım  gözetmek  amacıyla  Başkan  tarafından 
+görevlendirilen  kıdemli  bir iç denetçiyi,
+h) İç Denetim:  Üniversitenin  çalışmalarına  değer  katmak  ve geliştirmek  için kaynakların 
+ekonomiklik,  etkililik  ve verimlilik  esaslarına  göre yönetilip  yönetilmediğini  değerlendirmek  ve 
+rehberlik  yapmak  amacıyla  yapılan  bağımsız,  nesnel  güvence  sağlama  ve danışmanlık  faaliyetini,
+ı) Denetim  Rehberleri:  İç denetim  faaliyetine  ilişkin  olarak  Kurul tarafından  çıkarılan 
+rehberleri,
+ı
+
+
+================================================================================
+CHUNK NO: 19
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+i) İç Denetim  Standartları:  Kamu  İç Denetim  Standartlan  (KİDS)  ve Uluslararası  İç 
+Denetçiler  Enstitüsü  tarafından  yayımlanan  Uluslararası  İç Denetim  Mesleki Uygulama 
+Standartlarını,
+j) Kalite  Güvence  ve Geliştirme  Programı  (KGGP):  Kurul ve Başkanlık  tarafından, 
+Üniversitede  yürütülen  iç denetim  faaliyetinin  tüm yönleriyle  değerlendirilmesi,  KİDS ’e ve Meslek 
+Ahlak  Kurallarına  uygunluğun  izlenmesi  ve geliştirilmesine  ilişkin  programı,
+k) Kamu  İç Denetim  Rehberi  (KİDR):  Kurul  tarafından  iç denetim  faaliyetlerinin  bütün 
+aşamalarına  ait yöntem  ve esasları  belirlemek  amacıyla  yayımlanan  rehberi,
+l) Kamu  İç Denetim  Standartlan  (KİDS):  Başkanlığın  iç denetim  faaliyetlerinin 
+planlanması,  uygulanması  ve raporlanması  ile İç Denetçilerin  yetkin,  dürüst,  tarafsız  ve bağımsız 
+bir şekilde  görev  yapabilmelerine  ilişkin  hususları  düzenlemek  üzere Kurul  tarafından  belirlenen 
+standartları,
+
+
+================================================================================
+CHUNK NO: 20
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+standartları,
+m) Kanun:  5018 sayılı  Kamu  Mali Yönetimi  ve Kontrol  Kanununu,
+n) Kurul:  İç Denetim  Koordinasyon  Kurulunu,
+o) Kurum/Üniversite:  Bursa  Uludağ  Üniversitesini,
+ö) Meslek  Ahlak  Kuralları:  Kamu  İç Denetçileri  Meslek  Ahlak  Kurallarını,
+p) Sertifika:  5018 sayılı  Kanun  uyarınca  verilen  kamu  iç denetçi  sertifikasını,
+r) Üst Yönetici  (Rektör):  Bursa  Uludağ  Üniversitesi  Rektörünü
+s) Yönetmelik:  İç Denetçilerin  Çalışma  Usul ve Esasları  Hakkında  Yönetmeliği,
+ş) Yönerge:  Bursa  Uludağ  Üniversitesi  İç Denetim  Yönergesini,
+t) İçDen:  Kamu  İç Denetim  Yazılımım,
+u) UDOS:  Bursa  Uludağ  Üniversitesi  Doküman  Otomasyon  Sistemi,
+İKİNCİ  BÖLÜM
+Başkanlığın  Misyonu,  Vizyonu  ve İlkeleri
+Başkanlığın  Misyonu
+MADDE  4 - (1) Başkanlığın  Misyonu;  Üniversitenin  iç kontrol,  risk yönetimi  ve kurumsal 
+yönetim  süreçlerinin  etkinliğini  değerlendirmek  ve geliştirmek  suretiyle  kurumsal  hedeflerin 
+gerçekleştirilmesine  yardımcı  olmaktır.
+
+
+================================================================================
+CHUNK NO: 21
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 6
+   - page_label: 7
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+gerçekleştirilmesine  yardımcı  olmaktır.
+Başkanlığın  Vizyonu
+MADDE  5 - (1) Başkanlığın  Vizyonu;  iç denetim  faaliyetlerini  iç denetim  standartlarına 
+ve meslek  ahlak  kurallarına  uygun  sürdürerek  kamu  hizmetlerine  azami  düzeyde  değer  katan  örnek  
+bir birim  olmaktır.
+Başkanlığın  Temel  İlkeleri
+MADDE  6 - (1) Başkanlığımız  faaliyetleri  aşağıda  yer alan temel ilkeler  çerçevesinde 
+yürütülür.
+a) İç denetçiler  denetim  çalışmalarında  dürüst  ve faziletli  davranır.
+b) Yetkinlik  ve profesyonel  özen sergiler.
+c) Objektiftir,  etki altında  kalmaz.
+ç) Kurumun  stratejileri,  hedefleri  ve riskleri  ile uyumludur.
+d) Uygun  olarak  konumlandırılmıştır  ve yeterli  kaynağa  sahiptir.
+e) Kalite  ve sürekli  gelişimi  esas alır.
+f) Etkili  bir şekilde  iletişim  kurar.
+g) Risk-bazlı  güvence  sağlar.
+ğ) Öngörülü,  proaktif  ve gelecek  odaklıdır.
+h) Kurumsal  gelişimi  teşvik eder.
+2
+
+
+================================================================================
+CHUNK NO: 22
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ÜÇÜNCÜ  BÖLÜM
+îç Denetimin  Amacı,  Kapsamı  ve Standartları  ve Meslek  Ahlak  Kuralları
+İç Denetimin  Amacı
+MADDE  7 - (1) İç denetim  faaliyeti;  Üniversitenin  tüm faaliyetlerinin  amaç ve 
+politikalara,  kalkınma  planına,  programlara,  stratejik  planına,  performans  programlarına  ve 
+mevzuata  uygun  olarak  planlanmasını  ve yürütülmesini;  kaynakların  etkili, ekonomik  ve verimli 
+kullanılmasını;  bilgilerin  güvenilirliğini,  bütünlüğünü  ve zamanında  elde edilebilirliğini  sağlamayı  
+amaçlar.
+(2) İç denetim  faaliyeti  sonucunda,  Üniversite  varlıklarının  güvence  altına alınması,  iç 
+kontrol sisteminin  etkinliği  ve risklerin  asgariye  indirilmesi  için Üniversitenin  faaliyetlerini 
+olumsuz  etkileyebilecek  risklerin  tanımlanması,  gerekli önlemlerin  alınması,  sürekli gözden  
+geçirilmesi  ve mümkünse  sayısallaştırılması  konularında  yönetime  önerilerde  bulunur.  İç denetim,
+
+
+================================================================================
+CHUNK NO: 23
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+nesnel güvence  sağlamanın  yanında,  özellikle  risk yönetimi,  kontrol ve yönetim  süreçlerini  
+geliştirmede  Üniversiteye  yardımcı  olmak üzere bağımsız  ve tarafsız  bir danışmanlık  hizmeti 
+sağlar.
+(3) İç denetim  faaliyeti;  sistematik,  disiplinli  ve risk esaslı bir yaklaşımla,  kurumsal 
+yönetim,  risk yönetimi  ve kontrol  süreçlerini  değerlendirir  ve bu süreçlerin  iyileştirilmesine  katkıda 
+bulunur.
+İç Denetimin  Kapsamı
+MADDE  8 - (1) Üniversitenin  bünyesindeki  akademik  ve idari tüm birimlerin  faaliyet  ve 
+işlemleri  iç denetim  kapsamındadır.  İç denetim,  risk esaslı denetim  plan ve programlan  
+kapsamında;  sistematik,  sürekli  ve disiplinli  bir yaklaşımla  iç denetim  standartlarına  uygun  olarak  
+yapılır.
+Kamu  İç Denetim  Standartları  ve Meslek  Ahlak  Kuralları
+MADDE  9 - (1) İç denetim  faaliyetleri,  iç denetimin  tanımına,  ilgili mevzuat  ve Kurul  
+tarafından  belirlenen  Kamu İç Denetim  Standartlan  ve Kamu İç Denetçileri  Meslek  Ahlak
+
+
+================================================================================
+CHUNK NO: 24
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+tarafından  belirlenen  Kamu İç Denetim  Standartlan  ve Kamu İç Denetçileri  Meslek  Ahlak 
+Kurallarına  uygun olarak yürütülür,  açıklık bulunmayan  hallerde  ise uluslararası  denetim 
+standartları  ile etik kurallar  dikkate  alınır.
+DÖRDÜNCÜ  BÖLÜM
+Üst Yönetici  ve Birimlerin  İç Denetime  İlişkin  Görev,  Yetki  ve Sorumlulukları
+Üst Yöneticinin  Görev,  Yetki  ve Sorumlulukları
+MADDE  10 - (1) Üst yöneticinin,  iç denetim  faaliyeti  ile ilgili olarak  görev,  yetki ve 
+sorumlulukları  şunlardır:
+a) Başkanlık  tarafından  hazırlanan  iç denetim  plan ve programlarını  onaylamak  ve 
+Başkanlığın  yetki ve görev  alanına  giren  program  dışı konulara  ilişkin  görev  vermek,
+b) İç denetim  plan ve programlarının  hazırlanması  sürecinde  plan ve programa  dâhil  
+edilmesini  gerekli  gördüğü  birim  ve konuları  Başkanlığa  bildirmek,
+c) Başkanlık  tarafından  hazırlanan  yönerge  ile yönerge  değişikliklerini  Kurulun  uygun
+
+
+================================================================================
+CHUNK NO: 25
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 7
+   - page_label: 8
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+c) Başkanlık  tarafından  hazırlanan  yönerge  ile yönerge  değişikliklerini  Kurulun  uygun 
+görüşü  alındıktan  sonra  onaylamak  ve bir örneğini  Kurula  göndermek,
+ç) İç denetçileri  atamak  ve Yönetmeliğin  24 üncü maddesinin  ikinci fıkrası  gereğince 
+görevden  almak, İç Denetim  Birimi Başkam  ile Başkanlıkta  görev yapacak  büro personelini 
+görevlendirmek,
+d) Başkanlık  ile denetlenen  birim yönetimi  arasındaki  uyuşmazlıkları  çözümlemek  ve
+3
+
+
+================================================================================
+CHUNK NO: 26
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+nihai  kararı  vermek,
+e) Denetlenen  birimlerin  yönetici  ve personelinden  denetim  faaliyetinin  yürütülmesini 
+engelleyici  fiil ve tavır  sergileyenler  hakkında  gerekli  tedbirleri  almak,
+f) İç denetim  raporlarını  değerlendirerek  gereği  için ilgili birimler  ile Strateji  Geliştirme 
+Daire  Başkanlığına  göndermek,
+g) İç denetim  raporları  ile bunlar  üzerine  yapılan  işlemleri  izleme  sonuçlarının  kesinleştiği  
+tarihten  itibaren  iki ay içerisinde  Kurula  göndermek,
+ğ) Başkanlık  tarafından  hazırlanan  yıllık  iç denetim  faaliyet  raporunu  Kurula  göndermek,
+h) İç Denetim  Birimi Başkanımn  teklifi üzerine  sertifika  derecelendirmesine  ilişkin 
+puanlamayı  yapmak.
+ı) İç denetçilerin  görevlerini  bağımsız  bir şekilde  yerine getirmeleri  için gereken  tüm 
+önlemleri  almak,
+i) İç denetçilere,  Üniversitenin  faaliyetlerini  olumsuz etkileyebilecek  risklerin 
+belirlenmesi  çalışmalarında  gerekli  imkânı  sağlamak,
+
+
+================================================================================
+CHUNK NO: 27
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+belirlenmesi  çalışmalarında  gerekli  imkânı  sağlamak,
+j) İç denetim  faaliyeti  kapsamına  giren  konularda,  iç denetçilere  gerekli  bilgi ve belgelerin 
+sağlanması  amacıyla  Üniversite  birimleri  arasında  etkili iletişim  kurulmasını  temin  etmek,
+k) İç denetim raporlarında,  düzeltilmesi  ve iyileştirilmesi  önerilen konulan  
+değerlendirmek  ve gerekli  önlemleri  almak,
+l) İç kontrol sisteminin  değerlendirilmesi  sürecine  yönelik  olarak gerçekleştirilen  iç 
+denetim  faaliyetleri  sonrası  elde edilen bilgiler  ve tavsiyeler  doğrultusunda,  sistemin  aksayan  
+yönlerinin  giderilmesini  ve kaynakların  etkili, ekonomik  ve verimli kullanılmasına  yönelik  
+tedbirleri  sağlamak,
+m) îç denetçilerin  mesleki  yeterliliğinin  geliştirilmesi  için gerekli  tedbirleri  temin  etmek,
+n) İç denetim  faaliyetinin  kalitesini  gözetmek  ve dış değerlendirme  sonuçlarına  ilişkin 
+düzeltici  önlemlerin  alınmasına  yardımcı  olmak,
+
+
+================================================================================
+CHUNK NO: 28
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+düzeltici  önlemlerin  alınmasına  yardımcı  olmak,
+(2) Üst Yönetici,  iç denetim  faaliyetlerinde  beklenen  faydanın  en yüksek  düzeyde  elde 
+edilmesi  için ilgili mevzuatta  belirlenen  her türlü  katkıyı  verir.
+Birimlerin  İç Denetime  İlişkin  Sorumlulukları
+MADDE  11 - (1) Birimlerin  sorumlulukları  şunlardır:
+a) İç denetçiler  tarafından,  iç denetim  görevleriyle  ilgili olarak  talep edilen,  elektronik 
+ortamdakiler  dahil her türlü bilgi, belge ve dokümanları  istenen  sürede  vermek;  nakit, kıymetli  
+evrak ve diğer varlıkları  ibraz etmek,  iç denetim  görevlerinin  sağlıklı  bir şekilde  yürütülmesini  
+sağlayacak  önlemleri  almak  ve her türlü yardım  ve kolaylığı  göstermek.
+b) İç denetçiler  için denetim  kapsamında  ihtiyaç  duyulan  araç, gereç,  gerekli  fiziki ortam  
+ve donanımı  temin etmek.
+c) İç denetim  bulgularına  ilişkin eylem  planlarım  hazırlayarak  istenen  süre içerisinde  
+Başkanlığa  göndermek.
+
+
+================================================================================
+CHUNK NO: 29
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 8
+   - page_label: 9
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Başkanlığa  göndermek.
+ç) Eylem planlarında  yer alan hususların  belirlenen  sürelerde  yerine getirilmesini 
+sağlamak.
+d) Eylem  planlarına  ilişkin  gerçekleşme  sonuçlarını,  eylem  takvimi  içerisinde  altı aylık 
+dönemler  halinde  Başkanlığa  bildirmek.
+(2) Kurum  birimleri;  denetim  ve izleme  süreçlerine  ait Başkanlıkça  iletilen  yazı, rapor  ve 
+tüm belgeleri  denetim  dosyasında,  faaliyet  ve işlemlere  ilişkin  her türlü kayıt,  bilgi ve belgeler, 
+düzenli  olarak  ibraza  hazır  olarak  muhafaza  edilir.
+(3) İç denetim  faaliyetleri,  denetlenen  birim yönetimlerinin  kendi görev alanındaki  risk 
+yönetimi,  kontrol  ve yönetim  süreçlerinin  kurulması,  uygulanması  ve geliştirilmesi  konularındaki 
+sorumluluklarım  kaldırmaz.
+4
+
+
+================================================================================
+CHUNK NO: 30
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 9
+   - page_label: 10
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+BEŞİNCİ  BÖLÜM
+Başkanlığın  İdari  Yapısı,  Başkanın,  İç Denetçilerin  ve 
+Büro  Personelinin  Görev,  Yetki  ve Sorumlulukları
+İç Denetim  Birimi  Başkanlığının  Yapısı
+MADDE  12 - (1) Başkanlık;  Başkan,  İç Denetçiler  ile büro personelinden  oluşur.
+(2) Başkanlık  idari yönden  doğrudan  Üst Yöneticiye  bağlı olarak  faaliyetlerini  yürütür  ve 
+Üst Yönetici  altındaki  makam veya mercilerle  ilişkilendirilemez.  Üst Yönetici,  iç denetim 
+faaliyetlerine  ilişkin rol ve sorumluluklarını  astlarına  devredemez.
+(3) İç denetim  faaliyetinin  kamu  iç denetim  standartları  ve meslek  ahlak  kurallarına  uygun 
+ve etkili bir şekilde  yürütülmesi  için Üst Yönetici  ve Başkan  tarafından  gerekli  önlemler  alınır.
+(4) Başkanlıkta  özellikli  alanlarda  yapılacak  denetim  faaliyetleri  kapsamında;  Üniversite 
+içinden  ya da diğer idarelerden  teknik  veya uzman  personel  geçici  süreli görevlendirilebilir.  Bu
+
+
+================================================================================
+CHUNK NO: 31
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 9
+   - page_label: 10
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+görevlendirmeler,  Kurul  düzenlenmelerinde  belirlenen  esaslara  göre yapılır.
+İç Denetim  Birimi  Başkanlığının  Görevleri
+MADDE  13 - (1) Başkanlık  aşağıdaki  görevleri  yürütür:
+a) Üniversite  kaynaklarının  ekonomiklik,  etkililik  ve verimlik  esaslarına  göre yönetilip 
+yönetilmediğini  nesnel  risk analizlerine  dayalı olarak  değerlendirmek,  rehberlik  ve danışmanlık 
+yapmak,
+b) Risk  analizlerine  dayalı  iç denetim  plan ve programlarım  hazırlamak,  geliştirmek,
+c) Denetim  ve danışmanlık  faaliyetlerini  yürütmek,  Rektör  tarafından  talep  edilen  ve görev  
+alanına  giren  program dışı  görevleri  gerçekleştirmek,
+ç) Üniversitenin  kurumsal  yönetim,  risk yönetimi,  kontrol süreçlerinin  etkinlik  ve 
+yeterliliğini  değerlendirmek,
+d) Başkanlığın  işleyişi  ve yönetimi  ile iç denetim  faaliyetlerinin  yürütülmesine  ilişkin  diğer  
+usul ve esaslarının  belirlendiği  iç denetim  yönergesini  Kurul düzenlemelerine  uygun olarak
+
+
+================================================================================
+CHUNK NO: 32
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 9
+   - page_label: 10
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+usul ve esaslarının  belirlendiği  iç denetim  yönergesini  Kurul düzenlemelerine  uygun olarak  
+hazırlamak  ve dönemsel  olarak  gözden  geçirmek,
+e) Denetim  raporlarının  bir örneğini  Başkanlıkta  muhafaza  etmek,
+f) Iç denetim  faaliyeti  ve iç denetçilerle  ilgili diğer  işlemleri  yürütmek,
+Başkanın  Görevlendirilmesi
+MADDE  14 - (1) Başkan,  iç denetçiler  arasından  Rektörün  onayı ile 3 yıllık dönem  için 
+görevlendirilir.  Bu görevlendirme  onay  tarihinden  itibaren  10 iş günü  içinde  Kurula  bildirilir.
+(2) Başkanın  yokluğu  halinde  Üst Yönetici  tarafından  görevlendirilen  bir iç denetçi  
+Başkanlığa  vekâlet  eder.
+(3) Başkan  olarak  görevlendirilen  iç denetçi,  Üst Yöneticinin  onayıyla  bir dönem  daha 
+görevlendirilebilir.
+Başkanın  Görev,  Yetki  ve Sorumlulukları
+MADDE  15 - (1) Başkanın  görev,  yetkileri  şunlardır;
+a) Başkanlığı,  mevzuata,  iç denetim  standartlarına  ve Kurulun  diğer düzenlemelerine
+
+
+================================================================================
+CHUNK NO: 33
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 9
+   - page_label: 10
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+a) Başkanlığı,  mevzuata,  iç denetim  standartlarına  ve Kurulun  diğer düzenlemelerine 
+uygun olarak etkin bir şekilde yönetmek,  iç denetim  faaliyetinin  KİDS ’e uyum düzeyinin 
+arttırılması  amacıyla,  gerekli gördüğü  konularda  politika  ve prosedürler  belirlemek  ve İç 
+Denetçilere  duyurmak.
+b) İç denetçilerin  de katılımıyla  iç denetim  yönergesi,  iç denetim  planı ve programını 
+hazırlamak  ve Üst Yöneticinin  onayına  sunmak,
+c) İç denetçilerin  program  kapsamında  ve program  dışı görevlendirmelerini  yapmak,
+ç) İç denetçilerin,  iç denetim  plan ve programlarına  uygun  olarak  faaliyet  yürütmelerini
+5
+
+
+================================================================================
+CHUNK NO: 34
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sağlamak  ve bu yönde  gerekli  tedbirleri  almak,
+d) îç denetim  raporlarının,  Kurul  tarafından  belirlenen  denetim  standartlarına  uygunluğunu 
+kontrol  etmek,
+e) Denetim  sonuçlarını  izlemek,  denetlenen  birim  yöneticisi  ile mutabık  kalman  hususların 
+yerine  getirilip  getirilmediğini  takip  etmek,
+f) Yıllık  iç denetim  faaliyet  raporunu,  iç kontrol  sistemine  ilişkin  genel değerlendirmeyi 
+de kapsayacak  şekilde  hazırlamak,
+g) Kurulun  düzenlemeleriyle  uyumlu  olarak,  iç denetim  faaliyetinin  kalitesini  gözetmek 
+ve bu amaçla  kalite  güvence  ve geliştirme  programını  oluşturmak,  KGGP ’nin sonuçlarını  dönemsel 
+raporlar  aracılığıyla  Üst Yöneticiye  sunmak,  iç değerlendirme  kapsamında  hazırlanan  dönemsel 
+gözden  geçirme  raporları  ile eylem  planının  bir örneğini  bir ay içerisinde  Kurula  göndermek,
+ğ) İç denetim  faaliyetinin  performansının  değerlendirilmesi  amacıyla  İç Denetçilerin  de
+
+
+================================================================================
+CHUNK NO: 35
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ğ) İç denetim  faaliyetinin  performansının  değerlendirilmesi  amacıyla  İç Denetçilerin  de 
+katılımıyla  performans  göstergeleri  belirlemek,  iç denetim  faaliyetinin  performansını  sürekli  
+izlemek  ve yılda  en az bir defa dönemsel  değerlendirme  yapılmasını  sağlamak,
+h) Başkanlığın  performansına  ilişkin  olarak  dönemsel  rapor hazırlayıp  Üst Yöneticiye
+sunmak,
+ı) Dış değerlendirme  sonuçlarına  ilişkin  düzeltici  ve iyileştirici  önlemleri  almak,
+i) îç denetçilerin,  meslek  içi eğitim  programına  uygun  bir şekilde,  bilgi ve becerilerini 
+düzenli  olarak artırmalarını  sağlamak,  İç Denetçilerin  eğitim ve sertifikasyon  bilgilerini  takip  
+ederek  kayıt  altına  almak,  İç Denetçilerin  her üç yılda  en az 100 saat meslek  içi eğitim  alma  şartım  
+sağlayıp  sağlamadıklarını  izlemek,  İç Denetçilerin  görüşlerini  de alarak yıllık eğitim ihtiyaç  
+analizini  yapmak,
+j) Gerekli  görülmesi  durumunda,  iç denetim  faaliyetlerine  yönelik  olarak  başka bir iç
+
+
+================================================================================
+CHUNK NO: 36
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+j) Gerekli  görülmesi  durumunda,  iç denetim  faaliyetlerine  yönelik  olarak  başka bir iç 
+denetçiden  veya  konunun  uzmanından  görüş  veya  yardım  alınmasını  sağlamak,
+k) İç denetçilerin  görevlerini  yaparken  bağımsızlık  veya tarafsızlığının  tehlikeye  girdiği  
+veya ihlal edildiği  durumlarda  gerekli  tedbirleri  almak  ve üst yöneticiyi  bilgilendirmek,
+l) İdari ve/veya  cezai yönden  suç teşkil eden, soruşturma  veya ön inceleme  yapılmasını  
+gerektiren  durumlara  ilişkin  iç denetçilerin  tespitlerini  Üst Yöneticiye  bildirmek,
+m) İç denetime  ilişkin  mevzuatın  ve Kurul kararlarının  uygulanmasında  ortaya çıkan  
+tereddütleri  ve sorunları  Kurulun  bilgisine  sunmak,
+n) Başkanlık  bütçesine  ilişkin  işlemler  ile harcama  yetkililiği  görevini  yürütmek,
+o) İç denetçilerin  sertifika  derecelendirmelerine  esas puanlamayı  Üst Yöneticiye  teklif
+etmek,
+ö) Kurul tarafından  belirlenen  ilkeler  çerçevesinde  diğer denetim  birimleriyle  gereken
+
+
+================================================================================
+CHUNK NO: 37
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ö) Kurul tarafından  belirlenen  ilkeler  çerçevesinde  diğer denetim  birimleriyle  gereken  
+işbirliğini  sağlamak,  Sayıştay  ile Başkanlık  arasındaki  iletişim  ve koordinasyonu  sağlamak,
+p) Yürütülen  denetim  faaliyetlerinde  iç denetçi  ile DGS arasında  oluşabilecek  ihtilafları  
+çözüme  kavuşturmak,
+r) İç denetçiler  ile büro personelinin  her türlü yıllık  izin, İdarî, sıhhi ve mazeret  izinlerini  
+vermek,  Üniversite  veya Üniversite  dışında  yapılacak  toplantı,  kurs, seminer  vb. çalışmalara 
+katılacak  iç denetçileri  belirlemek  ve görevlendirmek,
+s) Mevzuatla  verilen diğer  görevler  ile iç denetim  faaliyetleriyle  ilgili olarak  Üst Yönetici 
+tarafından  verilen  diğer  görevleri  yapmak. ”
+(2) Başkanın  iç denetim  dışında  kalan  görev  ve/veya  sorumlulukları  olduğu  veya  olmasının 
+beklendiği  durumlarda,  bağımsızlığın  ya da tarafsızlığının  korunmasına  yönelik  tedbirlerin  alınması 
+zorunludur.
+İdari  Personel  ve Büro
+
+
+================================================================================
+CHUNK NO: 38
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 10
+   - page_label: 11
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+zorunludur.
+İdari  Personel  ve Büro
+MADDE  16 - (1) Başkanlıkta,  gerekli  nitelik  ve sayıda  personel  görevlendirilir  ve büro 
+oluşturulur.  Başkanlık  emrinde  çalışacak  büro personelinin  görevlendirilmesinde  Başkanmın
+6
+
+
+================================================================================
+CHUNK NO: 39
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 11
+   - page_label: 12
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+görüşü  alınır.
+(2) İdari büro personeli,  Başkanlığın  hesap,  yazı, dosya,  arşiv  ve diğer  işlerini  düzenli  ve 
+zamanında  yürütmekle  yükümlü  olup, işlerin  gereği gibi yerine getirilmesinden  Başkana  ve İç 
+Denetçilere  karşı  sorumludur.
+(3) İdari  büro  personeli,  rapor,  yazışma  ve bunlara  ilişkin  dosyalan,  Başkanın  izni olmadan 
+kimseye  veremez,  gösteremez  ve görevleri  dolayısıyla  edindiği  gizli bilgileri  açıklayamaz.
+ALTINCI  BÖLÜM
+İç Denetçilerin  Atanması,  Görev,  Yetki  ve Sorumlulukları
+İç Denetçilerin  Atanması
+MADDE  17 - (1) İç denetçiler,  kamu iç denetçisi  sertifikasına  sahip kişiler  arasından,  
+Başkanlığın  görüşü  alınarak  Rektör  tarafından  atanır  ve aynı usulle  görevden  alınır.
+(2) Üniversite,  sertifika  sahibi  iç denetçi  adayları  veya  belli bir süre iç denetçilik  yaptıktan 
+sonra başka görevlere  atananlar  arasından  iç denetçi  kadrolarına  atama yapılmasından  önce,
+
+
+================================================================================
+CHUNK NO: 40
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 11
+   - page_label: 12
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sonra başka görevlere  atananlar  arasından  iç denetçi  kadrolarına  atama yapılmasından  önce,  
+ilgililerin  sertifikalarının  kullanılabilirliğini  Kuruldan  teyit ettirir.
+İç Denetçinin  Görevleri
+MADDE  18 - (1) İç Denetçiler  aşağıdaki  görevleri  yürütür.
+a) Nesnel risk analizlerine  dayanarak  Üniversitenin  yönetim  ve kontrol yapılarını 
+değerlendirmek,
+b) Kaynakların  etkili,  ekonomik  ve verimli  kullanılması  bakımından  incelemeler  yapmak  
+ve önerilerde  bulunmak,
+c) Harcama sonrasında  yasal  uygunluk  denetimi  yapmak,
+ç) Üniversitenin  harcamalarının,  mali işlemlere  ilişkin  karar  ve tasarruflarının,  amaç ve 
+politikalara,  programlara,  stratejik  planlara  ve performans  programlarına  uygunluğunu  denetlemek 
+ve değerlendirmek,
+d) Malî yönetim  ve kontrol  süreçlerinin  sistem denetimini  yapmak  ve bu konularda 
+önerilerde  bulunmak,
+e) Denetim  sonuçları  çerçevesinde  iyileştirmelere  yönelik  önerilerde  bulunmak  ve bunları  
+takip  etmek,
+
+
+================================================================================
+CHUNK NO: 41
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 11
+   - page_label: 12
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+takip  etmek,
+f) Denetim  sırasında  veya denetim  sonuçlarına  göre soruşturma  açılmasını  gerektirecek 
+bir duruma  rastlanıldığında,  Başkan  aracılığıyla  Üst Yöneticiye  bildirmek,
+g) Üniversitenin  birimlerince  üretilen  bilgilerin  doğruluğunu  denetlemek,
+ğ) Rektör  tarafından  gerekli görülen  hallerde  performans  göstergelerini  belirlemede 
+yardımcı  olmak,  belirlenen  performans  göstergelerinin  uygulanabilirliğini  değerlendirmek,
+h) Kurumun  bilgi teknolojisi  sistem ve uygulamalarının  yeterlilik,  güvenilirlik  ve 
+etkinliğini  denetlemek  ve değerlendirmek,
+ı) Suç teşkil  eden durumlara  ilişkin  tespitlerini  Üst Yöneticiye  bildirilmek  üzere  Başkana 
+bildirmek.
+İç Denetçinin  Yetkileri
+MADDE  19 - (1) İç denetçiler  aşağıdaki  yetkilere  sahiptir;
+a) İç denetim  faaliyetleriyle  ilgili olarak, Üniversitenin  Akademik,  İdari Birimlerine 
+İşletmesine  ait, elektronik  ortamdakiler  dahil her türlü bilgi, belge  ve doküman  ile nakit,  kıymetli
+
+
+================================================================================
+CHUNK NO: 42
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 11
+   - page_label: 12
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+evrak  ve diğer  varlıkların  ibrazını  ve gösterilmesini  talep  etmek.
+b) Denetlenen  birim  çalışanlarından,  iç denetimin  gereği  olarak  yardım  almak,  yazılı ve 
+sözlü  bilgi istemek.
+c) İç denetimin  gerektirdiği  konularda  uzman yardımı almak veya görüşünden
+7
+
+
+================================================================================
+CHUNK NO: 43
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 12
+   - page_label: 13
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yararlanmak,
+ç) İç denetimin  faaliyetinin  gerektirdiği  araç, gereç  ve diğer  imkânlardan  yararlanmak.
+d) Denetimi  engelleyici  tutum,  davranış  ve hareketleri  Başkan  kanalıyla  Üst Yöneticiye  
+(Rektör)  bildirmek.
+İç Denetçinin  Sorumlulukları
+MADDE  20 - (1) İç denetçi,  görevlerini  yerine  getirirken  aşağıdaki  hususlara  riayet  eder;
+a) Mevzuata,  Yönergeye,  Denetim  ve Raporlama  standartlarına  ve Etik Kurallara  uygun  
+hareket  etmek.
+b) Mesleki  bilgi ve becerilerini  sürekli  olarak  geliştirmek.
+c) Yetki  ve ehliyetini  aşan durumlarda  Başkanı  haberdar  etmek.
+ç) Verilen  görevin  tarafsız  ve bağımsız  olarak yapılmasına  engel olan durumların 
+bulunması  halinde,  durumu  Başkana  bildirmek.
+d) Denetim  raporlarında  kanıtlara  dayanmak  ve değerlendirmelerinde  tarafsız  olmak.
+e) Denetim  esnasında  elde ettiği  bilgilerin  gizliliğini  korumak.
+(2) îç denetçiler,  denetim  stratejisinin  belirlenmesinde,  iç denetim  planı ve programı  ile
+
+
+================================================================================
+CHUNK NO: 44
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 12
+   - page_label: 13
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(2) îç denetçiler,  denetim  stratejisinin  belirlenmesinde,  iç denetim  planı ve programı  ile 
+Yönergenin  hazırlanmasında  ve revizyonunda  aktif  katılımda  bulunurlar.
+YEDİNCİ  BÖLÜM
+Bağımsızlık,  Tarafsızlık  ve Mesleki  Güvence
+İç Denetim  Faaliyetinin  Bağımsızlığı
+MADDE  21 - (1) İç denetim  faaliyetinin  planlanması,  yürütülmesi,  raporlanması  ve 
+izlenmesi  süreçlerinde  iç denetim  faaliyeti  Üniversitenin  günlük  işleyişinden  bağımsızdır.
+(2) İç denetçiler  görevlerini  Kanun, Yönetmelik,  Yönerge  ve Kamu İç Denetim 
+Standartlarına  uygun  olarak  tam bir bağımsızlık  içinde  gerçekleştirir.
+(3) İç denetim  faaliyetinin  kapsamına,  denetim  uygulamalarına  müdahale  edilemez  ve iç 
+denetçilerin  görüşlerini  değiştirmeleri  istenemez.
+(4) İç denetçilerin  görevlerini  bağımsız  ve hiçbir  etki altında  kalmadan  yapmaları  Başkanın  
+ve Üst Yöneticinin  sorumluluğundadır.
+
+
+================================================================================
+CHUNK NO: 45
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 12
+   - page_label: 13
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ve Üst Yöneticinin  sorumluluğundadır.
+(5) İç denetim  faaliyeti,  iç denetimin  kapsamının  belirlenmesi,  yürütülmesi  ve sonuçlarının 
+paylaşılması  ve raporlanması  hususunda  her türlü  müdahaleden  uzak  ve serbesttir.  Başkan  böyle  bir 
+durumu  Üst Yöneticiye  (Rektör)  bildirir  ve etkilerini  açıklar.
+(6) İç denetimin  bağımsızlığı  kalite  güvence  ve geliştirme  programı  kapsamında,  Başkan  
+ve İç Denetim  Koordinasyon  Kurulu  tarafından  düzenli  olarak  değerlendirilir.
+İç Denetçinin  Tarafsızlığı
+MADDE  22 - (1) İç denetim  faaliyetinin  güvenilirliğinin  ve nesnelliğinin  sağlanabilmesi 
+için, görevlerin  yürütülmesi  sırasında  iç denetçiler,  tarafsızlık  ilkesiyle  hareket  eder. İç denetçiler,  
+denetim  sırasında  elde ettikleri  bilgi ve belgeleri  değerlendirerek,  başkalarının  düşünce  ve 
+telkinlerinden  etkilenmeden  görüşlerini  oluşturur.
+(2) İç denetçiler,  görevlerini  yürütürken  bağımsızlık  ve tarafsızlıklarını  zedeleyebilecek  bir
+
+
+================================================================================
+CHUNK NO: 46
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 12
+   - page_label: 13
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+durumla  karşılaşmaları  halinde  bu durumu  derhal  yazılı  olarak  Başkana  bildirir.  Başkan  bu konuda  
+gerekli  tedbirleri  alır.
+(3) Başkan,  iç denetçilerin  görevlendirilmesinde,  tarafsızlıklarım  zedeleyebilecek 
+hususları  dikkate  alır. Bu kapsamda  iç denetçiler  arasındaki  görev  dağılımında  iç denetçilerin  belirli  
+bir alanda  uzmanlaşmasına  engel olmayacak  ve aynı zamanda  denetim  ekiplerinin  sürekli  aynı iç 
+denetçilerden  oluşmasını  engelleyecek  şekilde  kadro durumu  ve mevcut  iç denetçi  sayısı göz 
+önünde  bulundurularak  mümkün olduğu  kadar  rotasyon  uygulanır.
+8
+
+
+================================================================================
+CHUNK NO: 47
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 13
+   - page_label: 14
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(4) Denetim  faaliyetinin  tarafsızlığının  sağlanması  için, denetim  görevi verilen iç 
+denetçinin  denetim  alanıyla  ilgili herhangi  bir menfaat  çatışması  yaşamaması  veya böyle bir 
+görüntünün  oluşmasına  engel  olunması  zorunludur.  Bu çerçevede,
+a) îç denetçiliğe  ilk defa atananlar  ile idari görevlerde  iken iç denetçiliğe  dönenler,  daha 
+önce görev  yaptıkları  idari birimlerde,  görevden  ayrılış  tarihi üzerinden  bir yıl geçmeden,  denetim 
+yapmak  üzere  görevlendirilemez.
+b) İç denetçiler  daha önce sorumlu  oldukları  idari faaliyetlere  ilişkin  danışmanlık  hizmeti
+verebilir.
+c) İç denetçiler  yürüttükleri  danışmanlık  faaliyetleri  ile ilgili olarak  bir yıl geçmeden  aynı 
+alanda  denetim  yapamaz.
+İç Denetçilerin  Mesleki  Güvencesi
+MADDE  23 - (1) İç denetçilere  Kanun,  Yönetmelik  ve Yönergede  belirtilen  görevler 
+dışında  hiçbir  görev  verilemez  ve yaptınlamaz.
+
+
+================================================================================
+CHUNK NO: 48
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 13
+   - page_label: 14
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+dışında  hiçbir  görev  verilemez  ve yaptınlamaz.
+(2) İç denetçiler,  Yönetmeliğin  24 üncü maddesinin  ikinci fıkrası  hükmü  saklı kalmak  
+kaydıyla, istekleri dışında hiçbir şekilde başka bir göreve atanamaz.  İç denetçilerin 
+görevlendirilmesinde,  Kamu  İç Denetim  Genel  Tebliğinin  9 uncu  maddesi  dikkate  alınır.
+(3) İç denetçi atamalarında  ve daha önce iç denetçilik  yapmış olanların  mesleğe 
+dönüşlerinde  Başkanlığın  görüşü  aranır.
+SEKİZİNCİ  BÖLÜM  
+İç Denetim  Faaliyetlerinin  Planlanması
+İç Denetim  Stratejisi
+MADDE  24 - (1) İç denetim  plan  ve programının  hazırlanması  ve uygulanmasında,  Kurul  
+tarafından  üç yılda  bir oluşturulan  Kamu  İç Denetim  Strateji  Belgesi  dikkate  alınır.
+Denetim  Evreninin  Oluşturulması
+MADDE  25 - (1) Üniversitenin  Akademik  ve idari teşkilatının  tüm faaliyet,  süreç ve 
+projeleri  denetim  evrenini  oluşturur.  Başkan  tarafından,  Üniversitenin  organizasyon  yapısının  ne
+
+
+================================================================================
+CHUNK NO: 49
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 13
+   - page_label: 14
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+düzeyde  ele alınacağına  ve faaliyet,  süreç veya projelerin  hangi detayda  denetim  evrenine  dâhil  
+edileceğine  karar verilmek  suretiyle,  denetlenebilecek  alanların  tamamını  ifade eden denetim  
+evreni,  iç denetçilerin  de katılımıyla  oluşturulur.
+(2) Birimlerin  ve iç denetçilerin  katkısı  ile denetim  evreni her yıl gözden  geçirilerek 
+güncellenir.
+Makro  Risk  Değerlendirmesi
+MADDE  26 - (1) Denetim  önceliklerinin  belirlenmesi  amacıyla,  KİDR ’nin 7 numaralı 
+ekinde yer alan “Risk Analiz Modeli ” kullanılarak  denetim  evreninde  yer alan her bir 
+faaliyet/süreç/proje,  stratejik  planda  yer alan amaç  ve hedefler  ile birim  amirlerinin  görüşleri  dikkate 
+alınarak  risk değerlendirmesine  tabi tutulur.  Makro  risk değerlendirmesi  yapılırken  KİDR ’nin 6 
+numaralı  ekinde  sayılan  risk faktörlerinden  faydalanılır.  Risk değerlendirmesi,  Rehberde  belirlenen 
+esas ve usullere  göre yürütülür.
+Denetim  Alanlarının  Belirlenmesi  ve Önceliklendirilmesi
+
+
+================================================================================
+CHUNK NO: 50
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 13
+   - page_label: 14
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+esas ve usullere  göre yürütülür.
+Denetim  Alanlarının  Belirlenmesi  ve Önceliklendirilmesi
+MADDE  27 - (1) Denetim  evreninde  yer alan alt süreçlerden  her birisi müstakilen  bir 
+denetim  alanı olarak  belirlenebileceği  gibi birbiri  ile ilişkili  olanlar  birleştirilerek  de bir denetim 
+alanı oluşturulabilir.
+(2) Denetim  kaynağının  optimum  düzeyde  kullanılması  amacıyla  denetim  alanları
+9
+
+
+================================================================================
+CHUNK NO: 51
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 14
+   - page_label: 15
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+“küçük ”, “orta” ve “büyük ” ölçekli  olarak sınıflandırılır.  Her bir ölçek için ayrılması  gereken  
+denetim  süresi  denetim  stratejisi  ile belirlenir.
+(3) Denetim  alanları  makro  risk değerlendirmesi  sonucunda  almış oldukları  risk puanları  
+doğrultusunda  “yüksek ”, “orta”  ve “düşük ” olarak  önceliklendirilir.
+İç Denetim  Plan  ve Programının  Hazırlanması
+MADDE  28 - (1) îç denetim  planı iç denetim  faaliyetinin  etkili,  ekonomik  ve verimli  bir 
+şekilde  yürütülmesini  sağlamak  amacıyla;  denetim  stratejisini,  risk düzeyi  yüksek  ve orta olarak  
+belirlenen  denetim  alanlarını,  planın  uygulanabilmesi  için gereken  denetim  kaynaklarını,  kaynak  
+kısıtlarının  olası etkilerini  içerecek  şekilde  üç yıllık  dönemler  için hazırlanır.
+(2) İç denetim  planının  hazırlanmasında  Kamu  İç Denetim  Strateji  Belgesi,  Üniversitenin 
+Stratejik  Planı,  Üst Yönetici  ve denetlenen  birim  yöneticilerinin  görüşleri  de dikkate  alınır.
+
+
+================================================================================
+CHUNK NO: 52
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 14
+   - page_label: 15
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(3) İç denetim  planında;  planda  yer alan faaliyetlere  ilişkin  kaynak  tahsisi,  denetimin 
+büyüklüğü,  denetimin sıklığı  bilgilerini  içeren  denetim  stratejisine  yer verilir.
+(4) İç denetim  planı, en az yılda bir kez yapılan  risk değerlendirmesi  ve denetim  
+sonuçlarına  göre gözden  geçirilerek  güncellenir.
+(5) İç denetim  programı,  bir yıllık dönemde  gerçekleştirilmesi  planlanan  denetim  
+(güvence),  danışmanlık,  izleme,  iç değerlendirme  ve eğitim  faaliyetlerini  içerir.
+(6) İç denetim  planının  birinci  yılında  yer alan denetimler,  mevcut  iç denetçi  kaynağı  
+ölçüsünde  en yüksek  risk düzeyinden  başlamak  üzere  iç denetim  programına  alınır.  Üst Yöneticinin 
+riskli  gördüğü  ve öncelik  verilmesini  istediği  hususlar  da dikkate  alınır.
+(7) İç denetim  plan ve programı  en geç aralık  ayı sonuna  kadar  Üst Yöneticinin  onayına
+sunulur.
+(8) İç denetim  plan ve programının  hazırlanmasında  ve uygulanmasında  KİDR  ile Kurul
+
+
+================================================================================
+CHUNK NO: 53
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 14
+   - page_label: 15
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sunulur.
+(8) İç denetim  plan ve programının  hazırlanmasında  ve uygulanmasında  KİDR  ile Kurul  
+düzenlemeleri  esas alınır.
+DOKUZUNCU  BÖLÜM  
+Denetim  Faaliyetlerinin  Yürütülmesi
+Görevlendirme
+MADDE  29 - (1) İç denetim  programı,  Üst Yönetici  tarafından  onaylandıktan  sonra,  
+görevler,  programdaki  zamanlama  da dikkate  alınarak  Başkan  tarafından  iç denetçilere  yazılı  olarak  
+bildirilir.  Program  dışı görevlendirmelerde  de aynı usul uygulanır.
+(2) İç denetçiler göreve  başlama  tarih  ve yerleri  ile görevin  bitişini  Başkanlığa  bildirirler.
+(3) Görevlendirmelerin  iptali,  Başkanlıkça  alman  üst yönetici  onayı  ile yapılır.
+Denetim  Gözetim  Sorumlusu
+MADDE  30 - (1) Başkan,  her bir denetim  görevinin  Kamu  İç Denetim  Standartlan  ile 
+Kamu  İç Denetim  Rehberine  uygun  olarak  yürütülmesini  sağlamak  amacıyla  A-3 ve A-4 sertifika 
+düzeyindeki  kıdemli  bir iç denetçiyi,  iç denetim  programı  ile denetim  gözetim  sorumlusu
+
+
+================================================================================
+CHUNK NO: 54
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 14
+   - page_label: 15
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+düzeyindeki  kıdemli  bir iç denetçiyi,  iç denetim  programı  ile denetim  gözetim  sorumlusu 
+görevlendirir.  Başkanlıkta  yeterli sayı ve sertifika  düzeyine  sahip iç denetçinin  bulunmaması 
+halinde,  denetimin  gözetimi  faaliyeti,  bizzat Başkan  tarafından  veya Yönetmeliğin  30’uncu 
+maddesine  göre A-2 sertifika düzeyine  yükselmiş  iç denetçiler  tarafından  da yürütülebilir.
+(2) Denetim  gözetim  sorumlusu  olarak  görevlendirilen  iç denetçi,  aynı anda başka  bir iç 
+denetim  faaliyetinde  de görevlendirilebilir.
+Denetim  Gözetim  Faaliyetinin  Kapsamı
+MADDE 31 - (1) Denetim  gözetim  sorumluluğu;
+a) îç denetçi  tarafından  hazırlanan  çalışma  planının  yeterli risk analizine  dayandırılıp
+10
+
+
+================================================================================
+CHUNK NO: 55
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 15
+   - page_label: 16
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+dayandırılmadığı,
+b) Görev iş programında  belirlenen  denetim testlerinin  denetim amaçlarının 
+gerçekleştirilmesi  için yeterli  olup olmadığı,
+c) Denetim  sonucunda  varılan  kanaatleri  destekleyecek  kanıtların  yeterli  olup olmadığı  ve 
+ilave  inceleme  yapılmasına  gerek  olup olmadığı,
+ç) Görev iş programında  yer alan testlerin  uygulanıp  uygulanmadığı  ve denetim  
+sonuçlarına  dayanak  teşkil  eden  bilgilerin  kayıtlı  hale getirilip  getirilmediği,
+d) Raporda  uygulanabilir  önerilere  ve eylem planlarına  yer verilip verilmediği,  
+hususlarında  değerlendirme  yapmak  ve gerekli düzeltmelerin  yapılmasını  istemek  görev ve 
+yetkisini  kapsar.
+(2) İç denetçi,  denetim  görevinin  yürütülmesi  ve raporlanması  aşamalarında  denetim 
+gözetim  sorumlusunun  önerilerini  göz önünde  bulundurarak  gerekli  çalışmaları  ve düzeltmeleri 
+yapar. Ancak ilgili İç Denetçi  ile DGS arasında  görüş ayrılığı bulunması  halinde,  gerekli
+
+
+================================================================================
+CHUNK NO: 56
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 15
+   - page_label: 16
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yapar. Ancak ilgili İç Denetçi  ile DGS arasında  görüş ayrılığı bulunması  halinde,  gerekli  
+açıklamalar  çalışma  kâğıtları  aracılığı  ile kayıt altına alınır. Böyle bir görüş ayrılığı  olması  
+durumunda  Başkanın  vereceği  karar  doğrultusunda  işlem  yapılır.
+Denetim  Görevinin  Bildirilmesi
+MADDE  32 - (1) Başkan,  denetim  görevinin  yürütüleceği  birimlere  denetimin  amacını,  
+kapsamını,  tarihini,  görevlendirilen  denetim  ekibini,  birimden  beklenenleri  ve gerek  görülen  diğer  
+hususları  içeren  bir yazılı  bildirim  yapar.
+(2) Gizlilik  veya nakit ve diğer kıymetli  evrakın  sayımı  gereken  hallerde  bu bildirimin 
+yapılması  zorunlu  değildir.
+Denetime  Hazırlık  ve Başlama
+MADDE  33 - (1) Denetim  faaliyetlerinin  hazırlık aşaması  “Ön Çalışma ” olarak  
+adlandırılır.  Ön çalışmada  iç denetçiler  görevlendirildikleri  konu ile ilgili gerekli  inceleme  ve 
+araştırmaları  yaparak  denetimin  amaç  ve kapsamını  tespit  eder.
+
+
+================================================================================
+CHUNK NO: 57
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 15
+   - page_label: 16
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+araştırmaları  yaparak  denetimin  amaç  ve kapsamını  tespit  eder.
+(2) İç denetçiler,  denetim  konusuna  göre belirleyecekleri  toplantı,  mülakat,  anket,  yerinde  
+gözlem  gibi yöntemler  ile denetlenecek  birim  veya süreç  hakkında  bilgi toplayarak  mevcut  risk ve 
+kontrolleri  tespit  eder ve bunların  bir değerlendirmesini  yapar.
+Açılış  Toplantısı
+MADDE  34 - (1) Denetim  ekibi,  denetlenen  birim  yöneticisi  ve ihtiyaç  duyulan  personelin 
+de iştirak  edeceği  bir açılış  toplantısı  yapar.
+(2) Açılış  toplantısında,  denetim  ekibi, denetlenen  birim  yöneticisi  ve diğer  personel  ile 
+denetimin  amacı,  kapsamı,  denetimde  kullanılacak  yöntemler,  tahmini  denetim  süresi,  denetime 
+yardımcı  olacak personel,  denetim  sırasında  çalışanlardan  beklentiler,  idarenin  denetimden 
+beklentileri,  denetim  ekibi ile denetlenen  birim arasındaki  iletişimin  nasıl gerçekleştirileceği,
+
+
+================================================================================
+CHUNK NO: 58
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 15
+   - page_label: 16
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+denetimin  sağlayacağı  faydalar,  denetim  sonuçlarının  raporlanması  konuları  görüşülerek  kayıt 
+altına  alınır.
+Çalışma  Planı
+MADDE  35 - (1) Denetim  faaliyeti  kapsamında  tüm denetim  adımlarını  ve izlenecek 
+yöntemleri  gösteren  bir çalışma  planı hazırlanır.  Denetlenen  birimin  yöneticisi  ve diğer  personelle 
+yapılan  görüşmeler  ve Üniversitenin  stratejileri,  hedefleri  ve göreve  ilişkin  riskler dikkate  alınarak  
+hazırlanan  çalışma  planında;
+a) Denetimin  amaç  ve hedefleri,
+b) Denetimin  kapsamı,
+c) Denetim  sırasında  bilgilerin  elde edilmesi,  analizi ve değerlendirilmesine  ilişkin
+11
+
+
+================================================================================
+CHUNK NO: 59
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 16
+   - page_label: 17
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yöntemler,
+ç) Tahmini  denetim  süresi,  yer alır.
+(2) Çalışma  planının  ekinde  görev  iş programı  ve risk kontrol  matrisi  bulunur.
+(3) Görev  iş programında  hangi  denetim  testlerinin  kim tarafından,  nerede,  hangi  tarihler 
+arasında  yapılacağı  belirtilir.
+(4) Testlerin  uygulanacağı  lokasyonlar  belirlenirken,  uygun  ömeklem  büyüklükleri  esas 
+alınır  ve en riskli  alanlara  öncelik  verilir.
+(5) Çalışma  planı  Başkanın  onayına  sunulur.  Başkan  kendisine  sunulan  çalışma  planını  en 
+geç 2 iş günü içerisinde  değerlendirir  ve onaylar.  Başkan  onaylanmasını  uygun  bulmadığı  çalışma 
+planını  düzeltilmesi  veya eksikliklerinin  tamamlanması  için, süre vermek  suretiyle  gerekçeli  bir 
+şekilde  ilgili denetim  ekibine  iletir. Çalışma  planının  onaylanmasıyla  ön çalışma  tamamlanır.  
+Çalışma  planı onaylanmadan  test çalışmalarına  başlanamaz.
+Denetimin  Yürütülmesi
+MADDE  36 - (1) İç Denetim  ekibi, denetim  rehberlerinden  de yararlanarak  denetim
+
+
+================================================================================
+CHUNK NO: 60
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 16
+   - page_label: 17
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+MADDE  36 - (1) İç Denetim  ekibi, denetim  rehberlerinden  de yararlanarak  denetim 
+faaliyetini  yürütür.
+(2) Denetimin  yürütülmesi  sırasında  uygulanacak  testler, iç kontrol  uygulamalarının 
+yeterliliğine  dair değerlendirme  yapılabilmesine  de olanak verecek şekilde tasarlanır.  
+Gerçekleştirilen  testlerin  tamamı;  izlenen  yöntem,  yapılan  gözlem,  incelenen  belge, görüşme  ve 
+diğer  adımlar  da belirtilmek  suretiyle  “Çalışma  Kâğıtları ” ve denetim  kanıtlan  ile belgelendirilir.
+(3) İç denetçi  tarafından  yürütülen  çalışmalar,  raporlama  aşamasına  geçilmeden  önce 
+denetim  gözetim  sorumlusu  tarafından  gözden  geçirilir.  Denetim  Gözetim  Sorumlusunun  önerileri  
+doğrultusunda  gerekli  çalışma  ve düzeltmeler  yapıldıktan  sonra  kapanış  toplantısı  yapılır.
+Çalışma  Kâğıtları
+MADDE  37 - (1) Denetime  hazırlık,  risk ve kontrol  değerlendirmeleri,  yapılan  testler,
+
+
+================================================================================
+CHUNK NO: 61
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 16
+   - page_label: 17
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+MADDE  37 - (1) Denetime  hazırlık,  risk ve kontrol  değerlendirmeleri,  yapılan  testler,  
+bunların  sonucunda  elde edilen bilgi ve kanıtlar  çalışma  kâğıtları  ile belgelendirilir.  Çalışma  
+kâğıtlarının  düzenlenmesinde  Kurulun  yaptığı  düzenlemeler  esas alınır.
+(2) Denetim  sonuçlarının  takibinde  ve kalite  güvence  ve geliştirme  değerlendirmelerinde 
+bu çalışma  kâğıtlarından  yararlanılır.
+(3) Gerekli  olması  halinde  çalışma  kâğıtlarına  konuyu  destekleyici  belgeler eklenebilir.
+Bulgular  ve Bulgu  Paylaşımı
+MADDE  38 - (1) İç denetçi  tarafından  hazırlanan  bulgular,  DGS tarafından  2 iş günü  
+içerisinde  gözden  geçirilir.
+(2) DGS tarafından  nihai  hali verilen  bulgular  denetlenen  birime/birimlere  gönderilmeden 
+önce Başkan  tarafından;  bulguların  önem  düzeylerinin,  daha  önce yürütülen  benzer  denetimlerdeki 
+bulgu önem düzeyleriyle  uyumlaştırılması,  bulgulardaki  maddi ve mevzuata  ilişkin hatalar
+
+
+================================================================================
+CHUNK NO: 62
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 16
+   - page_label: 17
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+bulgu önem düzeyleriyle  uyumlaştırılması,  bulgulardaki  maddi ve mevzuata  ilişkin hatalar 
+açısından  gözden  geçirilir.  Başkan,  bu konularda  bir sorun  görmesi  halinde  ilgili denetim  ekibinden 
+gerekli  düzeltmelerin  yapılmasını  talep eder. Bu şekilde  nihai hali verilen  denetim  bulguları,  DGS  
+tarafından  denetlenen  birime/birimlere  gönderilir.  Bildirimde,  kapanış  toplantısının  tarihi, yeri, 
+kimlerin  katılmasının  faydalı  olacağı  hususu  ile toplantının  gündemi  belirtilir.
+Kapanış  Toplantısı
+MADDE  39 - (1) Kapanış  toplantısı,  denetim  faaliyeti  ile elde edilen  bulgular  ve öneriler 
+paylaşıldıktan  sonra  denetlenen  birim  ile bulgularda  yer alan hususlarla  ilgili olarak,  her iki tarafın  
+birbirini  tam olarak  anladığından  emin olmak amacıyla,  denetlenen  birim yöneticisi  ve ihtiyaç  
+duyulan  diğer personelin  katılımıyla  yapılır.  Kapanış  toplantısında;  denetim  tespitleri,  öneriler,
+
+
+================================================================================
+CHUNK NO: 63
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 16
+   - page_label: 17
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+bulguların  önem düzeyi  ile gerçekleştirilecek  eylemler  ve uygulama  takvimi  tartışılarak  toplantı
+12
+
+
+================================================================================
+CHUNK NO: 64
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 17
+   - page_label: 18
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sonrasında  bir tutanak  düzenlenir.
+(2) Denetlenen  birim,  bulguların  mevcut  durum,  riskler  ve etkileri  ile önem düzeylerine 
+katılması  halinde,  kapanış  toplantısı  sonuçlarını  da dikkate  alarak makul bir sürede alınacak  
+önlemleri  içeren  bir eylem  planı sunar. Bu eylem  planında;  her bir bulguda  belirtilen  hususların 
+düzeltilmesiyle  ilgili olarak,
+a) Yapılması  planlanan  somut  faaliyetlere,
+b) Bu faaliyetlerin  tamamlanacağı  tarihlere,
+c) Bu faaliyetlerin  gerçekleştirilmesinden  sorumlu  kişilere,  yer verilir.  DGS tarafından, 
+eylem  planlarında yer alan bu üç hususta  eksiklik  olup olmadığı  kontrol  edilir,  eksikliklerin  olması  
+halinde  rapor  öncesinde  bu eksikliklerin  giderilmesi  sağlanır.
+Denetim  Raporunda  Yer Alacak  Bulgulara  Karar  Verilmesi
+MADDE  40- (1) Paylaşılan  bulgulara  denetlenen  birimin  cevabı  ve kapanış  toplantısında 
+alman  görüşler  doğrultusunda  bulgulara  son hali verilir.
+
+
+================================================================================
+CHUNK NO: 65
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 17
+   - page_label: 18
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+alman  görüşler  doğrultusunda  bulgulara  son hali verilir.
+a) Denetlenen  birimin  denetim  ekibi ile aynı görüşte  olduğu  bulgu  ve eylem  planlarına 
+denetim  raporunda  yer verilir.
+b) Denetlenen  birimin  denetim  ekibi ile aynı görüşte  olmadığı  bulgularda,  önemli  bir 
+eksiklik  ya da hata söz konusuysa  ve DGS bu konuda  denetlenen  birimin  görüşüne  katılıyorsa  bu 
+bulgulara  denetim  raporunda  yer verilmez.
+c) Denetlenen  birimin  denetim  ekibi ile aynı görüşte  olmadığı  bulgularla  ilgili olarak,  
+Başkan  denetlenen  birimin  görüşüne  katılıyorsa,  bulgularda  Başkanın  görüşü doğrultusunda 
+değişiklikler  yapılarak  denetim  raporunda  yer verilir.
+d) Denetlenen  birimin,  Başkanlık  (Başkan  ve denetim  ekibi) ile aynı görüşte  olmadığı  
+bulgu ve eylem planlarıyla  ilgili olarak, Başkanlık  bu konuda  denetlenen  birimin  görüşüne  
+katılmıyorsa  konu uzlaşılamayan  husus olarak  Üst Yöneticiye  sunulur.  Üst Yöneticinin  talimatı
+
+
+================================================================================
+CHUNK NO: 66
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 17
+   - page_label: 18
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+doğrultusunda  işlem  tesis edilir.  Üst Yöneticinin  uzlaşılamayan  hususlara  ilişkin  olarak  Başkanlığın 
+değerlendirmesine  katılması  halinde,  denetlenen  birimden  uzlaşmazlık  konusu  hususlarla  ilgili 
+eylem  planı  alınarak  bulguya  son hali verilir.  Üst Yöneticinin  uzlaşılamayan  hususlara  ilişkin  olarak  
+tespite  katılmakla  birlikte  farklı  bir öneri  getirmesi  halinde,  bu öneri  doğrultusunda  bulguda  gerekli  
+değişiklikler  yapılır  ve denetlenen  birimden  bu doğrultuda  eylem  planı  alınır.
+Sonuçların  Raporlanması
+MADDE  41 - (1) Denetim  faaliyetinin  sonuçları,  düzenlenecek  raporla  kayıt  altına  alınır.  
+İç denetçi,  ulaştığı  görüşü,  görüşe  ulaşamamışsa  bunun  nedenlerini  raporunda  açıkça  belirtir.  İç 
+denetim  raporları  kısa, açık, kolay  anlaşılır  ve tekrara  yer vermeyecek  bir tarzda  yazılır.  Raporlar,  
+Kurulun  belirlediği  standartlara  uygun,  yeterli  kanıtlara  dayalı  ve tutarlı  olarak  düzenlenir.  Herhangi
+
+
+================================================================================
+CHUNK NO: 67
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 17
+   - page_label: 18
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+bir kanıta  dayanmayan  ve denetlenen  birimle  paylaşılmayan  bir öneriye  raporda  yer verilemez.
+Denetim  Sonuçlarının  İzlenmesi
+MADDE  42 - (1) Denetim  faaliyetleri  sonucunda  denetim  ekibi tarafından  düzenlenen 
+raporlarda  önerilen  düzeltici  eylem  ve tavsiyeler  belirtilen  süre içerisinde  eylem  planına  uygun 
+olarak yerine getirilir.  Eylem planına  bağlanan  hususlar  denetlenen  birimce,  eylem planında  
+belirtilen  tarihe kadar altı aylık dönemler  halinde  îç Denetim  Birimi  Başkanlığına  bildirilir.  İç 
+Denetim  Birimi  Başkam,  idari birimlerce  rapor üzerine  yapılan  işlemleri  veya işlem yapılmama 
+gerekçelerini  ilgili denetim  ekibi ile paylaşır.
+(2) İç Denetim  Birimi  Başkanı  tarafından,  denetim  raporlarının  uygulanmasını  izlemek 
+üzere bir takip sistemi oluşturulur  ve bu kapsamda  raporlarda  yer alan düzeltici  tedbir ve 
+tavsiyelerin  uygulanması  sağlanır.  İç Denetim  Birimi  Başkanı  bulguların  izlenmesi  maksadıyla  iç
+
+
+================================================================================
+CHUNK NO: 68
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 17
+   - page_label: 18
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+denetçi  görevlendirir.  Söz konusu  görevlendirme  uyarınca  izlemeye  ilişkin  iş ve işlemler  ilgili iç
+13
+
+
+================================================================================
+CHUNK NO: 69
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 18
+   - page_label: 19
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+denetçi  tarafından  yürütülür.
+(3) İzleme  kapsamında;  denetim  ve danışmanlık  raporunda  belirtilen  öneriler,  bu öneriler 
+doğrultusunda  sorumlu  birimlerce  gerçekleştirilmesi  taahhüt  edilen ve bir takvime  bağlanan  
+eylemlerin  gerçekleşme  düzeyi,  takvim  çerçevesinde  gerçekleştirilen  eylemlerin  ilgili riski azaltıp  
+azaltmadığı  hususları  dikkate  alınır.
+(4) Denetlenen  birim  tarafından  eylemlerin  tamamlanamaması  ve süre uzatımı  talebinde 
+bulunulması  halinde,  bir defaya  mahsus  olmak  üzere süre uzatımı  verilerek  izleme  faaliyeti  bir 
+sonraki  döneme  aktarılır.  Verilen  ek süre, bulgunun  önem düzeyi  ve mahiyetine  bağlı olarak  
+belirlenir,  ancak bu süre hiçbir surette 24 ayı geçemez.  Verilen süreye rağmen ilerleme 
+kaydedilememesi  halinde  riskin  üstlenildiği  kabul  edilerek  bulgu  “Risk  Üstlenildi ” olarak  kapatılır.  
+Ancak,  İç Denetim  Birimi  Başkanlığı  Üniversite  için kabul edilemeyecek  bir riskin  üstlenildiğini
+
+
+================================================================================
+CHUNK NO: 70
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 18
+   - page_label: 19
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+düşünüyorsa  bu durumu  denetlenen  birim yöneticisiyle  müzakere  eder. Müzakere  sonucunda 
+mutabakat  sağlanamaması  durumunda  konu çözüme  kavuşturulması  amacıyla  Üst Yöneticiye  
+bildirir.
+(5) Denetlenen  birim yöneticileri,  denetim  raporlarında  yer alan önerilere  ilişkin  gerekli  
+düzeltici  tedbirleri,  kararlaştırılan  eylem  planına  uygun  olarak  alır. Raporlarda  yer alan önerilerin  
+gerçekleştirilmemesi  ve gerekli önlemlerin  alınmaması  halinde İç Denetim  Birimi Başkam  
+tarafından  Üst Yöneticiye  bilgilendirme  yapılır.
+(6) Denetim  sonuçlarının  izlenmesi  Kamu  İç Denetim  Rehberi  çerçevesinde  yapılır.
+Danışmanlık  Faaliyetlerinin  Niteliği
+MADDE  43 - (1) Danışmanlık  faaliyetleri;  bir idari sorumluluk  üstlenmeksizin  yürütülen,  
+icrai konularla  ilgili görüş,  eğitim,  analiz,  değerlendirme,  performans  göstergelerinin  tespiti,  proje  
+görevleri  gibi idari faaliyetlere  değer katmak,  kolaylaştırmak,  geliştirmek  ve yol göstermek
+
+
+================================================================================
+CHUNK NO: 71
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 18
+   - page_label: 19
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+görevleri  gibi idari faaliyetlere  değer katmak,  kolaylaştırmak,  geliştirmek  ve yol göstermek  
+amacıyla  gerçekleştirilen  hizmetlerdir.
+(2) Danışmanlık  faaliyetleri,
+a) İç kontrol,  risk yönetimi  ve yönetim  sistemlerinin  tasarımı  ve geliştirilmesi,
+b) Üniversite  bünyesinde  mevzuat  değişikliklerine  yönelik  oluşturulan  komisyonlara
+katılım,
+c) Üniversite  birimlerinin  yeniden  yapılandırılması,
+ç) Üniversite  birimlerinin  yürüttüğü  yurtiçi  ve yurtdışı  projelere  katılım,
+d) Performans  kriterleri  ve göstergelerinin  tespit edilmesi  çalışmalarına  katlimi 
+sağlanması,
+e) Üniversite  birimlerinin  temel  iş süreçlerinin  yeterliliği  ve etkinliğinin  geliştirilmesi,
+f) Kamu  mali yönetim  ve kontrol  sistemini  ilgilendiren  hususlara  yönelik  olarak  görüş  
+verilmesi,
+g) Başkanın  uygun  görmesi  halinde  eğitim  faaliyetlerine  eğitici  olarak  iştirak  edilmesi  gibi 
+konularda  yürütülebilir.
+
+
+================================================================================
+CHUNK NO: 72
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 18
+   - page_label: 19
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+konularda  yürütülebilir.
+(3) Danışmanlık  faaliyetlerinin  birimlerden  gelen talepler  üzerine  gerçekleştirilmesi 
+esastır. Bununla  birlikte,  iç denetim  planının  hazırlanması  sürecinde  gerek kurumsal  düzeyde 
+gerekse  birim/süreç  düzeyinde  danışmanlık  faaliyetlerinin  katma  değer  yaratabileceği  alanlar  olup 
+olmadığı  araştırılır  ve birim yöneticilerinin  görüş ve önerileri  de dikkate  alınarak  danışmanlık 
+hizmeti  verilebilecek  alanlar  Üst Yöneticiye  sunulur  ve Üst Yöneticinin  önerileri  doğrultusunda  iç 
+denetim  programına  dâhil  edilir.
+(4) Danışmanlık  faaliyetlerinin  iç denetim  plan ve programı  kapsamında  yürütülmesi 
+esastır.  Program  dışı danışmanlık  hizmeti  talep edilmesi  durumunda,  Kamu  İç Denetim  Rehberi  
+çerçevesinde  Başkan  tarafından  değerlendirme  yapılır ve uygun görülmesi  halinde  konu Üst 
+Yöneticiye  sunulur.  Üst Yöneticinin  de uygun görmesi  halinde  ihtiyati  denetim  kaynağından
+
+
+================================================================================
+CHUNK NO: 73
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 18
+   - page_label: 19
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Yöneticiye  sunulur.  Üst Yöneticinin  de uygun görmesi  halinde  ihtiyati  denetim  kaynağından 
+karşılanmak  üzere  danışmanlık  hizmeti  verilmesine  karar  verilir.
+14
+
+
+================================================================================
+CHUNK NO: 74
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 19
+   - page_label: 20
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(5) Danışmanlık  faaliyetlerinin  yürütülmesi,  raporlanması  ve raporda  yer alan önerilerin 
+izlenmesi,  Kamu  İç Denetim  Rehberinde  belirtilen  esas ve usullere  göre yerine  getirilir.
+Danışmanlık  Faaliyetlerinin  Yürütülme  Esasları
+MADDE  44 - (1) Danışmanlık  faaliyetleri,  ilgili birim ile birlikte  hazırlanacak  olan 
+mutabakat  metni esas alınarak  Kamu İç Denetim  Standartlarına  uygun bir şekilde  yürütülür.  
+Raporlama  yapılmayan  danışmanlık  faaliyetlerinde  (eğitim,  proje,  toplantılarına  gözlemci  olarak 
+katılım  vb.) mutabakat  metni  düzenlenmez.
+(2) İç denetçiler  tarafından  yürütülecek  danışmanlık  faaliyetlerinde  aşağıdaki  hususlar 
+dikkate  alınır:
+a) Faaliyetin  kapsamı,  açık olarak  tanımlanmış  bir çalışma  planına  bağlı olarak  yürütülür.
+b) Faaliyet  iç denetçinin  tarafsızlığını  etkilemez.
+c) Faaliyetin  süresi, iç denetçinin  sertifika  puanlamasını  engellemeyecek,  mevcut  ve
+
+
+================================================================================
+CHUNK NO: 75
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 19
+   - page_label: 20
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+c) Faaliyetin  süresi, iç denetçinin  sertifika  puanlamasını  engellemeyecek,  mevcut  ve 
+gelecekteki  denetim  görevlerinin  sürekli  aksamasına  neden  olmayacak  şekilde  Başkan  tarafından 
+belirlenir.
+ç) Daha  önce yürütülen  danışmanlık  faaliyetleriyle  ilgili olarak  bir yıl geçmeden  aynı iç 
+denetçi  tarafından  aynı konuda  denetim  yapılamayacağı  hususunda  Başkan  ve iç denetçi  gerekli  
+özeni  gösterir.
+d) İç denetçiler  daha  önce  sorumlusu  oldukları  idari faaliyetlere  ilişkin  danışmanlık  hizmeti
+verebilir.
+e) Yürütülen  bu faaliyetlerin  sonuçları  Başkan  tarafından  üst yöneticiye  bildirir.
+(3) Danışmanlık  faaliyetleriyle  ilgili olarak  iç denetçinin  herhangi  bir icrai sorumluluğu  
+yoktur.  Danışmanlık  faaliyetleri  sonucunda  Üniversitenin  birimlerince  yapılacak  uygulamaların 
+yasal sorumluluğu  ilgili birimlerin  yöneticilerine  aittir.
+(4) Danışmanlık  görevleri  sırasında,  kurumsal  yönetim,  risk yönetimi  ve kontrol  sorunları
+
+
+================================================================================
+CHUNK NO: 76
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 19
+   - page_label: 20
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(4) Danışmanlık  görevleri  sırasında,  kurumsal  yönetim,  risk yönetimi  ve kontrol  sorunları  
+tespit  edilmesi  halinde  bu durum  Üniversite  için önemli  hale geldiğinde  Başkan  Üst Yöneticiye  ve 
+üst düzey  yöneticilere  bildirmek  zorundadır.
+(5) İç denetim  faaliyeti,  daha önce danışmanlık  hizmetleri  gerçekleştirdiği  yere güvence  
+hizmeti sunabilir,  ancak verilmiş olan bu danışmanlık  hizmetinin  niteliğinin  tarafsızlığı 
+zedelememesi  ve görevlendirme  sırasında  tarafsızlığın  sağlanması  zorunludur.
+(6) Danışmanlık  raporunda  somut ve belli bir takvime  bağlanan  önerilerin  olması  
+durumunda  ve danışmanlık  hizmeti  talep eden birimle  mutabık  kalındığı  ölçüde  görev  sonuçları  
+izlemeye  alınır. Danışmanlık  faaliyetlerine  ilişkin izleme sonuçları  da Başkan  tarafından  Üst 
+Yöneticiye  ayrıca  raporlanır.
+Yolsuzluk  ve Usulsüzlüklere  İlişkin  İncelemeler
+
+
+================================================================================
+CHUNK NO: 77
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 19
+   - page_label: 20
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Yöneticiye  ayrıca  raporlanır.
+Yolsuzluk  ve Usulsüzlüklere  İlişkin  İncelemeler
+MADDE  45 - (1) İç denetçi,  yolsuzluğa  ilişkin  delilleri  tespit  edebilecek  bilgi, beceri  ve 
+donanım  ile denetim  faaliyetini  sürdürür.  Denetim  görevi  sırasında  bir yolsuzluk  veya usulsüzlük 
+bulgusuna  ulaşıldığında,  tespitler ve elde edilen  deliller,  düzenlenen  raporla  ivedilikle  İç Denetim 
+Birimi  Başkanı  aracılığıyla  Üst Yöneticiye  intikal  ettirilir.
+(2) Üst Yönetici  veya İç Denetim  Birimi  Başkanlığına  gelen şikâyetçisi  belli ve şikâyet 
+konusu  açık olan ihbar ve şikâyetlerden,  iç denetçilerin  görev alanına  girenler  Üst Yöneticiden 
+alınacak  onay üzerine  denetim  programı  kapsamında  veya program  dışı olarak incelenir.  İç 
+denetçilerin  görev alanına  girmeyen  açık ihbar ve şikâyetler  ise incelenmek  üzere Üniversitenin 
+ilgili birimlerine  Üst Yönetici  aracılığıyla  gönderilir.  İç denetçiler,  ihbar ve şikâyetler  üzerine
+
+
+================================================================================
+CHUNK NO: 78
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 19
+   - page_label: 20
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+program  kapsamında  veya program  dışı yapılan  incelemelerde  mevcut  iç kontrol sisteminin 
+yolsuzluk  ve usulsüzlükleri  önleme  kabiliyetini  de değerlendirir.  İç Denetim  Birimi  Başkanlığına 
+doğrudan  veya Üniversitenin  diğer birimleri  aracılığıyla  intikal  eden ihbar ve şikâyetlerde  iddia 
+edilen  konular,  risk analizlerinde  dikkate  alınarak  denetim  planı ve programının  hazırlanmasında
+-A" oy15
+
+
+================================================================================
+CHUNK NO: 79
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 20
+   - page_label: 21
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+göz önünde  bulundurulur.
+(3) İç denetçilere,  personel  mevzuatı  uyarınca  disiplin  soruşturması  ile 4483 sayılı  
+Memurlar  ve Diğer Kamu Görevlilerinin  Yargılanması  Hakkında  Kanun  uyarınca  ön inceleme  
+görevi  verilemez.
+(4) Suç teşkil eden fiillere  ilişkin  raporların  yetkili  mercilere  sunulmasıyla  ilgili olarak  
+mevzuatta  öngörülen özel hükümler  saklıdır.
+Raporlama
+MADDE  46 - (1) Raporların  düzenlenmesi,  ilgili mercilere  sunulması,  sonuçların  takibi  
+ve diğer hususlar  Kamu îç Denetim  Rehberi  ve Kamu İç Denetim  Standartlan  çerçevesinde 
+yürütülür.
+(2) Raporlar;  doğru,  objektif,  açık, özlü, yapıcı,  tam olmalı  ve zamanında  sunulmalıdır.
+(3) İç denetim  raporları  İç Denetim  Birimi  Başkamn  izni olmaksızın  Kurul  hariç Kurum  
+dışına  verilemez.
+(4) Denetim  ve danışmanlık  raporlannm  sonuçlan  ve yapılan  işlemler  İç Denetim  Birimi  
+Başkanı  tarafından  izlenir.
+
+
+================================================================================
+CHUNK NO: 80
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 20
+   - page_label: 21
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Başkanı  tarafından  izlenir.
+(5) Düzenlenen  raporların  birer  örneği  İç Denetim  Birimi  Başkanlığında  saklanır.  Raporlar,  
+yetkisiz  kişilerin  erişimini  engellemek  için gizlilik  içinde  muhafaza  edilir.
+(6) Raporun  önemli  bir hata veya  eksiklik  içerdiği  sonradan  anlaşılırsa;  İç Denetim  Birimi  
+Başkanı  ilgili iç denetçi  tarafından  yazılan  düzeltilme  notunu,  dağıtım  yapılan  bütün  taraflara  iletir.
+Rapor  Çeşitleri
+MADDE  47 - (1) İç denetim  faaliyetleri  sonucunda  ilgisine  göre aşağıdaki  raporlar 
+düzenlenir;
+a) Yapılan  her türlü uygunluk,  performans,  mali, bilgi teknolojisi  ve sistem  denetimi  
+faaliyetleri  sonucunda  “Denetim  Raporu ”,
+b) Danışmanlık  faaliyetleri  kapsamında  yapılan  inceleme  ve araştırmalar  sonucunda
+“Danışmanlık  Raporu ”,
+c) Usulsüzlük  ve yolsuzluk  iddia ve tespitlerine  ilişkin olarak yapılan incelemeler 
+sonucunda  “İnceleme  Raporu ”,
+
+
+================================================================================
+CHUNK NO: 81
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 20
+   - page_label: 21
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sonucunda  “İnceleme  Raporu ”,
+ç) Başkanlığın  yıllık  faaliyet  sonuçlarını  içeren  “İç Denetim  Faaliyet  Raporu ”
+d) Kalite  Güvence  ve Geliştirme  Programı  kapsamında  dönemsel  gözden  geçirme  faaliyeti  
+sonucunda  düzenlenen  "Dönemsel  Gözden  Geçirme  Raporu"
+e) Başkanlığın  performansına  yönelik  üst yöneticiye  sunulan  "Dönemsel  Rapor"
+Denetim  Raporları
+Madde  48 - (1) Denetim  raporlarının  düzenlenmesinde  Kamu İç Denetim  Rehberi  ve 
+eklerinde  yer alan  esas ve ilkelere  uygun  hareket  edilir.  Denetim  raporunda  bulunması  gereken  temel  
+unsurlar  şunlardır;
+a) Denetimin  amacı,
+b) Denetimin  kapsamı,
+c) Denetim  yöntemi,
+ç) Tespitler  (mevcut  durum),
+d) Varsa  uygulanabilir  öneriler,
+e) Eylem  planı,
+f) Bulgunun  önem  düzeyi,
+g) Varsa  iyi uygulamalar  ve başarılı  performans.
+(2) Denetlenen  birimin  görüşleri,  uzlaşılamayan  hususlar,  denetimde  tespit  edilen  riskler,
+
+
+================================================================================
+CHUNK NO: 82
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 20
+   - page_label: 21
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+risklerin  olası etkileri,  denetim  sonuçlarına  ilişkin genel değerlendirme  ve risklerin  ortadan
+^ (i16
+
+
+================================================================================
+CHUNK NO: 83
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 21
+   - page_label: 22
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+kaldırılmasına  veya  en aza indirilmesine  yönelik  önerileri  içeren  denetim  raporu  hazırlanır.  Denetim  
+raporları  İç Denetim  Birimi  Başkanı  tarafından  Rapor  Gözden  Geçirme  Listesi  aracılığıyla  gözden  
+geçirilir.  Bu şekilde  nihai hale gelen  denetim  raporu,  İç Denetim  Birimi  Başkanı  ve denetim  ekibi  
+tarafından  imzalanır  ve İç Denetim  Birimi  Başkanı  tarafından  Üst Yöneticiye  sunulur.  Raporda  yer 
+alan yüksek  riskli bulgular  ve kritik  diğer  konular  raporun  yönetici  özetinde  ele alınır  ve raporun  
+hangi  birimlere  gönderilmesi  gerektiği  hususu  (dağıtım  listesi)  belirlenir.
+(3) Denetim  raporu,  dağıtım  listesi  doğrultusunda,  İç Denetim  Birimi  Başkanlığı  tarafından 
+hazırlanan  ve Üst Yönetici  tarafından  imzalanan  bir yazı ekinde  gereği  ve/veya  bilgi için denetlenen 
+birime/birimlere  ve Strateji  Geliştirme  Daire  Başkanlığına  gönderilir.  İç Denetim  Birimi  Başkanı,
+
+
+================================================================================
+CHUNK NO: 84
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 21
+   - page_label: 22
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+raporun  ilgili birimlere  iletilmesinden  sorumludur.
+(4) İç denetim  raporları  ile bunlar  üzerine  yapılan  işlemler,  izleme  sonuçlarının  kesinleştiği 
+tarihten  itibaren  iki ay içinde  Kurula  gönderilir.
+Denetim  Görüşü
+MADDE  49 - (1) Denetim  görüşü,  denetim  görevi  sırasında  toplanan  bilgi ve kanıtlar 
+doğrultusunda,  görevin  amaç  ve kapsamına  uygun  bir şekilde  denetim  konusu  hususlarla  ilgili genel  
+bir kanaate  ulaşılmasıdır.  Bu görüşle  denetim  alanının  genel  durumu  hakkında  bilgi sunulur.
+(2) Oluşturulan  denetim  görüşü  her durumda,  yeterli,  güvenilir  ve ilgili  bilgilere  dayanmalı 
+ve mümkün  olduğunca  olumlu  bir şekilde  ifade  edilmelidir.
+(3) Denetim  görüşü  verilebilmesi  için gerek  ön çalışmalar  gerekse  saha  çalışması  sırasında,  
+görüşün  içeriğinde  yer alan hususlarla  ilgili olarak yapılması  gereken  testlerin  belirlenmesi 
+gereklidir.
+Denetim  Görüşünün  Oluşturulmasına  İlişkin  Usul ve Esaslar
+
+
+================================================================================
+CHUNK NO: 85
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 21
+   - page_label: 22
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+gereklidir.
+Denetim  Görüşünün  Oluşturulmasına  İlişkin  Usul ve Esaslar
+MADDE  50 - (1) Denetim  görüşünün  oluşturulmasında  dikkate  alman  önemli  ölçütlerden 
+biri bulguların  sayısı  ve önem  düzeyidir.
+(2) Bulguların  önem  düzeyi;  Kritik,  Yüksek,  Orta ve Düşük  olarak  dört şekilde  ele alınır.  
+Bu çerçevede  denetlenen bir  faaliyet  sonucu  tespit  edilen;
+a) Kritik  önem düzeyli  bulgu:  Faaliyetin  yürütülmesini  veya istenilen  çıktı, ürün ya da 
+hizmetin  sunulmasım  engelleyecek  tüm bulgular  bu grupta değerlendirilir.  Risk ve etkileri  
+değerlendirildiğinde,  can kayıplarına  veya bedensel  bütünlüğe  zarar vermesi  ya da Üniversitenin 
+faaliyetlerini  durdurması  veya büyük  mali kayıplara  neden  olacak  bulgulardır.
+b) Yüksek  önem düzeyli  bulgu:  Faaliyetin  yürütülmesinde  uzun süreli gecikmelere  ve 
+ciddi sorunlara  neden olabilecek  bulgular bu grupta değerlendirilir.  Risk ve etkileri
+
+
+================================================================================
+CHUNK NO: 86
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 21
+   - page_label: 22
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ciddi sorunlara  neden olabilecek  bulgular bu grupta değerlendirilir.  Risk ve etkileri  
+değerlendirildiğinde,  Üniversitenin  faaliyetlerini  sekteye  uğratacak  veya önemli  mali kayıplarla  
+karşılaşmasına  neden  olacak  bulgulardır.
+c) Orta önem  düzeyli  bulgu:  Faaliyetin  çıktılarının  kalitesini  etkileyen,  yürütülmesinde 
+gecikmelere  ve sorunlara  neden  olabilecek  bulgular  bu grupta  değerlendirilir.
+ç) Düşük  önem  düzeyli  bulgu:  Faaliyetin  genel işleyişini  etkilemeyen  ancak  daha iyi bir 
+hizmet  sunulmasım  sağlamaya  yönelik  bulgular  bu grupta  değerlendirilir.
+(3) Üniversitede  denetlenen  süreç veya faaliyetler  için verilecek  denetim  görüşü;  1-5 
+kodları  ile aşağıda  belirtilen  şekilde  sınıflandınlacaktır.  (1 - Başlangıç,  2 - Sınırlı  / Sistematik  
+Olmayan,  2 - Gelişime  açık, 4 - Yeterli,  5-Gelişmiş)
+1- Baslansıc:
+Açıklama:  İç kontrole olan ihtiyacın farkına varılmıştır.  Risk ve kontrollerin
+
+
+================================================================================
+CHUNK NO: 87
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 21
+   - page_label: 22
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+1- Baslansıc:
+Açıklama:  İç kontrole olan ihtiyacın farkına varılmıştır.  Risk ve kontrollerin 
+belirlenmesine  yönelik  gelişi  güzel  ve kişilere  bağlı  bir yaklaşım  söz konusudur.  Kontrol  zayıflıkları 
+belirlenmemektedir.  Kontrollere  ilişkin sorumlulukların  belirlenmesinde  yetersizlikler 
+bulunmaktadır.
+Kurallar:  Denetlenen  faaliyetle  ilgili olarak  “1- Başlangıç ” değerlendirmesi  yapılabilmesi
+17
+
+
+================================================================================
+CHUNK NO: 88
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 22
+   - page_label: 23
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+için, “iki veya daha  fazla  kritik  önem  düzeyine  sahip  bulgunun ” olması  gerekir.
+2- Sınırlı  / Sistematik  Olmayan:
+Açıklama: Kontroller uygulanmakla  birlikte, dokümantasyonunda  eksiklikler 
+bulunmaktadır.  Kontrollerin  çalışması,  ilgili kişilerin  bilgi ve motivasyonlarına  bağlı olarak  
+değişmektedir.  Kontrollerin  etkililiği  değerlendirilmemektedir.  Kontrol  zayıflıkları  tam olarak  
+ortaya  konamamakta  ve öncelik  sırasına  göre çözüme  kovuşturulmamaktadır.  Kontrollere  ilişkin  
+sorumluluklar  kısmen  belirlenmiştir.
+Kurallar: Denetlenen  faaliyetle ilgili olarak “2-Sımrlı/Sistematik  Olmayan ” 
+değerlendirmesi  yapılabilmesi  için, “bir kritik  veya iki ve daha fazla yüksek  önem  düzeyine  sahip  
+bulgunun ” olması  gerekir.
+3- Gelişime  acık
+Açıklama:  Kontrol  uygulanmakta  ve yeterli  düzeyde  dokümante  edilmektedir.  Düzenli  
+olarak  kontrollerin  çalışıp  çalışmadığı  kontrol  edilmektedir.  Ancak  bu değerlendirme  süreci  yazılı
+
+
+================================================================================
+CHUNK NO: 89
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 22
+   - page_label: 23
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+olarak  belirlenmemiştir.  Yönetim,  büyük  ölçüde  kontrolleri  takip  edebilmekte,  ancak  gözden  kaçan  
+hususlar  olabilmektedir.  Çalışanlar,  kontrollerle  ilgili sorumluluklarının  farkındadır.
+Kurallar:  Denetlenen  faaliyetle  ilgili olarak “3-Gelişime  açık” değerlendirmesinin 
+yapılabilmesi  için, “kritik  önem  düzeyine  sahip bulgu  bulunmaması  ve en fazla bir yüksek  önem  
+düzeyine  sahip  bulgunun  olması ” gerekir.
+4- Yeterli
+Açıklama:  Etkili bir risk yönetimi  ve iç kontrol  ortamı  bulunmaktadır.  Yazılı olarak  
+tanımlanmış  ve düzenli  olarak  yürütülen  bir kontrol  değerlendirme  süreci  bulunmaktadır.  Yönetim  
+kontrollerle  ilgili sorunları  hızla tespit  ederek  öncelik  sırasına  uygun  ve tutarlı  bir şekilde  çözüme  
+kovuşturabilmektedir.
+Kurallar:  Denetlenen  faaliyetle  ilgili olarak  “4 - Yeterli ” değerlendirmesinin  yapılabilmesi 
+için “kritik,  yüksek  veya  orta düzeyde  bir bulgunun  bulunmaması ” gerekir.
+5- Gelişmiş
+
+
+================================================================================
+CHUNK NO: 90
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 22
+   - page_label: 23
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+için “kritik,  yüksek  veya  orta düzeyde  bir bulgunun  bulunmaması ” gerekir.
+5- Gelişmiş
+Açıklama:  Risk ve kontrol  değerlendirme  faaliyetleri,  kurum  düzeyinde  birbirine  entegre  
+olarak yürütülmektedir.  Kontroller  sürekli olarak takip edilmekte  ve BT destekli olarak  
+yürütülmektedir.  Sorun  tespit edilen  alanlarda  kök neden  analizleri  yapılarak  gerçekçi  çözümler 
+üretilebilmektedir.  Çalışanlar  kontrollerin  geliştirilmesi  ve iyileştirilmesi  sürecine  aktif olarak  
+katılmaktadır.
+Kurallar: Denetlenen  faaliyetle  ilgili olarak “5 - Gelişmiş ” değerlendirmesinin 
+yapılabilmesi  için, “her hangi  bir bulgunun  bulunmaması ” gerekir.
+(4) Bir faaliyet  tüm Üniversite  çapında  yürütülüyorsa  ve denetim  görevi kapsamında 
+denetlenmişse,  buna ilişkin  görüş verilebilmesi  için tüm birimlerin  genel durumunu  yansıtacak 
+düzeyde  bir ömeklem  seçilmiş  olmasına  bağlıdır.  Aksi halde  yanıltıcı  görüş  verilmesi  söz konusu
+
+
+================================================================================
+CHUNK NO: 91
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 22
+   - page_label: 23
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+olabilecektir.  Kaynak  yetersizliğinden  dolayı genel durumunu  yansıtacak  ölçüde ömeklem 
+yapılamıyorsa,  bu durumda  verilen görüşün,  sadece test uygulanan  birimlerle  sınırlı olduğu  
+belirtilecektir.
+Danışmanlık  ve İnceleme  Raporları
+MADDE  51 - (1) Aşağıdaki  hallerde  danışmanlık  ve inceleme  raporu  düzenlenir:
+a) Danışmanlık  Raporu:  Danışmanlık  faaliyetleri  kapsamında  yapılan  incelemeler  ve 
+araştırmalar.
+b) İnceleme  Raporu:  Usulsüzlük  ve yolsuzluk  iddia  ve tespitlerine  ilişkin  olarak  yapılan 
+incelemeler.
+(2) Danışmanlık  faaliyetlerinin  yürütülmesinde  ve raporlarının  düzenlenmesinde  Kamu  İç 
+Denetim  Rehberinde  belirtilen esas ve ilkelere  uyulur.
+(3) Usulsüzlük  ve yolsuzluklara  ilişkin  olarak  düzenlenen  inceleme  raporlarında  aşağıdaki
+°v18
+
+
+================================================================================
+CHUNK NO: 92
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 23
+   - page_label: 24
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+hususlara  yer verilir;
+a) Usulsüzlük  ve yolsuzluklara  ilişkin  bulgular,  deliller  ve diğer  bilgiler,
+b) Bilgisine  başvurulanların  açıklamaları,
+c) Usulsüzlük  ve yolsuzluğun  niteliği  ve boyutu,
+ç) Tespit  ve değerlendirmeler  çerçevesinde  varılan  sonuçlar,  tavsiyeler,  alınması  gereken  
+önlemler  ve yapılması  gereken  diğer  işlemler,
+ç) İnceleme  konusuyla  bağlantılı  olarak tespit edilen ve denetim programının 
+hazırlanmasında  değerlendirilebilecek  risk ve kontrol  bilgileri  ile bunlara  ilişkin denetçi  görüşü.
+İç Denetim  Faaliyet  Raporu
+MADDE  52 - (1) Her yılın sonunda  iç denetim  faaliyetleri  ile ilgili yıllık iç denetim 
+faaliyet  raporu  düzenlenir.
+(2) Düzenlenen  iç denetim  faaliyet  raporu  Üst Yöneticiye  sunulur,  bu rapor  her yıl Şubat  
+ayı sonuna  kadar  Kurula  gönderilir.
+(3) İç Denetim  Birimi  Başkam,  İç Denetim  Birimi  Başkanlığının  performansına  ilişkin
+
+
+================================================================================
+CHUNK NO: 93
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 23
+   - page_label: 24
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(3) İç Denetim  Birimi  Başkam,  İç Denetim  Birimi  Başkanlığının  performansına  ilişkin 
+olarak  Üst Yöneticiye  dönemsel  olarak  rapor sunar. Dönemsel  raporlama  yılda bir defa yapılır.  
+Dönemsel  rapor  sıklığı  Üst Yöneticinin  beklentisine  bağlı olarak  arttırılabilir.
+(4) Yıllık  iç denetim  faaliyet  raporu  ile dönemsel  raporların  düzenlenmesi  ve sunulmasında 
+Kamu  İç Denetim  Standartlarına  ve Kamu  İç Denetim  Rehberinde  yer alan esas ve ilkelere  uyulur.
+Raporların  gözden  geçirilmesi
+MADDE  53 - (1) Düzenlenen  raporlar  ilgili birimlere  gönderilmeden  önce Başkan  
+tarafından  gözden  geçirilir.  Bu gözden  geçirmede;  sadece  mevzuata  açık aykırılık  ve maddi  hata ile 
+diğer  biçimsel  eksikliklere  bakılır.
+(2) Başkan  tarafından  yukarıdaki  hususlarla  ilgili yapılan  tespitler  gerekli  değişiklik  ve 
+düzeltmeler  yapılmak  üzere ilgili iç denetçiye/denetim  ekibine  bildirilir.  İç denetçi/denetim  ekibi
+
+
+================================================================================
+CHUNK NO: 94
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 23
+   - page_label: 24
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+verilen  süre içerisinde  gerekli  düzeltmeleri  yaparak  raporu  Başkanlığa  sunar.
+ONUNCU  BÖLÜM
+İç Denetim  Kaynaklarının  Yönetimi  ve Geliştirilmesi
+İç Denetim  Kaynaklarının  Yönetimi
+MADDE  54 - (1) İç denetim  için gerekli  kaynakların  yönetiminden  Başkan  sorumludur.  
+Başkan,  Başkanlığın  bütçesini  yönetir  ve denetimin  ihtiyacı  olan uygun  niteliklere  sahip  personel 
+de dâhil tüm kaynaklan  temin  eder.
+Mesleki  Yeterliliğin  Geliştirilmesi  ve Meslek  İçi Eğitim
+MADDE  55 - (1) Üst Yönetici  ve Başkan,  iç denetçilerin  Yönetmeliğin  31 ve 32’nci 
+maddelerinde  belirtilen  mesleki  nitelikleri  geliştirmeleri  için uygun  ortamı  hazırlar.  Bu amaçla 
+yönetmelikte  belirlenen  bilgi, yetenek  ve niteliklerin  oluşturulması  yanında,  her türlü eğitim, 
+konferans,  seminer  gibi mesleki  faaliyetlere  katılma  konusunda  iç denetçilere  gerekli olanak 
+sağlanır.
+(2) İç denetçilere,  üç yıllık süreçte  asgari yüz saat meslek  içi eğitim  sağlanır.  Üç yıllık
+
+
+================================================================================
+CHUNK NO: 95
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 23
+   - page_label: 24
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(2) İç denetçilere,  üç yıllık süreçte  asgari yüz saat meslek  içi eğitim  sağlanır.  Üç yıllık 
+süreçte  sağlanacak  meslek  içi eğitim,  mümkün  olduğunca  her yıla dağıtılır.  Meslek  içi eğitim  
+konularında,  Üniversitedeki  gelişme  ve değişmelere  yönelik  hususlara  da yer verilmelidir.  Meslek 
+içi eğitimin  Kurul koordinatörlüğünde  verilen  otuz saati dışında  kalan süresi, Kurulun  eğitim 
+konusundaki  düzenlemelerine  riayet edilerek,  Üniversitenin  ihtiyaçlarına  göre Başkanlıkça 
+programlanır.
+(3) Başkanlık,  gerektiğinde  mesleki  kuruluşlar,  üniversiteler  ve bilimsel  alanda  etkinlikte
+19
+e>
+
+
+================================================================================
+CHUNK NO: 96
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 24
+   - page_label: 25
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+bulunan  diğer kurum ve kuruluşlarla  işbirliği yapmak  suretiyle  kurs, seminer  ve benzeri  
+etkinliklerde  bulunur.  Meslek  içi eğitim  etkinliklerine  iç denetim  plan ve programında  yer verilir.
+(4) Meslek  içi eğitim  programları,  en az bir ay önce iç denetçilere  duyurulur.
+(5) Başkanlık  tarafından  iç denetçi  olarak  göreve  başlayanlara  bir haftadan  az olmamak 
+üzere  intibak  eğitimi  verilir.
+(6) İç denetçilerin  bilgi teknolojileri  denetimi  gibi ihtiyaç duyacakları  özel ihtisas  
+alanlarında,  gerekli  bilgi,  beceri  ve deneyime  sahip  uzmanlardan  yardım  ve eğitim  almaları  sağlanır.
+(7) Başkan  iç denetçilerin  uluslararası  iç denetçi  sertifikalarına  sahip  olmaları  için gerekli  
+imkan  ve kurumsal  altyapıyı  oluşturur.
+Kıdem  Sırasının  Belirlenmesi
+MADDE  56 - (1) Başkan  tarafından,  iç denetçilerin  sertifika  derecelerinde  değişikliğin 
+meydana  geldiği  yılsonunda  kıdem  sırası  yeniden  belirlenerek  iç denetçilere  duyurulur.
+
+
+================================================================================
+CHUNK NO: 97
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 24
+   - page_label: 25
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+meydana  geldiği  yılsonunda  kıdem  sırası  yeniden  belirlenerek  iç denetçilere  duyurulur.
+(2) İç denetçilerin  kıdemlerinin  belirlenmesinde,  iç denetçilik  mesleğinde  fiilen geçirilen  
+süreler dikkate  alınır. Kıdemin  belirlenmesinde  önceki mesleklerde  geçirilen  süreler dikkate  
+alınmaz.  Yönetmeliğin  30 uncu  maddesine  göre sertifika  düzeyi  yükselmiş  iç denetçiler,  her halde  
+kıdemli  sayılır. Sertifika  derecesinin  eşit olması halinde,  iç denetçilik  süresi fazla olan; iç 
+denetçilikte  geçen  sürelerin  de eşit olması  halinde,  son alman  sertifika  puanı  yüksek  olan iç denetçi  
+kıdemli  sayılır.
+(3) Üç yıldan  daha uzun süre iç denetim  birimi  başkanlığı  yapmış  iç denetçi,  başkanlık 
+görevinden  sonra, iç denetim  biriminde  en kıdemli  sayılır. İç denetim  biriminde  birden fazla  
+başkanlık  yapmış  iç denetçi  bulunması  halinde,  daha uzun süre başkanlık  yapan daha kıdemli  
+sayılır.
+îç Denetçilikte  Derecelendirme
+
+
+================================================================================
+CHUNK NO: 98
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 24
+   - page_label: 25
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sayılır.
+îç Denetçilikte  Derecelendirme
+MADDE  57 - (1) Kamu  iç denetçi  sertifikası;  Yönetmeliğe  ve Kurulun  konuya  ilişkin  
+düzenlemeleri,  kıdem  ve kadro şartları  yanında  iç denetçinin  yeterliliği,  mesleki  bilgi birikimi  ve 
+temsil yeteneği  dikkate  alınarak  Üst Yöneticinin  teklifi ile Kurul tarafından  derecelendirilir. 
+Sertifika  derecelendirmesine  ilişkin puanlama  Başkanın  teklifi üzerine  üst yönetici  tarafından 
+yapılır. Kıdem sırası ve kadro şartlarının  oluşmasına  rağmen derecelendirme  yapılmaması 
+durumunda,  buna  ilişkin  gerekçeler  ilgili iç denetçiye  ve Kurula  yazılı  olarak  bildirilir.
+Sertifika  Derecesine  Uygun  Görevlendirme
+MADDE  58 - (1) Başkan,  kurumun  iç denetim  faaliyetlerini,  birim konu ve süreçleri  
+itibariyle  sınıflandırır.  İç denetçilerin  denetim  alan ve uygulamalarının  değiştirilmesi  esas olmakla 
+birlikte  bir iç denetçiye  3 yıl üst üste aynı denetlenen  birimde  görev  verilemez.
+
+
+================================================================================
+CHUNK NO: 99
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 24
+   - page_label: 25
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+birlikte  bir iç denetçiye  3 yıl üst üste aynı denetlenen  birimde  görev  verilemez.
+(2) İç denetçiler,  çalışma  süresince  edindikleri  tecrübe,  mesleki  bilgi birikim  ile sertifika  
+derecelerine  uygun  olarak  görevlendirilir.
+(3) A-l ve A-2 sertifika  düzeyindeki  iç denetçiler;  uygunluk  denetimi,  mali denetim  ve 
+sistem  denetimi  yaparlar.
+(4) A-3 ve A-4 sertifika  düzeyindeki  iç denetçiler  ilave olarak,  performans  denetimi  ve 
+denetimin  gözetimi  faaliyeti  yürütürler.
+(5) Bilgi teknolojileri  denetimi,  bu konuda  özel uzmanlığı  olan veya bu alanda  yeterli  
+sürede  eğitim  alan iç denetçiler  tarafından  yürütülür.
+(6) Danışmanlık  faaliyeti,  Yönetmeliğin  30. Maddesine  göre A-2 sertifika  düzeyine 
+yükselmiş  iç denetçiler  ile A-3 ve A-4 sertifika  düzeyindeki  iç denetçiler  tarafından  yürütülür.
+(7) Yeterli  sertifika  düzeyine  sahip İç Denetçi  bulunmaması  halinde,  denetimin  gözetimi
+
+
+================================================================================
+CHUNK NO: 100
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 24
+   - page_label: 25
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(7) Yeterli  sertifika  düzeyine  sahip İç Denetçi  bulunmaması  halinde,  denetimin  gözetimi 
+faaliyeti,  Başkan  veya yönetmeliğin  30 uncu maddesine  göre A-2 sertifika  düzeyine  yükselmiş  İç 
+Denetçiler  tarafından  da yürütülebilir.
+20
+✓
+
+
+================================================================================
+CHUNK NO: 101
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 25
+   - page_label: 26
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(8) Yapılacak  denetim  faaliyetinin  birden  fazla  alanı  kapsaması  veya  görev  alanının  birden 
+fazla iç denetçinin  çalışmasını  gerektirecek  ölçüde  geniş olması  halinde  denetim,  farklı sertifika 
+derecesine  sahip  iç denetçilerden  oluşan  bir grup tarafından  ifa edilebilir.
+(9) Birden  fazla kamu idaresini  ilgilendiren  konularda  iç denetçilerin  yapacakları  ortak  
+çalışmalarda  Kurulun  düzenlemelerine  uyulur.
+Kalite  Güvence  ve Geliştirme  Programı
+MADDE  59 - (1) Başkan tarafından,  iç denetim  faaliyetlerinin  tüm yönleriyle 
+değerlendirilmesi  ile iç denetimin  tanımına,  KİDS ve Meslek  Ahlak Kurallarına  uygun  olarak 
+yürütülmesinin  sağlanması  için kalite güvence  ve geliştirme  programı  oluşturulur.  Bu programın 
+oluşturulmasında  ve uygulanmasında  İç Denetim  Kalite  Güvence  ve Geliştirme  Programı  ile Kamu 
+İç Denetim  Kalite  Güvence  ve Geliştirme  Rehberi  esas alınır.  Kalite  güvence  ve geliştirme  programı
+
+
+================================================================================
+CHUNK NO: 102
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 25
+   - page_label: 26
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ve güncellemeleri  Rektör  onayıyla  yürürlüğe  konulur  ve iç denetçiler  ile ilgili  taraflar  kalite  güvence 
+ve geliştirme  programı  hakkında  bilgilendirilir.  Üst Yönetici,  Başkan  ve iç denetçilerin  kalite 
+güvence  ve geliştirme  programına  uymaları  zorunludur.
+(2) Kalite güvence  ve değerlendirme  süreci iç ve dış değerlendirmelerden  oluşur. İç 
+değerlendirmeler,  iç denetim  faaliyetinin  performansının  sürekli  izlenmesi  ve dönemsel  gözden  
+geçirme  olmak  üzere iki kısımdan  oluşur.  Dış değerlendirmeler,  Kurul tarafından  beş yılda bir 
+yürütülen  değerlendirmelerdir.
+(3) Kalite güvence  ve geliştirme  programının  iç değerlendirmelere  ilişkin bölümünde 
+sürekli  izleme  ve dönemsel  geçirme  çalışmalarının  kapsamına,  değerlendirmeyi  yapacak  kişilere 
+ilişkin  niteliklere,  yürütülecek  işlemlere,  sonuçların  raporlanması  ve izlenmesine  ilişkin  süreçlere
+
+
+================================================================================
+CHUNK NO: 103
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 25
+   - page_label: 26
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yer verilir.  Ayrıca,  programda iç değerlendirmeye  esas olacak  performans  göstergeleri  ve hedefleri 
+de yer alır. Başkan,  hem iç hem de dış değerlendirmelerin  kapsamı  ve sıklığı,  potansiyel  çıkar 
+çatışmaları  da dâhil olmak  üzere, değerlendirenlerin  ya da değerlendirme  ekibinin  nitelikleri  ve 
+bağımsızlığı,  değerlendirenlerin  vardığı  sonuçları  ve eylem planlarını  içeren iç değerlendirme 
+çalışmalarının  sonuçlarını  Üst Yöneticiye  ve Kurula  yılda en az bir defa yazılı olarak  raporlar.  
+Başkan  tarafından,  yıllık iç denetim  faaliyet  raporunda  kalite güvence  ve geliştirme  programı 
+çerçevesinde  yapılan  değerlendirme  sonuçlarına  yer verilir.  İç ve dış değerlendirmelerin  İçDen  
+kullanılarak  yapılması  esastır.
+(4) Dönemsel  gözden geçirmeler,  Başkanın  görevlendireceği  kıdemli  bir iç denetçi  
+tarafından  yürütülür.  Ancak,  aym iç denetçi  tarafından  iki yıl üst üste dönemsel  gözden  geçirme
+
+
+================================================================================
+CHUNK NO: 104
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 25
+   - page_label: 26
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+faaliyeti  yürütülmemesi  esastır.  Yıllık iç denetim  programlarının  hazırlanması  sırasında  toplam  
+denetim  kaynağının  en az on iş günü dönemsel  gözden  geçirme  faaliyetlerine  ayrılır.  Dönemsel  
+gözden  geçirme  raporları  ile eylem  planının  bir örneği  bir ay içerisinde  Kurula  gönderilir.
+(5) İç denetimin  etkinliğinin  artırılması  amacıyla,  denetim  faaliyetleri,  denetlenen  
+birimlerde  yaptırılacak  anketlerle  değerlendirilebilir.
+(6) Başkan,  dış değerlendirme  sonuçlarını  dönemsel  raporlar  aracılığıyla  Üst Yöneticiye 
+de sunmak  zorundadır.  Başkan  gerek iç değerlendirme  gerekse  de dış değerlendirme  sonucunda 
+belirlenen  iyileştirmeye  açık alanlarla  ilgili gerekli  tedbirleri  alır.
+ONBİRİNCİ  BÖLÜM  
+Diğer  Hususlar
+Kurul  İle İlişkiler
+MADDE  60 - (1) İç denetim  faaliyetlerinde  Kurul  tarafından  belirlenen  standart,  rehber, 
+esas ve usuller  ile diğer  düzenlemelere  uyulur.
+
+
+================================================================================
+CHUNK NO: 105
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 25
+   - page_label: 26
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+esas ve usuller  ile diğer  düzenlemelere  uyulur.
+(2) İç denetim  sisteminin  bağımsızlığının  sağlanması  ve sürdürülmesi,  bilgi paylaşımı, 
+görüş ayrılıklarının  giderilmesi,  iyi uygulama  örneklerinin  yaygınlaştırılması,  Kurul kararlarının
+21
+
+
+================================================================================
+CHUNK NO: 106
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 26
+   - page_label: 27
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+uygulanmasının  izlenmesi  gibi konularda  Kurulla  işbirliği  sağlanır.
+Dış Denetim  ve Diğer  Denetim  Birimleri  île İlişkiler
+MADDE  61 - (1) Denetimin  planlanması  ve koordinasyonu,  mükerrer  denetimin 
+önlenmesi,  denetimde  verimliliğin  artırılması,  ortak eğitim  olanakları  gibi hususlar  ile karşılıklı 
+olarak denetim  faaliyetine  ilişkin bilgi ve belgelere  ulaşılması  konularında,  Başkan  tarafından 
+Kurulun  belirlediği  politikalar  çerçevesinde  dış denetimle  gerekli  işbirliği  sağlanır.
+(2) Başkanlık  ve Sayıştay  arasındaki  ilişkiler  aşağıdaki  çerçevede  yürütülür:
+a) Sayıştay  ile Başkanlık  arasındaki  iletişim  ve koordinasyon  Başkan  tarafından  sağlanır.
+b) İçeriklerinin  hassas  olma  ihtimali  nedeniyle,  çalışma  kâğıtları  ancak  özel olarak  Sayıştay  
+Başkanı  tarafından  talep edildiği  takdirde  Başkanlıkça  Sayıştay ’a verilir.
+c) Başkanlık  tarafından  hazırlanarak  Üst Yöneticiye  sunulan  raporların  sorumluluğu  Üst
+
+
+================================================================================
+CHUNK NO: 107
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 26
+   - page_label: 27
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+c) Başkanlık  tarafından  hazırlanarak  Üst Yöneticiye  sunulan  raporların  sorumluluğu  Üst 
+Yöneticiye  aittir.  Sayıştay  tarafından  bu tür raporlara  erişim  talep  edildiğinde  bu talep  doğrudan  Üst 
+Yöneticiye  yönlendirilir.
+(3) Başkan,  Kurul  tarafından  belirlenen  ilkeler  çerçevesinde,  teftiş,  soruşturma,  denetim  ve 
+benzer  faaliyetleri  yürüten  birimler  ile gereken  işbirliğini  sağlar.
+Yurt  İçi ve Yurt  Dışında  İnceleme,  Eğitim  ve Akademik  Çalışma
+MADDE  62 - (1) İç denetçilere,  mesleki  ve bilimsel  gelişmeleri  takip  etmek  ve kendilerini 
+geliştirmek  amacıyla,  Üniversite  tarafından  uygun görülecek  konularda  yurtiçi ve yurtdışında 
+lisansüstü  eğitim,  inceleme,  araştırma  ve staj yaptırılabilir.
+(2) İç denetçiler,  yurtdışı  lisansüstü  eğitim hariç diğer görevlendirmelerde  yurtiçine 
+dönüşlerinde  inceleme  ve staja ilişkin  3 ay içerisinde  bir rapor  hazırlarlar.
+Kimlik  Belgesi
+
+
+================================================================================
+CHUNK NO: 108
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 26
+   - page_label: 27
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+dönüşlerinde  inceleme  ve staja ilişkin  3 ay içerisinde  bir rapor  hazırlarlar.
+Kimlik  Belgesi
+MADDE  63 - (1) İç denetçilere;  üst yönetici  tarafından  imzalanan,  unvan  ve yetkilerini 
+belirten  bir kimlik  belgesi  verilir.
+Haberleşme,  Yazışmalar  ve Dosya  Düzeni
+MADDE  64 - (1) Denetim  görevinin  yürütülmesi  sürecindeki  ön çalışma,  testlerin  
+uygulanması  (saha  çalışması),  bulguların  paylaşılması,  hariç  olmak  üzere,  tüm yazışmaların  Başkan 
+aracılığı  ile yapılması  esastır.
+(2) İç denetçilere  gelen  ve giden  yazılar  ve evrak  kayıt  işlemleri  UDOS  ortamında  yapılır,
+(3) Başkanlık  tarafından  yapılan  kurum  içi ve dışı yazışmalar  elektronik  belge yönetim 
+sistemi  üzerinden  yürütülür.  Ancak  görevin  gereği elektronik  belge yönetim  sistemine  girmesi  
+uygun  görülmeyen  yazılar  için ayrıca  gelen-giden  evrak  kayıt  defteri  Başkanlık  bünyesinde  tutulur.
+
+
+================================================================================
+CHUNK NO: 109
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 26
+   - page_label: 27
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(4) Başkanlık  ile iç denetçiler  arasındaki  yazışmalar  elektronik  ortamda  yapılabilir.  İç 
+Denetçilerin  yazışmalarında  görevin  gereği elektronik  belge yönetim  sistemine  girmesi  uygun 
+görülmeyen  yazıları  içinde  gelen-giden  evrak  kayıt  defteri  Başkanlık  bünyesinde  tutulur.
+(5) İç denetçiler,  Başkanlık  ve diğer birimlerle  yaptıkları  yazışmalarda,  yazılarına 
+verecekleri  sayıların  önüne  sertifika  numaralarını  yazarlar.
+(6) Denetim  süreçlerine  ait iç denetçilerce  yapılan  çalışma  sonuçları  Başkanlık  bünyesinde 
+Çalışma  Dosyasında  muhafaza edilir.
+Kamu  İç Denetim  Yazılımı
+MADDE  65 - (1) İç denetim  faaliyetleri  ile denetimin  yönetimi  faaliyetleri,  Kurul  
+tarafından  hazırlanan  denetim  yazılımı  (İçDen)  vasıtasıyla  yürütülebilir.
+(2) Başkan  ve iç denetçiler  hassas  bilgi ve kişisel  verilerin  güvenliğine  ilişkin  gereken  
+önlemleri  alırlar.
+
+
+================================================================================
+CHUNK NO: 110
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 27
+   - page_label: 28
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Yönergenin  Gözden  Geçirilmesi
+MADDE  66 - (1) Bu Yönerge,  Başkanlık  tarafından  her yıl gözden  geçirilir.  İhtiyaçlar 
+doğrultusunda  yapılan  değişiklikler  Kurulun  uygun  görüşü  alınarak  yürürlüğe  konulması  için Üst 
+Yöneticiye  sunulur.
+Hüküm  Bulunmayan  Haller
+MADDE  67 - (1) Bu Yönergede  hüküm  bulunmayan  hallerde,  Kanun,  Yönetmelik  ve 
+Kurul  tarafından  çıkarılmış  genel  düzenlemelere  uyulur.
+Yürürlükten  Kaldırılan  Hükümler
+MADDE  68 - (1) Uludağ  Üniversitesi  Senatosunun  05.02.2015  tarih ve 2015-03  sayılı  
+oturum kararıyla  yürürlüğe  konulan  “Uludağ  Üniversitesi  İç Denetim  Birim Yönergesi ” 
+yürürlükten  kaldırılmıştır.
+Yürürlük
+MADDE  69 - (1) İç denetçiler  tarafından  imzalanan  bu yönerge  kurulun  uygun  görüşü  
+alındıktan  sonra  Üst Yöneticinin  onayı  ile yürürlüğe  girer.
+Yürütme
+MADDE  70 - (1) Bu Yönerge  hükümleri,  Üst Yönetici  tarafından  yürütülür.
+ErcatffcONGUR  
+İç Denetçi  - 2047Osman  METİNDOĞAN  
+İç Denetçi  -1734
+
+
+================================================================================
+CHUNK NO: 111
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2022-08-24T06:53:10+00:00
+   - moddate: 2025-11-07T10:53:04+00:00
+   - source: 191126.cleaned.pdf
+   - total_pages: 28
+   - page: 27
+   - page_label: 28
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ErcatffcONGUR  
+İç Denetçi  - 2047Osman  METİNDOĞAN  
+İç Denetçi  -1734
+..../ 08/2022
+Prof.  Dr. A. Saim  KILAVUZ  
+Rektör
+23
+
+

@@ -1,0 +1,217 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2008-05-07T12:32:52+00:00
+   - moddate: 2008-05-07T15:34:57+04:00
+   - author: Sinem
+   - title: Microsoft Word - RIT-PR-07.doc
+   - source: 67840.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+SİSTEM PROSEDÜRLERİ 
+ 
+ Doküman Adı: Basımevi Müdürlüğü İş Kabul Prosedürü  
+Doküman Kodu:   
+RİT-PR-07  Ilk Yayın Tarihi: 
+13.12.2006 Revizyon No: 
+03 Revizyon Tarihi: 
+24.07.2007 Sayfa 
+ 1 / 2 
+ 
+ 
+©2007 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+ 
+1. AMAÇ: Basımevi Müdürlüğünce gerçekleştir ilen tüm işlerin kontrol altı na alınarak etkin 
+ve verimli yönetilmesini sağlamaktır.  
+ 
+2. KAPSAM:  Basımevi Müdürlüğü tarafından g erçekleştirilecek işleri kapsar . 
+ 
+3. SORUMLULAR:  Basımevi Müdürlüğünden ürün ve hizm et talep eden tüm birimler.  
+ 
+4. TANIMLAR: 
+• MAC Bilgisayar:  Baskı öncesi her türlü renkli tasarımların hazırlığının yapıld ığı 
+bilgisayardır. 
+ 
+• PC Bilgisayar:  Tek renk baskı tasarımlarının hazırlığının yapıldığı bilgisaya rdır.(örn.; 
+kitap, kartvizit, davetiye, evrak ve benzeri) 
+ 
+• Renkli Basım:  Basım tekniğine göre işler dört renk baskı uygulamasıyla
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2008-05-07T12:32:52+00:00
+   - moddate: 2008-05-07T15:34:57+04:00
+   - author: Sinem
+   - title: Microsoft Word - RIT-PR-07.doc
+   - source: 67840.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+• Renkli Basım:  Basım tekniğine göre işler dört renk baskı uygulamasıyla 
+oluşmaktadır. Bu renkler C (mavi ), M (magente), K (siyah), Y (s arı) dır. 
+ 
+5. İLGİLİ DOKÜMANLAR :      
+5.1 Dış Kaynaklı Dokümanlar : 
+• Yok 
+ 
+5.2 İç Kaynaklı Dokümanlar : 
+• RİT- FR-BSM–01 İş Emri Formu 
+• RİT- FR-BSM–08 İş Programlama Listesi 
+  
+6. UYGULAMA: 
+ 
+6.1. BASIMEVİ MÜDÜRLÜĞÜNE İLGİLİ BİRİMLERCE BASILMAK ÜZERE GELE N 
+İŞLERİN DEĞERLENDİRİLMESİ  Basılması talep edilen işler e ğitim amacına yönelik yayın ise i lgili yayın kurullarınca 
+onaylanması gerekmektedir.  Basım talebinde bulunanlar önce likle ilgili işe ait ödenek duru munu tespit etmelidirler. 
+Tasarruf tedbirleri kapsamına dahil olup olmadığını ilgili biri mlerce görüştükten sonra talepte 
+bulunmalıdırlar. Tasarruf tedbirl eri kapsamındaki işlerin basım ı yapılamaz. 
+ Basımevi Müdürlüğüne basım talebinde bulunan ilgililer İş Emri Formu’nu  (RİT- FR-BSM-
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2008-05-07T12:32:52+00:00
+   - moddate: 2008-05-07T15:34:57+04:00
+   - author: Sinem
+   - title: Microsoft Word - RIT-PR-07.doc
+   - source: 67840.pdf
+   - total_pages: 2
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Basımevi Müdürlüğüne basım talebinde bulunan ilgililer İş Emri Formu’nu  (RİT- FR-BSM-
+01) varsa talebe ait üst yazısı ile birlikte işe ait ilgili iş örne kleri, CD ve disketler ile her türlü 
+dokümanları teslim etmeleri gerekmektedir.  Basımevi Müdürlüğü İş Emri Formu’na  (RİT-FR-BSM–01)  ait tüm bilgiler ve imzalar 
+mutlaka tamam olmalıdır.
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2008-05-07T12:32:52+00:00
+   - moddate: 2008-05-07T15:34:57+04:00
+   - author: Sinem
+   - title: Microsoft Word - RIT-PR-07.doc
+   - source: 67840.pdf
+   - total_pages: 2
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+SİSTEM PROSEDÜRLERİ 
+ 
+ Doküman Adı: Basımevi Müdürlüğü İş Kabul Prosedürü  
+Doküman Kodu:   
+RİT-PR-07  Ilk Yayın Tarihi: 
+13.12.2006 Revizyon No: 
+03 Revizyon Tarihi: 
+24.07.2007 Sayfa 
+ 2 / 2 
+ 
+ 
+©2007 Bu doküman Uludağ Üniversitesi Rektörlüğüne aittir. Başka ları tarafından kullanılamaz ve çoğaltılamaz. 
+ 
+6.1.1 . Faturasız Basılan İşler: Döner Sermaye İşletme Müdürlüğünde birimi bulunan 
+Fakülte ve Yüksekokullar için fatura düzenlenmez.  
+ 
+ 6.1.2. Fatura Karşılığı Yapılan İşler: Tüm Malzeme girdileri Rektörlük Döner 
+ Sermayesince temin edilen işlerde Faturalı iş basımı yapılır. Rektörlük Döner 
+ Sermayesi aldığı malzemelerine karşılık yapılan işlere ilişkin  düzenlen fatura ilgili 
+ birimlere veya tahakkuku yapan birime gönderilir.    6.1.3. Fatura Karşılığı Özel Kişi ve Kuruluşlara Yapılan İşler:  Üniversitemiz dışı 
+ resmi kurumlar, özel kuruluşlar ve özel kişilere fatura karşıl ığı iş hizmeti yapılır.
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2008-05-07T12:32:52+00:00
+   - moddate: 2008-05-07T15:34:57+04:00
+   - author: Sinem
+   - title: Microsoft Word - RIT-PR-07.doc
+   - source: 67840.pdf
+   - total_pages: 2
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+resmi kurumlar, özel kuruluşlar ve özel kişilere fatura karşıl ığı iş hizmeti yapılır. 
+ Yapılan bu işlerin tüm malzeme girdileri Rektörlük Döner Serme yesi İşletmesi 
+ tarafından temin edilir. 
+ 
+6.2. İŞ EMRİNİN HAZIRLANMASI :   
+ 
+Basımevi Müdürlüğüne iş  talebinde bulunurken  İ ş  E m r i  F o r m u ’ n d a  (RİT- FR-BSM–01)  
+talep edilen işe ait bilgiler ( İşin adı, adet veya cilt miktar ı ve benzeri bilgile r) ayrıntılı olarak  
+belirtilmelidir. 
+6.3. İŞİN PROGRAMLANMASI 
+Basılması talep edilen işler bilgisayar ortamındaki İş Programlama Listesi (RİT-FR-BSM-
+08) ne geliş tarihine ve sır asına göre kaydedilir. 
+6.4. TERMİNİN BELİRLENMESİ 
+Basımevi Müdürlüğünden istenilen her türlü işler de Termin beli rlenirken talep edilen işlerin 
+prosedürünün tamamlanmış olması g erekir. Ancak bu işlerle ilgil i tüm işlemler 
+tamamlandıktan sonra termin tar ihi belirlenir ve süreç başlatıl ır.  
+ 
+7. GÖZDEN GEÇİRME VE ONAYLAMA:   
+ 
+Yönetimin onayı :      T a r i h :
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Acrobat Distiller 5.0 (Windows)
+   - creator: PScript5.dll Version 5.2.2
+   - creationdate: 2008-05-07T12:32:52+00:00
+   - moddate: 2008-05-07T15:34:57+04:00
+   - author: Sinem
+   - title: Microsoft Word - RIT-PR-07.doc
+   - source: 67840.pdf
+   - total_pages: 2
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+7. GÖZDEN GEÇİRME VE ONAYLAMA:   
+ 
+Yönetimin onayı :      T a r i h :  
+             P r o f . D r . E r d a l  E M E L      24.07.2007     
+Yönetim Temsilcisi
+
+

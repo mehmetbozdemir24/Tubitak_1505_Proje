@@ -1,0 +1,735 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+1     
+Senato Karar Eki  BURSA ULUDAĞ ÜNİVERSİTESİ  
+İŞÇİ DİSİPLİN YÖNERGESİ  
+ 
+BİRİNCİ BÖLÜM  
+Amaç, Kapsam, Dayanak ve Tanımlar  
+ 
+Amaç  
+MADDE 1 - (1) Bu Yönerge, Bursa Uludağ  Üniversitesi ve bağlı işyerlerinde  22/05/2003 
+tarih ve 4857 sayılı İş Kanu nuna tabi  belirsiz süreli iş sözleşmesi kapsamında  işçi statüsünde 
+çalışan personel  bakımından  uyumlu ve verimli bir çalışma ortamı oluştur mak, personelin 
+uyması gereken  kuralları  ve yükümlülükleri ni açıklamak, Y önergede yer a lan kuralları ihlal 
+eden fiillerin işlenmesi  durumunda izlenecek süreçleri tanımlamak , disiplin işlemlerini ve 
+cezalarını belirle yip uygulamak  amacıyla düzenlenmiştir.  
+ 
+Kapsam  
+MADDE 2 - (1) Bu Yönerge, Bursa Uludağ  Üniversitesi ve bağlı işyerlerinde  22/05/2003 
+tarih ve 4857 sayılı İş Kanu nuna tabi  olarak belirsiz süreli iş sözleşmesi  ile işçi statüsünde 
+çalışan tüm personel hakkında uygulanır.  
+ 
+Dayanak
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+çalışan tüm personel hakkında uygulanır.  
+ 
+Dayanak  
+MADDE 3 - (1) Bu Yönerge 22/05/2003 tarih ve 4857 sayılı İş Kanun u ile 11/01/2011 
+tarih ve 6098 sayılı Türk Borçlar  Kanunu na dayanılarak hazırlanmıştır.  
+ 
+Tanımlar  
+MADDE 4 - (1) Bu Yönergenin uygulanmasında ; 
+a) Birim: İşçinin işini fiilen yürüttüğü akademik, idari ya da teknik birimleri,  
+b) Birim amiri: Fakültelerde dekanı, yüksekokul ve meslek yüksekokullarında müdürü, 
+daire başkanlıklarında daire başkanını, Bursa Uludağ Üniversitesi Sağlık Uygulama ve 
+Araştırma Merkezi Hastanesinde Başhekimi, bunların dışındaki birimlerde ise birimin en üs t 
+yöneticisini,  
+c) Daire Başkanlığı: Bursa Uludağ Üniversitesi İdari ve Mali İşler Daire Başkanlığını  
+ç) Disiplin Kurulu /Kurul : İşveren yetkili organlarınca oluşturulan ve işçi hakkında 
+uygulanacak disiplin cezasına karar verme yetkisine sahip olan İşyeri Dis iplin Kurulunu,  
+d) Kanun: 22/05/2003 tarih ve 4857 sayılı İş Kanunu nu,
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+d) Kanun: 22/05/2003 tarih ve 4857 sayılı İş Kanunu nu, 
+e) İşçi: Bursa Uludağ Üniversitesine  bağlı olarak  22/05/2003 tarih ve 4857 sayılı İş 
+Kanunu  kapsamında  belirsiz süreli iş sözleşmesine bağlı olarak  işçi statüsünde çalışan 
+personeli,  
+f) İşveren: Bursa Uludağ  Üniversitesini,  
+g) İşyeri: İşverene  bağlı olarak işlerin yürütüldüğü açık ve kapalı alanları, araç -eklentiler i, 
+ğ) Rektör: Bursa Uludağ Üniversitesi  Rektörünü,  
+ifade eder.  
+ 
+İKİNCİ BÖLÜM  
+Disiplin Kurulu Teşkili, Çalışma Esasları, Görev, Yetki ve Sorumlulukları  
+ 
+Disiplin kurulu teşkili  
+MADDE 5 - (1) Disiplin Kurulu 5 (beş) üyeden  oluşur.  
+(2) Disiplin Kurulunun 3 (üç) üyesi, Rektör  tarafından, diğer 2 (iki) üyesi ise varsa 
+yetkili işçi sendikası tarafından , yoksa Rektör  tarafından 2 (iki) yıl için seçilir. Rektör seçtiği 
+üyelerden birisini başkan, diğerini ise başkan yardımcısı olarak belirler . Görevi sona eren
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+üyelerden birisini başkan, diğerini ise başkan yardımcısı olarak belirler . Görevi sona eren 
+üyeler aynı usulle yeniden seçilebilir. Gerektiğinde birden fazla disiplin kurulu oluşturulabilir.  
+(3) Asil üyelerin altıncı fıkrada yazıl ı nedenlerle görev yapamadıkları hallerde 
+toplantılara katılmak üzere, Rektör  ve yetkili işçi sendikası , kendilerine ait asil üye kontenjanı 
+CheckPoint Threat Extraction secured this document 
+ GetOriginal
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+2     
+Senato Karar Eki  sayısınca yedek üye belir ler. 
+(4) Görevlerinden ayrılan ya da üyelikleri sona eren Disiplin Kurulu üyelerinin yerlerin e 
+yukarıdaki  fıkralar uyarınca yeni üyeler seçilir . 
+(5) Haklarında u yarma ve kınama cezası ndan  ağır cezalar verilmiş  olan üyeler kurulda 
+görevlendirilemez ler. 
+(6) Kurul başkan ı ve üyeleri , kendilerine, eşlerine ikinci  dereceye kadar (bu derece 
+dâhil ) kan ve sıhri hısımlarına disiplin  cezası verdileri, disiplin soruşturması yaptıkları  veya 
+sicil düzenleyip atamasını yaptıkları işçilere  ilişkin müzakerelere ve kararlara katılamaz lar. 
+ 
+Çalışma esasları  
+MADDE 6 - (1) Disiplin Kurulu  başkanı, toplantı tarih, saat ve gündemini belirle r ve 
+Daire Başkanlığı marifeti ile Kurul üyelerinin toplantıya davet edilmesi ni sağlar.  Kurulların 
+çalışmasında gerektiğinde Hukuk Müşavirliğin den yazılı görüş alınabilir.  
+(2) Disiplin Kurulu , üye tam sayısı ile toplanır. Di siplin kurulu üyelerinden herhangi
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(2) Disiplin Kurulu , üye tam sayısı ile toplanır. Di siplin kurulu üyelerinden herhangi 
+birinin toplantıya katılamaması durumunda katılamayan üye sayısı kadar yedek üye toplantıya 
+katılır.  Başkanın herhangi bir nedenle toplantıya katılamaması durumunda Kurula, başkana 
+vekâlet eden üye başkanlık eder.  
+(3) Disiplin Kurulunda her üye , bir oy hakkı na sahiptir . Çekimser oy kullan ılamaz.  
+Karar lar toplantıda hazır bulunanların çoğunluğu ile alınır. Oyların eşitliği halinde başkanın 
+oyu üstün sayılır . Karara m uhalif olan üye muhalefet görüş ünü yazılı olarak sunar.  
+ 
+Disiplin kurulunun görev, yetki ve sorumlulukları  
+MADDE 7 - (1) İşçiler e bu Yönerge ve iş hayatı ile ilgili sair kanun ve yönetmeliklere 
+aykırı fiillerinden dolayı Disiplin Kurulu kararı ile disiplin cezası verilir . 
+(2) Gerektiği durumlarda Disiplin Kurulu için toplantı günü ve saati belirlenir.  
+(3) Disiplin Kurulunun sekretarya işlemleri Daire Başkanlığı  tarafından yürütülür.
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+(3) Disiplin Kurulunun sekretarya işlemleri Daire Başkanlığı  tarafından yürütülür.  
+(4) Disiplin Kurulu kararlar ı Disiplin Kurulu Karar Defteri ne kayıt edilir.  
+(5) Disiplin Kurulu tarafından işçiye ceza verilmesi durumunda, verilen cezanın bir 
+örneği işçinin özlük dosyasında saklanır.  
+(6) Daire Başkanlığı, Disiplin Kuruluna iletilecek soruşturma raporları ve diğer tüm 
+disiplin işlemlerinin takibi ve sonuçlandırılmasından sorumludur.  
+ 
+ÜÇÜNCÜ BÖLÜM  
+Disiplin Suç ve Cezaları  
+ 
+Disiplin cezaları  
+MADDE 8 - (1) İşçiler hakkında uygulanacak disiplin cezaları şunlardır:  
+a) Uyarı: İşçiye, görevinin yerine getirilmesinde ve davranışlarında daha dikkatli olması 
+gerektiğinin yazılı olarak bildirilmesidir.  
+b) Kınama: İşçiye, görevinin yerine g etirilmesinde ve davranışlarında kusurlu olduğunun 
+yazı ile bildirilmesidir.  
+c) Ücret kesme: İşçinin ücretinden belirlenen miktar kadar kesinti yapılmasıdır .
+
+
+================================================================================
+CHUNK NO: 8
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+c) Ücret kesme: İşçinin ücretinden belirlenen miktar kadar kesinti yapılmasıdır . 
+ç) Haklı nedenle fesih: İşçinin iş sözleşmesinin, Kanunu n 25 inci maddesi kapsamındaki 
+fiilleri nedeniyle  derhal feshedilmesidir . 
+ 
+Uyarı cezası nı gerektiren fiiller  
+MADDE 9 - (1) Uyarı cezası aşağıdaki hallerde uygulanır:  
+a) Mazeretsiz olarak  göreve geç gelmek, erken ayrılmak, görev yerini terk etmek,  
+b) Verilen görevlerin tam ve zamanında yapılmasında, araç ve gereçlerin 
+kullanılmasında dikkatsizlik ve özensizlik göster mek, 
+c) Kurumca belirlenen tasarruf tedbirlerine riayet etmemek,  
+ç) Görevi ile ilgili kılık -kıyafet hükümlerine aykırı davranışlarda bulunmak,  
+d) Sağlık raporunu, düzenlendiği günü takip eden iş günün ün mesai saati bitimine kadar
+
+
+================================================================================
+CHUNK NO: 9
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+3     
+Senato Karar Eki  elektronik ortamda veya diğer uygun yollarla, bağlı olduğu birim amirine bildirmemek.  
+ 
+Kınama cezasını gerektiren fiiller  
+MADDE 10 - (1) Kınama cezası aşağıdaki hallerde uygulanır:  
+a) Mazeretsiz olarak göreve geç gelmeyi,  erken ayrılmayı, görev yerini terk et meyi 
+alışkanlık haline getirmek,  
+b) Kamu personeline duyulan itibar ve güven duygusunu sarsacak nitelikte tutum ve 
+davranışlarda bulunmak,  
+c) Verilen görevlerin tam ve zamanında yapılmasında, araç ve gereçlerin 
+kullanılmasında kusurlu davranmak,  
+ç) İşyerinin huzur ve sükûnunu bozmak, çalışma düzenine uymamak,  
+d) İşin güvenliğini tehlikeye düşürmemiş olmak kaydıyla,  iş sağlığı ve güvenliği 
+kurallar ına uymamak , 
+e) Yetkisi  ve izni  olmadığı halde basına, haber ajanslarına, radyo ve televizyon 
+kurumlarına yahut sosyal medya aracılığı ile bilgi veya demeç vermek , 
+(2) Uyarı cezası gerektiren bir fiili n ikinci kez işle nmiş olma sı halinde kınama cezası 
+uygula nır.
+
+
+================================================================================
+CHUNK NO: 10
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+uygula nır. 
+ 
+Ücret kesme cezası nı gerektiren fiiller  
+MADDE 11 - (1) Ücret kesme cezasını gerektiren fiiller ve ücret kesme oranları aşağıdaki 
+gibidir:  
+a) Mazeretsiz olarak herhangi bir iş günü işe gelmeyen işçiye bir günlük ücreti  tutarında,  
+b) Mazeretsiz olarak tatil günü sonrasındaki iş günü işe gelmeyen işçiye iki günlük  ücreti 
+tutarında,  
+c) Kınama cezası gerektiren fiilin, bunun işlendiği tarihten itibaren 2 (iki) yıl içinde 
+yeniden işlenmesi halinde iki  günlük ücreti tutarında , 
+ç) Uyarı cezası gerektiren bir fiilin üçüncü kez işlenmesi halinde v e sonrasında ki her 
+tekrarında iki günlük ücreti tutarında  ücretten kesme cezası uygulanır.  
+(2) İşçi ücretinden bu şekilde yapılan kesintiler bir ayda iki gündelikten fazla olamaz.  
+(3) Ücretten kesme cezasının uygulandığ ı hallerde işçi ücretinden kesilen paralar ilgili 
+kesinti işleminden itibaren 1 (bir) ay içinde Bakanlıkça belirlenen banka hesap numarasına 
+yatırılır.
+
+
+================================================================================
+CHUNK NO: 11
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+yatırılır.  
+(4) Ücret kesme ile ilgili olarak Toplu Sözleşmede yer alan hükümler saklıdır.  
+(5) İşçi ücretlerinden yapılacak kesintiler sebepleri ile birlikte işçiye yazılı olarak derhal 
+bildiril ir. 
+ 
+Haklı nedenle derhal fesih  
+MADDE 12 - (1) İşveren, Kanunun 25 inci maddesi gereğince aşağıda yazılı hallerde iş 
+sözleşmesini derhal feshedebilir:  
+a) Sağlık sebepleri;  
+1) İşçinin kendi kastından veya derli toplu olmayan yaşayışından yahut içkiye 
+düşkünlüğünden doğacak bir hastalığa yakalanması veya engelli hâle gelmesi durumunda, bu 
+sebeple doğacak devamsızlığın ardı ardına üç iş günü veya bir ayd a beş iş gününden fazla 
+sürmesi , 
+2) İşçinin tutulduğu hastalığın tedavi edilemeyecek nitelikte olduğu ve işyerinde 
+çalışmasında sakınca bulunduğunun sağlık k urulunca saptanması.  
+b) Ahlak ve iyi niyet kurallarına uymayan haller ve benzerleri : 
+1) İş sözleşmesi nin yapıldığı sırada bu sözleşmenin esaslı noktalarından biri için gerekli
+
+
+================================================================================
+CHUNK NO: 12
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+1) İş sözleşmesi nin yapıldığı sırada bu sözleşmenin esaslı noktalarından biri için gerekli 
+vasıflar veya şartlar kendisinde bulunmadığı halde bunların kendisinde bulunduğunu ileri 
+sürerek  yahut gerçeğe uygun olmayan bilgiler veya sözler söyleye rek işçinin işvereni 
+yanıltması , 
+2) İşçinin, amirin yahut aile üyelerinden biri sinin şeref ve namusuna dokunacak sözler
+
+
+================================================================================
+CHUNK NO: 13
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+4     
+Senato Karar Eki  sarf etmesi  veya davranışlarda bulunması yahut amiri hakkında şeref ve haysiyet kırıcı asılsız 
+ihbar ve isnatlarda  bulunması,  
+3) İşçinin , işverenin başka bir iş çisine cins el tacizde bulunması,  
+4) İşçinin amirine yahut onun ailesi üyelerinden birine yahut işverenin başka işçisine 
+sataşması, işyerine sarhoş yahut uyuşturucu madde almış olarak gelmesi ya da iş yerinde bu 
+maddeleri kullanması,  
+5) İşçinin, işverenin güvenini kötüye k ullanmak, hırsızlık yapmak, işverenin meslek 
+sırlarını ortaya atmak gibi doğruluk ve bağlılığa uymayan davranışlarda bulunması,  
+6) İşçinin, işyerinde  yedi günden fazla hapisle cezalandırılan ve cezas ı ertelenmeyen bir 
+suç işlemesi,  
+7) İşçinin işverenden izin a lmaksızın veya haklı bir sebebe dayanmaksızın ardı ardına 
+iki işgünü veya bir ay içinde iki defa herhangi bir tatil gününden sonraki iş günü  yahut bir 
+ayda  üç işgünü işine devam etmemesi,
+
+
+================================================================================
+CHUNK NO: 14
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ayda  üç işgünü işine devam etmemesi,  
+8) İşçinin yapmakla ödevli bulunduğu görevleri kendisine hatırlatıldığ ı halde 
+yapmamakta  ısrar etmesi,  
+9) İşçinin kendi isteği veya savsaması yüzünden işin güvenliğini tehlikeye düşürmesi, 
+işyerinin malı olan veya malı olmayıp da eli altında bulunan makineleri, tesisatı veya başka 
+eşya ve maddeleri otuz günlük ücretinin tutarıyla ödeyemeyecek derecede hasara ve kayba 
+uğratması.  
+b) Zorlayıcı sebepler;  
+1) İşçiyi işyerinde bir haftadan fazla süre ile çalışmaktan  alıkoyan zorlayıcı bir sebebin 
+ortaya çıkması,  
+2) İşçinin gözaltına alınması veya tutuklanması halinde devamsızlığın ın Kanunu n 17 nci 
+madde sindeki bildirim süresini aşması.  
+ 
+Diğer fiiller ve cezaları  
+MADDE 13- (1) Bu Yönergede açıkça sayılmayan bir fiilin işlenmesi durumunda; 
+işçinin bu fiilinin karşılığında, fiile en yakın ve benzer olan fiilin gerektirdiği disiplin ce zası 
+uygulanır. Kanun hükümleri saklıdır . 
+ 
+DÖRDÜNCÜ BÖLÜM
+
+
+================================================================================
+CHUNK NO: 15
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+uygulanır. Kanun hükümleri saklıdır . 
+ 
+DÖRDÜNCÜ BÖLÜM  
+Disiplin Soruşturması, Soruşturma Raporu, Savunma, Süreler ve İtiraz  
+ 
+Disiplin soruşturması  
+MADDE  14- (1) Disiplin amirleri; birim amiri, genel sekreter ve üst d isiplin amiri olarak 
+Rektör’dür . 
+(2) Disiplin cezası verilmesini gerektiren bir fiilin işlendiğini öğrenen disiplin amiri yazılı 
+olarak disiplin soruşturması başlatır. Üst disiplin amirinin soruşturma açtığı veya açtırdığı 
+disiplin olayında alt disiplin amiri ayrıca soruşturma yapamaz veya ya ptıramaz. Daha önce 
+açılmış soruş turma varsa bunlar üst amirin açtığı veya açtırdığı soruşturma ile birleştirilir.  
+(3) Disiplin amiri soruşturmayı kendisi yapabileceği gibi soruşturmayı yapmak üzere 
+birim içerisinden soruşturmacı veya komisyon görevlendire bilir.  
+(4) Soruşturmacı, disiplin soruşturmasıyla ilgili bilgi ve belgeleri toplama, ifade alma, 
+tanık dinleme, bilirkişiye başvurma, keşif yapma, inceleme yapma ve ilgili makamlarla yazışma
+
+
+================================================================================
+CHUNK NO: 16
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+tanık dinleme, bilirkişiye başvurma, keşif yapma, inceleme yapma ve ilgili makamlarla yazışma 
+yetkisini haizdir . 
+ 
+Savunma  
+MADDE 1 5- (1) Bu Yönergede belirtilen  disiplin cezalarının uygulanmasından önce 
+Disiplin Kurulu tarafından işçinin yazılı yahut sözlü savunmasının alınması esastır. 
+Soruşturulana, iddialar hakkında savunma imkânı tanınmadan disiplin cezası verilemez. 
+Soruşturmayı yapanın 7 (yedi) günden az ol mamak üzere verdiği süre içinde veya belirtilen 
+tarihte geçerli bir mazereti olmaksızın savunmasını yapmayan, savunma hakkından vazgeçmiş 
+sayılır. Savunmaya davet yazısında hakkında disiplin soruşturması açılan fiilin neden ibaret
+
+
+================================================================================
+CHUNK NO: 17
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+5     
+Senato Karar Eki  bulunduğu, savunmasını be lirtilen sürede yapmadığı takdirde savunmasından vazgeçmiş 
+sayılacağı bildirilir.  
+(2) Üçüncü  fıkra hükmü saklı kalmak kaydıyla h aklı nedenle derhal feshi gerektiren 
+fiillerin işlenmiş olması halinde, işçiye savunma için 7 ( yedi) günlük süre verilmesi zorun lu 
+değildir. Soruşturmacı işçinin savunmasını derha l ve sözlü olarak alabilir . 
+(3) Aşağıdaki hallerde soruşturmacı raporunu işçiden yazılı ya da sözlü savunma 
+almaksızın diğer bilgi ve belgelere dayanarak hazırlar:  
+a) İşçinin, işyerinde, yedi günden fazla hapisle cezalandırılan ve cezası ertelenmeyen bir 
+suç işlemesi,   
+b) İşçinin gözaltına alınması veya tutuklanması halinde devamsızlığın Kanunun 17 nci 
+maddesindeki bildirim süresini aşması,  
+c) İşçinin tutulduğu hastalığın tedavi edilemeyecek nitelikte olduğu ve işyerinde 
+çalışmasında sakınca bulunduğunun sağlık k urulunca saptanması,  
+ç) Halin gereği olarak, savunma alınmasına yetkili makamlarca açıkça gerek
+
+
+================================================================================
+CHUNK NO: 18
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+ç) Halin gereği olarak, savunma alınmasına yetkili makamlarca açıkça gerek 
+görülmemesi.  
+ 
+Soruşturma raporu  
+MADDE 1 6- (1) Soruşturma sonuçlandığın da bir rapor düzenlenerek soruşturmanın 
+aşamaları, deliller ve alınan savunma özetlenir. Uygulanacak ceza teklif edilir, gereği için 
+soruşturmayı başlatan disiplin amirine teslim edilir. Soruşturma dosyası, disiplin amiri 
+tarafından gerekli kararın verilme si için Disiplin Kuruluna gönderilir.  
+ 
+Süreler  
+MADDE 17 - (1) Bu Yönetmeliğin 12 nci maddesinde gösterilen ahlak ve iyi  niyet 
+kurallarına uymayan hallere dayanarak işveren için  tanınmış olan  sözleşmeyi fesih yetkisi, 
+işçinin bu çeşit davranışlarda bulunduğunu işverenin öğrendiği günden başlayarak 6 (altı) iş 
+günü geçtikten ve her halde fiilin gerçekleşmesinden itibaren 1 (bir) yıl sonra kullanılamaz. 
+Ancak işçinin olayda maddi çıkar sağlaması hal inde 1 (bir) yıllık süre uygulanmaz.
+
+
+================================================================================
+CHUNK NO: 19
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Ancak işçinin olayda maddi çıkar sağlaması hal inde 1 (bir) yıllık süre uygulanmaz.  
+(2) Birinci fıkra dışında disiplin soruşturması açma süresi birim amirinin, işçinin bu tür 
+davranışlarda bulunduğunu öğrendiği tarihten itibaren 1 (bir) aydır. Bu süre içinde 
+soruşturmaya başlanmadığı takdirde disiplin cezası verme yetkisi zamanaşımına uğrar.  
+Uyarma,  kınama ve ücret kesme cezalarını gerektiren durumlarda, fiilin işlendiği tarihten 
+itibaren 2 (iki) yıl geçtikten sonra disiplin soruşturması yapılamaz ve ceza verilemez.  
+(3) Geçmiş hizmetleri sırasında olumlu tutum ve davranışlar sergilemiş olan işçi için 
+verilecek cezalarda bir derece hafif olanı uygulanabilir.  
+(4) Soruşturma, görevlendirme yazısının tebliğ tarihinden itibaren 1 (bir) ay içinde 
+tamamlanır. Soruşturma bu süre içinde tamamlanamaz ise soru şturmacı gerekçeli olarak ek 
+süre talep edebilir, disiplin amiri gerekçeyi değerlendirerek ve zamanaşımı sürelerini dikkate
+
+
+================================================================================
+CHUNK NO: 20
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 4
+   - page_label: 5
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+süre talep edebilir, disiplin amiri gerekçeyi değerlendirerek ve zamanaşımı sürelerini dikkate 
+alarak, 1 (bir) aydan fazla olmamak kaydı ile ek süre verebilir.   
+(5) Disiplin Kurulu , soruşturma  raporunun kendisine tebliğinden it ibaren en geç 15 
+(onbeş ) gün içinde karar vermek zorundadır.  
+(6) Bir fiilden dolayı ilgili hakkında ceza soruşturması veya kovuşturması yapılıyor 
+olması, aynı fiilden dolayı disiplin soruşturması yapılmasına  ve ceza verilmesine engel 
+değildir. Soruşturmacı  ya da Disiplin Kurulu  ceza kovuşturması nı bekletici mesele yapılabilir . 
+Soruşturma ya da kovuşturmanın bekletici mesele yapılması durumunda  disiplin 
+soruşturmasına ilişkin zamanaşımı süreleri durur.  
+ 
+ 
+ 
+İtiraz  
+MADDE 18 - (1) Hakkında  uyarma,  kınama ya da ücret kesme cezası verilen işçi, 
+cezanın kendisine tebliğinden itibaren 3 (üç) işgünü içinde Disiplin Kuruluna yazılı olarak 
+itiraz edebilir. İtiraz üzerine 7 (yedi) işgünü içerisinde itirazın kabulü ya da reddine karar
+
+
+================================================================================
+CHUNK NO: 21
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+6     
+Senato Karar Eki  verilir. İtirazın kabul ü hâlinde, ceza hafifletilebil ir veya tamamen kaldırılabilir.  
+(2) Süresi içinde itiraz edilmeyen disiplin cezaları kesinleşir.  
+(3) H aklı nedenle derhal fesih cezasına itiraz edil emez.  
+ 
+Cezanın sicilden silinmesi  
+MADDE 19 - (1) İşçi, uyarma, kınama ve ücret kesme cezalarının uygulanması  
+tarihinden itibaren 5 (beş) yıl sonra atamaya yetkili amire başvurarak, verilmiş olan cezalarının 
+“özlük dosyasından” silinmesini isteyebilir. Yetkili amir tarafından uygun görüldüğü takdirde 
+disiplin cezası silinir ve işçi özlük dosyasına cezasının silindiği işlenir.  
+ 
+BEŞİNCİ BÖLÜM  
+Çeşitli Hükümler, Yürürlük ve Yürütme  
+ 
+Çeşitli hükümler  
+MADDE 20- (1) Bu Yönergede yer almasa bile, Kanunun yönetim hakkı kapsamında 
+işverene verdiği yetkileri kullanmak işverenin takdirindedir. Kanunun  işverene açıkça verdiği 
+bir yetkinin, bu Yönergede ye r almadığı gerekçesiyle kullanılamayacağı iddia edilemez.  
+ 
+Yürürlük
+
+
+================================================================================
+CHUNK NO: 22
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Aspose.PDF for Java 23.8
+   - creator: Aspose Pty Ltd.
+   - creationdate: 2020-09-28T11:48:47+03:00
+   - author: Sau
+   - moddate: 2025-11-07T10:53:38+00:00
+   - source: 167576.cleaned.pdf
+   - total_pages: 6
+   - page: 5
+   - page_label: 6
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+Yürürlük  
+MADDE 2 1- (1) Bu Yönerge Bursa Uludağ Üniversitesi Senatosunda kabul edildiği 24 
+Eylül 2020 tarihinde  yürürlüğe girer.  
+(2) Bu Yönerge işyerinde uygun araçlarla ilan edilir.  
+ 
+Yürütme  
+MADDE 22- (1) Bu Yönerge hükümlerini Bursa Uludağ  Üniversitesi Rektörü yürütür.
+
+

@@ -1,0 +1,580 @@
+================================================================================
+CHUNK NO: 1
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+UÜ-SK İLAÇ / MALZEMELERİN SAKLANMASI TALİMATI 
+Dok.Kodu : TA-İYK-03 İlk Yay.Tarihi : 17 Mayıs 2010 Sayfa  
+1/4 Rev. No  : 01 Rev.Tarihi  : 31 Mayıs  2012 
+ 
+Bu doküman Uludağ Üniversitesi Rektörlüğü’ne aittir. Başkaları  tarafından kullanılamaz ve çoğaltılamaz.  Amaç :  
+Bu talimat ın amacı , UÜ- Sağlık Kuruluşlarındaki Hastane Eczanesinde saklanan ve 
+hasta bakım alanlarında kullanılan genel , acil,  çok dozlu flakon ve kartuş ampuller, 
+soğuk zincire tabi ilaçlar ve malzemeler in uygun koşullarda, güvenli bir şekilde 
+saklanması sağlamak için bir yöntem belirlemektir.  
+ 
+1. Kapsam :  
+Bu talimat UÜ- Sağlık Kuruluşlarında kullanılan ilaç ve malzemelerin güvenli 
+saklanması na ilişkin  uygulamaları  kapsamaktadır.  
+ 
+2. Sorumlular :  
+Hastane Eczanesi ve bağlı birimler, t üm klinik, yoğun bakım , acil ve girişim yapılan 
+poliklinikler,  ameliyathanelerde görev  yapan eczacılar ve hemşireler bu talimatın 
+uygulanmasından sorumludur.  
+ 
+3. İlgili Dokümanlar:
+
+
+================================================================================
+CHUNK NO: 2
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+uygulanmasından sorumludur.  
+ 
+3. İlgili Dokümanlar:  
+• PR-İYK-04 İlaç Stok Yönetimi Prosedürü 
+• PR-HAB -19 UÜ-SUAM Mavi Kod Prosedürü 
+• TA-İYK-04 Kontrole Tabi İlaçların Saklanması, Dağıtımı ve Uygulanması Talimatı  
+• PL-HAD -01-EK8 Radyoaktif Madde Kabul, Depolama, Kullanım Ve Taşıma Talimatı  
+• TA-HUD- 01 Hasta Devir/Taşıma  Talimatı  
+• TA-HAB -48 Mavi Kod Arabası Kontrol Talimatı  
+• TA-İYK-08 Yüksek Riskli İlaçların Yöneti mi Talimatı  
+• FR-İYK-05 İlaç/Malzeme Geri Gönderim Formu  
+• FR-HAB -28 Buzdolabı Sıcaklık Takip Çizelgesi   
+• FR-İYK-08 Soğukta Saklanması Gereken İlaçlar Listesi  
+• FR-İYK-20-XXX Acil ve Bulundurulması Gerekli İlaçlar Listesi ve Kontrol 
+Formu 
+• FR-HAB -71 Mavi Kod Arabası Ekipman Kontrol Formu  
+ 
+4. Dağıtım:  
+ UÜ-SK Kalite Yönetim Sistemi Dokümanlarının tümü elektronik ortamda 
+yayınlanmaktadır. Bu dokümana, UÜ -SK İntranet ağı üzerindeki kullanıcılar ulaşabilir.   
+ 
+5. Uygulama :  
+ 
+5.1. Genel İlaç ve Malzemeler :
+
+
+================================================================================
+CHUNK NO: 3
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 0
+   - page_label: 1
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+5. Uygulama :  
+ 
+5.1. Genel İlaç ve Malzemeler : 
+5.1.1.  İlaçlar ve malzemeler aynı yerlerde saklanm amalıdır. 
+5.1.2.  Giriş kalite kontrolden geçen ilaçlar imalatçının önerdiği şartlarda (Ambalaj 
+üzerindeki saklama koşulları) depolanır.   
+5.1.3.  Tüm ilaç ve malzemeler  temizlik, emniyet  (hırsızlık ve kayıp) , sıcaklık, ışık ve 
+nem kontrolü bakımından uygun donanımlara sahip belirli alanlarda kurallara 
+uygun bir şekilde saklanır ve hazırlanır. Bu uygunluk Eczane dışında stok 
+yapılan ilaçlar için de geçerlidir.  
+5.1.4.  Eczanede muhafaza edilen ilaçlar, farmakolojik etkilerine ve/ veya uygulama 
+şekillerine göre sı nıflandırılır. İlaçlar son kullanma tarihleri dikkate alınarak, daha 
+önce tüketilecek olanlar öncelikli olacak şekilde yerleştirilir.  Son kullanma 
+tarihleri 6 aydan az kalan ilaçların bulunduğu plastik kutuların/rafların üzerine 
+yeşil renkli uyarı etiketi yapıştırılır.
+
+
+================================================================================
+CHUNK NO: 4
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+UÜ-SK İLAÇ / MALZEMELERİN SAKLANMASI TALİMATI 
+Dok.Kodu : TA-İYK-03 İlk Yay.Tarihi : 17 Mayıs 2010 Sayfa  
+2/4 Rev. No  : 01 Rev.Tarihi  : 31 Mayıs  2012 
+ 
+Bu doküman Uludağ Üniversitesi Rektörlüğü’ne aittir. Başkaları  tarafından kullanılamaz ve çoğaltılamaz.  5.1.5.  Hastane Eczanesinde mevcut olan ilaçlar  üzerinde ilacın adı ve miadı yazılı olan 
+plastik kutulara/raflara yerleştiril ir. Farklı mi atlı ilaçlar hiçb ir zaman karıştırılmaz. 
+Aynı miatlı ilaç bittikten sonra yeni miatlı  ilaç plastik kutu üzerindeki tarih 
+değiştirilerek tamamlanır. Işıktan etkilenecek ilaçlar kutularından çıkarılmadan 
+uygun raflarda tutulur.  
+5.1.6.  İlaç miat kontrolü ve stok takibi ; ilaç alımından itibaren periyodik olarak Eczacı 
+ve Eczane Teknisyeni tarafından İlaç Stok Yönetimi Prosedürü doğrultusunda 
+yapılır.    
+5.1.7.  İlaç firmaları tarafından getirilen numune ilaçlar, servis, ünite ve polikliniklerde 
+dahil olmak üzere hastanenin hiçbir hasta bakım alanında bulundurulmaz,
+
+
+================================================================================
+CHUNK NO: 5
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+dahil olmak üzere hastanenin hiçbir hasta bakım alanında bulundurulmaz, 
+depolanmaz ve hast alar üzerinde kullanılamaz.   
+5.1.8.  Hasta muayenesi ve giriş imlerin yapıldığı poliklinik ve ünitelerdeki ilaçlar, kayıp 
+ve hırsızlık olaylarına karşı korunur . Hasta ve yakınlarının, ilgisiz personelin 
+ulaşamayacağı yerlerde ve şekilde saklanır. Muayene veya girişim odası, kimse 
+bulunmadığında kilitlenebiliyorsa kil itsiz bir dolapta saklanabilir. Eğer muayene 
+ya da girişim odası kilitlenmiyorsa bulundurulan her türlü ilaç kilitli bir dolapta saklanır.   
+5.1.9.  Hastanın tüm ilaçları birbirinden ayrılmış bölmelerde saklanmalıdır  
+5.1.10.  Çok dozlu preparatların hastaya kullanılmak üzere açılması halinde, açan kişi tarafından ilacın üzerine hangi hastaya ait olduğunu, açılış ve son kullanma 
+tarihini  belirtir bir etiket yapıştırılır.   
+5.1.11.  Kontrole tabi ilaçlar , Kontrole Tabi İlaçların Saklanması, Dağıtımı ve
+
+
+================================================================================
+CHUNK NO: 6
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+5.1.11.  Kontrole tabi ilaçlar , Kontrole Tabi İlaçların Saklanması, Dağıtımı ve 
+Uygulanması  Talimatı ’na uygun bi r şekilde diğer ilaçlardan ayrı yerlerde ve kilit 
+altındaki dolaplarda saklanır.   
+5.1.12.  Nükleer Tıp Bölümü tarafından kullanılan Radyofarmasötiklerin depolanması ve 
+saklama koşullarının denetimi, Radyoaktif madde Kabul Depolama Kullanım 
+ve Taşıma Talimatı ’na uyg un bir şekilde yapılır. Tutulan kayıtlar düzenli olarak 
+Eczane’ye bildirilir.  
+5.1.13.  Uygulanan aşılar  üretici talimatlarına uygun bir şekilde saklanır.   
+5.1.14.  Yapılan kontroller (aylık veya her kullanım sonrası) sırasında son kullanma tarihi 
+yaklaşan ilaç ve malzemeler tespit edilerek İlaç/Malzeme Geri Gönderim 
+Formu doldurulur ve hastane eczanesine gönderilir. Gerekli durumlarda bu 
+ilaç/malzemeler, daha sık olarak tüketildiği kliniklere eczanenin gözetiminde 
+devredilir. Bu ilaç ve malzemelerin yerine yenileri temin edilir.
+
+
+================================================================================
+CHUNK NO: 7
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+devredilir. Bu ilaç ve malzemelerin yerine yenileri temin edilir.  
+5.1.15.  Oral beslenme ürünleri dışında hasta odalarında ilaç bulundurulmaz.   
+5.1.16.  Önceden kalan tüm açılmış şurup ve göz damlaları (kullanım süresi dolsun veya 
+dolmasın),  zarar görmüş soğuk zincir ilaçları (insülin, polipeptid hormonlar, 
+gamma globülinler  ve aşı lar), tüm ambalajsız, dağınık ve ne olduğu bilinmeyen 
+tabletler,  tüm açık krem tüpleri , yağlar v.s. (kullanım süresi dolsun veya 
+dolmasın) İlaç/Malzeme Geri Gönderim Formu doldurul up eczaneye iade 
+edilerek İlaç/Malzemelerin Toplanması ve Geri Gönderilmesi Talimatı ’na 
+göre imha edilirler.  
+Tüm kullanım süresi dolan farmasötikler, yatan hastaya kullanılırken 
+kırılan,dökülen ilaçların yerine yenisi Hastane eczanesinden order düzenlenerek talep edilir. Anabilim/Bilim Başkanlıkları, Birim Sorumluları tarafından 
+İlaç/Malzeme Geri Gönderim Formu doldurulup yatan hasta hesabından veya
+
+
+================================================================================
+CHUNK NO: 8
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 1
+   - page_label: 2
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+İlaç/Malzeme Geri Gönderim Formu doldurulup yatan hasta hesabından veya 
+klinik/poliklinik depo stoklarından kayıt düşme ve imha için uygunluk almak 
+üzere üst yazı ile Başhekimliğe başvurulur.  
+5.1.17.  Hastaların başka servise transferleri halinde hasta üzerine alınan kullanılmamış 
+ilaçlar, çok dozlu preparatlar ile hasta ve yakınları tarafından getirilerek teslim 
+alınan ilaçları Hasta Devir /Taşıma Talimatı ’na uygun bir şekilde hastanın
+
+
+================================================================================
+CHUNK NO: 9
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+UÜ-SK İLAÇ / MALZEMELERİN SAKLANMASI TALİMATI 
+Dok.Kodu : TA-İYK-03 İlk Yay.Tarihi : 17 Mayıs 2010 Sayfa  
+3/4 Rev. No  : 01 Rev.Tarihi  : 31 Mayıs  2012 
+ 
+Bu doküman Uludağ Üniversitesi Rektörlüğü’ne aittir. Başkaları  tarafından kullanılamaz ve çoğaltılamaz.  transfer olduğu servise ulaştırılır. Hasta ve yakınları tarafından getirilen 
+ilaçlardan yeni servis hekim ve hemşirelerinin haberdar olması ve bu ilaçların 
+hasta kayıtlarına geçirilmesi, teslim alınması sağlanır. Kullanılmasından 
+vazgeçilen ilaçlar eczaneye iade edilir.  
+5.1.18.  Yüksek Riskli İlaçların  saklanması  Yüksek Riskli İlaçların Yönetimi 
+Talimatı ’na uygun olarak saklanır ve kullanılır.  
+ 
+ 
+ 
+ 
+5.2. Acil Durumlarda Kullanılan İlaç ve Malzemeler   
+5.2.1.  Bu kapsamda Hastane Eczanesinde bulunan ilaçl arın depolanması 5.1. Genel 
+İlaç ve Malzemeler maddesindeki Genel İlaç ve Malzemelerin depolanmasına 
+uygun olarak yapılır.  
+5.2.2.  Hastanenin hasta değerlendirmesi ve bakımı yapılan her katında acil
+
+
+================================================================================
+CHUNK NO: 10
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+5.2.2.  Hastanenin hasta değerlendirmesi ve bakımı yapılan her katında acil 
+durumlarda ulaşılabilen mavi kod arabası mevcuttur. Bunun yanında, her klinik  
+ve poliklinik içerisinde, kilitli bir dolapta, acil durumlarda kullanılması muhtemel 
+ilaçlar Acil ve  Bulundurulması Gerekli İlaç Listesi ’ne uygun olarak 
+bulundurulmaktadır   
+5.2.3.  Mavi Kod arabasında bulunan ilaçlar  ve malzemeler  her gün ve her 
+kullanımdan sonra KPR Ekibi hemşiresi tarafından Mavi Kod Arabası  Ekipman 
+Kontrol Formu (FR -HAB -71) kullanılarak  kontrol edilir, eksiklikler UÜ-SUAM 
+Mavi Kod Prosedüründe (PR -HAB19)  belirtildiği şekilde tamamlanarak 
+kullanıma hazır hale getirilir.  
+5.2.4.  Klinik ve p olikliniklerde bulundurulan acil  ve bulundurulması gerekli  ilaç dolapları 
+ise sorumlu hemşire tarafından her kullanım sonrası ve her ayın ilk pazartesi 
+günü Acil ve Bulundurulması Gerekli İlaçların Kontrol Formu doldurularak 
+sayı ve miat bakımından kontrol  edilir.
+
+
+================================================================================
+CHUNK NO: 11
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+sayı ve miat bakımından kontrol  edilir.  
+5.2.5.  Acil durumlarda kullanılan bu ilaçlardan, isim,  ambalaj ve flakon tipi açısından 
+benzerliği olan ilaçlar yan yana bulundurulmaz.  
+5.2.6.  Kontroller sırasında kırık veya eksik olduğu tespit edilen ilaçlar hemen hastane 
+eczanesinden temin edilir.   
+5.2.7.  Bu tür ilaçların aylık rutin kontrolleri ile son kullanma tarihi nin dolmasına 4 ay 
+kalan ilaçlar tespit edilerek hastane eczanesine bildirilir ve bu ilaçlar İlaç/Malzeme Geri Gönderim Formu doldurulup hastane eczanesine 
+gönderilerek yenileri ile değiştirilir. Son kullanım tarihi dolmak üzere olan bu 
+ilaçlar, hastane eczanesinin talimatları ve direktifleri doğrultusunda, daha sıklıkla 
+kullanılan kliniklere gönderilebilir. Mavi  Kod arabalarının ve acil  ve 
+bulundurulması gerekli  ilaç dolaplarının hırsızlık ve benzeri  olaylara karşı 
+güvenliği sağlanır.  
+ 
+5.3. Soğuk Zincire Uyulması Gereken İlaçlar :
+
+
+================================================================================
+CHUNK NO: 12
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 2
+   - page_label: 3
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+güvenliği sağlanır.  
+ 
+5.3. Soğuk Zincire Uyulması Gereken İlaçlar :  
+5.3.1.  Ayniyat ambarına gelen soğukta saklanması gereken ilaçlar Muayene Kontrol 
+Komisyonu onayı için ambar içinde bulunan soğuk depoya konulur. Muayene 
+Komisyonu onayından sonra Hastane Eczanesi içinde bulunan soğuk odada 
+depolanır .  
+5.3.2.  Talepler doğrultusunda kliniğe gönderilen Soğukta Saklanması Gereken 
+İlaçlar Listesi ’ndeki ilaçlar, yalnızca ilaçların konulduğu buzdolaplarında 
+saklanır.  İlaç dışında kalan diğer malzemeler İlaç Buzdolabı’ nda 
+saklanmamalıdır . Eczanede bulunmayan fakat hasta ve yakınlarının dışarıdan
+
+
+================================================================================
+CHUNK NO: 13
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+UÜ-SK İLAÇ / MALZEMELERİN SAKLANMASI TALİMATI 
+Dok.Kodu : TA-İYK-03 İlk Yay.Tarihi : 17 Mayıs 2010 Sayfa  
+4/4 Rev. No  : 01 Rev.Tarihi  : 31 Mayıs  2012 
+ 
+Bu doküman Uludağ Üniversitesi Rektörlüğü’ne aittir. Başkaları  tarafından kullanılamaz ve çoğaltılamaz.  temin ettikleri ve buzdolabında saklanması gereken ilaçlar klinik hemşirelerinin 
+sorumluluğu altındadır.  
+5.3.3.  Bu nitelikteki ilaçlar sıcaklığı 2 -8 oC olan buzdolaplarında saklanır .  
+5.3.4.  Hastalara ait olup, buzdolabında bulundurulması gerekli ilaçların üzerinde hastanın adı -soyadı ve protokol no’su mutlaka yazılmalıdır.  
+5.3.5.  Her bir ilaç buzdolabı içersinde bir termometre bulundurulur.  
+5.3.6.  Her gün ilaç buzdolapları sıcaklığının uygun derecelerde olup- olmadığı kontrol 
+edilerek, Buzdolabı Sıcaklık Takip Çizelgesine işaretlenir.  Bu izlemden servis 
+sorumlu hemşiresi veya ilgili bölümün teknisyeni  sorumludur.  
+5.3.7.  Buzdolabında meydana gelebilecek arıza (uygun sıcaklıkta çalışmaması vb)
+
+
+================================================================================
+CHUNK NO: 14
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+5.3.7.  Buzdolabında meydana gelebilecek arıza (uygun sıcaklıkta çalışmaması vb) 
+durumlarında tamiri  için gerekli hastane içi telefon numaraları  ilgili bölümlerde 
+bulundurulur.  Arıza durumlarında uygulanacak B planı Buzdolabı Sıcaklık 
+Takip Çizelges inde belirtilir.  
+5.3.8.  Buzdolabı ilgili Anabilim veya Bilim Dallarında güvenli ve sürekli gözetim altında bulundurulan ve hastalar tarafından erişilmesi güç olan odalarda bulundurulur . 
+ 
+ 
+5.4. Çok Dozlu Flakon v e Kartuş Ampuller :   
+5.4.1.  Bu kapsamda Hastane Eczanesinde bulunan ilaçların depolanması 5.1. Genel 
+İlaç ve Malzemeler maddesindeki Genel İlaç ve Malzemelerin depolanması na 
+uygun olarak yapılır.  
+5.4.2.  Bu tür ilaçlar kliniklerde kullanılırken, üzerine hastanın adı -soyadı,  protokol 
+numarası,  açıldığı ve son kullanma tarih i mutlaka yazılmalıdır.  
+5.4.3.  Üzerinde ne zaman açıldığı belli olmayan açık flakon veya kartuş ampuller 
+kullanılmam alıdır.
+
+
+================================================================================
+CHUNK NO: 15
+================================================================================
+[METADATA DETAYLARI]
+   - producer: Adobe PDF Library 10.0
+   - creator: Acrobat PDFMaker 10.1 for Word
+   - creationdate: 2012-05-31T12:38:41+03:00
+   - author: bilçin tak
+   - company: uludağ üniversitesi
+   - keywords: 
+   - moddate: 2012-05-31T12:56:51+03:00
+   - sourcemodified: D:20120531092918
+   - subject: 
+   - title: 0 Einleitung, Registrierung und Änderung
+   - source: 65377.pdf
+   - total_pages: 4
+   - page: 3
+   - page_label: 4
+   - permission: user
+   - file_type: pdf
+--------------------------------------------------------------------------------
+[İÇERİK]
+kullanılmam alıdır.  
+5.4.4.  İçersinde partiküller içeren, çökelti bulunan, renk değişikliği ve bulanıklık 
+olan flakon veya kartuş ampuller kullanılmamalıdır.  
+5.4.5.  Çok dozlu flakon ve kartuşlar açıldıktan sonraki saklanma süreleri için 
+prospektüs bilgisi dikkate alınmalıdır. Pros pektüste aksi belirtilmediği sürece 30 
+günden fazla olan tüm açık flakon veya kartuş ampuller imha edilmelidir.  
+5.4.6.  Kontaminasyon olduğu veya saklanma koşullarına uyulmadığından şüphe 
+edilen flakon veya kartuş ampuller kullanılmamalıdır.  
+5.4.7.  Bir defada kullanılmay a uygun ampuller kullanıldıktan hemen sonra imha 
+edilmelidir.  
+ 
+6. Gözden Geçirme ve Onaylama:  
+ 
+Süreç sahibinin gözden geçirmesi:  
+ 
+Yönetim sahibinin gözden geçirmesi:  
+ Yönetim temsilcisinin onayı:  
+                                                                                         
+:  —————————               Tarih : —————————
+
+
