@@ -15,3 +15,10 @@ langchain-huggingface
 langchain-ollama
 fastapi
 pydantic
+python-docx
+openpyxl
+python-pptx
+unstructured
+langchain-community>=0.3.27
+langchain-core
+langchain-text-splitters>=0.3.9
