@@ -1,15 +1,14 @@
 import os
 import torch
-import getpass
+import time
+from hallucination_validator import HallucinationValidator
 
-# LangChain ve Qdrant Kütüphaneleri
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient, models
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 
-# Google Gemini Kütüphanesi
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 # ==========================================
@@ -97,7 +96,7 @@ def get_vector_store():
     )
 
 
-def get_context_and_print(query: str, permission: str, doc_type: str = None, k: int = 3, SCORE_THRESHOLD=0.50):
+def get_context_and_print(query: str, permission: str, doc_type: str = None, k: int = 3, SCORE_THRESHOLD=0.70):
     vector_store = get_vector_store()
 
     # Filtreler
@@ -143,9 +142,12 @@ def get_context_and_print(query: str, permission: str, doc_type: str = None, k: 
 
     if not filtered_docs:
         print("❌ Yeterince benzer sonuç bulunamadı (Eşik altı).")
-        return None
+        return None, []
 
+    docs_list = []
     for i, (doc, score) in enumerate(filtered_docs, 1):
+        doc.metadata["score"] = score
+        docs_list.append(doc)
         print(f"\n📄 [CHUNK {i}] (Benzerlik Skoru: {score:.4f})")
         print(f"   📂 Kaynak: {doc.metadata.get('source')}")
         print(f"   🔒 Yetki: {doc.metadata.get('permission')}")
@@ -154,32 +156,30 @@ def get_context_and_print(query: str, permission: str, doc_type: str = None, k: 
         print("-" * 30)
         context_parts.append(doc.page_content)
 
-    return "\n\n---\n\n".join(context_parts)
+    return "\n\n---\n\n".join(context_parts), docs_list
 
 
 # ==========================================
 # 5. ANA ÇALIŞTIRMA FONKSİYONU
 # ==========================================
 import time
-def run_rag_pipeline(question: str, permission: str, doc_type: str = None, k: int = 3, SCORE_THRESHOLD=0.50):
+def run_rag_pipeline(question: str, permission: str, doc_type: str = None, k: int = 3, SCORE_THRESHOLD=0.70):
     print(f"\n📥 KULLANICI SORUSU: {question}")
 
     # 1. Chunkları getir BURASI
     baslangic = time.perf_counter()
-    context_text = get_context_and_print(question, permission, doc_type, k, SCORE_THRESHOLD)
+    context_text, retrieved_docs = get_context_and_print(question, permission, doc_type, k, SCORE_THRESHOLD)
 
     bitis = time.perf_counter()
     gecen_sure_ms = (bitis - baslangic) * 1000
 
-    # ".2f" ile virgülden sonra sadece 2 basamak gösteririz
     print(f"İşlem süresi: {gecen_sure_ms:.2f} ms")
 
-    # Context yoksa iptal et
     if not context_text:
         print("\n" + "=" * 50)
         print("🤖 SİSTEM CEVABI")
         print("=" * 50)
-        print("\nBilgim yok.\n")
+        print("\nBu konuda belgelerimde yeterli kalitede bilgi bulunamadı.\n")
         print("=" * 50)
         return
 
@@ -192,6 +192,12 @@ def run_rag_pipeline(question: str, permission: str, doc_type: str = None, k: in
 
     Kullanıcı Sorusu:
     {question}
+
+    KATÎ KURALLAR:
+    1. SADECE yukarıdaki bağlamdan cevap ver.
+    2. Bağlamda cevap YOKSA: "Bu konuda belgelerimde bilgi bulunmuyor" de.
+    3. ASLA tahmin yapma veya kendi bilgini kullanma.
+    4. Belirsizlik varsa açıkça belirt.
 
     Cevap:"""
 
@@ -214,6 +220,16 @@ def run_rag_pipeline(question: str, permission: str, doc_type: str = None, k: in
 
     final_response = response.content if hasattr(response, 'content') else response
 
+    is_valid, validation_msg = HallucinationValidator.validate_response(
+        question, final_response, retrieved_docs
+    )
+    
+    if not is_valid:
+        print(f"\n⚠️ HALÜSINASYON UYARISI: {validation_msg}")
+        print("Sistem güvenlik nedeniyle yanıtı reddetdi.\n")
+        print("=" * 50)
+        return
+
     print(f"\n{final_response}\n")
     print("=" * 50)
 
@@ -233,5 +249,5 @@ if __name__ == "__main__":
         permission="manager",
         doc_type="pdf",
         k=5,
-        SCORE_THRESHOLD=0.45
+        SCORE_THRESHOLD=0.70
     )

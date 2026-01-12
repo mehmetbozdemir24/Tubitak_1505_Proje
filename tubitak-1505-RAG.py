@@ -11,9 +11,9 @@ from uuid import uuid4
 import streamlit as st
 from streamlit_lottie import st_lottie
 
-# --- GEREKLİ IMPORTLAR ---
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langchain_core.tools import tool
+from hallucination_validator import HallucinationValidator
 
 # --- SAYFA AYARLARI ---
 st.set_page_config(page_title="Bilimp AI Asistan", layout="wide", page_icon="🤖")
@@ -363,9 +363,9 @@ with st.sidebar:
 
     st.divider()
     st.markdown("### 🎛️ İnce Ayarlar")
-    temperature = st.slider("Yaratıcılık", 0.0, 1.0, 0.3, step=0.1)
+    temperature = st.slider("Yaratıcılık", 0.0, 1.0, 0.1, step=0.1)
     top_k = st.number_input("Bağlam (Chunk)", 1, 20, 5)
-    score_threshold = st.slider("Benzerlik Eşiği", 0.0, 0.9, 0.40, step=0.05)
+    score_threshold = st.slider("Benzerlik Eşiği", 0.0, 0.9, 0.70, step=0.05)
     with st.expander("📄 Chunk Parametreleri"):
         c_size = st.number_input("Boyut", 500, 5000, 2500)
         c_over = st.number_input("Örtüşme", 0, 1000, 200)
@@ -522,15 +522,52 @@ with t2:
 
                 if ready and llm:
                     try:
-                        # ---------------------------------------------------------
-                        # 1. TOOL (ARAÇ) TANIMI
-                        # ---------------------------------------------------------
                         @tool
                         def bilimp_knowledge_base(query: str):
                             """
                             Bilimp AI Asistanı'nın şirket içi bilgi bankasında arama yapmasını sağlar.
                             """
-                            pass
+                            try:
+                                dense_emb = get_dense_embeddings()
+                                sparse_emb = get_sparse_embeddings()
+                                vector_store = QdrantVectorStore(
+                                    client=client,
+                                    collection_name=COLLECTION_NAME,
+                                    embedding=dense_emb,
+                                    vector_name="content",
+                                    sparse_embedding=sparse_emb,
+                                    sparse_vector_name="sparse",
+                                    retrieval_mode=RetrievalMode.HYBRID
+                                )
+                                
+                                allowed_perms = get_allowed_permissions(current_user_role)
+                                perm_filter = rest_models.Filter(must=[
+                                    rest_models.FieldCondition(
+                                        key="metadata.permission",
+                                        match=rest_models.MatchAny(any=allowed_perms)
+                                    )
+                                ])
+                                
+                                results = vector_store.similarity_search_with_score(
+                                    query, k=5, filter=perm_filter
+                                )
+                                
+                                high_quality_docs = [
+                                    doc for doc, score in results 
+                                    if score >= 0.70
+                                ]
+                                
+                                if not high_quality_docs:
+                                    return "ARAŞTIRMA_SONUCU: Bu konuda belgelerimde yeterli kalitede bilgi bulunamadı."
+                                
+                                if len(high_quality_docs) < 2:
+                                    return "ARAŞTIRMA_SONUCU: Konu hakkında çok az bilgi var, lütfen daha spesifik soru sorun."
+                                
+                                context = "\n\n".join([doc.page_content for doc in high_quality_docs])
+                                return f"ARAŞTIRMA_SONUCU: {context}"
+                                
+                            except Exception as e:
+                                return f"ARAŞTIRMA_SONUCU: Teknik hata - {str(e)}"
 
 
                         llm_with_tools = llm.bind_tools([bilimp_knowledge_base])
@@ -631,21 +668,46 @@ with t2:
                                         doc.metadata["score"] = score
                                         retrieved_docs.append(doc)
 
+                                if not retrieved_docs:
+                                    s.update(label="Bilgi Bulunamadı", state="error", expanded=False)
+                                    final_response = "Bu konuda belgelerimde yeterli kalitede bilgi bulunamadı. Lütfen sorunuzu farklı şekilde ifade edin."
+                                    st.error("❌ " + final_response)
+                                    st.session_state.messages.append({
+                                        "role": "assistant",
+                                        "content": final_response,
+                                        "sources": []
+                                    })
+                                    st.stop()
+                                
+                                if len(retrieved_docs) < 2:
+                                    s.update(label="Yetersiz Bilgi", state="warning", expanded=False)
+                                    final_response = "Bu konuda çok az bilgi var. Lütfen daha spesifik bir soru sorun."
+                                    st.warning("⚠️ " + final_response)
+                                    st.session_state.messages.append({
+                                        "role": "assistant",
+                                        "content": final_response,
+                                        "sources": retrieved_docs
+                                    })
+                                    st.stop()
+
                                 context_str = "\n\n".join([d.page_content for d in retrieved_docs])
                                 s.update(label="Bilgiler Getirildi!", state="complete", expanded=False)
 
-                            # RAG cevaplama - GEÇMİŞİ DE EKLE
                             rag_system_prompt = f"""
-SİSTEM TALİMATI: Sen yardımcı bir asistansın.
-Aşağıdaki BULUNAN DÖKÜMANLAR'ı temel alarak kullanıcının son sorusunu cevapla.
+SİSTEM TALİMATI: Sen TÜBİTAK 1505 doküman uzmanısın.
 
 BULUNAN DÖKÜMANLAR:
 {context_str}
 
-KESİN KURALLAR:
-1. Cevabın TAMAMEN Türkçe olmalıdır.
-2. Sadece verilen dökümanlardaki bilgileri kullan.
-3. Sohbet geçmişini dikkate al.
+KATÎ KURALLAR:
+1. SADECE yukarıdaki belgelerden cevap ver.
+2. Belgeler soruyu tam cevaplamıyorsa bunu açıkça belirt.
+3. Belirsizlik varsa "Mevcut belgeler bu konuda net bilgi içermiyor" de.
+4. ASLA tahmin yapma, spekülasyon etme veya kendi bilgini ekleme.
+5. Her cevabın sonunda hangi belgeden aldığını belirt.
+6. Cevabın TAMAMEN Türkçe olmalıdır.
+
+UYARI: Yukarıdaki belgeler soruyu cevaplamak için yetersizse bunu kullanıcıya söyle.
 """
                             st.markdown("📚 **Dökümanlardan Yanıtlanıyor:**")
 
@@ -658,6 +720,15 @@ KESİN KURALLAR:
 
                             stream_generator = llm.stream(rag_messages)
                             final_response = st.write_stream(stream_generator)
+                            
+                            is_valid, validation_msg = HallucinationValidator.validate_response(
+                                prompt, final_response, retrieved_docs
+                            )
+                            
+                            if not is_valid:
+                                st.warning(f"⚠️ Kalite Uyarısı: {validation_msg}")
+                                final_response = "Bu konuda belgelerimde net bilgi bulamadım. Lütfen sorunuzu farklı şekilde ifade edin."
+                                st.error(final_response)
 
                         else:
                             # DURUM B: SOHBET (Tool Yok)

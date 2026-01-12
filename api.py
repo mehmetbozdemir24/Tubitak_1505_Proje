@@ -6,19 +6,15 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
-# Mevcut RAG modüllerini içe aktar
-# TEST.py içindeki fonksiyonları kullanacağız.
-# Ancak TEST.py bir script olduğu için import ederken çalışmasını istemeyiz.
-# Bu yüzden TEST.py'yi biraz refactor etmek gerekebilir veya doğrudan buraya taşıyabiliriz.
-# Şimdilik TEST.py'deki mantığı buraya kopyalayarak entegre ediyoruz.
-
-# --- RAG IMPORTS ---
 import torch
 from langchain_qdrant import QdrantVectorStore
-from qdrant_client import QdrantClient, models
+from qdrant_client import QdrantClient
+from qdrant_client.http import models as qdrant_models
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.documents import Document as LangChainDocument
+from hallucination_validator import HallucinationValidator
 
 # --- APP SETUP ---
 app = FastAPI(title="Tubitak 1505 RAG API", version="1.0.0")
@@ -89,32 +85,23 @@ def query_rag(request: QueryRequest):
     search_kwargs = {"k": request.k}
     must_conditions = []
     
-    # Rol bazlı erişim kontrolü filtresi
-    # Not: Gerçek senaryoda bu mapping daha detaylı olabilir.
-    # Şimdilik basitçe: gelen rol, metadatadaki permission ile eşleşmeli.
-    # Veya hiyerarşik bir yapı kurulabilir (Admin her şeyi görür vs).
-    # Basitlik için birebir eşleşme veya 'admin' ise her şeyi görme mantığı eklenebilir.
-    
-    # Eğer Admin değilse yetki filtresi uygula (Örnek mantık)
-    # Ancak mevcut veri yapısında permission alanı var. 
-    # TEST.py'deki mantığı koruyarak direk filtreliyoruz.
     must_conditions.append(
-        models.FieldCondition(
+        qdrant_models.FieldCondition(
             key="metadata.permission",
-            match=models.MatchValue(value=request.role)
+            match=qdrant_models.MatchValue(value=request.role)
         )
     )
 
     if request.doc_type:
         must_conditions.append(
-            models.FieldCondition(
+            qdrant_models.FieldCondition(
                 key="metadata.file_type",
-                match=models.MatchValue(value=request.doc_type)
+                match=qdrant_models.MatchValue(value=request.doc_type)
             )
         )
 
     if must_conditions:
-        search_kwargs["filter"] = models.Filter(must=must_conditions)
+        search_kwargs["filter"] = qdrant_models.Filter(must=must_conditions)
 
     # 2. Vektör Araması
     try:
@@ -125,19 +112,25 @@ def query_rag(request: QueryRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Database connection error: {str(e)}")
 
-    # 3. Sonuçları Filtrele (Score Threshold)
-    SCORE_THRESHOLD = 0.45
-    filtered_docs = [doc for doc, score in docs_with_scores if score >= SCORE_THRESHOLD]
+    SCORE_THRESHOLD = 0.70
+    filtered_docs = [(doc, score) for doc, score in docs_with_scores if score >= SCORE_THRESHOLD]
     
-    context_parts = [doc.page_content for doc in filtered_docs]
-    context_text = "\n\n---\n\n".join(context_parts)
-
-    if not context_text:
+    if not filtered_docs:
         return QueryResponse(
-            answer="Üzgünüm, yetkiniz dahilindeki dokümanlarda bu konuyla ilgili bilgi bulamadım.",
+            answer="Bu konuda belgelerimde yeterli kalitede bilgi bulunamadı. Lütfen sorunuzu farklı şekilde ifade edin.",
             context_used=[],
             processing_time_ms=(time.perf_counter() - start_time) * 1000
         )
+    
+    if len(filtered_docs) < 2:
+        return QueryResponse(
+            answer="Bu konuda çok az bilgi var. Lütfen daha spesifik bir soru sorun.",
+            context_used=[doc.page_content for doc, _ in filtered_docs],
+            processing_time_ms=(time.perf_counter() - start_time) * 1000
+        )
+    
+    context_parts = [doc.page_content for doc, _ in filtered_docs]
+    context_text = "\n\n---\n\n".join(context_parts)
 
     # 4. LLM Üretimi
     prompt_template = """Sen yardımcı bir yapay zeka asistanısın. Aşağıdaki bağlam bilgisini kullanarak kullanıcının sorusunu cevapla.
@@ -149,6 +142,13 @@ def query_rag(request: QueryRequest):
     Kullanıcı Sorusu:
     {question}
 
+    KATÎ KURALLAR:
+    1. SADECE yukarıdaki bağlamdan cevap ver.
+    2. Bağlamda cevap YOKSA: "Bu konuda belgelerimde bilgi bulunmuyor" de.
+    3. ASLA tahmin yapma, spekülasyon etme veya kendi bilgini kullanma.
+    4. Belirsizlik varsa açıkça belirt.
+    5. Her cevabın sonunda kaynak belirt.
+
     Cevap:"""
     
     chain = ChatPromptTemplate.from_template(prompt_template) | llm
@@ -158,8 +158,20 @@ def query_rag(request: QueryRequest):
         "question": request.question
     })
 
-    # Ollama bazen string, bazen obje dönebilir, kontrol edelim.
     final_answer = response_text if isinstance(response_text, str) else str(response_text)
+    
+    source_docs = [LangChainDocument(page_content=cp) for cp in context_parts]
+    
+    is_valid, validation_msg = HallucinationValidator.validate_response(
+        request.question, final_answer, source_docs
+    )
+    
+    if not is_valid:
+        return QueryResponse(
+            answer=f"Yanıt kalite kontrolünden geçemedi: {validation_msg}. Lütfen sorunuzu farklı şekilde ifade edin.",
+            context_used=context_parts,
+            processing_time_ms=(time.perf_counter() - start_time) * 1000
+        )
 
     elapsed_time = (time.perf_counter() - start_time) * 1000
     
