@@ -694,7 +694,8 @@ with t2:
                                 s.update(label="Bilgiler Getirildi!", state="complete", expanded=False)
 
                             rag_system_prompt = f"""
-SİSTEM TALİMATI: Sen TÜBİTAK 1505 doküman uzmanısın.
+SİSTEM TALİMATI: Sen yardımcı bir asistansın.
+Aşağıdaki BULUNAN DÖKÜMANLAR'ı temel alarak kullanıcının son sorusunu cevapla.
 
 BULUNAN DÖKÜMANLAR:
 {context_str}
