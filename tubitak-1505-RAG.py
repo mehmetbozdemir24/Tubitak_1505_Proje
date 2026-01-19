@@ -30,7 +30,6 @@ def load_lottieurl(url: str):
 
 
 # --- YARDIMCI FONKSİYON: METİN AKIŞI SİMÜLASYONU ---
-# Tool kullanılmadığında hazır olan metni akışkan göstermek için
 def stream_text_generator(text):
     for word in text.split(" "):
         yield word + " "
@@ -110,35 +109,14 @@ def calculate_md5(file_bytes):
 
 def load_registry():
     if os.path.exists(REGISTRY_FILE):
-        with open(REGISTRY_FILE, "r", encoding="utf-8") as f: return json.load(f)
+        with open(REGISTRY_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
     return {}
 
 
 def save_registry(registry):
-    with open(REGISTRY_FILE, "w", encoding="utf-8") as f: json.dump(registry, f, ensure_ascii=False, indent=4)
-
-
-def delete_document_globally(filename):
-    delete_by_source(filename)
-    reg = load_registry()
-    if filename in reg:
-        del reg[filename]
-        save_registry(reg)
-
-
-def get_allowed_permissions(role):
-    hierarchy = {"public": ["public"], "user": ["public", "user"], "management": ["public", "user", "management"],
-                 "admin": ["public", "user", "management", "admin", "private"], "private": ["private"]}
-    return hierarchy.get(role, ["public"])
-
-
-def get_local_ollama_models():
-    try:
-        response = requests.get("http://localhost:11434/api/tags", timeout=1)
-        if response.status_code == 200: return [m["name"] for m in response.json().get("models", [])]
-    except:
-        return []
-    return []
+    with open(REGISTRY_FILE, "w", encoding="utf-8") as f:
+        json.dump(registry, f, ensure_ascii=False, indent=4)
 
 
 # ==============================================================================
@@ -161,9 +139,11 @@ def process_pptx_native(file_path, source_name, permission):
     slides_chunks = []
     for i, slide in enumerate(prs.slides):
         content = []
-        if slide.shapes.title and slide.shapes.title.text: content.append(f"# {slide.shapes.title.text.strip()}")
+        if slide.shapes.title and slide.shapes.title.text:
+            content.append(f"# {slide.shapes.title.text.strip()}")
         for shape in slide.shapes:
-            if hasattr(shape, "text_frame") and shape.text_frame: content.append(shape.text.strip())
+            if hasattr(shape, "text_frame") and shape.text_frame:
+                content.append(shape.text.strip())
         full = "\n\n".join(content)
         if full.strip():
             doc = Document(page_content=full, metadata={"source": source_name, "chunk_no": i + 1, "file_type": "pptx",
@@ -214,38 +194,25 @@ def process_text_based(file_path, source_name, chunk_size, chunk_overlap, permis
             if header_path:
                 doc.page_content = f"**BAĞLAM:** {header_path}\n\n{doc.page_content}"
 
-            # --- MANTIK BAŞLIYOR ---
-
             # Eğer elimizde bekleyen "yetim" bir parça varsa:
             if temp_doc:
-                # GÜVENLİK KONTROLÜ: Şimdiki parça da çok kısaysa (başka bir başlık olabilir), birleştirme yapma!
-                # Çünkü "Yemek Listesi" başlığı ile "Servis Saatleri" başlığını birleştirmek istemeyiz.
                 if len(doc.page_content) < 100 and "|" not in doc.page_content:
-                    # Bekleyeni olduğu gibi kaydet, çünkü arkasından gelen de içerik değilmiş.
                     merged_docs.append(temp_doc)
-                    temp_doc = doc  # Şimdikini yeni bekleyen yap
+                    temp_doc = doc
                 else:
-                    # Şimdiki parça dolu bir içerik (Tablo veya Uzun Metin). Birleştir!
-                    # Önceki kısa başlık + Yeni Satır + Şimdiki İçerik
                     new_content = f"{temp_doc.page_content}\n\n{doc.page_content}"
                     doc.page_content = new_content
-                    # Metadata'yı koru (genelde aynı başlık altındadırlar)
                     merged_docs.append(doc)
-                    temp_doc = None  # Bekleyen kutusunu boşalt
+                    temp_doc = None
 
             else:
-                # Elimizde bekleyen yok. Peki bu parça beklemeye alınmalı mı?
-                # Kural: 250 karakterden kısaysa VE içinde Tablo yoksa -> Potansiyel Yetim Başlık
                 if len(doc.page_content) < 250 and "|" not in doc.page_content:
                     temp_doc = doc
                 else:
-                    # Parça zaten büyük veya tablo, direkt ekle.
                     merged_docs.append(doc)
 
-        # Döngü bittiğinde elde kalan son parça varsa onu da ekle (Unutma!)
         if temp_doc:
             merged_docs.append(temp_doc)
-        # -------------------------------------------------------------
 
         # 3. Recursive Splitter (Çok büyükleri bölmek için)
         rec_splitter = RecursiveCharacterTextSplitter(
@@ -301,13 +268,29 @@ def init_collection():
         )
 
 
-def add_documents_to_qdrant(documents):
+def add_documents_to_qdrant(documents, file_hash=None):
+    """
+    documents: belge listesi
+    file_hash: dosyanın MD5 hash'i (metadata'ya eklemek için)
+    """
     client = get_qdrant_client()
     dense_emb = get_dense_embeddings()
     sparse_emb = get_sparse_embeddings()
-    vector_store = QdrantVectorStore(client=client, collection_name=COLLECTION_NAME, embedding=dense_emb,
-                                     vector_name="content", sparse_embedding=sparse_emb, sparse_vector_name="sparse",
-                                     retrieval_mode=RetrievalMode.HYBRID)
+
+    # Hash'i metadata'ya ekle
+    if file_hash:
+        for doc in documents:
+            doc.metadata["file_hash"] = file_hash
+
+    vector_store = QdrantVectorStore(
+        client=client,
+        collection_name=COLLECTION_NAME,
+        embedding=dense_emb,
+        vector_name="content",
+        sparse_embedding=sparse_emb,
+        sparse_vector_name="sparse",
+        retrieval_mode=RetrievalMode.HYBRID
+    )
     ids = [str(uuid4()) for _ in documents]
     vector_store.add_documents(documents=documents, ids=ids)
 
@@ -319,8 +302,100 @@ def delete_by_source(source_name):
             must=[FieldCondition(key="metadata.source", match=MatchValue(value=source_name))]))
 
 
+def delete_document_globally(filename):
+    delete_by_source(filename)
+    reg = load_registry()
+    if filename in reg:
+        del reg[filename]
+        save_registry(reg)
+
+
+def get_allowed_permissions(role):
+    hierarchy = {
+        "public": ["public"],
+        "user": ["public", "user"],
+        "management": ["public", "user", "management"],
+        "admin": ["public", "user", "management", "admin", "private"],
+        "private": ["private"]
+    }
+    return hierarchy.get(role, ["public"])
+
+
+def get_local_ollama_models():
+    try:
+        response = requests.get("http://localhost:11434/api/tags", timeout=1)
+        if response.status_code == 200:
+            return [m["name"] for m in response.json().get("models", [])]
+    except:
+        return []
+    return []
+
+
 # ==============================================================================
-# ARAYÜZ
+# SENKRONIZASYON (App Başlaması Sırasında)
+# ==============================================================================
+def sync_registry_with_qdrant():
+    """
+    Qdrant'taki dökümanları baz alarak JSON'u güncelle.
+    Qdrant'ta varsa ve JSON'da yoksa -> JSON'a ekle
+    JSON'da varsa ve Qdrant'ta yoksa -> JSON'dan sil
+
+    Hash bilgisini Qdrant'tan çıkar (eğer varsa)
+    """
+    client = get_qdrant_client()
+    registry = load_registry()
+
+    qdrant_files = {}  # {filename: {"permission": perm, "hash": hash}}
+
+    if client.collection_exists(COLLECTION_NAME):
+        scroll_result = client.scroll(
+            collection_name=COLLECTION_NAME,
+            limit=1000,
+            with_payload=True
+        )
+
+        # Qdrant'tan benzersiz dosyaları topla (hash dahil)
+        for point in scroll_result[0]:
+            metadata = point.payload.get("metadata", {})
+            source = metadata.get("source", "")
+            perm = metadata.get("permission", "public")
+            file_hash = metadata.get("file_hash", "unknown")
+
+            if source and source not in qdrant_files:
+                qdrant_files[source] = {
+                    "permission": perm,
+                    "hash": file_hash
+                }
+
+    # Qdrant'ta olanları JSON'a ekle (eğer yoksa)
+    updated = False
+    for filename, info in qdrant_files.items():
+        if filename not in registry:
+            registry[filename] = {
+                "hash": info["hash"],
+                "permission": info["permission"],
+                "synced_at": str(time.time())
+            }
+            updated = True
+
+    # JSON'da olanları kontrol et (Qdrant'ta yoksa sil)
+    files_to_remove = []
+    for filename in registry:
+        if filename not in qdrant_files:
+            files_to_remove.append(filename)
+
+    for filename in files_to_remove:
+        del registry[filename]
+        updated = True
+
+    if updated:
+        save_registry(registry)
+
+    return registry
+
+
+# ==============================================================================
+# ARAYÜZ - SIDEBAR
 # ==============================================================================
 with st.sidebar:
     try:
@@ -328,20 +403,32 @@ with st.sidebar:
     except:
         st.warning("Logo Yok")
 
+    # SENKRONIZASYON
+    if "registry_synced" not in st.session_state:
+        with st.status("🔄 Sistem Başlatılıyor...", expanded=False) as status:
+            sync_registry_with_qdrant()
+            status.update(label="✅ Sistem Hazır", state="complete", expanded=False)
+        st.session_state["registry_synced"] = True
+
     st.markdown("### 🛠️ Sistem Ayarları")
-    if "last_role" not in st.session_state: st.session_state.last_role = "admin"
+    if "last_role" not in st.session_state:
+        st.session_state.last_role = "admin"
+
     current_user_role = st.selectbox("👤 Kullanıcı Rolü", ["public", "user", "management", "admin", "private"], index=3)
     if current_user_role != st.session_state.last_role:
         st.session_state.messages = []
         st.session_state.last_role = current_user_role
         st.rerun()
+
     with st.expander("ℹ️ Yetki Detayı"):
         st.code(get_allowed_permissions(current_user_role))
 
     st.divider()
     st.markdown("### 🧠 Yapay Zeka Motoru")
-    gemini_models_map = {"Gemini 2.5 Flash (Hızlı)": "gemini-2.5-flash",
-                         "Gemini 3.0 Flash (Akıllı + Hızlı)": "gemini-3-flash-preview"}
+    gemini_models_map = {
+        "Gemini 2.5 Flash (Hızlı)": "gemini-2.5-flash",
+        "Gemini 3.0 Flash (Akıllı + Hızlı)": "gemini-3-flash-preview"
+    }
     ollama_list = get_local_ollama_models()
     model_options = list(gemini_models_map.keys())
     if ollama_list:
@@ -352,14 +439,15 @@ with st.sidebar:
     selected_option = st.selectbox("Model Seçimi", model_options)
     llm_model_id, llm_type = None, "ollama"
     if "Gemini" in selected_option:
-        llm_type = "gemini";
+        llm_type = "gemini"
         llm_model_id = gemini_models_map[selected_option]
     elif "Ollama" in selected_option:
-        llm_type = "ollama";
+        llm_type = "ollama"
         llm_model_id = selected_option.split(": ")[1]
 
     api_key = ""
-    if llm_type == "gemini": api_key = st.text_input("🔑 Google API Key", type="password")
+    if llm_type == "gemini":
+        api_key = st.text_input("🔑 Google API Key", type="password")
 
     st.divider()
     st.markdown("### 🎛️ İnce Ayarlar")
@@ -381,56 +469,104 @@ with t1:
         up_file = st.file_uploader("Dosyayı buraya sürükleyin", type=["pdf", "docx", "xlsx", "pptx"],
                                    label_visibility="collapsed")
         if up_file:
-            bytes_data = up_file.getvalue();
-            f_name = up_file.name;
-            curr_md5 = calculate_md5(bytes_data);
-            reg = load_registry()
-            file_exists = False
-            if f_name in reg:
-                stored = reg[f_name]
-                if isinstance(stored, dict) and stored["hash"] == curr_md5:
-                    file_exists = True
-                elif stored == curr_md5:
-                    file_exists = True
+            bytes_data = up_file.getvalue()
+            f_name = up_file.name
+            curr_md5 = calculate_md5(bytes_data)
 
-            if file_exists:
-                st.warning(f"⚠️ **{f_name}** zaten mevcut.")
+            # Qdrant'ta bu belge var mı kontrol et
+            client = get_qdrant_client()
+            file_exists = False
+            hash_matches = False
+
+            if client.collection_exists(COLLECTION_NAME):
+                scroll_result = client.scroll(
+                    collection_name=COLLECTION_NAME,
+                    limit=1000,
+                    with_payload=True
+                )
+
+                for point in scroll_result[0]:
+                    metadata = point.payload.get("metadata", {})
+                    source = metadata.get("source", "")
+                    stored_hash = metadata.get("file_hash", "")
+
+                    if source == f_name:
+                        file_exists = True
+                        if stored_hash == curr_md5:
+                            hash_matches = True
+                        break
+
+            if file_exists and hash_matches:
+                st.warning(f"⚠️ **{f_name}** zaten mevcut (değişiklik yok).")
+            elif file_exists and not hash_matches:
+                st.info(f"🔄 **{f_name}** önceki versiyonundan farklı. Güncellenecek.")
             else:
                 st.success(f"✅ **{f_name}** analize hazır.")
 
             if st.button("🚀 Sisteme Entegre Et", type="primary"):
-                with st.status("İşleniyor...", expanded=True) as s:
-                    with tempfile.NamedTemporaryFile(delete=False, suffix=os.path.splitext(f_name)[1]) as tmp:
-                        tmp.write(bytes_data);
-                        tmp_path = tmp.name
-                    init_collection();
-                    delete_by_source(f_name)
-                    chunks = []
-                    if f_name.endswith(".pptx"):
-                        chunks = process_pptx_native(tmp_path, f_name, current_user_role)
-                    else:
-                        chunks = process_text_based(tmp_path, f_name, c_size, c_over, current_user_role)
-                    if chunks:
-                        add_documents_to_qdrant(chunks)
-                        reg[f_name] = {"hash": curr_md5, "permission": current_user_role}
-                        save_registry(reg)
-                        s.update(label="Tamamlandı!", state="complete", expanded=False)
-                        st.toast("Başarılı!", icon="🎉");
-                        time.sleep(1);
-                        st.rerun()
-                    else:
-                        s.update(label="Hata", state="error");
-                        st.error("Ayrıştırılamadı.")
-                    os.unlink(tmp_path)
+                if file_exists and hash_matches:
+                    st.info("Belge zaten güncel durumda.")
+                else:
+                    with st.status("İşleniyor...", expanded=True) as s:
+                        with tempfile.NamedTemporaryFile(delete=False, suffix=os.path.splitext(f_name)[1]) as tmp:
+                            tmp.write(bytes_data)
+                            tmp_path = tmp.name
+
+                        init_collection()
+                        delete_by_source(f_name)
+
+                        chunks = []
+                        if f_name.endswith(".pptx"):
+                            chunks = process_pptx_native(tmp_path, f_name, current_user_role)
+                        else:
+                            chunks = process_text_based(tmp_path, f_name, c_size, c_over, current_user_role)
+
+                        if chunks:
+                            add_documents_to_qdrant(chunks, file_hash=curr_md5)
+
+                            current_reg = load_registry()
+                            current_reg[f_name] = {
+                                "hash": curr_md5,
+                                "permission": current_user_role,
+                                "updated_at": str(time.time())
+                            }
+                            save_registry(current_reg)
+
+                            s.update(label="Tamamlandı!", state="complete", expanded=False)
+                            st.toast("Başarılı!", icon="🎉")
+                            time.sleep(1)
+                            st.rerun()
+                        else:
+                            s.update(label="Hata", state="error")
+                            st.error("Ayrıştırılamadı.")
+
+                        os.unlink(tmp_path)
 
     with col_list:
         st.markdown("#### 🗂️ Sistemdeki Belgeler")
-        current_reg = load_registry();
-        allowed_view_perms = get_allowed_permissions(current_user_role);
+
+        client = get_qdrant_client()
         visible_files = []
-        for fname, fdata in current_reg.items():
-            perm = fdata.get("permission", "public") if isinstance(fdata, dict) else "public"
-            if perm in allowed_view_perms: visible_files.append((fname, perm))
+
+        if client.collection_exists(COLLECTION_NAME):
+            scroll_result = client.scroll(
+                collection_name=COLLECTION_NAME,
+                limit=1000,
+                with_payload=True
+            )
+
+            unique_files = {}
+            for point in scroll_result[0]:
+                source = point.payload.get("metadata", {}).get("source", "")
+                perm = point.payload.get("metadata", {}).get("permission", "public")
+                if source and source not in unique_files:
+                    unique_files[source] = perm
+
+            allowed_view_perms = get_allowed_permissions(current_user_role)
+            for fname, perm in unique_files.items():
+                if perm in allowed_view_perms:
+                    visible_files.append((fname, perm))
+
         if not visible_files:
             st.info("Görüntülenecek belge yok.")
         else:
@@ -441,23 +577,18 @@ with t1:
                         f"""<div style="padding:10px; background:#161b22; border-radius:8px; margin-bottom:5px; border:1px solid #30363d;"><span style="color:white; font-weight:600;">📄 {fname}</span><span style="background:#238636; color:white; padding:2px 8px; border-radius:4px; font-size:0.8em; margin-left:10px;">{perm}</span></div>""",
                         unsafe_allow_html=True)
                 with c2:
-                    if st.button("🗑️", key=f"del_{fname}"): delete_document_globally(fname); st.rerun()
+                    if st.button("🗑️", key=f"del_{fname}"):
+                        delete_document_globally(fname)
+                        st.rerun()
 
 # --- TAB 2: SOHBET (STREAMING) ---
-# --- TAB 2: SOHBET (STREAMING) ---
 with t2:
-    # Memory için yardımcı fonksiyon
     def get_formatted_history(messages, max_pairs=5):
         """
         Mesaj geçmişini LangChain formatına çevirir.
-        max_pairs: Maksimum user-assistant çifti sayısı
         """
         history = []
-        # Tüm mesajları al
         all_msgs = messages.copy()
-
-        # Son N çifti almak için (her çift = 1 user + 1 assistant)
-        # En fazla max_pairs * 2 mesaj al
         recent = all_msgs[-(max_pairs * 2):]
 
         for msg in recent:
@@ -473,11 +604,9 @@ with t2:
         return history
 
 
-    # Mesaj geçmişini başlat
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
-    # Geçmiş mesajları render et
     for m in st.session_state.messages:
         with st.chat_message(m["role"]):
             st.markdown(m["content"])
@@ -490,7 +619,6 @@ with t2:
                         st.divider()
 
     if prompt := st.chat_input("Sorunuzu buraya yazın..."):
-        # Kullanıcı mesajını ÖNCE ekle
         st.session_state.messages.append({"role": "user", "content": prompt})
 
         with st.chat_message("user"):
@@ -522,9 +650,6 @@ with t2:
 
                 if ready and llm:
                     try:
-                        # ---------------------------------------------------------
-                        # 1. TOOL (ARAÇ) TANIMI
-                        # ---------------------------------------------------------
                         @tool
                         def bilimp_knowledge_base(query: str):
                             """
@@ -535,76 +660,51 @@ with t2:
 
                         llm_with_tools = llm.bind_tools([bilimp_knowledge_base])
 
-                        # ---------------------------------------------------------
-                        # 2. GEÇMİŞİ DÜZGÜN FORMATTA HAZIRLA (KRİTİK DEĞİŞİKLİK)
-                        # ---------------------------------------------------------
-                        # SON mesajı (şu anki prompt) HARİÇ tutarak geçmişi al
-                        # Çünkü prompt zaten ayrıca ekleniyor
-                        history_messages = st.session_state.messages[:-1]  # Son mesaj hariç
+                        history_messages = st.session_state.messages[:-1]
                         history_langchain_format = get_formatted_history(history_messages, max_pairs=5)
 
-                        # ---------------------------------------------------------
-                        # 3. SİSTEM PROMPTU
-                        # ---------------------------------------------------------
                         identity_section = """
-                                Sen profesyonel, yardımsever ve kurumsal bir asistansın.
-                                KİMLİĞİN:
-                                - Adın: **Bilimp AI Asistanı**.
-                                - Görevin: Çalışanlara şirket içi dökümanlar, yönetmelikler ve prosedürler hakkında bilgi sağlamak.
-                                
-                                YETENEKLERİN VE HAFIZA:
-                                - Güçlü bir hafızan var. Sohbet geçmişindeki TÜM mesajları (hem kullanıcının sorularını HEM DE kendi verdiğin cevapları) hatırlarsın.
-                                - Kullanıcı "Önceki soruma ne cevap verdin?", "Az önce ne dedin?", "Bir önceki cevabın neydi?" gibi sorular sorarsa, sohbet geçmişine bakarak KENDİ VERDİĞİN CEVAPLARI söyle.
-                                - Kullanıcı "Ne sormuştum?" derse, onun önceki sorularını hatırla.
-                                
-                                DAVRANIŞ KURALLARI:
-                                1. Eğer kullanıcı "Kimsin?" derse kendini tanıt.
-                                2. Başka bir model olduğunu ASLA SÖYLEME.
-                                3. Kullanıcıya her zaman nazik ve "siz" diliyle hitap et.
-                                4. Hafıza soruları için TOOL KULLANMA, direkt sohbet geçmişinden cevapla.
-                                """
+                        Sen profesyonel, yardımsever ve kurumsal bir asistansın.
+                        KİMLİĞİN:
+                        - Adın: **Bilimp AI Asistanı**.
+                        - Görevin: Çalışanlara şirket içi dökümanlar, yönetmelikler ve prosedürler hakkında bilgi sağlamak.
+                        
+                        YETENEKLERİN VE HAFIZA:
+                        - Güçlü bir hafızan var. Sohbet geçmişindeki TÜM mesajları hatırlarsın.
+                        - Kullanıcı "Önceki soruma ne cevap verdin?" gibi sorular sorarsa, sohbet geçmişine bakarak cevapla.
+                        
+                        DAVRANIŞ KURALLARI:
+                        1. Eğer kullanıcı "Kimsin?" derse kendini tanıt.
+                        2. Başka bir model olduğunu ASLA SÖYLEME.
+                        3. Kullanıcıya her zaman nazik ve "siz" diliyle hitap et.
+                        4. Hafıza soruları için TOOL KULLANMA, direkt sohbet geçmişinden cevapla.
+                        """
 
                         router_section = """
-                                GÖREVİN:
-                                Gelen soruyu ve sohbet geçmişini analiz edip 'bilimp_knowledge_base' aracını kullanıp kullanmayacağına karar ver.
-                                
-                                KARAR MANTIĞI:
-                                1. **Veri İsteği:** Şirket verisi, sayı, kural soruluyorsa -> TOOL KULLAN.
-                                2. **Takip Sorusu:** "Peki kaç tane?", "Bunun fiyatı ne?" gibi önceki konunun devamıysa -> TOOL KULLAN.
-                                3. **HAFIZA SORULARI (KRİTİK):**
-                                   - "Önceki cevabın neydi?", "Ne demiştin?", "Az önce ne söyledin?" -> TOOL KULLANMA, sohbet geçmişinden cevapla.
-                                   - "Ne sormuştum?", "Önceki sorum neydi?" -> TOOL KULLANMA, sohbet geçmişinden cevapla.
-                                4. **Sohbet:** "Merhaba", "Nasılsın" -> TOOL KULLANMA.
-                                """
+                        GÖREVİN:
+                        Gelen soruyu ve sohbet geçmişini analiz edip 'bilimp_knowledge_base' aracını kullanıp kullanmayacağına karar ver.
+                        
+                        KARAR MANTIĞI:
+                        1. **Veri İsteği:** Şirket verisi, sayı, kural soruluyorsa -> TOOL KULLAN.
+                        2. **Takip Sorusu:** "Peki kaç tane?" gibi önceki konunun devamıysa -> TOOL KULLAN.
+                        3. **HAFIZA SORULARI:** "Önceki cevabın neydi?" -> TOOL KULLANMA, sohbet geçmişinden cevapla.
+                        4. **Sohbet:** "Merhaba" -> TOOL KULLANMA.
+                        """
 
                         full_system_prompt = identity_section + "\n\n" + router_section
 
-                        # ---------------------------------------------------------
-                        # 4. MESAJLARI OLUŞTUR
-                        # ---------------------------------------------------------
                         input_msgs = [
                                          SystemMessage(content=full_system_prompt)
                                      ] + history_langchain_format + [
                                          HumanMessage(content=prompt)
                                      ]
 
-                        # DEBUG: Geçmişi kontrol et (geliştirme aşamasında kullan)
-                        # st.write(f"📜 Geçmiş mesaj sayısı: {len(history_langchain_format)}")
-                        # for i, msg in enumerate(history_langchain_format):
-                        #     st.write(f"{i}: {type(msg).__name__} - {msg.content[:50]}...")
-
-                        # Model Karar Veriyor
                         ai_msg = llm_with_tools.invoke(input_msgs)
 
-                        # Değişkenleri sıfırla
                         final_response = ""
                         retrieved_docs = []
 
-                        # ---------------------------------------------------------
-                        # 5. DURUMA GÖRE CEVAPLAMA
-                        # ---------------------------------------------------------
                         if ai_msg.tool_calls:
-                            # DURUM A: RAG GEREKLİ
                             with st.status("📚 Bilgi Bankası Taranıyor...", expanded=True) as s:
                                 dense_emb = get_dense_embeddings()
                                 sparse_emb = get_sparse_embeddings()
@@ -634,22 +734,20 @@ with t2:
                                 context_str = "\n\n".join([d.page_content for d in retrieved_docs])
                                 s.update(label="Bilgiler Getirildi!", state="complete", expanded=False)
 
-                            # RAG cevaplama - GEÇMİŞİ DE EKLE
                             rag_system_prompt = f"""
-SİSTEM TALİMATI: Sen yardımcı bir asistansın.
-Aşağıdaki BULUNAN DÖKÜMANLAR'ı temel alarak kullanıcının son sorusunu cevapla.
-
-BULUNAN DÖKÜMANLAR:
-{context_str}
-
-KESİN KURALLAR:
-1. Cevabın TAMAMEN Türkçe olmalıdır.
-2. Sadece verilen dökümanlardaki bilgileri kullan.
-3. Sohbet geçmişini dikkate al.
-"""
+                            SİSTEM TALİMATI: Sen yardımcı bir asistansın.
+                            Aşağıdaki BULUNAN DÖKÜMANLAR'ı temel alarak kullanıcının son sorusunu cevapla.
+                            
+                            BULUNAN DÖKÜMANLAR:
+                            {context_str}
+                            
+                            KESİN KURALLAR:
+                            1. Cevabın TAMAMEN Türkçe olmalıdır.
+                            2. Sadece verilen dökümanlardaki bilgileri kullan.
+                            3. Sohbet geçmişini dikkate al.
+                            """
                             st.markdown("📚 **Dökümanlardan Yanıtlanıyor:**")
 
-                            # RAG için de geçmişi ekle
                             rag_messages = [
                                                SystemMessage(content=rag_system_prompt)
                                            ] + history_langchain_format + [
@@ -660,7 +758,6 @@ KESİN KURALLAR:
                             final_response = st.write_stream(stream_generator)
 
                         else:
-                            # DURUM B: SOHBET (Tool Yok)
                             raw_content = ai_msg.content
                             content_text = ""
 
@@ -682,9 +779,6 @@ KESİN KURALLAR:
                             st.markdown("💬 **Sohbet Modu:**")
                             final_response = st.write_stream(stream_text_generator(content_text))
 
-                        # ---------------------------------------------------------
-                        # 6. GEÇMİŞE KAYDET (KRİTİK!)
-                        # ---------------------------------------------------------
                         if retrieved_docs:
                             with st.expander(f"🔍 Referans Kaynaklar ({len(retrieved_docs)})"):
                                 for i, doc in enumerate(retrieved_docs):
@@ -693,10 +787,9 @@ KESİN KURALLAR:
                                         f"**#{i + 1}** | 📂 `{doc.metadata.get('source')}` | 📊 Skor: `{score_val:.4f}`")
                                     st.caption(doc.page_content)
 
-                        # Assistant cevabını kaydet
                         st.session_state.messages.append({
                             "role": "assistant",
-                            "content": final_response,  # Tam cevap metni
+                            "content": final_response,
                             "sources": retrieved_docs
                         })
 
@@ -706,7 +799,6 @@ KESİN KURALLAR:
                             st.error("⚠️ API Kotası Doldu.")
                         else:
                             st.error(f"Hata: {e}")
-                        # Hata durumunda da boş mesaj ekleme
                         st.session_state.messages.append({
                             "role": "assistant",
                             "content": f"Bir hata oluştu: {error_msg}",
