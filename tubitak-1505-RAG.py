@@ -607,17 +607,22 @@ with t2:
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
-    for m in st.session_state.messages:
-        with st.chat_message(m["role"]):
-            st.markdown(m["content"])
-            if m["role"] == "assistant" and "sources" in m and m["sources"]:
-                with st.expander(f"🔍 Referans Kaynaklar ({len(m['sources'])})"):
-                    for i, doc in enumerate(m['sources']):
-                        score_val = doc.metadata.get("score", 0.0)
-                        st.markdown(f"**#{i + 1}** | 📂 `{doc.metadata.get('source')}` | 📊 Skor: `{score_val:.4f}`")
-                        st.caption(doc.page_content)
-                        st.divider()
+    # Chat mesajlarını container içinde göster
+    chat_container = st.container()
+    
+    with chat_container:
+        for m in st.session_state.messages:
+            with st.chat_message(m["role"]):
+                st.markdown(m["content"])
+                if m["role"] == "assistant" and "sources" in m and m["sources"]:
+                    with st.expander(f"🔍 Referans Kaynaklar ({len(m['sources'])})"):
+                        for i, doc in enumerate(m['sources']):
+                            score_val = doc.metadata.get("score", 0.0)
+                            st.markdown(f"**#{i + 1}** | 📂 `{doc.metadata.get('source')}` | 📊 Skor: `{score_val:.4f}`")
+                            st.caption(doc.page_content)
+                            st.divider()
 
+    # Input alanı container dışında - her zaman en altta kalır
     if prompt := st.chat_input("Sorunuzu buraya yazın..."):
         st.session_state.messages.append({"role": "user", "content": prompt})
 
@@ -779,13 +784,19 @@ with t2:
                             st.markdown("💬 **Sohbet Modu:**")
                             final_response = st.write_stream(stream_text_generator(content_text))
 
+                        # Referans gösterimi - sadece bilgi varsa
                         if retrieved_docs:
-                            with st.expander(f"🔍 Referans Kaynaklar ({len(retrieved_docs)})"):
-                                for i, doc in enumerate(retrieved_docs):
-                                    score_val = doc.metadata.get("score", 0.0)
-                                    st.markdown(
-                                        f"**#{i + 1}** | 📂 `{doc.metadata.get('source')}` | 📊 Skor: `{score_val:.4f}`")
-                                    st.caption(doc.page_content)
+                            # Bilgi bulunamadı kontrolü
+                            no_info_keywords = ["bulunamadı", "bilgi yok", "kayıt yok", "yeterli bilgi"]
+                            has_no_info = any(keyword in final_response.lower() for keyword in no_info_keywords)
+                            
+                            if not has_no_info:
+                                with st.expander(f"🔍 Referans Kaynaklar ({len(retrieved_docs)})"):
+                                    for i, doc in enumerate(retrieved_docs):
+                                        score_val = doc.metadata.get("score", 0.0)
+                                        st.markdown(
+                                            f"**#{i + 1}** | 📂 `{doc.metadata.get('source')}` | 📊 Skor: `{score_val:.4f}`")
+                                        st.caption(doc.page_content)
 
                         st.session_state.messages.append({
                             "role": "assistant",
