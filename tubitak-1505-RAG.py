@@ -810,6 +810,7 @@ with t2:
                             "sources": retrieved_docs,
                             "show_sources": show_sources
                         })
+                        st.rerun()
 
                     except Exception as e:
                         error_msg = str(e)
@@ -823,3 +824,4 @@ with t2:
                             "sources": [],
                             "show_sources": False
                         })
+                        st.rerun()
