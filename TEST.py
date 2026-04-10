@@ -8,6 +8,7 @@ from qdrant_client import QdrantClient, models
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
+from language_utils import choose_answer_language, build_language_policy_prompt, get_no_answer_message
 
 # Google Gemini Kütüphanesi
 from langchain_google_genai import ChatGoogleGenerativeAI
@@ -173,27 +174,38 @@ def run_rag_pipeline(question: str, permission: str, doc_type: str = None, k: in
 
     # ".2f" ile virgülden sonra sadece 2 basamak gösteririz
     print(f"İşlem süresi: {gecen_sure_ms:.2f} ms")
+    answer_language, question_language, context_language, language_source = choose_answer_language(
+        question,
+        context_text or "",
+    )
+    print(
+        f"Dil karari -> yanit: {answer_language}, soru: {question_language}, "
+        f"baglam: {context_language}, kaynak: {language_source}"
+    )
 
     # Context yoksa iptal et
     if not context_text:
         print("\n" + "=" * 50)
         print("🤖 SİSTEM CEVABI")
         print("=" * 50)
-        print("\nBilgim yok.\n")
+        print(f"\n{get_no_answer_message(answer_language)}\n")
         print("=" * 50)
         return
 
     # 2. Prompt Hazırla
-    prompt_template = """Sen yardımcı bir yapay zeka asistanısın. Aşağıdaki bağlam bilgisini kullanarak kullanıcının sorusunu cevapla.
-    Eğer bağlamda cevabı bulamazsan, uydurma, sadece "Bilgim yok" de.
+    prompt_template = """You are a helpful AI assistant.
+    {language_policy}
 
-    Bağlam (Veritabanından Gelen Bilgi):
+    Use only the context below to answer the user's question.
+    If the answer is not present in the context, do not hallucinate.
+
+    Context (Retrieved from Vector Database):
     {context}
 
-    Kullanıcı Sorusu:
+    User Question:
     {question}
 
-    Cevap:"""
+    Answer:"""
 
     final_prompt = ChatPromptTemplate.from_template(prompt_template)
     chain = final_prompt | llm
@@ -204,6 +216,7 @@ def run_rag_pipeline(question: str, permission: str, doc_type: str = None, k: in
     print("=" * 50)
 
     response = chain.invoke({
+        "language_policy": build_language_policy_prompt(answer_language),
         "context": context_text,
         "question": question
     })

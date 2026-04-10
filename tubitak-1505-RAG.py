@@ -14,6 +14,7 @@ from streamlit_lottie import st_lottie
 # --- GEREKLİ IMPORTLAR ---
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langchain_core.tools import tool
+from language_utils import choose_answer_language, build_language_policy_prompt, get_language_label
 
 # --- SAYFA AYARLARI ---
 st.set_page_config(page_title="Bilimp AI Asistan", layout="wide", page_icon="🤖")
@@ -650,6 +651,9 @@ with t2:
 
                 if ready and llm:
                     try:
+                        router_answer_language, _, _, _ = choose_answer_language(prompt, "")
+                        router_language_policy = build_language_policy_prompt(router_answer_language)
+
                         @tool
                         def bilimp_knowledge_base(query: str):
                             """
@@ -691,7 +695,7 @@ with t2:
                         4. **Sohbet:** "Merhaba" -> TOOL KULLANMA.
                         """
 
-                        full_system_prompt = identity_section + "\n\n" + router_section
+                        full_system_prompt = identity_section + "\n\n" + router_section + "\n\n" + router_language_policy
 
                         input_msgs = [
                                          SystemMessage(content=full_system_prompt)
@@ -734,19 +738,30 @@ with t2:
                                 context_str = "\n\n".join([d.page_content for d in retrieved_docs])
                                 s.update(label="Bilgiler Getirildi!", state="complete", expanded=False)
 
+                            answer_language, question_language, context_language, language_source = choose_answer_language(
+                                prompt,
+                                context_str,
+                            )
+                            language_label = get_language_label(answer_language)
+
                             rag_system_prompt = f"""
-                            SİSTEM TALİMATI: Sen yardımcı bir asistansın.
-                            Aşağıdaki BULUNAN DÖKÜMANLAR'ı temel alarak kullanıcının son sorusunu cevapla.
+                            SYSTEM INSTRUCTION: You are a helpful assistant.
+                            {build_language_policy_prompt(answer_language)}
+
+                            Answer the user's latest question using the FOUND DOCUMENTS below.
                             
-                            BULUNAN DÖKÜMANLAR:
+                            FOUND DOCUMENTS:
                             {context_str}
                             
-                            KESİN KURALLAR:
-                            1. Cevabın TAMAMEN Türkçe olmalıdır.
-                            2. Sadece verilen dökümanlardaki bilgileri kullan.
-                            3. Sohbet geçmişini dikkate al.
+                            STRICT RULES:
+                            1. Use only the provided documents.
+                            2. Consider chat history for continuity.
                             """
-                            st.markdown("📚 **Dökümanlardan Yanıtlanıyor:**")
+                            st.markdown(f"📚 **Dokumanlardan Yanitlaniyor ({language_label})**")
+                            st.caption(
+                                f"Dil karari: yanit={answer_language}, soru={question_language}, "
+                                f"baglam={context_language}, kaynak={language_source}"
+                            )
 
                             rag_messages = [
                                                SystemMessage(content=rag_system_prompt)

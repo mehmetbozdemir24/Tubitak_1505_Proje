@@ -19,6 +19,7 @@ from qdrant_client import QdrantClient, models
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
+from language_utils import choose_answer_language, build_language_policy_prompt, get_no_answer_message
 
 # --- APP SETUP ---
 app = FastAPI(title="Tubitak 1505 RAG API", version="1.0.0")
@@ -74,6 +75,10 @@ class QueryResponse(BaseModel):
     answer: str
     context_used: List[str]
     processing_time_ms: float
+    answer_language: str
+    question_language: str
+    context_language: str
+    language_source: str
 
 # --- ROUTES ---
 
@@ -131,29 +136,41 @@ def query_rag(request: QueryRequest):
     
     context_parts = [doc.page_content for doc in filtered_docs]
     context_text = "\n\n---\n\n".join(context_parts)
+    answer_language, question_language, context_language, language_source = choose_answer_language(
+        request.question,
+        context_text,
+    )
 
     if not context_text:
         return QueryResponse(
-            answer="Üzgünüm, yetkiniz dahilindeki dokümanlarda bu konuyla ilgili bilgi bulamadım.",
+            answer=get_no_answer_message(answer_language),
             context_used=[],
-            processing_time_ms=(time.perf_counter() - start_time) * 1000
+            processing_time_ms=(time.perf_counter() - start_time) * 1000,
+            answer_language=answer_language,
+            question_language=question_language,
+            context_language=context_language,
+            language_source=language_source,
         )
 
     # 4. LLM Üretimi
-    prompt_template = """Sen yardımcı bir yapay zeka asistanısın. Aşağıdaki bağlam bilgisini kullanarak kullanıcının sorusunu cevapla.
-    Eğer bağlamda cevabı bulamazsan, uydurma, sadece "Bilgim yok" de.
+    prompt_template = """You are a helpful AI assistant.
+    {language_policy}
 
-    Bağlam (Veritabanından Gelen Bilgi):
+    Use only the context below to answer the user's question.
+    If the answer is not present in the context, do not hallucinate.
+
+    Context (Retrieved from Vector Database):
     {context}
 
-    Kullanıcı Sorusu:
+    User Question:
     {question}
 
-    Cevap:"""
+    Answer:"""
     
     chain = ChatPromptTemplate.from_template(prompt_template) | llm
     
     response_text = chain.invoke({
+        "language_policy": build_language_policy_prompt(answer_language),
         "context": context_text,
         "question": request.question
     })
@@ -166,7 +183,11 @@ def query_rag(request: QueryRequest):
     return QueryResponse(
         answer=final_answer,
         context_used=context_parts,
-        processing_time_ms=elapsed_time
+        processing_time_ms=elapsed_time,
+        answer_language=answer_language,
+        question_language=question_language,
+        context_language=context_language,
+        language_source=language_source,
     )
 
 @app.post("/upload")
