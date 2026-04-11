@@ -695,6 +695,13 @@ with t2:
                         4. **Sohbet:** "Merhaba" -> TOOL KULLANMA.
                         """
 
+                        router_language_policy = """
+                        DİL POLİTİKASI:
+                        1. Yanıtınızı kullanıcının sorduğu dille verin.
+                        2. Kullanıcı çeviri isterse yalnızca istenen çeviriyi üretin.
+                        3. Kullanıcı Türkçe yazdıysa Türkçe, İngilizce yazdıysa İngilizce yanıt verin.
+                        4. Bu router aşamasında yalnızca dil ve üslup kurallarını uygula; herhangi bir bağlam yoksa otomatik olarak "bilmiyorum" türü bir yanıt verme.
+                        """
                         full_system_prompt = identity_section + "\n\n" + router_section + "\n\n" + router_language_policy
 
                         input_msgs = [
