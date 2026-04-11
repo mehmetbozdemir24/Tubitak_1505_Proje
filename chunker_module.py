@@ -4,6 +4,7 @@ from docx import Document as DocxDocument
 from langchain_community.document_loaders import PyPDFLoader, UnstructuredPowerPointLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
+from language_utils import detect_language
 
 def detect_permission_from_content(text_content):
     if not text_content:
@@ -69,7 +70,8 @@ class DriveDocumentProcessor:
                     "source": filename,
                     "sheet": sheet_name,
                     "file_type": "excel",
-                    "permission": permission
+                    "permission": permission,
+                    "language": detect_language(table_text)
                 }
 
                 self.processed_chunks.append(Document(page_content=table_text, metadata=metadata))
@@ -85,6 +87,7 @@ class DriveDocumentProcessor:
 
             full_text = "\n".join([p.text for p in doc.paragraphs])
             permission = fixed_permission if fixed_permission else detect_permission_from_content(full_text)
+            doc_language = detect_language(full_text)
 
             # Metadata'yı her chunk için güncellemek gerek
             text_chunks = self.text_splitter.create_documents([full_text])
@@ -92,7 +95,8 @@ class DriveDocumentProcessor:
                 chunk.metadata.update({
                     "source": filename,
                     "file_type": "word",
-                    "permission": permission
+                    "permission": permission,
+                    "language": doc_language
                 })
                 self.processed_chunks.append(chunk)
             
@@ -112,7 +116,8 @@ class DriveDocumentProcessor:
                      metadata={
                         "source": filename,
                         "file_type": "word_table",
-                        "permission": permission
+                        "permission": permission,
+                        "language": doc_language
                      }
                  )
                  self.processed_chunks.append(chunk)
@@ -132,6 +137,7 @@ class DriveDocumentProcessor:
             
             full_text = " ".join([d.page_content for d in raw_docs])
             permission = fixed_permission if fixed_permission else detect_permission_from_content(full_text)
+            doc_language = detect_language(full_text)
             
             chunks = self.text_splitter.split_documents(raw_docs)
             filename = os.path.basename(file_path)
@@ -140,7 +146,8 @@ class DriveDocumentProcessor:
                 chunk.metadata.update({
                     "source": filename,
                     "permission": permission,
-                    "file_type": file_type
+                    "file_type": file_type,
+                    "language": doc_language
                 })
                 self.processed_chunks.append(chunk)
                 
