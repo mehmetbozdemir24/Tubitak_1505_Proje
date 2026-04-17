@@ -52,10 +52,11 @@ Kullanıcıya Yanıt
 
 | Bileşen | Teknoloji |
 |---|---|
-| **Embedding Modeli** | Cosmos-e5-large |
+| **Embedding Modeli** | Cosmos-e5-large (`ytu-ce-cosmos/turkish-e5-large`) |
 | **Vektör Veritabanı** | Qdrant (Docker) |
 | **LLM Modelleri** | Gemma3-12B, Qwen3-8B |
 | **Container** | Docker |
+| **AMR Model (Eğitim)** | facebook/bart-large veya google/mt5-base |
 
 ---
 
@@ -69,6 +70,32 @@ Kullanıcıya Yanıt
 | **Hasan** | Embedding ve LLM tabanlı yanıt üretimi |
 | **Süleyman** | Qdrant yönetimi, veri yükleme ve indeksleme |
 | **Eren** | Qdrant yönetimi ve LLM tabanlı yanıt desteği |
+
+---
+
+## 🧩 AMR Model Eğitimi
+
+Bu projede metin → AMR (Abstract Meaning Representation / Soyut Anlam Temsili) üretebilen bir model eğitmek mümkündür.
+
+### Mevcut Projede Kullanılan Modeller
+| Bileşen | Model | Açıklama |
+|---|---|---|
+| **Embedding** | `ytu-ce-cosmos/turkish-e5-large` | 1024-boyutlu Türkçe vektör temsili |
+| **LLM** | `gemma3:12b` / `qwen3:8b` | Bağlam + soru → yanıt üretimi |
+| **LLM (Alternatif)** | `gemini-2.5-flash` | Google Gemini API |
+
+### Mevcut Projede Kullanılan Veri Seti
+Kurumsal dokümanlardan oluşan özel bir veri seti: 41 dosya (PDF, Excel, Word, PowerPoint) → 640 chunk.
+
+### AMR Eğitimi için Önerilen Model ve Veri Seti
+| Seçim | Model | Veri Seti |
+|---|---|---|
+| **En iyi (İngilizce)** | `facebook/bart-large` | LDC2020T02 (AMR 3.0) |
+| **Türkçe için** | `google/mt5-base` | LDC AMR + cross-lingual transfer |
+| **Açık erişim** | `t5-base` | Little Prince AMR (1562 cümle) |
+
+Detaylı rehber: [`docs/6_amr_training_guide.md`](docs/6_amr_training_guide.md)  
+Eğitim scripti: [`amr_training.py`](amr_training.py)
 
 ---
 
@@ -153,6 +180,7 @@ git reset --hard origin/main
 - `docs/3_qdrant_setup_guide.md` — Veritabanı yönetimi
 - `docs/4_llm_response_guide.md` — Yanıt üretimi
 - `docs/5_complete_workflow.md` — Toplu İş Akışı
+- `docs/6_amr_training_guide.md` — AMR Model Eğitimi (Kullanılan modeller, veri setleri ve eğitim rehberi)
 
 ---
 
