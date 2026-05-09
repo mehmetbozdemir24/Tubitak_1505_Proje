@@ -608,10 +608,12 @@ with t2:
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
+    # Önce tüm geçmiş mesajları göster
     for m in st.session_state.messages:
         with st.chat_message(m["role"]):
             st.markdown(m["content"])
-            if m["role"] == "assistant" and "sources" in m and m["sources"]:
+            # Referans gösterimi - sadece show_sources True ise
+            if m["role"] == "assistant" and "sources" in m and m["sources"] and m.get("show_sources", True):
                 with st.expander(f"🔍 Referans Kaynaklar ({len(m['sources'])})"):
                     for i, doc in enumerate(m['sources']):
                         score_val = doc.metadata.get("score", 0.0)
@@ -619,6 +621,7 @@ with t2:
                         st.caption(doc.page_content)
                         st.divider()
 
+    # Input alanı - Streamlit otomatik olarak en altta tutar
     if prompt := st.chat_input("Sorunuzu buraya yazın..."):
         st.session_state.messages.append({"role": "user", "content": prompt})
 
@@ -801,19 +804,35 @@ with t2:
                             st.markdown("💬 **Sohbet Modu:**")
                             final_response = st.write_stream(stream_text_generator(content_text))
 
+                        # Referans gösterimi - sadece bilgi varsa
+                        show_sources = False
                         if retrieved_docs:
-                            with st.expander(f"🔍 Referans Kaynaklar ({len(retrieved_docs)})"):
-                                for i, doc in enumerate(retrieved_docs):
-                                    score_val = doc.metadata.get("score", 0.0)
-                                    st.markdown(
-                                        f"**#{i + 1}** | 📂 `{doc.metadata.get('source')}` | 📊 Skor: `{score_val:.4f}`")
-                                    st.caption(doc.page_content)
+                            # Bilgi bulunamadı kontrolü - genişletilmiş keyword listesi
+                            no_info_keywords = [
+                                "bulunamadı", "bulunmamaktadır", "bulunamamaktadır",
+                                "bilgi yok", "kayıt yok", "yeterli bilgi",
+                                "mevcut değil", "yer almamaktadır", "yer almıyor",
+                                "üzgünüm", "maalesef", "erişemiyorum",
+                                "ilgili bilgi", "kayıtlı bilgi"
+                            ]
+                            has_no_info = any(keyword in final_response.lower() for keyword in no_info_keywords)
+                            
+                            if not has_no_info:
+                                show_sources = True
+                                with st.expander(f"🔍 Referans Kaynaklar ({len(retrieved_docs)})"):
+                                    for i, doc in enumerate(retrieved_docs):
+                                        score_val = doc.metadata.get("score", 0.0)
+                                        st.markdown(
+                                            f"**#{i + 1}** | 📂 `{doc.metadata.get('source')}` | 📊 Skor: `{score_val:.4f}`")
+                                        st.caption(doc.page_content)
 
                         st.session_state.messages.append({
                             "role": "assistant",
                             "content": final_response,
-                            "sources": retrieved_docs
+                            "sources": retrieved_docs,
+                            "show_sources": show_sources
                         })
+                        st.rerun()
 
                     except Exception as e:
                         error_msg = str(e)
@@ -824,5 +843,7 @@ with t2:
                         st.session_state.messages.append({
                             "role": "assistant",
                             "content": f"Bir hata oluştu: {error_msg}",
-                            "sources": []
+                            "sources": [],
+                            "show_sources": False
                         })
+                        st.rerun()
