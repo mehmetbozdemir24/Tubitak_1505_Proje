@@ -1,248 +1,96 @@
-import os
-import time
-from typing import Optional, List
-from fastapi import FastAPI, HTTPException, UploadFile, File, Form
+from fastapi import FastAPI, Depends, Query
+from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
+from sqlalchemy.orm import sessionmaker, Session, declarative_base, relationship
 from pydantic import BaseModel
-from fastapi.middleware.cors import CORSMiddleware
-import uvicorn
+from typing import Optional, List
+from contextlib import asynccontextmanager
 
-# Mevcut RAG modüllerini içe aktar
-# TEST.py içindeki fonksiyonları kullanacağız.
-# Ancak TEST.py bir script olduğu için import ederken çalışmasını istemeyiz.
-# Bu yüzden TEST.py'yi biraz refactor etmek gerekebilir veya doğrudan buraya taşıyabiliriz.
-# Şimdilik TEST.py'deki mantığı buraya kopyalayarak entegre ediyoruz.
+# Veritabanı Yapılandırması
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:12345@localhost:5432/testDB"
+engine = create_engine(SQLALCHEMY_DATABASE_URL)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+Base = declarative_base()
 
-# --- RAG IMPORTS ---
-import torch
-from langchain_qdrant import QdrantVectorStore
-from qdrant_client import QdrantClient, models
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_ollama import OllamaLLM
-from langchain_core.prompts import ChatPromptTemplate
-from language_utils import choose_answer_language, build_language_policy_prompt, get_no_answer_message
+# SQLAlchemy Modelleri
+class Department(Base):
+    __tablename__ = "departments"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True)
+    users = relationship("User", back_populates="department")
 
-# --- APP SETUP ---
-app = FastAPI(title="Tubitak 1505 RAG API", version="1.0.0")
+class Rank(Base):
+    __tablename__ = "ranks"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True)
+    users = relationship("User", back_populates="rank")
 
-# CORS Setup (Frontend erişimi için)
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Geliştirme aşamasında hepsi açık
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-# --- CONFIGURATION ---
-QDRANT_URL = "http://localhost:6333"
-COLLECTION_NAME = "Tubitak_Dokumanlar"
-EMBEDDING_MODEL_NAME = "ytu-ce-cosmos/turkish-e5-large"
-OLLAMA_MODEL_NAME = "gemma3:12b"
-DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-
-print(f"🚀 API Başlatılıyor... Mod: {DEVICE}")
-
-# --- GLOBAL OBJECTS ---
-# Bunları startup event'inde veya global olarak yükleyebiliriz.
-client = QdrantClient(url=QDRANT_URL)
-embeddings = HuggingFaceEmbeddings(
-    model_name=EMBEDDING_MODEL_NAME,
-    model_kwargs={"device": DEVICE},
-    encode_kwargs={"normalize_embeddings": True}
-)
-vector_store = QdrantVectorStore(
-    client=client,
-    collection_name=COLLECTION_NAME,
-    embedding=embeddings,
-)
-
-llm = OllamaLLM(
-    model=OLLAMA_MODEL_NAME,
-    temperature=0.1,
-    top_p=0.9,
-    repeat_penalty=1.1,
-    num_predict=1024,
-)
-
-# --- MODELS ---
-class QueryRequest(BaseModel):
-    question: str
-    role: str  # admin, manager, user
-    doc_type: Optional[str] = None
-    k: Optional[int] = 3
-
-class QueryResponse(BaseModel):
-    answer: str
-    context_used: List[str]
-    processing_time_ms: float
-    answer_language: str
-    question_language: str
-    context_language: str
-    language_source: str
-
-# --- ROUTES ---
-
-@app.get("/health")
-def health_check():
-    return {"status": "active", "device": DEVICE, "model": OLLAMA_MODEL_NAME}
-
-@app.post("/query", response_model=QueryResponse)
-def query_rag(request: QueryRequest):
-    start_time = time.perf_counter()
+class User(Base):
+    __tablename__ = "users"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, index=True)
+    department_id = Column(Integer, ForeignKey("departments.id"))
+    rank_id = Column(Integer, ForeignKey("ranks.id"))
     
-    # 1. Filtreleri Hazırla
-    search_kwargs = {"k": request.k}
-    must_conditions = []
-    
-    # Rol bazlı erişim kontrolü filtresi
-    # Not: Gerçek senaryoda bu mapping daha detaylı olabilir.
-    # Şimdilik basitçe: gelen rol, metadatadaki permission ile eşleşmeli.
-    # Veya hiyerarşik bir yapı kurulabilir (Admin her şeyi görür vs).
-    # Basitlik için birebir eşleşme veya 'admin' ise her şeyi görme mantığı eklenebilir.
-    
-    # Eğer Admin değilse yetki filtresi uygula (Örnek mantık)
-    # Ancak mevcut veri yapısında permission alanı var. 
-    # TEST.py'deki mantığı koruyarak direk filtreliyoruz.
-    must_conditions.append(
-        models.FieldCondition(
-            key="metadata.permission",
-            match=models.MatchValue(value=request.role)
-        )
-    )
+    department = relationship("Department", back_populates="users")
+    rank = relationship("Rank", back_populates="users")
 
-    if request.doc_type:
-        must_conditions.append(
-            models.FieldCondition(
-                key="metadata.file_type",
-                match=models.MatchValue(value=request.doc_type)
-            )
-        )
+# Pydantic Şemaları
+class DepartmentResponse(BaseModel):
+    name: str
+    class Config:
+        from_attributes = True
 
-    if must_conditions:
-        search_kwargs["filter"] = models.Filter(must=must_conditions)
+class RankResponse(BaseModel):
+    name: str
+    class Config:
+        from_attributes = True
 
-    # 2. Vektör Araması
+class UserResponse(BaseModel):
+    id: int
+    name: str
+    department: DepartmentResponse
+    rank: RankResponse
+    class Config:
+        from_attributes = True
+
+# Uygulama Kurulumu
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    yield
+
+app = FastAPI(lifespan=lifespan)
+
+def get_db():
+    db = SessionLocal()
     try:
-        docs_with_scores = vector_store.similarity_search_with_score(
-            request.question,
-            **search_kwargs
-        )
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Database connection error: {str(e)}")
+        yield db
+    finally:
+        db.close()
 
-    # 3. Sonuçları Filtrele (Score Threshold)
-    SCORE_THRESHOLD = 0.45
-    filtered_docs = [doc for doc, score in docs_with_scores if score >= SCORE_THRESHOLD]
+# API Uç Noktaları (Endpoints)
+@app.get("/departments", response_model=List[DepartmentResponse], tags=["Departmanlar"])
+def get_all_departments(db: Session = Depends(get_db)):
     
-    context_parts = [doc.page_content for doc in filtered_docs]
-    context_text = "\n\n---\n\n".join(context_parts)
-    answer_language, question_language, context_language, language_source = choose_answer_language(
-        request.question,
-        context_text,
-    )
+    return db.query(Department).all()
 
-    if not context_text:
-        return QueryResponse(
-            answer=get_no_answer_message(answer_language),
-            context_used=[],
-            processing_time_ms=(time.perf_counter() - start_time) * 1000,
-            answer_language=answer_language,
-            question_language=question_language,
-            context_language=context_language,
-            language_source=language_source,
-        )
+@app.get("/ranks", response_model=List[RankResponse], tags=["Rütbeler"])
+def get_all_ranks(db: Session = Depends(get_db)):
+   
+    return db.query(Rank).all()
 
-    # 4. LLM Üretimi
-    prompt_template = """You are a helpful AI assistant.
-    {language_policy}
-
-    Use only the context below to answer the user's question.
-    If the answer is not present in the context, do not hallucinate.
-
-    Context (Retrieved from Vector Database):
-    {context}
-
-    User Question:
-    {question}
-
-    Answer:"""
-    
-    chain = ChatPromptTemplate.from_template(prompt_template) | llm
-    
-    response_text = chain.invoke({
-        "language_policy": build_language_policy_prompt(answer_language),
-        "context": context_text,
-        "question": request.question
-    })
-
-    # Ollama bazen string, bazen obje dönebilir, kontrol edelim.
-    final_answer = response_text if isinstance(response_text, str) else str(response_text)
-
-    elapsed_time = (time.perf_counter() - start_time) * 1000
-    
-    return QueryResponse(
-        answer=final_answer,
-        context_used=context_parts,
-        processing_time_ms=elapsed_time,
-        answer_language=answer_language,
-        question_language=question_language,
-        context_language=context_language,
-        language_source=language_source,
-    )
-
-@app.post("/upload")
-async def upload_file(
-    file: UploadFile = File(...),
-    role: str = Form(...)  # Upload eden kişinin rolü (yetki kontrolü için)
+@app.get("/users/query", response_model=List[UserResponse], tags=["Kullanıcılar"])
+def query_users(
+    department_name: Optional[str] = Query(None, description="Departman adına göre filtrele"),
+    rank_name: Optional[str] = Query(None, description="Rütbe adına göre filtrele"),
+    db: Session = Depends(get_db)
 ):
-    start_time = time.perf_counter()
     
-    # 1. Dosyayı Kaydet
-    upload_dir = "uploads"
-    os.makedirs(upload_dir, exist_ok=True)
-    file_path = os.path.join(upload_dir, file.filename)
-    
-    try:
-        with open(file_path, "wb") as f:
-            content = await file.read()
-            f.write(content)
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"File save error: {str(e)}")
+    query = db.query(User)
 
-    # 2. Dosyayı İşle (Chunking)
-    from chunker_module import process_file_wrapper
-    
-    # KULLANICI İSTEĞİ: Yükleyen kişinin rolü neyse, dosya yetkisi o olsun.
-    chunks, error = process_file_wrapper(file_path, fixed_permission=role)
-    
-    if error:
-        os.remove(file_path) # Hatalı dosyayı sil
-        raise HTTPException(status_code=400, detail=f"Processing error: {error}")
+    if department_name:
+        query = query.join(Department).filter(Department.name == department_name)
         
-    if not chunks:
-        os.remove(file_path)
-        raise HTTPException(status_code=400, detail="No content extracted from file.")
+    if rank_name:
+        query = query.join(Rank).filter(Rank.name == rank_name)
 
-    # 3. Embedding & Vector Store (Qdrant)
-    try:
-        # UUID ata
-        from uuid import uuid4
-        chunk_ids = [str(uuid4()) for _ in chunks]
-        
-        # Qdrant'a ekle
-        vector_store.add_documents(documents=chunks, ids=chunk_ids)
-        
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Vector store error: {str(e)}")
-
-    elapsed_time = (time.perf_counter() - start_time) * 1000
-
-    return {
-        "filename": file.filename,
-        "chunks_count": len(chunks),
-        "status": "success",
-        "message": f"File processed and indexed in {elapsed_time:.2f} ms"
-    }
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    return query.all()
