@@ -153,6 +153,7 @@ git reset --hard origin/main
 - `docs/3_qdrant_setup_guide.md` — Veritabanı yönetimi
 - `docs/4_llm_response_guide.md` — Yanıt üretimi
 - `docs/5_complete_workflow.md` — Toplu İş Akışı
+- `docs/6_abac_product_ready_implementation_guide.md` — ABAC tabanlı product-ready geliştirme planı
 
 ---
 

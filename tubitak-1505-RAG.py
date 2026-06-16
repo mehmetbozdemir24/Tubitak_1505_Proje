@@ -1,252 +1,509 @@
-import os
-import time
-import json
-import hashlib
-import tempfile
-import requests
-import torch
-import re
+"""
+Bilimp AI – Kurumsal Belge Asistanı
+SaaS / B2B Light-Mode | ABAC Yetkilendirme
+"""
+
+# ══════════════════════════════════════════════════════════════════════════════
+# IMPORTS
+# ══════════════════════════════════════════════════════════════════════════════
+import os, time, json, hashlib, tempfile
+import requests, torch
 from uuid import uuid4
 
 import streamlit as st
-from streamlit_lottie import st_lottie
-
-# --- GEREKLİ IMPORTLAR ---
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langchain_core.tools import tool
 from language_utils import choose_answer_language, build_language_policy_prompt, get_language_label
+from abac import (
+    AudiencePolicy, AudienceRule, UserContext,
+    has_access, build_policy_from_ui, parse_ids, empty_rule_data, FIELD_LABELS,
+)
 
-# --- SAYFA AYARLARI ---
-st.set_page_config(page_title="Bilimp AI Asistan", layout="wide", page_icon="🤖")
+# ── Page config (MUST be first Streamlit call) ───────────────────────────────
+st.set_page_config(
+    page_title="Bilimp AI Asistan",
+    layout="wide",
+    page_icon="🤖",
+    initial_sidebar_state="expanded",
+)
 
+# ── Heavy imports (cached via @st.cache_resource) ────────────────────────────
+from qdrant_client import QdrantClient
+from qdrant_client.http import models as rest_models
+from qdrant_client.http.models import (
+    Distance, VectorParams, SparseVectorParams,
+    Filter, FieldCondition, MatchValue, MatchAny,
+)
+from langchain_qdrant import QdrantVectorStore, FastEmbedSparse, RetrievalMode
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_ollama import ChatOllama
+import pymupdf4llm
+from markitdown import MarkItDown
+from pptx import Presentation
+from langchain_text_splitters import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
+from langchain_core.documents import Document
 
-# --- ANİMASYON YÜKLEME ---
-def load_lottieurl(url: str):
-    try:
-        r = requests.get(url)
-        if r.status_code != 200: return None
-        return r.json()
-    except:
-        return None
-
-
-# --- YARDIMCI FONKSİYON: METİN AKIŞI SİMÜLASYONU ---
-def stream_text_generator(text):
-    for word in text.split(" "):
-        yield word + " "
-        time.sleep(0.05)
-
-
-# --- GÖRSEL YÜKLEME EKRANI ---
-if "app_loaded" not in st.session_state:
-    loader_placeholder = st.empty()
-    with loader_placeholder.container():
-        st.markdown(
-            """<style>.stApp {background-color: #0e1117;} .glowing-text {font-family: 'Source Code Pro', monospace; color: #00fbff; text-align: center; font-size: 2em; font-weight: bold; text-shadow: 0 0 10px #00fbff; animation: pulse 1.5s infinite;} @keyframes pulse { from {opacity: 0.8;} to {opacity: 1;} }</style>""",
-            unsafe_allow_html=True)
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
-            lottie_json = load_lottieurl("https://lottie.host/file/9860f43c-6232-4665-ba4f-557c669299b6.json")
-            if lottie_json: st_lottie(lottie_json, height=250, key="loader", speed=1.5)
-
-        status_text_placeholder = st.empty()
-        loading_steps = ["🧠 Nöral Ağlar Yükleniyor...", "⚡ GPU Hızlandırma Aktif...",
-                         "🛠️ Streaming (Akış) Modülü Başlatılıyor...", "🚀 Lütfen Bekleyiniz Sistem Hazırlanıyor..."]
-        for step in loading_steps:
-            status_text_placeholder.markdown(f'<p class="glowing-text">{step}</p>', unsafe_allow_html=True)
-            time.sleep(0.5)
-
-        # --- IMPORTLAR ---
-        from qdrant_client import QdrantClient
-        from qdrant_client.http import models as rest_models
-        from qdrant_client.http.models import Distance, VectorParams, SparseVectorParams, Filter, FieldCondition, \
-            MatchValue, MatchAny
-        from langchain_qdrant import QdrantVectorStore, FastEmbedSparse, RetrievalMode
-        from langchain_huggingface import HuggingFaceEmbeddings
-        from langchain_google_genai import ChatGoogleGenerativeAI
-        from langchain_ollama import ChatOllama
-        from langchain_core.output_parsers import StrOutputParser
-        import pymupdf4llm
-        from markitdown import MarkItDown
-        from pptx import Presentation
-        from langchain_text_splitters import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
-        from langchain_core.documents import Document
-
-    loader_placeholder.empty()
-    st.session_state["app_loaded"] = True
-else:
-    from qdrant_client import QdrantClient
-    from qdrant_client.http import models as rest_models
-    from qdrant_client.http.models import Distance, VectorParams, SparseVectorParams, Filter, FieldCondition, \
-        MatchValue, MatchAny
-    from langchain_qdrant import QdrantVectorStore, FastEmbedSparse, RetrievalMode
-    from langchain_huggingface import HuggingFaceEmbeddings
-    from langchain_google_genai import ChatGoogleGenerativeAI
-    from langchain_ollama import ChatOllama
-    from langchain_core.output_parsers import StrOutputParser
-    import pymupdf4llm
-    from markitdown import MarkItDown
-    from pptx import Presentation
-    from langchain_text_splitters import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
-    from langchain_core.documents import Document
-
-# ==============================================================================
-# AYARLAR
-# ==============================================================================
-QDRANT_URL = "http://localhost:6333"
+# ══════════════════════════════════════════════════════════════════════════════
+# CONSTANTS
+# ══════════════════════════════════════════════════════════════════════════════
+QDRANT_URL      = "http://localhost:6333"
 COLLECTION_NAME = "Tubitak_Dokumanlar_Hybrid"
-EMBEDDING_MODEL_NAME = "ytu-ce-cosmos/turkish-e5-large"
-REGISTRY_FILE = "belge_kayitlari.json"
+EMBED_MODEL     = "ytu-ce-cosmos/turkish-e5-large"
+REGISTRY_FILE   = "belge_kayitlari.json"
+
+# ══════════════════════════════════════════════════════════════════════════════
+# DESIGN SYSTEM — CSS INJECTION
+# ══════════════════════════════════════════════════════════════════════════════
+def inject_css():
+    st.markdown("""
+<style>
+/* ── Variables ────────────────────────────────────────────────────────────── */
+:root {
+    --primary:        #1B365D;
+    --primary-dark:   #0F2C59;
+    --secondary:      #00B4D8;
+    --secondary-soft: #E6F7FA;
+    --cta:            #FF6B35;
+    --cta-hover:      #FF5A22;
+    --neutral-bg:     #F4F6F9;
+    --card:           #FFFFFF;
+    --body:           #333333;
+    --muted:          #6C757D;
+    --border:         #E0E7EF;
+    --success:        #28A745;
+    --danger:         #DC3545;
+}
+
+/* ── Global reset ────────────────────────────────────────────────────────── */
+html, body, .stApp { background-color: var(--neutral-bg) !important; }
+* { font-family: 'Inter', 'Segoe UI', sans-serif !important; }
+
+/* Hide Streamlit chrome */
+#MainMenu, footer, header { visibility: hidden; }
+[data-testid="stDecoration"] { display: none; }
+
+/* ── Sidebar ─────────────────────────────────────────────────────────────── */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%) !important;
+    border-right: none !important;
+    box-shadow: 4px 0 16px rgba(0,0,0,0.18) !important;
+}
+section[data-testid="stSidebar"] > div { padding-top: 0 !important; }
+section[data-testid="stSidebar"] * { color: rgba(255,255,255,0.9) !important; }
+section[data-testid="stSidebar"] hr { border-color: rgba(255,255,255,0.12) !important; margin: 8px 0 !important; }
+section[data-testid="stSidebar"] .stMarkdown p,
+section[data-testid="stSidebar"] label { color: rgba(255,255,255,0.7) !important; font-size: 11px !important; }
+section[data-testid="stSidebar"] h3 { color: rgba(255,255,255,0.5) !important; font-size: 10px !important; text-transform: uppercase; letter-spacing: 1.5px; }
+
+/* Sidebar inputs */
+section[data-testid="stSidebar"] input,
+section[data-testid="stSidebar"] [data-baseweb="select"] {
+    background: rgba(255,255,255,0.08) !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    color: white !important;
+    border-radius: 6px !important;
+}
+section[data-testid="stSidebar"] input[type="number"] {
+    background: rgba(255,255,255,0.08) !important;
+    color: white !important;
+}
+section[data-testid="stSidebar"] .stSlider [data-testid="stThumbValue"] { color: white !important; }
+
+/* ── Nav buttons ─────────────────────────────────────────────────────────── */
+.nav-btn button {
+    background: transparent !important;
+    border: none !important;
+    color: rgba(255,255,255,0.75) !important;
+    text-align: left !important;
+    width: 100% !important;
+    padding: 10px 14px !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+    margin: 1px 0 !important;
+}
+.nav-btn button:hover {
+    background: rgba(255,255,255,0.1) !important;
+    color: white !important;
+}
+.nav-btn-active button {
+    background: rgba(0,180,216,0.25) !important;
+    color: white !important;
+    border-left: 3px solid var(--secondary) !important;
+    font-weight: 700 !important;
+}
+
+/* ── Main content area ───────────────────────────────────────────────────── */
+.main .block-container {
+    padding: 24px 32px 32px !important;
+    max-width: 1400px !important;
+    background-color: var(--neutral-bg) !important;
+}
+
+/* ── Cards ───────────────────────────────────────────────────────────────── */
+.bilimp-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    margin-bottom: 16px;
+}
+.bilimp-card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+/* ── Page titles ─────────────────────────────────────────────────────────── */
+.page-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 4px 0;
+}
+.page-subtitle {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 24px;
+}
+
+/* ── Identity bar (chat top) ─────────────────────────────────────────────── */
+.identity-bar {
+    background: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.identity-bar .id-chip {
+    background: rgba(0,180,216,0.25);
+    border: 1px solid rgba(0,180,216,0.5);
+    color: #7DDFF0;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.identity-bar .id-label {
+    color: rgba(255,255,255,0.55);
+    font-size: 11px;
+    margin-right: 2px;
+}
+
+/* ── Chat messages ───────────────────────────────────────────────────────── */
+.chat-wrap { display: flex; flex-direction: column; gap: 12px; padding-bottom: 8px; }
+
+.msg-user { display: flex; justify-content: flex-end; }
+.bubble-user {
+    background: var(--secondary-soft);
+    color: var(--body);
+    padding: 12px 16px;
+    border-radius: 16px 16px 4px 16px;
+    max-width: 68%;
+    font-size: 14px;
+    line-height: 1.6;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.msg-ai { display: flex; justify-content: flex-start; }
+.bubble-ai {
+    background: var(--card);
+    color: var(--body);
+    padding: 14px 18px 14px 20px;
+    border-radius: 4px 16px 16px 16px;
+    border-left: 4px solid var(--secondary);
+    max-width: 78%;
+    font-size: 14px;
+    line-height: 1.7;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+.bubble-ai pre, .bubble-user pre {
+    background: var(--neutral-bg) !important;
+    border-radius: 6px !important;
+    padding: 10px !important;
+    overflow-x: auto !important;
+}
+
+/* Language info strip */
+.lang-strip {
+    background: var(--primary);
+    color: rgba(255,255,255,0.85);
+    font-size: 11px;
+    padding: 5px 14px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+}
+
+/* ── ABAC Rule Builder ───────────────────────────────────────────────────── */
+.rule-card {
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px 12px;
+    margin-bottom: 4px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+.rule-header {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+.or-divider {
+    text-align: center;
+    padding: 6px 0;
+    position: relative;
+    margin: 2px 0;
+}
+.or-divider span {
+    background: var(--neutral-bg);
+    color: var(--secondary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 0 12px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid var(--secondary);
+    border-radius: 20px;
+}
+.or-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 0; right: 0;
+    height: 1px;
+    background: var(--border);
+}
+
+/* ── Chips ───────────────────────────────────────────────────────────────── */
+.chips-wrap { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+.chip-item {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: var(--secondary-soft);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.chip-deny {
+    background: #FFF0EC;
+    color: var(--cta);
+    border-color: var(--cta);
+}
+.no-access-badge {
+    display: inline-block;
+    background: #FFF0EC;
+    color: var(--danger);
+    border: 1px solid var(--danger);
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* ── Documents table ─────────────────────────────────────────────────────── */
+.doc-row {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    transition: box-shadow 0.2s;
+}
+.doc-row:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.doc-name { font-size: 14px; font-weight: 600; color: var(--body); }
+.doc-audience { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.doc-audience b { color: var(--secondary); }
+
+/* ── Buttons ─────────────────────────────────────────────────────────────── */
+.stButton > button {
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    transition: all 0.2s ease !important;
+}
+/* CTA (primary) */
+[data-testid="stBaseButton-primary"] {
+    background: var(--cta) !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 22px !important;
+}
+[data-testid="stBaseButton-primary"]:hover {
+    background: var(--cta-hover) !important;
+    box-shadow: 0 4px 12px rgba(255,107,53,0.35) !important;
+}
+/* Secondary */
+[data-testid="stBaseButton-secondary"] {
+    background: transparent !important;
+    color: var(--secondary) !important;
+    border: 1.5px solid var(--secondary) !important;
+}
+[data-testid="stBaseButton-secondary"]:hover {
+    background: var(--secondary-soft) !important;
+}
+/* Danger-like delete button */
+.del-btn button {
+    background: transparent !important;
+    color: var(--muted) !important;
+    border: 1px solid var(--border) !important;
+    padding: 4px 10px !important;
+    font-size: 12px !important;
+}
+.del-btn button:hover {
+    background: #FFF0EC !important;
+    color: var(--danger) !important;
+    border-color: var(--danger) !important;
+}
+
+/* ── Inputs in main area ─────────────────────────────────────────────────── */
+.main input[type="text"],
+.main input[type="number"],
+.main textarea,
+.main [data-baseweb="input"] {
+    border-radius: 8px !important;
+    border: 1.5px solid var(--border) !important;
+    font-size: 13px !important;
+    color: var(--body) !important;
+    background: var(--card) !important;
+}
+.main input:focus, .main textarea:focus {
+    border-color: var(--secondary) !important;
+    box-shadow: 0 0 0 3px rgba(0,180,216,0.12) !important;
+}
+
+/* ── Chat input ──────────────────────────────────────────────────────────── */
+[data-testid="stChatInputContainer"] {
+    background: var(--card) !important;
+    border: 1.5px solid var(--border) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+}
+[data-testid="stChatInputSubmitButton"] button {
+    background: var(--cta) !important;
+    border-radius: 8px !important;
+}
+[data-testid="stChatInputSubmitButton"] button:hover {
+    background: var(--cta-hover) !important;
+}
+
+/* Streamlit chat message overrides */
+[data-testid="stChatMessage"] {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* ── Expanders ───────────────────────────────────────────────────────────── */
+.streamlit-expanderHeader {
+    background: var(--card) !important;
+    border-radius: 8px !important;
+    color: var(--body) !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+}
+.streamlit-expanderContent {
+    background: var(--card) !important;
+    border: 1px solid var(--border) !important;
+    border-top: none !important;
+    border-radius: 0 0 8px 8px !important;
+}
+
+/* ── Status / Spinner ────────────────────────────────────────────────────── */
+[data-testid="stStatusWidget"] {
+    background: var(--secondary-soft) !important;
+    border: 1px solid var(--secondary) !important;
+    border-radius: 8px !important;
+    color: var(--secondary) !important;
+}
+
+/* ── Alerts ──────────────────────────────────────────────────────────────── */
+[data-testid="stAlert"] { border-radius: 8px !important; }
+
+/* ── Profile card (sidebar bottom) ──────────────────────────────────────── */
+.profile-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-top: auto;
+}
+.profile-card .pc-label {
+    font-size: 10px;
+    color: rgba(255,255,255,0.45);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+.profile-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(0,180,216,0.2);
+    border: 1px solid rgba(0,180,216,0.35);
+    color: #7DDFF0;
+    padding: 2px 8px;
+    border-radius: 16px;
+    font-size: 11px;
+    font-weight: 600;
+    margin: 2px;
+}
+</style>
+""", unsafe_allow_html=True)
 
 
-# ==============================================================================
-# YARDIMCI FONKSİYONLAR
-# ==============================================================================
-def calculate_md5(file_bytes):
-    hash_md5 = hashlib.md5()
-    hash_md5.update(file_bytes)
-    return hash_md5.hexdigest()
+# ══════════════════════════════════════════════════════════════════════════════
+# BACKEND UTILITIES
+# ══════════════════════════════════════════════════════════════════════════════
+def md5(data: bytes) -> str:
+    h = hashlib.md5()
+    h.update(data)
+    return h.hexdigest()
 
 
-def load_registry():
+def load_registry() -> dict:
     if os.path.exists(REGISTRY_FILE):
         with open(REGISTRY_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
     return {}
 
 
-def save_registry(registry):
+def save_registry(reg: dict):
     with open(REGISTRY_FILE, "w", encoding="utf-8") as f:
-        json.dump(registry, f, ensure_ascii=False, indent=4)
+        json.dump(reg, f, ensure_ascii=False, indent=4)
 
 
-# ==============================================================================
-# CHUNKLAMA VE PARSE İŞLEMLERİ
-# ==============================================================================
-def etiketleri_generic_duzelt(text):
-    lines = text.split('\n')
-    new_lines = []
-    for line in lines:
-        stripped = line.strip()
-        if stripped.startswith("|") or (stripped.startswith("**") and stripped.endswith("**")):
-            new_lines.append(line)
-        else:
-            new_lines.append(line)
-    return '\n'.join(new_lines)
-
-
-def process_pptx_native(file_path, source_name, permission):
-    prs = Presentation(file_path)
-    slides_chunks = []
-    for i, slide in enumerate(prs.slides):
-        content = []
-        if slide.shapes.title and slide.shapes.title.text:
-            content.append(f"# {slide.shapes.title.text.strip()}")
-        for shape in slide.shapes:
-            if hasattr(shape, "text_frame") and shape.text_frame:
-                content.append(shape.text.strip())
-        full = "\n\n".join(content)
-        if full.strip():
-            doc = Document(page_content=full, metadata={"source": source_name, "chunk_no": i + 1, "file_type": "pptx",
-                                                        "permission": permission})
-            slides_chunks.append(doc)
-    return slides_chunks
-
-
-def process_text_based(file_path, source_name, chunk_size, chunk_overlap, permission):
-    ext = os.path.splitext(file_path)[1].lower()
-    text = ""
-    try:
-        # 1. Markdown Dönüşümü
-        if ext == ".pdf":
-            text = pymupdf4llm.to_markdown(file_path, write_images=False)
-        else:
-            md = MarkItDown()
-            result = md.convert(file_path)
-            text = result.text_content
-
-        # Temizlik
-        clean = etiketleri_generic_duzelt(text)
-
-        # 2. Başlıklara Göre Bölme
-        headers_to_split_on = [
-            ("#", "Main"),
-            ("##", "Sub"),
-            ("###", "Sub2"),
-            ("####", "Sub3")
-        ]
-
-        splitter = MarkdownHeaderTextSplitter(
-            headers_to_split_on=headers_to_split_on,
-            strip_headers=True
-        )
-        md_docs = splitter.split_text(clean)
-
-        # --- AKILLI BİRLEŞTİRME 2.0 (SAFE MERGE) ---
-        merged_docs = []
-        temp_doc = None
-
-        for doc in md_docs:
-            if not doc.page_content.strip():
-                continue
-
-            # Context (Bağlam) bilgisini hazırla
-            header_path = " > ".join([doc.metadata.get(h[1]) for h in headers_to_split_on if doc.metadata.get(h[1])])
-            if header_path:
-                doc.page_content = f"**BAĞLAM:** {header_path}\n\n{doc.page_content}"
-
-            # Eğer elimizde bekleyen "yetim" bir parça varsa:
-            if temp_doc:
-                if len(doc.page_content) < 100 and "|" not in doc.page_content:
-                    merged_docs.append(temp_doc)
-                    temp_doc = doc
-                else:
-                    new_content = f"{temp_doc.page_content}\n\n{doc.page_content}"
-                    doc.page_content = new_content
-                    merged_docs.append(doc)
-                    temp_doc = None
-
-            else:
-                if len(doc.page_content) < 250 and "|" not in doc.page_content:
-                    temp_doc = doc
-                else:
-                    merged_docs.append(doc)
-
-        if temp_doc:
-            merged_docs.append(temp_doc)
-
-        # 3. Recursive Splitter (Çok büyükleri bölmek için)
-        rec_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=chunk_size,
-            chunk_overlap=chunk_overlap,
-            separators=["\n\n", "\n", " ", ""]
-        )
-
-        final_docs = []
-        for doc in merged_docs:
-            doc.metadata.update({
-                "source": source_name,
-                "file_type": ext.replace(".", ""),
-                "permission": permission
-            })
-            chunks = rec_splitter.split_documents([doc])
-            final_docs.extend(chunks)
-
-        return final_docs
-
-    except Exception as e:
-        st.error(f"Hata: {e}")
-        return []
-
-
-# ==============================================================================
-# QDRANT VE EMBEDDING MODELLERİ
-# ==============================================================================
 @st.cache_resource
 def get_dense_embeddings():
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    return HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME, model_kwargs={"device": device},
-                                 encode_kwargs={"normalize_embeddings": True})
+    return HuggingFaceEmbeddings(
+        model_name=EMBED_MODEL,
+        model_kwargs={"device": device},
+        encode_kwargs={"normalize_embeddings": True},
+    )
 
 
 @st.cache_resource
@@ -260,569 +517,868 @@ def get_qdrant_client():
 
 
 def init_collection():
-    client = get_qdrant_client()
-    if not client.collection_exists(COLLECTION_NAME):
-        client.create_collection(
+    c = get_qdrant_client()
+    if not c.collection_exists(COLLECTION_NAME):
+        c.create_collection(
             collection_name=COLLECTION_NAME,
             vectors_config={"content": VectorParams(size=1024, distance=Distance.COSINE)},
-            sparse_vectors_config={"sparse": SparseVectorParams()}
+            sparse_vectors_config={"sparse": SparseVectorParams()},
         )
 
 
-def add_documents_to_qdrant(documents, file_hash=None):
-    """
-    documents: belge listesi
-    file_hash: dosyanın MD5 hash'i (metadata'ya eklemek için)
-    """
+def add_documents_to_qdrant(documents: list, file_hash: str | None = None):
     client = get_qdrant_client()
-    dense_emb = get_dense_embeddings()
-    sparse_emb = get_sparse_embeddings()
-
-    # Hash'i metadata'ya ekle
+    dense = get_dense_embeddings()
+    sparse = get_sparse_embeddings()
     if file_hash:
-        for doc in documents:
-            doc.metadata["file_hash"] = file_hash
-
-    vector_store = QdrantVectorStore(
-        client=client,
-        collection_name=COLLECTION_NAME,
-        embedding=dense_emb,
-        vector_name="content",
-        sparse_embedding=sparse_emb,
-        sparse_vector_name="sparse",
-        retrieval_mode=RetrievalMode.HYBRID
+        for d in documents:
+            d.metadata["file_hash"] = file_hash
+    store = QdrantVectorStore(
+        client=client, collection_name=COLLECTION_NAME,
+        embedding=dense, vector_name="content",
+        sparse_embedding=sparse, sparse_vector_name="sparse",
+        retrieval_mode=RetrievalMode.HYBRID,
     )
-    ids = [str(uuid4()) for _ in documents]
-    vector_store.add_documents(documents=documents, ids=ids)
+    store.add_documents(documents=documents, ids=[str(uuid4()) for _ in documents])
 
 
-def delete_by_source(source_name):
-    client = get_qdrant_client()
-    if client.collection_exists(COLLECTION_NAME):
-        client.delete(collection_name=COLLECTION_NAME, points_selector=Filter(
-            must=[FieldCondition(key="metadata.source", match=MatchValue(value=source_name))]))
+def delete_by_source(source: str):
+    c = get_qdrant_client()
+    if c.collection_exists(COLLECTION_NAME):
+        c.delete(
+            collection_name=COLLECTION_NAME,
+            points_selector=Filter(must=[
+                FieldCondition(key="metadata.source", match=MatchValue(value=source))
+            ]),
+        )
 
 
-def delete_document_globally(filename):
+def delete_document_globally(filename: str):
     delete_by_source(filename)
     reg = load_registry()
-    if filename in reg:
-        del reg[filename]
-        save_registry(reg)
+    reg.pop(filename, None)
+    save_registry(reg)
 
 
-def get_allowed_permissions(role):
-    hierarchy = {
-        "public": ["public"],
-        "user": ["public", "user"],
-        "management": ["public", "user", "management"],
-        "admin": ["public", "user", "management", "admin", "private"],
-        "private": ["private"]
-    }
-    return hierarchy.get(role, ["public"])
-
-
-def get_local_ollama_models():
+def get_local_ollama_models() -> list[str]:
     try:
-        response = requests.get("http://localhost:11434/api/tags", timeout=1)
-        if response.status_code == 200:
-            return [m["name"] for m in response.json().get("models", [])]
-    except:
-        return []
+        r = requests.get("http://localhost:11434/api/tags", timeout=1)
+        if r.status_code == 200:
+            return [m["name"] for m in r.json().get("models", [])]
+    except Exception:
+        pass
     return []
 
 
-# ==============================================================================
-# SENKRONIZASYON (App Başlaması Sırasında)
-# ==============================================================================
-def sync_registry_with_qdrant():
-    """
-    Qdrant'taki dökümanları baz alarak JSON'u güncelle.
-    Qdrant'ta varsa ve JSON'da yoksa -> JSON'a ekle
-    JSON'da varsa ve Qdrant'ta yoksa -> JSON'dan sil
-
-    Hash bilgisini Qdrant'tan çıkar (eğer varsa)
-    """
+def sync_registry() -> dict:
     client = get_qdrant_client()
     registry = load_registry()
-
-    qdrant_files = {}  # {filename: {"permission": perm, "hash": hash}}
+    qdrant_files: dict[str, dict] = {}
 
     if client.collection_exists(COLLECTION_NAME):
-        scroll_result = client.scroll(
-            collection_name=COLLECTION_NAME,
-            limit=1000,
-            with_payload=True
-        )
-
-        # Qdrant'tan benzersiz dosyaları topla (hash dahil)
-        for point in scroll_result[0]:
-            metadata = point.payload.get("metadata", {})
-            source = metadata.get("source", "")
-            perm = metadata.get("permission", "public")
-            file_hash = metadata.get("file_hash", "unknown")
-
-            if source and source not in qdrant_files:
-                qdrant_files[source] = {
-                    "permission": perm,
-                    "hash": file_hash
+        scroll, _ = client.scroll(collection_name=COLLECTION_NAME, limit=2000, with_payload=True)
+        for pt in scroll:
+            meta = pt.payload.get("metadata", {})
+            src = meta.get("source", "")
+            if src and src not in qdrant_files:
+                qdrant_files[src] = {
+                    "audience": meta.get("audience", {}),
+                    "hash": meta.get("file_hash", "unknown"),
                 }
 
-    # Qdrant'ta olanları JSON'a ekle (eğer yoksa)
     updated = False
-    for filename, info in qdrant_files.items():
-        if filename not in registry:
-            registry[filename] = {
-                "hash": info["hash"],
-                "permission": info["permission"],
-                "synced_at": str(time.time())
-            }
+    for fname, info in qdrant_files.items():
+        if fname not in registry:
+            registry[fname] = {"hash": info["hash"], "audience": info["audience"],
+                               "synced_at": str(time.time())}
             updated = True
 
-    # JSON'da olanları kontrol et (Qdrant'ta yoksa sil)
-    files_to_remove = []
-    for filename in registry:
-        if filename not in qdrant_files:
-            files_to_remove.append(filename)
-
-    for filename in files_to_remove:
-        del registry[filename]
+    stale = [f for f in registry if f not in qdrant_files]
+    for f in stale:
+        del registry[f]
         updated = True
 
     if updated:
         save_registry(registry)
-
     return registry
 
 
-# ==============================================================================
-# ARAYÜZ - SIDEBAR
-# ==============================================================================
-with st.sidebar:
+# ── Chunking ──────────────────────────────────────────────────────────────────
+def _fix_md(text: str) -> str:
+    return text
+
+
+def chunk_pptx(path: str, source: str, audience: dict) -> list[Document]:
+    prs = Presentation(path)
+    docs = []
+    for i, slide in enumerate(prs.slides):
+        parts = []
+        if slide.shapes.title and slide.shapes.title.text:
+            parts.append(f"# {slide.shapes.title.text.strip()}")
+        for shape in slide.shapes:
+            if hasattr(shape, "text_frame") and shape.text_frame:
+                parts.append(shape.text.strip())
+        content = "\n\n".join(parts).strip()
+        if content:
+            docs.append(Document(
+                page_content=content,
+                metadata={"source": source, "chunk_no": i + 1,
+                          "file_type": "pptx", "audience": audience},
+            ))
+    return docs
+
+
+def chunk_text(path: str, source: str, chunk_size: int, chunk_overlap: int,
+               audience: dict) -> list[Document]:
+    ext = os.path.splitext(path)[1].lower()
     try:
-        st.image("bilimp_logo.png", width="stretch")
-    except:
-        st.warning("Logo Yok")
+        if ext == ".pdf":
+            raw = pymupdf4llm.to_markdown(path, write_images=False)
+        else:
+            md = MarkItDown()
+            raw = md.convert(path).text_content
 
-    # SENKRONIZASYON
-    if "registry_synced" not in st.session_state:
-        with st.status("🔄 Sistem Başlatılıyor...", expanded=False) as status:
-            sync_registry_with_qdrant()
-            status.update(label="✅ Sistem Hazır", state="complete", expanded=False)
-        st.session_state["registry_synced"] = True
+        clean = _fix_md(raw)
+        headers = [("#", "H1"), ("##", "H2"), ("###", "H3"), ("####", "H4")]
+        md_docs = MarkdownHeaderTextSplitter(
+            headers_to_split_on=headers, strip_headers=True
+        ).split_text(clean)
 
-    st.markdown("### 🛠️ Sistem Ayarları")
-    if "last_role" not in st.session_state:
-        st.session_state.last_role = "admin"
+        merged, temp = [], None
+        for doc in md_docs:
+            if not doc.page_content.strip():
+                continue
+            ctx = " > ".join(doc.metadata[h] for _, h in headers if doc.metadata.get(h))
+            if ctx:
+                doc.page_content = f"**BAĞLAM:** {ctx}\n\n{doc.page_content}"
+            if temp:
+                if len(doc.page_content) < 100 and "|" not in doc.page_content:
+                    merged.append(temp)
+                    temp = doc
+                else:
+                    doc.page_content = f"{temp.page_content}\n\n{doc.page_content}"
+                    merged.append(doc)
+                    temp = None
+            else:
+                temp = doc if len(doc.page_content) < 250 and "|" not in doc.page_content else None
+                if temp is None:
+                    merged.append(doc)
+        if temp:
+            merged.append(temp)
 
-    current_user_role = st.selectbox("👤 Kullanıcı Rolü", ["public", "user", "management", "admin", "private"], index=3)
-    if current_user_role != st.session_state.last_role:
-        st.session_state.messages = []
-        st.session_state.last_role = current_user_role
+        rec = RecursiveCharacterTextSplitter(
+            chunk_size=chunk_size, chunk_overlap=chunk_overlap,
+            separators=["\n\n", "\n", " ", ""],
+        )
+        final = []
+        for doc in merged:
+            doc.metadata.update({"source": source, "file_type": ext.lstrip("."), "audience": audience})
+            final.extend(rec.split_documents([doc]))
+        return final
+    except Exception as e:
+        st.error(f"Chunking hatası: {e}")
+        return []
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# SESSION STATE BOOTSTRAP
+# ══════════════════════════════════════════════════════════════════════════════
+def _init_state():
+    defaults = {
+        "page":           "chat",
+        "messages":       [],
+        "audience_rules": [empty_rule_data()],
+        "api_key":        "",
+        "llm_option":     None,
+        "temperature":    0.3,
+        "top_k":          5,
+        "threshold":      0.40,
+        "chunk_size":     2500,
+        "chunk_overlap":  200,
+        # UserContext fields
+        "uc_sirket":      0,
+        "uc_sube":        0,
+        "uc_mudurlu":     0,
+        "uc_birim":       0,
+        "uc_grup":        "",
+        "uc_bina":        0,
+        "uc_pozisyon":    0,
+        "uc_ptype":       0,
+        "uc_kullanici":   0,
+    }
+    for k, v in defaults.items():
+        if k not in st.session_state:
+            st.session_state[k] = v
+
+_init_state()
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# HELPERS — UserContext & UI components
+# ══════════════════════════════════════════════════════════════════════════════
+def get_user_context() -> UserContext:
+    return UserContext(
+        sirket_id       = st.session_state.uc_sirket    or None,
+        sube_id         = st.session_state.uc_sube      or None,
+        mudurluk_id     = st.session_state.uc_mudurlu   or None,
+        birim_id        = st.session_state.uc_birim     or None,
+        grup_ids        = parse_ids(st.session_state.uc_grup) or [],
+        bina_id         = st.session_state.uc_bina      or None,
+        pozisyon_id     = st.session_state.uc_pozisyon  or None,
+        personel_tip_id = st.session_state.uc_ptype     or None,
+        kullanici_id    = st.session_state.uc_kullanici or None,
+    )
+
+
+def render_chips_html(ids_text: str) -> str:
+    ids = parse_ids(ids_text)
+    if not ids:
+        return ""
+    chips = "".join(f'<span class="chip-item">{i}</span>' for i in ids)
+    return f'<div class="chips-wrap">{chips}</div>'
+
+
+def identity_bar_html(uc: UserContext) -> str:
+    parts = []
+    if uc.sirket_id:
+        parts.append(f'<span class="id-label">Şirket</span><span class="id-chip">{uc.sirket_id}</span>')
+    if uc.sube_id:
+        parts.append(f'<span class="id-label">Şube</span><span class="id-chip">{uc.sube_id}</span>')
+    if uc.mudurluk_id:
+        parts.append(f'<span class="id-label">Müdürlük</span><span class="id-chip">{uc.mudurluk_id}</span>')
+    if uc.birim_id:
+        parts.append(f'<span class="id-label">Birim</span><span class="id-chip">{uc.birim_id}</span>')
+    if uc.grup_ids:
+        grp = " ".join(f'<span class="id-chip">{g}</span>' for g in uc.grup_ids)
+        parts.append(f'<span class="id-label">Gruplar</span>{grp}')
+    if uc.bina_id:
+        parts.append(f'<span class="id-label">Bina</span><span class="id-chip">{uc.bina_id}</span>')
+    if uc.pozisyon_id:
+        parts.append(f'<span class="id-label">Pozisyon</span><span class="id-chip">{uc.pozisyon_id}</span>')
+    if uc.personel_tip_id:
+        parts.append(f'<span class="id-label">P.Tip</span><span class="id-chip">{uc.personel_tip_id}</span>')
+    if uc.kullanici_id:
+        parts.append(f'<span class="id-label">Kullanıcı ID</span><span class="id-chip">{uc.kullanici_id}</span>')
+
+    if not parts:
+        inner = '<span style="color:rgba(255,255,255,0.4); font-size:12px;">Kimlik bilgisi girilmemiş — sol menüden "Kimlik Girişi" seçin</span>'
+    else:
+        inner = " ".join(parts)
+    return f'<div class="identity-bar">👤 Aktif Kimlik: {inner}</div>'
+
+
+def profile_card_html(uc: UserContext) -> str:
+    badges = []
+    if uc.sirket_id:   badges.append(f'<span class="profile-badge">Şirket {uc.sirket_id}</span>')
+    if uc.mudurluk_id: badges.append(f'<span class="profile-badge">Müd. {uc.mudurluk_id}</span>')
+    for g in uc.grup_ids: badges.append(f'<span class="profile-badge">Grup {g}</span>')
+    if uc.kullanici_id: badges.append(f'<span class="profile-badge">Kullanıcı {uc.kullanici_id}</span>')
+    badge_str = "".join(badges) if badges else '<span style="color:rgba(255,255,255,0.3);font-size:11px;">Kimlik girilmedi</span>'
+    return f"""
+    <div class="profile-card">
+        <div class="pc-label">Aktif Kimlik</div>
+        <div>{badge_str}</div>
+    </div>"""
+
+
+def audience_summary_html(audience_data: dict) -> str:
+    if not audience_data:
+        return '<span class="no-access-badge">⚠ Erişim Yok</span>'
+    try:
+        policy = AudiencePolicy(**audience_data)
+    except Exception:
+        return '<span class="no-access-badge">⚠ Geçersiz Kural</span>'
+    if policy.is_empty():
+        return '<span class="no-access-badge">⚠ Erişim Yok</span>'
+
+    rule_parts = []
+    for rule in policy.rules:
+        if rule.is_empty():
+            continue
+        data = rule.model_dump()
+        field_htmls = []
+        for field, label in FIELD_LABELS.items():
+            val = data.get(field)
+            if val:
+                chips = "".join(f'<span class="chip-item">{v}</span>' for v in val)
+                field_htmls.append(f'<b>{label}:</b> {chips}')
+        if field_htmls:
+            rule_parts.append("  ".join(field_htmls))
+
+    return ("  <span style='color:var(--secondary);font-weight:700;'>VEYA</span>  ").join(rule_parts)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# SIDEBAR
+# ══════════════════════════════════════════════════════════════════════════════
+def render_sidebar():
+    with st.sidebar:
+        # ── Logo ─────────────────────────────────────────────────────────────
+        try:
+            st.image("bilimp_logo.png", use_container_width=True)
+        except Exception:
+            st.markdown(
+                '<div style="text-align:center;padding:16px 0 8px;font-size:20px;'
+                'font-weight:800;color:white;letter-spacing:1px;">⚡ BILIMP</div>',
+                unsafe_allow_html=True
+            )
+        st.markdown('<div style="border-bottom:1px solid rgba(255,255,255,0.1);margin:4px 0 12px;"></div>',
+                    unsafe_allow_html=True)
+
+        # ── Navigation ────────────────────────────────────────────────────────
+        nav_items = [
+            ("💬  Akıllı Sohbet",      "chat"),
+            ("📂  Belge Yönetimi",     "documents"),
+            ("👤  Kimlik Girişi",      "auth"),
+        ]
+        for label, page_key in nav_items:
+            is_active = st.session_state.page == page_key
+            css_class = "nav-btn-active" if is_active else "nav-btn"
+            st.markdown(f'<div class="{css_class}">', unsafe_allow_html=True)
+            if st.button(label, key=f"nav_{page_key}", use_container_width=True):
+                st.session_state.page = page_key
+                st.rerun()
+            st.markdown("</div>", unsafe_allow_html=True)
+
+        st.markdown('<div style="border-bottom:1px solid rgba(255,255,255,0.1);margin:12px 0;"></div>',
+                    unsafe_allow_html=True)
+        st.markdown('<h3>🧠 Model Ayarları</h3>', unsafe_allow_html=True)
+
+        # ── Model selection ───────────────────────────────────────────────────
+        gemini_map = {
+            "Gemini 2.5 Flash": "gemini-2.5-flash",
+            "Gemini 3.0 Flash": "gemini-3-flash-preview",
+        }
+        ollama_list = get_local_ollama_models()
+        model_options = list(gemini_map.keys())
+        if ollama_list:
+            model_options += [f"Ollama: {m}" for m in ollama_list]
+        else:
+            model_options.append("Ollama (Model Yok)")
+
+        if st.session_state.llm_option not in model_options:
+            st.session_state.llm_option = model_options[0]
+
+        sel = st.selectbox("Model", model_options,
+                           index=model_options.index(st.session_state.llm_option),
+                           key="sb_model")
+        st.session_state.llm_option = sel
+
+        if "Gemini" in sel:
+            st.session_state.api_key = st.text_input(
+                "Google API Key", type="password",
+                value=st.session_state.api_key, key="sb_apikey"
+            )
+
+        st.markdown('<div style="border-bottom:1px solid rgba(255,255,255,0.1);margin:8px 0;"></div>',
+                    unsafe_allow_html=True)
+        st.markdown('<h3>🎛️ İnce Ayarlar</h3>', unsafe_allow_html=True)
+
+        st.session_state.temperature = st.slider(
+            "Yaratıcılık", 0.0, 1.0, st.session_state.temperature, 0.1, key="sb_temp"
+        )
+        st.session_state.top_k = st.number_input(
+            "Bağlam (Chunk)", 1, 20, st.session_state.top_k, key="sb_topk"
+        )
+        st.session_state.threshold = st.slider(
+            "Benzerlik Eşiği", 0.0, 0.9, st.session_state.threshold, 0.05, key="sb_thresh"
+        )
+        with st.expander("📄 Chunk"):
+            st.session_state.chunk_size = st.number_input(
+                "Boyut", 500, 5000, st.session_state.chunk_size, key="sb_csize"
+            )
+            st.session_state.chunk_overlap = st.number_input(
+                "Örtüşme", 0, 1000, st.session_state.chunk_overlap, key="sb_coverlap"
+            )
+
+        # ── Sync ──────────────────────────────────────────────────────────────
+        if "registry_synced" not in st.session_state:
+            sync_registry()
+            st.session_state.registry_synced = True
+
+        # ── Profile card (bottom) ─────────────────────────────────────────────
+        st.markdown('<div style="margin-top:24px;"></div>', unsafe_allow_html=True)
+        uc = get_user_context()
+        st.markdown(profile_card_html(uc), unsafe_allow_html=True)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# PAGE: KIMLIK GİRİŞİ (Auth / UserContext Monitor)
+# ══════════════════════════════════════════════════════════════════════════════
+def page_auth():
+    st.markdown('<p class="page-title">👤 Kimlik Girişi</p>', unsafe_allow_html=True)
+    st.markdown('<p class="page-subtitle">Sorgu sırasında gönderilecek kullanıcı özniteliklerini belirleyin.</p>',
+                unsafe_allow_html=True)
+
+    col_form, col_preview = st.columns([1, 1], gap="large")
+
+    with col_form:
+        st.markdown('<div class="bilimp-card">', unsafe_allow_html=True)
+        st.markdown('<div class="bilimp-card-title">Öznitelik Değerleri</div>', unsafe_allow_html=True)
+
+        c1, c2 = st.columns(2)
+        st.session_state.uc_sirket    = c1.number_input("Şirket ID",       0, 99999, st.session_state.uc_sirket,    key="f_sirket")
+        st.session_state.uc_sube      = c2.number_input("Şube ID",         0, 99999, st.session_state.uc_sube,      key="f_sube")
+        st.session_state.uc_mudurlu   = c1.number_input("Müdürlük ID",     0, 99999, st.session_state.uc_mudurlu,   key="f_mudurlu")
+        st.session_state.uc_birim     = c2.number_input("Birim ID",        0, 99999, st.session_state.uc_birim,     key="f_birim")
+        st.session_state.uc_bina      = c1.number_input("Bina ID",         0, 99999, st.session_state.uc_bina,      key="f_bina")
+        st.session_state.uc_pozisyon  = c2.number_input("Pozisyon ID",     0, 99999, st.session_state.uc_pozisyon,  key="f_pozisyon")
+        st.session_state.uc_ptype     = c1.number_input("Personel Tip ID", 0, 99999, st.session_state.uc_ptype,     key="f_ptype")
+        st.session_state.uc_kullanici = c2.number_input("Kullanıcı ID",    0, 99999, st.session_state.uc_kullanici, key="f_kullanici")
+        st.session_state.uc_grup = st.text_input(
+            "Grup ID'leri (virgülle — birden fazla grup olabilir)",
+            value=st.session_state.uc_grup,
+            placeholder="101, 108",
+            key="f_grup",
+        )
+        st.markdown('</div>', unsafe_allow_html=True)
+
+        if st.button("💾 Kimliği Kaydet", type="primary", use_container_width=True):
+            st.success("✓ Kimlik bilgileri güncellendi. Sohbet sorgularında bu bağlam kullanılacak.")
+
+    with col_preview:
+        uc = get_user_context()
+        st.markdown('<div class="bilimp-card">', unsafe_allow_html=True)
+        st.markdown('<div class="bilimp-card-title">Aktif Kullanıcı Bağlamı</div>', unsafe_allow_html=True)
+        st.markdown(identity_bar_html(uc), unsafe_allow_html=True)
+        st.markdown('<br><p style="font-size:12px;color:var(--muted);">Bu bilgiler API\'ye gönderilecek '
+                    'UserContext nesnesi içeriğini oluşturur. Boş bırakılan alanlar <code>null</code> '
+                    'olarak iletilir ve o öznitelik için kısıtlama uygulanmaz.</p>', unsafe_allow_html=True)
+
+        st.markdown('<div style="margin-top:16px;">', unsafe_allow_html=True)
+        st.json({
+            "sirket_id":       uc.sirket_id,
+            "sube_id":         uc.sube_id,
+            "mudurluk_id":     uc.mudurluk_id,
+            "birim_id":        uc.birim_id,
+            "grup_ids":        uc.grup_ids,
+            "bina_id":         uc.bina_id,
+            "pozisyon_id":     uc.pozisyon_id,
+            "personel_tip_id": uc.personel_tip_id,
+            "kullanici_id":    uc.kullanici_id,
+        })
+        st.markdown('</div>', unsafe_allow_html=True)
+        st.markdown('</div>', unsafe_allow_html=True)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# PAGE: AKILLI SOHBET
+# ══════════════════════════════════════════════════════════════════════════════
+def _build_llm():
+    sel = st.session_state.llm_option or ""
+    temp = st.session_state.temperature
+    if "Gemini" in sel:
+        key = st.session_state.api_key
+        if not key:
+            st.error("⚠️ Google API Key girilmedi. Sol menüden API anahtarınızı girin.")
+            return None
+        gemini_map = {
+            "Gemini 2.5 Flash": "gemini-2.5-flash",
+            "Gemini 3.0 Flash": "gemini-3-flash-preview",
+        }
+        model_id = gemini_map.get(sel, "gemini-2.5-flash")
+        return ChatGoogleGenerativeAI(model=model_id, google_api_key=key, temperature=temp)
+    elif "Ollama" in sel and "Yok" not in sel:
+        model_id = sel.split(": ", 1)[1]
+        return ChatOllama(model=model_id, temperature=temp)
+    st.error("⚠️ Geçerli bir model seçilmedi.")
+    return None
+
+
+def _stream_text(text: str):
+    for word in text.split(" "):
+        yield word + " "
+        time.sleep(0.04)
+
+
+def page_chat():
+    uc = get_user_context()
+
+    # Identity bar
+    st.markdown(identity_bar_html(uc), unsafe_allow_html=True)
+
+    # Message history (custom bubbles)
+    st.markdown('<div class="chat-wrap">', unsafe_allow_html=True)
+    for m in st.session_state.messages:
+        if m["role"] == "user":
+            st.markdown(
+                f'<div class="msg-user"><div class="bubble-user">{m["content"]}</div></div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            st.markdown('<div class="msg-ai"><div class="bubble-ai">', unsafe_allow_html=True)
+            st.markdown(m["content"])
+            # Sources accordion
+            if m.get("sources"):
+                with st.expander(f"🔍 Referans Kaynaklar ({len(m['sources'])})"):
+                    for i, doc in enumerate(m["sources"]):
+                        score = doc.metadata.get("score", 0.0)
+                        st.markdown(
+                            f"**#{i+1}** &nbsp; 📄 `{doc.metadata.get('source')}` &nbsp;"
+                            f"📊 Skor: `{score:.4f}`"
+                        )
+                        st.caption(doc.page_content[:400])
+                        if i < len(m["sources"]) - 1:
+                            st.divider()
+            st.markdown('</div></div>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+
+    # Chat input
+    if prompt := st.chat_input("Sorunuzu buraya yazın..."):
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        st.markdown(
+            f'<div class="msg-user"><div class="bubble-user">{prompt}</div></div>',
+            unsafe_allow_html=True,
+        )
+
+        llm = _build_llm()
+        if not llm:
+            return
+
+        client = get_qdrant_client()
+        if not client.collection_exists(COLLECTION_NAME):
+            st.error("Vektör veritabanı boş. Önce Belge Yönetimi sekmesinden belge yükleyin.")
+            return
+
+        # History for LLM
+        history = []
+        for msg in st.session_state.messages[-(10):]:
+            if msg["role"] == "user":
+                history.append(HumanMessage(content=msg["content"]))
+            elif msg["role"] == "assistant":
+                history.append(AIMessage(content=msg.get("content", "")))
+
+        @tool
+        def bilimp_knowledge_base(query: str):
+            """Bilimp AI Asistanı'nın şirket içi bilgi bankasında arama yapar."""
+            pass
+
+        llm_with_tools = llm.bind_tools([bilimp_knowledge_base])
+
+        identity_str = f"Kullanıcı öznitelikleri: {uc.model_dump()}"
+        system_prompt = f"""
+Sen Bilimp AI Asistanısın. Şirket içi dökümanlar hakkında soru-cevap yaparsın.
+{identity_str}
+
+KURAL: Kullanıcının bağlam bilgisi (kimlik, hafıza) sorarsa 'bilimp_knowledge_base' KULLANMA.
+Şirket verisi, prosedür, kural sorularında 'bilimp_knowledge_base' kullan.
+Her zaman nazik ve "siz" diliyle hitap et. Başka model olduğunu söyleme.
+"""
+        ai_msg = llm_with_tools.invoke(
+            [SystemMessage(content=system_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
+        )
+
+        retrieved_docs: list = []
+        final_response = ""
+
+        if ai_msg.tool_calls:
+            with st.status("📚 Bilgi Bankası Taranıyor...", expanded=False) as s:
+                dense = get_dense_embeddings()
+                sparse = get_sparse_embeddings()
+                store = QdrantVectorStore(
+                    client=client, collection_name=COLLECTION_NAME,
+                    embedding=dense, vector_name="content",
+                    sparse_embedding=sparse, sparse_vector_name="sparse",
+                    retrieval_mode=RetrievalMode.HYBRID,
+                )
+                top_k = st.session_state.top_k
+                thresh = st.session_state.threshold
+                candidates = store.similarity_search_with_score(prompt, k=top_k * 5)
+                for doc, score in candidates:
+                    if score < thresh:
+                        continue
+                    audience_data = doc.metadata.get("audience")
+                    if not audience_data:
+                        continue
+                    try:
+                        policy = AudiencePolicy(**audience_data)
+                    except Exception:
+                        continue
+                    if has_access(policy, uc):
+                        doc.metadata["score"] = score
+                        retrieved_docs.append(doc)
+                        if len(retrieved_docs) >= top_k:
+                            break
+                s.update(label=f"✓ {len(retrieved_docs)} belge getirildi", state="complete")
+
+            context_str = "\n\n".join(d.page_content for d in retrieved_docs)
+            answer_lang, q_lang, ctx_lang, lang_src = choose_answer_language(prompt, context_str)
+            lang_label = get_language_label(answer_lang)
+
+            st.markdown(
+                f'<div class="lang-strip">📚 Dokümanlardan Yanıtlanıyor — {lang_label}</div>',
+                unsafe_allow_html=True,
+            )
+
+            rag_prompt = f"""
+{build_language_policy_prompt(answer_lang)}
+Aşağıdaki şirket belgelerini kullanarak soruyu yanıtla.
+Yalnızca verilen belgelere dayan.
+
+BELGELER:
+{context_str if context_str else "(Erişilebilir belge bulunamadı — kullanıcı yetkisi yetersiz olabilir)"}
+"""
+            st.markdown('<div class="msg-ai"><div class="bubble-ai">', unsafe_allow_html=True)
+            rag_msgs = [SystemMessage(content=rag_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
+            final_response = st.write_stream(llm.stream(rag_msgs))
+            if retrieved_docs:
+                with st.expander(f"🔍 Referans Kaynaklar ({len(retrieved_docs)})"):
+                    for i, doc in enumerate(retrieved_docs):
+                        score = doc.metadata.get("score", 0.0)
+                        st.markdown(
+                            f"**#{i+1}** &nbsp; 📄 `{doc.metadata.get('source')}` &nbsp;"
+                            f"📊 Skor: `{score:.4f}`"
+                        )
+                        st.caption(doc.page_content[:400])
+                        if i < len(retrieved_docs) - 1:
+                            st.divider()
+            st.markdown('</div></div>', unsafe_allow_html=True)
+        else:
+            raw = ai_msg.content
+            text = raw if isinstance(raw, str) else (
+                "".join(
+                    item.get("text", "") if isinstance(item, dict) else str(item)
+                    for item in raw
+                ) if isinstance(raw, list) else str(raw)
+            )
+            st.markdown(
+                '<div class="lang-strip">💬 Sohbet Modu</div>', unsafe_allow_html=True
+            )
+            st.markdown('<div class="msg-ai"><div class="bubble-ai">', unsafe_allow_html=True)
+            final_response = st.write_stream(_stream_text(text))
+            st.markdown('</div></div>', unsafe_allow_html=True)
+
+        st.session_state.messages.append({
+            "role": "assistant",
+            "content": final_response,
+            "sources": retrieved_docs,
+        })
         st.rerun()
 
-    with st.expander("ℹ️ Yetki Detayı"):
-        st.code(get_allowed_permissions(current_user_role))
 
-    st.divider()
-    st.markdown("### 🧠 Yapay Zeka Motoru")
-    gemini_models_map = {
-        "Gemini 2.5 Flash (Hızlı)": "gemini-2.5-flash",
-        "Gemini 3.0 Flash (Akıllı + Hızlı)": "gemini-3-flash-preview"
-    }
-    ollama_list = get_local_ollama_models()
-    model_options = list(gemini_models_map.keys())
-    if ollama_list:
-        model_options.extend([f"Ollama: {m}" for m in ollama_list])
-    else:
-        model_options.append("Ollama (Model Yok)")
+# ══════════════════════════════════════════════════════════════════════════════
+# PAGE: BELGE YÖNETİMİ
+# ══════════════════════════════════════════════════════════════════════════════
+def _render_abac_builder():
+    """ABAC Rule Builder: OR-of-ANDs block UI."""
+    st.markdown(
+        '<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:4px;">'
+        '🎯 Hedef Kitle — Erişim Kuralları</div>',
+        unsafe_allow_html=True,
+    )
+    st.caption("Her blok bir KURAL (AND). Bloklar arası VEYA (OR) mantığı. ID'leri virgülle girin.")
 
-    selected_option = st.selectbox("Model Seçimi", model_options)
-    llm_model_id, llm_type = None, "ollama"
-    if "Gemini" in selected_option:
-        llm_type = "gemini"
-        llm_model_id = gemini_models_map[selected_option]
-    elif "Ollama" in selected_option:
-        llm_type = "ollama"
-        llm_model_id = selected_option.split(": ")[1]
+    rules = st.session_state.audience_rules
+    field_list = list(FIELD_LABELS.items())
 
-    api_key = ""
-    if llm_type == "gemini":
-        api_key = st.text_input("🔑 Google API Key", type="password")
+    for i, rule_data in enumerate(rules):
+        if i > 0:
+            st.markdown(
+                '<div class="or-divider"><span>VEYA</span></div>',
+                unsafe_allow_html=True,
+            )
 
-    st.divider()
-    st.markdown("### 🎛️ İnce Ayarlar")
-    temperature = st.slider("Yaratıcılık", 0.0, 1.0, 0.3, step=0.1)
-    top_k = st.number_input("Bağlam (Chunk)", 1, 20, 5)
-    score_threshold = st.slider("Benzerlik Eşiği", 0.0, 0.9, 0.40, step=0.05)
-    with st.expander("📄 Chunk Parametreleri"):
-        c_size = st.number_input("Boyut", 500, 5000, 2500)
-        c_over = st.number_input("Örtüşme", 0, 1000, 200)
+        st.markdown(f'<div class="rule-card"><div class="rule-header">KURAL #{i+1} — tüm doldurulan alanlar AND mantığıyla çalışır</div>',
+                    unsafe_allow_html=True)
 
-st.header("📄 Bilimp Doküman Asistanı (Streaming Agent)")
-t1, t2 = st.tabs(["📂 **Belge Yönetimi**", "💬 **Akıllı Sohbet**"])
+        cols3 = st.columns(3)
+        for j, (field, label) in enumerate(field_list):
+            col = cols3[j % 3]
+            val = col.text_input(
+                label,
+                value=rule_data.get(field, ""),
+                key=f"rule_{i}_{field}",
+                placeholder="örn: 13, 55",
+                label_visibility="visible",
+            )
+            st.session_state.audience_rules[i][field] = val
+            chips = render_chips_html(val)
+            if chips:
+                col.markdown(chips, unsafe_allow_html=True)
 
-# --- TAB 1: BELGE YÖNETİMİ ---
-with t1:
+        if len(rules) > 1:
+            _, del_col = st.columns([5, 1])
+            with del_col:
+                st.markdown('<div class="del-btn">', unsafe_allow_html=True)
+                if st.button("🗑 Sil", key=f"del_rule_{i}"):
+                    st.session_state.audience_rules.pop(i)
+                    st.rerun()
+                st.markdown('</div>', unsafe_allow_html=True)
+
+        st.markdown('</div>', unsafe_allow_html=True)
+
+    if st.button("➕ Yeni Kural Satırı Ekle (OR)", use_container_width=True):
+        st.session_state.audience_rules.append(empty_rule_data())
+        st.rerun()
+
+
+def page_documents():
+    st.markdown('<p class="page-title">📂 Belge Yönetimi</p>', unsafe_allow_html=True)
+    st.markdown('<p class="page-subtitle">Belge yükleyin ve ABAC erişim kurallarını tanımlayın.</p>',
+                unsafe_allow_html=True)
+
     col_upload, col_list = st.columns([1, 1], gap="large")
+
+    # ── LEFT: Upload + ABAC Builder ──────────────────────────────────────────
     with col_upload:
-        st.markdown("#### ⬆️ Belge Yükle")
-        up_file = st.file_uploader("Dosyayı buraya sürükleyin", type=["pdf", "docx", "xlsx", "pptx"],
-                                   label_visibility="collapsed")
+        st.markdown('<div class="bilimp-card">', unsafe_allow_html=True)
+        st.markdown('<div class="bilimp-card-title">⬆️ Belge Yükle</div>', unsafe_allow_html=True)
+
+        up_file = st.file_uploader(
+            "PDF, DOCX, XLSX veya PPTX sürükleyin",
+            type=["pdf", "docx", "xlsx", "pptx"],
+            label_visibility="collapsed",
+        )
+
         if up_file:
             bytes_data = up_file.getvalue()
             f_name = up_file.name
-            curr_md5 = calculate_md5(bytes_data)
-
-            # Qdrant'ta bu belge var mı kontrol et
+            curr_md5 = md5(bytes_data)
             client = get_qdrant_client()
-            file_exists = False
-            hash_matches = False
 
+            file_exists = hash_matches = False
             if client.collection_exists(COLLECTION_NAME):
-                scroll_result = client.scroll(
-                    collection_name=COLLECTION_NAME,
-                    limit=1000,
-                    with_payload=True
-                )
-
-                for point in scroll_result[0]:
-                    metadata = point.payload.get("metadata", {})
-                    source = metadata.get("source", "")
-                    stored_hash = metadata.get("file_hash", "")
-
-                    if source == f_name:
+                scroll, _ = client.scroll(collection_name=COLLECTION_NAME, limit=2000, with_payload=True)
+                for pt in scroll:
+                    meta = pt.payload.get("metadata", {})
+                    if meta.get("source") == f_name:
                         file_exists = True
-                        if stored_hash == curr_md5:
-                            hash_matches = True
+                        hash_matches = meta.get("file_hash") == curr_md5
                         break
 
             if file_exists and hash_matches:
-                st.warning(f"⚠️ **{f_name}** zaten mevcut (değişiklik yok).")
-            elif file_exists and not hash_matches:
-                st.info(f"🔄 **{f_name}** önceki versiyonundan farklı. Güncellenecek.")
+                st.warning(f"⚠️ **{f_name}** zaten güncel durumda.")
+            elif file_exists:
+                st.info(f"🔄 **{f_name}** güncellenecek (içerik değişmiş).")
             else:
-                st.success(f"✅ **{f_name}** analize hazır.")
+                st.success(f"✅ **{f_name}** sisteme hazır.")
 
-            if st.button("🚀 Sisteme Entegre Et", type="primary"):
-                if file_exists and hash_matches:
-                    st.info("Belge zaten güncel durumda.")
-                else:
-                    with st.status("İşleniyor...", expanded=True) as s:
-                        with tempfile.NamedTemporaryFile(delete=False, suffix=os.path.splitext(f_name)[1]) as tmp:
-                            tmp.write(bytes_data)
-                            tmp_path = tmp.name
+        st.divider()
+        _render_abac_builder()
+        st.divider()
 
-                        init_collection()
-                        delete_by_source(f_name)
+        if up_file:
+            col_btn, _ = st.columns([2, 1])
+            with col_btn:
+                if st.button("🚀 Sisteme Entegre Et ve Yayınla", type="primary", use_container_width=True):
+                    audience_policy = build_policy_from_ui(st.session_state.audience_rules)
+                    if audience_policy.is_empty():
+                        st.error("❌ En az bir geçerli erişim kuralı tanımlanmalıdır. Boş kayıt sisteme kabul edilmez.")
+                    elif file_exists and hash_matches:
+                        st.info("Belge zaten güncel.")
+                    else:
+                        audience_dict = audience_policy.model_dump()
+                        with st.status("🔄 İşleniyor...", expanded=True) as s:
+                            with tempfile.NamedTemporaryFile(
+                                delete=False, suffix=os.path.splitext(f_name)[1]
+                            ) as tmp:
+                                tmp.write(bytes_data)
+                                tmp_path = tmp.name
+                            s.write("Koleksiyon hazırlanıyor...")
+                            init_collection()
+                            delete_by_source(f_name)
+                            s.write("Belge işleniyor...")
+                            if f_name.endswith(".pptx"):
+                                chunks = chunk_pptx(tmp_path, f_name, audience_dict)
+                            else:
+                                chunks = chunk_text(
+                                    tmp_path, f_name,
+                                    st.session_state.chunk_size,
+                                    st.session_state.chunk_overlap,
+                                    audience_dict,
+                                )
+                            os.unlink(tmp_path)
+                            if chunks:
+                                s.write(f"{len(chunks)} chunk Qdrant'a yükleniyor...")
+                                add_documents_to_qdrant(chunks, file_hash=curr_md5)
+                                reg = load_registry()
+                                reg[f_name] = {
+                                    "hash": curr_md5,
+                                    "audience": audience_dict,
+                                    "updated_at": str(time.time()),
+                                }
+                                save_registry(reg)
+                                s.update(label=f"✅ {len(chunks)} chunk yüklendi!", state="complete")
+                                st.toast("Belge sisteme entegre edildi!", icon="🎉")
+                                time.sleep(0.8)
+                                st.rerun()
+                            else:
+                                s.update(label="❌ Belge ayrıştırılamadı.", state="error")
 
-                        chunks = []
-                        if f_name.endswith(".pptx"):
-                            chunks = process_pptx_native(tmp_path, f_name, current_user_role)
-                        else:
-                            chunks = process_text_based(tmp_path, f_name, c_size, c_over, current_user_role)
+        st.markdown('</div>', unsafe_allow_html=True)
 
-                        if chunks:
-                            add_documents_to_qdrant(chunks, file_hash=curr_md5)
-
-                            current_reg = load_registry()
-                            current_reg[f_name] = {
-                                "hash": curr_md5,
-                                "permission": current_user_role,
-                                "updated_at": str(time.time())
-                            }
-                            save_registry(current_reg)
-
-                            s.update(label="Tamamlandı!", state="complete", expanded=False)
-                            st.toast("Başarılı!", icon="🎉")
-                            time.sleep(1)
-                            st.rerun()
-                        else:
-                            s.update(label="Hata", state="error")
-                            st.error("Ayrıştırılamadı.")
-
-                        os.unlink(tmp_path)
-
+    # ── RIGHT: Document list ──────────────────────────────────────────────────
     with col_list:
-        st.markdown("#### 🗂️ Sistemdeki Belgeler")
+        st.markdown('<div class="bilimp-card">', unsafe_allow_html=True)
+        st.markdown(
+            '<div class="bilimp-card-title" '
+            'style="background:var(--primary);color:white;margin:-20px -24px 16px;'
+            'padding:12px 24px;border-radius:12px 12px 0 0;">🗂️ Sistemdeki Belgeler ve İzin Matrisleri</div>',
+            unsafe_allow_html=True,
+        )
 
         client = get_qdrant_client()
-        visible_files = []
+        doc_map: dict[str, dict] = {}
 
         if client.collection_exists(COLLECTION_NAME):
-            scroll_result = client.scroll(
-                collection_name=COLLECTION_NAME,
-                limit=1000,
-                with_payload=True
-            )
+            scroll, _ = client.scroll(collection_name=COLLECTION_NAME, limit=2000, with_payload=True)
+            for pt in scroll:
+                meta = pt.payload.get("metadata", {})
+                src = meta.get("source", "")
+                if src and src not in doc_map:
+                    doc_map[src] = {
+                        "audience": meta.get("audience", {}),
+                        "file_type": meta.get("file_type", "?"),
+                    }
 
-            unique_files = {}
-            for point in scroll_result[0]:
-                source = point.payload.get("metadata", {}).get("source", "")
-                perm = point.payload.get("metadata", {}).get("permission", "public")
-                if source and source not in unique_files:
-                    unique_files[source] = perm
-
-            allowed_view_perms = get_allowed_permissions(current_user_role)
-            for fname, perm in unique_files.items():
-                if perm in allowed_view_perms:
-                    visible_files.append((fname, perm))
-
-        if not visible_files:
-            st.info("Görüntülenecek belge yok.")
+        if not doc_map:
+            st.info("Henüz belge yüklenmemiş.")
         else:
-            for fname, perm in visible_files:
-                c1, c2 = st.columns([0.8, 0.2])
-                with c1:
-                    st.markdown(
-                        f"""<div style="padding:10px; background:#161b22; border-radius:8px; margin-bottom:5px; border:1px solid #30363d;"><span style="color:white; font-weight:600;">📄 {fname}</span><span style="background:#238636; color:white; padding:2px 8px; border-radius:4px; font-size:0.8em; margin-left:10px;">{perm}</span></div>""",
-                        unsafe_allow_html=True)
-                with c2:
-                    if st.button("🗑️", key=f"del_{fname}"):
+            uc = get_user_context()
+            for fname, info in doc_map.items():
+                audience_data = info.get("audience", {})
+                try:
+                    policy = AudiencePolicy(**audience_data) if audience_data else AudiencePolicy()
+                except Exception:
+                    policy = AudiencePolicy()
+
+                accessible = has_access(policy, uc)
+                access_icon = "🟢" if accessible else "🔴"
+
+                ext = info.get("file_type", "")
+                icon = {"pdf": "📄", "docx": "📝", "xlsx": "📊", "pptx": "📑"}.get(ext, "📁")
+
+                aud_html = audience_summary_html(audience_data)
+
+                col_doc, col_del = st.columns([0.88, 0.12])
+                with col_doc:
+                    st.markdown(f"""
+<div class="doc-row">
+  <div style="flex:1;">
+    <div class="doc-name">{icon} {fname} <span style="font-size:11px;">{access_icon}</span></div>
+    <div class="doc-audience">{aud_html}</div>
+  </div>
+</div>""", unsafe_allow_html=True)
+                with col_del:
+                    st.markdown('<div class="del-btn">', unsafe_allow_html=True)
+                    if st.button("🗑", key=f"del_{fname}", help="Belgeyi sil"):
                         delete_document_globally(fname)
                         st.rerun()
+                    st.markdown('</div>', unsafe_allow_html=True)
 
-# --- TAB 2: SOHBET (STREAMING) ---
-with t2:
-    def get_formatted_history(messages, max_pairs=5):
-        """
-        Mesaj geçmişini LangChain formatına çevirir.
-        """
-        history = []
-        all_msgs = messages.copy()
-        recent = all_msgs[-(max_pairs * 2):]
-
-        for msg in recent:
-            content = msg.get("content", "")
-            if not content or content.strip() == "":
-                continue
-
-            if msg["role"] == "user":
-                history.append(HumanMessage(content=content))
-            elif msg["role"] == "assistant":
-                history.append(AIMessage(content=content))
-
-        return history
+        st.markdown('</div>', unsafe_allow_html=True)
 
 
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
+# ══════════════════════════════════════════════════════════════════════════════
+# MAIN — CSS + Sidebar + Router
+# ══════════════════════════════════════════════════════════════════════════════
+inject_css()
+render_sidebar()
 
-    for m in st.session_state.messages:
-        with st.chat_message(m["role"]):
-            st.markdown(m["content"])
-            if m["role"] == "assistant" and "sources" in m and m["sources"]:
-                with st.expander(f"🔍 Referans Kaynaklar ({len(m['sources'])})"):
-                    for i, doc in enumerate(m['sources']):
-                        score_val = doc.metadata.get("score", 0.0)
-                        st.markdown(f"**#{i + 1}** | 📂 `{doc.metadata.get('source')}` | 📊 Skor: `{score_val:.4f}`")
-                        st.caption(doc.page_content)
-                        st.divider()
-
-    if prompt := st.chat_input("Sorunuzu buraya yazın..."):
-        st.session_state.messages.append({"role": "user", "content": prompt})
-
-        with st.chat_message("user"):
-            st.markdown(prompt)
-
-        with st.chat_message("assistant"):
-            client = get_qdrant_client()
-            if not client.collection_exists(COLLECTION_NAME):
-                st.error("Veritabanı boş.")
-            else:
-                ready = True
-                llm = None
-                if llm_type == "gemini":
-                    if not api_key:
-                        st.error("API Key Eksik!")
-                        ready = False
-                    else:
-                        llm = ChatGoogleGenerativeAI(
-                            model=llm_model_id,
-                            google_api_key=api_key,
-                            temperature=temperature
-                        )
-                elif llm_type == "ollama":
-                    if "Yok" in selected_option:
-                        st.error("Model Yok!")
-                        ready = False
-                    else:
-                        llm = ChatOllama(model=llm_model_id, temperature=temperature)
-
-                if ready and llm:
-                    try:
-                        router_answer_language, _, _, _ = choose_answer_language(prompt, "")
-                        router_language_policy = build_language_policy_prompt(router_answer_language)
-
-                        @tool
-                        def bilimp_knowledge_base(query: str):
-                            """
-                            Bilimp AI Asistanı'nın şirket içi bilgi bankasında arama yapmasını sağlar.
-                            """
-                            pass
-
-
-                        llm_with_tools = llm.bind_tools([bilimp_knowledge_base])
-
-                        history_messages = st.session_state.messages[:-1]
-                        history_langchain_format = get_formatted_history(history_messages, max_pairs=5)
-
-                        identity_section = """
-                        Sen profesyonel, yardımsever ve kurumsal bir asistansın.
-                        KİMLİĞİN:
-                        - Adın: **Bilimp AI Asistanı**.
-                        - Görevin: Çalışanlara şirket içi dökümanlar, yönetmelikler ve prosedürler hakkında bilgi sağlamak.
-                        
-                        YETENEKLERİN VE HAFIZA:
-                        - Güçlü bir hafızan var. Sohbet geçmişindeki TÜM mesajları hatırlarsın.
-                        - Kullanıcı "Önceki soruma ne cevap verdin?" gibi sorular sorarsa, sohbet geçmişine bakarak cevapla.
-                        
-                        DAVRANIŞ KURALLARI:
-                        1. Eğer kullanıcı "Kimsin?" derse kendini tanıt.
-                        2. Başka bir model olduğunu ASLA SÖYLEME.
-                        3. Kullanıcıya her zaman nazik ve "siz" diliyle hitap et.
-                        4. Hafıza soruları için TOOL KULLANMA, direkt sohbet geçmişinden cevapla.
-                        """
-
-                        router_section = """
-                        GÖREVİN:
-                        Gelen soruyu ve sohbet geçmişini analiz edip 'bilimp_knowledge_base' aracını kullanıp kullanmayacağına karar ver.
-                        
-                        KARAR MANTIĞI:
-                        1. **Veri İsteği:** Şirket verisi, sayı, kural soruluyorsa -> TOOL KULLAN.
-                        2. **Takip Sorusu:** "Peki kaç tane?" gibi önceki konunun devamıysa -> TOOL KULLAN.
-                        3. **HAFIZA SORULARI:** "Önceki cevabın neydi?" -> TOOL KULLANMA, sohbet geçmişinden cevapla.
-                        4. **Sohbet:** "Merhaba" -> TOOL KULLANMA.
-                        """
-
-                        router_language_policy = """
-                        DİL POLİTİKASI:
-                        1. Yanıtınızı kullanıcının sorduğu dille verin.
-                        2. Kullanıcı çeviri isterse yalnızca istenen çeviriyi üretin.
-                        3. Kullanıcı Türkçe yazdıysa Türkçe, İngilizce yazdıysa İngilizce yanıt verin.
-                        4. Bu router aşamasında yalnızca dil ve üslup kurallarını uygula; herhangi bir bağlam yoksa otomatik olarak "bilmiyorum" türü bir yanıt verme.
-                        """
-                        full_system_prompt = identity_section + "\n\n" + router_section + "\n\n" + router_language_policy
-
-                        input_msgs = [
-                                         SystemMessage(content=full_system_prompt)
-                                     ] + history_langchain_format + [
-                                         HumanMessage(content=prompt)
-                                     ]
-
-                        ai_msg = llm_with_tools.invoke(input_msgs)
-
-                        final_response = ""
-                        retrieved_docs = []
-
-                        if ai_msg.tool_calls:
-                            with st.status("📚 Bilgi Bankası Taranıyor...", expanded=True) as s:
-                                dense_emb = get_dense_embeddings()
-                                sparse_emb = get_sparse_embeddings()
-                                vector_store = QdrantVectorStore(
-                                    client=client,
-                                    collection_name=COLLECTION_NAME,
-                                    embedding=dense_emb,
-                                    vector_name="content",
-                                    sparse_embedding=sparse_emb,
-                                    sparse_vector_name="sparse",
-                                    retrieval_mode=RetrievalMode.HYBRID
-                                )
-                                allowed_perms = get_allowed_permissions(current_user_role)
-                                perm_filter = rest_models.Filter(must=[
-                                    rest_models.FieldCondition(
-                                        key="metadata.permission",
-                                        match=rest_models.MatchAny(any=allowed_perms)
-                                    )
-                                ])
-
-                                results = vector_store.similarity_search_with_score(prompt, k=top_k, filter=perm_filter)
-                                for doc, score in results:
-                                    if score >= score_threshold:
-                                        doc.metadata["score"] = score
-                                        retrieved_docs.append(doc)
-
-                                context_str = "\n\n".join([d.page_content for d in retrieved_docs])
-                                s.update(label="Bilgiler Getirildi!", state="complete", expanded=False)
-
-                            answer_language, question_language, context_language, language_source = choose_answer_language(
-                                prompt,
-                                context_str,
-                            )
-                            language_label = get_language_label(answer_language)
-
-                            rag_system_prompt = f"""
-                            SYSTEM INSTRUCTION: You are a helpful assistant.
-                            {build_language_policy_prompt(answer_language)}
-
-                            Answer the user's latest question using the FOUND DOCUMENTS below.
-                            
-                            FOUND DOCUMENTS:
-                            {context_str}
-                            
-                            STRICT RULES:
-                            1. Use only the provided documents.
-                            2. Consider chat history for continuity.
-                            """
-                            st.markdown(f"📚 **Dokumanlardan Yanitlaniyor ({language_label})**")
-                            st.caption(
-                                f"Dil karari: yanit={answer_language}, soru={question_language}, "
-                                f"baglam={context_language}, kaynak={language_source}"
-                            )
-
-                            rag_messages = [
-                                               SystemMessage(content=rag_system_prompt)
-                                           ] + history_langchain_format + [
-                                               HumanMessage(content=prompt)
-                                           ]
-
-                            stream_generator = llm.stream(rag_messages)
-                            final_response = st.write_stream(stream_generator)
-
-                        else:
-                            raw_content = ai_msg.content
-                            content_text = ""
-
-                            if isinstance(raw_content, str):
-                                content_text = raw_content
-                            elif isinstance(raw_content, list):
-                                for item in raw_content:
-                                    if isinstance(item, list):
-                                        for sub_item in item:
-                                            if isinstance(sub_item, dict):
-                                                content_text += sub_item.get("text", "")
-                                    elif isinstance(item, dict):
-                                        content_text += item.get("text", "")
-                                    elif isinstance(item, str):
-                                        content_text += item
-                            else:
-                                content_text = str(raw_content)
-
-                            st.markdown("💬 **Sohbet Modu:**")
-                            final_response = st.write_stream(stream_text_generator(content_text))
-
-                        if retrieved_docs:
-                            with st.expander(f"🔍 Referans Kaynaklar ({len(retrieved_docs)})"):
-                                for i, doc in enumerate(retrieved_docs):
-                                    score_val = doc.metadata.get("score", 0.0)
-                                    st.markdown(
-                                        f"**#{i + 1}** | 📂 `{doc.metadata.get('source')}` | 📊 Skor: `{score_val:.4f}`")
-                                    st.caption(doc.page_content)
-
-                        st.session_state.messages.append({
-                            "role": "assistant",
-                            "content": final_response,
-                            "sources": retrieved_docs
-                        })
-
-                    except Exception as e:
-                        error_msg = str(e)
-                        if "429" in error_msg:
-                            st.error("⚠️ API Kotası Doldu.")
-                        else:
-                            st.error(f"Hata: {e}")
-                        st.session_state.messages.append({
-                            "role": "assistant",
-                            "content": f"Bir hata oluştu: {error_msg}",
-                            "sources": []
-                        })
+page = st.session_state.get("page", "chat")
+if page == "auth":
+    page_auth()
+elif page == "documents":
+    page_documents()
+else:
+    page_chat()
