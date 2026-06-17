@@ -31,12 +31,6 @@
       {"sirket_ids": [14]}
     ]
   },
-  "Müşteri Listesi.xlsx": {
-    "rules": [
-      {"mudurluk_ids": [25], "grup_ids": [1]},
-      {"mudurluk_ids": [26]}
-    ]
-  },
   "Bilimp_Fiyat_Listesi_Ornek_Sablon2.xlsx": {
     "rules": [
       {"mudurluk_ids": [13, 55]}

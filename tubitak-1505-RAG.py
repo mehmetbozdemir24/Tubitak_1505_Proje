@@ -239,6 +239,20 @@ section[data-testid="stSidebar"] .stSlider [data-testid="stThumbValue"] { color:
     overflow-x: auto !important;
 }
 
+/* Access-deny strip (0-context guard rail) */
+.access-deny-strip {
+    background: #FFF0EC;
+    color: var(--danger);
+    border: 1.5px solid var(--danger);
+    border-left: 4px solid var(--danger);
+    padding: 14px 18px;
+    border-radius: 4px 16px 16px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 78%;
+    box-shadow: 0 2px 10px rgba(220,53,69,0.12);
+}
+
 /* Language info strip */
 .lang-strip {
     background: var(--primary);
@@ -833,10 +847,65 @@ def render_sidebar():
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE: KIMLIK GİRİŞİ (Auth / UserContext Monitor)
 # ══════════════════════════════════════════════════════════════════════════════
+MANUAL_PROFILE = "⚙️ Özel Kullanıcı (Manuel Giriş Yap)"
+
+# Demo/sunum için hazır kurumsal personalar. Hedef kitle excelindeki belge
+# kısıtlamalarına birebir oturur — tek tıkla profil değiştirme.
+MOCK_PROFILES = {
+    "Genel Müdür (Kurumsal Satış)": {
+        "sirket": 14, "sube": 0, "mudurlu": 25, "birim": 0, "bina": 0,
+        "pozisyon": 1, "ptype": 0, "kullanici": 0, "grup": "1",
+    },
+    "c.erdem (Analiz Destek - Özel Yetkili)": {
+        "sirket": 14, "sube": 0, "mudurlu": 55, "birim": 0, "bina": 0,
+        "pozisyon": 0, "ptype": 0, "kullanici": 590, "grup": "",
+    },
+    "Yazılım Süreç Yöneticisi (Yazılım + Yönetim)": {
+        "sirket": 14, "sube": 0, "mudurlu": 13, "birim": 0, "bina": 0,
+        "pozisyon": 0, "ptype": 0, "kullanici": 0, "grup": "101",
+    },
+    "Özlüce Kampüsü Çalışanı (Memur)": {
+        "sirket": 14, "sube": 0, "mudurlu": 0, "birim": 0, "bina": 16,
+        "pozisyon": 0, "ptype": 1, "kullanici": 0, "grup": "",
+    },
+    MANUAL_PROFILE: {
+        "sirket": 0, "sube": 0, "mudurlu": 0, "birim": 0, "bina": 0,
+        "pozisyon": 0, "ptype": 0, "kullanici": 0, "grup": "",
+    },
+}
+
+
+def _apply_profile():
+    """Seçilen mock persona'nın değerlerini form alanlarına (uc_* widget key'leri)
+    yazar. Manuel seçimde mevcut değerlere dokunmaz — serbest giriş için."""
+    name = st.session_state.get("profile_select")
+    if not name or name == MANUAL_PROFILE:
+        return
+    p = MOCK_PROFILES[name]
+    st.session_state.uc_sirket    = p["sirket"]
+    st.session_state.uc_sube      = p["sube"]
+    st.session_state.uc_mudurlu   = p["mudurlu"]
+    st.session_state.uc_birim     = p["birim"]
+    st.session_state.uc_bina      = p["bina"]
+    st.session_state.uc_pozisyon  = p["pozisyon"]
+    st.session_state.uc_ptype     = p["ptype"]
+    st.session_state.uc_kullanici = p["kullanici"]
+    st.session_state.uc_grup      = str(p["grup"])
+
+
 def page_auth():
     st.markdown('<p class="page-title">👤 Kimlik Girişi</p>', unsafe_allow_html=True)
     st.markdown('<p class="page-subtitle">Sorgu sırasında gönderilecek kullanıcı özniteliklerini belirleyin.</p>',
                 unsafe_allow_html=True)
+
+    # ── Hızlı Profil Değiştirici (Mock Personas Switcher) ─────────────────────
+    st.selectbox(
+        "🎭 Simüle Edilecek Personeli Seçin",
+        list(MOCK_PROFILES.keys()),
+        key="profile_select",
+        on_change=_apply_profile,
+        help="Demo için hazır kurumsal personalar. Manuel seçimde alanlar serbest kalır.",
+    )
 
     col_form, col_preview = st.columns([1, 1], gap="large")
 
@@ -845,19 +914,18 @@ def page_auth():
         st.markdown('<div class="bilimp-card-title">Öznitelik Değerleri</div>', unsafe_allow_html=True)
 
         c1, c2 = st.columns(2)
-        st.session_state.uc_sirket    = c1.number_input("Şirket ID",       0, 99999, st.session_state.uc_sirket,    key="f_sirket")
-        st.session_state.uc_sube      = c2.number_input("Şube ID",         0, 99999, st.session_state.uc_sube,      key="f_sube")
-        st.session_state.uc_mudurlu   = c1.number_input("Müdürlük ID",     0, 99999, st.session_state.uc_mudurlu,   key="f_mudurlu")
-        st.session_state.uc_birim     = c2.number_input("Birim ID",        0, 99999, st.session_state.uc_birim,     key="f_birim")
-        st.session_state.uc_bina      = c1.number_input("Bina ID",         0, 99999, st.session_state.uc_bina,      key="f_bina")
-        st.session_state.uc_pozisyon  = c2.number_input("Pozisyon ID",     0, 99999, st.session_state.uc_pozisyon,  key="f_pozisyon")
-        st.session_state.uc_ptype     = c1.number_input("Personel Tip ID", 0, 99999, st.session_state.uc_ptype,     key="f_ptype")
-        st.session_state.uc_kullanici = c2.number_input("Kullanıcı ID",    0, 99999, st.session_state.uc_kullanici, key="f_kullanici")
-        st.session_state.uc_grup = st.text_input(
+        c1.number_input("Şirket ID",       0, 99999, key="uc_sirket")
+        c2.number_input("Şube ID",         0, 99999, key="uc_sube")
+        c1.number_input("Müdürlük ID",     0, 99999, key="uc_mudurlu")
+        c2.number_input("Birim ID",        0, 99999, key="uc_birim")
+        c1.number_input("Bina ID",         0, 99999, key="uc_bina")
+        c2.number_input("Pozisyon ID",     0, 99999, key="uc_pozisyon")
+        c1.number_input("Personel Tip ID", 0, 99999, key="uc_ptype")
+        c2.number_input("Kullanıcı ID",    0, 99999, key="uc_kullanici")
+        st.text_input(
             "Grup ID'leri (virgülle — birden fazla grup olabilir)",
-            value=st.session_state.uc_grup,
             placeholder="101, 108",
-            key="f_grup",
+            key="uc_grup",
         )
         st.markdown('</div>', unsafe_allow_html=True)
 
@@ -1019,27 +1087,36 @@ Her zaman nazik ve "siz" diliyle hitap et. Başka model olduğunu söyleme.
                         retrieved_docs.append(doc)
                 s.update(label=f"✓ {len(retrieved_docs)} belge getirildi", state="complete")
 
-            context_str = "\n\n".join(d.page_content for d in retrieved_docs)
-            answer_lang, q_lang, ctx_lang, lang_src = choose_answer_language(prompt, context_str)
-            lang_label = get_language_label(answer_lang)
+            # ── KESİN YETKİ GUARD-RAIL: 0-Context engelleme ───────────────────
+            # Kullanıcının erişebileceği hiçbir belge yoksa LLM'i TETİKLEME.
+            if not retrieved_docs:
+                deny_msg = "Bu konudaki kurumsal belgelere erişim yetkiniz bulunmamaktadır."
+                st.markdown(
+                    f'<div class="msg-ai"><div class="access-deny-strip">⛔ {deny_msg}</div></div>',
+                    unsafe_allow_html=True,
+                )
+                final_response = deny_msg
+            else:
+                context_str = "\n\n".join(d.page_content for d in retrieved_docs)
+                answer_lang, q_lang, ctx_lang, lang_src = choose_answer_language(prompt, context_str)
+                lang_label = get_language_label(answer_lang)
 
-            st.markdown(
-                f'<div class="lang-strip">📚 Dokümanlardan Yanıtlanıyor — {lang_label}</div>',
-                unsafe_allow_html=True,
-            )
+                st.markdown(
+                    f'<div class="lang-strip">📚 Dokümanlardan Yanıtlanıyor — {lang_label}</div>',
+                    unsafe_allow_html=True,
+                )
 
-            rag_prompt = f"""
+                rag_prompt = f"""
 {build_language_policy_prompt(answer_lang)}
 Aşağıdaki şirket belgelerini kullanarak soruyu yanıtla.
 Yalnızca verilen belgelere dayan.
 
 BELGELER:
-{context_str if context_str else "(Erişilebilir belge bulunamadı — kullanıcı yetkisi yetersiz olabilir)"}
+{context_str}
 """
-            st.markdown('<div class="msg-ai"><div class="bubble-ai">', unsafe_allow_html=True)
-            rag_msgs = [SystemMessage(content=rag_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
-            final_response = st.write_stream(llm.stream(rag_msgs))
-            if retrieved_docs:
+                st.markdown('<div class="msg-ai"><div class="bubble-ai">', unsafe_allow_html=True)
+                rag_msgs = [SystemMessage(content=rag_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
+                final_response = st.write_stream(llm.stream(rag_msgs))
                 with st.expander(f"🔍 Referans Kaynaklar ({len(retrieved_docs)})"):
                     for i, doc in enumerate(retrieved_docs):
                         score = doc.metadata.get("score", 0.0)
@@ -1050,7 +1127,7 @@ BELGELER:
                         st.caption(doc.page_content[:400])
                         if i < len(retrieved_docs) - 1:
                             st.divider()
-            st.markdown('</div></div>', unsafe_allow_html=True)
+                st.markdown('</div></div>', unsafe_allow_html=True)
         else:
             raw = ai_msg.content
             text = raw if isinstance(raw, str) else (

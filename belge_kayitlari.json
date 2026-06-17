@@ -1,0 +1,233 @@
+{
+    "61270.pdf": {
+        "hash": "488b83d18294f4c589859a0016546d95",
+        "audience": {
+            "rules": [
+                {
+                    "sirket_ids": [
+                        14,
+                        18,
+                        23
+                    ]
+                }
+            ]
+        },
+        "chunks": 44,
+        "updated_at": "1781737242.0704002"
+    },
+    "61920.pdf": {
+        "hash": "1f038277ae2e6af9681910a45e6b4dba",
+        "audience": {
+            "rules": [
+                {
+                    "kullanici_ids": [
+                        613
+                    ]
+                }
+            ]
+        },
+        "chunks": 9,
+        "updated_at": "1781737251.2535405"
+    },
+    "65242.pdf": {
+        "hash": "0b6fc64fbca399624133129eda466c21",
+        "audience": {
+            "rules": [
+                {
+                    "mudurluk_ids": [
+                        55,
+                        38
+                    ]
+                },
+                {
+                    "bina_ids": [
+                        16,
+                        17
+                    ],
+                    "personel_tip_ids": [
+                        1
+                    ]
+                }
+            ]
+        },
+        "chunks": 7,
+        "updated_at": "1781737261.6024127"
+    },
+    "64573.pdf": {
+        "hash": "58389723a4ff721023701e6126bf7bcf",
+        "audience": {
+            "rules": [
+                {
+                    "kullanici_ids": [
+                        590,
+                        591,
+                        596
+                    ]
+                }
+            ]
+        },
+        "chunks": 9,
+        "updated_at": "1781737274.6641085"
+    },
+    "67842.pdf": {
+        "hash": "bc3587b67d63019f75b7c97e3d906f0a",
+        "audience": {
+            "rules": [
+                {
+                    "sube_ids": [
+                        2
+                    ],
+                    "grup_ids": [
+                        101
+                    ]
+                },
+                {
+                    "sube_ids": [
+                        3
+                    ]
+                }
+            ]
+        },
+        "chunks": 23,
+        "updated_at": "1781737306.1893306"
+    },
+    "Bilimp_Fiyat_Listesi_Ornek_Sablon2.xlsx": {
+        "hash": "cc137709a4d8f64c8ed757299933de67",
+        "audience": {
+            "rules": [
+                {
+                    "mudurluk_ids": [
+                        13,
+                        55
+                    ]
+                }
+            ]
+        },
+        "chunks": 1,
+        "updated_at": "1781737309.954012"
+    },
+    "Bilimp_Fiyat_Listesi_Ornek_Sablon.xlsx": {
+        "hash": "b75c6fb480cabd7327a57c98c8b5953d",
+        "audience": {
+            "rules": [
+                {
+                    "kullanici_ids": [
+                        590
+                    ]
+                }
+            ]
+        },
+        "chunks": 3,
+        "updated_at": "1781737314.4170678"
+    },
+    "173210.pdf": {
+        "hash": "9d4e7fe2bb9174d39bb649b5a160e975",
+        "audience": {
+            "rules": [
+                {
+                    "pozisyon_ids": [
+                        108,
+                        109
+                    ]
+                }
+            ]
+        },
+        "chunks": 38,
+        "updated_at": "1781737359.2202456"
+    },
+    "183186.cleaned.pdf": {
+        "hash": "0a6a892737c05c8a75ff99ec70eb5ed7",
+        "audience": {
+            "rules": [
+                {
+                    "sirket_ids": [
+                        14
+                    ]
+                }
+            ]
+        },
+        "chunks": 26,
+        "updated_at": "1781737394.8806355"
+    },
+    "Aylik_Satis_Ozet_Ornek_Sablon.xlsx": {
+        "hash": "9ac745c403ad746d5ebc8a930494613a",
+        "audience": {
+            "rules": [
+                {
+                    "mudurluk_ids": [
+                        13
+                    ],
+                    "grup_ids": [
+                        101
+                    ]
+                },
+                {
+                    "mudurluk_ids": [
+                        55
+                    ],
+                    "grup_ids": [
+                        102
+                    ]
+                },
+                {
+                    "mudurluk_ids": [
+                        56
+                    ]
+                }
+            ]
+        },
+        "chunks": 5,
+        "updated_at": "1781737404.363795"
+    },
+    "204084.cleaned.pdf": {
+        "hash": "a5539389894d1aea18704339266cccf8",
+        "audience": {
+            "rules": [
+                {
+                    "mudurluk_ids": [
+                        55
+                    ]
+                },
+                {
+                    "kullanici_ids": [
+                        755,
+                        759
+                    ]
+                }
+            ]
+        },
+        "chunks": 33,
+        "updated_at": "1781737447.9649973"
+    },
+    "Haftalik_Yemek_Listesi.docx": {
+        "hash": "43d2b665dc4d458b8a1d8938f665636a",
+        "audience": {
+            "rules": [
+                {
+                    "sirket_ids": [
+                        14
+                    ]
+                }
+            ]
+        },
+        "chunks": 2,
+        "updated_at": "1781737308.0532901"
+    },
+    "Butce_Ve_Maliyet_Raporu.docx": {
+        "hash": "40947681f8c3f38e0b0587c9278b5004",
+        "audience": {
+            "rules": [
+                {
+                    "mudurluk_ids": [
+                        13
+                    ],
+                    "grup_ids": [
+                        101
+                    ]
+                }
+            ]
+        },
+        "chunks": 3,
+        "updated_at": "1781737397.1701357"
+    }
+}
