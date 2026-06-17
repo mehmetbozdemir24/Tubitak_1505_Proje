@@ -1,0 +1,78 @@
+{
+  "61270.pdf": {
+    "rules": [
+      {"sirket_ids": [14, 18, 23]}
+    ]
+  },
+  "61920.pdf": {
+    "rules": [
+      {"kullanici_ids": [613]}
+    ]
+  },
+  "65242.pdf": {
+    "rules": [
+      {"mudurluk_ids": [55, 38]},
+      {"bina_ids": [16, 17], "personel_tip_ids": [1]}
+    ]
+  },
+  "64573.pdf": {
+    "rules": [
+      {"kullanici_ids": [590, 591, 596]}
+    ]
+  },
+  "67842.pdf": {
+    "rules": [
+      {"sube_ids": [2], "grup_ids": [101]},
+      {"sube_ids": [3]}
+    ]
+  },
+  "Haftalik_Yemek_Listesi.docx": {
+    "rules": [
+      {"sirket_ids": [14]}
+    ]
+  },
+  "Müşteri Listesi.xlsx": {
+    "rules": [
+      {"mudurluk_ids": [25], "grup_ids": [1]},
+      {"mudurluk_ids": [26]}
+    ]
+  },
+  "Bilimp_Fiyat_Listesi_Ornek_Sablon2.xlsx": {
+    "rules": [
+      {"mudurluk_ids": [13, 55]}
+    ]
+  },
+  "Bilimp_Fiyat_Listesi_Ornek_Sablon.xlsx": {
+    "rules": [
+      {"kullanici_ids": [590]}
+    ]
+  },
+  "173210.pdf": {
+    "rules": [
+      {"pozisyon_ids": [108, 109]}
+    ]
+  },
+  "183186.cleaned.pdf": {
+    "rules": [
+      {"sirket_ids": [14]}
+    ]
+  },
+  "Butce_Ve_Maliyet_Raporu.docx": {
+    "rules": [
+      {"mudurluk_ids": [13], "grup_ids": [101]}
+    ]
+  },
+  "Aylik_Satis_Ozet_Ornek_Sablon.xlsx": {
+    "rules": [
+      {"mudurluk_ids": [13], "grup_ids": [101]},
+      {"mudurluk_ids": [55], "grup_ids": [102]},
+      {"mudurluk_ids": [56]}
+    ]
+  },
+  "204084.cleaned.pdf": {
+    "rules": [
+      {"mudurluk_ids": [55]},
+      {"kullanici_ids": [755, 759]}
+    ]
+  }
+}

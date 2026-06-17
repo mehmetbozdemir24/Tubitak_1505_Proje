@@ -127,3 +127,73 @@ def build_policy_from_ui(rules_data: list[dict]) -> AudiencePolicy:
 
 def empty_rule_data() -> dict:
     return {f: "" for f in FIELD_LABELS}
+
+
+# ── Qdrant Pre-Filter ─────────────────────────────────────────────────────────
+
+def build_qdrant_abac_filter(user: UserContext):
+    """
+    UserContext'e göre Qdrant veritabanı seviyesinde pre-filter üretir.
+
+    Mantık:
+      metadata.audience.rules dizisindeki herhangi bir kural (OR)
+      kullanıcının öznitelikleriyle tam eşleşirse belge döndürülür.
+
+      Kural içi: AND — kuraldaki her dolu alan eşleşmeli.
+      Boş alan (null / []) = wildcard — o öznitelikte kısıtlama yok.
+
+    Avantaj:
+      Python post-filter yerine Qdrant motoru filtrelediği için
+      gerçekten erişimi olan k belge doğrudan döner.
+    """
+    from qdrant_client.http import models as qm
+
+    must_conditions: list = []
+
+    # ── Tekil değerli öznitelikler ────────────────────────────────────────────
+    single_attrs = [
+        ("sirket_ids",       user.sirket_id),
+        ("sube_ids",         user.sube_id),
+        ("mudurluk_ids",     user.mudurluk_id),
+        ("birim_ids",        user.birim_id),
+        ("bina_ids",         user.bina_id),
+        ("pozisyon_ids",     user.pozisyon_id),
+        ("personel_tip_ids", user.personel_tip_id),
+        ("kullanici_ids",    user.kullanici_id),
+    ]
+
+    for field_key, user_val in single_attrs:
+        # Kural bu alanı boş bırakmış (wildcard) VEYA kullanıcı değeri listede
+        must_conditions.append(
+            qm.Filter(should=[
+                qm.IsEmptyCondition(is_empty=qm.PayloadField(key=field_key)),
+                qm.FieldCondition(key=field_key, match=qm.MatchValue(value=user_val)),
+            ])
+        )
+
+    # ── Çoklu değerli öznitelik: grup_ids ────────────────────────────────────
+    if user.grup_ids:
+        # Kural grup istemiyorsa (wildcard) VEYA kullanıcının gruplarından biri kural listesinde
+        must_conditions.append(
+            qm.Filter(should=[
+                qm.IsEmptyCondition(is_empty=qm.PayloadField(key="grup_ids")),
+                qm.FieldCondition(key="grup_ids", match=qm.MatchAny(any=user.grup_ids)),
+            ])
+        )
+    else:
+        # Kullanıcının hiç grubu yoksa — sadece grup kısıtlaması olmayan kurallara erişim
+        must_conditions.append(
+            qm.IsEmptyCondition(is_empty=qm.PayloadField(key="grup_ids"))
+        )
+
+    # ── NestedCondition: rules dizisinde EN AZ BİR kural eşleşmeli ───────────
+    return qm.Filter(
+        must=[
+            qm.NestedCondition(
+                nested=qm.Nested(
+                    key="metadata.audience.rules",
+                    filter=qm.Filter(must=must_conditions),
+                )
+            )
+        ]
+    )

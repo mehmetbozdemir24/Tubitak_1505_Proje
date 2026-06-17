@@ -17,7 +17,9 @@ from language_utils import choose_answer_language, build_language_policy_prompt,
 from abac import (
     AudiencePolicy, AudienceRule, UserContext,
     has_access, build_policy_from_ui, parse_ids, empty_rule_data, FIELD_LABELS,
+    build_qdrant_abac_filter,
 )
+from chunker import chunk_text, chunk_pptx
 
 # ── Page config (MUST be first Streamlit call) ───────────────────────────────
 st.set_page_config(
@@ -603,81 +605,7 @@ def sync_registry() -> dict:
     return registry
 
 
-# ── Chunking ──────────────────────────────────────────────────────────────────
-def _fix_md(text: str) -> str:
-    return text
-
-
-def chunk_pptx(path: str, source: str, audience: dict) -> list[Document]:
-    prs = Presentation(path)
-    docs = []
-    for i, slide in enumerate(prs.slides):
-        parts = []
-        if slide.shapes.title and slide.shapes.title.text:
-            parts.append(f"# {slide.shapes.title.text.strip()}")
-        for shape in slide.shapes:
-            if hasattr(shape, "text_frame") and shape.text_frame:
-                parts.append(shape.text.strip())
-        content = "\n\n".join(parts).strip()
-        if content:
-            docs.append(Document(
-                page_content=content,
-                metadata={"source": source, "chunk_no": i + 1,
-                          "file_type": "pptx", "audience": audience},
-            ))
-    return docs
-
-
-def chunk_text(path: str, source: str, chunk_size: int, chunk_overlap: int,
-               audience: dict) -> list[Document]:
-    ext = os.path.splitext(path)[1].lower()
-    try:
-        if ext == ".pdf":
-            raw = pymupdf4llm.to_markdown(path, write_images=False)
-        else:
-            md = MarkItDown()
-            raw = md.convert(path).text_content
-
-        clean = _fix_md(raw)
-        headers = [("#", "H1"), ("##", "H2"), ("###", "H3"), ("####", "H4")]
-        md_docs = MarkdownHeaderTextSplitter(
-            headers_to_split_on=headers, strip_headers=True
-        ).split_text(clean)
-
-        merged, temp = [], None
-        for doc in md_docs:
-            if not doc.page_content.strip():
-                continue
-            ctx = " > ".join(doc.metadata[h] for _, h in headers if doc.metadata.get(h))
-            if ctx:
-                doc.page_content = f"**BAĞLAM:** {ctx}\n\n{doc.page_content}"
-            if temp:
-                if len(doc.page_content) < 100 and "|" not in doc.page_content:
-                    merged.append(temp)
-                    temp = doc
-                else:
-                    doc.page_content = f"{temp.page_content}\n\n{doc.page_content}"
-                    merged.append(doc)
-                    temp = None
-            else:
-                temp = doc if len(doc.page_content) < 250 and "|" not in doc.page_content else None
-                if temp is None:
-                    merged.append(doc)
-        if temp:
-            merged.append(temp)
-
-        rec = RecursiveCharacterTextSplitter(
-            chunk_size=chunk_size, chunk_overlap=chunk_overlap,
-            separators=["\n\n", "\n", " ", ""],
-        )
-        final = []
-        for doc in merged:
-            doc.metadata.update({"source": source, "file_type": ext.lstrip("."), "audience": audience})
-            final.extend(rec.split_documents([doc]))
-        return final
-    except Exception as e:
-        st.error(f"Chunking hatası: {e}")
-        return []
+# chunk_text ve chunk_pptx → chunker.py'den import edildi (dosya başında)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -1083,22 +1011,12 @@ Her zaman nazik ve "siz" diliyle hitap et. Başka model olduğunu söyleme.
                 )
                 top_k = st.session_state.top_k
                 thresh = st.session_state.threshold
-                candidates = store.similarity_search_with_score(prompt, k=top_k * 5)
-                for doc, score in candidates:
-                    if score < thresh:
-                        continue
-                    audience_data = doc.metadata.get("audience")
-                    if not audience_data:
-                        continue
-                    try:
-                        policy = AudiencePolicy(**audience_data)
-                    except Exception:
-                        continue
-                    if has_access(policy, uc):
+                qdrant_filter = build_qdrant_abac_filter(uc)
+                results = store.similarity_search_with_score(prompt, k=top_k, filter=qdrant_filter)
+                for doc, score in results:
+                    if score >= thresh:
                         doc.metadata["score"] = score
                         retrieved_docs.append(doc)
-                        if len(retrieved_docs) >= top_k:
-                            break
                 s.update(label=f"✓ {len(retrieved_docs)} belge getirildi", state="complete")
 
             context_str = "\n\n".join(d.page_content for d in retrieved_docs)
