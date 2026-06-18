@@ -57,6 +57,9 @@ REGISTRY_FILE   = "belge_kayitlari.json"
 # ══════════════════════════════════════════════════════════════════════════════
 # DESIGN SYSTEM — CSS INJECTION
 # ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
+# DESIGN SYSTEM — CSS INJECTION
+# ══════════════════════════════════════════════════════════════════════════════
 def inject_css():
     st.markdown("""
 <style>
@@ -81,9 +84,32 @@ def inject_css():
 html, body, .stApp { background-color: var(--neutral-bg) !important; }
 * { font-family: 'Inter', 'Segoe UI', sans-serif !important; }
 
-/* Hide Streamlit chrome */
-#MainMenu, footer, header { visibility: hidden; }
+/* Material Symbols ikonlarını Inter override'ından muaf tut.
+   Aksi halde ikon yerine 'keyboard_double_arrow', 'arrow_down' gibi
+   ligature metinleri görünür. */
+[data-testid="stIconMaterial"],
+span.material-icons, span.material-icons-outlined,
+span.material-symbols-rounded, span.material-symbols-outlined,
+.material-symbols-rounded, i.material-icons {
+    font-family: 'Material Symbols Rounded', 'Material Symbols Outlined',
+                 'Material Icons' !important;
+}
+
+/* Hide Streamlit chrome & Fix Sidebar Restore Button */
+#MainMenu, footer { visibility: hidden; } /* header burdan kaldırıldı! */
 [data-testid="stDecoration"] { display: none; }
+[data-testid="stAppDeployButton"] { display: none !important; }
+
+/* Üst barı şeffaf yapıp geri getirme okunun (chevron) görünmesini sağlıyoruz */
+header[data-testid="stHeader"] {
+    background: transparent !important;
+}
+header[data-testid="stHeader"] button {
+    color: var(--primary) !important;
+    background-color: #FFFFFF !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+}
 
 /* ── Sidebar ─────────────────────────────────────────────────────────────── */
 section[data-testid="stSidebar"] {
@@ -98,6 +124,23 @@ section[data-testid="stSidebar"] .stMarkdown p,
 section[data-testid="stSidebar"] label { color: rgba(255,255,255,0.7) !important; font-size: 11px !important; }
 section[data-testid="stSidebar"] h3 { color: rgba(255,255,255,0.5) !important; font-size: 10px !important; text-transform: uppercase; letter-spacing: 1.5px; }
 
+/* Widget etiketleri (Model, Bağlam, Yaratıcılık vb.) ve seçili değerlerin
+   görünürlüğü — baseweb bazen -webkit-text-fill-color ile metni gizler. */
+section[data-testid="stSidebar"] [data-testid="stWidgetLabel"],
+section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] *,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] label * {
+    color: rgba(255,255,255,0.85) !important;
+    -webkit-text-fill-color: rgba(255,255,255,0.85) !important;
+}
+section[data-testid="stSidebar"] [data-baseweb="select"] *,
+section[data-testid="stSidebar"] input,
+section[data-testid="stSidebar"] [data-testid="stExpander"] summary,
+section[data-testid="stSidebar"] [data-testid="stExpander"] summary * {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
 /* Sidebar inputs */
 section[data-testid="stSidebar"] input,
 section[data-testid="stSidebar"] [data-baseweb="select"] {
@@ -111,6 +154,25 @@ section[data-testid="stSidebar"] input[type="number"] {
     color: white !important;
 }
 section[data-testid="stSidebar"] .stSlider [data-testid="stThumbValue"] { color: white !important; }
+
+/* Baseweb input/select KAPSAYICILARININ beyaz zeminini koyulaştır.
+   Asıl beyaz zemin bu iç div'lerden geliyordu → beyaz yazı + beyaz zemin = görünmez. */
+section[data-testid="stSidebar"] [data-baseweb="select"] > div,
+section[data-testid="stSidebar"] [data-baseweb="input"],
+section[data-testid="stSidebar"] [data-baseweb="base-input"],
+section[data-testid="stSidebar"] [data-testid="stNumberInputContainer"],
+section[data-testid="stSidebar"] [data-testid="stNumberInput"] > div {
+    background-color: rgba(255,255,255,0.10) !important;
+    border-color: rgba(255,255,255,0.18) !important;
+}
+/* Sidebar expander (📄 Chunk) içeriği koyu kalsın → Boyut/Örtüşme görünür olsun */
+section[data-testid="stSidebar"] [data-testid="stExpander"],
+section[data-testid="stSidebar"] [data-testid="stExpander"] details,
+section[data-testid="stSidebar"] [data-testid="stExpanderDetails"],
+section[data-testid="stSidebar"] .streamlit-expanderContent {
+    background: transparent !important;
+    border-color: rgba(255,255,255,0.15) !important;
+}
 
 /* ── Nav buttons ─────────────────────────────────────────────────────────── */
 .nav-btn button {
@@ -487,8 +549,25 @@ section[data-testid="stSidebar"] .stSlider [data-testid="stThumbValue"] { color:
     font-weight: 600;
     margin: 2px;
 }
+
+div[data-baseweb="popover"] *, 
+div[data-baseweb="dropdown"] *, 
+div[role="listbox"] * {
+    color: #333333 !important;
+}
+
+section[data-testid="stSidebar"] div[data-baseweb="select"] span,
+section[data-testid="stSidebar"] div[data-baseweb="select"] div {
+    color: #FFFFFF !important;
+}
+/* ----------------------------------- */
 </style>
 """, unsafe_allow_html=True)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# BACKEND UTILITIES
+# ══════════════════════════════════════════════════════════════════════════════
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -875,22 +954,32 @@ MOCK_PROFILES = {
 }
 
 
+# Form widget anahtarları (f_*) ↔ kalıcı kaynak anahtarları (uc_*) eşlemesi.
+# f_* widget'lara bağlıdır ve sayfadan ayrılınca purge olur; uc_* ise düz
+# session_state anahtarıdır ve sayfa değişse de kalıcıdır (kimlik korunur).
+_AUTH_FIELDS = [
+    ("f_sirket", "uc_sirket"), ("f_sube", "uc_sube"), ("f_mudurlu", "uc_mudurlu"),
+    ("f_birim", "uc_birim"), ("f_bina", "uc_bina"), ("f_pozisyon", "uc_pozisyon"),
+    ("f_ptype", "uc_ptype"), ("f_kullanici", "uc_kullanici"), ("f_grup", "uc_grup"),
+]
+
+
 def _apply_profile():
-    """Seçilen mock persona'nın değerlerini form alanlarına (uc_* widget key'leri)
-    yazar. Manuel seçimde mevcut değerlere dokunmaz — serbest giriş için."""
+    """Seçilen mock persona'nın değerlerini form widget'larına (f_*) yazar.
+    Manuel seçimde mevcut değerlere dokunmaz — serbest giriş için."""
     name = st.session_state.get("profile_select")
     if not name or name == MANUAL_PROFILE:
         return
     p = MOCK_PROFILES[name]
-    st.session_state.uc_sirket    = p["sirket"]
-    st.session_state.uc_sube      = p["sube"]
-    st.session_state.uc_mudurlu   = p["mudurlu"]
-    st.session_state.uc_birim     = p["birim"]
-    st.session_state.uc_bina      = p["bina"]
-    st.session_state.uc_pozisyon  = p["pozisyon"]
-    st.session_state.uc_ptype     = p["ptype"]
-    st.session_state.uc_kullanici = p["kullanici"]
-    st.session_state.uc_grup      = str(p["grup"])
+    st.session_state.f_sirket    = p["sirket"]
+    st.session_state.f_sube      = p["sube"]
+    st.session_state.f_mudurlu   = p["mudurlu"]
+    st.session_state.f_birim     = p["birim"]
+    st.session_state.f_bina      = p["bina"]
+    st.session_state.f_pozisyon  = p["pozisyon"]
+    st.session_state.f_ptype     = p["ptype"]
+    st.session_state.f_kullanici = p["kullanici"]
+    st.session_state.f_grup      = str(p["grup"])
 
 
 def page_auth():
@@ -907,6 +996,12 @@ def page_auth():
         help="Demo için hazır kurumsal personalar. Manuel seçimde alanlar serbest kalır.",
     )
 
+    # f_* widget anahtarlarını kalıcı uc_* kaynaklarından tohumla.
+    # (Sayfadan ayrılınca f_* purge olur; geri gelince uc_*'tan yeniden kurulur.)
+    for fk, uk in _AUTH_FIELDS:
+        if fk not in st.session_state:
+            st.session_state[fk] = st.session_state[uk]
+
     col_form, col_preview = st.columns([1, 1], gap="large")
 
     with col_form:
@@ -914,20 +1009,24 @@ def page_auth():
         st.markdown('<div class="bilimp-card-title">Öznitelik Değerleri</div>', unsafe_allow_html=True)
 
         c1, c2 = st.columns(2)
-        c1.number_input("Şirket ID",       0, 99999, key="uc_sirket")
-        c2.number_input("Şube ID",         0, 99999, key="uc_sube")
-        c1.number_input("Müdürlük ID",     0, 99999, key="uc_mudurlu")
-        c2.number_input("Birim ID",        0, 99999, key="uc_birim")
-        c1.number_input("Bina ID",         0, 99999, key="uc_bina")
-        c2.number_input("Pozisyon ID",     0, 99999, key="uc_pozisyon")
-        c1.number_input("Personel Tip ID", 0, 99999, key="uc_ptype")
-        c2.number_input("Kullanıcı ID",    0, 99999, key="uc_kullanici")
+        c1.number_input("Şirket ID",       0, 99999, key="f_sirket")
+        c2.number_input("Şube ID",         0, 99999, key="f_sube")
+        c1.number_input("Müdürlük ID",     0, 99999, key="f_mudurlu")
+        c2.number_input("Birim ID",        0, 99999, key="f_birim")
+        c1.number_input("Bina ID",         0, 99999, key="f_bina")
+        c2.number_input("Pozisyon ID",     0, 99999, key="f_pozisyon")
+        c1.number_input("Personel Tip ID", 0, 99999, key="f_ptype")
+        c2.number_input("Kullanıcı ID",    0, 99999, key="f_kullanici")
         st.text_input(
             "Grup ID'leri (virgülle — birden fazla grup olabilir)",
             placeholder="101, 108",
-            key="uc_grup",
+            key="f_grup",
         )
         st.markdown('</div>', unsafe_allow_html=True)
+
+        # Widget değerlerini kalıcı uc_* kaynaklarına yaz (kimlik sayfa değişse de kalsın).
+        for fk, uk in _AUTH_FIELDS:
+            st.session_state[uk] = st.session_state[fk]
 
         if st.button("💾 Kimliği Kaydet", type="primary", use_container_width=True):
             st.success("✓ Kimlik bilgileri güncellendi. Sohbet sorgularında bu bağlam kullanılacak.")
@@ -985,6 +1084,22 @@ def _stream_text(text: str):
     for word in text.split(" "):
         yield word + " "
         time.sleep(0.04)
+
+
+def _friendly_llm_error(e: Exception) -> str:
+    """LLM çağrısı hatalarını kullanıcı dostu Türkçe mesaja çevirir."""
+    msg = str(e).lower()
+    if "more system memory" in msg or "out of memory" in msg or "status code: 500" in msg:
+        return ("Seçili model bu makinenin belleğine sığmıyor. Daha küçük bir model "
+                "deneyin (ör. `ollama pull gemma3:4b` veya `gemma3:1b`) ya da bulut "
+                "modeli olarak Gemini'yi seçin.")
+    if "does not support tools" in msg:
+        return ("Seçili model araç çağırmayı (tool-calling) desteklemiyor. "
+                "Lütfen Gemini'yi seçin veya tool destekli bir model kullanın.")
+    if "connection" in msg or "refused" in msg or "max retries" in msg:
+        return ("Model servisine bağlanılamadı. Ollama'nın çalıştığından "
+                "(`ollama serve`) veya API anahtarının doğru olduğundan emin olun.")
+    return f"Model yanıtı alınamadı: {e}"
 
 
 def page_chat():
@@ -1049,25 +1164,56 @@ def page_chat():
             """Bilimp AI Asistanı'nın şirket içi bilgi bankasında arama yapar."""
             pass
 
-        llm_with_tools = llm.bind_tools([bilimp_knowledge_base])
-
         identity_str = f"Kullanıcı öznitelikleri: {uc.model_dump()}"
         system_prompt = f"""
-Sen Bilimp AI Asistanısın. Şirket içi dökümanlar hakkında soru-cevap yaparsın.
+Sen Bilimp AI Asistanısın. Yalnızca şirket içi belgelere dayanarak soru-cevap yaparsın.
 {identity_str}
 
-KURAL: Kullanıcının bağlam bilgisi (kimlik, hafıza) sorarsa 'bilimp_knowledge_base' KULLANMA.
-Şirket verisi, prosedür, kural sorularında 'bilimp_knowledge_base' kullan.
-Her zaman nazik ve "siz" diliyle hitap et. Başka model olduğunu söyleme.
+KURALLAR:
+- Şirkete/işe dair HER TÜRLÜ olgu, liste, yemek listesi/menü, fiyat, rapor, tarih,
+  prosedür, kural veya veri sorusunda 'bilimp_knowledge_base' KULLAN.
+- Yalnızca selamlaşma/teşekkür veya kullanıcının kendi kimlik/bağlam bilgisi
+  sorularında 'bilimp_knowledge_base' KULLANMA.
+- ASLA şirkete özgü bilgi UYDURMA (yemek listesi, fiyat, tarih, prosedür vb.).
+  Bilgi belgelerde yoksa "Bu bilgi şirket belgelerinde bulunmuyor." de.
+- Her zaman nazik ve "siz" diliyle hitap et. Başka bir model olduğunu söyleme.
 """
-        ai_msg = llm_with_tools.invoke(
-            [SystemMessage(content=system_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
-        )
+
+        # ── Yönlendirme: KB araması mı, düz sohbet mi? ───────────────────────────
+        # Gemini tool-calling destekler. Ollama/Gemma3 desteklemez (400: does not
+        # support tools) → metin tabanlı sınıflandırma ile yönlendiririz.
+        supports_tools = "Gemini" in (st.session_state.llm_option or "")
+        use_kb = False
+        ai_msg = None
+
+        if supports_tools:
+            llm_with_tools = llm.bind_tools([bilimp_knowledge_base])
+            ai_msg = llm_with_tools.invoke(
+                [SystemMessage(content=system_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
+            )
+            use_kb = bool(ai_msg.tool_calls)
+        else:
+            router_prompt = (
+                "Aşağıdaki kullanıcı sorusunu sınıflandır.\n"
+                "- Soru herhangi bir bilgi, veri, liste, yemek listesi/menü, fiyat, rapor, "
+                "prosedür, kural, tarih veya şirkete/işe dair SOMUT bir olgu içeriyorsa "
+                "YALNIZCA 'KB' yaz.\n"
+                "- YALNIZCA selamlaşma, teşekkür, küçük sohbet ya da kullanıcının kendi "
+                "kimlik/bağlam bilgisi ise 'CHAT' yaz.\n"
+                "Emin değilsen 'KB' yaz. Sadece tek kelime döndür (KB veya CHAT).\n\n"
+                f"Soru: {prompt}"
+            )
+            try:
+                route = llm.invoke([HumanMessage(content=router_prompt)])
+                route_txt = route.content if isinstance(route.content, str) else str(route.content)
+                use_kb = "KB" in route_txt.strip().upper()
+            except Exception:
+                use_kb = True  # emin değilsek güvenli taraf: belgelere dayan
 
         retrieved_docs: list = []
         final_response = ""
 
-        if ai_msg.tool_calls:
+        if use_kb:
             with st.status("📚 Bilgi Bankası Taranıyor...", expanded=False) as s:
                 dense = get_dense_embeddings()
                 sparse = get_sparse_embeddings()
@@ -1109,46 +1255,93 @@ Her zaman nazik ve "siz" diliyle hitap et. Başka model olduğunu söyleme.
                 rag_prompt = f"""
 {build_language_policy_prompt(answer_lang)}
 Aşağıdaki şirket belgelerini kullanarak soruyu yanıtla.
-Yalnızca verilen belgelere dayan.
+
+KESİN KURALLAR (halüsinasyon önleme):
+1. SADECE aşağıdaki BELGELER bölümündeki bilgilere dayan. Kendi genel bilgini
+   veya tahminini ASLA kullanma.
+2. Cevap belgelerde açıkça yoksa, uydurma yapma; aynen şunu söyle:
+   "Bu bilgi erişebildiğiniz şirket belgelerinde bulunmuyor."
+3. Tarih, liste, fiyat, isim gibi ayrıntıları yalnızca belgelerde yazıyorsa ver.
+   Belgede olmayan gün/öğün/tutar EKLEME.
 
 BELGELER:
 {context_str}
 """
-                st.markdown('<div class="msg-ai"><div class="bubble-ai">', unsafe_allow_html=True)
                 rag_msgs = [SystemMessage(content=rag_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
-                final_response = st.write_stream(llm.stream(rag_msgs))
+                chat_placeholder = st.empty()
+                final_response = ""
+
+                # RAG Modu Akıllı Metin Akışı
+                try:
+                    for chunk in llm.stream(rag_msgs):
+                        content = chunk.content if hasattr(chunk, 'content') else str(chunk)
+                        final_response += content
+                        chat_placeholder.markdown(
+                            f'<div class="msg-ai"><div class="bubble-ai">{final_response}</div></div>',
+                            unsafe_allow_html=True,
+                        )
+                except Exception as e:
+                    final_response = _friendly_llm_error(e)
+                    chat_placeholder.markdown(
+                        f'<div class="msg-ai"><div class="access-deny-strip">⚠️ {final_response}</div></div>',
+                        unsafe_allow_html=True,
+                    )
+
+                # Referans dökümanların listelenmesi
                 with st.expander(f"🔍 Referans Kaynaklar ({len(retrieved_docs)})"):
                     for i, doc in enumerate(retrieved_docs):
                         score = doc.metadata.get("score", 0.0)
-                        st.markdown(
-                            f"**#{i+1}** &nbsp; 📄 `{doc.metadata.get('source')}` &nbsp;"
-                            f"📊 Skor: `{score:.4f}`"
-                        )
+                        st.markdown(f"**#{i+1}** &nbsp; 📄 `{doc.metadata.get('source')}` &nbsp; 📊 Skor: `{score:.4f}`")
                         st.caption(doc.page_content[:400])
                         if i < len(retrieved_docs) - 1:
                             st.divider()
-                st.markdown('</div></div>', unsafe_allow_html=True)
         else:
-            raw = ai_msg.content
-            text = raw if isinstance(raw, str) else (
-                "".join(
-                    item.get("text", "") if isinstance(item, dict) else str(item)
-                    for item in raw
-                ) if isinstance(raw, list) else str(raw)
-            )
-            st.markdown(
-                '<div class="lang-strip">💬 Sohbet Modu</div>', unsafe_allow_html=True
-            )
-            st.markdown('<div class="msg-ai"><div class="bubble-ai">', unsafe_allow_html=True)
-            final_response = st.write_stream(_stream_text(text))
-            st.markdown('</div></div>', unsafe_allow_html=True)
+            # Standart Sohbet Modu Akışı
+            st.markdown('<div class="lang-strip">💬 Sohbet Modu</div>', unsafe_allow_html=True)
+            chat_placeholder = st.empty()
+            final_response = ""
 
+            if ai_msg is not None and ai_msg.content:
+                # Gemini: tool çağrısı yapmadı, içerik zaten cevap → kelime kelime akıt
+                raw = ai_msg.content
+                text = raw if isinstance(raw, str) else (
+                    "".join(item.get("text", "") if isinstance(item, dict) else str(item) for item in raw)
+                    if isinstance(raw, list) else str(raw)
+                )
+                for word in text.split(" "):
+                    final_response += word + " "
+                    chat_placeholder.markdown(
+                        f'<div class="msg-ai"><div class="bubble-ai">{final_response}</div></div>',
+                        unsafe_allow_html=True,
+                    )
+                    time.sleep(0.02)
+            else:
+                # Ollama/Gemma3: taze sohbet yanıtı üret
+                chat_msgs = [SystemMessage(content=system_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
+                try:
+                    for chunk in llm.stream(chat_msgs):
+                        content = chunk.content if hasattr(chunk, 'content') else str(chunk)
+                        final_response += content
+                        chat_placeholder.markdown(
+                            f'<div class="msg-ai"><div class="bubble-ai">{final_response}</div></div>',
+                            unsafe_allow_html=True,
+                        )
+                except Exception as e:
+                    final_response = _friendly_llm_error(e)
+                    chat_placeholder.markdown(
+                        f'<div class="msg-ai"><div class="access-deny-strip">⚠️ {final_response}</div></div>',
+                        unsafe_allow_html=True,
+                    )
+
+        # Mesajı geçmişe kaydetme ve ekranı tazeleme
         st.session_state.messages.append({
             "role": "assistant",
             "content": final_response,
             "sources": retrieved_docs,
         })
         st.rerun()
+
+# ── ALTTAKİ REFERANS SATIR (Bununla birleşmiş olmalı) ───────────────────────
 
 
 # ══════════════════════════════════════════════════════════════════════════════

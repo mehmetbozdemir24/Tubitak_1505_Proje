@@ -163,13 +163,20 @@ def build_qdrant_abac_filter(user: UserContext):
     ]
 
     for field_key, user_val in single_attrs:
-        # Kural bu alanı boş bırakmış (wildcard) VEYA kullanıcı değeri listede
-        must_conditions.append(
-            qm.Filter(should=[
-                qm.IsEmptyCondition(is_empty=qm.PayloadField(key=field_key)),
-                qm.FieldCondition(key=field_key, match=qm.MatchValue(value=user_val)),
-            ])
-        )
+        if user_val is None:
+            # Kullanıcının bu özniteliği yok → yalnızca bu alanı kısıtlamayan
+            # (wildcard/boş) kurallara erişebilir.
+            must_conditions.append(
+                qm.IsEmptyCondition(is_empty=qm.PayloadField(key=field_key))
+            )
+        else:
+            # Kural bu alanı boş bırakmış (wildcard) VEYA kullanıcı değeri listede
+            must_conditions.append(
+                qm.Filter(should=[
+                    qm.IsEmptyCondition(is_empty=qm.PayloadField(key=field_key)),
+                    qm.FieldCondition(key=field_key, match=qm.MatchValue(value=user_val)),
+                ])
+            )
 
     # ── Çoklu değerli öznitelik: grup_ids ────────────────────────────────────
     if user.grup_ids:
