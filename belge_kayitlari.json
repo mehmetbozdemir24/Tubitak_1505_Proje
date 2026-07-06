@@ -1,0 +1,173 @@
+{
+    "Butce_Ve_Maliyet_Raporu.docx": {
+        "hash": "40947681f8c3f38e0b0587c9278b5004",
+        "audience": {
+            "rules": [
+                {
+                    "sirket_ids": null,
+                    "sube_ids": null,
+                    "mudurluk_ids": null,
+                    "birim_ids": null,
+                    "grup_ids": null,
+                    "bina_ids": null,
+                    "pozisyon_ids": null,
+                    "personel_tip_ids": null,
+                    "kullanici_ids": [
+                        999
+                    ]
+                }
+            ]
+        },
+        "synced_at": "1783342744.8923662"
+    },
+    "Aylik_Satis_Ozet_Ornek_Sablon.xlsx": {
+        "hash": "9ac745c403ad746d5ebc8a930494613a",
+        "audience": {
+            "rules": [
+                {
+                    "sirket_ids": [
+                        1
+                    ],
+                    "sube_ids": [
+                        1
+                    ],
+                    "mudurluk_ids": [
+                        1
+                    ],
+                    "birim_ids": null,
+                    "grup_ids": null,
+                    "bina_ids": null,
+                    "pozisyon_ids": null,
+                    "personel_tip_ids": null,
+                    "kullanici_ids": null
+                }
+            ]
+        },
+        "updated_at": "1783342804.5037766"
+    },
+    "Gizli_Erisim_Bilgileri.docx": {
+        "hash": "35beac56b14d09d6323b6dcd64d69e57",
+        "audience": {
+            "rules": [
+                {
+                    "sirket_ids": [
+                        1
+                    ],
+                    "sube_ids": [
+                        1
+                    ],
+                    "mudurluk_ids": [
+                        1
+                    ],
+                    "birim_ids": null,
+                    "grup_ids": null,
+                    "bina_ids": null,
+                    "pozisyon_ids": null,
+                    "personel_tip_ids": null,
+                    "kullanici_ids": null
+                }
+            ]
+        },
+        "updated_at": "1783343641.801903"
+    },
+    "deprem_tweet_turkish.pdf": {
+        "hash": "d5b5fc01607c15104d20be118c7b4e66",
+        "audience": {
+            "rules": [
+                {
+                    "sirket_ids": [
+                        1
+                    ],
+                    "sube_ids": [
+                        1
+                    ],
+                    "mudurluk_ids": [
+                        1
+                    ],
+                    "birim_ids": null,
+                    "grup_ids": null,
+                    "bina_ids": null,
+                    "pozisyon_ids": null,
+                    "personel_tip_ids": null,
+                    "kullanici_ids": null
+                }
+            ]
+        },
+        "updated_at": "1783343933.1525805"
+    },
+    "61270.pdf": {
+        "hash": "488b83d18294f4c589859a0016546d95",
+        "audience": {
+            "rules": [
+                {
+                    "sirket_ids": [
+                        1
+                    ],
+                    "sube_ids": [
+                        1
+                    ],
+                    "mudurluk_ids": [
+                        1
+                    ],
+                    "birim_ids": null,
+                    "grup_ids": null,
+                    "bina_ids": null,
+                    "pozisyon_ids": null,
+                    "personel_tip_ids": null,
+                    "kullanici_ids": null
+                }
+            ]
+        },
+        "updated_at": "1783345513.2810748"
+    },
+    "Bilimp_Satis_Sunum_Ornek_Sablon.pptx": {
+        "hash": "99a5aa3353ecd3ac2e1b64d67833c1b8",
+        "audience": {
+            "rules": [
+                {
+                    "sirket_ids": [
+                        1
+                    ],
+                    "sube_ids": [
+                        1
+                    ],
+                    "mudurluk_ids": [
+                        1
+                    ],
+                    "birim_ids": null,
+                    "grup_ids": null,
+                    "bina_ids": null,
+                    "pozisyon_ids": null,
+                    "personel_tip_ids": null,
+                    "kullanici_ids": null
+                }
+            ]
+        },
+        "updated_at": "1783346036.0443766"
+    },
+    "Bilimp_Fiyat_Listesi_Ornek_Sablon2.xlsx": {
+        "hash": "cc137709a4d8f64c8ed757299933de67",
+        "audience": {
+            "rules": [
+                {
+                    "sirket_ids": [
+                        1
+                    ],
+                    "sube_ids": [
+                        1
+                    ],
+                    "mudurluk_ids": [
+                        1
+                    ],
+                    "birim_ids": null,
+                    "grup_ids": null,
+                    "bina_ids": null,
+                    "pozisyon_ids": null,
+                    "personel_tip_ids": null,
+                    "kullanici_ids": null
+                }
+            ]
+        },
+        "updated_at": "1783346401.7453012"
+    }
+}
