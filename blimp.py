@@ -796,18 +796,41 @@ def belge_to_md(input_file: str, output_dir: str, orijinal_ad: str | None = None
     output_md = os.path.join(output_dir, stem + ".md")
     os.makedirs(crop_dir, exist_ok=True)
 
-    pdf_opts = PdfPipelineOptions()
-    pdf_opts.do_table_structure = True
-    pdf_opts.do_formula_enrichment = True
-    pdf_opts.generate_picture_images = True
-    pdf_opts.images_scale = IMAGE_SCALE
-    pdf_opts.do_ocr = False
-    pdf_opts.accelerator_options = AcceleratorOptions(device=AcceleratorDevice.CUDA)
+    def _convert(ocr: bool):
+        o = PdfPipelineOptions()
+        o.do_table_structure = True
+        o.do_formula_enrichment = True
+        o.generate_picture_images = True
+        o.images_scale = IMAGE_SCALE
+        o.do_ocr = ocr
+        o.accelerator_options = AcceleratorOptions(device=AcceleratorDevice.CUDA)
+        conv = DocumentConverter(
+            format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=o)}
+        )
+        return conv.convert(input_file).document
 
-    converter = DocumentConverter(
-        format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=pdf_opts)}
-    )
-    doc = converter.convert(input_file).document
+    # 1. geçiş: OCR kapalı (metinli PDF'ler için hızlı)
+    doc = _convert(ocr=False)
+
+    # Görüntü-PDF tespiti: hem Docling hem pymupdf'in çıkardığı seçilebilir metin
+    # yok denecek kadar azsa (taranmış/rasterize PDF), OCR'lı 2. geçiş yapılır.
+    _gecici_md = doc.export_to_markdown()
+    _metin_uz = len(re.sub(r"[^0-9A-Za-zçÇğĞıİöÖşŞüÜ]", "", _gecici_md))
+    if input_file.lower().endswith(".pdf") and _metin_uz < 200:
+        try:
+            _fitz_uz = 0
+            try:
+                import fitz
+                _fd = fitz.open(input_file)
+                _fitz_uz = sum(len(p.get_text("text").strip()) for p in _fd)
+                _fd.close()
+            except Exception:
+                pass
+            if _fitz_uz < 200:   # gerçekten metinsiz -> OCR aç
+                print(f"  Görüntü-PDF tespit edildi (seçilebilir metin ~{_metin_uz} kr) -> OCR'lı yeniden işleniyor...")
+                doc = _convert(ocr=True)
+        except Exception as e:
+            print(f"  OCR geçişi başlatılamadı: {e}")
 
     desc_list = []
     if USE_VLM_FOR_PICTURES:
@@ -1065,6 +1088,31 @@ def add_contextual(chunks, full_md, source, on_progress=None):
         if on_progress:
             on_progress(i, n)
     return chunks, added
+
+
+def write_chunks_txt(chunks, output_dir, stem):
+    """Chunk'ları gözle-kontrol için okunaklı bir .txt olarak yazar (MD'nin yanına)."""
+    txt_path = os.path.join(output_dir, stem + "_chunks.txt")
+    with open(txt_path, "w", encoding="utf-8") as f:
+        f.write(f"KAYNAK: {stem}\nTOPLAM CHUNK: {len(chunks)}\n")
+        f.write("=" * 78 + "\n")
+        for d in chunks:
+            no  = d.metadata.get("chunk_no", "?")
+            ln  = len(d.page_content)
+            tbl = "  [TABLO]" if d.metadata.get("has_table") else ""
+            f.write(f"\n┌── CHUNK #{no}  ({ln} karakter){tbl} " + "─" * 36 + "\n")
+            ctx  = d.metadata.get("context")
+            body = d.page_content
+            if ctx:
+                f.write(f"│ [CONTEXTUAL BAĞLAM]\n│ {ctx}\n│\n")
+                if body.startswith(ctx):
+                    body = body[len(ctx):].lstrip("\n")
+            else:
+                f.write("│ [CONTEXTUAL BAĞLAM YOK !]\n│\n")
+            for line in body.splitlines():
+                f.write(f"│ {line}\n")
+            f.write("└" + "─" * 70 + "\n")
+    return txt_path
 
 
 def kaynak_onizleme(doc, limit: int = 1500) -> str:
@@ -1923,6 +1971,10 @@ def page_documents():
                                 s.write(f"{len(chunks)} chunk Qdrant'a yükleniyor...")
                                 delete_by_source(f_name)   # eskiler ancak yeni chunk'lar HAZIRKEN silinir
                                 add_documents_to_qdrant(chunks, file_hash=curr_md5)
+                                # MD'nin yanına chunk kontrol dosyasını da yaz
+                                stem_ = os.path.splitext(f_name)[0]
+                                chunks_txt = write_chunks_txt(chunks, OUTPUT_DIR, stem_)
+                                s.write(f"Chunk kontrol dosyası yazıldı: {chunks_txt}")
                                 prog.progress(1.0, text="Tamamlandı ✓")
                                 reg = load_registry()
                                 reg[f_name] = {
@@ -2002,7 +2054,7 @@ def page_documents():
         st.markdown('</div>', unsafe_allow_html=True)
 
 
-# ═════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 # MAIN — CSS + Sidebar + Router
 # ══════════════════════════════════════════════════════════════════════════════
 inject_css()
