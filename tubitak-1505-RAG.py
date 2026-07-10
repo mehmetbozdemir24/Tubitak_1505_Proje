@@ -11,6 +11,7 @@ import requests, torch
 from uuid import uuid4
 
 import streamlit as st
+from prompts import SYSTEM_PROMPT, build_router_prompt, build_rag_prompt, build_labeled_context
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langchain_core.tools import tool
 from language_utils import choose_answer_language, build_language_policy_prompt, get_language_label
@@ -1105,10 +1106,8 @@ def _friendly_llm_error(e: Exception) -> str:
 def page_chat():
     uc = get_user_context()
 
-    # Identity bar
     st.markdown(identity_bar_html(uc), unsafe_allow_html=True)
 
-    # Message history (custom bubbles)
     st.markdown('<div class="chat-wrap">', unsafe_allow_html=True)
     for m in st.session_state.messages:
         if m["role"] == "user":
@@ -1119,7 +1118,6 @@ def page_chat():
         else:
             st.markdown('<div class="msg-ai"><div class="bubble-ai">', unsafe_allow_html=True)
             st.markdown(m["content"])
-            # Sources accordion
             if m.get("sources"):
                 with st.expander(f"🔍 Referans Kaynaklar ({len(m['sources'])})"):
                     for i, doc in enumerate(m["sources"]):
@@ -1134,7 +1132,6 @@ def page_chat():
             st.markdown('</div></div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Chat input
     if prompt := st.chat_input("Sorunuzu buraya yazın..."):
         st.session_state.messages.append({"role": "user", "content": prompt})
         st.markdown(
@@ -1151,7 +1148,6 @@ def page_chat():
             st.error("Vektör veritabanı boş. Önce Belge Yönetimi sekmesinden belge yükleyin.")
             return
 
-        # History for LLM
         history = []
         for msg in st.session_state.messages[-(10):]:
             if msg["role"] == "user":
@@ -1164,51 +1160,32 @@ def page_chat():
             """Bilimp AI Asistanı'nın şirket içi bilgi bankasında arama yapar."""
             pass
 
-        identity_str = f"Kullanıcı öznitelikleri: {uc.model_dump()}"
-        system_prompt = f"""
-Sen Bilimp AI Asistanısın. Yalnızca şirket içi belgelere dayanarak soru-cevap yaparsın.
-{identity_str}
+        # (1) Ham kimlik ARTIK prompt'a eklenmiyor; merkezi SYSTEM_PROMPT kullanılıyor.
+        system_prompt = SYSTEM_PROMPT
 
-KURALLAR:
-- Şirkete/işe dair HER TÜRLÜ olgu, liste, yemek listesi/menü, fiyat, rapor, tarih,
-  prosedür, kural veya veri sorusunda 'bilimp_knowledge_base' KULLAN.
-- Yalnızca selamlaşma/teşekkür veya kullanıcının kendi kimlik/bağlam bilgisi
-  sorularında 'bilimp_knowledge_base' KULLANMA.
-- ASLA şirkete özgü bilgi UYDURMA (yemek listesi, fiyat, tarih, prosedür vb.).
-  Bilgi belgelerde yoksa "Bu bilgi şirket belgelerinde bulunmuyor." de.
-- Her zaman nazik ve "siz" diliyle hitap et. Başka bir model olduğunu söyleme.
-"""
-
-        # ── Yönlendirme: KB araması mı, düz sohbet mi? ───────────────────────────
-        # Gemini tool-calling destekler. Ollama/Gemma3 desteklemez (400: does not
-        # support tools) → metin tabanlı sınıflandırma ile yönlendiririz.
         supports_tools = "Gemini" in (st.session_state.llm_option or "")
         use_kb = False
         ai_msg = None
 
         if supports_tools:
-            llm_with_tools = llm.bind_tools([bilimp_knowledge_base])
-            ai_msg = llm_with_tools.invoke(
-                [SystemMessage(content=system_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
-            )
-            use_kb = bool(ai_msg.tool_calls)
+            # (4) Gemini invoke'u güvenli hale getirildi.
+            try:
+                llm_with_tools = llm.bind_tools([bilimp_knowledge_base])
+                ai_msg = llm_with_tools.invoke(
+                    [SystemMessage(content=system_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
+                )
+                use_kb = bool(ai_msg.tool_calls)
+            except Exception:
+                ai_msg = None
+                use_kb = True  # emin değilsek belgelere dayan
         else:
-            router_prompt = (
-                "Aşağıdaki kullanıcı sorusunu sınıflandır.\n"
-                "- Soru herhangi bir bilgi, veri, liste, yemek listesi/menü, fiyat, rapor, "
-                "prosedür, kural, tarih veya şirkete/işe dair SOMUT bir olgu içeriyorsa "
-                "YALNIZCA 'KB' yaz.\n"
-                "- YALNIZCA selamlaşma, teşekkür, küçük sohbet ya da kullanıcının kendi "
-                "kimlik/bağlam bilgisi ise 'CHAT' yaz.\n"
-                "Emin değilsen 'KB' yaz. Sadece tek kelime döndür (KB veya CHAT).\n\n"
-                f"Soru: {prompt}"
-            )
+            router_prompt = build_router_prompt(prompt)
             try:
                 route = llm.invoke([HumanMessage(content=router_prompt)])
                 route_txt = route.content if isinstance(route.content, str) else str(route.content)
                 use_kb = "KB" in route_txt.strip().upper()
             except Exception:
-                use_kb = True  # emin değilsek güvenli taraf: belgelere dayan
+                use_kb = True
 
         retrieved_docs: list = []
         final_response = ""
@@ -1233,8 +1210,7 @@ KURALLAR:
                         retrieved_docs.append(doc)
                 s.update(label=f"✓ {len(retrieved_docs)} belge getirildi", state="complete")
 
-            # ── KESİN YETKİ GUARD-RAIL: 0-Context engelleme ───────────────────
-            # Kullanıcının erişebileceği hiçbir belge yoksa LLM'i TETİKLEME.
+            # KESİN YETKİ GUARD-RAIL: erişilebilir belge yoksa LLM tetiklenmez.
             if not retrieved_docs:
                 deny_msg = "Bu konudaki kurumsal belgelere erişim yetkiniz bulunmamaktadır."
                 st.markdown(
@@ -1243,7 +1219,8 @@ KURALLAR:
                 )
                 final_response = deny_msg
             else:
-                context_str = "\n\n".join(d.page_content for d in retrieved_docs)
+                # (6) Bağlam kaynak-etiketli kuruluyor.
+                context_str = build_labeled_context(retrieved_docs)
                 answer_lang, q_lang, ctx_lang, lang_src = choose_answer_language(prompt, context_str)
                 lang_label = get_language_label(answer_lang)
 
@@ -1252,26 +1229,14 @@ KURALLAR:
                     unsafe_allow_html=True,
                 )
 
-                rag_prompt = f"""
-{build_language_policy_prompt(answer_lang)}
-Aşağıdaki şirket belgelerini kullanarak soruyu yanıtla.
-
-KESİN KURALLAR (halüsinasyon önleme):
-1. SADECE aşağıdaki BELGELER bölümündeki bilgilere dayan. Kendi genel bilgini
-   veya tahminini ASLA kullanma.
-2. Cevap belgelerde açıkça yoksa, uydurma yapma; aynen şunu söyle:
-   "Bu bilgi erişebildiğiniz şirket belgelerinde bulunmuyor."
-3. Tarih, liste, fiyat, isim gibi ayrıntıları yalnızca belgelerde yazıyorsa ver.
-   Belgede olmayan gün/öğün/tutar EKLEME.
-
-BELGELER:
-{context_str}
-"""
+                # (5,6) Sertleştirilmiş RAG promptu prompts.py'den.
+                rag_prompt = build_rag_prompt(
+                    build_language_policy_prompt(answer_lang), context_str
+                )
                 rag_msgs = [SystemMessage(content=rag_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
                 chat_placeholder = st.empty()
                 final_response = ""
 
-                # RAG Modu Akıllı Metin Akışı
                 try:
                     for chunk in llm.stream(rag_msgs):
                         content = chunk.content if hasattr(chunk, 'content') else str(chunk)
@@ -1287,7 +1252,6 @@ BELGELER:
                         unsafe_allow_html=True,
                     )
 
-                # Referans dökümanların listelenmesi
                 with st.expander(f"🔍 Referans Kaynaklar ({len(retrieved_docs)})"):
                     for i, doc in enumerate(retrieved_docs):
                         score = doc.metadata.get("score", 0.0)
@@ -1296,13 +1260,11 @@ BELGELER:
                         if i < len(retrieved_docs) - 1:
                             st.divider()
         else:
-            # Standart Sohbet Modu Akışı
             st.markdown('<div class="lang-strip">💬 Sohbet Modu</div>', unsafe_allow_html=True)
             chat_placeholder = st.empty()
             final_response = ""
 
             if ai_msg is not None and ai_msg.content:
-                # Gemini: tool çağrısı yapmadı, içerik zaten cevap → kelime kelime akıt
                 raw = ai_msg.content
                 text = raw if isinstance(raw, str) else (
                     "".join(item.get("text", "") if isinstance(item, dict) else str(item) for item in raw)
@@ -1316,7 +1278,6 @@ BELGELER:
                     )
                     time.sleep(0.02)
             else:
-                # Ollama/Gemma3: taze sohbet yanıtı üret
                 chat_msgs = [SystemMessage(content=system_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
                 try:
                     for chunk in llm.stream(chat_msgs):
@@ -1333,7 +1294,6 @@ BELGELER:
                         unsafe_allow_html=True,
                     )
 
-        # Mesajı geçmişe kaydetme ve ekranı tazeleme
         st.session_state.messages.append({
             "role": "assistant",
             "content": final_response,
@@ -1341,7 +1301,6 @@ BELGELER:
         })
         st.rerun()
 
-# ── ALTTAKİ REFERANS SATIR (Bununla birleşmiş olmalı) ───────────────────────
 
 
 # ══════════════════════════════════════════════════════════════════════════════

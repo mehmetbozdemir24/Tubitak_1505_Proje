@@ -13,6 +13,7 @@ FIELD_LABELS = {
     "pozisyon_ids":     "Pozisyon",
     "personel_tip_ids": "Personel Tipi",
     "kullanici_ids":    "Kullanıcı",
+    "yaka_tipi_ids":    "Yaka Tipi",
 }
 
 
@@ -26,6 +27,7 @@ class AudienceRule(BaseModel):
     pozisyon_ids:     Optional[list[int]] = None
     personel_tip_ids: Optional[list[int]] = None
     kullanici_ids:    Optional[list[int]] = None
+    yaka_tipi_ids:    Optional[list[int]] = None
 
     def is_empty(self) -> bool:
         return all(v is None for v in self.model_dump().values())
@@ -63,6 +65,7 @@ class UserContext(BaseModel):
     pozisyon_id:     Optional[int] = None
     personel_tip_id: Optional[int] = None
     kullanici_id:    Optional[int] = None
+    yaka_tipi_id:    Optional[int] = None
 
 
 def _rule_matches(rule: AudienceRule, user: UserContext) -> bool:
@@ -87,6 +90,8 @@ def _rule_matches(rule: AudienceRule, user: UserContext) -> bool:
     if rule.personel_tip_ids is not None and user.personel_tip_id not in rule.personel_tip_ids:
         return False
     if rule.kullanici_ids is not None and user.kullanici_id not in rule.kullanici_ids:
+        return False
+    if rule.yaka_tipi_ids is not None and user.yaka_tipi_id not in rule.yaka_tipi_ids:
         return False
 
     return True
@@ -131,7 +136,7 @@ def empty_rule_data() -> dict:
 
 # ── Qdrant Pre-Filter ─────────────────────────────────────────────────────────
 
-def build_qdrant_abac_filter(user: UserContext):
+def build_qdrant_abac_filter(user: UserContext, exclude_fields: frozenset[str] = frozenset()):
     """
     UserContext'e göre Qdrant veritabanı seviyesinde pre-filter üretir.
 
@@ -145,6 +150,13 @@ def build_qdrant_abac_filter(user: UserContext):
     Avantaj:
       Python post-filter yerine Qdrant motoru filtrelediği için
       gerçekten erişimi olan k belge doğrudan döner.
+
+    exclude_fields:
+      Belirtilen alan(lar) filtreye HİÇ dahil edilmez. Çok-tenant (Seviye C)
+      mimarisinde, tenant sınırı artık koleksiyon seçimiyle (fiziksel) zaten
+      sağlandığı için "sirket_ids" alanı koleksiyon içinde anlamsız/gereksiz
+      hale gelir — bkz. tenancy.py. Varsayılan boş küme ile mevcut davranış
+      (tek-koleksiyon dönemi, geriye dönük uyumluluk) korunur.
     """
     from qdrant_client.http import models as qm
 
@@ -160,9 +172,12 @@ def build_qdrant_abac_filter(user: UserContext):
         ("pozisyon_ids",     user.pozisyon_id),
         ("personel_tip_ids", user.personel_tip_id),
         ("kullanici_ids",    user.kullanici_id),
+        ("yaka_tipi_ids",    user.yaka_tipi_id),
     ]
 
     for field_key, user_val in single_attrs:
+        if field_key in exclude_fields:
+            continue
         if user_val is None:
             # Kullanıcının bu özniteliği yok → yalnızca bu alanı kısıtlamayan
             # (wildcard/boş) kurallara erişebilir.
@@ -179,19 +194,20 @@ def build_qdrant_abac_filter(user: UserContext):
             )
 
     # ── Çoklu değerli öznitelik: grup_ids ────────────────────────────────────
-    if user.grup_ids:
-        # Kural grup istemiyorsa (wildcard) VEYA kullanıcının gruplarından biri kural listesinde
-        must_conditions.append(
-            qm.Filter(should=[
-                qm.IsEmptyCondition(is_empty=qm.PayloadField(key="grup_ids")),
-                qm.FieldCondition(key="grup_ids", match=qm.MatchAny(any=user.grup_ids)),
-            ])
-        )
-    else:
-        # Kullanıcının hiç grubu yoksa — sadece grup kısıtlaması olmayan kurallara erişim
-        must_conditions.append(
-            qm.IsEmptyCondition(is_empty=qm.PayloadField(key="grup_ids"))
-        )
+    if "grup_ids" not in exclude_fields:
+        if user.grup_ids:
+            # Kural grup istemiyorsa (wildcard) VEYA kullanıcının gruplarından biri kural listesinde
+            must_conditions.append(
+                qm.Filter(should=[
+                    qm.IsEmptyCondition(is_empty=qm.PayloadField(key="grup_ids")),
+                    qm.FieldCondition(key="grup_ids", match=qm.MatchAny(any=user.grup_ids)),
+                ])
+            )
+        else:
+            # Kullanıcının hiç grubu yoksa — sadece grup kısıtlaması olmayan kurallara erişim
+            must_conditions.append(
+                qm.IsEmptyCondition(is_empty=qm.PayloadField(key="grup_ids"))
+            )
 
     # ── NestedCondition: rules dizisinde EN AZ BİR kural eşleşmeli ───────────
     return qm.Filter(

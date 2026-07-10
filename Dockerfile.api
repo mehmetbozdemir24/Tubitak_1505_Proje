@@ -17,7 +17,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Uygulama kaynakları
 COPY abac.py auth.py tenancy.py api_schemas.py audience_service.py \
      rag_service.py document_ingestion_service.py chunker.py \
-     error_handling.py rate_limiting.py \
      prompts.py language_utils.py api.py ./
 
 EXPOSE 8000

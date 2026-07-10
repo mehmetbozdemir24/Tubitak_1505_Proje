@@ -1,4 +1,8 @@
 fastapi
+uvicorn
+python-multipart
+pyjwt[crypto]
+python-dotenv
 google-generativeai
 huggingface-hub
 keybert
@@ -8,6 +12,9 @@ langchain-core
 langchain-huggingface
 langchain-ollama
 langchain-qdrant
+fastembed
+langchain-google-genai
+langchain-text-splitters
 markitdown
 nltk
 openpyxl
@@ -20,11 +27,9 @@ pypdf
 pytesseract
 python-docx
 python-pptx
-qdrant-client
+qdrant-client>=1.18.0  # set_payload'ın 'key' (nested path) parametresi bu sürümde doğrulandı
 sentence-transformers
 streamlit
 streamlit-lottie
 tabulate
 torch
-uvicorn
-python-multipart

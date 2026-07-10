@@ -1,0 +1,5 @@
+# Yalnızca geliştirme/test ortamı için — prod imajına dahil edilmez.
+-r requirements.txt
+pytest
+httpx
+cryptography

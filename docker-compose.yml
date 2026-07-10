@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   # 1. Qdrant Veritabanı Servisi
   qdrant:
@@ -11,19 +9,42 @@ services:
     volumes:
       - ./qdrant_data:/qdrant/storage # Veriler kaybolmasın diye buraya kaydeder
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:6333/readyz"]
+      # Qdrant imajında curl YOK. Bash'in /dev/tcp özelliğiyle port kontrolü yapılır.
+      test: ["CMD-SHELL", "bash -c 'exec 3<>/dev/tcp/127.0.0.1/6333' || exit 1"]
       interval: 10s
       timeout: 5s
       retries: 5
+      start_period: 20s   # Koleksiyon yüklenirken ilk kontrolleri erteler
 
   # 2. Senin Python Kodun (Embedding Yapan)
+  #    NOT: Bu servisin Dockerfile'ı var olmayan 'rag_test.py'yi kopyalamaya
+  #    çalıştığı için build hatası veriyor. Düzeltilene kadar 'up' komutunda
+  #    bu servisi çağırmayın:
+  #        docker-compose up --build qdrant audience_api
   embedding_app:
     build: .
     container_name: embedding_runner
     depends_on:
       qdrant:
-        condition: service_healthy # Qdrant tamamen açılmadan Python başlamaz
+        condition: service_healthy
     environment:
-      - QDRANT_URL=http://qdrant:6333 # Docker içinde Qdrant'ın adresi budur
+      - QDRANT_URL=http://qdrant:6333
     volumes:
-      - ./Tubitak_1505_Proje:/app/Tubitak_1505_Proje # Veri klasörünü içeri aktar
+      - ./Tubitak_1505_Proje:/app/Tubitak_1505_Proje
+
+  # 3. Hedef Kitle API Servisi (Bilimp'in çağıracağı FastAPI)
+  audience_api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: audience_api
+    depends_on:
+      qdrant:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - QDRANT_URL=http://qdrant:6333
+    restart: unless-stopped
