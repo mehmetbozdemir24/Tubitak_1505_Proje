@@ -1,6 +1,6 @@
 {
-    "Gizli_Erisim_Bilgileri.docx": {
-        "hash": "180c69463b00c8f1af9efa4d7e2a40df",
+    "Bilimp_Fiyat_Listesi_Ornek_Sablon2.xlsx": {
+        "hash": "cc137709a4d8f64c8ed757299933de67",
         "audience": {
             "rules": [
                 {
@@ -10,9 +10,7 @@
                     "sube_ids": [
                         1
                     ],
-                    "mudurluk_ids": [
-                        1
-                    ],
+                    "mudurluk_ids": null,
                     "birim_ids": null,
                     "grup_ids": null,
                     "bina_ids": null,
@@ -22,7 +20,53 @@
                 }
             ]
         },
-        "updated_at": "1783355977.3582659"
+        "updated_at": "1783418843.1609018"
+    },
+    "Haftalik_Yemek_Listesi.docx": {
+        "hash": "43d2b665dc4d458b8a1d8938f665636a",
+        "audience": {
+            "rules": [
+                {
+                    "sirket_ids": [
+                        1
+                    ],
+                    "sube_ids": [
+                        1
+                    ],
+                    "mudurluk_ids": null,
+                    "birim_ids": null,
+                    "grup_ids": null,
+                    "bina_ids": null,
+                    "pozisyon_ids": null,
+                    "personel_tip_ids": null,
+                    "kullanici_ids": null
+                }
+            ]
+        },
+        "updated_at": "1783443569.1516867"
+    },
+    "61270.pdf": {
+        "hash": "488b83d18294f4c589859a0016546d95",
+        "audience": {
+            "rules": [
+                {
+                    "sirket_ids": [
+                        1
+                    ],
+                    "sube_ids": [
+                        1
+                    ],
+                    "mudurluk_ids": null,
+                    "birim_ids": null,
+                    "grup_ids": null,
+                    "bina_ids": null,
+                    "pozisyon_ids": null,
+                    "personel_tip_ids": null,
+                    "kullanici_ids": null
+                }
+            ]
+        },
+        "updated_at": "1783444121.0797286"
     },
     "mehmet_article.pdf": {
         "hash": "5e39525a23159ad417cf0c8250f628c1",
@@ -35,9 +79,7 @@
                     "sube_ids": [
                         1
                     ],
-                    "mudurluk_ids": [
-                        1
-                    ],
+                    "mudurluk_ids": null,
                     "birim_ids": null,
                     "grup_ids": null,
                     "bina_ids": null,
@@ -47,6 +89,6 @@
                 }
             ]
         },
-        "updated_at": "1783360822.7102363"
+        "updated_at": "1783444443.5828881"
     }
 }
