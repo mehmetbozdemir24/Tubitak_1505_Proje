@@ -5,3 +5,4 @@ contextual_cache.json
 .idea/
 
 output-docling/
+vllm-workspace/
