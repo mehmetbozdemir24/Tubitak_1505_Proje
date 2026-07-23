@@ -1,12 +1,7 @@
-# TÜBİTAK 1505 — Hedef Kitle API servisi
-# ESKİ NOT: Önceki Dockerfile 'rag_test.py' adında var olmayan bir dosyayı
-# kopyalıyordu ve build aşamasında hata veriyordu. Düzeltildi.
-
 FROM python:3.11-slim
 
 WORKDIR /app
 
-# Sistem bağımlılıkları (pytesseract/pymupdf için gerekebilir)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     tesseract-ocr curl \
     && rm -rf /var/lib/apt/lists/*
@@ -17,12 +12,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Uygulama kaynakları
 COPY abac.py auth.py tenancy.py api_schemas.py audience_service.py \
      rag_service.py document_ingestion_service.py chunker.py \
+     error_handling.py rate_limiting.py \
      prompts.py language_utils.py api.py ./
 
 EXPOSE 8000
 
-# Sırlar env üzerinden verilir (docker run -e ... veya compose environment).
-# JWT_ISSUER, JWT_AUDIENCE_QUERY, JWT_AUDIENCE_ADMIN ve bir genel anahtar
-# (JWT_PUBLIC_KEY veya JWT_PUBLIC_KEYS_JSON) ZORUNLUDUR — biri eksikse
-# /api/v1/* uçları 500 döner (fail-closed). Bkz. auth.py başlığı.
 CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -80,7 +80,7 @@ def _service_token(private_pem):
 class TestCreateDocumentEndpoint:
     def test_successful_creation_returns_201(self, app_client):
         client, fake_qdrant_client, private_pem = app_client
-        fake_qdrant_client.collection_exists.return_value = False
+        fake_qdrant_client.collection_exists.return_value = True
         fake_qdrant_client.scroll.return_value = ([], None)
         token = _service_token(private_pem)
 
@@ -139,7 +139,7 @@ class TestCreateDocumentEndpoint:
 
     def test_same_dokuman_id_different_tenants_does_not_conflict(self, app_client):
         client, fake_qdrant_client, private_pem = app_client
-        fake_qdrant_client.collection_exists.return_value = False
+        fake_qdrant_client.collection_exists.return_value = True
         fake_qdrant_client.scroll.return_value = ([], None)
         token = _service_token(private_pem)
 

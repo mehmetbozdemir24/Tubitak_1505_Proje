@@ -126,3 +126,34 @@ class TestExistingCollectionBehaviorUnchanged:
         info = get_document_audience(client, "tubitak1505_sirket_14", "belge.pdf")
         assert info.audience_versiyon == 3
         assert info.policy == {"rules": []}
+
+    def test_set_payload_called_with_dict_not_scalar(self):
+        """
+        (Bug fix) Qdrant'ın gerçek set_payload'ı, 'key' verildiğinde 'payload'
+        parametresinin HER ZAMAN bir sözlük olmasını şart koşar (Pydantic
+        SetPayload modeli bunu zorunlu kılar) — ham bir int (örn. sadece
+        audience_versiyon sayısı) geçersizdir ve gerçek istemcide
+        ValidationError fırlatır. MagicMock bunu doğrulamadığı için bu hatayı
+        yakalamak için payload'ın gerçekten dict olduğunu açıkça test ediyoruz.
+        """
+        client = MagicMock()
+        client.collection_exists.return_value = True
+        client.scroll.return_value = ([self._fake_point(audience_versiyon=1)], None)
+
+        update_document_audience(
+            client=client,
+            collection="tubitak1505_sirket_14",
+            source="belge.pdf",
+            policy=AudiencePolicy(rules=[AudienceRule(bina_ids=[16])]),
+            degistiren_kullanici_id=42,
+            beklenen_audience_versiyon=1,
+        )
+
+        for call in client.set_payload.call_args_list:
+            assert isinstance(call.kwargs["payload"], dict), (
+                f"payload dict olmalı, {type(call.kwargs['payload'])} geldi: "
+                f"{call.kwargs['payload']!r}"
+            )
+        # audience_versiyon alanı, dict'in İÇİNDE bir alan olarak gönderilmeli.
+        all_payloads = [call.kwargs["payload"] for call in client.set_payload.call_args_list]
+        assert any(p.get("audience_versiyon") == 2 for p in all_payloads)

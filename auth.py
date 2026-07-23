@@ -105,6 +105,18 @@ def _clock_skew() -> timedelta:
     return timedelta(seconds=seconds)
 
 
+def _normalize_pem(value: str) -> str:
+    """
+    .env dosyalarında PEM anahtarları tek satıra sığdırmak için genelde
+    gerçek satır sonu yerine kaçış dizisi '\\n' kullanılır (Docker Compose'un
+    env_file okuyucusu çok satırlı değerleri güvenilir işlemez). Bu fonksiyon
+    '\\n' dizisini gerçek satır sonuna çevirir; değer zaten gerçek satır
+    sonlarıyla geldiyse (yerel .env / python-dotenv testinde olduğu gibi)
+    hiçbir şeyi bozmadan olduğu gibi bırakır.
+    """
+    return value.replace("\\n", "\n") if value else value
+
+
 def _load_public_keys() -> dict[str, str]:
     """kid → PEM genel anahtar haritasını döner. Rotasyon desteği için."""
     raw = os.getenv("JWT_PUBLIC_KEYS_JSON")
@@ -114,7 +126,7 @@ def _load_public_keys() -> dict[str, str]:
         keys = json.loads(raw)
         if not isinstance(keys, dict):
             raise ValueError("JWT_PUBLIC_KEYS_JSON bir JSON nesnesi olmalı.")
-        return keys
+        return {kid: _normalize_pem(pem) for kid, pem in keys.items()}
     except (json.JSONDecodeError, ValueError):
         logger.error("JWT_PUBLIC_KEYS_JSON çözümlenemedi; yapılandırma hatalı.")
         return {}
@@ -134,7 +146,7 @@ def _resolve_public_key(token: str) -> str:
         bilgisini sızdırır ve izlemede gerçek arıza gibi yanlış alarm üretir).
     """
     keys = _load_public_keys()
-    fallback = os.getenv("JWT_PUBLIC_KEY")
+    fallback = _normalize_pem(os.getenv("JWT_PUBLIC_KEY"))
 
     if not keys and not fallback:
         raise HTTPException(

@@ -36,7 +36,7 @@ def _fake_chunks(n=2):
 class TestCreateDocument:
     def test_successful_creation(self):
         client = MagicMock()
-        client.collection_exists.return_value = False
+        client.collection_exists.return_value = True   # tenant koleksiyonu zaten var
         client.scroll.return_value = ([], None)
 
         with patch("document_ingestion_service.chunk_text", return_value=_fake_chunks(3)), \
@@ -48,12 +48,48 @@ class TestCreateDocument:
                 file_ext=".pdf",
                 audience_policy=AudiencePolicy(rules=[AudienceRule(sirket_ids=[14])]),
                 dense_embeddings=MagicMock(), sparse_embeddings=MagicMock(),
+                reference_collection="Tubitak_Dokumanlar_Hybrid",
             )
 
         assert result.dokuman_id == "rapor.pdf"
         assert result.versiyon == 1
         assert result.chunk_sayisi == 3
         mock_store.add_documents.assert_called_once()
+
+    def test_provisions_tenant_collection_if_missing(self):
+        """
+        (Bug fix) Bu tenant için ilk doküman yükleniyorsa (koleksiyon henüz
+        yoksa), referans koleksiyonun şeması kopyalanarak otomatik
+        oluşturulmalı — QdrantVectorStore kurulumu 404 ile çökmemeli.
+        """
+        client = MagicMock()
+
+        def collection_exists_side_effect(name):
+            return name != "tubitak1505_sirket_99"   # yalnızca tenant koleksiyonu yok
+
+        client.collection_exists.side_effect = collection_exists_side_effect
+        client.scroll.return_value = ([], None)
+
+        fake_ref = MagicMock()
+        fake_ref.config.params.vectors = {"content": "FAKE_DENSE"}
+        fake_ref.config.params.sparse_vectors = {"sparse": "FAKE_SPARSE"}
+        client.get_collection.return_value = fake_ref
+
+        with patch("document_ingestion_service.chunk_text", return_value=_fake_chunks(1)), \
+             patch("document_ingestion_service.QdrantVectorStore"):
+            create_document(
+                client=client, collection="tubitak1505_sirket_99",
+                dokuman_id="ilk_belge.pdf", file_bytes=b"icerik", file_ext=".pdf",
+                audience_policy=AudiencePolicy(rules=[AudienceRule(sirket_ids=[99])]),
+                dense_embeddings=MagicMock(), sparse_embeddings=MagicMock(),
+                reference_collection="Tubitak_Dokumanlar_Hybrid",
+            )
+
+        client.create_collection.assert_called_once_with(
+            collection_name="tubitak1505_sirket_99",
+            vectors_config={"content": "FAKE_DENSE"},
+            sparse_vectors_config={"sparse": "FAKE_SPARSE"},
+        )
 
     def test_rejects_duplicate_dokuman_id(self):
         client = MagicMock()
@@ -67,6 +103,7 @@ class TestCreateDocument:
                 dokuman_id="rapor.pdf", file_bytes=b"icerik", file_ext=".pdf",
                 audience_policy=AudiencePolicy(), dense_embeddings=MagicMock(),
                 sparse_embeddings=MagicMock(),
+                reference_collection="Tubitak_Dokumanlar_Hybrid",
             )
         assert exc_info.value.code == "already_exists"
 
@@ -78,12 +115,14 @@ class TestCreateDocument:
                 file_bytes=b"x" * (MAX_FILE_SIZE_BYTES + 1), file_ext=".pdf",
                 audience_policy=AudiencePolicy(), dense_embeddings=MagicMock(),
                 sparse_embeddings=MagicMock(),
+                reference_collection="Tubitak_Dokumanlar_Hybrid",
             )
         assert exc_info.value.code == "too_large"
 
     def test_rejects_when_chunker_produces_nothing(self):
         client = MagicMock()
-        client.collection_exists.return_value = False
+        client.collection_exists.return_value = True
+        client.scroll.return_value = ([], None)
 
         with patch("document_ingestion_service.chunk_text", return_value=[]):
             with pytest.raises(DocumentIngestionError) as exc_info:
@@ -92,12 +131,14 @@ class TestCreateDocument:
                     file_bytes=b"gecersiz", file_ext=".pdf",
                     audience_policy=AudiencePolicy(), dense_embeddings=MagicMock(),
                     sparse_embeddings=MagicMock(),
+                    reference_collection="Tubitak_Dokumanlar_Hybrid",
                 )
         assert exc_info.value.code == "chunking_failed"
 
     def test_pptx_uses_pptx_chunker(self):
         client = MagicMock()
-        client.collection_exists.return_value = False
+        client.collection_exists.return_value = True
+        client.scroll.return_value = ([], None)
 
         with patch("document_ingestion_service.chunk_pptx", return_value=_fake_chunks(1)) as mock_pptx, \
              patch("document_ingestion_service.chunk_text") as mock_text, \
@@ -107,6 +148,7 @@ class TestCreateDocument:
                 file_bytes=b"icerik", file_ext=".pptx",
                 audience_policy=AudiencePolicy(), dense_embeddings=MagicMock(),
                 sparse_embeddings=MagicMock(),
+                reference_collection="Tubitak_Dokumanlar_Hybrid",
             )
         mock_pptx.assert_called_once()
         mock_text.assert_not_called()

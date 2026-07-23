@@ -177,4 +177,4 @@ class TestComplianceReportStructuredItems:
         assert resp.status_code == 200
         body = resp.json()
         assert body["politikasiz_dokuman_sayisi"] == 1
-        assert body["dokumanlar"][0] == {"dokuman_id": "politikasiz.pdf", "versiyon": 2}"
+        assert body["dokumanlar"][0] == {"dokuman_id": "politikasiz.pdf", "versiyon": 2}

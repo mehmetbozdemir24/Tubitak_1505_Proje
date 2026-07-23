@@ -157,17 +157,19 @@ def update_document_audience(
 
     yeni_versiyon = mevcut_versiyon + 1
 
-    # Her alan ayrı bir key-path çağrısıyla yazılır — bu, "metadata" altındaki
-    # kardeş alanları (source, versiyon, file_hash vb.) ETKİLEMEDEN yalnızca
-    # hedeflenen alt-alanı günceller. requirements.txt'te qdrant-client bu
-    # özelliği garanti edecek şekilde sabitlenmiştir (bkz. dosya başlığı).
+    # ÖNEMLİ (düzeltilen hata): Qdrant'ın set_payload'ı, 'key' verildiğinde
+    # 'payload' parametresinin HER ZAMAN bir sözlük olmasını ister — bu
+    # sözlüğün alanları, 'key'in gösterdiği nesnenin İÇİNE birleştirilir
+    # (üstteki kardeş alanları etkilemeden). Bu yüzden ham bir sayıyı
+    # (audience_versiyon gibi) doğrudan payload olarak vermek geçersizdir;
+    # bunun yerine bir üst seviyeye (metadata) çıkıp iki alanı TEK bir
+    # birleştirme çağrısında güncelliyoruz — source/versiyon/file_hash gibi
+    # kardeş alanlar bu birleştirmeden etkilenmez.
     client.set_payload(
-        collection_name=collection, payload=policy.model_dump(),
-        points=point_ids, key="metadata.audience",
-    )
-    client.set_payload(
-        collection_name=collection, payload=yeni_versiyon,
-        points=point_ids, key="metadata.audience_versiyon",
+        collection_name=collection,
+        payload={"audience": policy.model_dump(), "audience_versiyon": yeni_versiyon},
+        points=point_ids,
+        key="metadata",
     )
 
     # Denetim kaydı: kim, neyi, ne zaman değiştirdi.

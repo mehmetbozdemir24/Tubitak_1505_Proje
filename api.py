@@ -233,6 +233,7 @@ def create_document_endpoint(
             audience_policy=req.audience_policy,
             dense_embeddings=_resources["dense"],
             sparse_embeddings=_resources["sparse"],
+            reference_collection=COLLECTION,
         )
     except DocumentIngestionError as e:
         if e.code == "already_exists":

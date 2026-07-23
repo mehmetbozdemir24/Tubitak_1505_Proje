@@ -56,6 +56,7 @@ from langchain_qdrant import QdrantVectorStore, RetrievalMode
 
 from abac import AudiencePolicy
 from chunker import chunk_text, chunk_pptx
+from tenancy import TenantCollectionProvisioner
 
 logger = logging.getLogger("document_ingestion")
 
@@ -183,10 +184,17 @@ def create_document(
     audience_policy: AudiencePolicy,
     dense_embeddings,
     sparse_embeddings,
+    reference_collection: str,
 ) -> DocumentWriteResult:
     """
     Yeni bir dokümanı, hedef kitle politikasıyla BİRLİKTE, tek istekte
     oluşturur (Teracity madde 2'nin temel talebi).
+
+    reference_collection: Bu tenant'ın koleksiyonu HENÜZ yoksa (bu şirket
+    için ilk doküman yükleniyorsa), vektör şemasını (boyut/mesafe metriği/
+    sparse config) kopyalamak için kullanılacak var olan bir koleksiyonun
+    adı — bkz. tenancy.TenantCollectionProvisioner. Bu olmadan QdrantVectorStore
+    kurulumu, koleksiyon yok diye 404 ile çöker (bu düzeltilen gerçek hataydı).
 
     Hatalar:
       DocumentIngestionError("already_exists") — bu tenant'ta aynı dokuman_id zaten var
@@ -198,6 +206,14 @@ def create_document(
             "too_large",
             f"Dosya {MAX_FILE_SIZE_BYTES // (1024*1024)} MB sınırını aşıyor.",
         )
+
+    # Tenant koleksiyonu henüz provizyon edilmemiş olabilir (bu şirket için
+    # ilk doküman). Yazma işleminden ÖNCE var olduğundan emin olunur.
+    provisioner = TenantCollectionProvisioner(client, reference_collection=reference_collection)
+    created = provisioner.ensure_exists(collection)
+    if created:
+        logger.info("tenant_koleksiyonu_olusturuldu koleksiyon=%s referans=%s",
+                    collection, reference_collection)
 
     if _points_for_document(client, collection, dokuman_id):
         raise DocumentIngestionError(
