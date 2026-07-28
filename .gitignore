@@ -1,4 +1,5 @@
 pdf_env/
+venv/
 __pycache__/
 contextual_cache.json
 
@@ -6,3 +7,8 @@ contextual_cache.json
 
 output-docling/
 vllm-workspace/
+qdrant_data/
+
+.env
+*.pem
+.pytest_cache/

@@ -1,4 +1,4 @@
-"""
+﻿"""
 Bilimp AI – Kurumsal Belge Asistanı
 SaaS / B2B Light-Mode | ABAC Yetkilendirme
 
@@ -17,26 +17,17 @@ chunk içine ASLA think metni giremez.
 # ══════════════════════════════════════════════════════════════════════════════
 # IMPORTS
 # ══════════════════════════════════════════════════════════════════════════════
-import os, time, json, hashlib, tempfile
-import requests, torch
-from uuid import uuid4
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import os, time
+import requests
+import jwt as pyjwt   # PyJWT — test JWT imzalamak için (bkz. API_JWT ayarları)
 
 import streamlit as st
-from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
-from langchain_core.tools import tool
-from language_utils import choose_answer_language, build_language_policy_prompt, get_language_label
 from abac import (
-    AudiencePolicy, AudienceRule, UserContext,
+    AudiencePolicy, UserContext,
     has_access, build_policy_from_ui, parse_ids, empty_rule_data, FIELD_LABELS,
-    build_qdrant_abac_filter,
 )
-import io, re, base64
-from docling.document_converter import DocumentConverter, PdfFormatOption
-from docling.datamodel.base_models import InputFormat
-from docling.datamodel.pipeline_options import PdfPipelineOptions
-from docling.datamodel.accelerator_options import AcceleratorOptions, AcceleratorDevice
-from docling_core.types.doc import PictureItem
+from tenancy import ConventionTenantRegistry
+import base64
 
 # ── Page config (MUST be first Streamlit call) ───────────────────────────────
 st.set_page_config(
@@ -48,18 +39,6 @@ st.set_page_config(
 
 # ── Heavy imports (cached via @st.cache_resource) ────────────────────────────
 from qdrant_client import QdrantClient
-from qdrant_client.http import models as rest_models
-from qdrant_client.http.models import (
-    Distance, VectorParams, SparseVectorParams,
-    Filter, FieldCondition, MatchValue, MatchAny,
-)
-from langchain_qdrant import QdrantVectorStore, FastEmbedSparse, RetrievalMode
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_openai import ChatOpenAI          # vLLM (OpenAI-uyumlu) chat backend
-import pymupdf4llm
-from langchain_text_splitters import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
-from langchain_core.documents import Document
 
 # ══════════════════════════════════════════════════════════════════════════════
 # CONSTANTS
@@ -84,9 +63,6 @@ def _detect_host_ip() -> str:
 _HOST_IP = _detect_host_ip()
 
 QDRANT_URL      = f"http://{_HOST_IP}:6333"
-COLLECTION_NAME = "Tubitak_Dokumanlar_Hybrid"
-EMBED_MODEL     = "ytu-ce-cosmos/turkish-e5-large"
-REGISTRY_FILE   = "belge_kayitlari.json"
 
 # ── vLLM (OpenAI-uyumlu) — TEK MODEL, her iş burada ──
 # Sohbet, contextual bağlam üretimi ve görsel (VLM) açıklaması aynı modelden:
@@ -97,20 +73,35 @@ VLLM_API_KEY    = "EMPTY"
 VLLM_MODEL_ID   = "google/gemma-4-12B-it"
 VLLM_MAX_TOKENS = 2048
 
-# ── Ingestion pipeline ayarları (Docling + VLM + Contextual) ──
-OUTPUT_DIR      = "output-docling"            # md + figürler + kontrol dosyaları
-VLM_MODEL       = VLLM_MODEL_ID               # görsel açıklama → vLLM gemma-4
-CTX_MODEL       = VLLM_MODEL_ID               # contextual bağlam → vLLM gemma-4
-                                              # (cache-key'de kullanılır; model değişince
-                                              #  eski gemma3 cache'i otomatik geçersizleşir)
-CTX_CACHE_FILE  = "contextual_cache.json"
-CTX_DOC_LIMIT   = 12000
-CTX_PARALLEL    = 8                            # vLLM'e eşzamanlı bağlam isteği sayısı
-IMAGE_SCALE     = 2.0
-USE_VLM_FOR_PICTURES = True
-MIN_PICTURE_PX  = 80
-TR_SPACING_ESIK = 15
-MIN_PIECE_LEN   = 300                          # split-sonrası kırpık eşiği
+# ── Bilimp API (auth.py + api.py, JWT ile korunan gerçek sistem) ──
+# (v2.1) Sohbet artık burada (Streamlit içinde) Qdrant/LLM'e DOĞRUDAN
+# girmez — auth.py'nin JWT doğrulamasından, tenancy.py'nin fiziksel tenant
+# izolasyonundan ve rag_service.py'nin ABAC filtresinden GERÇEKTEN geçmesi
+# için api.py'nin POST /api/v1/query ucunu HTTP üzerinden çağırır. Streamlit
+# artık ince bir istemci; tek doğruluk kaynağı api.py'dir (bkz. POC branch).
+# api.py 8000'i vLLM kullandığı için varsayılan olarak 8001'de çalıştırılmalı
+# (örn. `uvicorn api:app --port 8001`).
+API_BASE_URL = os.getenv("API_BASE_URL", f"http://{_HOST_IP}:8001")
+
+# Bu Streamlit sayfası "Bilimp"in kendisi DEĞİLDİR — gerçek entegrasyonda JWT'yi
+# Bilimp'in kendi backend'i üretir. Burada SADECE demo/test amaçlı, Kimlik Girişi
+# sayfasında seçilen özniteliklerden yerel bir özel anahtarla (private_key.pem —
+# bkz. generate_test_keypair.py) kendi test token'ımızı imzalıyoruz; auth.py
+# yalnızca GENEL anahtarı (.env: JWT_PUBLIC_KEY) bilir, bu imzalama gerçek
+# ortamda ASLA yapılmaz.
+API_JWT_ISSUER = os.getenv("JWT_ISSUER", "bilimp-teracity")
+API_JWT_AUDIENCE_QUERY = os.getenv("JWT_AUDIENCE_QUERY", "tubitak1505-query")
+API_JWT_AUDIENCE_ADMIN = os.getenv("JWT_AUDIENCE_ADMIN", "tubitak1505-audience-admin")
+API_JWT_PRIVATE_KEY_PATH = os.getenv("API_JWT_PRIVATE_KEY_PATH", "private_key.pem")
+
+# api.py'nin GERÇEKTEN yazdığı tenant koleksiyon adını hesaplamak için — bkz.
+# tenancy.py. Belge Yönetimi listeleme paneli (salt-okunur) bunu kullanır.
+tenant_registry = ConventionTenantRegistry()
+
+# (v2.1) Docling+VLM+contextual ingestion ayarları BURADAN KALDIRILDI — bu
+# pipeline artık vllm_ingestion.py'de (api.py'nin document_ingestion_service.py
+# üzerinden çağırdığı) yaşıyor. Streamlit artık belge yüklerken bunu
+# ÇALIŞTIRMAZ, api.py'yi HTTP ile çağırır (bkz. page_documents).
 
 # ══════════════════════════════════════════════════════════════════════════════
 # DESIGN SYSTEM — CSS INJECTION
@@ -486,37 +477,6 @@ li[role="option"][aria-selected="true"], li[role="option"][aria-selected="true"]
 # ══════════════════════════════════════════════════════════════════════════════
 # BACKEND UTILITIES
 # ══════════════════════════════════════════════════════════════════════════════
-def md5(data: bytes) -> str:
-    h = hashlib.md5()
-    h.update(data)
-    return h.hexdigest()
-
-
-def load_registry() -> dict:
-    if os.path.exists(REGISTRY_FILE):
-        with open(REGISTRY_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {}
-
-
-def save_registry(reg: dict):
-    with open(REGISTRY_FILE, "w", encoding="utf-8") as f:
-        json.dump(reg, f, ensure_ascii=False, indent=4)
-
-
-@st.cache_resource
-def get_dense_embeddings():
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    return HuggingFaceEmbeddings(
-        model_name=EMBED_MODEL,
-        model_kwargs={"device": device},
-        encode_kwargs={"normalize_embeddings": True},
-    )
-
-
-@st.cache_resource
-def get_sparse_embeddings():
-    return FastEmbedSparse(model_name="Qdrant/bm25")
 
 
 @st.cache_resource
@@ -524,609 +484,22 @@ def get_qdrant_client():
     return QdrantClient(url=QDRANT_URL, check_compatibility=False)
 
 
-def init_collection():
-    c = get_qdrant_client()
-    if not c.collection_exists(COLLECTION_NAME):
-        c.create_collection(
-            collection_name=COLLECTION_NAME,
-            vectors_config={"content": VectorParams(size=1024, distance=Distance.COSINE)},
-            sparse_vectors_config={"sparse": SparseVectorParams()},
-        )
-
-
-def add_documents_to_qdrant(documents: list, file_hash: str | None = None):
-    client = get_qdrant_client()
-    dense = get_dense_embeddings()
-    sparse = get_sparse_embeddings()
-    if file_hash:
-        for d in documents:
-            d.metadata["file_hash"] = file_hash
-    store = QdrantVectorStore(
-        client=client, collection_name=COLLECTION_NAME,
-        embedding=dense, vector_name="content",
-        sparse_embedding=sparse, sparse_vector_name="sparse",
-        retrieval_mode=RetrievalMode.HYBRID,
-    )
-    store.add_documents(documents=documents, ids=[str(uuid4()) for _ in documents])
-
-
-def delete_by_source(source: str):
-    c = get_qdrant_client()
-    if c.collection_exists(COLLECTION_NAME):
-        c.delete(
-            collection_name=COLLECTION_NAME,
-            points_selector=Filter(must=[
-                FieldCondition(key="metadata.source", match=MatchValue(value=source))
-            ]),
-        )
-
-
-def delete_document_globally(filename: str):
-    delete_by_source(filename)
-    reg = load_registry()
-    reg.pop(filename, None)
-    save_registry(reg)
-
-
-def get_vllm_models() -> list[str]:
-    """vLLM OpenAI-uyumlu /models endpoint'inden yüklü model id'lerini döndürür.
-    Sunucu kapalıysa boş liste → sidebar'da vLLM seçeneği görünmez."""
-    try:
-        r = requests.get(f"{VLLM_BASE_URL}/models", timeout=1)
-        if r.status_code == 200:
-            return [m["id"] for m in r.json().get("data", [])]
-    except Exception:
-        pass
-    return []
-
-
-def sync_registry() -> dict:
-    client = get_qdrant_client()
-    registry = load_registry()
-    qdrant_files: dict[str, dict] = {}
-
-    if client.collection_exists(COLLECTION_NAME):
-        scroll, _ = client.scroll(collection_name=COLLECTION_NAME, limit=2000, with_payload=True)
-        for pt in scroll:
-            meta = pt.payload.get("metadata", {})
-            src = meta.get("source", "")
-            if src and src not in qdrant_files:
-                qdrant_files[src] = {
-                    "audience": meta.get("audience", {}),
-                    "hash": meta.get("file_hash", "unknown"),
-                }
-
-    updated = False
-    for fname, info in qdrant_files.items():
-        if fname not in registry:
-            registry[fname] = {"hash": info["hash"], "audience": info["audience"],
-                               "synced_at": str(time.time())}
-            updated = True
-
-    stale = [f for f in registry if f not in qdrant_files]
-    for f in stale:
-        del registry[f]
-        updated = True
-
-    if updated:
-        save_registry(registry)
-    return registry
-
-
-# ══════════════════════════════════════════════════════════════════════════════
-# INGESTION PIPELINE — Docling+VLM MD → tablo-atomik chunk → contextual bağlam
-# (eski chunker.py'nin yerini alır; chunk kuralları:
-#  * bölüm chunk_size'a sığıyorsa BÜTÜN kalır (başlıktan başlığa)
-#  * tablolar ASLA bölünmez; metin kesimi Madde sınırlarında
-#  * breadcrumb her parçaya kopyalanır; kırpıklar komşusuna yapıştırılır)
-# ══════════════════════════════════════════════════════════════════════════════
-_HEADERS  = [("#", "H1"), ("##", "H2"), ("###", "H3"), ("####", "H4")]
-_CRUMB_RE = re.compile(r"^\*\*BAĞLAM:\*\*.*$", re.MULTILINE)
-_CAPTION_RE   = re.compile(r"^(Şekil|Çizelge|Tablo|Figure|Table)\s*[-.]?\s*\d", re.IGNORECASE)
-THINK_RE      = re.compile(r"<think>.*?</think>", re.DOTALL | re.IGNORECASE)
-TR_SPACING_RE = re.compile(r"[a-zA-ZçÇğĞıİöÖşŞüÜ]\s[ıİşŞğĞçÇöÖüÜ]\s")
-
-VLM_PROMPT = (
-    "ONEMLI: Yanitin TAMAMEN TURKCE olmali. Tek bir Ingilizce cumle bile yazma.\n\n"
-    "Bu bir kurumsal/resmi dokumandan alinmis bir GORSEL. Turkce cikti uret:\n"
-    "- Tablo, confusion matrix veya sayisal grid ise: satir/sutun basliklariyla "
-    "eksiksiz bir markdown tablosu yap. Anlamli, yapilandirilmis veri cikar. "
-    "Tum degerleri guvenilir okuyamiyorsan UYDURMA, okuyabildigini ver.\n"
-    "- Grafik ise: eksenleri ve degerleri markdown tablosu olarak ver.\n"
-    "- Diyagram/sema ise: adimlari numarali Turkce maddelerle acikla.\n"
-    "- Fotograf/logo ise: yeterli miktarda uzatmadan Turkce acikla.\n\n"
-    "Aciklama, giris veya kapanis cumlesi ekleme. Sadece istenen Turkce icerigi ver. "
-    "Yanitin ilk kelimesinden son kelimesine kadar Turkce olacak."
-)
-
-CTX_PROMPT = """<belge>
-{doc}
-</belge>
-
-Yukarıdaki belgeden alınan bir parça:
-<parca>
-{chunk}
-</parca>
-
-Bu parçayı belgenin bütünü içinde konumlandıran, aramada bulunmasını kolaylaştıracak
-KISA (en fazla 2 cümle) bir Türkçe bağlam cümlesi yaz. Belgenin ne olduğunu (tür/başlık/yıl)
-ve bu parçanın neyi içerdiğini belirt. SADECE bağlam cümlesini yaz; giriş, açıklama veya
-etiket ekleme."""
-
-
-def _clean_vlm_output(text):
-    if not text:
-        return ""
-    text = THINK_RE.sub("", text)
-    text = re.sub(r"</?think>", "", text, flags=re.IGNORECASE)
-    return text.strip()
-
-
-def _call_vlm(png_b64, num_predict=4096, retries=3):
-    """Görsel açıklamasını vLLM'deki gemma-4 (Unified multimodal) ile üretir.
-    Çıktı _clean_vlm_output'tan geçer → <think> blokları chunk'a ASLA sızmaz."""
-    payload = {
-        "model": VLLM_MODEL_ID,
-        "messages": [{
-            "role": "user",
-            "content": [
-                {"type": "image_url",
-                 "image_url": {"url": f"data:image/png;base64,{png_b64}"}},
-                {"type": "text", "text": VLM_PROMPT},
-            ],
-        }],
-        "max_tokens": num_predict,
-        "temperature": 0.0,
-    }
-    for _ in range(retries):
-        try:
-            r = requests.post(f"{VLLM_BASE_URL}/chat/completions",
-                              json=payload, timeout=1800)
-            r.raise_for_status()
-            msg = r.json()["choices"][0]["message"]
-            content = _clean_vlm_output(msg.get("content") or "")
-            if content:
-                return content
-        except Exception:
-            pass
-        time.sleep(2)
-    return None
-
-
-def _turkce_bosluk_sorunu(text) -> bool:
-    return len(TR_SPACING_RE.findall(text)) >= TR_SPACING_ESIK
-
-
-def belge_to_md(input_file: str, output_dir: str, orijinal_ad: str | None = None) -> str:
-    """Belgeyi (pdf/docx/pptx/xlsx) markdown'a çevirir; .md ve figürleri yazar."""
-    ad   = orijinal_ad or os.path.basename(input_file)
-    stem = os.path.splitext(ad)[0]
-    crop_dir  = os.path.join(output_dir, stem + "_figures")
-    output_md = os.path.join(output_dir, stem + ".md")
-    os.makedirs(crop_dir, exist_ok=True)
-
-    def _convert(ocr: bool):
-        o = PdfPipelineOptions()
-        o.do_table_structure = True
-        o.do_formula_enrichment = True
-        o.generate_picture_images = True
-        o.images_scale = IMAGE_SCALE
-        o.do_ocr = ocr
-        o.accelerator_options = AcceleratorOptions(device=AcceleratorDevice.CUDA)
-        conv = DocumentConverter(
-            format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=o)}
-        )
-        return conv.convert(input_file).document
-
-    # 1. geçiş: OCR kapalı (metinli PDF'ler için hızlı)
-    doc = _convert(ocr=False)
-
-    # Görüntü-PDF tespiti: hem Docling hem pymupdf'in çıkardığı seçilebilir metin
-    # yok denecek kadar azsa (taranmış/rasterize PDF), OCR'lı 2. geçiş yapılır.
-    _gecici_md = doc.export_to_markdown()
-    _metin_uz = len(re.sub(r"[^0-9A-Za-zçÇğĞıİöÖşŞüÜ]", "", _gecici_md))
-    if input_file.lower().endswith(".pdf") and _metin_uz < 200:
-        try:
-            _fitz_uz = 0
-            try:
-                import fitz
-                _fd = fitz.open(input_file)
-                _fitz_uz = sum(len(p.get_text("text").strip()) for p in _fd)
-                _fd.close()
-            except Exception:
-                pass
-            if _fitz_uz < 200:   # gerçekten metinsiz -> OCR aç
-                print(f"  Görüntü-PDF tespit edildi (seçilebilir metin ~{_metin_uz} kr) -> OCR'lı yeniden işleniyor...")
-                doc = _convert(ocr=True)
-        except Exception as e:
-            print(f"  OCR geçişi başlatılamadı: {e}")
-
-    desc_list = []
-    if USE_VLM_FOR_PICTURES:
-        # 1) Önce TÜM görselleri topla ve diske kaydet (hızlı, yerel iş)
-        gorseller = []   # (pic_no, png_b64) — sıra korunur
-        pic_no = 0
-        for item, _level in doc.iterate_items():
-            if not isinstance(item, PictureItem):
-                continue
-            pic_no += 1
-            try:
-                pil_img = item.get_image(doc)
-                if pil_img is None or pil_img.width < MIN_PICTURE_PX or pil_img.height < MIN_PICTURE_PX:
-                    continue
-                buf = io.BytesIO()
-                pil_img.save(buf, format="PNG")
-                png = buf.getvalue()
-                with open(os.path.join(crop_dir, f"gorsel_{pic_no:03d}.png"), "wb") as f:
-                    f.write(png)
-                gorseller.append((pic_no, base64.b64encode(png).decode()))
-            except Exception:
-                continue
-
-        # 2) VLM açıklamalarını vLLM'e PARALEL gönder (görüntü istekleri
-        #    KV cache'te ağır olduğu için 4 eşzamanlı ile sınırlı)
-        descs = {}
-        if gorseller:
-            with ThreadPoolExecutor(max_workers=4) as ex:
-                futs = {ex.submit(_call_vlm, b64): no for no, b64 in gorseller}
-                for fut in as_completed(futs):
-                    no = futs[fut]
-                    try:
-                        descs[no] = fut.result()
-                    except Exception:
-                        descs[no] = None
-
-        # 3) Açıklamaları ORİJİNAL görsel sırasıyla listeye diz
-        for no, _b64 in gorseller:
-            body = descs.get(no) or "(VLM açıklaması alınamadı)"
-            desc_list.append(
-                f"\n\n**[Görsel {no}]** (`gorsel_{no:03d}.png`)\n\n"
-                f"![Görsel {no}]({stem}_figures/gorsel_{no:03d}.png)\n\n{body}\n"
-            )
-
-    docling_md = doc.export_to_markdown()
-    use_pymupdf = input_file.lower().endswith(".pdf") and _turkce_bosluk_sorunu(docling_md)
-
-    if use_pymupdf:
-        base_md = pymupdf4llm.to_markdown(input_file, write_images=False)
-        base_md = re.sub(
-            r"<!--\s*Start of picture text\s*-->.*?<!--\s*End of picture text\s*-->",
-            "", base_md, flags=re.DOTALL,
-        )
-        final_md = base_md.rstrip()
-        if desc_list:
-            final_md += "\n\n\n# ---- GÖRSEL AÇIKLAMALARI ----\n" + "".join(desc_list)
-    else:
-        parts = re.split(r"<!--\s*image\s*-->", docling_md)
-        if len(parts) == 1:
-            final_md = docling_md
-            if desc_list:
-                final_md = final_md.rstrip() + "\n\n\n# ---- GÖRSEL AÇIKLAMALARI ----\n" + "".join(desc_list)
-        else:
-            out = parts[0]
-            for i, part in enumerate(parts[1:]):
-                out += (desc_list[i] if i < len(desc_list) else "") + part
-            final_md = out
-
-    with open(output_md, "w", encoding="utf-8") as f:
-        f.write(final_md)
-    return final_md
-
-
-# ── tablo-farkında, başlık-tabanlı chunklama ──
-def _blocks(content):
-    out, cur, cur_is_table = [], [], None
-    for line in content.splitlines():
-        is_t = line.lstrip().startswith("|")
-        if cur_is_table is None:
-            cur_is_table = is_t
-        if is_t != cur_is_table:
-            out.append((cur_is_table, "\n".join(cur)))
-            cur, cur_is_table = [], is_t
-        cur.append(line)
-    if cur:
-        out.append((cur_is_table, "\n".join(cur)))
-    return out
-
-
-def _extract_crumb(content):
-    m = _CRUMB_RE.search(content)
-    return m.group(0) if m else ""
-
-
-def _with_crumb(text, crumb):
-    if crumb and not text.lstrip().startswith("**BAĞLAM:**"):
-        return f"{crumb}\n\n{text}"
-    return text
-
-
-def _govde_uzunluk(piece):
-    return len(_CRUMB_RE.sub("", piece).strip())
-
-
-def _merge_small_pieces(pieces, crumb, min_len=MIN_PIECE_LEN):
-    if len(pieces) <= 1:
-        return pieces
-    out, i = [], 0
-    while i < len(pieces):
-        p = pieces[i]
-        kucuk = _govde_uzunluk(p) < min_len and "|" not in p
-        if kucuk and i + 1 < len(pieces) and "|" not in pieces[i + 1]:
-            nxt = pieces[i + 1]
-            if crumb and nxt.lstrip().startswith(crumb):
-                nxt = nxt.lstrip()[len(crumb):].lstrip("\n")
-            pieces[i + 1] = f"{p}\n\n{nxt}"
-        elif kucuk and out and "|" not in out[-1]:
-            ek = p
-            if crumb and ek.lstrip().startswith(crumb):
-                ek = ek.lstrip()[len(crumb):].lstrip("\n")
-            out[-1] = f"{out[-1]}\n\n{ek}"
-        else:
-            out.append(p)
-        i += 1
-    return out
-
-
-def _split_section(content, chunk_size, chunk_overlap):
-    if len(content) <= chunk_size:
-        return [content]
-    crumb = _extract_crumb(content)
-    rec = RecursiveCharacterTextSplitter(
-        chunk_size=chunk_size, chunk_overlap=chunk_overlap,
-        separators=["\n**Madde", "\nMadde ", "\n\n", "\n", " ", ""],
-    )
-
-    # ── Tablo-kimlik iliştirme ────────────────────────────────────────────
-    # Tablolar atomik kalır (ASLA bölünmez) — ama çıplak tablo chunk'ı neye
-    # ait olduğunu bilmediği için retrieval'da bulunamıyordu (ör. Şekil 5
-    # tablosu "Şekil 5 / T5 / BART" kelimelerini içermiyordu). Düzeltme:
-    #  1) Tablodan hemen ÖNCE gelen kısa etiket satırları
-    #     (**[Görsel N]**, ![...](...), **başlık**) tabloya taşınır.
-    #  2) Tablodan hemen SONRA gelen "Şekil X: / Çizelge X: ..." altyazısı
-    #     tabloya taşınır.
-    # Böylece tablo chunk'ı kimliğini kendi içinde taşır → hem arama bulur
-    # hem contextual bağlam doğru üretilir.
-    bloklar = list(_blocks(content))
-
-    # 1) ÖNCE: tablodan hemen sonraki TEK altyazıyı ("Şekil X: ...") kendi
-    #    tablosuna iliştir. (Tek satır: ardışık iki altyazı varsa ikincisi
-    #    bir SONRAKİ tabloya aittir, ona kalmalı.)
-    for j in range(len(bloklar) - 1):
-        if not bloklar[j][0] or bloklar[j + 1][0]:
-            continue
-        satirlar = bloklar[j + 1][1].lstrip("\n").split("\n")
-        if satirlar:
-            s = satirlar[0].strip()
-            if s and _CAPTION_RE.match(s) and len(s) <= 250 and "|" not in s:
-                cap = satirlar.pop(0)
-                bloklar[j] = (True, bloklar[j][1].rstrip("\n") + "\n" + cap)
-                bloklar[j + 1] = (False, "\n".join(satirlar))
-
-    # 2) SONRA: tablodan önceki etiket satırlarını (**[Görsel N]**, görsel
-    #    linki, kalan altyazı) tabloya çek.
-    for j in range(len(bloklar)):
-        if not bloklar[j][0]:
-            continue
-        if j == 0 or bloklar[j - 1][0]:
-            continue
-        onceki = bloklar[j - 1][1].rstrip("\n").split("\n")
-        tasi = []
-        while onceki and len(tasi) < 4:
-            s = onceki[-1].strip()
-            if not s:
-                onceki.pop()
-                continue
-            etiket_mi = (s.startswith("**[Görsel") or s.startswith("![")
-                         or s.startswith("**") or _CAPTION_RE.match(s))
-            if etiket_mi and len(s) <= 250 and "|" not in s:
-                tasi.insert(0, onceki.pop())
-            else:
-                break
-        if tasi:
-            bloklar[j - 1] = (False, "\n".join(onceki))
-            bloklar[j] = (True, "\n".join(tasi) + "\n" + bloklar[j][1])
-
-    pieces, text_buf = [], []
-
-    def flush_text():
-        buf = "\n".join(text_buf).strip()
-        text_buf.clear()
-        if not buf:
-            return
-        if len(buf) <= chunk_size:
-            pieces.append(_with_crumb(buf, crumb))
-        else:
-            for p in rec.split_text(buf):
-                p = p.strip()
-                if p:
-                    pieces.append(_with_crumb(p, crumb))
-
-    for is_table, blk in bloklar:
-        if is_table:
-            flush_text()
-            tbl = blk.strip()
-            if tbl:
-                pieces.append(_with_crumb(tbl, crumb))
-        else:
-            text_buf.append(blk)
-    flush_text()
-    return _merge_small_pieces(pieces, crumb)
-
-
-def chunk_md(text, source, chunk_size, chunk_overlap, audience=None):
-    md_docs = MarkdownHeaderTextSplitter(
-        headers_to_split_on=_HEADERS, strip_headers=True
-    ).split_text(text)
-
-    merged, temp = [], None
-    for doc in md_docs:
-        if not doc.page_content.strip():
-            continue
-        ctx = " > ".join(doc.metadata[h] for _, h in _HEADERS if doc.metadata.get(h))
-        if ctx:
-            doc.page_content = f"**BAĞLAM:** {ctx}\n\n{doc.page_content}"
-        if temp:
-            if len(doc.page_content) < 100 and "|" not in doc.page_content:
-                merged.append(temp)
-                temp = doc
-            else:
-                doc.page_content = f"{temp.page_content}\n\n{doc.page_content}"
-                merged.append(doc)
-                temp = None
-        else:
-            if len(doc.page_content) < 250 and "|" not in doc.page_content:
-                temp = doc
-            else:
-                merged.append(doc)
-    if temp:
-        merged.append(temp)
-
-    final = []
-    for doc in merged:
-        base_meta = dict(doc.metadata)
-        base_meta["source"] = source
-        base_meta["file_type"] = os.path.splitext(source)[1].lstrip(".") or "md"
-        if audience is not None:
-            base_meta["audience"] = audience
-        for piece in _split_section(doc.page_content, chunk_size, chunk_overlap):
-            final.append(Document(page_content=piece, metadata=dict(base_meta)))
-
-    for i, d in enumerate(final, 1):
-        d.metadata["chunk_no"] = i
-        d.metadata["has_table"] = "|" in d.page_content
-    return final
-
-
-# ── contextual retrieval (lokal LLM, cache'li) ──
-def _ctx_cache_load():
-    if os.path.exists(CTX_CACHE_FILE):
-        with open(CTX_CACHE_FILE, encoding="utf-8") as f:
-            return json.load(f)
-    return {}
-
-
-def _ctx_cache_save(c):
-    with open(CTX_CACHE_FILE, "w", encoding="utf-8") as f:
-        json.dump(c, f, ensure_ascii=False)
-
-
-def ensure_ctx_model():
-    """Ingestion artık vLLM (gemma-4) kullanıyor → vLLM ayakta mı ve doğru model
-    yüklü mü kontrol et. Değilse sessizce boş bağlamla devam ETME — hata ver."""
-    try:
-        r = requests.get(f"{VLLM_BASE_URL}/models", timeout=5)
-        r.raise_for_status()
-        ids = [m["id"] for m in r.json().get("data", [])]
-    except Exception as e:
-        raise RuntimeError(f"vLLM'e ulaşılamadı ({e}). vLLM sunucusu (:8000) çalışıyor mu?")
-    if VLLM_MODEL_ID not in ids:
-        raise RuntimeError(f"vLLM'de {VLLM_MODEL_ID} yüklü değil. "
-                           f"Yüklü: {', '.join(ids) or '(hiç yok)'}")
-
-
-def _uret_baglam(doc_text, chunk_text_):
-    """Chunk için contextual bağlam cümlesini vLLM (gemma-4) ile üretir.
-    Çıktı _clean_vlm_output'tan geçirilir → <think> blokları temizlenir;
-    ayrıca vLLM reasoning-parser sayesinde düşünme zaten ayrı alanda kalır.
-    Sonuç: chunk'a eklenen bağlam metninde think ASLA bulunmaz."""
-    payload = {
-        "model": VLLM_MODEL_ID,
-        "messages": [{
-            "role": "user",
-            "content": CTX_PROMPT.format(doc=doc_text[:CTX_DOC_LIMIT], chunk=chunk_text_),
-        }],
-        "max_tokens": 512,
-        "temperature": 0.0,
-    }
-    r = requests.post(f"{VLLM_BASE_URL}/chat/completions", json=payload, timeout=600)
-    r.raise_for_status()
-    msg = r.json()["choices"][0]["message"]
-    return _clean_vlm_output(msg.get("content") or "")
-
-
-def add_contextual(chunks, full_md, source, on_progress=None):
-    """Contextual bağlamları vLLM'e PARALEL isteklerle üretir (CTX_PARALLEL
-    eşzamanlı). vLLM continuous batching sayesinde bu, sıralı üretime göre
-    kat kat hızlıdır. Cache diske TEK SEFERDE yazılır (chunk başına disk I/O
-    /mnt/c üzerinde çok yavaştı)."""
-    cache = _ctx_cache_load()
-    n = len(chunks)
-    keys = [hashlib.md5(
-                (CTX_MODEL + "||" + source + "||" + d.page_content).encode("utf-8")
-            ).hexdigest() for d in chunks]
-
-    ctxs = [cache.get(k) or "" for k in keys]           # cache'ten gelenler
-    miss = [i for i, c in enumerate(ctxs) if not c]     # üretilmesi gerekenler
-    tamam = n - len(miss)
-    if on_progress and tamam:
-        on_progress(tamam, n)
-
-    if miss:
-        with ThreadPoolExecutor(max_workers=CTX_PARALLEL) as ex:
-            futs = {ex.submit(_uret_baglam, full_md, chunks[i].page_content): i
-                    for i in miss}
-            for fut in as_completed(futs):
-                i = futs[fut]
-                try:
-                    ctxs[i] = fut.result() or ""
-                except Exception:
-                    ctxs[i] = ""
-                if ctxs[i]:
-                    cache[keys[i]] = ctxs[i]
-                tamam += 1
-                if on_progress:
-                    on_progress(tamam, n)
-        _ctx_cache_save(cache)   # tek seferde diske yaz
-
-    added = 0
-    for doc, ctx in zip(chunks, ctxs):
-        if ctx:
-            doc.metadata["context"] = ctx
-            doc.page_content = f"{ctx}\n\n{doc.page_content}"
-            added += 1
-    return chunks, added
-
-
-def write_chunks_txt(chunks, output_dir, stem):
-    """Chunk'ları gözle-kontrol için okunaklı bir .txt olarak yazar (MD'nin yanına)."""
-    txt_path = os.path.join(output_dir, stem + "_chunks.txt")
-    with open(txt_path, "w", encoding="utf-8") as f:
-        f.write(f"KAYNAK: {stem}\nTOPLAM CHUNK: {len(chunks)}\n")
-        f.write("=" * 78 + "\n")
-        for d in chunks:
-            no  = d.metadata.get("chunk_no", "?")
-            ln  = len(d.page_content)
-            tbl = "  [TABLO]" if d.metadata.get("has_table") else ""
-            f.write(f"\n┌── CHUNK #{no}  ({ln} karakter){tbl} " + "─" * 36 + "\n")
-            ctx  = d.metadata.get("context")
-            body = d.page_content
-            if ctx:
-                f.write(f"│ [CONTEXTUAL BAĞLAM]\n│ {ctx}\n│\n")
-                if body.startswith(ctx):
-                    body = body[len(ctx):].lstrip("\n")
-            else:
-                f.write("│ [CONTEXTUAL BAĞLAM YOK !]\n│\n")
-            for line in body.splitlines():
-                f.write(f"│ {line}\n")
-            f.write("└" + "─" * 70 + "\n")
-    return txt_path
-
-
-def kaynak_onizleme(doc, limit: int = 1500) -> str:
-    """Referans panelindeki chunk önizlemesi. Tabloyu ortadan kesip bozmaz:
-    kırpma gerekiyorsa tablo satırı ortasında değil, satır sınırında keser ve
-    kalan kısmı özetler."""
-    text = doc.page_content
-    if len(text) <= limit:
-        return text
-    kesik = text[:limit]
-    son_nl = kesik.rfind("\n")
-    if son_nl > 0:
-        kesik = kesik[:son_nl]
-    kalan = len(text) - len(kesik)
-    return f"{kesik}\n\n… *(önizleme kırpıldı — {kalan} karakter daha var; model tamamını görüyor)*"
-
-
+# (v2.1) init_collection / add_documents_to_qdrant / delete_by_source /
+# delete_document_globally / get_vllm_models / sync_registry (+ load_registry /
+# save_registry / belge_kayitlari.json kayıt defteri) KALDIRILDI — belge
+# yazma/silme artık api.py'yi (auth + tenancy + document_ingestion_service.py)
+# HTTP ile çağırır (bkz. page_documents, _documents_api). get_dense_embeddings /
+# get_sparse_embeddings de yalnızca bu kaldırılan doğrudan-Qdrant-yazma yolunda
+# kullanılıyordu; embedding artık api.py'nin kendi lifespan'inde kurulur.
+
+
+# (v2.1) Docling+VLM+contextual ingestion pipeline'i (belge_to_md, chunk_md,
+# add_contextual, _call_vlm, ensure_ctx_model + tum yardimcilari) BURADAN
+# vllm_ingestion.py'ye tasindi; api.py'nin document_ingestion_service.py'si
+# bunu HTTP uzerinden (auth+tenancy korumali /api/v1/documents uclariyla)
+# cagirir. Streamlit artik bu pipeline'i KENDI icinde CALISTIRMAZ (bkz.
+# page_documents, _documents_api) - iki ayri kopya tutmak (DRY ihlali,
+# birbirinden sapma riski) yerine tek dogruluk kaynagi vllm_ingestion.py'dir.
 # ══════════════════════════════════════════════════════════════════════════════
 # SESSION STATE BOOTSTRAP
 # ══════════════════════════════════════════════════════════════════════════════
@@ -1135,14 +508,13 @@ def _init_state():
         "page":           "chat",
         "messages":       [],
         "audience_rules": [empty_rule_data()],
-        "api_key":        "",
-        "llm_option":     None,
-        "temperature":    0.3,
-        "top_k":          5,
-        "threshold":      0.40,
-        "chunk_size":     2500,
-        "chunk_overlap":  200,
         # UserContext fields
+        # (v2.0) musteri_id: fiziksel tenant sınırı, UserContext'te ZORUNLU
+        # alan (bkz. abac.py / tenancy.py). 0 = henüz girilmedi; bu durumda
+        # sorgu var olmayan bir koleksiyona gider ve deny-by-default olarak
+        # boş sonuç döner (bkz. rag_service.retrieve_authorized_docs) — hata
+        # fırlatmaz ama hiçbir belge de bulunmaz.
+        "uc_musteri":     0,
         "uc_sirket":      0,
         "uc_sube":        0,
         "uc_mudurlu":     0,
@@ -1165,7 +537,13 @@ _init_state()
 # ══════════════════════════════════════════════════════════════════════════════
 def get_user_context() -> UserContext:
     return UserContext(
-        sirket_id       = st.session_state.uc_sirket    or None,
+        # (v2.0) musteri_id ZORUNLU — Optional DEĞİL, bu yüzden 'or None'
+        # kullanılmaz (None geçilirse Pydantic doğrulaması patlar).
+        musteri_id      = st.session_state.uc_musteri,
+        # (v2.0) sirket_ids artık ÇOĞUL/kesişim modelinde — grup_ids ile
+        # aynı desen. Demo formu tek bir şirket ID'si topluyor, bunu tek
+        # elemanlı listeye çeviriyoruz.
+        sirket_ids      = [st.session_state.uc_sirket] if st.session_state.uc_sirket else [],
         sube_id         = st.session_state.uc_sube      or None,
         mudurluk_id     = st.session_state.uc_mudurlu   or None,
         birim_id        = st.session_state.uc_birim     or None,
@@ -1187,8 +565,11 @@ def render_chips_html(ids_text: str) -> str:
 
 def identity_bar_html(uc: UserContext) -> str:
     parts = []
-    if uc.sirket_id:
-        parts.append(f'<span class="id-label">Şirket</span><span class="id-chip">{uc.sirket_id}</span>')
+    if uc.musteri_id:
+        parts.append(f'<span class="id-label">Müşteri</span><span class="id-chip">{uc.musteri_id}</span>')
+    if uc.sirket_ids:
+        sirk = " ".join(f'<span class="id-chip">{s}</span>' for s in uc.sirket_ids)
+        parts.append(f'<span class="id-label">Şirket</span>{sirk}')
     if uc.sube_id:
         parts.append(f'<span class="id-label">Şube</span><span class="id-chip">{uc.sube_id}</span>')
     if uc.mudurluk_id:
@@ -1216,7 +597,8 @@ def identity_bar_html(uc: UserContext) -> str:
 
 def profile_card_html(uc: UserContext) -> str:
     badges = []
-    if uc.sirket_id:   badges.append(f'<span class="profile-badge">Şirket {uc.sirket_id}</span>')
+    if uc.musteri_id:  badges.append(f'<span class="profile-badge">Müşteri {uc.musteri_id}</span>')
+    for s in uc.sirket_ids: badges.append(f'<span class="profile-badge">Şirket {s}</span>')
     if uc.mudurluk_id: badges.append(f'<span class="profile-badge">Müd. {uc.mudurluk_id}</span>')
     for g in uc.grup_ids: badges.append(f'<span class="profile-badge">Grup {g}</span>')
     if uc.kullanici_id: badges.append(f'<span class="profile-badge">Kullanıcı {uc.kullanici_id}</span>')
@@ -1289,56 +671,22 @@ def render_sidebar():
 
         st.markdown('<div style="border-bottom:1px solid rgba(255,255,255,0.1);margin:12px 0;"></div>',
                     unsafe_allow_html=True)
-        st.markdown('<h3>🧠 Model Ayarları</h3>', unsafe_allow_html=True)
-
-        # ── Model selection ───────────────────────────────────────────────────
-        # TEK MODEL mimarisi: chunk/VLM her zaman otomatik vLLM gemma-4 kullanır.
-        # Buradaki seçim yalnızca SOHBET modelini belirler: vLLM (varsayılan)
-        # veya Gemini 3.0 Flash (bulut alternatifi). Başka seçenek yok.
-        gemini_map = {
-            "Gemini 3.0 Flash": "gemini-3-flash-preview",
-        }
-        model_options = [f"vLLM: {VLLM_MODEL_ID}"] + list(gemini_map.keys())
-
-        if st.session_state.llm_option not in model_options:
-            st.session_state.llm_option = model_options[0]
-
-        sel = st.selectbox("Model", model_options,
-                           index=model_options.index(st.session_state.llm_option),
-                           key="sb_model")
-        st.session_state.llm_option = sel
-
-        if "Gemini" in sel:
-            st.session_state.api_key = st.text_input(
-                "Google API Key", type="password",
-                value=st.session_state.api_key, key="sb_apikey"
-            )
-
-        st.markdown('<div style="border-bottom:1px solid rgba(255,255,255,0.1);margin:8px 0;"></div>',
-                    unsafe_allow_html=True)
-        st.markdown('<h3>🎛️ İnce Ayarlar</h3>', unsafe_allow_html=True)
-
-        st.session_state.temperature = st.slider(
-            "Yaratıcılık", 0.0, 1.0, st.session_state.temperature, 0.1, key="sb_temp"
+        st.markdown('<h3>🧠 Model</h3>', unsafe_allow_html=True)
+        # (v2.1) Sohbet artık Streamlit içinde model seçtirmez — api.py'ye
+        # HTTP ile bağlanır (bkz. page_chat/_call_query_api) ve hangi LLM'in
+        # kullanılacağı SUNUCU tarafında LLM_PROVIDER ortam değişkeniyle
+        # belirlenir (bkz. api.py::_build_llm). Burada bir seçim sunmak
+        # kullanıcıyı yanıltırdı — seçilen şey isteğe hiç yansımıyordu.
+        st.caption(
+            f"Sohbet, Bilimp API'sinin ({API_BASE_URL}) sunucu tarafı "
+            "LLM_PROVIDER ayarını kullanır (varsayılan: vLLM)."
         )
-        st.session_state.top_k = st.number_input(
-            "Bağlam (Chunk)", 1, 20, st.session_state.top_k, key="sb_topk"
-        )
-        st.session_state.threshold = st.slider(
-            "Benzerlik Eşiği", 0.0, 0.9, st.session_state.threshold, 0.05, key="sb_thresh"
-        )
-        with st.expander("📄 Chunk"):
-            st.session_state.chunk_size = st.number_input(
-                "Boyut", 500, 5000, st.session_state.chunk_size, key="sb_csize"
-            )
-            st.session_state.chunk_overlap = st.number_input(
-                "Örtüşme", 0, 1000, st.session_state.chunk_overlap, key="sb_coverlap"
-            )
 
-        # ── Sync ──────────────────────────────────────────────────────────────
-        if "registry_synced" not in st.session_state:
-            sync_registry()
-            st.session_state.registry_synced = True
+        # (v2.1) Chunk boyutu/örtüşmesi artık istemciden ayarlanamaz — belge
+        # yönetimi api.py'ye taşındığından, chunking document_ingestion_
+        # service.py'de SUNUCU tarafı sabitleriyle (_DEFAULT_CHUNK_SIZE/
+        # _DEFAULT_CHUNK_OVERLAP) yapılır; musteri_id gibi diğer sunucu-taraflı
+        # kararlarla AYNI ilkeyle, istek parametresi olarak sunulmaz.
 
         # ── Profile card (bottom) ─────────────────────────────────────────────
         st.markdown('<div style="margin-top:24px;"></div>', unsafe_allow_html=True)
@@ -1355,23 +703,23 @@ MANUAL_PROFILE = "⚙️ Özel Kullanıcı (Manuel Giriş Yap)"
 # kısıtlamalarına birebir oturur — tek tıkla profil değiştirme.
 MOCK_PROFILES = {
     "Genel Müdür (Kurumsal Satış)": {
-        "sirket": 14, "sube": 0, "mudurlu": 25, "birim": 0, "bina": 0,
+        "musteri": 501, "sirket": 14, "sube": 0, "mudurlu": 25, "birim": 0, "bina": 0,
         "pozisyon": 1, "ptype": 0, "kullanici": 0, "grup": "1",
     },
     "c.erdem (Analiz Destek - Özel Yetkili)": {
-        "sirket": 14, "sube": 0, "mudurlu": 55, "birim": 0, "bina": 0,
+        "musteri": 501, "sirket": 14, "sube": 0, "mudurlu": 55, "birim": 0, "bina": 0,
         "pozisyon": 0, "ptype": 0, "kullanici": 590, "grup": "",
     },
     "Yazılım Süreç Yöneticisi (Yazılım + Yönetim)": {
-        "sirket": 14, "sube": 0, "mudurlu": 13, "birim": 0, "bina": 0,
+        "musteri": 501, "sirket": 14, "sube": 0, "mudurlu": 13, "birim": 0, "bina": 0,
         "pozisyon": 0, "ptype": 0, "kullanici": 0, "grup": "101",
     },
     "Özlüce Kampüsü Çalışanı (Memur)": {
-        "sirket": 14, "sube": 0, "mudurlu": 0, "birim": 0, "bina": 16,
+        "musteri": 501, "sirket": 14, "sube": 0, "mudurlu": 0, "birim": 0, "bina": 16,
         "pozisyon": 0, "ptype": 1, "kullanici": 0, "grup": "",
     },
     MANUAL_PROFILE: {
-        "sirket": 0, "sube": 0, "mudurlu": 0, "birim": 0, "bina": 0,
+        "musteri": 0, "sirket": 0, "sube": 0, "mudurlu": 0, "birim": 0, "bina": 0,
         "pozisyon": 0, "ptype": 0, "kullanici": 0, "grup": "",
     },
 }
@@ -1381,6 +729,7 @@ MOCK_PROFILES = {
 # f_* widget'lara bağlıdır ve sayfadan ayrılınca purge olur; uc_* ise düz
 # session_state anahtarıdır ve sayfa değişse de kalıcıdır (kimlik korunur).
 _AUTH_FIELDS = [
+    ("f_musteri", "uc_musteri"),
     ("f_sirket", "uc_sirket"), ("f_sube", "uc_sube"), ("f_mudurlu", "uc_mudurlu"),
     ("f_birim", "uc_birim"), ("f_bina", "uc_bina"), ("f_pozisyon", "uc_pozisyon"),
     ("f_ptype", "uc_ptype"), ("f_kullanici", "uc_kullanici"), ("f_grup", "uc_grup"),
@@ -1394,6 +743,7 @@ def _apply_profile():
     if not name or name == MANUAL_PROFILE:
         return
     p = MOCK_PROFILES[name]
+    st.session_state.f_musteri   = p["musteri"]
     st.session_state.f_sirket    = p["sirket"]
     st.session_state.f_sube      = p["sube"]
     st.session_state.f_mudurlu   = p["mudurlu"]
@@ -1431,6 +781,12 @@ def page_auth():
         st.markdown('<div class="bilimp-card">', unsafe_allow_html=True)
         st.markdown('<div class="bilimp-card-title">Öznitelik Değerleri</div>', unsafe_allow_html=True)
 
+        st.number_input(
+            "Müşteri ID (zorunlu — fiziksel tenant sınırı)",
+            0, 99999, key="f_musteri",
+            help="Bilimp müşteri (hesap) kimliği. Sorgu yalnızca bu müşterinin "
+                 "koleksiyonunda çalışır; 0 bırakılırsa hiçbir belgeye erişilemez.",
+        )
         c1, c2 = st.columns(2)
         c1.number_input("Şirket ID",       0, 99999, key="f_sirket")
         c2.number_input("Şube ID",         0, 99999, key="f_sube")
@@ -1465,7 +821,8 @@ def page_auth():
 
         st.markdown('<div style="margin-top:16px;">', unsafe_allow_html=True)
         st.json({
-            "sirket_id":       uc.sirket_id,
+            "musteri_id":      uc.musteri_id,
+            "sirket_ids":      uc.sirket_ids,
             "sube_id":         uc.sube_id,
             "mudurluk_id":     uc.mudurluk_id,
             "birim_id":        uc.birim_id,
@@ -1482,62 +839,99 @@ def page_auth():
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE: AKILLI SOHBET
 # ══════════════════════════════════════════════════════════════════════════════
-def _build_llm():
-    """Seçili modele göre LangChain chat nesnesi kurar.
-
-    TEK MODEL mimarisi:
-      • "vLLM: ..."  → ChatOpenAI @ vLLM (gemma-4-12B-it). Sohbetin ANA modeli;
-                        contextual ve VLM de aynı modeli (requests ile) kullanır.
-      • "Gemini ..." → ChatGoogleGenerativeAI (bulut, opsiyonel).
+def _load_demo_private_key() -> str:
     """
-    sel = st.session_state.llm_option or ""
-    temp = st.session_state.temperature
-
-    if "vLLM" in sel:
-        model_id = sel.split(": ", 1)[1]
-        return ChatOpenAI(
-            model=model_id,
-            base_url=VLLM_BASE_URL,
-            api_key=VLLM_API_KEY,
-            temperature=temp,
-            max_tokens=VLLM_MAX_TOKENS,
-            streaming=True,
+    DEMO/TEST AMAÇLI: GERÇEK Bilimp entegrasyonunda bu imzalama adımı YOKTUR
+    — token'ı Bilimp'in kendi backend'i üretir ve istemciye verir; auth.py
+    yalnızca GENEL anahtarı (.env: JWT_PUBLIC_KEY) bilir, ÖZEL anahtarı asla
+    görmez (bkz. auth.py başlığı, RS256 notu). Bu Streamlit sayfası "Bilimp"
+    DEĞİL — bir iç test/demo aracı; api.py'yi GERÇEKTEN JWT'li çağırabilmek
+    için generate_test_keypair.py'nin ürettiği private_key.pem ile kendi test
+    token'larımızı burada imzalıyoruz (generate_test_token.py ile AYNI desen).
+    """
+    if not os.path.exists(API_JWT_PRIVATE_KEY_PATH):
+        raise RuntimeError(
+            f"'{API_JWT_PRIVATE_KEY_PATH}' bulunamadı. Önce çalıştırın: "
+            "`python generate_test_keypair.py` — ardından public_key.pem içeriğini "
+            ".env'deki JWT_PUBLIC_KEY değerine koyup api.py'yi yeniden başlatın."
         )
-    elif "Gemini" in sel:
-        key = st.session_state.api_key
-        if not key:
-            st.error("⚠️ Google API Key girilmedi. Sol menüden API anahtarınızı girin.")
-            return None
-        gemini_map = {
-            "Gemini 3.0 Flash": "gemini-3-flash-preview",
-        }
-        model_id = gemini_map.get(sel, "gemini-3-flash-preview")
-        return ChatGoogleGenerativeAI(model=model_id, google_api_key=key, temperature=temp)
-
-    st.error("⚠️ Geçerli bir model seçilmedi.")
-    return None
+    with open(API_JWT_PRIVATE_KEY_PATH) as f:
+        return f.read()
 
 
-def _stream_text(text: str):
-    for word in text.split(" "):
-        yield word + " "
-        time.sleep(0.04)
+def _sign_demo_user_jwt(uc: UserContext) -> str:
+    """Kullanıcı token'ı — POST /api/v1/query için (aud=JWT_AUDIENCE_QUERY)."""
+    private_key = _load_demo_private_key()
+    now = int(time.time())
+    payload = {
+        "iss": API_JWT_ISSUER,
+        "aud": API_JWT_AUDIENCE_QUERY,
+        "sub": str(uc.kullanici_id) if uc.kullanici_id is not None else "demo-kullanici",
+        "iat": now,
+        "exp": now + 3600,
+        "user_context": uc.model_dump(),
+    }
+    return pyjwt.encode(payload, private_key, algorithm="RS256")
 
 
-def _friendly_llm_error(e: Exception) -> str:
-    """LLM çağrısı hatalarını kullanıcı dostu Türkçe mesaja çevirir."""
+def _sign_demo_service_jwt(musteri_id: int) -> str:
+    """Servis token'ı — doküman/hedef kitle yönetim uçları için
+    (aud=JWT_AUDIENCE_ADMIN). musteri_id, Kimlik Girişi sayfasında seçilen
+    tenant'tır — bu demoda 'hangi müşterinin belgelerini yönettiğiniz' ile
+    'hangi müşterinin kullanıcısı gibi sorgu attığınız' AYNI seçimdir."""
+    private_key = _load_demo_private_key()
+    now = int(time.time())
+    payload = {
+        "iss": API_JWT_ISSUER,
+        "aud": API_JWT_AUDIENCE_ADMIN,
+        "sub": "bilimp-backend",
+        "musteri_id": musteri_id,
+        "iat": now,
+        "exp": now + 3600,
+    }
+    return pyjwt.encode(payload, private_key, algorithm="RS256")
+
+
+def _friendly_api_error(e: Exception) -> str:
+    """api.py çağrısı hatalarını kullanıcı dostu Türkçe mesaja çevirir."""
     msg = str(e).lower()
-    if "more system memory" in msg or "out of memory" in msg or "status code: 500" in msg:
-        return ("Model belleği doldu veya sunucu hata verdi. vLLM loglarını kontrol "
-                "edin; gerekirse `--max-model-len` düşürülebilir ya da bulut modeli "
-                "olarak Gemini seçilebilir.")
-    if "does not support tools" in msg:
-        return ("Seçili model araç çağırmayı (tool-calling) desteklemiyor. "
-                "Lütfen Gemini'yi seçin veya tool destekli bir model kullanın.")
-    if "connection" in msg or "refused" in msg or "max retries" in msg:
-        return ("Model servisine bağlanılamadı. vLLM sunucusunun (:8000) çalıştığından "
-                "veya Gemini API anahtarının doğru olduğundan emin olun.")
-    return f"Model yanıtı alınamadı: {e}"
+    if "connection" in msg or "refused" in msg or "max retries" in msg or "timeout" in msg:
+        return (f"Bilimp API'sine ({API_BASE_URL}) bağlanılamadı. Servisin çalıştığından "
+                "emin olun (örn. `uvicorn api:app --port 8001`).")
+    return f"API isteği başarısız: {e}"
+
+
+def _call_query_api(token: str, soru: str, gecmis: list[dict]) -> dict:
+    """POST /api/v1/query — auth.py + tenancy.py + rag_service.py'nin GERÇEK
+    zincirinden geçer. Streaming YOKTUR (API kontratı tam yanıt döner; bkz.
+    rag_service.answer_with_context docstring'i)."""
+    r = requests.post(
+        f"{API_BASE_URL}/api/v1/query",
+        headers={"Authorization": f"Bearer {token}"},
+        json={"soru": soru, "gecmis_mesajlar": gecmis},
+        timeout=180,
+    )
+    if r.status_code != 200:
+        try:
+            detay = r.json().get("mesaj", r.text)
+        except Exception:
+            detay = r.text
+        raise RuntimeError(f"API {r.status_code}: {detay}")
+    return r.json()
+
+
+def _kaynak_satiri(kaynak: dict, i: int) -> str:
+    """API'nin QuerySource şeması: dokuman_id/dosya_adi/sayfa/versiyon/skor —
+    chunk İÇERİĞİ dönmez (bkz. api_schemas.py). Bu kasıtlı bir API sözleşmesi
+    kararıdır (Bilimp'e ham chunk metni değil yalnızca kaynak künyesi verilir);
+    bu yüzden eski kaynak_onizleme() içerik önizlemesi burada YOKTUR."""
+    parca = (
+        f"**#{i+1}** &nbsp; 📄 `{kaynak.get('dosya_adi') or kaynak.get('dokuman_id')}` &nbsp; "
+        f"📊 Skor: `{kaynak.get('skor', 0.0):.4f}`"
+    )
+    if kaynak.get("sayfa"):
+        parca += f" &nbsp; 📖 Sayfa: `{kaynak['sayfa']}`"
+    return parca
 
 
 def page_chat():
@@ -1557,16 +951,10 @@ def page_chat():
         else:
             st.markdown('<div class="msg-ai"><div class="bubble-ai">', unsafe_allow_html=True)
             st.markdown(m["content"])
-            # Sources accordion
             if m.get("sources"):
                 with st.expander(f"🔍 Referans Kaynaklar ({len(m['sources'])})"):
-                    for i, doc in enumerate(m["sources"]):
-                        score = doc.metadata.get("score", 0.0)
-                        st.markdown(
-                            f"**#{i+1}** &nbsp; 📄 `{doc.metadata.get('source')}` &nbsp;"
-                            f"📊 Skor: `{score:.4f}`"
-                        )
-                        st.markdown(kaynak_onizleme(doc))
+                    for i, kaynak in enumerate(m["sources"]):
+                        st.markdown(_kaynak_satiri(kaynak, i))
                         if i < len(m["sources"]) - 1:
                             st.divider()
             st.markdown('</div></div>', unsafe_allow_html=True)
@@ -1580,240 +968,53 @@ def page_chat():
             unsafe_allow_html=True,
         )
 
-        llm = _build_llm()
-        if not llm:
-            return
+        # api_schemas.QueryRequest.gecmis_mesajlar: kronolojik, {rol, icerik},
+        # en fazla 20 mesaj. Az önce eklenen kullanıcı mesajı (bu turun kendisi)
+        # HARİÇ tutulur — o zaten ayrı 'soru' alanında gönderilir.
+        gecmis = []
+        for msg in st.session_state.messages[-21:-1]:
+            rol = "kullanici" if msg["role"] == "user" else "asistan"
+            icerik = (msg.get("content") or "").strip()
+            if icerik:
+                gecmis.append({"rol": rol, "icerik": icerik[:8000]})
 
-        client = get_qdrant_client()
-        if not client.collection_exists(COLLECTION_NAME):
-            st.error("Vektör veritabanı boş. Önce Belge Yönetimi sekmesinden belge yükleyin.")
-            return
-
-        # History for LLM
-        history = []
-        for msg in st.session_state.messages[-(10):]:
-            if msg["role"] == "user":
-                history.append(HumanMessage(content=msg["content"]))
-            elif msg["role"] == "assistant":
-                history.append(AIMessage(content=msg.get("content", "")))
-
-        @tool
-        def bilimp_knowledge_base(query: str):
-            """Bilimp AI Asistanı'nın şirket içi bilgi bankasında arama yapar."""
-            pass
-
-        identity_str = f"Kullanıcı öznitelikleri: {uc.model_dump()}"
-        system_prompt = f"""
-Sen Bilimp AI Asistanısın. Yalnızca şirket içi belgelere dayanarak soru-cevap yaparsın.
-{identity_str}
-
-KURALLAR:
-- Şirkete/işe dair HER TÜRLÜ olgu, liste, yemek listesi/menü, fiyat, rapor, tarih,
-  prosedür, kural veya veri sorusunda 'bilimp_knowledge_base' KULLAN.
-- Yalnızca selamlaşma/teşekkür veya kullanıcının kendi kimlik/bağlam bilgisi
-  sorularında 'bilimp_knowledge_base' KULLANMA.
-- ASLA şirkete özgü bilgi UYDURMA (yemek listesi, fiyat, tarih, prosedür vb.).
-  Bilgi belgelerde yoksa "Bu bilgi şirket belgelerinde bulunmuyor." de.
-- Her zaman nazik ve "siz" diliyle hitap et. Başka bir model olduğunu söyleme.
-"""
-
-        # ── Yönlendirme: KB araması mı, düz sohbet mi? ───────────────────────────
-        # Gemini tool-calling destekler. vLLM (gemma-4) bu akışta tool-calling'e
-        # sokulmaz → metin tabanlı sınıflandırma (router) ile yönlendiririz.
-        # supports_tools yalnızca Gemini seçiliyken True'dur.
-        supports_tools = "Gemini" in (st.session_state.llm_option or "")
-        use_kb = False
-        ai_msg = None
-
-        if supports_tools:
-            llm_with_tools = llm.bind_tools([bilimp_knowledge_base])
-            ai_msg = llm_with_tools.invoke(
-                [SystemMessage(content=system_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
-            )
-            use_kb = bool(ai_msg.tool_calls)
-        else:
-            router_prompt = (
-                "Aşağıdaki kullanıcı sorusunu sınıflandır.\n"
-                "- Soru herhangi bir bilgi, veri, liste, yemek listesi/menü, fiyat, rapor, "
-                "prosedür, kural, tarih veya şirkete/işe dair SOMUT bir olgu içeriyorsa "
-                "YALNIZCA 'KB' yaz.\n"
-                "- YALNIZCA selamlaşma, teşekkür, küçük sohbet ya da kullanıcının kendi "
-                "kimlik/bağlam bilgisi ise 'CHAT' yaz.\n"
-                "Emin değilsen 'KB' yaz. Sadece tek kelime döndür (KB veya CHAT).\n\n"
-                f"Soru: {prompt}"
-            )
-            try:
-                route = llm.invoke([HumanMessage(content=router_prompt)])
-                route_txt = route.content if isinstance(route.content, str) else str(route.content)
-                use_kb = "KB" in route_txt.strip().upper()
-            except Exception:
-                use_kb = True  # emin değilsek güvenli taraf: belgelere dayan
-
-        retrieved_docs: list = []
         final_response = ""
+        retrieved_docs: list = []
 
-        if use_kb:
-            with st.status("📚 Bilgi Bankası Taranıyor...", expanded=False) as s:
-                dense = get_dense_embeddings()
-                sparse = get_sparse_embeddings()
-                store = QdrantVectorStore(
-                    client=client, collection_name=COLLECTION_NAME,
-                    embedding=dense, vector_name="content",
-                    sparse_embedding=sparse, sparse_vector_name="sparse",
-                    retrieval_mode=RetrievalMode.HYBRID,
-                )
-                top_k = st.session_state.top_k
-                thresh = st.session_state.threshold
-                qdrant_filter = build_qdrant_abac_filter(uc)
-                results = store.similarity_search_with_score(prompt, k=top_k, filter=qdrant_filter)
-                for doc, score in results:
-                    if score >= thresh:
-                        doc.metadata["score"] = score
-                        retrieved_docs.append(doc)
-                s.update(label=f"✓ {len(retrieved_docs)} belge getirildi", state="complete")
+        with st.spinner("Bilimp API'sine soruluyor (auth + tenancy + ABAC + vLLM)..."):
+            try:
+                token = _sign_demo_user_jwt(uc)
+                sonuc = _call_query_api(token, prompt, gecmis)
+                durum = sonuc.get("durum")
+                final_response = sonuc.get("yanit", "")
+                retrieved_docs = sonuc.get("kaynaklar", []) or []
+                basarisiz = False
+            except Exception as e:
+                durum = None
+                final_response = _friendly_api_error(e)
+                basarisiz = True
 
-            # ── KESİN YETKİ GUARD-RAIL: 0-Context engelleme ───────────────────
-            # Kullanıcının erişebileceği hiçbir belge yoksa LLM'i TETİKLEME.
-            if not retrieved_docs:
-                deny_msg = "Bu konudaki kurumsal belgelere erişim yetkiniz bulunmamaktadır."
-                st.markdown(
-                    f'<div class="msg-ai"><div class="access-deny-strip">⛔ {deny_msg}</div></div>',
-                    unsafe_allow_html=True,
-                )
-                final_response = deny_msg
-            else:
-                context_str = "\n\n".join(
-                    f"[KAYNAK {i+1}] ({d.metadata.get('source', '?')})\n{d.page_content}"
-                    for i, d in enumerate(retrieved_docs)
-                )
-                answer_lang, q_lang, ctx_lang, lang_src = choose_answer_language(prompt, context_str)
-                lang_label = get_language_label(answer_lang)
-
-                st.markdown(
-                    f'<div class="lang-strip">📚 Dokümanlardan Yanıtlanıyor — {lang_label}</div>',
-                    unsafe_allow_html=True,
-                )
-
-                rag_prompt = f"""
-{build_language_policy_prompt(answer_lang)}
-Aşağıdaki şirket belgelerini kullanarak soruyu yanıtla.
-
-KESİN KURALLAR (halüsinasyon önleme):
-1. SADECE aşağıdaki BELGELER bölümündeki bilgilere dayan. Kendi genel bilgini
-   veya tahminini ASLA kullanma.
-2. Cevap belgelerde açıkça yoksa, uydurma yapma; aynen şunu söyle:
-   "Bu bilgi erişebildiğiniz şirket belgelerinde bulunmuyor."
-3. Tarih, liste, fiyat, isim gibi ayrıntıları yalnızca belgelerde yazıyorsa ver.
-   Belgede olmayan gün/öğün/tutar EKLEME.
-4. ZORUNLU: Cevabının EN SON satırına, tek başına şu formatta bir satır ekle:
-   KAYNAKLAR: <cevabında gerçekten bilgi kullandığın kaynak numaraları, virgülle>
-   Örnek: KAYNAKLAR: 1,3
-   Hiçbir kaynaktan bilgi kullanmadıysan (cevap belgelerde yoksa): KAYNAKLAR: YOK
-
-BELGELER:
-{context_str}
-"""
-                rag_msgs = [SystemMessage(content=rag_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
-                chat_placeholder = st.empty()
-                final_response = ""
-                llm_hata = False
-
-                # RAG Modu Akıllı Metin Akışı
-                try:
-                    for chunk in llm.stream(rag_msgs):
-                        content = chunk.content if hasattr(chunk, 'content') else str(chunk)
-                        final_response += content
-                        gosterim = re.split(r"\n?\s*KAYNAKLAR\s*:", final_response)[0]
-                        chat_placeholder.markdown(
-                            f'<div class="msg-ai"><div class="bubble-ai">{gosterim}</div></div>',
-                            unsafe_allow_html=True,
-                        )
-                except Exception as e:
-                    llm_hata = True
-                    final_response = _friendly_llm_error(e)
-                    chat_placeholder.markdown(
-                        f'<div class="msg-ai"><div class="access-deny-strip">⚠️ {final_response}</div></div>',
-                        unsafe_allow_html=True,
-                    )
-
-                # ── Kaynak ayıklama ──
-                # Model, cevabın sonunda hangi kaynakları GERÇEKTEN kullandığını
-                # "KAYNAKLAR: 1,3" / "KAYNAKLAR: YOK" satırıyla bildirir. Bu satır
-                # parse edilir, cevaptan silinir ve SADECE kullanılan kaynaklar
-                # listelenir. Model satırı yazmadıysa yedek: "bilgi yok" kalıpları
-                # taranır; onlar da yoksa geriye dönük uyumluluk için tümü gösterilir.
-                m_k = re.search(r"KAYNAKLAR\s*:\s*(.+?)\s*$",
-                                final_response, re.IGNORECASE | re.MULTILINE)
-                temiz_cevap = re.sub(r"\n?\s*KAYNAKLAR\s*:.*$", "",
-                                     final_response, flags=re.IGNORECASE | re.DOTALL).strip()
-                kullanilan = []
-                if llm_hata:
-                    kullanilan = []
-                elif m_k:
-                    bildirim = m_k.group(1).strip().upper()
-                    if "YOK" not in bildirim:
-                        nums = [int(x) for x in re.findall(r"\d+", bildirim)]
-                        kullanilan = [retrieved_docs[n - 1] for n in dict.fromkeys(nums)
-                                      if 1 <= n <= len(retrieved_docs)]
-                else:
-                    yok_kaliplari = ("bulunmuyor", "bilgim yok", "bilgi yok", "bilgi bulunmamaktadır",
-                                     "yer almamaktadır", "bulunamadı", "mevcut değil", "erişilemiyor")
-                    if not any(k in final_response.lower() for k in yok_kaliplari):
-                        kullanilan = retrieved_docs
-
-                if temiz_cevap and not llm_hata:
-                    final_response = temiz_cevap
-                    chat_placeholder.markdown(
-                        f'<div class="msg-ai"><div class="bubble-ai">{final_response}</div></div>',
-                        unsafe_allow_html=True,
-                    )
-                retrieved_docs = kullanilan
-
-                if retrieved_docs:
-                    with st.expander(f"🔍 Referans Kaynaklar ({len(retrieved_docs)})"):
-                        for i, doc in enumerate(retrieved_docs):
-                            score = doc.metadata.get("score", 0.0)
-                            st.markdown(f"**#{i+1}** &nbsp; 📄 `{doc.metadata.get('source')}` &nbsp; 📊 Skor: `{score:.4f}`")
-                            st.markdown(kaynak_onizleme(doc))
-                            if i < len(retrieved_docs) - 1:
-                                st.divider()
+        if basarisiz or durum != "basarili":
+            st.markdown(
+                f'<div class="msg-ai"><div class="access-deny-strip">⛔ {final_response}</div></div>',
+                unsafe_allow_html=True,
+            )
+            retrieved_docs = []
         else:
-            # Standart Sohbet Modu Akışı
-            st.markdown('<div class="lang-strip">💬 Sohbet Modu</div>', unsafe_allow_html=True)
-            chat_placeholder = st.empty()
-            final_response = ""
-
-            if ai_msg is not None and ai_msg.content:
-                # Gemini: tool çağrısı yapmadı, içerik zaten cevap → kelime kelime akıt
-                raw = ai_msg.content
-                text = raw if isinstance(raw, str) else (
-                    "".join(item.get("text", "") if isinstance(item, dict) else str(item) for item in raw)
-                    if isinstance(raw, list) else str(raw)
-                )
-                for word in text.split(" "):
-                    final_response += word + " "
-                    chat_placeholder.markdown(
-                        f'<div class="msg-ai"><div class="bubble-ai">{final_response}</div></div>',
-                        unsafe_allow_html=True,
-                    )
-                    time.sleep(0.02)
-            else:
-                # vLLM (gemma-4): taze sohbet yanıtı üret
-                chat_msgs = [SystemMessage(content=system_prompt)] + history[:-1] + [HumanMessage(content=prompt)]
-                try:
-                    for chunk in llm.stream(chat_msgs):
-                        content = chunk.content if hasattr(chunk, 'content') else str(chunk)
-                        final_response += content
-                        chat_placeholder.markdown(
-                            f'<div class="msg-ai"><div class="bubble-ai">{final_response}</div></div>',
-                            unsafe_allow_html=True,
-                        )
-                except Exception as e:
-                    final_response = _friendly_llm_error(e)
-                    chat_placeholder.markdown(
-                        f'<div class="msg-ai"><div class="access-deny-strip">⚠️ {final_response}</div></div>',
-                        unsafe_allow_html=True,
-                    )
+            st.markdown(
+                '<div class="lang-strip">📚 Bilimp API üzerinden yanıtlandı (JWT doğrulandı)</div>',
+                unsafe_allow_html=True,
+            )
+            st.markdown(
+                f'<div class="msg-ai"><div class="bubble-ai">{final_response}</div></div>',
+                unsafe_allow_html=True,
+            )
+            if retrieved_docs:
+                with st.expander(f"🔍 Referans Kaynaklar ({len(retrieved_docs)})"):
+                    for i, kaynak in enumerate(retrieved_docs):
+                        st.markdown(_kaynak_satiri(kaynak, i))
+                        if i < len(retrieved_docs) - 1:
+                            st.divider()
 
         # Mesajı geçmişe kaydetme ve ekranı tazeleme
         st.session_state.messages.append({
@@ -1882,6 +1083,29 @@ def _render_abac_builder():
         st.rerun()
 
 
+def _documents_api(method: str, path: str, token: str, json_body: dict | None = None):
+    """
+    api.py'nin doküman yönetim uçlarına (/api/v1/documents...) GERÇEK HTTP
+    isteği atar — servis token'ıyla, auth.verify_service_token'dan gerçekten
+    geçer. Bu, eski (v2.0) davranışın Qdrant'a DOĞRUDAN yazmasının yerini alır.
+
+    Dönüş: (basarili: bool, http_status: int, govde: dict|str)
+    """
+    try:
+        r = requests.request(
+            method, f"{API_BASE_URL}/api/v1/documents{path}",
+            headers={"Authorization": f"Bearer {token}"},
+            json=json_body, timeout=180,
+        )
+    except Exception as e:
+        return False, 0, _friendly_api_error(e)
+    try:
+        govde = r.json()
+    except Exception:
+        govde = r.text
+    return r.status_code in (200, 201), r.status_code, govde
+
+
 def page_documents():
     st.markdown('<p class="page-title">📂 Belge Yönetimi</p>', unsafe_allow_html=True)
     st.markdown('<p class="page-subtitle">Belge yükleyin ve ABAC erişim kurallarını tanımlayın.</p>',
@@ -1903,102 +1127,96 @@ def page_documents():
         if up_file:
             bytes_data = up_file.getvalue()
             f_name = up_file.name
-            curr_md5 = md5(bytes_data)
-            client = get_qdrant_client()
-
-            file_exists = hash_matches = False
-            if client.collection_exists(COLLECTION_NAME):
-                scroll, _ = client.scroll(collection_name=COLLECTION_NAME, limit=2000, with_payload=True)
-                for pt in scroll:
-                    meta = pt.payload.get("metadata", {})
-                    if meta.get("source") == f_name:
-                        file_exists = True
-                        hash_matches = meta.get("file_hash") == curr_md5
-                        break
-
-            if file_exists and hash_matches:
-                st.warning(f"⚠️ **{f_name}** zaten güncel durumda.")
-            elif file_exists:
-                st.info(f"🔄 **{f_name}** güncellenecek (içerik değişmiş).")
-            else:
-                st.success(f"✅ **{f_name}** sisteme hazır.")
+            st.success(f"✅ **{f_name}** yüklenmeye hazır ({len(bytes_data) / 1024:.1f} KB).")
 
         st.divider()
         _render_abac_builder()
         st.divider()
 
         if up_file:
+            uc = get_user_context()
+            if not uc.musteri_id:
+                st.warning("⚠️ Önce 'Kimlik Girişi' sayfasından bir Müşteri ID girin — "
+                           "servis token'ı hangi tenant'ta işlem yapılacağını bundan alır.")
+
             col_btn, _ = st.columns([2, 1])
             with col_btn:
-                if st.button("🚀 Sisteme Entegre Et ve Yayınla", type="primary", use_container_width=True):
+                if st.button("🚀 api.py Üzerinden Yayınla", type="primary",
+                             use_container_width=True, disabled=not uc.musteri_id):
                     audience_policy = build_policy_from_ui(st.session_state.audience_rules)
                     if audience_policy.is_empty():
                         st.error("❌ En az bir geçerli erişim kuralı tanımlanmalıdır. Boş kayıt sisteme kabul edilmez.")
-                    elif file_exists and hash_matches:
-                        st.info("Belge zaten güncel.")
                     else:
+                        # (v2.1) Belge yönetimi artık Qdrant'a DOĞRUDAN yazmaz —
+                        # auth.py'nin servis token doğrulamasından, tenancy.py'nin
+                        # fiziksel tenant izolasyonundan ve document_ingestion_
+                        # service.py'nin GERÇEK Docling+VLM+contextual pipeline'ından
+                        # (vllm_ingestion.py) geçmesi için api.py'yi HTTP ile çağırır.
+                        kullanici_id = uc.kullanici_id or 1
                         audience_dict = audience_policy.model_dump()
-                        with st.status("🔄 İşleniyor...", expanded=True) as s:
+                        icerik_b64 = base64.b64encode(bytes_data).decode()
+
+                        with st.status("🔄 api.py'ye gönderiliyor...", expanded=True) as s:
                             try:
-                                ensure_ctx_model()   # gemma/vlm kurulu değilse sessiz boş bağlam yerine burada dur
+                                token = _sign_demo_service_jwt(uc.musteri_id)
                             except RuntimeError as e:
                                 s.update(label=f"❌ {e}", state="error")
                                 st.stop()
-                            with tempfile.NamedTemporaryFile(
-                                delete=False, suffix=os.path.splitext(f_name)[1]
-                            ) as tmp:
-                                tmp.write(bytes_data)
-                                tmp_path = tmp.name
-                            prog = st.progress(0.0, text="Başlatılıyor...")
-                            s.write("Koleksiyon hazırlanıyor...")
-                            init_collection()
-                            os.makedirs(OUTPUT_DIR, exist_ok=True)
-                            prog.progress(0.10, text="Belge işleniyor (Docling + VLM görsel analizi)...")
-                            s.write("Belge işleniyor (Docling + VLM görsel analizi)...")
-                            full_md = belge_to_md(tmp_path, OUTPUT_DIR, orijinal_ad=f_name)
-                            prog.progress(0.50, text="Chunklanıyor (başlık-tabanlı + tablo-atomik)...")
-                            s.write("Chunklanıyor (başlık-tabanlı + tablo-atomik)...")
-                            chunks = chunk_md(
-                                full_md, f_name,
-                                st.session_state.chunk_size,
-                                st.session_state.chunk_overlap,
-                                audience_dict,
+
+                            s.write(f"'{f_name}' bu tenant'ta mevcut mu kontrol ediliyor (GET /audience)...")
+                            var_mi, durum_kodu, mevcut = _documents_api(
+                                "GET", f"/{f_name}/audience", token
                             )
-                            prog.progress(0.55, text=f"Contextual bağlam üretiliyor (0/{len(chunks)})...")
-                            s.write(f"{len(chunks)} chunk için contextual bağlam üretiliyor ({CTX_MODEL})...")
-                            chunks, ctx_added = add_contextual(
-                                chunks, full_md, f_name,
-                                on_progress=lambda i, n: prog.progress(
-                                    0.55 + 0.35 * (i / n),
-                                    text=f"Contextual bağlam üretiliyor ({i}/{n})...",
-                                ),
-                            )
-                            if ctx_added < len(chunks):
-                                s.write(f"⚠️ {len(chunks) - ctx_added} chunk bağlamsız kaldı (vLLM loglarına bak).")
-                            os.unlink(tmp_path)
-                            if chunks:
-                                prog.progress(0.92, text=f"{len(chunks)} chunk Qdrant'a yükleniyor...")
-                                s.write(f"{len(chunks)} chunk Qdrant'a yükleniyor...")
-                                delete_by_source(f_name)   # eskiler ancak yeni chunk'lar HAZIRKEN silinir
-                                add_documents_to_qdrant(chunks, file_hash=curr_md5)
-                                # MD'nin yanına chunk kontrol dosyasını da yaz
-                                stem_ = os.path.splitext(f_name)[0]
-                                chunks_txt = write_chunks_txt(chunks, OUTPUT_DIR, stem_)
-                                s.write(f"Chunk kontrol dosyası yazıldı: {chunks_txt}")
-                                prog.progress(1.0, text="Tamamlandı ✓")
-                                reg = load_registry()
-                                reg[f_name] = {
-                                    "hash": curr_md5,
-                                    "audience": audience_dict,
-                                    "updated_at": str(time.time()),
-                                }
-                                save_registry(reg)
-                                s.update(label=f"✅ {len(chunks)} chunk yüklendi!", state="complete")
-                                st.toast("Belge sisteme entegre edildi!", icon="🎉")
+
+                            if not var_mi and durum_kodu == 404:
+                                s.write("Yeni doküman oluşturuluyor — Docling dönüşümü + VLM görsel "
+                                        "açıklama + contextual bağlam (vLLM üzerinden, POST /documents)...")
+                                basarili, sk, govde = _documents_api(
+                                    "POST", "", token,
+                                    {
+                                        "dokuman_id": f_name,
+                                        "dosya_icerigi_base64": icerik_b64,
+                                        "audience_policy": audience_dict,
+                                        "yukleyen_kullanici_id": kullanici_id,
+                                    },
+                                )
+                            elif var_mi:
+                                icerik_versiyonu = mevcut.get("icerik_versiyonu") or 1
+                                audience_versiyonu = mevcut.get("audience_versiyon", 1)
+                                s.write(f"Mevcut belge güncelleniyor (PUT /content, "
+                                        f"beklenen_versiyon={icerik_versiyonu})...")
+                                basarili, sk, govde = _documents_api(
+                                    "PUT", f"/{f_name}/content", token,
+                                    {
+                                        "dosya_icerigi_base64": icerik_b64,
+                                        "beklenen_versiyon": icerik_versiyonu,
+                                        "degistiren_kullanici_id": kullanici_id,
+                                    },
+                                )
+                                if basarili:
+                                    s.write("Hedef kitle politikası güncelleniyor (PUT /audience)...")
+                                    aud_ok, aud_sk, aud_govde = _documents_api(
+                                        "PUT", f"/{f_name}/audience", token,
+                                        {
+                                            "audience_policy": audience_dict,
+                                            "beklenen_audience_versiyon": audience_versiyonu,
+                                            "degistiren_kullanici_id": kullanici_id,
+                                        },
+                                    )
+                                    if not aud_ok:
+                                        s.write(f"⚠️ İçerik güncellendi ama hedef kitle güncellenemedi "
+                                                f"({aud_sk}): {aud_govde}")
+                            else:
+                                basarili, sk, govde = False, durum_kodu, mevcut
+
+                            if basarili:
+                                s.update(label=f"✅ '{f_name}' api.py üzerinden yayınlandı! "
+                                              f"({govde})", state="complete")
+                                st.toast("Belge api.py üzerinden sisteme entegre edildi!", icon="🎉")
                                 time.sleep(0.8)
                                 st.rerun()
                             else:
-                                s.update(label="❌ Belge ayrıştırılamadı.", state="error")
+                                s.update(label=f"❌ API hatası ({sk}): {govde}", state="error")
 
         st.markdown('</div>', unsafe_allow_html=True)
 
@@ -2012,24 +1230,37 @@ def page_documents():
             unsafe_allow_html=True,
         )
 
+        # (v2.1) api.py'nin doküman uçlarında "tüm belgeleri listele" karşılığı
+        # bir uç YOKTUR (API Kontrat Dokümanı v0.1 kasıtlı olarak yalnızca
+        # tekil doküman/audience-compliance-report uçları sunar — Bilimp
+        # kendi doküman listesini kendi tutar). Bu yüzden bu panel Qdrant'ı
+        # DOĞRUDAN (salt-okunur) tarar; bu, hiçbir yazma işlemi yapmadığından
+        # auth/tenancy güvenlik sınırını ihlal etmez, yalnızca API'nin
+        # sunmadığı bir kolaylık görünümüdür. Doğru tenant koleksiyonu (API'nin
+        # GERÇEKTEN yazdığı yer) tenancy.py ile AYNI kuralla çözümlenir.
+        uc = get_user_context()
         client = get_qdrant_client()
         doc_map: dict[str, dict] = {}
 
-        if client.collection_exists(COLLECTION_NAME):
-            scroll, _ = client.scroll(collection_name=COLLECTION_NAME, limit=2000, with_payload=True)
-            for pt in scroll:
-                meta = pt.payload.get("metadata", {})
-                src = meta.get("source", "")
-                if src and src not in doc_map:
-                    doc_map[src] = {
-                        "audience": meta.get("audience", {}),
-                        "file_type": meta.get("file_type", "?"),
-                    }
+        if uc.musteri_id:
+            collection = tenant_registry.collection_name(uc.musteri_id)
+            if client.collection_exists(collection):
+                scroll, _ = client.scroll(collection_name=collection, limit=2000, with_payload=True)
+                for pt in scroll:
+                    meta = pt.payload.get("metadata", {})
+                    src = meta.get("source", "")
+                    if src and src not in doc_map:
+                        doc_map[src] = {
+                            "audience": meta.get("audience", {}),
+                            "file_type": meta.get("file_type", "?"),
+                            "versiyon": meta.get("versiyon", 1),
+                        }
 
-        if not doc_map:
-            st.info("Henüz belge yüklenmemiş.")
+        if not uc.musteri_id:
+            st.info("Belgeleri görmek için önce 'Kimlik Girişi' sayfasından bir Müşteri ID girin.")
+        elif not doc_map:
+            st.info("Bu müşteride henüz belge yüklenmemiş.")
         else:
-            uc = get_user_context()
             for fname, info in doc_map.items():
                 audience_data = info.get("audience", {})
                 try:
@@ -2056,9 +1287,21 @@ def page_documents():
 </div>""", unsafe_allow_html=True)
                 with col_del:
                     st.markdown('<div class="del-btn">', unsafe_allow_html=True)
-                    if st.button("🗑", key=f"del_{fname}", help="Belgeyi sil"):
-                        delete_document_globally(fname)
-                        st.rerun()
+                    if st.button("🗑", key=f"del_{fname}", help="Belgeyi api.py üzerinden sil"):
+                        service_token = _sign_demo_service_jwt(uc.musteri_id)
+                        kullanici_id = uc.kullanici_id or 1
+                        basarili, sk, govde = _documents_api(
+                            "DELETE", f"/{fname}", service_token,
+                            {
+                                "beklenen_versiyon": info.get("versiyon", 1),
+                                "degistiren_kullanici_id": kullanici_id,
+                            },
+                        )
+                        if basarili:
+                            st.toast(f"'{fname}' api.py üzerinden silindi.", icon="🗑")
+                            st.rerun()
+                        else:
+                            st.error(f"❌ Silme başarısız ({sk}): {govde}")
                     st.markdown('</div>', unsafe_allow_html=True)
 
         st.markdown('</div>', unsafe_allow_html=True)
