@@ -185,19 +185,28 @@ def create_document(
     dense_embeddings,
     sparse_embeddings,
     reference_collection: str,
+    allow_empty: bool = False,
 ) -> DocumentWriteResult:
     """
     Yeni bir dokümanı, hedef kitle politikasıyla BİRLİKTE, tek istekte
-    oluşturur (Teracity madde 2'nin temel talebi).
+    oluşturur.
 
-    reference_collection: Bu tenant'ın koleksiyonu HENÜZ yoksa (bu şirket
+    reference_collection: Bu tenant'ın koleksiyonu HENÜZ yoksa (bu müşteri
     için ilk doküman yükleniyorsa), vektör şemasını (boyut/mesafe metriği/
     sparse config) kopyalamak için kullanılacak var olan bir koleksiyonun
     adı — bkz. tenancy.TenantCollectionProvisioner. Bu olmadan QdrantVectorStore
-    kurulumu, koleksiyon yok diye 404 ile çöker (bu düzeltilen gerçek hataydı).
+    kurulumu, koleksiyon yok diye 404 ile çöker.
+
+    allow_empty: audience_policy boşsa (hiç kural yok veya tüm kurallar boş)
+    doküman oluşturulduğu anda hiçbir kullanıcı tarafından görülemez hale
+    gelir (deny-by-default). Bu, update_document_audience'daki aynı
+    korumanın (madde 12) create ucuna genişletilmiş halidir — Teracity'nin
+    bulgusu: create ucunda bu koruma hiç yoktu, boş politikayla oluşturulan
+    bir doküman sessizce "görünmez" kalabiliyordu.
 
     Hatalar:
       DocumentIngestionError("already_exists") — bu tenant'ta aynı dokuman_id zaten var
+      DocumentIngestionError("empty_rules")    — politika boş ve allow_empty=False
       DocumentIngestionError("too_large")      — dosya MAX_FILE_SIZE_BYTES'ı aşıyor
       DocumentIngestionError("chunking_failed") — chunker.py hiç chunk üretemedi
     """
@@ -207,7 +216,14 @@ def create_document(
             f"Dosya {MAX_FILE_SIZE_BYTES // (1024*1024)} MB sınırını aşıyor.",
         )
 
-    # Tenant koleksiyonu henüz provizyon edilmemiş olabilir (bu şirket için
+    if audience_policy.is_empty() and not allow_empty:
+        raise DocumentIngestionError(
+            "empty_rules",
+            "Hedef kitle politikası boş; bu doküman hiçbir kullanıcı tarafından "
+            "görülemez hale gelir. Kasıtlıysa allow_empty=True ile onaylayın.",
+        )
+
+    # Tenant koleksiyonu henüz provizyon edilmemiş olabilir (bu müşteri için
     # ilk doküman). Yazma işleminden ÖNCE var olduğundan emin olunur.
     provisioner = TenantCollectionProvisioner(client, reference_collection=reference_collection)
     created = provisioner.ensure_exists(collection)
@@ -327,17 +343,43 @@ def update_document_content(
 # ══════════════════════════════════════════════════════════════════════════════
 # 3) Doküman Silme
 # ══════════════════════════════════════════════════════════════════════════════
-def delete_document(client: QdrantClient, collection: str, dokuman_id: str) -> int:
+def delete_document(
+    client: QdrantClient, collection: str, dokuman_id: str,
+    beklenen_versiyon: int, degistiren_kullanici_id: int,
+) -> int:
     """
     Bir dokümanın TÜM indeks noktalarını kalıcı olarak siler.
-    Dönüş: silinen nokta sayısı.
-    Hatalar: DocumentIngestionError("not_found")
-    """
-    point_ids = _points_for_document(client, collection, dokuman_id)
-    if not point_ids:
-        raise DocumentIngestionError("not_found", f"'{dokuman_id}' bu tenant'ta bulunamadı.")
 
+    Bu, geri alınamaz bir işlemdir; bu yüzden diğer yazma uçlarıyla (içerik
+    güncelleme, hedef kitle güncelleme) AYNI iki korumayı taşır — Teracity'nin
+    bulgusu: DELETE bu ikisinden muaftı, en yıkıcı işlem en az korumalıydı.
+
+      1. Optimistic locking: beklenen_versiyon mevcut içerik sürümüyle
+         eşleşmezse istek reddedilir (409) — yanlış/bayat bir sürüme
+         dayanarak yanlışlıkla güncel bir dokümanın silinmesini önler.
+      2. Denetim kaydı: degistiren_kullanici_id loglanır — "bu dokümanı
+         kim, ne zaman sildi" sorusu her zaman cevaplanabilir kalır.
+
+    Dönüş: silinen nokta sayısı.
+    Hatalar:
+      DocumentIngestionError("not_found")
+      DocumentIngestionError("version_conflict")
+    """
+    mevcut_versiyon = _current_version(client, collection, dokuman_id)
+    if mevcut_versiyon is None:
+        raise DocumentIngestionError("not_found", f"'{dokuman_id}' bu tenant'ta bulunamadı.")
+    if mevcut_versiyon != beklenen_versiyon:
+        raise DocumentIngestionError(
+            "version_conflict",
+            f"Beklenen sürüm {beklenen_versiyon}, mevcut sürüm {mevcut_versiyon}. "
+            "Doküman aranızda başka biri tarafından güncellenmiş olabilir; "
+            "güncel sürümü GET /audience ile kontrol edip tekrar deneyin.",
+        )
+
+    point_ids = _points_for_document(client, collection, dokuman_id)
     _delete_points(client, collection, point_ids)
-    logger.info("dokuman_silindi dokuman=%s koleksiyon=%s nokta_sayisi=%d",
-                dokuman_id, collection, len(point_ids))
+    logger.info(
+        "dokuman_silindi dokuman=%s koleksiyon=%s degistiren_kullanici_id=%s nokta_sayisi=%d",
+        dokuman_id, collection, degistiren_kullanici_id, len(point_ids),
+    )
     return len(point_ids)

@@ -38,11 +38,21 @@ class OrphanedDocument:
 
 @dataclass
 class AudienceInfo:
-    """(Faz 4 / madde 11) get_document_audience'ın yapılandırılmış dönüşü —
-    politika ile birlikte optimistic locking için gereken audience_versiyon'u
-    da taşır."""
+    """get_document_audience'ın yapılandırılmış dönüşü — politika ve
+    optimistic locking için gereken audience_versiyon'un yanı sıra, dokümanın
+    o anki İÇERİK sürümünü (icerik_versiyonu) de taşır.
+
+    icerik_versiyonu eklenmesinin nedeni: PUT /documents/{id}/content
+    (document_ingestion_service.update_document_content) 'beklenen_versiyon'
+    talep eder ve dokümanda "güncel sürüm GET /audience ile öğrenilebilir"
+    denir — ama audience_versiyon ile içerik versiyonu KASITLI OLARAK ayrı
+    sayaçlardır (biri politika, diğeri içerik değişikliğini izler). Yalnızca
+    audience_versiyon döndürülürse, 409 sonrası "güncel içerik sürümünü
+    öğren, tekrar dene" kurtarma akışı hiç kodlanamaz. Bu alan tam olarak bu
+    boşluğu kapatır."""
     policy: dict              # ham audience dict, örn. {"rules": [...]}
     audience_versiyon: int
+    icerik_versiyonu: Optional[int] = None
 
 
 class AudienceUpdateError(Exception):
@@ -157,14 +167,14 @@ def update_document_audience(
 
     yeni_versiyon = mevcut_versiyon + 1
 
-    # ÖNEMLİ (düzeltilen hata): Qdrant'ın set_payload'ı, 'key' verildiğinde
-    # 'payload' parametresinin HER ZAMAN bir sözlük olmasını ister — bu
-    # sözlüğün alanları, 'key'in gösterdiği nesnenin İÇİNE birleştirilir
-    # (üstteki kardeş alanları etkilemeden). Bu yüzden ham bir sayıyı
-    # (audience_versiyon gibi) doğrudan payload olarak vermek geçersizdir;
-    # bunun yerine bir üst seviyeye (metadata) çıkıp iki alanı TEK bir
-    # birleştirme çağrısında güncelliyoruz — source/versiyon/file_hash gibi
-    # kardeş alanlar bu birleştirmeden etkilenmez.
+    # ÖNEMLİ: Qdrant'ın set_payload'ı, 'key' verildiğinde 'payload'
+    # parametresinin HER ZAMAN bir sözlük olmasını ister — bu sözlüğün
+    # alanları, 'key'in gösterdiği nesnenin İÇİNE birleştirilir (üstteki
+    # kardeş alanları etkilemeden). Bu yüzden ham bir sayıyı (audience_versiyon
+    # gibi) doğrudan payload olarak vermek geçersizdir; bunun yerine bir üst
+    # seviyeye (metadata) çıkıp iki alanı TEK bir birleştirme çağrısında
+    # güncelliyoruz — source/versiyon/file_hash gibi kardeş alanlar bu
+    # birleştirmeden etkilenmez.
     client.set_payload(
         collection_name=collection,
         payload={"audience": policy.model_dump(), "audience_versiyon": yeni_versiyon},
@@ -305,10 +315,11 @@ def get_document_audience(
     client: QdrantClient, collection: str, source: str
 ) -> Optional[AudienceInfo]:
     """
-    Bir dokümanın mevcut audience politikasını ve sürümünü döndürür (GET
-    endpoint'i için). audience_versiyon, PUT /audience'daki optimistic
-    locking için gereklidir (bkz. update_document_audience). Doküman yoksa
-    None.
+    Bir dokümanın mevcut audience politikasını, hedef kitle sürümünü VE
+    içerik sürümünü döndürür (GET endpoint'i için). audience_versiyon,
+    PUT /audience'daki optimistic locking için; icerik_versiyonu ise
+    PUT /content'teki optimistic locking için kullanılır (bkz. AudienceInfo
+    docstring'i). Doküman yoksa None.
     """
     if not client.collection_exists(collection):
         return None  # Tenant koleksiyonu yok → doküman da yok.
@@ -327,4 +338,5 @@ def get_document_audience(
     return AudienceInfo(
         policy=meta.get("audience", {"rules": []}),
         audience_versiyon=meta.get("audience_versiyon", 1),
+        icerik_versiyonu=meta.get("versiyon"),
     )

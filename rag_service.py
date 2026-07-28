@@ -19,10 +19,6 @@ from prompts import build_rag_prompt, build_labeled_context
 from language_utils import choose_answer_language, build_language_policy_prompt
 from tenancy import TenantRegistry, resolve_tenant_collection
 
-# Seviye C mimarisinde tenant sınırı koleksiyon seçimiyle sağlanır; bu alan
-# artık koleksiyon içinde anlamsızdır (bkz. tenancy.py modül dokümantasyonu).
-_TENANT_ISOLATED_FIELDS = frozenset({"sirket_ids"})
-
 
 @dataclass
 class RagResult:
@@ -66,8 +62,13 @@ def retrieve_authorized_docs(
     """
     (RAG madde 9 / güvenlik) ABAC pre-filter ile SADECE kullanıcının erişebildiği
     belgeleri getirir. Erişim kontrolü iki katmanlıdır:
-      1. Fiziksel: sorgu yalnızca kullanıcının kendi tenant koleksiyonuna gider.
-      2. Mantıksal: koleksiyon içinde ABAC filtresi (şube/müdürlük/bina/...) uygulanır.
+      1. Fiziksel: sorgu yalnızca kullanıcının kendi müşterisinin (musteri_id)
+         koleksiyonuna gider — bkz. tenancy.py.
+      2. Mantıksal: koleksiyon içinde ABAC filtresi (şirket/şube/müdürlük/
+         bina/...) uygulanır. sirket_ids (v2.0'dan itibaren) bu filtreye
+         TAM OLARAK katılır — artık koleksiyon seçimiyle örtüşen yedek bir
+         alan değil, gerçek bir erişim kısıtlamasıdır (bir müşterinin
+         birden fazla şirketi olabilir).
     LLM'e asla yetkisiz belge ulaşmaz.
 
     Not: 'question' parametresi burada DOĞRUDAN arama metni olarak kullanılır
@@ -76,7 +77,7 @@ def retrieve_authorized_docs(
     fonksiyon "history" kavramını bilerek bilmez (SRP): yalnızca "hangi
     metinle arama yapılacağı" ile ilgilenir.
     """
-    collection = resolve_tenant_collection(tenant_registry, user.sirket_id)
+    collection = resolve_tenant_collection(tenant_registry, user.musteri_id)
 
     if not client.collection_exists(collection):
         # Tenant için henüz hiç doküman yüklenmemiş (koleksiyon provizyon
@@ -90,7 +91,7 @@ def retrieve_authorized_docs(
         sparse_embedding=sparse_embeddings, sparse_vector_name="sparse",
         retrieval_mode=RetrievalMode.HYBRID,
     )
-    qdrant_filter = build_qdrant_abac_filter(user, exclude_fields=_TENANT_ISOLATED_FIELDS)
+    qdrant_filter = build_qdrant_abac_filter(user)
     results = store.similarity_search_with_score(question, k=top_k, filter=qdrant_filter)
 
     docs = []

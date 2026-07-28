@@ -43,7 +43,7 @@ class TestCreateDocument:
              patch("document_ingestion_service.QdrantVectorStore") as MockStore:
             mock_store = MockStore.return_value
             result = create_document(
-                client=client, collection="tubitak1505_sirket_14",
+                client=client, collection="tubitak1505_musteri_501",
                 dokuman_id="rapor.pdf", file_bytes=b"sahte pdf icerigi",
                 file_ext=".pdf",
                 audience_policy=AudiencePolicy(rules=[AudienceRule(sirket_ids=[14])]),
@@ -58,14 +58,14 @@ class TestCreateDocument:
 
     def test_provisions_tenant_collection_if_missing(self):
         """
-        (Bug fix) Bu tenant için ilk doküman yükleniyorsa (koleksiyon henüz
+        (Bug fix) Bu müşteri için ilk doküman yükleniyorsa (koleksiyon henüz
         yoksa), referans koleksiyonun şeması kopyalanarak otomatik
         oluşturulmalı — QdrantVectorStore kurulumu 404 ile çökmemeli.
         """
         client = MagicMock()
 
         def collection_exists_side_effect(name):
-            return name != "tubitak1505_sirket_99"   # yalnızca tenant koleksiyonu yok
+            return name != "tubitak1505_musteri_999"   # yalnızca tenant koleksiyonu yok
 
         client.collection_exists.side_effect = collection_exists_side_effect
         client.scroll.return_value = ([], None)
@@ -78,7 +78,7 @@ class TestCreateDocument:
         with patch("document_ingestion_service.chunk_text", return_value=_fake_chunks(1)), \
              patch("document_ingestion_service.QdrantVectorStore"):
             create_document(
-                client=client, collection="tubitak1505_sirket_99",
+                client=client, collection="tubitak1505_musteri_999",
                 dokuman_id="ilk_belge.pdf", file_bytes=b"icerik", file_ext=".pdf",
                 audience_policy=AudiencePolicy(rules=[AudienceRule(sirket_ids=[99])]),
                 dense_embeddings=MagicMock(), sparse_embeddings=MagicMock(),
@@ -86,7 +86,7 @@ class TestCreateDocument:
             )
 
         client.create_collection.assert_called_once_with(
-            collection_name="tubitak1505_sirket_99",
+            collection_name="tubitak1505_musteri_999",
             vectors_config={"content": "FAKE_DENSE"},
             sparse_vectors_config={"sparse": "FAKE_SPARSE"},
         )
@@ -99,11 +99,12 @@ class TestCreateDocument:
 
         with pytest.raises(DocumentIngestionError) as exc_info:
             create_document(
-                client=client, collection="tubitak1505_sirket_14",
+                client=client, collection="tubitak1505_musteri_501",
                 dokuman_id="rapor.pdf", file_bytes=b"icerik", file_ext=".pdf",
                 audience_policy=AudiencePolicy(), dense_embeddings=MagicMock(),
                 sparse_embeddings=MagicMock(),
                 reference_collection="Tubitak_Dokumanlar_Hybrid",
+                allow_empty=True,
             )
         assert exc_info.value.code == "already_exists"
 
@@ -132,6 +133,7 @@ class TestCreateDocument:
                     audience_policy=AudiencePolicy(), dense_embeddings=MagicMock(),
                     sparse_embeddings=MagicMock(),
                     reference_collection="Tubitak_Dokumanlar_Hybrid",
+                    allow_empty=True,
                 )
         assert exc_info.value.code == "chunking_failed"
 
@@ -149,6 +151,7 @@ class TestCreateDocument:
                 audience_policy=AudiencePolicy(), dense_embeddings=MagicMock(),
                 sparse_embeddings=MagicMock(),
                 reference_collection="Tubitak_Dokumanlar_Hybrid",
+                allow_empty=True,
             )
         mock_pptx.assert_called_once()
         mock_text.assert_not_called()
@@ -247,13 +250,22 @@ class TestUpdateDocumentContent:
 
 
 class TestDeleteDocument:
+    def _fake_point(self, point_id, versiyon=1):
+        p = MagicMock()
+        p.id = point_id
+        p.payload = {"metadata": {"versiyon": versiyon, "source": "rapor.pdf"}}
+        return p
+
     def test_successful_deletion(self):
         client = MagicMock()
         client.collection_exists.return_value = True
-        p1, p2 = MagicMock(id="a"), MagicMock(id="b")
+        p1, p2 = self._fake_point("a", versiyon=1), self._fake_point("b", versiyon=1)
         client.scroll.return_value = ([p1, p2], None)
 
-        count = delete_document(client, "c", "rapor.pdf")
+        count = delete_document(
+            client, "c", "rapor.pdf",
+            beklenen_versiyon=1, degistiren_kullanici_id=42,
+        )
 
         assert count == 2
         client.delete.assert_called_once()
@@ -263,5 +275,22 @@ class TestDeleteDocument:
         client.collection_exists.return_value = False
 
         with pytest.raises(DocumentIngestionError) as exc_info:
-            delete_document(client, "c", "yok.pdf")
+            delete_document(
+                client, "c", "yok.pdf",
+                beklenen_versiyon=1, degistiren_kullanici_id=42,
+            )
         assert exc_info.value.code == "not_found"
+
+    def test_rejects_on_version_mismatch(self):
+        """(madde 5) DELETE artık diğer yazma uçlarıyla aynı optimistic
+        locking korumasına tabi."""
+        client = MagicMock()
+        client.collection_exists.return_value = True
+        client.scroll.return_value = ([self._fake_point("a", versiyon=5)], None)
+
+        with pytest.raises(DocumentIngestionError) as exc_info:
+            delete_document(
+                client, "c", "rapor.pdf",
+                beklenen_versiyon=1, degistiren_kullanici_id=42,   # gerçek sürüm 5
+            )
+        assert exc_info.value.code == "version_conflict"

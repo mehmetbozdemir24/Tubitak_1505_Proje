@@ -21,8 +21,8 @@ from tenancy import (
 class TestConventionTenantRegistry:
     def test_collection_name_deterministic(self):
         registry = ConventionTenantRegistry()
-        assert registry.collection_name(14) == "tubitak1505_sirket_14"
-        assert registry.collection_name(18) == "tubitak1505_sirket_18"
+        assert registry.collection_name(14) == "tubitak1505_musteri_14"
+        assert registry.collection_name(18) == "tubitak1505_musteri_18"
 
     def test_different_tenants_get_different_collections(self):
         registry = ConventionTenantRegistry()
@@ -32,44 +32,44 @@ class TestConventionTenantRegistry:
         registry = ConventionTenantRegistry()
         assert registry.collection_name(14) == registry.collection_name(14)
 
-    def test_rejects_negative_sirket_id(self):
+    def test_rejects_negative_tenant_id(self):
         registry = ConventionTenantRegistry()
         with pytest.raises(ValueError):
             registry.collection_name(-1)
 
-    def test_rejects_none_sirket_id(self):
+    def test_rejects_none_tenant_id(self):
         registry = ConventionTenantRegistry()
         with pytest.raises(ValueError):
             registry.collection_name(None)
 
     def test_reverse_resolution(self):
         registry = ConventionTenantRegistry()
-        assert registry.sirket_id_from_collection("tubitak1505_sirket_14") == 14
+        assert registry.tenant_id_from_collection("tubitak1505_musteri_14") == 14
 
     def test_reverse_resolution_unknown_prefix_returns_none(self):
         registry = ConventionTenantRegistry()
-        assert registry.sirket_id_from_collection("baska_koleksiyon") is None
+        assert registry.tenant_id_from_collection("baska_koleksiyon") is None
 
     def test_reverse_resolution_malformed_suffix_returns_none(self):
         registry = ConventionTenantRegistry()
-        assert registry.sirket_id_from_collection("tubitak1505_sirket_abc") is None
+        assert registry.tenant_id_from_collection("tubitak1505_musteri_abc") is None
 
 
 # ══════════════════════════════════════════════════════════════════════════════
 # resolve_tenant_collection
 # ══════════════════════════════════════════════════════════════════════════════
 class TestResolveTenantCollection:
-    def test_resolves_with_valid_sirket_id(self):
+    def test_resolves_with_valid_musteri_id(self):
         registry = ConventionTenantRegistry()
-        assert resolve_tenant_collection(registry, 14) == "tubitak1505_sirket_14"
+        assert resolve_tenant_collection(registry, 14) == "tubitak1505_musteri_14"
 
-    def test_raises_400_when_sirket_id_missing(self):
+    def test_raises_400_when_musteri_id_missing(self):
         registry = ConventionTenantRegistry()
         with pytest.raises(HTTPException) as exc_info:
             resolve_tenant_collection(registry, None)
         assert exc_info.value.status_code == 400
 
-    def test_raises_400_on_invalid_sirket_id(self):
+    def test_raises_400_on_invalid_musteri_id(self):
         registry = ConventionTenantRegistry()
         with pytest.raises(HTTPException) as exc_info:
             resolve_tenant_collection(registry, -5)
@@ -85,7 +85,7 @@ class TestTenantCollectionProvisioner:
         client.collection_exists.return_value = True
         provisioner = TenantCollectionProvisioner(client, reference_collection="ref")
 
-        created = provisioner.ensure_exists("tubitak1505_sirket_14")
+        created = provisioner.ensure_exists("tubitak1505_musteri_14")
 
         assert created is False
         client.create_collection.assert_not_called()
@@ -101,11 +101,11 @@ class TestTenantCollectionProvisioner:
         client.get_collection.return_value = fake_ref
 
         provisioner = TenantCollectionProvisioner(client, reference_collection="ref")
-        created = provisioner.ensure_exists("tubitak1505_sirket_18")
+        created = provisioner.ensure_exists("tubitak1505_musteri_18")
 
         assert created is True
         client.create_collection.assert_called_once_with(
-            collection_name="tubitak1505_sirket_18",
+            collection_name="tubitak1505_musteri_18",
             vectors_config={"content": "FAKE_DENSE_CONFIG"},
             sparse_vectors_config={"sparse": "FAKE_SPARSE_CONFIG"},
         )
@@ -116,6 +116,6 @@ class TestTenantCollectionProvisioner:
         provisioner = TenantCollectionProvisioner(client, reference_collection="ref")
 
         with pytest.raises(HTTPException) as exc_info:
-            provisioner.ensure_exists("tubitak1505_sirket_99")
+            provisioner.ensure_exists("tubitak1505_musteri_99")
 
         assert exc_info.value.status_code == 500

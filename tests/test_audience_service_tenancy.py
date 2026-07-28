@@ -28,7 +28,7 @@ class TestUnprovisionedTenantCollection:
         with pytest.raises(AudienceUpdateError) as exc_info:
             update_document_audience(
                 client=client,
-                collection="tubitak1505_sirket_999",
+                collection="tubitak1505_musteri_999",
                 source="belge.pdf",
                 policy=AudiencePolicy(rules=[AudienceRule(bina_ids=[16])]),
                 degistiren_kullanici_id=42,
@@ -40,14 +40,14 @@ class TestUnprovisionedTenantCollection:
         client = MagicMock()
         client.collection_exists.return_value = False
 
-        result = get_document_audience(client, "tubitak1505_sirket_999", "belge.pdf")
+        result = get_document_audience(client, "tubitak1505_musteri_999", "belge.pdf")
         assert result is None
 
     def test_compliance_report_returns_empty_when_collection_missing(self):
         client = MagicMock()
         client.collection_exists.return_value = False
 
-        sayfa, toplam = find_documents_without_audience(client, "tubitak1505_sirket_999")
+        sayfa, toplam = find_documents_without_audience(client, "tubitak1505_musteri_999")
         assert sayfa == []
         assert toplam == 0
 
@@ -93,7 +93,7 @@ class TestExistingCollectionBehaviorUnchanged:
 
         yeni_versiyon = update_document_audience(
             client=client,
-            collection="tubitak1505_sirket_14",
+            collection="tubitak1505_musteri_14",
             source="belge.pdf",
             policy=AudiencePolicy(rules=[AudienceRule(bina_ids=[16])]),
             degistiren_kullanici_id=42,
@@ -110,7 +110,7 @@ class TestExistingCollectionBehaviorUnchanged:
         with pytest.raises(AudienceUpdateError) as exc_info:
             update_document_audience(
                 client=client,
-                collection="tubitak1505_sirket_14",
+                collection="tubitak1505_musteri_14",
                 source="belge.pdf",
                 policy=AudiencePolicy(rules=[AudienceRule(bina_ids=[16])]),
                 degistiren_kullanici_id=42,
@@ -123,9 +123,21 @@ class TestExistingCollectionBehaviorUnchanged:
         client.collection_exists.return_value = True
         client.scroll.return_value = ([self._fake_point(audience_versiyon=3)], None)
 
-        info = get_document_audience(client, "tubitak1505_sirket_14", "belge.pdf")
+        info = get_document_audience(client, "tubitak1505_musteri_14", "belge.pdf")
         assert info.audience_versiyon == 3
         assert info.policy == {"rules": []}
+
+    def test_get_also_returns_content_version(self):
+        """(Teracity ikinci inceleme, madde 1) GET /audience yanıtı içerik
+        sürümünü de içermeli — aksi halde 'PUT /content sonrası 409'dan
+        kurtarma akışı (Bölüm 10) kodlanamaz."""
+        client = MagicMock()
+        client.collection_exists.return_value = True
+        client.scroll.return_value = ([self._fake_point(versiyon=7, audience_versiyon=3)], None)
+
+        info = get_document_audience(client, "tubitak1505_musteri_14", "belge.pdf")
+        assert info.icerik_versiyonu == 7
+        assert info.audience_versiyon == 3   # iki sayaç birbirinden bağımsız
 
     def test_set_payload_called_with_dict_not_scalar(self):
         """
@@ -142,7 +154,7 @@ class TestExistingCollectionBehaviorUnchanged:
 
         update_document_audience(
             client=client,
-            collection="tubitak1505_sirket_14",
+            collection="tubitak1505_musteri_14",
             source="belge.pdf",
             policy=AudiencePolicy(rules=[AudienceRule(bina_ids=[16])]),
             degistiren_kullanici_id=42,
@@ -154,6 +166,5 @@ class TestExistingCollectionBehaviorUnchanged:
                 f"payload dict olmalı, {type(call.kwargs['payload'])} geldi: "
                 f"{call.kwargs['payload']!r}"
             )
-        # audience_versiyon alanı, dict'in İÇİNDE bir alan olarak gönderilmeli.
         all_payloads = [call.kwargs["payload"] for call in client.set_payload.call_args_list]
         assert any(p.get("audience_versiyon") == 2 for p in all_payloads)

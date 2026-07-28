@@ -59,10 +59,11 @@ def app_client(monkeypatch, keypair):
     return TestClient(api.app), fake_client, private_pem
 
 
-def _service_token(private_pem):
+def _service_token(private_pem, musteri_id=501):
     payload = {
         "iss": "bilimp-teracity", "aud": "tubitak1505-audience-admin",
-        "sub": "bilimp-backend", "iat": int(time.time()), "exp": int(time.time()) + 3600,
+        "sub": "bilimp-backend", "musteri_id": musteri_id,
+        "iat": int(time.time()), "exp": int(time.time()) + 3600,
     }
     return pyjwt.encode(payload, private_pem, algorithm="RS256")
 
@@ -89,7 +90,6 @@ class TestMadde11AudienceVersioning:
         resp = client.get(
             "/api/v1/documents/belge.pdf/audience",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
         )
         assert resp.status_code == 200
         assert resp.json()["audience_versiyon"] == 4
@@ -102,7 +102,6 @@ class TestMadde11AudienceVersioning:
         resp = client.put(
             "/api/v1/documents/belge.pdf/audience",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
             json={
                 "audience_policy": {"rules": [{"sirket_ids": [14]}]},
                 "beklenen_audience_versiyon": 1,
@@ -120,7 +119,6 @@ class TestMadde11AudienceVersioning:
         resp = client.put(
             "/api/v1/documents/belge.pdf/audience",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
             json={
                 "audience_policy": {"rules": [{"sirket_ids": [14]}]},
                 "beklenen_audience_versiyon": 1,
@@ -138,7 +136,6 @@ class TestMadde11AudienceVersioning:
         resp = client.put(
             "/api/v1/documents/belge.pdf/content",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
             json={
                 "dosya_icerigi_base64": base64.b64encode(b"yeni").decode(),
                 "beklenen_versiyon": 1,
@@ -166,7 +163,6 @@ class TestMadde12BulkUpdate:
         resp = client.post(
             "/api/v1/documents/audience/bulk",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
             json={
                 "guncellemeler": [
                     {"dokuman_id": "a.pdf", "audience_policy": {"rules": [{"sirket_ids": [14]}]},
@@ -186,7 +182,7 @@ class TestMadde12BulkUpdate:
         sonuclar_by_id = {s["dokuman_id"]: s for s in body["sonuclar"]}
         assert sonuclar_by_id["a.pdf"]["durum"] == "basarili"
         assert sonuclar_by_id["b.pdf"]["durum"] == "hata"
-        assert sonuclar_by_id["b.pdf"]["hata_kodu"] == "version_conflict"
+        assert sonuclar_by_id["b.pdf"]["hata_kodu"] == "CAKISMA"
 
     def test_bulk_update_rejects_over_100_items(self, app_client):
         client, _, private_pem = app_client
@@ -195,7 +191,6 @@ class TestMadde12BulkUpdate:
         resp = client.post(
             "/api/v1/documents/audience/bulk",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
             json={
                 "guncellemeler": [
                     {"dokuman_id": f"d{i}.pdf", "audience_policy": {"rules": []},
@@ -212,13 +207,12 @@ class TestMadde12BulkUpdate:
         user_token = pyjwt.encode({
             "iss": "bilimp-teracity", "aud": "tubitak1505-query",
             "sub": "613", "iat": int(time.time()), "exp": int(time.time()) + 3600,
-            "user_context": {"sirket_id": 14, "kullanici_id": 613, "grup_ids": []},
+            "user_context": {"musteri_id": 501, "sirket_ids": [14], "kullanici_id": 613, "grup_ids": []},
         }, private_pem, algorithm="RS256")
 
         resp = client.post(
             "/api/v1/documents/audience/bulk",
             headers={"Authorization": f"Bearer {user_token}"},
-            params={"sirket_id": 14},
             json={"guncellemeler": [], "degistiren_kullanici_id": 42},
         )
         assert resp.status_code in (403, 422)
@@ -233,7 +227,6 @@ class TestMadde15ErrorHardening:
         resp = client.get(
             "/api/v1/documents/yok.pdf/audience",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
         )
         assert resp.status_code == 404
         body = resp.json()
@@ -266,7 +259,7 @@ class TestMadde15ErrorHardening:
         token = pyjwt.encode({
             "iss": "bilimp-teracity", "aud": "tubitak1505-query",
             "sub": "613", "iat": int(time.time()), "exp": int(time.time()) + 3600,
-            "user_context": {"sirket_id": 14, "kullanici_id": 613, "grup_ids": []},
+            "user_context": {"musteri_id": 501, "sirket_ids": [14], "kullanici_id": 613, "grup_ids": []},
         }, private_pem, algorithm="RS256")
 
         resp = client.post(
@@ -279,8 +272,8 @@ class TestMadde15ErrorHardening:
     def test_rate_limit_returns_429(self, app_client):
         client, *_ = app_client
         for _ in range(3):
-            client.get("/api/v1/documents/nofile/audience", params={"sirket_id": 14})
-        fourth = client.get("/api/v1/documents/nofile/audience", params={"sirket_id": 14})
+            client.get("/api/v1/documents/nofile/audience")
+        fourth = client.get("/api/v1/documents/nofile/audience")
         assert fourth.status_code == 429
         assert fourth.json()["kod"] == "COK_FAZLA_ISTEK"
 
@@ -294,7 +287,6 @@ class TestMadde16Pagination:
         resp = client.get(
             "/api/v1/documents/audience-compliance-report",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
         )
         assert resp.status_code == 200
         body = resp.json()
@@ -310,7 +302,7 @@ class TestMadde16Pagination:
         resp = client.get(
             "/api/v1/documents/audience-compliance-report",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14, "limit": 2, "offset": 1},
+params={"limit": 2, "offset": 1},
         )
         assert resp.status_code == 200
         body = resp.json()
@@ -326,6 +318,6 @@ class TestMadde16Pagination:
         resp = client.get(
             "/api/v1/documents/audience-compliance-report",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14, "limit": 500},
+params={"limit": 500},
         )
         assert resp.status_code == 422

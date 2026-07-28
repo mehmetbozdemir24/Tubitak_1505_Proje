@@ -80,7 +80,8 @@ class AudienceUpdateResponse(BaseModel):
 class AudienceGetResponse(BaseModel):
     dokuman_id: str
     audience_policy: AudiencePolicy
-    audience_versiyon: int   # (Faz 4 / madde 11) — sonraki PUT için beklenen_audience_versiyon burada
+    audience_versiyon: int              # sonraki PUT /audience için beklenen_audience_versiyon burada
+    icerik_versiyonu: Optional[int] = None   # sonraki PUT /content için beklenen_versiyon burada
 
 
 # ── Uyum İzleme: hedef kitlesi tanımlanmamış dokümanlar ──────────────────────
@@ -105,6 +106,11 @@ class DocumentCreateRequest(BaseModel):
     )
     dosya_icerigi_base64: str = Field(..., description="Dosyanın base64 kodlanmış ham baytları")
     audience_policy: AudiencePolicy
+    # (madde 3) audience_policy.rules boş gönderilirse doküman oluşturulduğu
+    # anda hiçbir kullanıcı tarafından görülemez hale gelir (deny-by-default).
+    # Kasıtlıysa açıkça onaylanmalıdır — update_document_audience'daki aynı
+    # korumanın create ucuna genişletilmiş hali.
+    allow_empty: bool = False
     yukleyen_kullanici_id: int = Field(
         ..., description="Yüklemeyi Bilimp arayüzünde yapan kullanıcının kimliği (denetim kaydı)"
     )
@@ -150,6 +156,18 @@ class DocumentContentUpdateResponse(BaseModel):
 
 
 # ── Uç Nokta: Doküman Silme ───────────────────────────────────────────────────
+# (madde 5) DELETE, diğer yazma uçlarıyla (içerik/hedef kitle güncelleme)
+# AYNI iki korumayı taşır: denetim kaydı ve optimistic locking. Geri
+# alınamaz bir işlem olduğu için bu korumalardan MUAF tutulması tutarsızdı.
+class DocumentDeleteRequest(BaseModel):
+    beklenen_versiyon: int = Field(
+        ..., description="Optimistic locking için dokümanın mevcut içerik sürümü"
+    )
+    degistiren_kullanici_id: int = Field(
+        ..., description="Silme işlemini Bilimp arayüzünde yapan kullanıcının kimliği (denetim kaydı)"
+    )
+
+
 class DocumentDeleteResponse(BaseModel):
     durum: str                       # "basarili"
     dokuman_id: str
@@ -180,7 +198,11 @@ class BulkAudienceUpdateItemResult(BaseModel):
     dokuman_id: str
     durum: str                              # "basarili" | "hata"
     yeni_audience_versiyon: Optional[int] = None
-    hata_kodu: Optional[str] = None         # "not_found" | "empty_rules" | "version_conflict"
+    # (madde 4) Bölüm 7'deki genel hata kod sözlüğüyle (BULUNAMADI, GECERSIZ_ISTEK,
+    # CAKISMA, ...) AYNI sözlüğü kullanır — önceden burada iç kontrol akışına
+    # özel ayrı bir sözlük (not_found/empty_rules/version_conflict) sızdırılıyordu;
+    # bu, istemcinin iki farklı hata kodu listesine karşı kod yazmasını gerektiriyordu.
+    hata_kodu: Optional[str] = None         # "BULUNAMADI" | "GECERSIZ_ISTEK" | "CAKISMA"
     mesaj: Optional[str] = None
 
 

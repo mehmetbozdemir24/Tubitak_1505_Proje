@@ -86,7 +86,7 @@ class TestBuildRetrievalQuery:
                 llm=MagicMock(), client=MagicMock(),
                 tenant_registry=MagicMock(), dense_embeddings=MagicMock(),
                 sparse_embeddings=MagicMock(),
-                user=MagicMock(sirket_id=14), question="Peki salı günü?",
+                user=MagicMock(musteri_id=14), question="Peki salı günü?",
                 top_k=5, threshold=0.3, history=history,
             )
 
@@ -106,7 +106,7 @@ class TestRunRagQueryHistoryWiring:
                 llm=MagicMock(), client=MagicMock(),
                 tenant_registry=MagicMock(), dense_embeddings=MagicMock(),
                 sparse_embeddings=MagicMock(),
-                user=MagicMock(sirket_id=14), question="soru",
+                user=MagicMock(musteri_id=14), question="soru",
                 top_k=5, threshold=0.3,
             )
         _, kwargs = mock_answer.call_args
@@ -125,7 +125,7 @@ class TestRunRagQueryHistoryWiring:
                 llm=MagicMock(), client=MagicMock(),
                 tenant_registry=MagicMock(), dense_embeddings=MagicMock(),
                 sparse_embeddings=MagicMock(),
-                user=MagicMock(sirket_id=14), question="takip sorusu",
+                user=MagicMock(musteri_id=14), question="takip sorusu",
                 top_k=5, threshold=0.3, history=history,
             )
         _, kwargs = mock_answer.call_args

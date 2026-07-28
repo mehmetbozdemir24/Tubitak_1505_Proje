@@ -4,40 +4,46 @@ api.py — TÜBİTAK 1505 Hedef Kitle API (bağımsız FastAPI servisi).
 Bilimp bu servisi çağırır. Kontrat: API Kontrat Dokümanı v0.1.
 
 Uçlar:
-  POST   /api/v1/query                                              → RAG soru-cevap (kullanıcı JWT'si; tenant = user_context.sirket_id)
-  POST   /api/v1/documents?sirket_id=..                             → doküman oluştur (içerik + hedef kitle birlikte, servis token'ı)
-  PUT    /api/v1/documents/{dokuman_id}/content?sirket_id=..        → doküman içeriğini güncelle (yeni sürüm, servis token'ı)
-  DELETE /api/v1/documents/{dokuman_id}?sirket_id=..                → dokümanı sil (servis token'ı)
-  PUT    /api/v1/documents/{dokuman_id}/audience?sirket_id=..       → hedef kitle güncelle (servis token'ı)
-  POST   /api/v1/documents/audience/bulk?sirket_id=..                → toplu hedef kitle güncelle (servis token'ı, madde 12)
-  GET    /api/v1/documents/{dokuman_id}/audience?sirket_id=..       → hedef kitle oku (servis token'ı)
-  GET    /api/v1/documents/audience-compliance-report?sirket_id=..&limit=&offset=  → hedef kitle uyum raporu, sayfalı (servis token'ı, madde 16)
+  POST   /api/v1/query                                              → RAG soru-cevap (kullanıcı JWT'si; tenant = user_context.musteri_id)
+  POST   /api/v1/documents                                          → doküman oluştur (içerik + hedef kitle birlikte, servis token'ı; tenant = token'ın musteri_id'si)
+  PUT    /api/v1/documents/{dokuman_id}/content                     → doküman içeriğini güncelle (yeni sürüm, servis token'ı)
+  DELETE /api/v1/documents/{dokuman_id}                             → dokümanı sil (servis token'ı)
+  PUT    /api/v1/documents/{dokuman_id}/audience                    → hedef kitle güncelle (servis token'ı)
+  POST   /api/v1/documents/audience/bulk                            → toplu hedef kitle güncelle (servis token'ı)
+  GET    /api/v1/documents/{dokuman_id}/audience                    → hedef kitle oku (servis token'ı)
+  GET    /api/v1/documents/audience-compliance-report?limit=&offset= → hedef kitle uyum raporu, sayfalı (servis token'ı)
   GET    /health                                                     → sağlık kontrolü
 
-Hata Sertleştirme (Faz 4 / madde 15):
+Hata Sertleştirme:
   Tüm hata yanıtları {"kod","mesaj","trace_id"} şemasındadır (bkz.
   error_handling.py). Rate limiting bellek-içi bir middleware ile uygulanır
   (bkz. rate_limiting.py, RATE_LIMIT_* ortam değişkenleri). aud uyuşmazlığı
   (yanlış token tipi) 403 döner; diğer kimlik doğrulama hataları 401.
 
-Doküman Yaşam Döngüsü (Faz 2 / madde 2):
+Doküman Yaşam Döngüsü:
   dokuman_id Bilimp tarafından üretilir (dosya adı, tenant içinde benzersiz).
   Sürümleme: içerik değiştiğinde 'versiyon' 1 artar, eski sürümün indeks
   noktaları silinir. İçerik güncellemesi optimistic locking (beklenen_versiyon)
   ile korunur. Ayrıntılı tasarım kararları için document_ingestion_service.py
   başlığına bakınız.
 
-Hedef Kitle Sürümü (Faz 4 / madde 11):
+Hedef Kitle Sürümü:
   audience_versiyon, içerik 'versiyon'undan BAĞIMSIZ ayrı bir sayaçtır —
   yalnızca PUT /audience ile artar. PUT /audience, beklenen_audience_versiyon
   mevcut sürümle eşleşmezse 409 döner (gerçek optimistic locking).
 
-Çoklu Hesap (Multi-Tenant) Mimarisi:
-  Her şirket (sirket_id) kendi Qdrant koleksiyonuna sahiptir (Seviye C
-  fiziksel izolasyon, bkz. tenancy.py). Sorgu ucunda tenant, JWT'nin
-  user_context.sirket_id alanından otomatik belirlenir. Servis token'ı
-  bireysel bir kullanıcıya bağlı olmadığından, yönetim uçlarında tenant
-  açık bir sirket_id sorgu parametresiyle belirtilmelidir.
+Çoklu Hesap (Multi-Tenant) Mimarisi (v2.0):
+  Her Bilimp MÜŞTERİSİ (musteri_id) kendi Qdrant koleksiyonuna sahiptir
+  (bkz. tenancy.py). sirket_id artık tenant sınırı DEĞİLDİR — bir müşterinin
+  birden fazla şirketi olabileceğinden, şube/bina gibi sıradan bir hedef
+  kitle özniteliğidir (bkz. abac.py).
+
+  musteri_id HİÇBİR UÇTA istek parametresi olarak KABUL EDİLMEZ — her zaman
+  doğrulanmış JWT'den türetilir: sorgu ucunda user_context.musteri_id,
+  yönetim uçlarında servis token'ının musteri_id claim'i. Bu kasıtlıdır:
+  musteri_id'nin bir istek parametresi olması, geçerli bir servis token'ı
+  sahibinin parametreyi değiştirerek başka bir müşterinin verisine
+  erişebilmesi anlamına gelirdi.
 
 Yapılandırma (ortam değişkenleri — .env üzerinden):
   QDRANT_URL, QDRANT_COLLECTION
@@ -46,6 +52,10 @@ Yapılandırma (ortam değişkenleri — .env üzerinden):
   (bkz. auth.py başlığı — ayrıntılı açıklama orada)
   LLM_PROVIDER = "gemini" | "ollama"
   GOOGLE_API_KEY (gemini için) | OLLAMA_MODEL (ollama için)
+  ENABLE_API_DOCS = "true" (varsayılan) | "false" — /docs, /redoc,
+    /openapi.json uçlarının açık olup olmadığını kontrol eder (madde 7).
+    Bu uçlar kimlik doğrulama GEREKTİRMEZ; yalnızca API şemasını açıklar,
+    gerçek veriye erişim sağlamaz.
 
 ESKİ NOT: Bu dosyanın önceki hâlindeki Department/Rank/User + hardcoded
 'postgresql://postgres:12345@localhost:5432/testDB' bağlantısı KALDIRILDI.
@@ -72,6 +82,7 @@ from api_schemas import (
     AudienceGetResponse, AudienceComplianceReportResponse, ComplianceReportItem,
     DocumentCreateRequest, DocumentCreateResponse,
     DocumentContentUpdateRequest, DocumentContentUpdateResponse,
+    DocumentDeleteRequest,
     DocumentDeleteResponse,
     BulkAudienceUpdateRequest, BulkAudienceUpdateResponse, BulkAudienceUpdateItemResult,
 )
@@ -95,11 +106,21 @@ COLLECTION = os.getenv("QDRANT_COLLECTION", "Tubitak_Dokumanlar_Hybrid")
 TOP_K = int(os.getenv("RAG_TOP_K", "5"))
 THRESHOLD = float(os.getenv("RAG_THRESHOLD", "0.3"))
 
-# Seviye C: şirket başına ayrı Qdrant koleksiyonu (bkz. tenancy.py). DIP
-# gereği çağıranlar somut Qdrant detaylarına değil bu soyutlamaya bağımlıdır;
+# Müşteri başına ayrı Qdrant koleksiyonu (bkz. tenancy.py). DIP gereği
+# çağıranlar somut Qdrant detaylarına değil bu soyutlamaya bağımlıdır;
 # ileride farklı bir TenantRegistry implementasyonuna geçmek (örn. veritabanı
 # destekli) yalnızca bu satırın değişmesini gerektirir.
 _tenant_registry = ConventionTenantRegistry()
+
+# (madde 4) audience_service.py'nin İÇ kontrol akışı kodlarını (not_found,
+# empty_rules, version_conflict — Python string karşılaştırması için) Bölüm
+# 7'nin genel hata kod sözlüğüne çevirir. Bulk yanıtındaki hata_kodu alanı
+# istemciye BUNU gösterir — iç kodlar hiç dışa sızdırılmaz.
+_AUDIENCE_ERROR_KOD_MAP = {
+    "not_found": "BULUNAMADI",
+    "empty_rules": "GECERSIZ_ISTEK",
+    "version_conflict": "CAKISMA",
+}
 
 
 # ── Ağır kaynaklar: uygulama ömrü boyunca tek sefer kurulur ───────────────────
@@ -146,7 +167,20 @@ async def lifespan(app: FastAPI):
     _resources.clear()
 
 
-app = FastAPI(title="TÜBİTAK 1505 Hedef Kitle API", version="0.3", lifespan=lifespan)
+
+# (madde 7) /docs, /redoc, /openapi.json HİÇBİR kimlik doğrulama gerektirmez
+# — bu ÜÇÜ de yalnızca API'nin ŞEKLİNİ (uç noktalar, alan adları, şemalar)
+# açıklar, hiçbir gerçek veriye erişim sağlamaz. Varsayılan olarak açıktır
+# (Teracity'nin OpenAPI spec talebini karşılamak için); sertleştirilmiş bir
+# dağıtımda ENABLE_API_DOCS=false ile tamamen kapatılabilir.
+_docs_enabled = os.getenv("ENABLE_API_DOCS", "true").lower() == "true"
+
+app = FastAPI(
+    title="TÜBİTAK 1505 Hedef Kitle API", version="0.4", lifespan=lifespan,
+    docs_url="/docs" if _docs_enabled else None,
+    redoc_url="/redoc" if _docs_enabled else None,
+    openapi_url="/openapi.json" if _docs_enabled else None,
+)
 install_error_handling(app)   # (Faz 4 / madde 15) standart hata gövdesi + trace_id
 install_rate_limiting(app)    # (Faz 4 / madde 15) istek sınırlama
 
@@ -216,11 +250,10 @@ def query_endpoint(
     tags=["Doküman Yaşam Döngüsü"],
 )
 def create_document_endpoint(
-    sirket_id: int = Query(..., description="Dokümanın yükleneceği tenant (şirket) kimliği"),
     req: DocumentCreateRequest = Body(...),
     _service: ServiceIdentity = Depends(verify_service_token),   # yalnızca Bilimp servis token'ı
 ):
-    collection = resolve_tenant_collection(_tenant_registry, sirket_id)
+    collection = resolve_tenant_collection(_tenant_registry, _service.musteri_id)
     file_ext = os.path.splitext(req.dokuman_id)[1].lower()
 
     try:
@@ -234,10 +267,13 @@ def create_document_endpoint(
             dense_embeddings=_resources["dense"],
             sparse_embeddings=_resources["sparse"],
             reference_collection=COLLECTION,
+            allow_empty=req.allow_empty,
         )
     except DocumentIngestionError as e:
         if e.code == "already_exists":
             raise HTTPException(status.HTTP_409_CONFLICT, e.message)
+        if e.code == "empty_rules":
+            raise HTTPException(status.HTTP_400_BAD_REQUEST, e.message)
         if e.code == "too_large":
             raise HTTPException(status.HTTP_413_CONTENT_TOO_LARGE, e.message)
         raise HTTPException(status.HTTP_422_UNPROCESSABLE_CONTENT, e.message)
@@ -258,11 +294,10 @@ def create_document_endpoint(
 )
 def update_document_content_endpoint(
     dokuman_id: str = Path(...),
-    sirket_id: int = Query(..., description="Dokümanın ait olduğu tenant (şirket) kimliği"),
     req: DocumentContentUpdateRequest = Body(...),
     _service: ServiceIdentity = Depends(verify_service_token),
 ):
-    collection = resolve_tenant_collection(_tenant_registry, sirket_id)
+    collection = resolve_tenant_collection(_tenant_registry, _service.musteri_id)
     file_ext = os.path.splitext(dokuman_id)[1].lower()
 
     try:
@@ -301,13 +336,19 @@ def update_document_content_endpoint(
 )
 def delete_document_endpoint(
     dokuman_id: str = Path(...),
-    sirket_id: int = Query(..., description="Dokümanın ait olduğu tenant (şirket) kimliği"),
+    req: DocumentDeleteRequest = Body(...),
     _service: ServiceIdentity = Depends(verify_service_token),
 ):
-    collection = resolve_tenant_collection(_tenant_registry, sirket_id)
+    collection = resolve_tenant_collection(_tenant_registry, _service.musteri_id)
     try:
-        silinen = delete_document(_client(), collection, dokuman_id)
+        silinen = delete_document(
+            _client(), collection, dokuman_id,
+            beklenen_versiyon=req.beklenen_versiyon,
+            degistiren_kullanici_id=req.degistiren_kullanici_id,
+        )
     except DocumentIngestionError as e:
+        if e.code == "version_conflict":
+            raise HTTPException(status.HTTP_409_CONFLICT, e.message)
         raise HTTPException(status.HTTP_404_NOT_FOUND, e.message)
 
     return DocumentDeleteResponse(
@@ -325,11 +366,10 @@ def delete_document_endpoint(
 )
 def update_audience_endpoint(
     dokuman_id: str = Path(..., description="Dosya adı (metadata.source)"),
-    sirket_id: int = Query(..., description="Dokümanın ait olduğu tenant (şirket) kimliği"),
     req: AudienceUpdateRequest = Body(...),
     _service: ServiceIdentity = Depends(verify_service_token),   # yalnızca Bilimp servis token'ı
 ):
-    collection = resolve_tenant_collection(_tenant_registry, sirket_id)
+    collection = resolve_tenant_collection(_tenant_registry, _service.musteri_id)
     try:
         yeni_versiyon = update_document_audience(
             client=_client(),
@@ -368,11 +408,10 @@ def update_audience_endpoint(
     tags=["Hedef Kitle"],
 )
 def bulk_update_audience_endpoint(
-    sirket_id: int = Query(..., description="Dokümanların ait olduğu tenant (şirket) kimliği"),
     req: BulkAudienceUpdateRequest = Body(...),
     _service: ServiceIdentity = Depends(verify_service_token),   # yalnızca Bilimp servis token'ı
 ):
-    collection = resolve_tenant_collection(_tenant_registry, sirket_id)
+    collection = resolve_tenant_collection(_tenant_registry, _service.musteri_id)
 
     items = [
         BulkAudienceUpdateItem(
@@ -397,7 +436,10 @@ def bulk_update_audience_endpoint(
                 dokuman_id=r.dokuman_id,
                 durum="basarili" if r.basarili else "hata",
                 yeni_audience_versiyon=r.yeni_audience_versiyon,
-                hata_kodu=r.hata_kodu,
+                # Bölüm 7'deki genel hata kod sözlüğüyle (BULUNAMADI/GECERSIZ_ISTEK/
+                # CAKISMA) hizalanır — iç kontrol akışı kodları (not_found/
+                # empty_rules/version_conflict) doğrudan dışa sızdırılmaz.
+                hata_kodu=_AUDIENCE_ERROR_KOD_MAP.get(r.hata_kodu, r.hata_kodu),
                 mesaj=r.mesaj,
             )
             for r in sonuclar
@@ -415,12 +457,11 @@ def bulk_update_audience_endpoint(
 )
 def get_audience_endpoint(
     dokuman_id: str = Path(...),
-    sirket_id: int = Query(..., description="Dokümanın ait olduğu tenant (şirket) kimliği"),
     _service: ServiceIdentity = Depends(verify_service_token),   # yalnızca Bilimp servis token'ı
 ):
     from abac import AudiencePolicy
 
-    collection = resolve_tenant_collection(_tenant_registry, sirket_id)
+    collection = resolve_tenant_collection(_tenant_registry, _service.musteri_id)
     info = get_document_audience(_client(), collection, dokuman_id)
     if info is None:
         raise HTTPException(status.HTTP_404_NOT_FOUND,
@@ -429,6 +470,7 @@ def get_audience_endpoint(
         dokuman_id=dokuman_id,
         audience_policy=AudiencePolicy(**info.policy) if info.policy else AudiencePolicy(),
         audience_versiyon=info.audience_versiyon,
+        icerik_versiyonu=info.icerik_versiyonu,
     )
 
 
@@ -441,12 +483,11 @@ def get_audience_endpoint(
     tags=["Uyum İzleme"],
 )
 def audience_compliance_report_endpoint(
-    sirket_id: int = Query(..., description="Raporun istendiği tenant (şirket) kimliği"),
-    limit: int = Query(50, ge=1, le=200, description="Sayfa başına eleman sayısı (Faz 4 / madde 16)"),
+    limit: int = Query(50, ge=1, le=200, description="Sayfa başına eleman sayısı"),
     offset: int = Query(0, ge=0, description="Atlanacak eleman sayısı"),
     _service: ServiceIdentity = Depends(verify_service_token),   # yalnızca Bilimp servis token'ı
 ):
-    collection = resolve_tenant_collection(_tenant_registry, sirket_id)
+    collection = resolve_tenant_collection(_tenant_registry, _service.musteri_id)
     sayfa, toplam = find_documents_without_audience(_client(), collection, limit=limit, offset=offset)
     return AudienceComplianceReportResponse(
         politikasiz_dokuman_sayisi=toplam,

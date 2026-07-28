@@ -1,6 +1,35 @@
+"""
+abac.py — ABAC (Attribute-Based Access Control) çekirdek modeli.
+
+TASARIM KARARI — Müşteri Seviyesinde İzolasyon (v2.0):
+──────────────────────────────────────────────────────────────────────────────
+Önceki tasarımda sirket_id (şirket kimliği) tenant/izolasyon sınırı olarak
+kullanılıyordu. Teracity'nin bulgusu: Bilimp'in HER MÜŞTERİSİ kendi ayrı
+veritabanına sahip ve şirket kimlikleri yalnızca o müşterinin kendi
+veritabanı içinde üretiliyor — yani global olarak BENZERSİZ DEĞİL. İki farklı
+Bilimp müşterisinde aynı sirket_id (hatta aynı kullanici_id) rastlantısal
+olarak çakışabilir. sirket_id'yi tenant sınırı olarak kullanmak, iki farklı
+müşterinin verisinin aynı fiziksel alanda karışmasına yol açardı.
+
+Bu yüzden:
+  - musteri_id: Bilimp'in ürettiği, GLOBAL BENZERSİZ müşteri (hesap) kimliği.
+    Artık gerçek tenant/izolasyon sınırı budur (bkz. tenancy.py). UserContext'te
+    ZORUNLU bir alandır — bir kullanıcı bağlamı, hangi müşteriye ait olduğu
+    bilinmeden anlamsızdır.
+  - sirket_id → sirket_ids (ÇOĞUL): Artık bir izolasyon anahtarı değil, şube/
+    bina gibi SIRADAN bir hedef kitle özniteliğidir; bir müşterinin birden
+    fazla şirketi olabileceği gibi, bir kullanıcı da birden fazla şirkete
+    bağlı olabilir — bu yüzden grup_ids ile aynı çoğul/kesişim modelini
+    kullanır.
+
+AudienceRule'da musteri_id İÇİN bir alan YOKTUR ve olmayacaktır: bir kural
+zaten yalnızca kendi müşterisinin fiziksel koleksiyonu içinde değerlendirilir
+(tenancy.py); çapraz-müşteri bir kural kavramı sistemde hiç yoktur.
+"""
+
 from __future__ import annotations
 from typing import Optional
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 FIELD_LABELS = {
@@ -56,7 +85,15 @@ class AudiencePolicy(BaseModel):
 
 
 class UserContext(BaseModel):
-    sirket_id:       Optional[int] = None
+    # (v2.0) Bilimp müşteri (hesap) kimliği — global benzersiz, ZORUNLU.
+    # Fiziksel tenant sınırı budur; bkz. tenancy.py.
+    musteri_id: int = Field(..., description="Bilimp müşteri (hesap) kimliği — global benzersiz")
+
+    # (v2.0) Artık izolasyon anahtarı DEĞİL, sıradan bir öznitelik — bir
+    # kullanıcı birden fazla şirkete bağlı olabileceğinden grup_ids ile aynı
+    # çoğul/kesişim modelini kullanır.
+    sirket_ids:      list[int] = []
+
     sube_id:         Optional[int] = None
     mudurluk_id:      Optional[int] = None
     birim_id:        Optional[int] = None
@@ -73,7 +110,10 @@ def _rule_matches(rule: AudienceRule, user: UserContext) -> bool:
     if rule.is_empty():
         return False
 
-    if rule.sirket_ids is not None and user.sirket_id not in rule.sirket_ids:
+    # (v2.0) sirket_ids artık grup_ids ile aynı ÇOĞUL/KESİŞİM modelini
+    # kullanır: kuralın istediği şirketlerden EN AZ BİRİ kullanıcının
+    # bağlı olduğu şirketler arasında olmalı.
+    if rule.sirket_ids is not None and not any(s in rule.sirket_ids for s in user.sirket_ids):
         return False
     if rule.sube_ids is not None and user.sube_id not in rule.sube_ids:
         return False
@@ -136,6 +176,13 @@ def empty_rule_data() -> dict:
 
 # ── Qdrant Pre-Filter ─────────────────────────────────────────────────────────
 
+# (v2.0) Çoklu değerli öznitelikler — kullanıcı tarafında bir LİSTE olarak
+# tutulan, kesişim mantığıyla eşleşen alanlar. sirket_ids'in grup_ids ile
+# aynı listede olması bilinçlidir: DRY — iki alan birbirinin kopyası mantığı
+# paylaşır, tekrar kod yazılmaz.
+_MULTI_VALUED_FIELDS = ("sirket_ids", "grup_ids")
+
+
 def build_qdrant_abac_filter(user: UserContext, exclude_fields: frozenset[str] = frozenset()):
     """
     UserContext'e göre Qdrant veritabanı seviyesinde pre-filter üretir.
@@ -146,17 +193,18 @@ def build_qdrant_abac_filter(user: UserContext, exclude_fields: frozenset[str] =
 
       Kural içi: AND — kuraldaki her dolu alan eşleşmeli.
       Boş alan (null / []) = wildcard — o öznitelikte kısıtlama yok.
+      Çoklu değerli alanlar (sirket_ids, grup_ids): kesişim — kullanıcının
+      listesindeki değerlerden EN AZ BİRİ kuralın listesinde olmalı.
 
     Avantaj:
       Python post-filter yerine Qdrant motoru filtrelediği için
       gerçekten erişimi olan k belge doğrudan döner.
 
     exclude_fields:
-      Belirtilen alan(lar) filtreye HİÇ dahil edilmez. Çok-tenant (Seviye C)
-      mimarisinde, tenant sınırı artık koleksiyon seçimiyle (fiziksel) zaten
-      sağlandığı için "sirket_ids" alanı koleksiyon içinde anlamsız/gereksiz
-      hale gelir — bkz. tenancy.py. Varsayılan boş küme ile mevcut davranış
-      (tek-koleksiyon dönemi, geriye dönük uyumluluk) korunur.
+      Belirtilen alan(lar) filtreye hiç dahil edilmez. musteri_id (fiziksel
+      tenant sınırı, bkz. tenancy.py) hiçbir zaman bir AudienceRule alanı
+      olmadığından bu parametreyle ilişkili değildir; bu genel bir uzatma
+      noktası olarak korunur (OCP).
     """
     from qdrant_client.http import models as qm
 
@@ -164,7 +212,6 @@ def build_qdrant_abac_filter(user: UserContext, exclude_fields: frozenset[str] =
 
     # ── Tekil değerli öznitelikler ────────────────────────────────────────────
     single_attrs = [
-        ("sirket_ids",       user.sirket_id),
         ("sube_ids",         user.sube_id),
         ("mudurluk_ids",     user.mudurluk_id),
         ("birim_ids",        user.birim_id),
@@ -193,20 +240,25 @@ def build_qdrant_abac_filter(user: UserContext, exclude_fields: frozenset[str] =
                 ])
             )
 
-    # ── Çoklu değerli öznitelik: grup_ids ────────────────────────────────────
-    if "grup_ids" not in exclude_fields:
-        if user.grup_ids:
-            # Kural grup istemiyorsa (wildcard) VEYA kullanıcının gruplarından biri kural listesinde
+    # ── Çoklu değerli öznitelikler: sirket_ids, grup_ids (kesişim) ───────────
+    multi_attrs = [(f, getattr(user, f)) for f in _MULTI_VALUED_FIELDS]
+    for field_key, user_vals in multi_attrs:
+        if field_key in exclude_fields:
+            continue
+        if user_vals:
+            # Kural bu alanı istemiyorsa (wildcard) VEYA kullanıcının
+            # listesinden biri kural listesinde
             must_conditions.append(
                 qm.Filter(should=[
-                    qm.IsEmptyCondition(is_empty=qm.PayloadField(key="grup_ids")),
-                    qm.FieldCondition(key="grup_ids", match=qm.MatchAny(any=user.grup_ids)),
+                    qm.IsEmptyCondition(is_empty=qm.PayloadField(key=field_key)),
+                    qm.FieldCondition(key=field_key, match=qm.MatchAny(any=user_vals)),
                 ])
             )
         else:
-            # Kullanıcının hiç grubu yoksa — sadece grup kısıtlaması olmayan kurallara erişim
+            # Kullanıcının bu öznitelikte hiç değeri yoksa — yalnızca bu
+            # alanda kısıtlama olmayan kurallara erişim
             must_conditions.append(
-                qm.IsEmptyCondition(is_empty=qm.PayloadField(key="grup_ids"))
+                qm.IsEmptyCondition(is_empty=qm.PayloadField(key=field_key))
             )
 
     # ── NestedCondition: rules dizisinde EN AZ BİR kural eşleşmeli ───────────

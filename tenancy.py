@@ -1,27 +1,26 @@
 """
 tenancy.py — Çoklu Hesap (Multi-Tenant) İzolasyon Katmanı
 
-TASARIM KARARI — Seviye C: Şirket Başına Ayrı Qdrant Koleksiyonu
+TASARIM KARARI (v2.0) — Müşteri Seviyesinde Fiziksel İzolasyon
 ──────────────────────────────────────────────────────────────────────────────
-Önceki mimaride tüm şirketlerin dokümanları TEK bir Qdrant koleksiyonunda
-duruyordu; şirketler arası ayrım yalnızca bir ABAC kural alanıydı
-(AudienceRule.sirket_ids). Bu, bir kuralın eksik/hatalı yazılması veya
-filtre kodundaki olası bir hatanın, bir şirketin dokümanlarını başka bir
-şirkete sızdırabileceği anlamına geliyordu — kural, fiziksel bir sınırın
-YERİNİ TUTMAZ.
+İLK sürümde (Seviye C) fiziksel izolasyon sirket_id (şirket) bazında
+kuruluydu. Teracity'nin bulgusu bunu geçersiz kıldı: Bilimp'in HER MÜŞTERİSİ
+kendi ayrı veritabanına sahip; şirket/kullanıcı gibi kimlikler yalnızca o
+müşterinin kendi veritabanı içinde üretiliyor ve GLOBAL OLARAK BENZERSİZ
+DEĞİL. İki farklı Bilimp müşterisinde aynı sirket_id (hatta aynı
+kullanici_id) rastlantısal olarak çakışabilir — sirket_id'yi fiziksel sınır
+olarak kullanmak, iki farklı müşterinin verisinin AYNI koleksiyonda
+karışmasına yol açardı.
 
-Bu modül, her şirketin (sirket_id) kendi Qdrant koleksiyonuna sahip olduğu
-fiziksel izolasyonu uygular. Bir sorgu, kendi tenant'ının koleksiyonu
-DIŞINDA hiçbir veriye erişemez — bu artık bir kural ihlaliyle değil, bir
-Qdrant koleksiyon adıyla garanti edilir.
+Doğru izolasyon sınırı: musteri_id — Bilimp'in ürettiği, global benzersiz
+müşteri (hesap) kimliği. Bir sorgu, kendi müşterisinin koleksiyonu DIŞINDA
+hiçbir veriye erişemez; bu bir kural ihlaliyle değil, bir Qdrant koleksiyon
+adıyla garanti edilir.
 
-Diğer 9 ABAC kategorisi (şube, müdürlük, birim, grup, bina, pozisyon,
-personel tipi, kullanıcı, yaka tipi) bu mimariden ETKİLENMEZ — bunlar hâlâ
-tenant'ın kendi koleksiyonu İÇİNDE, önceki gibi çalışmaya devam eder.
-sirket_ids alanı artık koleksiyon içinde anlamsız olduğu için ABAC
-filtresinden hariç tutulur (bkz. abac.build_qdrant_abac_filter'ın
-exclude_fields parametresi); ama şema geriye dönük uyumluluk için
-AudienceRule'da saklı kalır.
+sirket_id ise artık şube/bina gibi SIRADAN bir hedef kitle özniteliğidir
+(bkz. abac.py) ve normal şekilde ABAC filtresine katılır — koleksiyon içinde
+HİÇ hariç tutulmaz, çünkü artık gereksiz/yedek bir alan değil, gerçek bir
+erişim kısıtlamasıdır (bir müşterinin birden fazla şirketi olabilir).
 
 ──────────────────────────────────────────────────────────────────────────────
 SOLID Notları
@@ -29,14 +28,19 @@ SOLID Notları
   SRP  — İsimlendirme (TenantRegistry), fiziksel provizyon
          (TenantCollectionProvisioner) ve çözümleme (resolve_tenant_collection)
          ayrı sorumluluklar olarak ayrıştırıldı.
-  OCP  — Yeni bir şirket eklemek hiçbir kod değişikliği gerektirmez;
-         ConventionTenantRegistry sirket_id'den koleksiyon adını türetir.
+  OCP  — Yeni bir müşteri eklemek hiçbir kod değişikliği gerektirmez;
+         ConventionTenantRegistry kimlikten koleksiyon adını türetir.
   LSP  — TenantRegistry bir Protocol'dür; herhangi bir uyumlu implementasyon
          (örn. ileride bir veritabanı destekli kayıt) yerine geçebilir.
   ISP  — TenantRegistry yalnızca isimlendirme sorumluluğu taşır; provizyon
          (koleksiyon oluşturma) ayrı bir arayüzde (TenantCollectionProvisioner).
-  DIP  — rag_service.py / audience_service.py çağıranları, somut Qdrant
-         detaylarına değil, bu modüldeki soyutlamalara bağımlıdır.
+  DIP  — Alt seviye sınıflar (TenantRegistry, TenantCollectionProvisioner)
+         BİLEREK "tenant_id" gibi genel bir isim kullanır — tenant kavramının
+         NEYİ temsil ettiğini (şirket mi, müşteri mi) bilmezler; bu, tenant
+         kavramı bir kez değiştiğinde (v1→v2) yaşanan acıyı tekrar
+         yaşamamak içindir. Somut iş anlamı (musteri_id) yalnızca üst
+         seviye giriş noktasında (resolve_tenant_collection) ve çağıran
+         katmanlarda (api.py, rag_service.py) görünür.
 """
 
 from __future__ import annotations
@@ -52,28 +56,27 @@ from qdrant_client import QdrantClient
 # ══════════════════════════════════════════════════════════════════════════════
 @runtime_checkable
 class TenantRegistry(Protocol):
-    """Bir şirket kimliğini, o şirkete ait Qdrant koleksiyon adına çözümler."""
+    """Bir tenant kimliğini, o tenant'a ait Qdrant koleksiyon adına çözümler."""
 
-    def collection_name(self, sirket_id: int) -> str: ...
+    def collection_name(self, tenant_id: int) -> str: ...
 
 
 class ConventionTenantRegistry:
     """
     Sabit bir isimlendirme kuralına göre koleksiyon adı üretir
-    ("tubitak1505_sirket_{id}"). Yeni bir şirket eklemek için kod
-    değişikliği veya kayıt işlemi GEREKMEZ — sirket_id'den otomatik
-    türetilir (OCP).
+    ("tubitak1505_musteri_{id}"). Yeni bir müşteri eklemek için kod
+    değişikliği veya kayıt işlemi GEREKMEZ — kimlikten otomatik türetilir (OCP).
     """
 
-    _PREFIX = "tubitak1505_sirket_"
+    _PREFIX = "tubitak1505_musteri_"
     _VALID_SUFFIX = re.compile(r"^\d+$")
 
-    def collection_name(self, sirket_id: int) -> str:
-        if sirket_id is None or sirket_id < 0:
-            raise ValueError(f"Geçersiz sirket_id: {sirket_id!r}")
-        return f"{self._PREFIX}{sirket_id}"
+    def collection_name(self, tenant_id: int) -> str:
+        if tenant_id is None or tenant_id < 0:
+            raise ValueError(f"Geçersiz tenant kimliği: {tenant_id!r}")
+        return f"{self._PREFIX}{tenant_id}"
 
-    def sirket_id_from_collection(self, collection_name: str) -> Optional[int]:
+    def tenant_id_from_collection(self, collection_name: str) -> Optional[int]:
         """Ters çözümleme — migrasyon ve tanılama araçları için."""
         if not collection_name.startswith(self._PREFIX):
             return None
@@ -133,24 +136,29 @@ class TenantCollectionProvisioner:
 # Çözümleme — tüm çağıranların kullanacağı TEK ortak yol
 # ══════════════════════════════════════════════════════════════════════════════
 def resolve_tenant_collection(
-    registry: TenantRegistry, sirket_id: Optional[int]
+    registry: TenantRegistry, musteri_id: Optional[int]
 ) -> str:
     """
-    UserContext.sirket_id veya istek parametresinden koleksiyon adına giden
-    tek ortak yol. sirket_id yoksa 400 fırlatır — tenant belirlenemeden
-    hiçbir sorgu/işlem çalıştırılamaz (fail-closed; sessizce "varsayılan"
-    bir koleksiyona düşülmez).
+    UserContext.musteri_id veya ServiceIdentity.musteri_id'den (bkz. auth.py)
+    koleksiyon adına giden TEK ortak yol. Her iki durumda da musteri_id,
+    imzası doğrulanmış bir JWT'den gelir — hiçbir zaman ham bir istek
+    parametresinden okunmaz (bkz. api.py: yönetim uçlarında sirket_id/
+    musteri_id artık bir sorgu parametresi DEĞİLDİR).
+
+    musteri_id yoksa 400 fırlatır — tenant belirlenemeden hiçbir sorgu/işlem
+    çalıştırılamaz (fail-closed; sessizce "varsayılan" bir koleksiyona
+    düşülmez).
     """
-    if sirket_id is None:
+    if musteri_id is None:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=(
-                "Tenant (şirket) belirlenemedi: sirket_id eksik. "
-                "Sorgu uçları için JWT'nin user_context.sirket_id alanı, "
-                "yönetim uçları için sirket_id istek parametresi zorunludur."
+                "Tenant (müşteri) belirlenemedi: musteri_id eksik. Bu alan "
+                "JWT'nin kendisinde bulunmalıdır (kullanıcı token'ında "
+                "user_context.musteri_id, servis token'ında musteri_id claim'i)."
             ),
         )
     try:
-        return registry.collection_name(sirket_id)
+        return registry.collection_name(musteri_id)
     except ValueError as e:
         raise HTTPException(status.HTTP_400_BAD_REQUEST, str(e))

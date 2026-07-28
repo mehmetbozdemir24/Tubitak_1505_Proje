@@ -3,9 +3,12 @@ tests/test_api_e2e.py — Tam HTTP yığını üzerinden uçtan uca izolasyon ka
 
 Gerçek RS256 imzalı JWT'ler üretir, FastAPI TestClient ile gerçek HTTP
 isteği yapar (yalnızca Qdrant/embedding/LLM sahte nesnelerle değiştirilir).
-Amaç: "14 numaralı şirketin kullanıcısı, 18 numaralı şirketin koleksiyonuna
-hiçbir şekilde dokunamaz" iddiasını birim testi seviyesinde değil, gerçek
-istek/yanıt döngüsü seviyesinde kanıtlamak.
+
+(v2.0) Amaç: "501 numaralı MÜŞTERİNİN kullanıcısı, 777 numaralı MÜŞTERİNİN
+koleksiyonuna hiçbir şekilde dokunamaz" iddiasını — hatta ikisi de AYNI
+sirket_id'ye sahip olsa bile (Teracity'nin bulgusunun tam senaryosu) —
+birim testi seviyesinde değil, gerçek istek/yanıt döngüsü seviyesinde
+kanıtlamak.
 """
 import sys
 import time
@@ -64,27 +67,32 @@ def app_client(monkeypatch, keypair):
     return TestClient(api.app), fake_client, fake_qdrant_module, private_pem
 
 
-def _user_token(private_pem, sirket_id, kullanici_id=613):
+def _user_token(private_pem, musteri_id, sirket_ids=None, kullanici_id=613):
     payload = {
         "iss": "bilimp-teracity", "aud": "tubitak1505-query",
         "sub": str(kullanici_id), "iat": int(time.time()), "exp": int(time.time()) + 3600,
-        "user_context": {"sirket_id": sirket_id, "kullanici_id": kullanici_id, "grup_ids": []},
+        "user_context": {
+            "musteri_id": musteri_id,
+            "sirket_ids": sirket_ids or [],
+            "kullanici_id": kullanici_id, "grup_ids": [],
+        },
     }
     return pyjwt.encode(payload, private_pem, algorithm="RS256")
 
 
-def _service_token(private_pem):
+def _service_token(private_pem, musteri_id):
     payload = {
         "iss": "bilimp-teracity", "aud": "tubitak1505-audience-admin",
-        "sub": "bilimp-backend", "iat": int(time.time()), "exp": int(time.time()) + 3600,
+        "sub": "bilimp-backend", "musteri_id": musteri_id,
+        "iat": int(time.time()), "exp": int(time.time()) + 3600,
     }
     return pyjwt.encode(payload, private_pem, algorithm="RS256")
 
 
 class TestCrossTenantIsolationEndToEnd:
-    def test_company_14_query_never_touches_company_18_collection(self, app_client):
+    def test_customer_501_query_never_touches_customer_777_collection(self, app_client):
         client, fake_qdrant_client, fake_qdrant_module, private_pem = app_client
-        token = _user_token(private_pem, sirket_id=14)
+        token = _user_token(private_pem, musteri_id=501, sirket_ids=[14])
 
         resp = client.post(
             "/api/v1/query",
@@ -94,12 +102,12 @@ class TestCrossTenantIsolationEndToEnd:
 
         assert resp.status_code == 200
         _, kwargs = fake_qdrant_module.QdrantVectorStore.call_args
-        assert kwargs["collection_name"] == "tubitak1505_sirket_14"
-        assert kwargs["collection_name"] != "tubitak1505_sirket_18"
+        assert kwargs["collection_name"] == "tubitak1505_musteri_501"
+        assert kwargs["collection_name"] != "tubitak1505_musteri_777"
 
-    def test_company_18_query_never_touches_company_14_collection(self, app_client):
+    def test_customer_777_query_never_touches_customer_501_collection(self, app_client):
         client, fake_qdrant_client, fake_qdrant_module, private_pem = app_client
-        token = _user_token(private_pem, sirket_id=18)
+        token = _user_token(private_pem, musteri_id=777, sirket_ids=[14])
 
         resp = client.post(
             "/api/v1/query",
@@ -109,21 +117,46 @@ class TestCrossTenantIsolationEndToEnd:
 
         assert resp.status_code == 200
         _, kwargs = fake_qdrant_module.QdrantVectorStore.call_args
-        assert kwargs["collection_name"] == "tubitak1505_sirket_18"
+        assert kwargs["collection_name"] == "tubitak1505_musteri_777"
+
+    def test_exact_kullanici_id_collision_scenario_from_teracity_feedback(self, app_client):
+        """
+        Teracity'nin bulgusundaki BİREBİR örnek: "B müşterisinin
+        kullanici_id=613 kullanıcısı, A müşterisi için yazılmış
+        kullanici_ids:[613] kuralını sağlar." Bu senaryonun artık mümkün
+        OLMADIĞINI kanıtlar — B müşterisinin sorgusu, A müşterisinin
+        koleksiyonuna hiç ULAŞMAZ (fiziksel izolasyon), yani kullanici_id
+        çakışması bir tehdit oluşturmadan önce sorgu zaten farklı bir
+        koleksiyona yönlenmiş olur.
+        """
+        client, fake_qdrant_client, fake_qdrant_module, private_pem = app_client
+        # A müşterisi (musteri_id=501) VE B müşterisi (musteri_id=999),
+        # AYNI kullanici_id=613'e sahip — Teracity'nin senaryosu tam bu.
+        token_musteri_a = _user_token(private_pem, musteri_id=501, kullanici_id=613)
+        token_musteri_b = _user_token(private_pem, musteri_id=999, kullanici_id=613)
+
+        client.post("/api/v1/query", headers={"Authorization": f"Bearer {token_musteri_a}"},
+                    json={"soru": "test"})
+        client.post("/api/v1/query", headers={"Authorization": f"Bearer {token_musteri_b}"},
+                    json={"soru": "test"})
+
+        collections_used = [
+            c.kwargs["collection_name"] for c in fake_qdrant_module.QdrantVectorStore.call_args_list
+        ]
+        # İki sorgu da BAŞARILI oldu (kullanici_id çakışması hiçbir hataya
+        # yol açmadı) ama FİZİKSEL OLARAK FARKLI koleksiyonlara gitti —
+        # A'nın kullanici_ids:[613] kuralı B'nin koleksiyonuna hiç
+        # uygulanma ihtimali bile olmadı.
+        assert collections_used == ["tubitak1505_musteri_501", "tubitak1505_musteri_999"]
 
     def test_query_without_token_rejected(self, app_client):
         client, *_ = app_client
         resp = client.post("/api/v1/query", json={"soru": "test"})
-        # HTTPBearer(auto_error=True): Authorization başlığı hiç yoksa 401/403
-        # döner (Starlette sürümüne göre değişebilir); asıl garanti edilen
-        # şey 200 OLMAMASI ve hiçbir Qdrant sorgusunun tetiklenmemesidir.
         assert resp.status_code in (401, 403)
 
     def test_service_token_cannot_call_query(self, app_client):
-        """(Faz 4 / madde 15) aud uyuşmazlığı artık 403 — kimlik doğru,
-        yetki yanlış uç için."""
         client, _, _, private_pem = app_client
-        token = _service_token(private_pem)
+        token = _service_token(private_pem, musteri_id=501)
         resp = client.post(
             "/api/v1/query",
             headers={"Authorization": f"Bearer {token}"},
@@ -132,39 +165,43 @@ class TestCrossTenantIsolationEndToEnd:
         assert resp.status_code == 403
 
     def test_user_token_cannot_call_audience_management(self, app_client):
-        """(Faz 4 / madde 15) aud uyuşmazlığı artık 403."""
         client, _, _, private_pem = app_client
-        token = _user_token(private_pem, sirket_id=14)
+        token = _user_token(private_pem, musteri_id=501, sirket_ids=[14])
         resp = client.get(
             "/api/v1/documents/audience-compliance-report",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
         )
         assert resp.status_code == 403
 
-    def test_audience_endpoint_requires_sirket_id_param(self, app_client):
-        client, _, _, private_pem = app_client
-        token = _service_token(private_pem)
-        resp = client.get(
-            "/api/v1/documents/audience-compliance-report",
-            headers={"Authorization": f"Bearer {token}"},
-        )
-        assert resp.status_code == 422  # FastAPI zorunlu query param eksikliği
+    def test_user_token_without_musteri_id_rejected_at_jwt_parsing(self, app_client):
+        client, *_, private_pem = app_client
+        payload = {
+            "iss": "bilimp-teracity", "aud": "tubitak1505-query",
+            "sub": "613", "iat": int(time.time()), "exp": int(time.time()) + 3600,
+            "user_context": {"kullanici_id": 613, "grup_ids": []},
+        }
+        token = pyjwt.encode(payload, private_pem, algorithm="RS256")
 
-    def test_service_token_with_sirket_id_reaches_correct_tenant(self, app_client):
+        resp = client.post(
+            "/api/v1/query",
+            headers={"Authorization": f"Bearer {token}"},
+            json={"soru": "test"},
+        )
+        assert resp.status_code == 401
+
+    def test_service_token_reaches_correct_customer_via_token_not_param(self, app_client):
         client, fake_qdrant_client, _, private_pem = app_client
         fake_qdrant_client.scroll.return_value = ([], None)
-        token = _service_token(private_pem)
+        token = _service_token(private_pem, musteri_id=501)
 
         resp = client.get(
             "/api/v1/documents/audience-compliance-report",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
         )
 
         assert resp.status_code == 200
         _, kwargs = fake_qdrant_client.scroll.call_args
-        assert kwargs["collection_name"] == "tubitak1505_sirket_14"
+        assert kwargs["collection_name"] == "tubitak1505_musteri_501"
 
     def test_health_endpoint_requires_no_token(self, app_client):
         client, *_ = app_client

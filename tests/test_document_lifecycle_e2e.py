@@ -1,8 +1,12 @@
 """
 tests/test_document_lifecycle_e2e.py — Doküman yaşam döngüsü uçlarının tam
-HTTP yığını üzerinden testleri. test_api_e2e.py'deki fixture desenini
-izler; ayrıca aynı dokuman_id'nin FARKLI tenant'larda çakışmadığını
-(fiziksel izolasyonun doğal bir sonucu) kanıtlar.
+HTTP yığını üzerinden testleri. Ayrıca aynı dokuman_id'nin FARKLI
+müşterilerde çakışmadığını (fiziksel izolasyonun doğal bir sonucu) kanıtlar.
+
+(v2.0) musteri_id artık bir istek parametresi DEĞİLDİR — servis token'ının
+kendisinde taşınır (bkz. auth.py). Bu yüzden "farklı tenant" senaryoları
+artık farklı bir query param DEĞİL, farklı bir musteri_id'ye sahip AYRI bir
+servis token'ı ile temsil edilir.
 """
 import sys
 import time
@@ -69,10 +73,11 @@ def app_client(monkeypatch, keypair):
     return TestClient(api.app), fake_client, private_pem
 
 
-def _service_token(private_pem):
+def _service_token(private_pem, musteri_id=501):
     payload = {
         "iss": "bilimp-teracity", "aud": "tubitak1505-audience-admin",
-        "sub": "bilimp-backend", "iat": int(time.time()), "exp": int(time.time()) + 3600,
+        "sub": "bilimp-backend", "musteri_id": musteri_id,
+        "iat": int(time.time()), "exp": int(time.time()) + 3600,
     }
     return pyjwt.encode(payload, private_pem, algorithm="RS256")
 
@@ -87,7 +92,6 @@ class TestCreateDocumentEndpoint:
         resp = client.post(
             "/api/v1/documents",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
             json={
                 "dokuman_id": "rapor.pdf",
                 "dosya_icerigi_base64": base64.b64encode(b"sahte icerik").decode(),
@@ -110,11 +114,11 @@ class TestCreateDocumentEndpoint:
         resp = client.post(
             "/api/v1/documents",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
             json={
                 "dokuman_id": "rapor.pdf",
                 "dosya_icerigi_base64": base64.b64encode(b"icerik").decode(),
                 "audience_policy": {"rules": []},
+                "allow_empty": True,
                 "yukleyen_kullanici_id": 42,
             },
         )
@@ -127,7 +131,6 @@ class TestCreateDocumentEndpoint:
         resp = client.post(
             "/api/v1/documents",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
             json={
                 "dokuman_id": "rapor.pdf",
                 "dosya_icerigi_base64": "!!!gecersiz!!!",
@@ -137,23 +140,25 @@ class TestCreateDocumentEndpoint:
         )
         assert resp.status_code == 422
 
-    def test_same_dokuman_id_different_tenants_does_not_conflict(self, app_client):
+    def test_same_dokuman_id_different_customers_does_not_conflict(self, app_client):
         client, fake_qdrant_client, private_pem = app_client
         fake_qdrant_client.collection_exists.return_value = True
         fake_qdrant_client.scroll.return_value = ([], None)
-        token = _service_token(private_pem)
+        token_musteri_501 = _service_token(private_pem, musteri_id=501)
+        token_musteri_777 = _service_token(private_pem, musteri_id=777)
 
         payload = {
             "dokuman_id": "ortak_isimli_belge.pdf",
             "dosya_icerigi_base64": base64.b64encode(b"icerik").decode(),
             "audience_policy": {"rules": []},
+            "allow_empty": True,
             "yukleyen_kullanici_id": 42,
         }
 
-        resp1 = client.post("/api/v1/documents", headers={"Authorization": f"Bearer {token}"},
-                             params={"sirket_id": 14}, json=payload)
-        resp2 = client.post("/api/v1/documents", headers={"Authorization": f"Bearer {token}"},
-                             params={"sirket_id": 18}, json=payload)
+        resp1 = client.post("/api/v1/documents",
+                             headers={"Authorization": f"Bearer {token_musteri_501}"}, json=payload)
+        resp2 = client.post("/api/v1/documents",
+                             headers={"Authorization": f"Bearer {token_musteri_777}"}, json=payload)
 
         assert resp1.status_code == 201
         assert resp2.status_code == 201
@@ -171,7 +176,6 @@ class TestUpdateContentEndpoint:
         resp = client.put(
             "/api/v1/documents/rapor.pdf/content",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
             json={
                 "dosya_icerigi_base64": base64.b64encode(b"yeni icerik").decode(),
                 "beklenen_versiyon": 1,
@@ -188,7 +192,6 @@ class TestUpdateContentEndpoint:
         resp = client.put(
             "/api/v1/documents/yok.pdf/content",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
             json={
                 "dosya_icerigi_base64": base64.b64encode(b"icerik").decode(),
                 "beklenen_versiyon": 1,
@@ -199,47 +202,67 @@ class TestUpdateContentEndpoint:
 
 
 class TestDeleteEndpoint:
+    def _fake_point(self, point_id, versiyon=1):
+        p = MagicMock()
+        p.id = point_id
+        p.payload = {"metadata": {"versiyon": versiyon, "source": "rapor.pdf"}}
+        return p
+
     def test_successful_delete(self, app_client):
         client, fake_qdrant_client, private_pem = app_client
         fake_qdrant_client.collection_exists.return_value = True
-        fake_qdrant_client.scroll.return_value = ([MagicMock(id="a"), MagicMock(id="b")], None)
+        fake_qdrant_client.scroll.return_value = (
+            [self._fake_point("a", versiyon=1), self._fake_point("b", versiyon=1)], None
+        )
         token = _service_token(private_pem)
 
-        resp = client.delete(
-            "/api/v1/documents/rapor.pdf",
+        resp = client.request(
+            "DELETE", "/api/v1/documents/rapor.pdf",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
+            json={"beklenen_versiyon": 1, "degistiren_kullanici_id": 42},
         )
         assert resp.status_code == 200
         assert resp.json()["silinen_nokta_sayisi"] == 2
+
+    def test_version_conflict_returns_409(self, app_client):
+        """(madde 5) DELETE artık optimistic locking'e tabi."""
+        client, fake_qdrant_client, private_pem = app_client
+        fake_qdrant_client.collection_exists.return_value = True
+        fake_qdrant_client.scroll.return_value = ([self._fake_point("a", versiyon=5)], None)
+        token = _service_token(private_pem)
+
+        resp = client.request(
+            "DELETE", "/api/v1/documents/rapor.pdf",
+            headers={"Authorization": f"Bearer {token}"},
+            json={"beklenen_versiyon": 1, "degistiren_kullanici_id": 42},   # gerçek sürüm 5
+        )
+        assert resp.status_code == 409
 
     def test_not_found_returns_404(self, app_client):
         client, fake_qdrant_client, private_pem = app_client
         fake_qdrant_client.collection_exists.return_value = False
         token = _service_token(private_pem)
 
-        resp = client.delete(
-            "/api/v1/documents/yok.pdf",
+        resp = client.request(
+            "DELETE", "/api/v1/documents/yok.pdf",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
+            json={"beklenen_versiyon": 1, "degistiren_kullanici_id": 42},
         )
         assert resp.status_code == 404
 
 
 class TestDocumentLifecycleRequiresServiceToken:
     def test_user_token_cannot_create_document(self, app_client):
-        """(Faz 4 / madde 15) aud uyuşmazlığı artık 403."""
         client, _, private_pem = app_client
         user_token = pyjwt.encode({
             "iss": "bilimp-teracity", "aud": "tubitak1505-query",
             "sub": "613", "iat": int(time.time()), "exp": int(time.time()) + 3600,
-            "user_context": {"sirket_id": 14, "kullanici_id": 613, "grup_ids": []},
+            "user_context": {"musteri_id": 501, "sirket_ids": [14], "kullanici_id": 613, "grup_ids": []},
         }, private_pem, algorithm="RS256")
 
         resp = client.post(
             "/api/v1/documents",
             headers={"Authorization": f"Bearer {user_token}"},
-            params={"sirket_id": 14},
             json={
                 "dokuman_id": "rapor.pdf",
                 "dosya_icerigi_base64": base64.b64encode(b"icerik").decode(),
@@ -248,3 +271,17 @@ class TestDocumentLifecycleRequiresServiceToken:
             },
         )
         assert resp.status_code == 403
+
+    def test_service_token_without_musteri_id_claim_rejected(self, app_client):
+        client, _, private_pem = app_client
+        token_no_musteri = pyjwt.encode({
+            "iss": "bilimp-teracity", "aud": "tubitak1505-audience-admin",
+            "sub": "bilimp-backend",
+            "iat": int(time.time()), "exp": int(time.time()) + 3600,
+        }, private_pem, algorithm="RS256")
+
+        resp = client.delete(
+            "/api/v1/documents/rapor.pdf",
+            headers={"Authorization": f"Bearer {token_no_musteri}"},
+        )
+        assert resp.status_code == 401

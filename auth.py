@@ -10,18 +10,33 @@ Bu modül iki ayrı token tipini doğrular:
 
   2. SERVİS TOKEN'I  (verify_service_token)
      Yalnızca Bilimp'in sunucu tarafına (arka uca) ait, herhangi bir son
-     kullanıcıyla ilişkilendirilmemiş token. Hedef kitle yönetimi uçlarında
-     (PUT/GET /audience, GET /audience-compliance-report) kabul edilir.
+     kullanıcıyla ilişkilendirilmemiş token. Hedef kitle ve doküman yönetimi
+     uçlarında kabul edilir.
 
      Bu ayrım kasıtlıdır: hedef kitle değişikliği güvenlik açısından hassas
      bir işlemdir ve yalnızca Bilimp'in kendi yetki kontrolünden geçmiş bir
-     istek tarafından tetiklenmelidir. Bu iki uç son kullanıcı token'ını
-     kabul etseydi, Bilimp arayüzünü hiç kullanmadan doğrudan API'ye istek
-     atan herhangi bir kullanıcı, kendi sorgu token'ıyla herhangi bir
-     dokümanın hedef kitlesini değiştirebilirdi.
+     istek tarafından tetiklenmelidir. Bu uçlar son kullanıcı token'ını kabul
+     etseydi, Bilimp arayüzünü hiç kullanmadan doğrudan API'ye istek atan
+     herhangi bir kullanıcı, kendi sorgu token'ıyla herhangi bir dokümanın
+     hedef kitlesini değiştirebilirdi.
 
 Her iki token tipi de aynı imzalama altyapısını (RS256, çoklu anahtar/kid
 desteği) paylaşır, yalnızca 'aud' (audience) claim'i ile ayrışır.
+
+TASARIM KARARI (v2.0) — musteri_id HER İKİ TOKEN TİPİNDE DE ZORUNLU
+──────────────────────────────────────────────────────────────────────────────
+Teracity'nin bulgusu: Bilimp'in her müşterisi kendi ayrı veritabanına sahip
+ve şirket/kullanıcı gibi kimlikler yalnızca o müşterinin kendi veritabanında
+üretiliyor — global olarak benzersiz DEĞİL. Bu yüzden fiziksel tenant sınırı
+artık musteri_id'dir (bkz. tenancy.py), sirket_id değil.
+
+Bunun doğal sonucu: musteri_id, önceki tasarımdaki sirket_id gibi bir İSTEK
+PARAMETRESİ olarak GÜVENİLEMEZ — geçerli bir servis token'ı olan biri,
+parametreyi değiştirerek başka bir müşterinin verisine erişebilirdi (tıpkı
+önceki tasarımda sirket_id parametresiyle mümkün olduğu gibi). Bu yüzden
+musteri_id artık İKİ TOKEN TİPİNDE DE bizzat JWT'nin kendisinde taşınır ve
+yönetim uçlarında istek parametresi olarak HİÇ KABUL EDİLMEZ; tenant her
+zaman doğrulanmış token'dan türetilir (bkz. api.py).
 
 ────────────────────────────────────────────────────────────────────────────
 Beklenen JWT Yapısı
@@ -32,7 +47,11 @@ Kullanıcı token'ı:
       "aud": "<JWT_AUDIENCE_QUERY>",
       "sub": "613",                    # user_context.kullanici_id ile tutarlı olmalı
       "iat": <unix ts>, "exp": <unix ts>,
-      "user_context": { "sirket_id": 14, ..., "kullanici_id": 613 }
+      "user_context": {
+        "musteri_id": 501,             # ZORUNLU — Bilimp müşteri (hesap) kimliği
+        "sirket_ids": [14, 18], ...,
+        "kullanici_id": 613
+      }
     }
 
 Servis token'ı:
@@ -40,6 +59,7 @@ Servis token'ı:
       "iss": "<JWT_ISSUER>",
       "aud": "<JWT_AUDIENCE_ADMIN>",
       "sub": "bilimp-backend",
+      "musteri_id": 501,                # ZORUNLU — bu servis token'ının yetkili olduğu müşteri
       "iat": <unix ts>, "exp": <unix ts>
     }
 
@@ -55,7 +75,13 @@ Ortam Değişkenleri
                                Anahtar rotasyonu için çoklu genel anahtar haritası.
   JWT_PUBLIC_KEY             — Tek anahtarlı basit kurulum için PEM (kid yoksa
                                veya JWT_PUBLIC_KEYS_JSON'da eşleşme bulunamazsa
-                               yedek olarak kullanılır).
+                               yedek olarak kullanılır). PEM'in gerçek satır
+                               sonu yerine '\\n' kaçış dizisiyle tek satıra
+                               sığdırılmış hali de kabul edilir (bkz.
+                               _normalize_pem) — .env / Docker Compose'un
+                               env_file okuyucuları çok satırlı değerleri
+                               güvenilir işlemediğinden bu, pratikte gerekli
+                               bir esneklik.
 
 Not: Bu servis yalnızca GENEL anahtarı tutar. İmzalama için kullanılan ÖZEL
 anahtar yalnızca token'ı üreten tarafta (Bilimp) kalır; bu, RS256'nın HS256'ya
@@ -105,7 +131,7 @@ def _clock_skew() -> timedelta:
     return timedelta(seconds=seconds)
 
 
-def _normalize_pem(value: str) -> str:
+def _normalize_pem(value: Optional[str]) -> Optional[str]:
     """
     .env dosyalarında PEM anahtarları tek satıra sığdırmak için genelde
     gerçek satır sonu yerine kaçış dizisi '\\n' kullanılır (Docker Compose'un
@@ -196,12 +222,12 @@ def _decode_and_verify(token: str, expected_audience: str) -> dict:
     except jwt.InvalidIssuerError:
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, "Token 'iss' claim'i geçersiz.")
     except jwt.InvalidAudienceError:
-        # (Faz 4 / madde 15) 401 değil 403: imza/iss geçerli — token GERÇEKTEN
-        # Bilimp tarafından üretilmiş ve güvenilir. Sorun kimliğin kendisi
-        # değil, bu token'ın BU uç için yetkili olmaması (yanlış tür: kullanıcı
-        # token'ı ile servis ucu ya da tersi). "Kimliğiniz doğrulanamadı"
-        # (401) ile "kimliğiniz doğru ama bu işlem için yetkiniz yok" (403)
-        # farklı durumlardır ve istemci tarafında farklı ele alınmalıdır.
+        # 401 değil 403: imza/iss geçerli — token GERÇEKTEN Bilimp tarafından
+        # üretilmiş ve güvenilir. Sorun kimliğin kendisi değil, bu token'ın
+        # BU uç için yetkili olmaması (yanlış tür: kullanıcı token'ı ile
+        # servis ucu ya da tersi). "Kimliğiniz doğrulanamadı" (401) ile
+        # "kimliğiniz doğru ama bu işlem için yetkiniz yok" (403) farklı
+        # durumlardır ve istemci tarafında farklı ele alınmalıdır.
         raise HTTPException(
             status.HTTP_403_FORBIDDEN,
             "Bu token bu uç nokta için yetkili değil (aud uyuşmazlığı). "
@@ -222,7 +248,11 @@ def verify_user_context(
     """
     Yalnızca sorgu ucunda kullanılır. Token'ın 'aud' claim'i JWT_AUDIENCE_QUERY
     ile eşleşmelidir; aksi halde (örneğin bir servis token'ı buraya gelirse)
-    401 döner.
+    403 döner.
+
+    user_context.musteri_id ZORUNLUDUR (bkz. abac.UserContext) — eksikse
+    Pydantic doğrulaması başarısız olur ve istek 401 ile reddedilir; tenant
+    belirlenemeden hiçbir sorgu çalıştırılamaz.
 
     sub / user_context.kullanici_id çelişki kuralı: her ikisi de mevcutsa ve
     sayısal olarak birbirini doğrulamıyorsa istek REDDEDİLİR (fail-closed).
@@ -248,9 +278,12 @@ def verify_user_context(
     try:
         user = UserContext(**uc_claim)
     except Exception:
+        # musteri_id eksikliği de (Pydantic zorunlu alan hatası) burada
+        # yakalanır — kasıtlı olarak genel bir "geçersiz biçim" mesajına
+        # sarmalanır; hangi alanın eksik olduğu istemciye sızdırılmaz.
         raise HTTPException(
             status.HTTP_401_UNAUTHORIZED,
-            "Kullanıcı bağlamı (user_context) geçersiz biçimde.",
+            "Kullanıcı bağlamı (user_context) geçersiz biçimde veya musteri_id eksik.",
         )
 
     sub = payload.get("sub")
@@ -273,30 +306,37 @@ def verify_user_context(
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# 2) Servis Token'ı — Hedef Kitle Yönetimi Uçları
+# 2) Servis Token'ı — Doküman ve Hedef Kitle Yönetimi Uçları
 # ══════════════════════════════════════════════════════════════════════════════
 class ServiceIdentity:
-    """Servis token'ının doğrulanmasından dönen minimal kimlik bilgisi."""
+    """
+    Servis token'ının doğrulanmasından dönen kimlik bilgisi.
 
-    def __init__(self, subject: str):
+    musteri_id: Bu servis token'ının yetkili olduğu Bilimp müşterisi. Yönetim
+    uçları tenant'ı BUNDAN türetir — istekten gelen bir sirket_id/musteri_id
+    parametresinden DEĞİL (bkz. modül başlığındaki tasarım kararı). Bu, bir
+    servis token'ı sahibinin, parametre değiştirerek başka bir müşterinin
+    verisine erişmesini yapısal olarak imkânsız kılar.
+    """
+
+    def __init__(self, subject: str, musteri_id: int):
         self.subject = subject
+        self.musteri_id = musteri_id
 
     def __repr__(self) -> str:
-        return f"ServiceIdentity(subject={self.subject!r})"
+        return f"ServiceIdentity(subject={self.subject!r}, musteri_id={self.musteri_id!r})"
 
 
 def verify_service_token(
     credentials: HTTPAuthorizationCredentials = Depends(_bearer),
 ) -> ServiceIdentity:
     """
-    Yalnızca PUT/GET /api/v1/documents/{id}/audience ve
-    GET /api/v1/documents/audience-compliance-report uçlarında kullanılır.
+    Doküman yaşam döngüsü ve hedef kitle yönetimi uçlarında kullanılır.
 
     Bu uçlar bir son kullanıcı token'ıyla ASLA çağrılamaz — token'ın 'aud'
-    claim'i JWT_AUDIENCE_ADMIN olmalıdır. Bu sayede hedef kitle değişikliği
-    yalnızca Bilimp'in kendi yetki kontrolünden geçmiş sunucu-taraflı bir
-    istekle tetiklenebilir; bireysel bir kullanıcının sorgu token'ıyla bu
-    uçlara doğrudan erişimi mümkün değildir.
+    claim'i JWT_AUDIENCE_ADMIN olmalıdır. Token'da ayrıca musteri_id claim'i
+    ZORUNLUDUR (eksik veya sayısal olmayan bir musteri_id → 401); bu, hangi
+    müşterinin verisi üzerinde işlem yapılacağının tek doğruluk kaynağıdır.
     """
     audience = os.getenv("JWT_AUDIENCE_ADMIN")
     if not audience:
@@ -307,4 +347,19 @@ def verify_service_token(
 
     payload = _decode_and_verify(credentials.credentials, audience)
     subject = payload.get("sub") or "bilinmeyen-servis"
-    return ServiceIdentity(subject=subject)
+
+    raw_musteri_id = payload.get("musteri_id")
+    if raw_musteri_id is None:
+        raise HTTPException(
+            status.HTTP_401_UNAUTHORIZED,
+            "Servis token'ında musteri_id claim'i bulunamadı.",
+        )
+    try:
+        musteri_id = int(raw_musteri_id)
+    except (TypeError, ValueError):
+        raise HTTPException(
+            status.HTTP_401_UNAUTHORIZED,
+            "Servis token'ındaki musteri_id sayısal bir değer değil.",
+        )
+
+    return ServiceIdentity(subject=subject, musteri_id=musteri_id)

@@ -1,9 +1,8 @@
 """
-rate_limiting.py — İstek Sınırlama (Faz 4 / madde 15)
+rate_limiting.py — İstek Sınırlama
 
-Teracity'nin bulgusu: "Rate limit ... belirtilmeli." Bu modül, tek bir API
-örneği (instance) için bellek-içi bir sabit-pencere (fixed-window) sınırlayıcı
-uygular.
+Bu modül, tek bir API örneği (instance) için bellek-içi bir sabit-pencere
+(fixed-window) sınırlayıcı uygular.
 
 ÖNEMLİ ÖLÇEKLENDİRME NOTU: Bu uygulama BELLEK-İÇİDİR — birden fazla API
 örneği (yatay ölçekleme / birden fazla container) arkasında çalışırsa, her
@@ -12,9 +11,13 @@ uygular.
 Şu anki tek-örnekli dağıtım için bu yeterlidir; ölçek büyüdüğünde bu modülün
 Redis-destekli bir sürümle değiştirilmesi önerilir.
 
-Anahtar (rate limit kovası), kimliği doğrulanmış çağıran varsa onun 'sub'
-claim'i, yoksa istemci IP adresidir — böylece bir kullanıcının/servisin
-sınırı, aynı ağdaki diğer kullanıcıları etkilemez.
+TASARIM KARARI (v2.0) — Anahtar müşteri (musteri_id) + kullanıcı (sub) çifti:
+Yalnızca 'sub' (kullanıcı kimliği) ile anahtarlamak yeterli DEĞİLDİR: Bilimp
+çok müşterili bir üründür ve her müşteri kendi veritabanında bağımsız
+kullanıcı kimlikleri üretir — iki farklı müşterinin kullanıcı_id=613 olan
+çalışanları rastlantısal olarak aynı 'sub' değerine sahip olabilir, bu da bir
+müşterinin kullanıcısının, başka bir müşterinin kotasını (istemeden)
+paylaşmasına yol açar. Bu yüzden anahtar (musteri_id, sub) ÇİFTİDİR.
 """
 
 from __future__ import annotations
@@ -48,6 +51,14 @@ class _FixedWindowLimiter:
 
 
 def _client_identity(request: Request) -> str:
+    """
+    Rate-limit kovası anahtarını üretir. Token'ın İMZASI BURADA
+    DOĞRULANMAZ (yalnızca kova seçimi için okunur; gerçek yetkilendirme
+    auth.py'nin doğrulanmış bağımlılıklarında ayrıca yapılır) — bu yüzden
+    sahte bir 'musteri_id'/'sub' ile daha büyük bir kotaya "sıçramak"
+    mümkün değildir, sadece kendi (doğrulanmamış) kovasına yazar; asıl
+    işlem imzası geçersiz bir token'la zaten reddedilir.
+    """
     auth_header = request.headers.get("authorization", "")
     if auth_header.lower().startswith("bearer "):
         token = auth_header[7:]
@@ -55,6 +66,15 @@ def _client_identity(request: Request) -> str:
             import jwt as pyjwt
             unverified = pyjwt.decode(token, options={"verify_signature": False})
             sub = unverified.get("sub")
+            # Kullanıcı token'ında musteri_id user_context içinde, servis
+            # token'ında ise üst seviyededir (bkz. auth.py).
+            musteri_id = unverified.get("musteri_id")
+            if musteri_id is None:
+                uc = unverified.get("user_context")
+                if isinstance(uc, dict):
+                    musteri_id = uc.get("musteri_id")
+            if sub and musteri_id is not None:
+                return f"musteri:{musteri_id}:sub:{sub}"
             if sub:
                 return f"sub:{sub}"
         except Exception:

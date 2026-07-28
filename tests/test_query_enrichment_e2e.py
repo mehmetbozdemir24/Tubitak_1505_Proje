@@ -67,19 +67,20 @@ def app_client(monkeypatch, keypair):
     return TestClient(api.app), fake_client, fake_store, private_pem
 
 
-def _user_token(private_pem, sirket_id=14, kullanici_id=613):
+def _user_token(private_pem, musteri_id=501, kullanici_id=613):
     payload = {
         "iss": "bilimp-teracity", "aud": "tubitak1505-query",
         "sub": str(kullanici_id), "iat": int(time.time()), "exp": int(time.time()) + 3600,
-        "user_context": {"sirket_id": sirket_id, "kullanici_id": kullanici_id, "grup_ids": []},
+        "user_context": {"musteri_id": musteri_id, "sirket_ids": [14], "kullanici_id": kullanici_id, "grup_ids": []},
     }
     return pyjwt.encode(payload, private_pem, algorithm="RS256")
 
 
-def _service_token(private_pem):
+def _service_token(private_pem, musteri_id=501):
     payload = {
         "iss": "bilimp-teracity", "aud": "tubitak1505-audience-admin",
-        "sub": "bilimp-backend", "iat": int(time.time()), "exp": int(time.time()) + 3600,
+        "sub": "bilimp-backend", "musteri_id": musteri_id,
+        "iat": int(time.time()), "exp": int(time.time()) + 3600,
     }
     return pyjwt.encode(payload, private_pem, algorithm="RS256")
 
@@ -171,7 +172,6 @@ class TestComplianceReportStructuredItems:
         resp = client.get(
             "/api/v1/documents/audience-compliance-report",
             headers={"Authorization": f"Bearer {token}"},
-            params={"sirket_id": 14},
         )
 
         assert resp.status_code == 200
