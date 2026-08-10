@@ -161,7 +161,6 @@ python-docx==1.2.0
 python-dotenv==1.2.2
 python-multipart==0.0.26
 python-pptx==1.0.2
-pywin32==311
 PyYAML==6.0.3
 qdrant-client==1.18.0
 rapidocr==3.9.2
@@ -216,7 +215,6 @@ uuid_utils==0.14.1
 uvicorn==0.44.0
 watchdog==6.0.0
 websockets==16.0
-win32_setctime==1.2.0
 xlsxwriter==3.2.9
 xxhash==3.6.0
 yarl==1.23.0

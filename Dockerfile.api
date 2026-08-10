@@ -1,0 +1,32 @@
+# TÜBİTAK 1505 — Hedef Kitle API servisi (vLLM + Docling sürümü)
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Sistem bağımlılıkları (docling/pymupdf/OCR için gerekebilir)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    tesseract-ocr curl \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Uygulama kaynakları — chunker.py artık KULLANILMIYOR (vllm_ingestion.py ile
+# değiştirildi); vllm_ingestion.py eksik olursa document_ingestion_service.py
+# import hatasıyla çöker, bu yüzden burada olması ZORUNLU.
+COPY abac.py auth.py tenancy.py api_schemas.py audience_service.py \
+     rag_service.py document_ingestion_service.py vllm_ingestion.py \
+     error_handling.py rate_limiting.py \
+     prompts.py language_utils.py api.py ./
+
+EXPOSE 8000
+
+# Sırlar env üzerinden verilir (docker run -e ... veya compose environment).
+# JWT_ISSUER, JWT_AUDIENCE_QUERY, JWT_AUDIENCE_ADMIN ve bir genel anahtar
+# (JWT_PUBLIC_KEY veya JWT_PUBLIC_KEYS_JSON) ZORUNLUDUR — biri eksikse
+# /api/v1/* uçları 500 döner (fail-closed). Bkz. auth.py başlığı.
+#
+# VLLM_BASE_URL de ZORUNLU olarak açıkça verilmelidir: bu container'ın
+# host'ta (WSL/bare-metal) çalışan vLLM sunucusuna nasıl ulaşacağı ortama
+# göre değişir (bkz. api.py::_build_llm() içindeki not).
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]
