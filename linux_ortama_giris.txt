@@ -2,7 +2,7 @@ WSL'e Yani Linux'a Giriş ve Ortam Aktive
 wsl -d Ubuntu-24.04 -u ogrenci
 cd ~
 source vllm-workspace/bin/activate
-export HF_TOKEN="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"
+export HF_TOKEN="hf_"
 
 (vllm-workspace) ogrenci@ULUNLP-5090:~$ cd /mnt/c/Users/ogrenci/Desktop/MinerU
 
